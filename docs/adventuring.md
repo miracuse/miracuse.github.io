@@ -1,0 +1,49 @@
+---
+layout: default
+title: Adventuring
+sidebar_link: true
+sidebar_sort_order: 6
+---
+
+# Adventuring
+
+Outside of rolling Skills, there are a few common situations in adventuring with rules of their own.
+
+### Persuasion
+
+Anytime you want to convince a non-player character to go your way, you'll need to roll an appropriate Skill. Each class has their own approach to persuasion with some being better suited to particular situations.
+
+| Skill                                            | Use                                             |
+| ------------------------------------------------ | ----------------------------------------------- |
+| **<span style="color:#268bd2">Knowledge</span>** | Debate, rhetorical skill, and logic.            |
+| **<span style="color:#d28445">Bravery</span>**   | Challenge, intimidate, and impress.             |
+| **<span style="color:#953553">Aura</span>**      | Awe, command, and working with spirits.         |
+| **<span style="color:#90a959">Cunning</span>**   | Deceit, fast talking, and working with animals. |
+
+### Scouting
+
+Players looking to explore dangerous areas will need to be quiet and observant. When scouting in groups, do the following.
+
+* Roll **<span style="color:#90a959">Cunning</span>** and take the **lowest** result of everyone participating
+* Roll **<span style="color:#268bd2">Perception</span>** and take the **highest** result of everyone participating
+
+Better Cunning results will ensure that the party is not discovered, while better Perception rolls will reveal information about the surrounding (including the possibility of traps).
+
+### Skirmishes
+
+A skirmish is any situation where several characters need to take different actions and **turn order matters**. The most common scenario is combat, but other possibilities might include fixing a sinking ship or racing a rival adventuring party for treasure.
+
+* Roll **<span style="color:#90a959">Agility</span>** to determine the order that characters will act.
+* On their turn, characters can take one action (usually a single roll of the dice).
+
+### Camping
+
+Making camp gives characters the opportunity to recover and change their Kits. However, any period of rest should be accompanies by two party members taking watch.
+
+* Two characters roll **<span style="color:#268bd2">Perception</span>** and take the **lowest** result
+
+Poor Perception results may lead to unexpected ambushes while most of the party is sleeping.
+
+### Luck
+
+Players start each session of gameplay with three Luck Points, which can be spent to **reroll a single roll**. Luck Points do not carry over to new sessions so be sure to spend them.
