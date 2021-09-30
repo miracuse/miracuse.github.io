@@ -7,11 +7,17 @@ sidebar_sort_order: 6
 
 # Adventuring
 
-Outside of rolling Skills, there are a few common situations in adventuring with rules of their own.
+Most situations can be resolved using the Skill rolls described in [What You Do](what_you_do.md). That being said, there are a few common scenarios that have additional rules.
+
+* **Persuasion**
+* **Scouting**
+* **Skirmishes**
+* **Camping**
+* **Luck Points**
 
 ### Persuasion
 
-Anytime you want to convince a non-player character to go your way, you'll need to roll an appropriate Skill. Each class has their own approach to persuasion with some being better suited to particular situations.
+Anytime you want to convince a non-player character of something, you'll need to roll an appropriate Skill. Each class has their own approach to persuasion with some being better suited to particular situations.
 
 | Skill                                            | Use                                             |
 | ------------------------------------------------ | ----------------------------------------------- |
@@ -44,6 +50,11 @@ Making camp gives characters the opportunity to recover and change their Kits. H
 
 Poor Perception results may lead to unexpected ambushes while most of the party is sleeping.
 
-### Luck
+### Luck Points
 
-Players start each session of gameplay with three Luck Points, which can be spent to **reroll a single roll**. Luck Points do not carry over to new sessions so be sure to spend them.
+Players start each session of gameplay with three Luck Points, which can be used for the following:
+
+* **Reroll a single roll**
+* **Nudge luck in your direction**
+
+Luck Points do not carry over to new sessions so be sure to spend them.

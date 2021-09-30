@@ -7,7 +7,7 @@ sidebar_sort_order: 3
 
 # What You Do
 
-The majority of actions you take will map to one of the eight Skills in the game. 
+The majority of actions you take will use one of the eight Skills in the game. 
 
 | Skill                                             | Description                                             |
 | ------------------------------------------------- | ------------------------------------------------------- |
@@ -20,7 +20,7 @@ The majority of actions you take will map to one of the eight Skills in the game
 | **<span style="color:#90a959">Cunning</span>**    | Sneaking, sleight-of-hand, and bluffing.                |
 | **<span style="color:#90a959">Agility</span>**    | Mobility, dodging threats, and acting before others.    |
 
-Each class is Experienced in two Skills and Untrained in all others.
+Each class is Experienced (+2) in two Skills and Untrained (+0) in all others.
 
 | Skill Level | Description |
 | ----------- | ----------- |
@@ -97,4 +97,3 @@ The GM will interpret your results and tell you what happens next.
 | 8             | Take one Physical damage                |
 | 9             | Take one Mental damage                  |
 | 10            | No consequence                          | --> 
-
