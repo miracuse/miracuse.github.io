@@ -26,9 +26,9 @@ Soldiers can provoke or intimidate enemies during skirmishes using **<span style
 * **Provoke:** Incite an enemy to attack you, disregarding others.
 * **Intimidate:** Scare off an enemy, forcing them to retreat or create distance.
 
-### <span style="color:#953553">Magus</span>
+### <span style="color:#953553">Mage</span>
 
-Magi can combine their Kits to produce stronger and more complex effects. The user chooses two spirits, describes an effect they want to achieve, and rolls **<span style="color:#953553">Aura</span>** to see how well it goes. Using Kits in this fashion is called spellcasting, and causes the user to mark one Mental box.
+Magescan combine their Kits to produce stronger and more complex effects. The user chooses two spirits, describes an effect they want to achieve, and rolls **<span style="color:#953553">Aura</span>** to see how well it goes. Using Kits in this fashion is called spellcasting, and causes the user to mark one Mental box.
 
 | Spell           | Description                                                                                           |
 | --------------- | ----------------------------------------------------------------------------------------------------- |

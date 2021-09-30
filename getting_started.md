@@ -10,7 +10,7 @@ sidebar_sort_order: 4
 The first thing to do is make a character. You can follow along with the [Interactive Game Sheets](https://docs.google.com/spreadsheets/d/1cszUt5nCQ3Ratx0WtV-eOjfYNuY5bkYliWcnlYpqMAc/edit?usp=sharing).
 
 * **Name:** What are you called?
-* **Class:** Are you an **<span style="color:#268bd2">Alchemist</span>**, **<span style="color:#d28445">Soldier</span>**, **<span style="color:#953553">Magus</span>**, **<span style="color:#90a959">Scoundrel</span>**, or [something else](hybrid_classes.md)?
+* **Class:** Are you an **<span style="color:#268bd2">Alchemist</span>**, **<span style="color:#d28445">Soldier</span>**, **<span style="color:#953553">Mage</span>**, **<span style="color:#90a959">Scoundrel</span>**, or [something else](hybrid_classes.md)?
 
 ### Kits
 

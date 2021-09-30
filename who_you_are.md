@@ -21,12 +21,12 @@ The Alchemist relies on their sharp minds to survive. They're knowledgable about
 
 The Soldier is hard to take down. They can endure punishment and return it just as easily.
 
-### <span style="color:#953553">The Magus</span>
+### <span style="color:#953553">The Mage</span>
 
 * **Skills**: Aura, Focus
 * **Kits**: Black Magic, Elemental Magic, White Magic
 
-The Magus not only controls forces of nature, they are a force of nature. They command spirits to perform miracles and magic.
+The Mage not only controls forces of nature, they are a force of nature. They command spirits to perform miracles and magic.
 
 ### <span style="color:#90a959">The Scoundrel</span>
 
