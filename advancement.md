@@ -28,7 +28,7 @@ A list of example Artifacts can be found on the Game Sheet.
 
 ### Creating New Kits
 
-When the **<span style="color:#953553">Prudence</span>**  Village Skill is increased, each player can either choose a new Kit from the Extra Kits table on the [Interactive Game Sheets](https://docs.google.com/spreadsheets/d/1cszUt5nCQ3Ratx0WtV-eOjfYNuY5bkYliWcnlYpqMAc/edit?usp=sharing) or work with the GM to invent a new Kit. **Characters are still limited to four Kits at any one time.**
+When the **<span style="color:#953553">Prudence</span>**  Village Skill is increased, each player can either choose a new Kit from the Extra Kits table on the [Interactive Game Sheets](https://docs.google.com/spreadsheets/d/1SPwXaMx6Yy55YtODYAHVMJWfV3SEqT7iQid76qavQCo/edit?usp=sharing) or work with the GM to invent a new Kit. **Characters are still limited to four Kits at any one time.**
 
 | Kit Type | Kit            | Description                            |
 | -------- | -------------- | -------------------------------------- |

@@ -25,7 +25,7 @@ Players interested in creating their own class can mix together two existing cla
 | Kit Type    | **<span style="color:#953553">Elemental</span>**  | **<span style="color:#268bd2">Drugs</span>**          |
 | Bonus Skill | **<span style="color:#953553">Focus (+1)</span>** |                                                       |
 
-More examples and information can be found on the [Interactive Game Sheets](https://docs.google.com/spreadsheets/d/1cszUt5nCQ3Ratx0WtV-eOjfYNuY5bkYliWcnlYpqMAc/edit?usp=sharing).
+More examples and information can be found on the [Interactive Game Sheets](https://docs.google.com/spreadsheets/d/1SPwXaMx6Yy55YtODYAHVMJWfV3SEqT7iQid76qavQCo/edit?usp=sharing).
 
 
 ### Differences Between Base and Hybrid Classes
