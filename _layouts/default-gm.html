@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en-us'}}">
+
+  {% include head.html %}
+
+  <!-- Commit a terrible sin by doing styling in the HTML -->
+  <body class="{{ page.layout }}{% if page.url == '/' %} home{% endif %}" style="background-color: #500101;background-image: linear-gradient(to bottom, #730101, #2d0101);">
+
+    {% include sidebar-gm.html %}
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    {% include custom-foot.html %}
+  </body>
+</html>

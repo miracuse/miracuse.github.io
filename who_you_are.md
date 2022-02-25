@@ -9,33 +9,37 @@ sidebar_sort_order: 2
 
 ### <span style="color:#268bd2">The Alchemist</span>
 
+The Alchemist relies on their sharp minds to survive. They're knowledgeable about the world and unerringly perceptive. 
+
 * **Skills**: Perception, Knowledge
 * **Kits**: Bombs, Drugs, Poisons, Tools
 
-The Alchemist relies on their sharp minds to survive. They're knowledgable about the world and unerringly perceptive. 
 
 ### <span style="color:#d28445">The Soldier</span>
 
-* **Skills**: Physique, Bravery
-* **Kits**: Offense, Discipline, Defense
+The Soldier makes a habit of defying odds. Whether by luck or training, they can overcome any obstacle in their path.
 
-The Soldier is hard to take down. They can endure punishment and return it just as easily.
+* **Skills**: Physique, Bravery
+* **Kits**: Fortune, Discipline, Valor
 
 ### <span style="color:#953553">The Mage</span>
+
+The Mage not only controls forces of nature, they are a force of nature. They command spirits to perform miracles and magic.
 
 * **Skills**: Aura, Focus
 * **Kits**: Black Magic, Elemental Magic, White Magic
 
-The Mage not only controls forces of nature, they are a force of nature. They command spirits to perform miracles and magic.
-
 ### <span style="color:#90a959">The Scoundrel</span>
+
+The Scoundrel is quick and clever. They're never seen unless they want to be seen, and by then it's often too late.
 
 * **Skills**: Cunning, Agility
 * **Kits**: Criminal, Hunter, Performer
 
-The Scoundrel is quick and clever. They know how to stay out of the spotlight, but perform just as well as the center of attention.
+### Someone Else
 
-### Others
+* **Skills**: Three of Your Choice
+* **Kits**: Two of Your Choice
 
-Many adventurers borrow pieces from two different trades, becoming something altogether unique. Instructions for building your own class can be found on the [Hybrid Classes](hybrid_classes.md) page.
+Many adventurers borrow pieces from different trades, becoming something altogether unique. Instructions for building your own class can be found on the [Hybrid Classes](hybrid_classes.md) page.
 

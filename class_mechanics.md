@@ -21,14 +21,18 @@ Alchemist Kits have a limited number of uses based on the character's **<span st
 
 ### <span style="color:#d28445">Soldier</span>
 
-Soldiers can provoke or intimidate enemies during skirmishes using **<span style="color:#d28445">Bravery</span>**. 
+Soldiers have a number of Fortune Points equal to their **<span style="color:#d28445">Bravery</span>**. Fortune Points can be used to reroll any action the Soldier takes.
 
-* **Provoke:** Incite an enemy to attack you, disregarding others.
-* **Intimidate:** Scare off an enemy, forcing them to retreat or create distance.
+* Fortune Points can only be used once per roll
+* Fortune Points recover after resting to a maximum of the Soldier's Bravery
+* Several Soldier Kits augment Fortune Points by offering more methods to acquire points besides rest
+
 
 ### <span style="color:#953553">Mage</span>
 
-Magescan combine their Kits to produce stronger and more complex effects. The user chooses two spirits, describes an effect they want to achieve, and rolls **<span style="color:#953553">Aura</span>** to see how well it goes. Using Kits in this fashion is called spellcasting, and causes the user to mark one Mental box.
+Mages can combine their Kits to produce stronger and more complex effects.
+
+The user chooses two spirits, describes an effect they want to achieve, and rolls **<span style="color:#953553">Aura</span>** to see how well it goes. Using Kits in this fashion is called spellcasting, and requires the user to mark one Mental Health box.
 
 | Spell           | Description                                                                                           |
 | --------------- | ----------------------------------------------------------------------------------------------------- |
@@ -40,4 +44,12 @@ Magescan combine their Kits to produce stronger and more complex effects. The us
 
 ### <span style="color:#90a959">Scoundrel</span>
 
-In addition to their own capabilities as quick and stealthy characters, Scoundrels can borrow the Kits and Skills of other classes to a limited extent. A versatile player can switch from strongman to mage to thief as the situation changes.
+Scoundrels are difficult to find unless they want to be found. They blend into crowds and shadows with ease.
+
+By default, anyone not actively searching an area must have a higher **<span style="color:#268bd2">Perception</span>** than the Scoundrel's **<span style="color:#90a959">Cunning</span>** to detect them. No rolls are required. 
+
+Besides going unnoticed, being in stealth provides several benefits:
+
+* Attacks from stealth do not require rolls, and count as an automatic 10
+* Enemies will not target the Scoundrel in combat
+

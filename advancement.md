@@ -2,7 +2,7 @@
 layout: default
 title: Advancement
 sidebar_link: true
-sidebar_sort_order: 8
+sidebar_sort_order: 9
 ---
 
 # Advancement
@@ -11,7 +11,7 @@ sidebar_sort_order: 8
 | ------------------------------------------------- | --------------------------------------- | ----------------------------------------------------------- |
 | **<span style="color:#268bd2">Justice</span>**    | Morale and rule of law.                 | Increases the cap for character skills.                     |
 | **<span style="color:#d28445">Fortitude</span>**  | Military strength.                      | Increases characters' Physical/Mental health tracks by one. |
-| **<span style="color:#953553">Prudence</span>**   | Technological development.              | Players can invent one Kit each, working with the GM.       |
+| **<span style="color:#953553">Prudence</span>**   | Technological development.              | Players receive a new Kit.                                  |
 | **<span style="color:#90a959">Temperance</span>** | Economic stability and food production. | Increases characters' Skills.                               |
 
 Advancement in *Miracuse* is tied to the development of a nearby village or town. The artifacts and allies adventurers find while exploring can be used to grow the village, which will help the village to support the party.
@@ -28,7 +28,7 @@ A list of example Artifacts can be found on the Game Sheet.
 
 ### Creating New Kits
 
-When the **<span style="color:#953553">Prudence</span>**  Village Skill is increased, each player can invent a new Kit by working with their GM. **Characters are still limited to four Kits at any one time.**
+When the **<span style="color:#953553">Prudence</span>**  Village Skill is increased, each player can either choose a new Kit from the Extra Kits table on the [Interactive Game Sheets](https://docs.google.com/spreadsheets/d/1cszUt5nCQ3Ratx0WtV-eOjfYNuY5bkYliWcnlYpqMAc/edit?usp=sharing) or work with the GM to invent a new Kit. **Characters are still limited to four Kits at any one time.**
 
 | Kit Type | Kit            | Description                            |
 | -------- | -------------- | -------------------------------------- |

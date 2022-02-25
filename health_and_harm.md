@@ -7,7 +7,7 @@ sidebar_sort_order: 5
 
 # Health and Harm
 
-Danger is a constant of any adventure. Throughout the course of their career, characters are guarenteed to find themselves in harm's way. When this happens, the GM will tell you to mark **Damage**. 
+Throughout the course of their career characters are guaranteed to find themselves in harm's way. When this happens, the GM will tell you to mark **Damage**. 
 
 | Damage Track |         |         |
 | ------------ | ------- | ------- |
@@ -19,7 +19,7 @@ Unless specifically stated damage is assumed to be Physical. It has little effec
 
 * **Incapacitated** characters cannot act until their damage track is completely clear.
 
-* **Injured** characters will roll on one of the two tables below. Until treated, future rolls they make that could reasonably be impacted by their injury will take a -1 penalty.
+* **Injured** characters will roll on the table below. Until treated, future rolls they make that could reasonably be impacted by their injury will take a -1 penalty.
 
 | Ten-Sided Die | Physical         | Mental    |
 | ------------- | ---------------- | --------- |
@@ -38,5 +38,4 @@ Unless specifically stated damage is assumed to be Physical. It has little effec
 
 Both damage and injuries are cleared after resting at camp overnight. Damage can also be recovered using certain Kits.
 
-Some injuries may have additional requirements to remove. These represent special circumstances, such as being poisoned or cursed. The GM will offer advice on how to 
-seek treatment.
+Some injuries may have additional requirements to remove. These represent special circumstances, such as being poisoned or cursed. The GM will offer advice on how to seek treatment.

@@ -9,40 +9,34 @@ sidebar_sort_order: 3
 
 The majority of actions you take will use one of the eight Skills in the game. 
 
-| Skill                                             | Description                                             |
-| ------------------------------------------------- | ------------------------------------------------------- |
-| **<span style="color:#268bd2">Perception</span>** | Awareness, lie detection, and investigation.            |
-| **<span style="color:#268bd2">Knowledge</span>**  | General know-how, connections, and debate.              |
-| **<span style="color:#d28445">Bravery</span>**    | Willpower, intimidation, and courage.                   |
-| **<span style="color:#d28445">Physique</span>**   | Strength, martial arts, and physical health.            |
-| **<span style="color:#953553">Aura</span>**       | Magic, rapport with spirits, and supernatural charisma. |
-| **<span style="color:#953553">Focus</span>**      | Concentration, sixth sense, and mental health.          |
-| **<span style="color:#90a959">Cunning</span>**    | Sneaking, sleight-of-hand, and bluffing.                |
-| **<span style="color:#90a959">Agility</span>**    | Mobility, dodging threats, and acting before others.    |
+| Skill                                             | Description                                                      |
+| ------------------------------------------------- | ---------------------------------------------------------------- |
+| **<span style="color:#268bd2">Perception</span>** | Awareness, lie detection, and investigation.                     |
+| **<span style="color:#268bd2">Knowledge</span>**  | General know-how, connections, and rhetorical ability.           |
+| **<span style="color:#d28445">Bravery</span>**    | Willpower, intimidation, and courage.                            |
+| **<span style="color:#d28445">Physique</span>**   | Strength, martial arts, and physical health.                     |
+| **<span style="color:#953553">Aura</span>**       | Magical talent, rapport with spirits, and supernatural charisma. |
+| **<span style="color:#953553">Focus</span>**      | Concentration, sixth sense, and mental fortitude.                |
+| **<span style="color:#90a959">Cunning</span>**    | Stealth, sleight-of-hand, and bluffing.                          |
+| **<span style="color:#90a959">Agility</span>**    | Mobility, evasion, and acting before others.                     |
 
-Each class is Experienced (+2) in two Skills and Untrained (+0) in all others.
 
-| Skill Level | Description |
-| ----------- | ----------- |
-| -1          | Incompetent |
-| +0          | Untrained   |
-| +1          | Proficient  |
-| +2          | Experienced |
-| +3          | Specialist  |
-| +4          | Expert      |
+### How You Take Action
 
-When taking an action, you add your Skill level to the results of a dice roll.
-
-| Result | Roll       |
-| ------ | ---------- |
-| -2     | 1          |
-| -1     | 2, 3       |
-| +0     | 4, 5, 6, 7 |
-| +1     | 8, 9       |
-| +2     | 10         |
-
+Taking an action consists of rolling a ten-sided dice and adding a character's Skill level to the result.
 
 `Outcome = Roll + Skill`
+
+Higher rolls and higher Skill levels will improve the chance that an action succeeds.
+
+| Result | Roll       | 
+| ------ | ---------- | 
+| -2     | 1          | 
+| -1     | 2, 3       | 
+| +0     | 4, 5, 6, 7 | 
+| +1     | 8, 9       | 
+| +2     | 10         | 
+
 
 ### Examples
 

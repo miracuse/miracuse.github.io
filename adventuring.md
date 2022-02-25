@@ -13,7 +13,7 @@ Most situations can be resolved using the Skill rolls described in [What You Do]
 * **Scouting**
 * **Skirmishes**
 * **Camping**
-* **Luck Points**
+<!-- * **Luck** -->
 
 ### Persuasion
 
@@ -23,7 +23,7 @@ Anytime you want to convince a non-player character of something, you'll need to
 | ------------------------------------------------ | ----------------------------------------------- |
 | **<span style="color:#268bd2">Knowledge</span>** | Debate, rhetorical skill, and logic.            |
 | **<span style="color:#d28445">Bravery</span>**   | Challenge, intimidate, and impress.             |
-| **<span style="color:#953553">Aura</span>**      | Awe, command, and working with spirits.         |
+| **<span style="color:#953553">Aura</span>**      | Awe, command, and speaking with spirits.        |
 | **<span style="color:#90a959">Cunning</span>**   | Deceit, fast talking, and working with animals. |
 
 ### Scouting
@@ -33,7 +33,7 @@ Players looking to explore dangerous areas will need to be quiet and observant. 
 * Roll **<span style="color:#90a959">Cunning</span>** and take the **lowest** result of everyone participating
 * Roll **<span style="color:#268bd2">Perception</span>** and take the **highest** result of everyone participating
 
-Better Cunning results will ensure that the party is not discovered, while better Perception rolls will reveal information about the surrounding (including the possibility of traps).
+Better Cunning results will ensure that the party is not discovered, while better Perception rolls will reveal information about the surroundings (including the possibility of traps).
 
 ### Skirmishes
 
@@ -44,17 +44,9 @@ A skirmish is any situation where several characters need to take different acti
 
 ### Camping
 
-Making camp gives characters the opportunity to recover and change their Kits. However, any period of rest should be accompanies by two party members taking watch.
+Making camp gives characters the opportunity to recover and change their Kits. However, resting in dangerous areas should be accompanies by an overnight watch.
 
 * Two characters roll **<span style="color:#268bd2">Perception</span>** and take the **lowest** result
 
 Poor Perception results may lead to unexpected ambushes while most of the party is sleeping.
 
-### Luck Points
-
-Players start each session of gameplay with three Luck Points, which can be used for the following:
-
-* **Reroll a single roll**
-* **Nudge luck in your direction**
-
-Luck Points do not carry over to new sessions so be sure to spend them.
