@@ -21,7 +21,7 @@ The majority of actions you take will use one of the eight Skills in the game.
 | **<span style="color:#90a959">Agility</span>**    | Mobility, evasion, and acting before others.                     |
 
 
-### How You Take Action
+### Rolling for Actions
 
 Taking an action consists of rolling a ten-sided dice and adding a character's Skill level to the result.
 
@@ -48,7 +48,9 @@ When you want to do something as your character, tell the GM.
 >
 >I want to talk to the door guard.
 
+
 The GM will tell you what to do next, or what happens next if the task isn't too difficult.
+
 
 >"Okay. Roll Physique."
 >
@@ -56,17 +58,21 @@ The GM will tell you what to do next, or what happens next if the task isn't too
 >
 >"Okay. You walk over and find the door guard dozing off."
 
-The outcome of many actions depends on your Skills and your luck. 
+
+The outcome of many actions depends on your Skills and your luck.
+
 
 >I have a +2 in Physique and rolled a +1. That's a total of +3.
 >
 >I have a 0 in Agility and rolled a -1. That's a total of -1.
 
+
 The GM will interpret your results and tell you what happens next.
+
 
 >"You got a +3? Alright, you gouge out a large chunk of rock with your sword."
 >
->"You got a -1? That's not good. You try to climb, but wind up falling partway up. Mark a point of damage."
+>"You got a -1? That's not good. You get to the top, but it took a lot out of you. Mark a point of Physical damage."
 
 
 <!-- Depending on the outcome and the difficulty of the task, the GM will declare that one of the following has happened:

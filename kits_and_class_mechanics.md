@@ -1,11 +1,22 @@
 ---
 layout: default
-title: Class Mechanics
+title: Kits and Class Mechanics
 sidebar_link: true
-sidebar_sort_order: 7
+sidebar_sort_order: 5
 ---
 
-# Class Mechanics
+# Kits and Class Mechanics
+
+Each class (**<span style="color:#268bd2">Alchemist</span>**, **<span style="color:#d28445">Soldier</span>**, **<span style="color:#953553">Mage</span>**, and **<span style="color:#90a959">Scoundrel</span>**) has their own list of abilities, called Kits.
+
+Players can choose up to four Kits at any given time and can change Kits in-game on a regular basis.
+
+| Class     | Kit Type | Kit      | Description                          |
+| --------- | -------- | -------- | ------------------------------------ |
+| Alchemist | Tool     | Revolver | Make a Perception attack and add +1. |
+
+A full list of Kits can be found on the [Interactive Game Sheets](https://docs.google.com/spreadsheets/d/1SPwXaMx6Yy55YtODYAHVMJWfV3SEqT7iQid76qavQCo/edit?usp=sharing).
+
 
 ### <span style="color:#268bd2">Alchemist</span>
 
@@ -21,18 +32,18 @@ Alchemist Kits have a limited number of uses based on the character's **<span st
 
 ### <span style="color:#d28445">Soldier</span>
 
-Soldiers have a number of Fortune Points equal to their **<span style="color:#d28445">Bravery</span>**. Fortune Points can be used to reroll any action the Soldier takes.
+Soldiers have a number of **Fortune Points** equal to their **<span style="color:#d28445">Bravery</span>**. Fortune Points can be used to reroll any action the Soldier takes.
 
 * Fortune Points can only be used once per roll
 * Fortune Points recover after resting to a maximum of the Soldier's Bravery
-* Several Soldier Kits augment Fortune Points by offering more methods to acquire points besides rest
+* Several Soldier Kits offer ways to attain more Fortune Points
 
 
 ### <span style="color:#953553">Mage</span>
 
 Mages can combine their Kits to produce stronger and more complex effects.
 
-The user chooses two spirits, describes an effect they want to achieve, and rolls **<span style="color:#953553">Aura</span>** to see how well it goes. Using Kits in this fashion is called spellcasting, and requires the user to mark one Mental Health box.
+The player chooses two spirits, describes an effect they want to achieve, and rolls **<span style="color:#953553">Aura</span>** to see how well it goes. Using Kits in this fashion is called spellcasting, and requires the caster to mark one Mental Health box.
 
 | Spell           | Description                                                                                           |
 | --------------- | ----------------------------------------------------------------------------------------------------- |
@@ -44,9 +55,7 @@ The user chooses two spirits, describes an effect they want to achieve, and roll
 
 ### <span style="color:#90a959">Scoundrel</span>
 
-Scoundrels are difficult to find unless they want to be found. They blend into crowds and shadows with ease.
-
-By default, anyone not actively searching an area must have a higher **<span style="color:#268bd2">Perception</span>** than the Scoundrel's **<span style="color:#90a959">Cunning</span>** to detect them. No rolls are required. 
+Scoundrels rarely attract notice unless they want to. By default, anyone not actively searching an area must have a higher **<span style="color:#268bd2">Perception</span>** than the Scoundrel's **<span style="color:#90a959">Cunning</span>** to detect them. No rolls required. 
 
 Besides going unnoticed, being in stealth provides several benefits:
 

@@ -2,7 +2,7 @@
 layout: default
 title: Hybrid Classes
 sidebar_link: true
-sidebar_sort_order: 8
+sidebar_sort_order: 6
 ---
 
 # Hybrid Classes

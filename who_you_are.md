@@ -31,7 +31,7 @@ The Mage not only controls forces of nature, they are a force of nature. They co
 
 ### <span style="color:#90a959">The Scoundrel</span>
 
-The Scoundrel is quick and clever. They're never seen unless they want to be seen, and by then it's often too late.
+The Scoundrel is quick and clever. They're never seen unless they want to be seen, and by then it's too late.
 
 * **Skills**: Cunning, Agility
 * **Kits**: Criminal, Hunter, Performer

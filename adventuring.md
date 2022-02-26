@@ -2,7 +2,7 @@
 layout: default
 title: Adventuring
 sidebar_link: true
-sidebar_sort_order: 6
+sidebar_sort_order: 7
 ---
 
 # Adventuring
@@ -13,7 +13,7 @@ Most situations can be resolved using the Skill rolls described in [What You Do]
 * **Scouting**
 * **Skirmishes**
 * **Camping**
-<!-- * **Luck** -->
+* **Changing Kits**
 
 ### Persuasion
 
@@ -28,12 +28,12 @@ Anytime you want to convince a non-player character of something, you'll need to
 
 ### Scouting
 
-Players looking to explore dangerous areas will need to be quiet and observant. When scouting in groups, do the following.
+Players looking to explore dangerous areas will need to be quiet and observant. When scouting, do the following.
 
 * Roll **<span style="color:#90a959">Cunning</span>** and take the **lowest** result of everyone participating
 * Roll **<span style="color:#268bd2">Perception</span>** and take the **highest** result of everyone participating
 
-Better Cunning results will ensure that the party is not discovered, while better Perception rolls will reveal information about the surroundings (including the possibility of traps).
+Better Cunning results will ensure that the scouts are not discovered, while better Perception rolls will reveal information about the surroundings (including the possibility of traps).
 
 ### Skirmishes
 
@@ -50,3 +50,11 @@ Making camp gives characters the opportunity to recover and change their Kits. H
 
 Poor Perception results may lead to unexpected ambushes while most of the party is sleeping.
 
+### Changing Kits
+
+Characters can swap out their current Kits for new ones provided the following is true:
+
+* They're somewhere safe (like a city or in camp)
+* They have at least one full hour of time
+
+Alchemists reset their uses per Kit during this time, and Soldier can reset their available Fortune Points.
