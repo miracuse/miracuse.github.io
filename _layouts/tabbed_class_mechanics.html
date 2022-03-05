@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en-us'}}">
+
+  {% include head.html %}
+
+  <body class="{{ page.layout }}{% if page.url == '/' %} home{% endif %}">
+
+    {% include sidebar.html %}
+
+    <main class="container">
+    <h1>Class Mechanics</h1>
+
+    <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks active" onclick="openTab(event, 'Alchemist')">Alchemist</button>
+      <button class="tablinks" onclick="openTab(event, 'Soldier')">Soldier</button>
+      <button class="tablinks" onclick="openTab(event, 'Mage')">Mage</button>
+      <button class="tablinks" onclick="openTab(event, 'Scoundrel')">Scoundrel</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Alchemist" class="tabcontent" style="display: block;">
+     <h3 id="alchemist"><span style="color:#268bd2">Alchemist</span></h3>
+
+<p>
+  Alchemist Kits have a limited number of uses based on the character’s
+  <strong><span style="color:#268bd2">Knowledge</span></strong>.
+  Alchemists mark a box each time they use a Kit, and clear all boxes
+  when resting at camp.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Knowledge</th>
+      <th>Uses per Rest</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>☐ ☐</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>☐ ☐ ☐</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>☐ ☐ ☐ ☐</td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td>…</td>
+    </tr>
+  </tbody>
+</table>
+</div> 
+
+    <div id="Soldier" class="tabcontent">
+     <h3 id="soldier"><span style="color:#d28445">Soldier</span></h3>
+
+<p>
+  Soldiers have a number of <strong>Fortune Points</strong> equal to
+  two times their <strong><span style="color:#d28445">Bravery</span></strong>.
+  Fortune Points can be used to reroll any action the Soldier takes.
+</p>
+
+<ul>
+  <li>Fortune Points can only be used once per roll</li>
+  <li>Fortune Points recover after resting to a maximum of the Soldier’s Bravery</li>
+  <li>Several Soldier Kits offer ways to attain more Fortune Points</li>
+</ul>
+
+
+</div>
+
+
+      <div id="Mage" class="tabcontent">
+<h3 id="mage"><span style="color:#953553">Mage</span></h3>
+
+<p>Mages can combine their Kits to produce stronger and more complex effects.</p>
+
+<p>The player chooses two spirits, describes an effect they want to achieve, and rolls <strong><span style="color:#953553">Aura</span></strong> to see how well it goes. Using Kits in this fashion is called spellcasting, and requires the caster to mark one Mental Health box.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Spell</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fireball</td>
+      <td>Spirit of Fire + Air; an area-of-effect Physical attack that sets the surroundings on fire.</td>
+    </tr>
+    <tr>
+      <td>Paralyzing Fear</td>
+      <td>Spirit of Fear + Binding; an area-of-effect Mental attack that prevents enemies from moving.</td>
+    </tr>
+    <tr>
+      <td>Stone Wall</td>
+      <td>Spirit of Earth + Warding; creates a wall of rock to serve as a barricade.</td>
+    </tr>
+    <tr>
+      <td>Muted Blur</td>
+      <td>Spirit of Darkness + Silence: an area-of-effect gives Advantage on Cunning rolls for going unnoticed.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div id="Scoundrel" class="tabcontent">
+<h3><span style="color:#90a959">The Scoundrel</span></h3>
+      <p>Scoundrels rarely attract notice unless they want to. By default, anyone not actively searching an area must have a higher <strong><span style="color:#268bd2">Perception</span></strong> than the Scoundrel’s <strong><span style="color:#90a959">Cunning</span></strong> to detect them. No rolls required.</p>
+
+<p>Besides going unnoticed, being in stealth provides several benefits:</p>
+
+<ul>
+  <li>Attacks from stealth do not require rolls, and count as an automatic 10</li>
+  <li>Enemies will not target the Scoundrel in combat</li>
+</ul>
+
+      <div id="Someone Else" class="tabcontent">
+      <h3>Someone Else</h3>
+      <p>Many adventurers borrow pieces from different trades, becoming something altogether unique. Some basic brainstorming is covered here, but more details can be found on the <a href="hybrid_classes.html">Hybrid Classes</a> page.</p>
+      <ul>
+        <li><b>Skills</b>: Three of Your Choice</li>
+        <li><b>Kits</b>: Two of Your Choice</li>
+      </ul>
+      <table>
+        <th>Equipment and Appearance</th>
+        <tr><td>* What does your character use to fight with? </td></tr>
+        <tr><td>* What sort of clothing or armor does your character wear?</td></tr>
+        <tr><td>* Does your character have any unique characteristics related to their class? </td></tr>
+        <tr><td>* Does your character have any tools or implements specific to their class?</td></tr>
+      </table>
+      
+      <h5>In combat...</h5>
+      <p>How does your character contribute in combat? Do they fight at range, or in close? Do they have particular tactics?</p>
+      <h5>Socially...</h5>
+      <p>Does your character have one of the four social Skills (Knowledge, Bravery, Aura, Cunning)? Do they have a specific style when communicating?</p>
+      <h5>While exploring...</h5>
+      <p>How does your character handle obstacles? Can they scout or take watch?</p>
+    </div> 
+    </main>
+
+    {% include custom-foot.html %}
+  </body>
+</html>
+
+<script>
+  function openTab(evt, gameClassName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(gameClassName).style.display = "block";
+  evt.currentTarget.className += " active";
+} 
+</script>

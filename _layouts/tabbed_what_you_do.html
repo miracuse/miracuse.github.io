@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en-us'}}">
+  {% include head.html %}
+
+  <body class="{{ page.layout }}{% if page.url == '/' %} home{% endif %}">
+    {% include sidebar.html %}
+
+    <main class="container">
+      <h1>What You Do</h1>
+
+      <!-- Tab links -->
+      <div class="tab">
+        <button
+          class="tablinks active"
+          onclick="openTab(event, 'Skills')"
+        >
+          Skills
+        </button>
+        <button
+          class="tablinks"
+          onclick="openTab(event, 'Taking Action')"
+        >
+          Taking Action
+        </button>
+        <button
+          class="tablinks"
+          onclick="openTab(event, 'Taking Damage')"
+        >
+          Taking Damage
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Kits')">
+          Kits
+        </button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="Skills" class="tabcontent" style="display: block">
+        <h3>Skills</h3>
+        <p>
+          Many of the things you do while adventuring will correspond to one of
+          the eight Skills.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong><span style="color: #268bd2">Perception</span></strong>
+              </td>
+              <td>Awareness, lie detection, and investigation.</td>
+            </tr>
+            <tr>
+              <td>
+                <strong><span style="color: #268bd2">Knowledge</span></strong>
+              </td>
+              <td>General know-how, connections, and rhetorical ability.</td>
+            </tr>
+            <tr>
+              <td>
+                <strong><span style="color: #d28445">Bravery</span></strong>
+              </td>
+              <td>Willpower, intimidation, and courage.</td>
+            </tr>
+            <tr>
+              <td>
+                <strong><span style="color: #d28445">Physique</span></strong>
+              </td>
+              <td>Strength, martial arts, and physical health.</td>
+            </tr>
+            <tr>
+              <td>
+                <strong><span style="color: #953553">Aura</span></strong>
+              </td>
+              <td>
+                Magical talent, rapport with spirits, and supernatural charisma.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong><span style="color: #953553">Focus</span></strong>
+              </td>
+              <td>Concentration, sixth sense, and mental fortitude.</td>
+            </tr>
+            <tr>
+              <td>
+                <strong><span style="color: #90a959">Cunning</span></strong>
+              </td>
+              <td>Stealth, sleight-of-hand, and bluffing.</td>
+            </tr>
+            <tr>
+              <td>
+                <strong><span style="color: #90a959">Agility</span></strong>
+              </td>
+              <td>Mobility, evasion, and acting before others.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="Taking Action" class="tabcontent">
+        <h3>Taking Action</h3>
+        <p>
+          When your character takes an action using one of the eight Skills,
+          you’ll roll a ten-sided dice to determine how successful the action
+          is.
+        </p>
+
+        <p>
+          <code class="language-plaintext highlighter-rouge"
+            >Outcome = Roll Result + Skill Level</code
+          >
+        </p>
+
+        <p>
+          Higher rolls and higher Skill levels will improve the chance that an
+          action succeeds.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Roll</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>-2</td>
+            </tr>
+            <tr>
+              <td>2, 3</td>
+              <td>-1</td>
+            </tr>
+            <tr>
+              <td>4, 5, 6, 7</td>
+              <td>+0</td>
+            </tr>
+            <tr>
+              <td>8, 9</td>
+              <td>+1</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>+2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="Examples" class="tabcontent">
+        <h3 id="examples">Examples</h3>
+
+        <p>When you want to do something as your character, tell the GM.</p>
+
+        <blockquote>
+          <p>I want to swing my sword at the golem.</p>
+
+          <p>I want to climb the cliffside.</p>
+
+          <p>I want to talk to the door guard.</p>
+        </blockquote>
+
+        <p>
+          The GM will tell you what to do next, or what happens next if the task
+          isn’t too difficult.
+        </p>
+
+        <blockquote>
+          <p>“Okay. Roll Physique.”</p>
+
+          <p>“Okay. Roll Agility.”</p>
+
+          <p>“Okay. You walk over and find the door guard dozing off.”</p>
+        </blockquote>
+
+        <p>The outcome of many actions depends on your Skills and your luck.</p>
+
+        <blockquote>
+          <p>I have a +2 in Physique and rolled a +1. That’s a total of +3.</p>
+
+          <p>I have a 0 in Agility and rolled a -1. That’s a total of -1.</p>
+        </blockquote>
+
+        <p>
+          The GM will interpret your results and tell you what happens next.
+        </p>
+
+        <blockquote>
+          <p>
+            “You got a +3? Alright, you gouge out a large chunk of rock with
+            your sword.”
+          </p>
+
+          <p>
+            “You got a -1? That’s not good. You get to the top, but it took a
+            lot out of you. Mark a point of Physical damage.”
+          </p>
+        </blockquote>
+      </div>
+
+      <div id="Taking Damage" class="tabcontent">
+        <h3 id="Taking Damage">Taking Damage</h3>
+        <p>
+          While adventuring, characters are guaranteed to find themselves in
+          harm’s way. When this happens the GM will tell you to mark
+          <strong>Damage</strong>.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Damage Track</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Physical</td>
+              <td>☑</td>
+              <td>☐</td>
+            </tr>
+            <tr>
+              <td>Mental</td>
+              <td>☐</td>
+              <td>☐</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 id="incapacitation-and-injury">Incapacitation and Injury</h3>
+
+        <p>
+          If a character has to mark damage and has no empty boxes, they become
+          incapacitated and take an injury.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              <strong>Incapacitated</strong> characters cannot act until their
+              damage track is completely clear, either by resting at camp or by
+              receiving treatment.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Injured</strong> characters take a -1 penalty to relevant
+              rolls until they rest at camp. The GM will describe what kind of
+              injury your character receives.
+            </p>
+          </li>
+        </ul>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Injury Track</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Physical</td>
+              <td>☑</td>
+            </tr>
+            <tr>
+              <td>Mental</td>
+              <td>☐</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 id="overflow-damage-and-injuries">Overflow Damage and Injuries</h3>
+
+        <p>When incapacitated, any additional damage has no effect.</p>
+
+        <p>
+          Likewise, characters can only have one Physical and one Mental injury
+          at a time. Becoming incapacitated with an injury will not cause any
+          additional effects.
+        </p>
+      </div>
+
+      <div id="Kits" class="tabcontent">
+        <h3 id="kits">Kits</h3>
+        <p>Each class has their own list of abilities, called Kits.</p>
+
+        <p>
+          Players can choose up to four Kits at any given time and can change
+          Kits in-game on a regular basis.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Kit Type</th>
+              <th>Kit</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alchemist</td>
+              <td>Tool</td>
+              <td>Revolver</td>
+              <td>Make a Perception attack and add +1.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          A full list of Kits can be found on the
+          <a
+            href="https://docs.google.com/spreadsheets/d/1WPtus7bS82xkrfO319qbVZrZZzAWQ2S_yBq5coala7k/edit?usp=sharing"
+            >Interactive Game Sheets</a
+          >.
+        </p>
+      </div>
+    </main>
+
+    {% include custom-foot.html %}
+  </body>
+</html>
+
+<script>
+  function openTab(evt, gameClassName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(gameClassName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>

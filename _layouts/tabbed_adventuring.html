@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en-us'}}">
+  {% include head.html %}
+
+  <body class="{{ page.layout }}{% if page.url == '/' %} home{% endif %}">
+    {% include sidebar.html %}
+
+    <main class="container">
+      <h1>Adventuring</h1>
+
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks active" onclick="openTab(event, 'Skirmishing')">
+          Skirmishing
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Persuasion')">
+          Persuasion
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Scouting')">
+          Scouting
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Camping')">
+          Camping
+        </button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="Skirmishing" class="tabcontent" style="display: block">
+        <h3>Skirmishing</h3>
+        <p>
+          A skirmish is any situation where several characters need to take
+          different actions and <strong>turn order matters</strong>. The most
+          common scenario is combat, but other possibilities might include
+          fixing a sinking ship or racing a rival adventuring party for
+          treasure.
+        </p>
+
+        <ul>
+          <li>
+            Roll <strong><span style="color: #90a959">Agility</span></strong> to
+            determine the order that characters will act.
+          </li>
+          <li>
+            On their turn, characters can take one action (usually a single roll
+            of the dice).
+          </li>
+        </ul>
+
+        <h3>Using Skills to Cause Harm</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong><span style="color: #268bd2">Perception</span></strong></td>
+              <td>
+                Shooting with a crossbow or other
+                <strong>precise</strong> weapon
+              </td>
+            </tr>
+            <tr>
+              <td><strong><span style="color:#d28445">Physique</span></strong></td>
+              <td>
+                Using a <strong>hefty</strong> weapon, such as a sword or
+                longbow
+              </td>
+            </tr>
+            <tr>
+              <td><strong><span style="color:#90a959">Agility</span></strong></td>
+              <td>
+                Using a <strong>swift</strong> weapon, such as throwing knives
+                or an epee
+              </td>
+            </tr>
+            <tr>
+              <td><strong><span style="color:#953553">Aura</span></strong></td>
+              <td>Using <strong>magic</strong> to cause harm</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Using Skills to Avoid Harm</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong><span style="color:#90a959">Agility</span></strong></td>
+              <td>
+                <strong>Dodging</strong> out of the way, deflecting attacks
+              </td>
+            </tr>
+            <tr>
+              <td><strong><span style="color:#d28445">Physique</span></strong></td>
+              <td>
+                <strong>Enduring</strong>, pushing through difficulty or pain
+              </td>
+            </tr>
+            <tr>
+              <td><strong><span style="color:#d28445">Bravery</span></strong></td>
+              <td><strong>Overcoming</strong> fear, exhaustion, or attacks on the mind</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="Persuasion" class="tabcontent">
+        <h3>Persuasion</h3>
+        <p>
+          Anytime you want to convince a non-player character of something,
+          you’ll need to roll an appropriate Skill. Each class has their own
+          approach to persuasion with some being better suited to particular
+          situations.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong><span style="color: #268bd2">Knowledge</span></strong>
+              </td>
+              <td>Debate, rhetorical skill, and logic.</td>
+            </tr>
+            <tr>
+              <td>
+                <strong><span style="color: #d28445">Bravery</span></strong>
+              </td>
+              <td>Challenge, intimidate, and impress.</td>
+            </tr>
+            <tr>
+              <td>
+                <strong><span style="color: #953553">Aura</span></strong>
+              </td>
+              <td>Awe, command, and speaking with spirits.</td>
+            </tr>
+            <tr>
+              <td>
+                <strong><span style="color: #90a959">Cunning</span></strong>
+              </td>
+              <td>Deceit, fast talking, and working with animals.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="Scouting" class="tabcontent">
+        <h3>Scouting</h3>
+
+        <p>
+          Players looking to explore dangerous areas will need to be quiet and
+          observant. When scouting, do the following.
+        </p>
+
+        <ul>
+          <li>
+            Use the <strong>lowest</strong>
+            <strong><span style="color: #90a959">Cunning</span></strong> of
+            everyone participating, no roll required
+          </li>
+          <li>
+            Roll
+            <strong><span style="color: #268bd2">Perception</span></strong> and
+            take the <strong>highest</strong> result of everyone participating
+          </li>
+        </ul>
+
+        <p>
+          Better Cunning results will ensure that the scouts are not discovered,
+          while better Perception rolls will reveal information about the
+          surroundings (including the possibility of traps).
+        </p>
+      </div>
+
+      <div id="Camping" class="tabcontent">
+        <h3>Camping</h3>
+        <p>
+          Making camp gives characters the opportunity to recover and change
+          their Kits. However, resting in dangerous areas should be accompanies
+          by an overnight watch.
+        </p>
+
+        <ul>
+          <li>
+            Two characters roll
+            <strong><span style="color: #268bd2">Perception</span></strong> and
+            take the <strong>lowest</strong> result
+          </li>
+        </ul>
+
+        <p>
+          Poor Perception results may lead to unexpected ambushes while most of
+          the party is sleeping.
+        </p>
+
+        <h3 id="changing-kits">Changing Kits</h3>
+
+        <p>
+          Characters can swap out their current Kits for new ones provided the
+          following is true:
+        </p>
+
+        <ul>
+          <li>They’re somewhere safe (like a city or in camp)</li>
+          <li>They have at least one full hour of time</li>
+        </ul>
+
+        <p>
+          Alchemists reset their uses per Kit during this time, and Soldier can
+          reset their available Fortune Points.
+        </p>
+      </div>
+    </main>
+
+    {% include custom-foot.html %}
+  </body>
+</html>
+
+<script>
+  function openTab(evt, gameClassName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(gameClassName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>

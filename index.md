@@ -23,4 +23,4 @@ The other members of your group are **Players**. Each player will have their own
 
 # Quick Start
 
-Players familiar with Tabletop RPG's can open the [Interactive Game Sheets](https://docs.google.com/spreadsheets/d/1SPwXaMx6Yy55YtODYAHVMJWfV3SEqT7iQid76qavQCo/edit?usp=sharing) and jump right into making a character.
+Players familiar with Tabletop RPG's can open the [Interactive Game Sheets](https://docs.google.com/spreadsheets/d/1WPtus7bS82xkrfO319qbVZrZZzAWQ2S_yBq5coala7k/edit?usp=sharing) and jump right into making a character.
