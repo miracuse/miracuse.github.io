@@ -22,11 +22,13 @@
     <div id="Alchemist" class="tabcontent" style="display: block;">
      <h3 id="alchemist"><span style="color:#268bd2">Alchemist</span></h3>
 
+     <h3>Uses Per Rest</h3>
+
 <p>
-  Alchemist Kits have a limited number of uses based on the character’s
+  Each Alchemist Kit has a limited number of uses based on the character's
   <strong><span style="color:#268bd2">Knowledge</span></strong>.
-  Alchemists mark a box each time they use a Kit, and clear all boxes
-  when resting at camp.
+  Alchemists mark a box each time they use a specific Kit, and clear all boxes
+  for all Kits when resting at camp.
 </p>
 
 <table>
@@ -60,28 +62,81 @@
     <div id="Soldier" class="tabcontent">
      <h3 id="soldier"><span style="color:#d28445">Soldier</span></h3>
 
+     <h3>Fortune Points</h3>
+
 <p>
   Soldiers have a number of <strong>Fortune Points</strong> equal to
   two times their <strong><span style="color:#d28445">Bravery</span></strong>.
   Fortune Points can be used to reroll any action the Soldier takes.
 </p>
 
+<table>
+  <thead>
+    <tr>
+      <th>Bravery</th>
+      <th>Uses per Rest</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>☐ ☐ </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>☐ ☐ ☐ ☐</td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td>…</td>
+    </tr>
+  </tbody>
+</table>
 <ul>
   <li>Fortune Points can only be used once per roll</li>
-  <li>Fortune Points recover after resting to a maximum of the Soldier’s Bravery</li>
-  <li>Several Soldier Kits offer ways to attain more Fortune Points</li>
+  <li>Fortune Points recover after resting to a maximum of the Soldier's Bravery</li>
+  <li>Fortune Points can be used for any action where the player rolls, not just for combat</li>
 </ul>
+</div> 
 
-
-</div>
 
 
       <div id="Mage" class="tabcontent">
 <h3 id="mage"><span style="color:#953553">Mage</span></h3>
 
-<p>Mages can combine their Kits to produce stronger and more complex effects.</p>
+<h3>Cantrips</h3>
 
-<p>The player chooses two spirits, describes an effect they want to achieve, and rolls <strong><span style="color:#953553">Aura</span></strong> to see how well it goes. Using Kits in this fashion is called spellcasting, and requires the caster to mark one Mental Health box.</p>
+<p>Mage Kits are open ended in their use. The player chooses a spirit, describes an effect they want to achieve, and rolls <strong><span style="color:#953553">Aura</span></strong> to see how well it goes. Using a Mage Kit this way is called casting a <strong>Cantrip</strong>. Two examples are shown below, though more can be found on the <a
+  href="https://docs.google.com/spreadsheets/d/1WPtus7bS82xkrfO319qbVZrZZzAWQ2S_yBq5coala7k/edit?usp=sharing"
+  >Interactive Game Sheets</a
+></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cantrip</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Firebolt</td>
+      <td>Spirit of Fire; do Physical damage to an enemy by throwing fire.</td>
+    </tr>
+    <tr>
+      <td>Torch</td>
+      <td>Spirit of Fire; create a small flame above your palm that sheds light.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Spellcasting</h3>
+
+<p>Mages can combine two of their Kits to produce stronger and more complex effects. Using Kits in this fashion is called <strong>spellcasting</strong>, and requires the caster to mark damage for one of their Mental Health boxes. Having a higher <strong><span style="color:#953553">Focus</span></strong> level will allow Mages to cast more spells in a single day.</p>
 
 <table>
   <thead>
@@ -96,53 +151,44 @@
       <td>Spirit of Fire + Air; an area-of-effect Physical attack that sets the surroundings on fire.</td>
     </tr>
     <tr>
-      <td>Paralyzing Fear</td>
-      <td>Spirit of Fear + Binding; an area-of-effect Mental attack that prevents enemies from moving.</td>
-    </tr>
-    <tr>
       <td>Stone Wall</td>
       <td>Spirit of Earth + Warding; creates a wall of rock to serve as a barricade.</td>
-    </tr>
-    <tr>
-      <td>Muted Blur</td>
-      <td>Spirit of Darkness + Silence: an area-of-effect gives Advantage on Cunning rolls for going unnoticed.</td>
     </tr>
   </tbody>
 </table>
 </div>
+
+
     <div id="Scoundrel" class="tabcontent">
-<h3><span style="color:#90a959">The Scoundrel</span></h3>
-      <p>Scoundrels rarely attract notice unless they want to. By default, anyone not actively searching an area must have a higher <strong><span style="color:#268bd2">Perception</span></strong> than the Scoundrel’s <strong><span style="color:#90a959">Cunning</span></strong> to detect them. No rolls required.</p>
+<h3><span style="color:#90a959">Scoundrel</span></h3>
 
-<p>Besides going unnoticed, being in stealth provides several benefits:</p>
+<h3>Stealth</h3>
 
-<ul>
-  <li>Attacks from stealth do not require rolls, and count as an automatic 10</li>
-  <li>Enemies will not target the Scoundrel in combat</li>
-</ul>
+  <p>
+    Scoundrels rarely attract notice unless they want to. By default, anyone not actively
+    searching an area must have a higher <strong><span style="color:#268bd2">Perception</span></strong>
+    than the Scoundrel's <strong><span style="color:#90a959">Cunning</span></strong> to detect them.
+  </p>
 
-      <div id="Someone Else" class="tabcontent">
-      <h3>Someone Else</h3>
-      <p>Many adventurers borrow pieces from different trades, becoming something altogether unique. Some basic brainstorming is covered here, but more details can be found on the <a href="hybrid_classes.html">Hybrid Classes</a> page.</p>
-      <ul>
-        <li><b>Skills</b>: Three of Your Choice</li>
-        <li><b>Kits</b>: Two of Your Choice</li>
-      </ul>
-      <table>
-        <th>Equipment and Appearance</th>
-        <tr><td>* What does your character use to fight with? </td></tr>
-        <tr><td>* What sort of clothing or armor does your character wear?</td></tr>
-        <tr><td>* Does your character have any unique characteristics related to their class? </td></tr>
-        <tr><td>* Does your character have any tools or implements specific to their class?</td></tr>
-      </table>
-      
-      <h5>In combat...</h5>
-      <p>How does your character contribute in combat? Do they fight at range, or in close? Do they have particular tactics?</p>
-      <h5>Socially...</h5>
-      <p>Does your character have one of the four social Skills (Knowledge, Bravery, Aura, Cunning)? Do they have a specific style when communicating?</p>
-      <h5>While exploring...</h5>
-      <p>How does your character handle obstacles? Can they scout or take watch?</p>
-    </div> 
+  <p>
+    Unlike many other applications of Skills, <strong>Stealth</strong> does not require a dice roll.
+    The player character is assumed to be hidden unless they take a noticeable action, such as
+    attacking an enemy.
+  </p>
+
+<h3>Sneak Attacks</h3>
+
+<p>
+  Attacking while in Stealth counts as an automatic roll of 10, requiring no roll and dealing the 
+  maximum damage possible.
+</p>
+
+<p>
+  Sneak attacks can be a powerful tool, but players should note that performing one removes their 
+  character from Stealth. Unfortunate Scoundrels may find that their ambush has left them exposed to
+  retribution.
+</p>
+
     </main>
 
     {% include custom-foot.html %}

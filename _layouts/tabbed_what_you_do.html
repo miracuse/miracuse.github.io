@@ -10,27 +10,16 @@
 
       <!-- Tab links -->
       <div class="tab">
-        <button
-          class="tablinks active"
-          onclick="openTab(event, 'Skills')"
-        >
+        <button class="tablinks active" onclick="openTab(event, 'Skills')">
           Skills
         </button>
-        <button
-          class="tablinks"
-          onclick="openTab(event, 'Taking Action')"
-        >
+        <button class="tablinks" onclick="openTab(event, 'Taking Action')">
           Taking Action
         </button>
-        <button
-          class="tablinks"
-          onclick="openTab(event, 'Taking Damage')"
-        >
+        <button class="tablinks" onclick="openTab(event, 'Taking Damage')">
           Taking Damage
         </button>
-        <button class="tablinks" onclick="openTab(event, 'Kits')">
-          Kits
-        </button>
+        <button class="tablinks" onclick="openTab(event, 'Kits')">Kits</button>
       </div>
 
       <!-- Tab content -->
@@ -38,7 +27,8 @@
         <h3>Skills</h3>
         <p>
           Many of the things you do while adventuring will correspond to one of
-          the eight Skills.
+          the eight Skills. Each class specializes in two of the eight, making
+          them better suited for related tasks.
         </p>
 
         <table>
@@ -106,9 +96,9 @@
       <div id="Taking Action" class="tabcontent">
         <h3>Taking Action</h3>
         <p>
-          When your character takes an action using one of the eight Skills,
-          you’ll roll a ten-sided dice to determine how successful the action
-          is.
+          When a player decides to take an action with one of the eight Skills,
+          they'll roll a ten-sided die and add their character's Skill level.
+          The higher the outcome, the better the result.
         </p>
 
         <p>
@@ -117,10 +107,7 @@
           >
         </p>
 
-        <p>
-          Higher rolls and higher Skill levels will improve the chance that an
-          action succeeds.
-        </p>
+        <p>The table below shows how the dice roll translates to outcomes.</p>
 
         <table>
           <thead>
@@ -152,10 +139,44 @@
             </tr>
           </tbody>
         </table>
+
+        <h3 id="examples">Example</h3>
+
+        <p>When you want to do something as your character, tell the GM.</p>
+
+        <blockquote>
+          <p>I want to climb the cliffside.</p>
+        </blockquote>
+
+        <p>
+          The GM will tell you what to do next, or what happens next if the task
+          isn't too difficult.
+        </p>
+
+        <blockquote>
+          <p>“Okay. Roll Agility.”</p>
+        </blockquote>
+
+        <p>The outcome of many actions depends on your Skills and your luck.</p>
+
+        <blockquote>
+          <p>I have a 0 in Agility and rolled a -1. That's a total of -1.</p>
+        </blockquote>
+
+        <p>
+          The GM will interpret your results and tell you what happens next.
+        </p>
+
+        <blockquote>
+          <p>
+            “You got a -1? That's not good. You get to the top, but it took a
+            lot out of you. Mark a point of Physical damage.”
+          </p>
+        </blockquote>
       </div>
 
-      <div id="Examples" class="tabcontent">
-        <h3 id="examples">Examples</h3>
+      <!-- <div id="Examples" class="tabcontent">
+        <h3 id="examples">Example</h3>
 
         <p>When you want to do something as your character, tell the GM.</p>
 
@@ -169,7 +190,7 @@
 
         <p>
           The GM will tell you what to do next, or what happens next if the task
-          isn’t too difficult.
+          isn't too difficult.
         </p>
 
         <blockquote>
@@ -183,9 +204,9 @@
         <p>The outcome of many actions depends on your Skills and your luck.</p>
 
         <blockquote>
-          <p>I have a +2 in Physique and rolled a +1. That’s a total of +3.</p>
+          <p>I have a +2 in Physique and rolled a +1. That's a total of +3.</p>
 
-          <p>I have a 0 in Agility and rolled a -1. That’s a total of -1.</p>
+          <p>I have a 0 in Agility and rolled a -1. That's a total of -1.</p>
         </blockquote>
 
         <p>
@@ -199,17 +220,17 @@
           </p>
 
           <p>
-            “You got a -1? That’s not good. You get to the top, but it took a
+            “You got a -1? That's not good. You get to the top, but it took a
             lot out of you. Mark a point of Physical damage.”
           </p>
         </blockquote>
-      </div>
+      </div> -->
 
       <div id="Taking Damage" class="tabcontent">
         <h3 id="Taking Damage">Taking Damage</h3>
         <p>
           While adventuring, characters are guaranteed to find themselves in
-          harm’s way. When this happens the GM will tell you to mark
+          harm's way. When this happens the GM will tell you to mark
           <strong>Damage</strong>.
         </p>
 
@@ -291,11 +312,15 @@
 
       <div id="Kits" class="tabcontent">
         <h3 id="kits">Kits</h3>
-        <p>Each class has their own list of abilities, called Kits.</p>
-
         <p>
-          Players can choose up to four Kits at any given time and can change
-          Kits in-game on a regular basis.
+          Each class has their own list of abilities, called Kits. Players can
+          choose up to four Kits at any given time, and are encouraged to change
+          their Kits whenever their characters rest. A full list of Kits can be
+          found on the
+          <a
+            href="https://docs.google.com/spreadsheets/d/1WPtus7bS82xkrfO319qbVZrZZzAWQ2S_yBq5coala7k/edit?usp=sharing"
+            >Interactive Game Sheets</a
+          >.
         </p>
 
         <table>
@@ -314,15 +339,41 @@
               <td>Revolver</td>
               <td>Make a Perception attack and add +1.</td>
             </tr>
+            <tr>
+              <td>Soldier</td>
+              <td>Discipline</td>
+              <td>Iron Will</td>
+              <td>Gain an additional Mental Health box.</td>
+            </tr>
+            <tr>
+              <td>Mage</td>
+              <td>Elemental</td>
+              <td>Spirit of Flame</td>
+              <td>Allow for limited control and manifestation of fire.</td>
+            </tr>
+            <tr>
+              <td>Scoundrel</td>
+              <td>Criminal</td>
+              <td>Hard Bit</td>
+              <td>Gain an additional Physical Health box.</td>
+            </tr>
           </tbody>
         </table>
 
+        <h3>What Kind of Day Is Today?</h3>
+
         <p>
-          A full list of Kits can be found on the
-          <a
-            href="https://docs.google.com/spreadsheets/d/1WPtus7bS82xkrfO319qbVZrZZzAWQ2S_yBq5coala7k/edit?usp=sharing"
-            >Interactive Game Sheets</a
-          >.
+          Different Kits will make characters better suited for combat,
+          exploration, or social encounters. A Soldier expecting to spend the
+          day exploring might use a selection of Kits that help with hazards and
+          scouting. The same character might change their Kits to emphasize
+          combat if they find an orc warcamp.
+        </p>
+
+        <p>
+          The better equipped you are for the day ahead, the more successful you're
+          likely to be. Be sure to keep aware of what kinds of dangers are ahead and 
+          prepare appropriately.
         </p>
       </div>
     </main>
