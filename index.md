@@ -15,12 +15,8 @@ One person will act as the **Game Master** (GM). They'll be responsible for play
 
 The other members of your group are **Players**. Each player will have their own character that explores the world, facing challenges and helping to write the story of what happens.
 
-# Why to Play
+# Getting Started
 
-* You like novels about fantastical lands and the heroes who live in them
-* You're a fan of other Tabletop RPG's like *Dungeons and Dragons* and *Fate*
-* You want to try something new with your friends
+The GM should make a copy of the [Interactive Game Sheets](https://docs.google.com/spreadsheets/d/1cY4KWxl4hnFNa8pxADSHeHmIqlgBL4068uAnY5wtHQg/edit?usp=sharing) and share it with their players. 
 
-# Quick Start
-
-Players familiar with Tabletop RPG's can open the [Interactive Game Sheets](https://docs.google.com/spreadsheets/d/1cY4KWxl4hnFNa8pxADSHeHmIqlgBL4068uAnY5wtHQg/edit?usp=sharing) and jump right into making a character.
+Players should open the game sheets and follow the instructions within to make their character. The content on the site will help to explain how game is played.
