@@ -22,6 +22,9 @@
         <button class="tablinks" onclick="openTab(event, 'Camping')">
           Camping
         </button>
+        <button class="tablinks" onclick="openTab(event, 'Teamwork')">
+          Teamwork
+        </button>
       </div>
 
       <!-- Tab content -->
@@ -185,14 +188,27 @@
           while better Perception rolls will reveal information about the
           surroundings (including the possibility of traps).
         </p>
+
+        <h3>There and Back</h3>
+
+        <p>
+          By and large, Scouting takes place <strong>over a single action</strong>.
+          The player character quietly makes their way to the area being explored,
+          takes note of anything interesting, and reports back to their team.
+        </p>
+        <p>
+          Lengthier expeditions might be conducted if the party agrees to it, but
+          remember that spending too much time solo is dangerous, and not terribly
+          fun for the other players.
+        </p>
       </div>
 
       <div id="Camping" class="tabcontent">
         <h3>Camping</h3>
         <p>
           Making camp gives characters the opportunity to recover and change
-          their Kits. However, resting in dangerous areas should be accompanies
-          by an overnight watch.
+          their Kits. However, resting in dangerous areas should be accompanied
+          by a watch to prevent ambushes.
         </p>
 
         <ul>
@@ -202,11 +218,6 @@
             take the <strong>lowest</strong> result
           </li>
         </ul>
-
-        <p>
-          Poor Perception results may lead to unexpected ambushes while most of
-          the party is sleeping.
-        </p>
 
         <h3 id="changing-kits">Changing Kits</h3>
 
@@ -225,6 +236,34 @@
           reset their available Fortune Points.
         </p>
       </div>
+
+      <div id="Teamwork" class="tabcontent">
+        <h3>Teamwork</h3>
+        <p>
+          Players can help one another with actions provided that there's some 
+          narrative justification for doing so. The player being helped receives
+          Advantage on the relevant roll.
+        </p>
+
+        <blockquote>
+          <p>Player 1: I want to bend the metal bars on the prison door open.</p>
+
+          <p></p>GM: Okay, roll Physique.</p>
+
+          <p>Player 2: Wait. Can I help them?</p>
+
+          <p>GM: Do you have any points in Physique?</p>
+
+          <p>Player 2: No...</p> 
+
+          <p>Player 3: I do.</p> 
+
+          <p>GM: Alright, Player 3 can help. Player 1, roll with Advantage.</p>
+        </blockquote>
+
+        
+      </div>
+
     </main>
 
     {% include custom-foot.html %}
