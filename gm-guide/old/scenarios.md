@@ -1,9 +1,4 @@
----
-layout: default-gm
-title: Scenarios
-sidebar_link_gm: true
-sidebar_sort_order: 3
----
+
 
 # Scenarios
 

@@ -1,9 +1,3 @@
----
-layout: default-gm
-title: Making Bosses
-sidebar_link_gm: true
-sidebar_sort_order: 6
----
 
 # Making Bosses
 
@@ -18,7 +12,7 @@ Example bosses can be found in the [GM Helper Sheets](https://docs.google.com/sp
 
 A **Bandit Chief** is shown at the top with two stages. In the first stage, they have three Physical and three Mental health, as well as a template that lets them act two times in a round of combat.
 
-When the **Bandit Chief** would be taken out, they instead move to the second stage stat block. Their health resets to three Physical and three Mental. Their defense drops, making them easier to hit. And they aquire another template "Wide Swings" that changes their attacks to area-of-effect.
+When the **Bandit Chief** would be taken out, they instead move to the second stage stat block. Their health resets to three Physical and three Mental. Their defense drops, making them easier to hit. And they acquire another template "Wide Swings" that changes their attacks to area-of-effect.
 
 
 ### Difficulty Guidelines

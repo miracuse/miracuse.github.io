@@ -1,9 +1,3 @@
----
-layout: default-gm
-title: Threats
-sidebar_link_gm: true
-sidebar_sort_order: 4
----
 
 # Threats
 

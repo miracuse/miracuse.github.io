@@ -1,6 +1,6 @@
 ---
 layout: default-gm
-title: GM Guide
+title: About
 sidebar_link_gm: true
 sidebar_sort_order: 1
 ---

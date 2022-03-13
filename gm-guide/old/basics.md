@@ -1,10 +1,3 @@
----
-layout: default-gm
-title: Basics
-sidebar_link_gm: true
-sidebar_sort_order: 2
----
-
 # Basics
 
 As a GM, you have three basic [duties](https://fate-srd.com/fate-core/running-game):
