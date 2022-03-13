@@ -1,184 +1,274 @@
 ---
 layout: default-gm
 ---
+
 <h1 id="making-enemies">Making Enemies</h1>
 
 <!-- Tab links -->
 <div class="tab">
-  <button
-    class="tablinks active"
-    onclick="openTab(event, 'The Basic Mook')"
-  >
+  <button class="tablinks active" onclick="openTab(event, 'The Basic Mook')">
     The Basic Mook
   </button>
-  <button class="tablinks" onclick="openTab(event, 'Traits')">
-    Traits
-  </button>
-  <button class="tablinks" onclick="openTab(event, 'Bosses')">
-    Bosses
-  </button>
-  <button class="tablinks" onclick="openTab(event, 'Advice')">
-    Advice
-  </button>
+  <button class="tablinks" onclick="openTab(event, 'Traits')">Traits</button>
+  <button class="tablinks" onclick="openTab(event, 'Bosses')">Bosses</button>
+  <button class="tablinks" onclick="openTab(event, 'Players')">Players</button>
+  <button class="tablinks" onclick="openTab(event, 'Advice')">Advice</button>
 </div>
 
 <!-- Tab content -->
 <div id="The Basic Mook" class="tabcontent" style="display: block">
-<h3 id="the-basic-mook">The Basic Mook</h3>
+  <h3 id="the-basic-mook">The Basic Mook</h3>
 
-<p>The <strong>Basic Mook</strong> is the simplest possible enemy. It could be a bandit, a wolf, a goblin,
-or any other faceless NPC threatening the players.</p>
+  <p>
+    The <strong>Basic Mook</strong> is the simplest possible enemy. It could be
+    a bandit, a wolf, a goblin, or any other faceless NPC threatening the
+    players.
+  </p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Health</th>
-      <th>Defense</th>
-      <th>Offense</th>
-      <th>Damage</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Bandit</td>
-      <td>1/1</td>
-      <td>0/0</td>
-      <td>1/0</td>
-      <td>1/0</td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Health</th>
+        <th>Defense</th>
+        <th>Offense</th>
+        <th>Damage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bandit</td>
+        <td>1/1</td>
+        <td>0/0</td>
+        <td>1/0</td>
+        <td>1/0</td>
+      </tr>
+    </tbody>
+  </table>
 
-<p>Values on the left-side are Physical, while values on the right are Mental.</p>
+  <p>
+    Values on the left-side are Physical, while values on the right are Mental.
+  </p>
 
-<ul>
-  <li>
-    <p><strong>Health</strong>: Receiving this much damage from either Physical or Mental will take this character out.</p>
-  </li>
-  <li>
-    <p><strong>Defense</strong>: The Player must roll higher than this value to hurt this character.</p>
-  </li>
-  <li>
-    <p><strong>Offense</strong>: The Player must roll this value or higher to avoid being hurt by this character.</p>
-  </li>
-  <li>
-    <p><strong>Damage</strong>: The amount and type of damage this character does when they hit.</p>
-  </li>
-</ul>
-
-<p>Reading the Bandit’s combat statistics we see that it isn’t very strong.</p>
-
-<blockquote>
   <ul>
     <li>
-      <p>They have one Physical and one Mental damage box.</p>
+      <p>
+        <strong>Health</strong>: Receiving this much Physical or Mental damage
+        will take this character out.
+      </p>
     </li>
     <li>
-      <p>They take damage from any attack that rolls above a 0.</p>
+      <p>
+        <strong>Defense</strong>: The Player must roll higher than this value to
+        hurt this character.
+      </p>
     </li>
     <li>
-      <p>They deal damage if a Player rolls a 0 or lower on Agility (the default for Physical attacks).</p>
+      <p>
+        <strong>Offense</strong>: The Player must roll this value or higher to
+        avoid being hurt by this character. Physical attacks target Agility,
+        while Mental attacks target Bravery.
+      </p>
     </li>
     <li>
-      <p>When they deal damage, they force a player to mark a single Physical damage box.</p>
+      <p>
+        <strong>Damage</strong>: The amount of damage this character does when
+        they hit.
+      </p>
     </li>
   </ul>
-</blockquote>
 
+  <p>
+    Reading the Bandit’s combat statistics we see that it isn’t very strong.
+  </p>
+
+  <blockquote>
+    <ul>
+      <li>
+        <p>They have one Physical and one Mental damage box.</p>
+      </li>
+      <li>
+        <p>They take damage from any attack that rolls above a 0.</p>
+      </li>
+      <li>
+        <p>They deal damage if a Player rolls a 0 or lower on Agility.</p>
+      </li>
+      <li>
+        <p>
+          When they deal damage, they force a player to mark a single Physical
+          damage box.
+        </p>
+      </li>
+    </ul>
+  </blockquote>
 </div>
 
 <div id="Traits" class="tabcontent">
-<h3 id="traits">Traits</h3>
+  <h3 id="traits">Traits</h3>
 
-<p>Basic Mooks are good for letting Players show off their skills against
-easy targets. Fairly often though, you’ll want to give them a bigger
-challenge in combat. The way that’s done is through <strong>Traits</strong>.</p>
+  <p>
+    Basic Mooks are good for letting Players show off their skills against easy
+    targets. Fairly often though, you’ll want to give them a bigger challenge in
+    combat. The way that’s done is through <strong>Traits</strong>.
+  </p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Health</th>
-      <th>Defense</th>
-      <th>Offense</th>
-      <th>Damage</th>
-      <th>Trait</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Beefy Bandit</td>
-      <td>3/1</td>
-      <td>0/0</td>
-      <td>1/0</td>
-      <td>1/0</td>
-      <td>Tough</td>
-    </tr>
-    <tr>
-      <td>Swift Wolf</td>
-      <td>1/1</td>
-      <td>2/0</td>
-      <td>1/0</td>
-      <td>1/0</td>
-      <td>Fast</td>
-    </tr>
-    <tr>
-      <td>Cult Mage</td>
-      <td>1/3</td>
-      <td>0/0</td>
-      <td>0/1</td>
-      <td>0/1</td>
-      <td>Mentalist</td>
-    </tr>
-    <tr>
-      <td>Grenadier</td>
-      <td>1/1</td>
-      <td>0/0</td>
-      <td>1/0</td>
-      <td>1/0</td>
-      <td>Bomber</td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Health</th>
+        <th>Defense</th>
+        <th>Offense</th>
+        <th>Damage</th>
+        <th>Trait</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Beefy Bandit</td>
+        <td>3/1</td>
+        <td>0/0</td>
+        <td>1/0</td>
+        <td>1/0</td>
+        <td>Tough</td>
+      </tr>
+      <tr>
+        <td>Swift Wolf</td>
+        <td>1/1</td>
+        <td>2/0</td>
+        <td>1/0</td>
+        <td>1/0</td>
+        <td>Swift</td>
+      </tr>
+      <tr>
+        <td>Cult Mage</td>
+        <td>1/3</td>
+        <td>0/0</td>
+        <td>0/1</td>
+        <td>0/1</td>
+        <td>Mentalist</td>
+      </tr>
+      <tr>
+        <td>Grenadier</td>
+        <td>1/1</td>
+        <td>0/0</td>
+        <td>1/0</td>
+        <td>1/0</td>
+        <td>Bomber</td>
+      </tr>
+    </tbody>
+  </table>
 
-<p>Traits change the combat stats of an enemy. A more comprehensive list
-can be found on the <a href="https://docs.google.com/spreadsheets/d/1NhqEjr0m4iug3n5NBa_rJ18LO9duhfDB2b4FYmKKZ4w/edit?usp=sharing">GM Helper Sheets</a>,
-but the traits shown above are described here.</p>
+  <p>
+    Traits change the combat stats of an enemy. A more comprehensive list can be
+    found on the
+    <a
+      href="https://docs.google.com/spreadsheets/d/1NhqEjr0m4iug3n5NBa_rJ18LO9duhfDB2b4FYmKKZ4w/edit?usp=sharing"
+      >GM Helper Sheets</a
+    >, but a few traits are described here.
+  </p>
 
-<ul>
-  <li>
-    <p><strong>Tough</strong>: Add +2 Physical health boxes</p>
-  </li>
-  <li>
-    <p><strong>Swift</strong>: Add +2 Physical defense</p>
-  </li>
-  <li>
-    <p><strong>Mentalist</strong>: Add +2 Mental health boxes, attacks target Bravery and deal Mental damage</p>
-  </li>
-  <li>
-    <p><strong>Grenadier</strong>: Gain one use of the Alchemist Kit <em>Greek Fire</em></p>
-  </li>
-</ul>
-
+  <ul>
+    <li>
+      <p><strong>Tough</strong>: Add +2 Physical Health boxes</p>
+    </li>
+    <li>
+      <p><strong>Willful</strong>: Add +2 Mental Health boxes</p>
+    </li>
+    <li>
+      <p><strong>Swift</strong>: Add +2 Physical Defense</p>
+    </li>
+    <li>
+      <p><strong>Hardy</strong>: Add +1 Physical and Mental Defense</p>
+    </li>
+    <li>
+      <p><strong>Accurate</strong>: Add +2 to Offense</p>
+    </li>
+    <li>
+      <p>
+        <strong>Mentalist</strong>: Add +2 Mental Health boxes, attacks target
+        Bravery and deal Mental damage
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>Grenadier</strong>: Gain one use of the Alchemist Kit
+        <em>Greek Fire</em>
+      </p>
+    </li>
+    <li>
+      <p><strong>Dangerous</strong>: Add +1 damage</p>
+    </li>
+  </ul>
 </div>
 
 <div id="Bosses" class="tabcontent">
-<h3 id="bosses">Bosses</h3>
+  <h3 id="bosses">Bosses</h3>
 
-<p><strong>Bosses</strong> are the stronger counterpart to Mooks. Besides higher stats, two distinguishing
-characteristics of bosses are:</p>
+  <p>
+    <strong>Bosses</strong> are the stronger counterpart to Mooks. Besides
+    higher stats, two distinguishing characteristics of bosses are:
+  </p>
 
-<ul>
-  <li>
-    <p><strong>Multiple Turns</strong>: Bosses take multiple actions in combat, as though they were two characters instead of one.</p>
-  </li>
-  <li>
-    <p><strong>Stages</strong>: Bosses gain and lose abilities after taking sufficient damage.</p>
-  </li>
-</ul>
+  <ul>
+    <li>
+      <p>
+        <strong>Multiple Turns</strong>: Bosses take multiple actions in combat,
+        as though they were two characters instead of one.
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>Stages</strong>: Bosses gain and lose abilities after taking
+        sufficient damage.
+      </p>
+    </li>
+  </ul>
 
-<hr />
+  <hr />
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Health</th>
+        <th>Defense</th>
+        <th>Offense</th>
+        <th>Damage</th>
+        <th>Trait</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bandit Chief (First Stage)</td>
+        <td>3/3</td>
+        <td>1/1</td>
+        <td>3/0</td>
+        <td>1/0</td>
+        <td>Tough, Willful, Hardy, Accurate</td>
+      </tr>
+      <tr>
+        <td>Bandit Chief (Second Stage)</td>
+        <td>3/3</td>
+        <td>0/0</td>
+        <td>1/0</td>
+        <td>2/0</td>
+        <td>Tough, Willful, Dangerous</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    The Bandit Chief above has two stages. Instead of being taken out when they
+    run out of health, they move to their second stage, dealing an additional
+    point of damage on successful attacks but becoming easier to hit and less accurate.
+  </p>
+</div>
+
+<div id="Players" class="tabcontent">
+<h3 id="players">Players</h3>
+
+<p>Enemies are, of course, not the only ones in combat. The <strong>Players</strong> are the stars of the show. Without any Kits, the Players can be represented as below.</p>
 
 <table>
   <thead>
@@ -188,49 +278,85 @@ characteristics of bosses are:</p>
       <th>Defense</th>
       <th>Offense</th>
       <th>Damage</th>
-      <th>Trait</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Bandit Chief (First Stage)</td>
-      <td>3/2</td>
-      <td>1/1</td>
-      <td>3/0</td>
-      <td>1/0</td>
-      <td> </td>
+      <td>Alchemist</td>
+      <td>3/3</td>
+      <td>0/0</td>
+      <td>2/0</td>
+      <td>x/0</td>
     </tr>
     <tr>
-      <td>Bandit Chief (Second Stage)</td>
-      <td>3/2</td>
-      <td>1/1</td>
-      <td>1/0</td>
+      <td>Soldier</td>
+      <td>5/3</td>
+      <td>0/2</td>
       <td>2/0</td>
-      <td> </td>
+      <td>x/0</td>
+    </tr>
+    <tr>
+      <td>Mage</td>
+      <td>3/5</td>
+      <td>0/0</td>
+      <td>2/0</td>
+      <td>x/0</td>
+    </tr>
+    <tr>
+      <td>Scoundrel</td>
+      <td>3/3</td>
+      <td>2/0</td>
+      <td>2/0</td>
+      <td>x/0</td>
     </tr>
   </tbody>
 </table>
 
-<p>The Bandit Chief above has two stages. Instead of being taken out when they run out of health,
-they move to their second stage, dealing an additional point of damage on successful attacks but
-becoming less accurate.</p>
-
+<ul>
+  <li>
+    <p><strong>Health</strong>: Improved by points in Physique (Physical) and Focus (Mental).</p>
+  </li>
+  <li>
+    <p><strong>Defense</strong>: Improved by points in Agility (Physical) and Bravery (Mental).</p>
+  </li>
+  <li>
+    <p><strong>Offense</strong>: The relevant Skill depends on class (Perception, Physique, Aura, Agility).</p>
+  </li>
+  <li>
+    <p><strong>Damage</strong>: Deals one damage on a successful hit, but deals two on a critical (rolling a 10).</p>
+  </li>
+</ul>
 </div>
 
 <div id="Advice" class="tabcontent">
+  <h3 id="advice">Advice</h3>
 
-<h3 id="advice">Advice</h3>
+  <p>
+    Keeping combat lively and interesting isn’t easy. This section provides tips
+    to keep the players engaged.
+  </p>
 
-<p>Keeping combat lively and interesting isn’t easy. This section provides tips to keep
-the players engaged.</p>
+  <p>
+    <strong><em>Fiction First</em></strong>
+  </p>
 
-<p><strong><em>Fiction First</em></strong></p>
+  <p>
+    Bear in mind that most fights aren’t to the death. Many enemies have their
+    own objectives. Bandits will flee if they’re losing, intelligent creatures
+    will target Mages with arrows, and guards will protect the vulnerable
+    members of their party.
+  </p>
 
-<p>Bear in mind that most fights aren’t to the death. Many enemies have their own objectives.
-Bandits will flee if they’re losing, intelligent creatures will target Mages with arrows,
-and guards will protect the vulnerable members of their party.</p>
+  <p>
+    <strong><em>Drama</em></strong>
+  </p>
 
-<p><strong><em>Drama</em></strong></p>
-
-<p>Take action if you find that a fight has become dull and predictable. If the enemies are losing badly, break out of the skirmish and describe them running away or the players quickly mopping things up. If neither the party nor the enemies are giving any ground, introduce a complication. Have a third party stumble on the scene, or describe some impending threat like a river of lava slowly rising.</p>
+  <p>
+    Take action if you find that a fight has become dull and predictable. If the
+    enemies are losing badly, break out of the skirmish and describe them
+    running away or the players quickly mopping things up. If neither the party
+    nor the enemies are giving any ground, introduce a complication. Have a
+    third party stumble on the scene, or describe some impending threat like a
+    river of lava slowly rising.
+  </p>
 </div>
