@@ -22,4 +22,4 @@ Scenarios are short adventures that the players work through. Some examples migh
 
 ### How to Make a Scenario
 
-An example scenario and detailed instructions can be found in the [GM Helper Sheets](https://docs.google.com/spreadsheets/d/1NhqEjr0m4iug3n5NBa_rJ18LO9duhfDB2b4FYmKKZ4w/edit?usp=sharing).
+An example scenario and detailed instructions can be found in the [GM Helper Sheets](https://docs.google.com/spreadsheets/d/1wxh7dnNsPwu2GWNAlKc6xBhLHH4P1KA8cSo2YKU2nww/edit#gid=416188722).

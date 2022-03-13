@@ -8,7 +8,7 @@ A boss will have multiple stat blocks, one for each of their Stages. After susta
 
 ### Example: Bandit Chief
 
-Example bosses can be found in the [GM Helper Sheets](https://docs.google.com/spreadsheets/d/1NhqEjr0m4iug3n5NBa_rJ18LO9duhfDB2b4FYmKKZ4w/edit?usp=sharing).
+Example bosses can be found in the [GM Helper Sheets](https://docs.google.com/spreadsheets/d/1wxh7dnNsPwu2GWNAlKc6xBhLHH4P1KA8cSo2YKU2nww/edit#gid=416188722).
 
 A **Bandit Chief** is shown at the top with two stages. In the first stage, they have three Physical and three Mental health, as well as a template that lets them act two times in a round of combat.
 

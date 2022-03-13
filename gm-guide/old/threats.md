@@ -1,7 +1,7 @@
 
 # Threats
 
-Threats are anything that endanger the players. They can be environmental **Hazards** like falling boulders, nameless **Mooks** like goblins, or more imposing **Bosses**. Examples of threats can be found in the [GM Helper Sheets](https://docs.google.com/spreadsheets/d/1NhqEjr0m4iug3n5NBa_rJ18LO9duhfDB2b4FYmKKZ4w/edit?usp=sharing).
+Threats are anything that endanger the players. They can be environmental **Hazards** like falling boulders, nameless **Mooks** like goblins, or more imposing **Bosses**. Examples of threats can be found in the [GM Helper Sheets](https://docs.google.com/spreadsheets/d/1wxh7dnNsPwu2GWNAlKc6xBhLHH4P1KA8cSo2YKU2nww/edit#gid=416188722).
 
 
 ### Hazards
