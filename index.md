@@ -17,6 +17,6 @@ The other members of your group are **Players**. Each player will have their own
 
 # Getting Started
 
-The GM should make a copy of the [Interactive Game Sheets](https://docs.google.com/spreadsheets/d/1brFenR5vdGR1WZTATQ3dmPmJ4uAa26q3z9aLEx-tAqI/edit?usp=sharing) and share it with their players. 
+The GM should make a copy of the [Interactive Game Sheet](https://docs.google.com/spreadsheets/d/1brFenR5vdGR1WZTATQ3dmPmJ4uAa26q3z9aLEx-tAqI/edit?usp=sharing) and share it with their players. 
 
 Players should open the game sheets and follow the instructions within to make their character. The content on the site will help to explain how game is played.

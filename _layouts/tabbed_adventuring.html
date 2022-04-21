@@ -5,8 +5,11 @@ layout: default
 
       <!-- Tab links -->
       <div class="tab">
-        <button class="tablinks active" onclick="openTab(event, 'Skirmishing')">
-          Skirmishing
+        <button class="tablinks active" onclick="openTab(event, 'Skirmish')">
+          Skirmish
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Combat')">
+          Combat
         </button>
         <button class="tablinks" onclick="openTab(event, 'Persuasion')">
           Persuasion
@@ -23,8 +26,8 @@ layout: default
       </div>
 
       <!-- Tab content -->
-      <div id="Skirmishing" class="tabcontent" style="display: block">
-        <h3>Skirmishing</h3>
+      <div id="Skirmish" class="tabcontent" style="display: block">
+        <h3>Skirmish</h3>
         <p>
           A skirmish is any situation where several characters need to take
           different actions and <strong>turn order matters</strong>. The most
@@ -43,6 +46,30 @@ layout: default
             of the dice).
           </li>
         </ul>
+
+        <h3>Actions</h3>
+        <p>
+          In general, a player's turn ends after they <b>roll dice</b> or do something time consuming. For example:
+        </p>
+        
+        <ul>
+          <li>Swinging a sword</li>
+          <li>Drinking an elixir</li>
+          <li>Casting a spell</li>
+          <li>Intimidating an enemy</li>
+        </ul>
+
+        <p>
+          Actions and turn order rules aren't set in stone. There are plenty of things that won't take up an entire action, like saying a few words to another person. There are also times when it makes sense for a character to react outside of their turn, like stepping into oncoming fire to protect an ally.Ultimately, <b>a player's turn ends when it makes narrative sense</b>. The GM will provide guidance as necessary.
+        </p>
+        
+      </div>
+
+      <div id="Combat" class="tabcontent">
+        <h3>Combat</h3>
+        <p>
+          Combat is a common type of skirmish where the objective involves defeating enemies, typically by inflicting harm.
+        </p>
 
         <h3>Using Skills to Cause Harm</h3>
 
@@ -110,6 +137,7 @@ layout: default
             </tr>
           </tbody>
         </table>
+
       </div>
 
       <div id="Persuasion" class="tabcontent">
@@ -255,7 +283,5 @@ layout: default
 
           <p>GM: Alright, Player 3 can help. Player 1, roll with Advantage.</p>
         </blockquote>
-
-        
       </div>
 
