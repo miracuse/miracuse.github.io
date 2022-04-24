@@ -5,19 +5,75 @@ layout: default
 
       <!-- Tab links -->
       <div class="tab">
-        <button
-          class="tablinks active"
-          onclick="openTab(event, 'Overview')"
-        >
-          Overview
-        </button>
-        <button class="tablinks" onclick="openTab(event, 'Considerations')">
-          Considerations
-        </button>
+      <button
+      class="tablinks active"
+      onclick="openTab(event, 'Description')"
+      >
+      Description
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'Mechanics')">
+        Overview
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'Considerations')">
+        Considerations
+      </button>
       </div>
 
+
       <!-- Tab content -->
-      <div id="Overview" class="tabcontent" style="display: block">
+      <div id="Description" class="tabcontent" style="display: block">
+        <h3>Someone Else</h3>
+        <p>
+          Many adventurers borrow pieces from different trades, becoming
+          something altogether unique. 
+        </p>
+        <ul>
+          <li><b>Skills</b>: Three of Your Choice</li>
+          <li><b>Kits</b>: Two of Your Choice</li>
+        </ul>
+        <table>
+          <th>Equipment and Appearance</th>
+          <tr>
+            <td>* What does your character use to fight with?</td>
+          </tr>
+          <tr>
+            <td>* What sort of clothing or armor does your character wear?</td>
+          </tr>
+          <tr>
+            <td>
+              * Does your character have any unique characteristics related to
+              their class?
+            </td>
+          </tr>
+          <tr>
+            <td>
+              * Does your character have any tools or implements specific to
+              their class?
+            </td>
+          </tr>
+        </table>
+
+        <hr />
+
+        <h5>In combat...</h5>
+        <p>
+          How does your character contribute in combat? Do they fight at range,
+          or in close? Do they have particular tactics?
+        </p>
+        <h5>Socially...</h5>
+        <p>
+          Does your character have one of the four social Skills (Knowledge, 
+          Bravery, Aura, Cunning)? Do they have a specific style when
+          communicating?
+        </p>
+        <h5>While exploring...</h5>
+        <p>
+          How does your character handle obstacles? Can they scout or take
+          watch?
+        </p>
+      </div>
+
+      <div id="Mechanics" class="tabcontent">
         <h3>How To Create a Hybrid Class</h3>
 
         <ol>
@@ -82,7 +138,7 @@ layout: default
       </div>
 
       <div id="Considerations" class="tabcontent">
-        <h3 id="differences-between-base-and-hybrid-classes">
+        <h3 >
           Considerations
         </h3>
 

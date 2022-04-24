@@ -1,8 +1,8 @@
 ---
-layout: tabbed_who_you_are
-title: Who You Are
+layout: tabbed_mage
+title: The Mage
 sidebar_link: true
-sidebar_sort_order: 2
+sidebar_sort_order: 5
 ---
 
 <!-- The content for this page is under layouts/.

@@ -1,9 +1,3 @@
----
-layout: tabbed_class_mechanics
-title: Class Mechanics
-sidebar_link: true
-sidebar_sort_order: 5
----
 
 <!-- The content for this page is under layouts/.
 

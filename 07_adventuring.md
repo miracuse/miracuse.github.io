@@ -1,8 +1,8 @@
 ---
-layout: tabbed_what_you_do
-title: What You Do
+layout: tabbed_adventuring
+title: Adventuring
 sidebar_link: true
-sidebar_sort_order: 3
+sidebar_sort_order: 8
 ---
 
 <!-- The content for this page is under layouts/.

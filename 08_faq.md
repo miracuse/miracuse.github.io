@@ -2,7 +2,7 @@
 layout: accordion_faq
 title: FAQ
 sidebar_link: true
-sidebar_sort_order: 7
+sidebar_sort_order: 9
 ---
 
 <!-- The content for this page is under layouts/.
