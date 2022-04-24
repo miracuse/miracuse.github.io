@@ -58,6 +58,8 @@ body {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
+  background: $body-bg;
+  color: $body-color;
 
   > .content {
     flex-grow: 1;
