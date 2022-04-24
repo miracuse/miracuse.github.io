@@ -1,5 +1,5 @@
 ---
-layout: tabbed_what_you_do
+layout: tabbed_index
 title: About
 sidebar_link: true
 sidebar_sort_order: 1
