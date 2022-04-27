@@ -10,8 +10,8 @@ layout: default
     Description
   </button>
   <button class="tablinks" onclick="openTab(event, 'Alchemy')">Alchemy</button>
-  <button class="tablinks" onclick="openTab(event, 'Bombs and Poisons')">Bombs and Poisons</button>
-  <button class="tablinks" onclick="openTab(event, 'Drugs and Tools')">Drugs and Tools</button>
+  <button class="tablinks" onclick="openTab(event, 'Alchemic Items')">Alchemic Items</button>
+  <button class="tablinks" onclick="openTab(event, 'Gameplay')">Gameplay</button>
 </div>
 </div>
 
@@ -54,26 +54,6 @@ layout: default
       </td>
     </tr>
   </table>
-  <hr />
-
-  <h5>In combat...</h5>
-  <p>
-    The Alchemist keeps their distance, taking shots at range and spreading
-    hazards across the battlefield with grenades. With prior warning they can
-    hand out potions and poison weapons to prepare their party for trouble.
-  </p>
-  <h5>Socially...</h5>
-  <p>
-    The Alchemist specializes in debate. Their rhetorical technique is
-    well-received by the wealthy and educated, but generally ineffectual towards
-    less affluent listeners.
-  </p>
-  <h5>While exploring...</h5>
-  <p>
-    The Alchemist makes for an excellent lookout. Their sharp senses and wealth
-    of lore will keep the party informed of approaching dangers well before they
-    arrive.
-  </p>
 </div>
 
 <div id="Alchemy" class="tabcontent">
@@ -83,8 +63,8 @@ layout: default
 
   <p>
     Each Alchemist Kit has a limited number of uses based on the character's
-    <strong><span style="color: #268bd2">Knowledge</span></strong
-    >. Alchemists mark a box each time they use a specific Kit, and clear all
+    <strong><span style="color: #268bd2">Knowledge</span></strong>.
+    Alchemists mark a box each time they use a specific Kit, and recover all
     boxes for all Kits when resting at camp.
   </p>
 
@@ -124,12 +104,31 @@ layout: default
   </p>
 </div>
 
-<div id="Bombs and Poisons" class="tabcontent">
-  <h3><span style="color: #268bd2">Bombs and Poisons</span></h3>
+<div id="Alchemic Items" class="tabcontent">
+  <h3><span style="color: #268bd2">Alchemic Items</span></h3>
+  <h3>Drugs</h3>
+
+  <p>
+    Drugs are items that player characters can consume to receive beneficial effects.
+    Many restore Physical and Mental Health, allowing characters to continue adventuring
+    long past their normal limits.
+  </p>
+
+  <p>
+    Alchemists commonly hand out Drugs so that other characters will have them on hand
+    during dangerous situations. The responsibility for managing who has what item at
+    any given time belongs to the Alchemist.
+  </p>
+
+  <ul>
+    <li>Using a Drug in combat does take an Action.</li>
+    <li>Incapacitated characters cannot use Drugs.</li>
+  </ul>
+
   <h3>Bombs</h3>
 
   <p>
-    In addition to being producing an area of effect attack, most bombs also
+    In addition to being producing an area of effect attack, many bombs also
     create environmental hazards. Careful use of these can control the state of
     a battlefield.
   </p>
@@ -151,34 +150,37 @@ layout: default
     they're breathed in, touched with bare skin, or consumed. They're generally
     ineffective in combat.
   </p>
-</div>
-
-<div id="Drugs and Tools" class="tabcontent">
-  <h3><span style="color: #268bd2">Drugs and Tools</span></h3>
-  <h3>Drugs</h3>
-
-  <p>
-    Drugs are items that player characters can consume to receive beneficial effects.
-    Many restore Physical and Mental Health, allowing characters to continue adventuring
-    long past their normal limits.
-  </p>
-
-  <p>
-    Alchemists commonly hand out Drugs so that other characters will have them on hand
-    during dangerous situations. The responsibility for managing who has what item at
-    any given time belongs to the Alchemist.
-  </p>
-
-  <ul>
-    <li>Using a Drug in combat does take an Action.</li>
-    <li>Incapacitated characters cannot use Drugs.</li>
-  </ul>
 
   <h3>Tools</h3>
 
   <p>
     Tools are magical items that the Alchemist preps each day. Like other Alchemy
     Kits, they have a limited number of uses. However, their effects tend to be
-    longer lived or permanent, depending on the item.
+    longer lived.
   </p>
 </div>
+
+
+<div id="Gameplay" class="tabcontent">
+  <h3><span style="color: #268bd2">Alchemist Gameplay</span></h3>
+  <h3>In combat...</h3>
+  <p>
+    The Alchemist keeps their distance, taking shots at range with 
+    <b><span style="color: #268bd2">Perception</span></b> and spreading
+    hazards across the battlefield with grenades. They may hand out potions 
+    and poisons before a fight begins.
+  </p>
+  <h3>Socially...</h3>
+  <p>
+    The Alchemist specializes in debate using <b><span style="color: #268bd2">Knowledge</span></b>.
+    Their rhetorical technique is
+    well-received by the wealthy and educated, but not as effective on
+    less affluent listeners.
+  </p>
+  <h3>While exploring...</h3>
+  <p>
+    The Alchemist makes for an excellent lookout. Their sharp senses and wealth
+    of lore will keep the party informed of approaching dangers well before they
+    arrive.
+  </p>
+  </div>

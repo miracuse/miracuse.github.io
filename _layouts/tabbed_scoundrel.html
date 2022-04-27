@@ -15,6 +15,7 @@ layout: default
   <button class="tablinks" onclick="openTab(event, 'Stealth')">
     Stealth
   </button>
+  <button class="tablinks" onclick="openTab(event, 'Gameplay')">Gameplay</button>
 </div>
 
 <!-- Tab content -->
@@ -56,29 +57,6 @@ layout: default
       </td>
     </tr>
   </table>
-
-  <hr />
-
-  <h5>In combat...</h5>
-  <p>
-    The Scoundrel waits for the right opportunity to dispatch an enemy, showing
-    a preference for dangerous targets like mages. Once exposed they might make
-    a hasty getaway, or throw themselves into the fight with a frenzy of quick
-    strikes.
-  </p>
-  <h5>Socially...</h5>
-  <p>
-    The Scoundrel bewilders and confuses with fast-talk. Perhaps because of
-    their ability to present an friendly face, many also have an affinity for
-    working with animals. Listeners that prefer a straightforward response will
-    quickly tire of the Scoundrel's evasive speech.
-  </p>
-  <h5>While exploring...</h5>
-  <p>
-    The Scoundrel is nearly always the scout of a party. They move unseen
-    through dangerous areas, ever ready to book a fast retreat should danger
-    arise.
-  </p>
 </div>
 
 <div id="Prep" class="tabcontent">
@@ -119,42 +97,101 @@ layout: default
 
   <ul>
     <li><b>Change a Kit</b> without setting up camp</li>
-    <li>Use <b>I Know a Guy</b></li>
-    <li>Use <b>What You Needed</b></li>
+    <li><b>I Know a Guy</b></li>
+    <li><b>What You Needed</b></li>
+    <li><b>Assume a Disguise</b></li>
   </ul>
 
-  <h3>I Know a Guy</h3>
-  <p>
-    A Scoundrel can declare that his character <strong>Knows a Guy</strong> by
-    expending a Prep Point. The player describes a new non-playable character
-    with some particular talent or knowledge that can help the party. The player
-    should provide a name, description, and an explanation of how their
-    character knows this person.
-  </p>
-</div>
+<h3>Change a Kit</h3>
+<p>
+  The Scoundrel can swap one of their equipped Kits for another they have
+  access to, provided that they aren't currently in combat or otherwise
+  preoccupied.
+</p>
+
+<p>
+  <b>Note:</b> For Hybrid Class characters, changing Kits in this way does
+  not reset Alchemist Use per Day limits.
+</p>
+
+<h3>I Know a Guy</h3>
+<p>
+  A Scoundrel can declare that his character <strong>Knows a Guy</strong> by
+  expending a Prep Point. The player describes a new non-playable character
+  with some particular talent or knowledge that can help the party. The player
+  should provide a name, description, and an explanation of how their
+  character knows this person.
+</p>
 
 <h3>What You Needed</h3>
 <p>
   In the event that a Scoundrel needs some item that might be unusual for them
-  to carry, they can use
-  <b>What You Needed</b> by expending a Prep Point.
+  to carry, they can use <b>What You Needed</b> to declare that they have that
+  item, provided that there's a plausible reason for them to have it in hand.
+</p>
+
+<h3>Assume a Disguise</h3>
+<p>
+  The Scoundrel changes their appearance and mannerisms to mimic someone else.
+  Being in disguise functions similarly to stealth and is discussed in more detail
+  under that section.
 </p>
 </div>
 
 <div id="Stealth" class="tabcontent">
   <h3><span style="color: #90a959">Stealth</span></h3>
-
-<h3>Stealth and Sneak Attacks</h3>
+<h3>Moving Quietly</h3>
 
 <p>
-  By default, anyone not actively searching an area must have a higher
+  The Scoundrel is always assumed to be in a state of stealth unless the
+  player or GM says otherwise. This might entail hiding in shadows, blending
+  in with a crowd, or simply moving in a way that doesn't draw attention.
+</p>
+
+<p>
+  Anyone not actively searching an area must have a higher
   <strong><span style="color: #268bd2">Perception</span></strong> than the
   Scoundrel's <strong><span style="color: #90a959">Cunning</span></strong> to
   detect them.
 </p>
 
 <p>
+  <b>Note:</b> No rolls are required for stealth unless the Scoundrel takes a risky action, like pickpocketing.
+</p>
+
+<h3>Sneak Attacks</h3>
+<p>
   Attacking while in Stealth counts as an automatic 10, providing a +2 to the
   attack without a roll.
 </p>
+
+<h3>Disguises</h3>
+<p>
+  While disguised, the Scoundrel counts as being in stealth. Onlookers need a
+  high enough Perception to see through the disguise and will only roll actively
+  if the Scoundrel draws attention in some way.
+</p>
 </div>
+
+<div id="Gameplay" class="tabcontent">
+  <h3><span style="color: #90a959">Scoundrel Gameplay</span></h3>
+<h3>In combat...</h3>
+  <p>
+    The Scoundrel waits for the right opportunity to dispatch an enemy, showing
+    a preference for dangerous targets like Mages. Once exposed they might make
+    a hasty getaway, or throw themselves into the fight with a frenzy of
+    <b><span style="color: #90a959">Agile</span></b> strikes.
+  </p>
+  <h3>Socially...</h3>
+  <p>
+    The Scoundrel is an expert at <b><span style="color: #90a959">Deceit</span></b>.
+    They can fast-talk, bluff, and have a conman's instinct when detecting lies.
+    Listeners that prefer a straightforward response may
+    tire of the Scoundrel's evasive speech.
+  </p>
+  <h3>While exploring...</h3>
+  <p>
+    The Scoundrel is nearly always the scout of a party. They move unseen
+    through dangerous areas, ever ready to book a fast retreat should danger
+    arise.
+  </p>
