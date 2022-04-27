@@ -1,28 +1,27 @@
 ---
 layout: default
 ---
+
 <h1>The Alchemist</h1>
 
 <!-- Tab links -->
 <div class="tab">
-  <button
-    class="tablinks active"
-    onclick="openTab(event, 'Description')"
-  >
+  <button class="tablinks active" onclick="openTab(event, 'Description')">
     Description
   </button>
-  <button class="tablinks" onclick="openTab(event, 'Mechanics')">
-    Mechanics
-  </button>
+  <button class="tablinks" onclick="openTab(event, 'Alchemy')">Alchemy</button>
+  <button class="tablinks" onclick="openTab(event, 'Bombs and Poisons')">Bombs and Poisons</button>
+  <button class="tablinks" onclick="openTab(event, 'Drugs and Tools')">Drugs and Tools</button>
+</div>
 </div>
 
 <!-- Tab content -->
 <div id="Description" class="tabcontent" style="display: block">
   <h3><span style="color: #268bd2">The Alchemist</span></h3>
   <p>
-    The Alchemist is a keen adventurer, keeping a watchful eye out for danger 
-    and a finger on the trigger. They carry a collection of handy
-    items to throw at any problem that arises.
+    The Alchemist is a keen adventurer, keeping a watchful eye out for danger
+    and a finger on the trigger. They carry a collection of handy items to throw
+    at any problem that arises.
   </p>
   <ul>
     <li><b>Skills</b>: Perception, Knowledge</li>
@@ -37,10 +36,16 @@ layout: default
       </td>
     </tr>
     <tr>
-      <td>* A <b>bandolier</b>, <b>toolbox</b>, or <b>collection of pouches</b> filled with potions and tools</td>
+      <td>
+        * A <b>bandolier</b>, <b>toolbox</b>, or
+        <b>collection of pouches</b> filled with potions and tools
+      </td>
     </tr>
     <tr>
-      <td>* <b>Padded clothing</b> with many pockets and <b>face protection</b> such as goggles or a plague doctor's mask</td>
+      <td>
+        * <b>Padded clothing</b> with many pockets and
+        <b>face protection</b> such as goggles or a plague doctor's mask
+      </td>
     </tr>
     <tr>
       <td>
@@ -53,75 +58,127 @@ layout: default
 
   <h5>In combat...</h5>
   <p>
-    The Alchemist keeps their distance, taking shots at range and
-    spreading hazards across the battlefield with grenades. With prior
-    warning they can hand out potions and poison weapons to prepare their 
-    party for trouble.
+    The Alchemist keeps their distance, taking shots at range and spreading
+    hazards across the battlefield with grenades. With prior warning they can
+    hand out potions and poison weapons to prepare their party for trouble.
   </p>
   <h5>Socially...</h5>
   <p>
-    The Alchemist specializes in debate. Their rhetorical technique is 
-    well-received by the wealthy and educated, but generally ineffectual
-    towards less affluent listeners.
+    The Alchemist specializes in debate. Their rhetorical technique is
+    well-received by the wealthy and educated, but generally ineffectual towards
+    less affluent listeners.
   </p>
   <h5>While exploring...</h5>
   <p>
-    The Alchemist makes for an excellent lookout. Their sharp senses and
-    wealth of lore will keep the party informed of approaching dangers
-    well before they arrive.
+    The Alchemist makes for an excellent lookout. Their sharp senses and wealth
+    of lore will keep the party informed of approaching dangers well before they
+    arrive.
   </p>
 </div>
 
-<div id="Mechanics" class="tabcontent">
-  <h3><span style="color: #268bd2">Alchemist Mechanics</span></h3>
-  <h3>Uses Per Rest</h3>
+<div id="Alchemy" class="tabcontent">
+  <h3><span style="color: #268bd2">Alchemy</span></h3>
 
-<p>
-  Each Alchemist Kit has a limited number of uses based on the character's
-  <strong><span style="color:#268bd2">Knowledge</span></strong>.
-  Alchemists mark a box each time they use a specific Kit, and clear all boxes
-  for all Kits when resting at camp.
-</p>
+  <h3>Uses Per Kit</h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>Knowledge</th>
-      <th>Uses per Rest</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>☐ ☐</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>☐ ☐ ☐</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>☐ ☐ ☐ ☐</td>
-    </tr>
-    <tr>
-      <td>…</td>
-      <td>…</td>
-    </tr>
-  </tbody>
-</table>
+  <p>
+    Each Alchemist Kit has a limited number of uses based on the character's
+    <strong><span style="color: #268bd2">Knowledge</span></strong
+    >. Alchemists mark a box each time they use a specific Kit, and clear all
+    boxes for all Kits when resting at camp.
+  </p>
 
-<h3>What You Needed</h3>
-<p>
-  In the event that a character needs some item that might be unusual for them to carry (such as 
-  a bag of ball bearings), they can roll <strong><span style="color:#268bd2">Knowledge</span></strong>
-  to see whether or not they thought ahead and prepared that item ahead of time.
-</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Knowledge</th>
+        <th>Uses per Rest</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>☐ ☐</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>☐ ☐ ☐</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>☐ ☐ ☐ ☐</td>
+      </tr>
+      <tr>
+        <td>…</td>
+        <td>…</td>
+      </tr>
+    </tbody>
+  </table>
 
-<h3>Sharing Items</h3>
-<p>
-  <b>Drugs and Tools</b> can be safely shared with other party members. <b>Bombs and Poisons</b> require untrained users to roll <strong><span style="color:#268bd2">Knowledge</span></strong> to use safely.
-</p>
+  <h3>Sharing Items</h3>
+  <p>
+    <b>Drugs and Tools</b> can be safely shared with other party members.
+    <b>Bombs and Poisons</b> require untrained users to roll
+    <strong><span style="color: #268bd2">Knowledge</span></strong> to use
+    safely.
+  </p>
 </div>
 
-      
+<div id="Bombs and Poisons" class="tabcontent">
+  <h3><span style="color: #268bd2">Bombs and Poisons</span></h3>
+  <h3>Bombs</h3>
 
+  <p>
+    In addition to being producing an area of effect attack, most bombs also
+    create environmental hazards. Careful use of these can control the state of
+    a battlefield.
+  </p>
+
+  <h3>Poisons</h3>
+
+  <p>
+    Poisons fall into two categories: Bloodstream Venoms and
+    Contact Poisons.
+  </p>
+
+  <p>
+    <b>Bloodstream Venoms</b> can be applied to weapons and ammunition. They produce
+    additional effects on a successful attack.
+  </p>
+
+  <p>
+    <b>Contact Poisons</b> need to be applied more subtly. Their effects trigger when
+    they're breathed in, touched with bare skin, or consumed. They're generally
+    ineffective in combat.
+  </p>
+</div>
+
+<div id="Drugs and Tools" class="tabcontent">
+  <h3><span style="color: #268bd2">Drugs and Tools</span></h3>
+  <h3>Drugs</h3>
+
+  <p>
+    Drugs are items that player characters can consume to receive beneficial effects.
+    Many restore Physical and Mental Health, allowing characters to continue adventuring
+    long past their normal limits.
+  </p>
+
+  <p>
+    Alchemists commonly hand out Drugs so that other characters will have them on hand
+    during dangerous situations. The responsibility for managing who has what item at
+    any given time belongs to the Alchemist.
+  </p>
+
+  <ul>
+    <li>Using a Drug in combat does take an Action.</li>
+    <li>Incapacitated characters cannot use Drugs.</li>
+  </ul>
+
+  <h3>Tools</h3>
+
+  <p>
+    Tools are magical items that the Alchemist preps each day. Like other Alchemy
+    Kits, they have a limited number of uses. However, their effects tend to be
+    longer lived or permanent, depending on the item.
+  </p>
+</div>
