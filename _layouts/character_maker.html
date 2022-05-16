@@ -81,40 +81,48 @@ layout: default
             <tr>
                 <td>
                     <label>Perception</label>
+                    <br>
                     <input type="text" id="skill_filled" placeholder="**" disabled="true">
                 </td>
                 <td>
                     <label>Physique</label>
+                    <br>
                     <input type="text" id="skill_filled" placeholder="**" disabled="true">
                 </td>
             </tr>
             <tr>
                 <td>
                     <label>Knowledge</label>
+                    <br>
                     <input type="text" id="skill_filled" placeholder="**" disabled="true">
                 </td>
                 <td>
                     <label>Bravery</label>
+                    <br>
                     <input type="text" id="skill_filled" placeholder="**" disabled="true">
                 </td>
             </tr>
             <tr>
                 <td>
                     <label>Aura</label>
+                    <br>
                     <input type="text" id="skill_filled" placeholder="**" disabled="true">
                 </td>
                 <td>
                     <label>Agility</label>
+                    <br>
                     <input type="text" id="skill_filled" placeholder="**" disabled="true">
                 </td>
             </tr>
             <tr>
                 <td>
                     <label>Focus</label>
+                    <br>
                     <input type="text" id="skill_filled" placeholder="**" disabled="true">
                 </td>
                 <td>
                     <label>Cunning</label>
+                    <br>
                     <input type="text" id="skill_filled" placeholder="**" disabled="true">
                 </td>
             </tr>
@@ -133,7 +141,7 @@ layout: default
                     </select>
                 </td>
                 <td>
-                    <p id="kit_description_01">Description</p>
+                    <p id="kit_description_01" name="1">Description</p>
                 </td>
             </tr>
             <tr>
@@ -146,7 +154,7 @@ layout: default
                     </select>
                 </td>
                 <td>
-                    <p id="kit_description_02">Description</p>
+                    <p id="kit_description_02" name="2">Description</p>
                 </td>
             </tr>
             <tr>
@@ -159,7 +167,7 @@ layout: default
                     </select>
                 </td>
                 <td>
-                    <p id="kit_description_03">Description</p>
+                    <p id="kit_description_03" name="3">Description</p>
                 </td>
             </tr>
             <tr>
@@ -172,7 +180,7 @@ layout: default
                     </select>
                 </td>
                 <td>
-                    <p id="kit_description_04">Description</p>
+                    <p id="kit_description_04" name="4">Description</p>
                 </td>
             </tr>
         </table>
@@ -206,6 +214,22 @@ layout: default
                                         document.getElementById('kit_description_04')]
     
     // Helper Functions
+    function update_kit_descriptions()
+    {
+        for (kit_description_selector of kit_description_selectors)
+        {
+            // Fetch description by selected kit
+            var index_val = kit_description_selector.getAttribute("name") - 1
+            var kit_selector_e = kit_selectors[index_val]
+            var kit_str = kit_selector_e.options[kit_selector_e.selectedIndex].value
+            var relevant_kits_sub_sub = relevant_kits.filter(x => x.Kit === kit_str)
+            var relevant_kit_description_sub = relevant_kits_sub_sub.map(x => x.Description)
+
+            // Replace existing description
+            kit_description_selector.innerHTML = relevant_kit_description_sub
+        }
+    }
+
     function update_kits()
     {
         for (kit_selector of kit_selectors)
@@ -236,6 +260,7 @@ layout: default
             }
 
             // Populate kit descriptions
+            update_kit_descriptions()
         }
     }
 
@@ -291,6 +316,15 @@ layout: default
         kit_type_selector.addEventListener('change', event =>
         {
             update_kits()
+        })
+    }
+
+    // // Change Kit
+    for (kit_selector of kit_selectors)
+    {
+        kit_selector.addEventListener('change', event =>
+        {
+            update_kit_descriptions()
         })
     }
 
