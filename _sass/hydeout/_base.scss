@@ -79,15 +79,18 @@ tbody tr:nth-child(odd) th {
   background-color: $gray-1;
 }
 
-// button,
-// input[type='text'],
-// input[type='email'],
-// input[type='search'],
-// input[type='submit'] {
-//   border: 1px solid $border-color;
-//   border-radius: $border-radius;
-//   padding: $padding-v $padding-h;
-// }
+input[type='text'],
+input[type='email'],
+input[type='search'],
+input[type='submit'] {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: $padding-v $padding-h;
+}
+
+#skill_filled {
+  text-align: right;
+}
 
 // button,
 // input[type='submit'] {

@@ -1,0 +1,303 @@
+---
+layout: default
+---
+
+<h1>Character Sheet (WIP)</h1>
+
+<form>
+    <section>
+        <table>
+            <tr>
+                <td>
+                    <input type="text" id="name" name="charactername" placeholder="Character Name">
+                </td>
+                <td>
+                    <select id="class_select" name="characterclass">
+                        <option value="alchemist">Alchemist</option>
+                        <option value="soldier">Soldier</option>
+                        <option value="mage">Mage</option>
+                        <option value="scoundrel">Scoundrel</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b>Health</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Physical Health</label>
+                    <div id="physhealthtrack">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                </td>
+                <td>
+                    <label>Fortune Points</label>
+                    <div id="physhealthtrack">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Mental Health</label>
+                    <div id="menthealthtrack">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                </td>
+                <td>
+                    <label>Prep Points</label>
+                    <div id="physhealthtrack">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b>Skills</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Perception</label>
+                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
+                </td>
+                <td>
+                    <label>Physique</label>
+                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Knowledge</label>
+                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
+                </td>
+                <td>
+                    <label>Bravery</label>
+                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Aura</label>
+                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
+                </td>
+                <td>
+                    <label>Agility</label>
+                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Focus</label>
+                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
+                </td>
+                <td>
+                    <label>Cunning</label>
+                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b>Kits</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="kit_type_01" name="kittype">
+                        <option value="placeholder">Placeholder</option>
+                    </select>
+                    <select id="kit_01" name="1">
+                        <option value="potion">Potion</option>
+                    </select>
+                </td>
+                <td>
+                    <p id="kit_description_01">Description</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="kit_type_02" name="kittype">
+                        <option value="placeholder">Placeholder</option>
+                    </select>
+                    <select id="kit_02" name="2">
+                        <option value="potion">Potion</option>
+                    </select>
+                </td>
+                <td>
+                    <p id="kit_description_02">Description</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="kit_type_03" name="kittype">
+                        <option value="placeholder">Placeholder</option>
+                    </select>
+                    <select id="kit_03" name="3">
+                        <option value="potion">Potion</option>
+                    </select>
+                </td>
+                <td>
+                    <p id="kit_description_03">Description</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="kit_type_04" name="kittype">
+                        <option value="placeholder">Placeholder</option>
+                    </select>
+                    <select id="kit_04" name="4">
+                        <option value="potion">Potion</option>
+                    </select>
+                </td>
+                <td>
+                    <p id="kit_description_04">Description</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+</form>
+
+
+
+
+<script>
+    // Load data on page load
+    var data = {{ site.data.miracuse_kits | jsonify }}
+    var classes = new Set(data.map(x => x.Class))
+    var active_class = "Alchemist"
+    var relevant_kits = data.filter(x => x.Class === active_class)
+    var relevant_kit_types = new Set(relevant_kits.map(x => x.Type))
+    var relevant_kit_names = new Set(relevant_kits.map(x => x.Kit))
+
+    let class_selector = document.getElementById('class_select')
+    let kit_type_selectors = [document.getElementById('kit_type_01'),
+                                document.getElementById('kit_type_02'),
+                                document.getElementById('kit_type_03'),
+                                document.getElementById('kit_type_04')]
+    let kit_selectors = [document.getElementById('kit_01'),
+                            document.getElementById('kit_02'),
+                            document.getElementById('kit_03'),
+                            document.getElementById('kit_04')]
+    let kit_description_selectors = [document.getElementById('kit_description_01'),
+                                        document.getElementById('kit_description_02'),
+                                        document.getElementById('kit_description_03'),
+                                        document.getElementById('kit_description_04')]
+    
+    // Helper Functions
+    function update_kits()
+    {
+        for (kit_selector of kit_selectors)
+        {
+            // Fetch relevant kits by kit type
+            var index_val = kit_selector.getAttribute("name") - 1
+            var kit_type_selector_e = kit_type_selectors[index_val]
+            var kit_type_str = kit_type_selector_e.options[kit_type_selector_e.selectedIndex].value
+            var relevant_kits_sub = relevant_kits.filter(x => x.Type === kit_type_str)
+            var relevant_kit_names_sub = relevant_kits_sub.map(x => x.Kit)
+
+            // Delete existing options
+            while (kit_selector.childElementCount > 0)
+            {
+                kit_selector[kit_selector.childElementCount - 1].remove()
+            }
+
+            // Populate new options
+            for(element of Array.from(relevant_kit_names_sub))
+            {
+                // Create option
+                var opt = document.createElement("option")
+                opt.value = element
+                opt.innerHTML = element
+
+                // Append to list
+                kit_selector.appendChild(opt)
+            }
+
+            // Populate kit descriptions
+        }
+    }
+
+    function update_kit_types()
+    {
+        // Iterate over kit type dropdowns
+        for (kit_type_selector of kit_type_selectors)
+        {
+            // Delete existing options
+            while (kit_type_selector.childElementCount > 0)
+            {
+                kit_type_selector[kit_type_selector.childElementCount - 1].remove()
+            }
+
+            // Populate new options
+            for(element of Array.from(relevant_kit_types))
+            {
+                // Create option
+                var opt = document.createElement("option")
+                opt.value = element
+                opt.innerHTML = element
+
+                // Append to list
+                kit_type_selector.appendChild(opt)
+            }
+        }
+        
+        update_kits()
+    }
+
+    function update_class() 
+    {
+        // Repopulate page variables
+        active_class = class_selector.options[class_selector.selectedIndex].innerHTML
+        relevant_kits = data.filter(x => x.Class === active_class)
+        relevant_kit_types = new Set(relevant_kits.map(x => x.Type))
+        relevant_kit_names = new Set(relevant_kits.map(x => x.Kit))
+
+        // Repopulate kit types
+        update_kit_types()
+    }
+
+    // Configure listeners to update state
+    // // Change Class
+    class_selector.addEventListener('change', event => 
+    {
+        update_class()
+    })
+
+    // // Change Kit Type
+    for (kit_type_selector of kit_type_selectors)
+    {
+        kit_type_selector.addEventListener('change', event =>
+        {
+            update_kits()
+        })
+    }
+
+    // Update page with default settings
+    window.addEventListener('load', (event) => {
+        update_class()
+    });
+    
+
+</script>
