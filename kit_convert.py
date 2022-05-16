@@ -17,6 +17,10 @@ def main():
     # Load in the data
     input_data = pd.read_excel(INPUT_FILE)
 
+    # Clean the data
+    for col in input_data.columns:
+        input_data[col] = input_data[col].apply(lambda x: x.strip())
+
     # Output data as TSV
     output_path = os.path.join(PROJECT_DIR, OUTPUT_FILE)
     input_data.to_csv(output_path, index=False, encoding="utf-8", sep="\t")
