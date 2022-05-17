@@ -2,6 +2,8 @@
 //
 // Update the foundational and global aspects of the page.
 
+@font-face { font-family: Player2; src: url('https://fonts.google.com/specimen/Press+Start+2P'); }
+
 * {
   box-sizing: border-box;
 }
@@ -88,8 +90,31 @@ input[type='submit'] {
   padding: $padding-v $padding-h;
 }
 
-#skill_filled {
+select {
+  display: block;
+  font-family: inherit;
+  font-size: $root-small-font-size;
+  color: inherit;
+  width: 175px;
+}
+
+.kit_description {
+  font-size: $root-small-font-size;
+}
+
+.skill_holder {
   text-align: center;
+  padding: 0;
+  // font-size: inherit;
+  // font-family: inherit;
+}
+
+.kits_table {
+  font-size: $root-small-font-size;
+}
+
+.character_name {
+  font-size: $root-font-size;
 }
 
 // button,
@@ -370,3 +395,7 @@ input[type='submit'] {
   grid-column: 2 / 5;
   grid-row: 13;
 }
+
+// .skill_holder {
+//   font-family: Player2 $root-font-family;
+// }
