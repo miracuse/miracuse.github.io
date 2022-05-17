@@ -197,3 +197,176 @@ input[type='submit'] {
   line-height: $root-line-height;
 
 } 
+
+/* Style the character sheet */
+.character_sheet {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  // grid-auto-rows: minmax(100px, auto);
+}
+
+.character_name {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.character_class {
+  grid-column: 3 / 4;
+  grid-row: 1;
+}
+
+.health_header {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.health_text {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.health_track {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.point_text {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.point_track {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.skills_header {
+  grid-column: 1 / 2;
+  grid-row: 4;
+}
+
+.perception_text {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.perception_value {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.knowledge_text {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.knowledge_value {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+.physique_text {
+  grid-column: 1;
+  grid-row: 7;
+}
+
+.physique_value {
+  grid-column: 2;
+  grid-row: 7;
+}
+
+.bravery_text {
+  grid-column: 1;
+  grid-row: 8;
+}
+
+.bravery_value {
+  grid-column: 2;
+  grid-row: 8;
+}
+
+.aura_text {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+.aura_value {
+  grid-column: 4;
+  grid-row: 5;
+}
+
+.focus_text {
+  grid-column: 3;
+  grid-row: 6;
+}
+
+.focus_value {
+  grid-column: 4;
+  grid-row: 6;
+}
+
+.agility_text {
+  grid-column: 3;
+  grid-row: 7;
+}
+
+.agility_value {
+  grid-column: 4;
+  grid-row: 7;
+}
+
+.cunning_text {
+  grid-column: 3;
+  grid-row: 8;
+}
+
+.cunning_value {
+  grid-column: 4;
+  grid-row: 8;
+}
+
+.kit_header {
+  grid-column: 1 / 2;
+  grid-row: 9;
+}
+
+.kit_chooser_01 {
+  grid-column:1;
+  grid-row: 10;
+}
+
+.kit_text_01 {
+  grid-column: 2 / 5;
+  grid-row: 10;
+}
+
+.kit_chooser_02 {
+  grid-column:1;
+  grid-row: 11;
+}
+
+.kit_text_02 {
+  grid-column: 2 / 5;
+  grid-row: 11;
+}
+
+.kit_chooser_03 {
+  grid-column:1;
+  grid-row: 12;
+}
+
+.kit_text_03 {
+  grid-column: 2 / 5;
+  grid-row: 12;
+}
+
+.kit_chooser_04 {
+  grid-column:1;
+  grid-row: 13;
+}
+
+.kit_text_04 {
+  grid-column: 2 / 5;
+  grid-row: 13;
+}

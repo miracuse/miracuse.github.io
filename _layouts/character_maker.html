@@ -4,189 +4,224 @@ layout: default
 
 <h1>Character Sheet (WIP)</h1>
 
-<form>
-    <section>
-        <table>
-            <tr>
-                <td>
-                    <input type="text" id="name" name="charactername" placeholder="Character Name">
-                </td>
-                <td>
-                    <select id="class_select" name="characterclass">
-                        <option value="alchemist">Alchemist</option>
-                        <option value="soldier">Soldier</option>
-                        <option value="mage">Mage</option>
-                        <option value="scoundrel">Scoundrel</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <b>Health</b>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Physical Health</label>
-                    <div id="physhealthtrack">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                    </div>
-                </td>
-                <td>
-                    <label>Fortune Points</label>
-                    <div id="physhealthtrack">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Mental Health</label>
-                    <div id="menthealthtrack">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                    </div>
-                </td>
-                <td>
-                    <label>Prep Points</label>
-                    <div id="physhealthtrack">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <b>Skills</b>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Perception</label>
-                    <br>
-                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
-                </td>
-                <td>
-                    <label>Physique</label>
-                    <br>
-                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Knowledge</label>
-                    <br>
-                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
-                </td>
-                <td>
-                    <label>Bravery</label>
-                    <br>
-                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Aura</label>
-                    <br>
-                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
-                </td>
-                <td>
-                    <label>Agility</label>
-                    <br>
-                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Focus</label>
-                    <br>
-                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
-                </td>
-                <td>
-                    <label>Cunning</label>
-                    <br>
-                    <input type="text" id="skill_filled" placeholder="**" disabled="true">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <b>Kits</b>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <select id="kit_type_01" name="kittype">
-                        <option value="placeholder">Placeholder</option>
-                    </select>
-                    <select id="kit_01" name="1">
-                        <option value="potion">Potion</option>
-                    </select>
-                </td>
-                <td>
-                    <p id="kit_description_01" name="1">Description</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <select id="kit_type_02" name="kittype">
-                        <option value="placeholder">Placeholder</option>
-                    </select>
-                    <select id="kit_02" name="2">
-                        <option value="potion">Potion</option>
-                    </select>
-                </td>
-                <td>
-                    <p id="kit_description_02" name="2">Description</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <select id="kit_type_03" name="kittype">
-                        <option value="placeholder">Placeholder</option>
-                    </select>
-                    <select id="kit_03" name="3">
-                        <option value="potion">Potion</option>
-                    </select>
-                </td>
-                <td>
-                    <p id="kit_description_03" name="3">Description</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <select id="kit_type_04" name="kittype">
-                        <option value="placeholder">Placeholder</option>
-                    </select>
-                    <select id="kit_04" name="4">
-                        <option value="potion">Potion</option>
-                    </select>
-                </td>
-                <td>
-                    <p id="kit_description_04" name="4">Description</p>
-                </td>
-            </tr>
-        </table>
-    </section>
-</form>
+<div class="character_sheet">
 
+    <div class="character_name">
+        <input type="text" id="name" name="charactername" placeholder="Character Name">
+    </div>
+
+    <div class="character_class">
+        <select id="class_select" name="characterclass">
+            <option value="alchemist">Alchemist</option>
+            <option value="soldier">Soldier</option>
+            <option value="mage">Mage</option>
+            <option value="scoundrel">Scoundrel</option>
+        </select>
+    </div>
+
+    <div class="health_header">
+        <b>Health</b>
+    </div>
+
+    <div class="health_text">
+        <label>Physical Health</label>
+        <br>
+        <label>Mental Health</label>
+    </div>
+
+    <div class="health_track">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <br>
+
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+    </div>
+
+    <div class="point_text">
+        <label>Fortune Points</label>
+        <br>
+        <label>Prep Points</label>
+    </div>
+
+    <div class="point_track">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <br>
+
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+    </div>
+        
+
+    <div class="skills_header">
+        <b>Skills</b>
+    </div>
+
+    <div class="perception_text">
+        <label>Perception</label>
+    </div>
+
+    <div class="perception_value">
+        <input type="text" id="skill_filled" placeholder="**" disabled="true">
+    </div>
+
+    <div class="knowledge_text">
+        <label>Knowledge</label>
+    </div>
+
+    <div class="knowledge_value">
+        <input type="text" id="skill_filled" placeholder="**" disabled="true">
+    </div>
+
+    <div class="physique_text">
+        <label>Physique</label>
+    </div>
+
+    <div class="physique_value">
+        <input type="text" id="skill_filled" placeholder="**" disabled="true">
+    </div>
+
+    <div class="bravery_text">
+        <label>Bravery</label>
+    </div>
+
+    <div class="bravery_value">
+        <input type="text" id="skill_filled" placeholder="**" disabled="true">
+    </div>
+
+    <div class="aura_text">
+        <label>Aura</label>
+    </div>
+
+    <div class="aura_value">
+        <input type="text" id="skill_filled" placeholder="**" disabled="true">
+    </div>
+
+    <div class="focus_text">
+        <label>Focus</label>
+    </div>
+
+    <div class="focus_value">
+        <input type="text" id="skill_filled" placeholder="**" disabled="true">
+    </div>
+
+    <div class="cunning_text">
+        <label>Cunning</label>
+    </div>
+
+    <div class="cunning_value">
+        <input type="text" id="skill_filled" placeholder="**" disabled="true">
+    </div>
+
+    <div class="agility_text">
+        <label>Agility</label>
+    </div>
+
+    <div class="agility_value">
+        <input type="text" id="skill_filled" placeholder="**" disabled="true">
+    </div>
+
+    <div class="kit_header">
+        <b>Kits</b>
+    </div>
+
+    <div class="kit_chooser_01">
+        <select id="kit_type_01" name="kittype">
+            <option value="placeholder">Placeholder</option>
+        </select>
+        <select id="kit_01" name="1">
+            <option value="potion">Potion</option>
+        </select>
+    </div>
+
+    <div class="kit_text_01">
+        <p id="kit_description_01" name="1">Description</p>
+    </div>
+
+    <div class="kit_chooser_02">
+        <select id="kit_type_02" name="kittype">
+            <option value="placeholder">Placeholder</option>
+        </select>
+        <select id="kit_02" name="2">
+            <option value="potion">Potion</option>
+        </select>
+    </div>
+
+    <div class="kit_text_02">
+        <p id="kit_description_02" name="2">Description</p>
+    </div>
+
+    <div class="kit_chooser_03">
+        <select id="kit_type_03" name="kittype">
+            <option value="placeholder">Placeholder</option>
+        </select>
+        <select id="kit_03" name="3">
+            <option value="potion">Potion</option>
+        </select>
+    </div>
+
+    <div class="kit_text_03">
+        <p id="kit_description_03" name="3">Description</p>
+    </div>
+
+    <div class="kit_chooser_04">
+        <select id="kit_type_04" name="kittype">
+            <option value="placeholder">Placeholder</option>
+        </select>
+        <select id="kit_04" name="4">
+            <option value="potion">Potion</option>
+        </select>
+    </div>
+
+    <div class="kit_text_04">
+        <p id="kit_description_04" name="4">Description</p>
+    </div>
+
+    
+<!-- 
+    <select id="kit_type_02" name="kittype">
+            <option value="placeholder">Placeholder</option>
+        </select>
+        <select id="kit_02" name="2">
+            <option value="potion">Potion</option>
+        </select>
+    <p id="kit_description_02" name="2">Description</p>
+
+    <select id="kit_type_03" name="kittype">
+        <option value="placeholder">Placeholder</option>
+    </select>
+    <select id="kit_03" name="3">
+        <option value="potion">Potion</option>
+    </select>
+
+    <p id="kit_description_03" name="3">Description</p>
+
+    <select id="kit_type_04" name="kittype">
+        <option value="placeholder">Placeholder</option>
+    </select>
+    <select id="kit_04" name="4">
+        <option value="potion">Potion</option>
+    </select>
+
+    <p id="kit_description_04" name="4">Description</p> -->
+</div>
 
 
 
