@@ -105,6 +105,7 @@ select {
 .skill_holder {
   text-align: center;
   padding: 0;
+  width: 50%;
   // font-size: inherit;
   // font-family: inherit;
 }
@@ -232,7 +233,7 @@ select {
 }
 
 .character_name {
-  grid-column: 1 / 2;
+  grid-column: 1;
   grid-row: 1;
 }
 

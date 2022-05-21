@@ -142,8 +142,8 @@ layout: default
         <b>Kits</b>
     </div>
 
-    <div class="kit_chooser_01">
-        <select id="kit_type_01">
+    <div class="kit_chooser_01" name="1">
+        <select id="kit_type_01" name="1">
             <option value="placeholder">Placeholder</option>
         </select>
         <select id="kit_01" name="1">
@@ -155,8 +155,8 @@ layout: default
         <p id="kit_description_01" class="kit_description" name="1">Description</p>
     </div>
 
-    <div class="kit_chooser_02">
-        <select id="kit_type_02">
+    <div class="kit_chooser_02" name="2">
+        <select id="kit_type_02" name="2">
             <option value="placeholder">Placeholder</option>
         </select>
         <select id="kit_02" name="2">
@@ -168,8 +168,8 @@ layout: default
         <p id="kit_description_02" class="kit_description" name="2">Description</p>
     </div>
 
-    <div class="kit_chooser_03">
-        <select id="kit_type_03" >
+    <div class="kit_chooser_03" name="3">
+        <select id="kit_type_03" name="3">
             <option value="placeholder">Placeholder</option>
         </select>
         <select id="kit_03" name="3">
@@ -181,8 +181,8 @@ layout: default
         <p id="kit_description_03" class="kit_description" name="3">Description</p>
     </div>
 
-    <div class="kit_chooser_04">
-        <select id="kit_type_04">
+    <div class="kit_chooser_04" name="4">
+        <select id="kit_type_04" name="4">
             <option value="placeholder">Placeholder</option>
         </select>
         <select id="kit_04" name="4">
@@ -199,104 +199,103 @@ layout: default
 
 
 <script>
-    // Load data on page load
+    // Load data on page initialization
     var data = {{ site.data.miracuse_kits | jsonify }}
-    var classes = new Set(data.map(x => x.Class))
     var active_class = "Alchemist"
     var relevant_kits = data.filter(x => x.Class === active_class)
     var relevant_kit_types = new Set(relevant_kits.map(x => x.Type))
     var relevant_kit_names = new Set(relevant_kits.map(x => x.Kit))
+    const kt_vals = [1, 2, 3, 4]
 
     let class_selector = document.getElementById('class_select')
     let kit_type_selectors = [document.getElementById('kit_type_01'),
-                                document.getElementById('kit_type_02'),
-                                document.getElementById('kit_type_03'),
-                                document.getElementById('kit_type_04')]
+                              document.getElementById('kit_type_02'),
+                              document.getElementById('kit_type_03'),
+                              document.getElementById('kit_type_04')]
     let kit_selectors = [document.getElementById('kit_01'),
-                            document.getElementById('kit_02'),
-                            document.getElementById('kit_03'),
-                            document.getElementById('kit_04')]
+                         document.getElementById('kit_02'),
+                         document.getElementById('kit_03'),
+                         document.getElementById('kit_04')]
     let kit_description_selectors = [document.getElementById('kit_description_01'),
-                                        document.getElementById('kit_description_02'),
-                                        document.getElementById('kit_description_03'),
-                                        document.getElementById('kit_description_04')]
+                                     document.getElementById('kit_description_02'),
+                                     document.getElementById('kit_description_03'),
+                                     document.getElementById('kit_description_04')]
     
     // Helper Functions
-    function update_kit_descriptions()
+    function update_kit_description(kt_index)
     {
-        for (kit_description_selector of kit_description_selectors)
-        {
-            // Fetch description by selected kit
-            var index_val = kit_description_selector.getAttribute("name") - 1
-            var kit_selector_e = kit_selectors[index_val]
-            var kit_str = kit_selector_e.options[kit_selector_e.selectedIndex].value
-            var relevant_kits_sub_sub = relevant_kits.filter(x => x.Kit === kit_str)
-            var relevant_kit_description_sub = relevant_kits_sub_sub.map(x => x.Description)
+        // Set target to corresponding kit description
+        var kit_description_selector = kit_description_selectors[kt_index - 1]
 
-            // Replace existing description
-            kit_description_selector.innerHTML = relevant_kit_description_sub
-        }
+        // Fetch description by selected kit
+        var kit_selector_e = kit_selectors[kt_index - 1]
+        var kit_str = kit_selector_e.options[kit_selector_e.selectedIndex].value
+        var relevant_kits_sub_sub = relevant_kits.filter(x => x.Kit === kit_str)
+        var relevant_kit_description_sub = relevant_kits_sub_sub.map(x => x.Description)
+
+        // Replace existing description
+        kit_description_selector.innerHTML = relevant_kit_description_sub
     }
 
-    function update_kits()
+    function update_kit(kt_index)
     {
-        for (kit_selector of kit_selectors)
+        // Set target to corresponding kit selector
+        var kit_selector = kit_selectors[kt_index - 1]
+
+        // Fetch relevant kits by kit type
+        var kit_type_selector_e = kit_type_selectors[kt_index - 1]
+        var kit_type_str = kit_type_selector_e.options[kit_type_selector_e.selectedIndex].value
+        var relevant_kits_sub = relevant_kits.filter(x => x.Type === kit_type_str)
+        var relevant_kit_names_sub = relevant_kits_sub.map(x => x.Kit)
+
+        // Delete existing options for kit selector
+        while (kit_selector.childElementCount > 0)
         {
-            // Fetch relevant kits by kit type
-            var index_val = kit_selector.getAttribute("name") - 1
-            var kit_type_selector_e = kit_type_selectors[index_val]
-            var kit_type_str = kit_type_selector_e.options[kit_type_selector_e.selectedIndex].value
-            var relevant_kits_sub = relevant_kits.filter(x => x.Type === kit_type_str)
-            var relevant_kit_names_sub = relevant_kits_sub.map(x => x.Kit)
-
-            // Delete existing options
-            while (kit_selector.childElementCount > 0)
-            {
-                kit_selector[kit_selector.childElementCount - 1].remove()
-            }
-
-            // Populate new options
-            for(element of Array.from(relevant_kit_names_sub))
-            {
-                // Create option
-                var opt = document.createElement("option")
-                opt.value = element
-                opt.innerHTML = element
-
-                // Append to list
-                kit_selector.appendChild(opt)
-            }
-
-            // Populate kit descriptions
-            update_kit_descriptions()
+            kit_selector[kit_selector.childElementCount - 1].remove()
         }
+
+        // Populate new options for kit selector
+        for(element of Array.from(relevant_kit_names_sub))
+        {
+            // Create option
+            var opt = document.createElement("option")
+            opt.value = element
+            opt.innerHTML = element
+
+            // Append to list
+            kit_selector.appendChild(opt)
+        }
+
+        // Update the corresponding kit selector
+        update_kit_description(kt_index)
+        
     }
 
-    function update_kit_types()
+    function update_kit_type(kt_index)
     {
-        // Iterate over kit type dropdowns
-        for (kit_type_selector of kit_type_selectors)
+        // Set target to the corresponding kit type selector
+        var kit_type_selector = kit_type_selectors[kt_index - 1]
+
+        // Delete existing options for selector
+        while (kit_type_selector.childElementCount > 0)
         {
-            // Delete existing options
-            while (kit_type_selector.childElementCount > 0)
-            {
-                kit_type_selector[kit_type_selector.childElementCount - 1].remove()
-            }
+            kit_type_selector[kit_type_selector.childElementCount - 1].remove()
+        }
 
-            // Populate new options
-            for(element of Array.from(relevant_kit_types))
-            {
-                // Create option
-                var opt = document.createElement("option")
-                opt.value = element
-                opt.innerHTML = element
+        // Populate new options for selector
+        for(element of Array.from(relevant_kit_types))
+        {
+            // Create option
+            var opt = document.createElement("option")
+            opt.value = element
+            opt.innerHTML = element
 
-                // Append to list
-                kit_type_selector.appendChild(opt)
-            }
+            // Append to list
+            kit_type_selector.appendChild(opt)
         }
         
-        update_kits()
+        // Update the corresponding kit selector
+        update_kit(kt_index)
     }
 
     function update_class() 
@@ -308,7 +307,7 @@ layout: default
         relevant_kit_names = new Set(relevant_kits.map(x => x.Kit))
 
         // Repopulate kit types
-        update_kit_types()
+        kt_vals.forEach( kt_index => update_kit_type(kt_index) )
     }
 
     // Configure listeners to update state
@@ -323,7 +322,7 @@ layout: default
     {
         kit_type_selector.addEventListener('change', event =>
         {
-            update_kits()
+            update_kit(window.event.srcElement.name)
         })
     }
 
@@ -332,7 +331,7 @@ layout: default
     {
         kit_selector.addEventListener('change', event =>
         {
-            update_kit_descriptions()
+            update_kit_description(window.event.srcElement.name)
         })
     }
 
@@ -341,5 +340,4 @@ layout: default
         update_class()
     });
     
-
 </script>
