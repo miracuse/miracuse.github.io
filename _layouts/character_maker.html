@@ -6,6 +6,7 @@ layout: default
 
 <div class="character_sheet">
 
+    <!-- Header Row -->
     <div class="character_name">
         <input type="text" id="name" name="charactername" placeholder="Character Name">
     </div>
@@ -79,7 +80,7 @@ layout: default
     </div>
 
     <div class="perception_value">
-        <input type="number" value="0" class="skill_holder" id="skill_filled">
+        <input type="number" value="0" class="skill_holder" id="perception_value">
     </div>
 
     <div class="knowledge_text">
@@ -87,7 +88,7 @@ layout: default
     </div>
 
     <div class="knowledge_value">
-        <input type="number" value="0" class="skill_holder" id="skill_filled">
+        <input type="number" value="0" class="skill_holder" id="knowledge_value">
     </div>
 
     <div class="physique_text">
@@ -95,7 +96,7 @@ layout: default
     </div>
 
     <div class="physique_value">
-        <input type="number" value="0" class="skill_holder" id="skill_filled">
+        <input type="number" value="0" class="skill_holder" id="physique_value">
     </div>
 
     <div class="bravery_text">
@@ -103,7 +104,7 @@ layout: default
     </div>
 
     <div class="bravery_value">
-        <input type="number" value="0" class="skill_holder" id="skill_filled">
+        <input type="number" value="0" class="skill_holder" id="bravery_value">
     </div>
 
     <div class="aura_text">
@@ -111,7 +112,7 @@ layout: default
     </div>
 
     <div class="aura_value">
-        <input type="number" value="0" class="skill_holder" id="skill_filled">
+        <input type="number" value="0" class="skill_holder" id="aura_value">
     </div>
 
     <div class="focus_text">
@@ -119,7 +120,7 @@ layout: default
     </div>
 
     <div class="focus_value">
-        <input type="number" value="0" class="skill_holder" id="skill_filled">
+        <input type="number" value="0" class="skill_holder" id="focus_value">
     </div>
 
     <div class="cunning_text">
@@ -127,7 +128,7 @@ layout: default
     </div>
 
     <div class="cunning_value">
-        <input type="number" value="0" class="skill_holder" id="skill_filled">
+        <input type="number" value="0" class="skill_holder" id="cunning_value">
     </div>
 
     <div class="agility_text">
@@ -135,7 +136,7 @@ layout: default
     </div>
 
     <div class="agility_value">
-        <input type="number" value="0" class="skill_holder" id="skill_filled">
+        <input type="number" value="0" class="skill_holder" id="agility_value">
     </div>
 
     <div class="kit_header">
@@ -205,7 +206,26 @@ layout: default
     var relevant_kits = data.filter(x => x.Class === active_class)
     var relevant_kit_types = new Set(relevant_kits.map(x => x.Type))
     var relevant_kit_names = new Set(relevant_kits.map(x => x.Kit))
+
     const kt_vals = [1, 2, 3, 4]
+    const class_skill_map = new Map([
+        ["Alchemist", [2, 2, 0, 0, 0, 0, 0, 0]],
+        ["Soldier", [0, 0, 2, 2, 0, 0, 0, 0]],
+        ["Mage", [0, 0, 0, 0, 2, 2, 0, 0]],
+        ["Scoundrel", [0, 0, 0, 0, 0, 0, 2, 2]]
+])
+    // class_skill_map['Alchemist'] =  (2, 2, 0, 0, 0, 0, 0, 0)
+    // class_skill_map['Soldier'] =  (0, 0, 2, 2, 0, 0, 0, 0)
+    // class_skill_map['Mage'] =  (0, 0, 0, 0, 2, 2, 0, 0)
+    // class_skill_map['Scoundrel'] =  (0, 0, 0, 0, 0, 0, 2, 2)
+    const skill_holder_ids = ["perception_value",
+                            "knowledge_value",
+                            "physique_value",
+                            "bravery_value",
+                            "aura_value",
+                            "focus_value",
+                            "cunning_value",
+                            "agility_value"]
 
     let class_selector = document.getElementById('class_select')
     let kit_type_selectors = [document.getElementById('kit_type_01'),
@@ -298,6 +318,19 @@ layout: default
         update_kit(kt_index)
     }
 
+    function update_skills()
+    {
+        var skill_defaults = class_skill_map.get(active_class)
+        for(var i=0; i<skill_defaults.length; i++)
+        {
+            // Fetch the input HTML object
+            skill_value_selector = document.getElementById(skill_holder_ids[i])
+
+            // Set its value to the default
+            skill_value_selector.value = skill_defaults[i]
+        }
+    }
+
     function update_class() 
     {
         // Repopulate page variables
@@ -308,6 +341,9 @@ layout: default
 
         // Repopulate kit types
         kt_vals.forEach( kt_index => update_kit_type(kt_index) )
+
+        // Set default skill values
+        update_skills()
     }
 
     // Configure listeners to update state
