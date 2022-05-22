@@ -20,57 +20,69 @@ layout: default
         </select>
     </div>
 
+    <!-- Health and Fortune/Prep Points Section -->
     <div class="health_header">
         <b>Health</b>
     </div>
 
-    <div class="health_text">
+    <div class="physical_health_text">
         <label>Physical Health</label>
-        <br>
+    </div>
+
+    <div class="mental_health_text">
         <label>Mental Health</label>
     </div>
 
-    <div class="health_track">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
+    <div class="physical_health_track">
+        <input class="physical_health" type="checkbox">
+        <input class="physical_health" type="checkbox">
+        <input class="physical_health" type="checkbox">
+        <br>
+        <input class="physical_health" type="checkbox">
+        <input class="physical_health" type="checkbox">
+        <input class="physical_health" type="checkbox">
+    </div>
+
+    <div class="mental_health_track">
         <input type="checkbox">
         <input type="checkbox">
         <input type="checkbox">
         <br>
-
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
         <input type="checkbox">
         <input type="checkbox">
         <input type="checkbox">
     </div>
 
-    <div class="point_text">
+    <div class="fortune_point_text">
         <label>Fortune Points</label>
-        <br>
+    </div>
+
+    <div class="prep_point_text">
         <label>Prep Points</label>
     </div>
 
-    <div class="point_track">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
+    <div class="fortune_point_track">
         <input type="checkbox">
         <input type="checkbox">
         <input type="checkbox">
         <br>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+    </div>
 
+    <div class="prep_point_track">
         <input type="checkbox">
         <input type="checkbox">
         <input type="checkbox">
+        <br>
         <input type="checkbox">
         <input type="checkbox">
         <input type="checkbox">
     </div>
         
 
+    <!-- Skills Section -->
     <div class="skills_header">
         <b>Skills</b>
     </div>
@@ -80,7 +92,7 @@ layout: default
     </div>
 
     <div class="perception_value">
-        <input type="number" value="0" class="skill_holder" id="perception_value">
+        <input type="number" value="0" min="0", max="4" class="skill_holder" id="perception_value">
     </div>
 
     <div class="knowledge_text">
@@ -88,7 +100,7 @@ layout: default
     </div>
 
     <div class="knowledge_value">
-        <input type="number" value="0" class="skill_holder" id="knowledge_value">
+        <input type="number" value="0" min="0", max="4" class="skill_holder" id="knowledge_value">
     </div>
 
     <div class="physique_text">
@@ -96,7 +108,7 @@ layout: default
     </div>
 
     <div class="physique_value">
-        <input type="number" value="0" class="skill_holder" id="physique_value">
+        <input type="number" value="0" min="0", max="4" class="skill_holder" id="physique_value">
     </div>
 
     <div class="bravery_text">
@@ -104,7 +116,7 @@ layout: default
     </div>
 
     <div class="bravery_value">
-        <input type="number" value="0" class="skill_holder" id="bravery_value">
+        <input type="number" value="0" min="0", max="4" class="skill_holder" id="bravery_value">
     </div>
 
     <div class="aura_text">
@@ -112,7 +124,7 @@ layout: default
     </div>
 
     <div class="aura_value">
-        <input type="number" value="0" class="skill_holder" id="aura_value">
+        <input type="number" value="0" min="0", max="4" class="skill_holder" id="aura_value">
     </div>
 
     <div class="focus_text">
@@ -120,7 +132,7 @@ layout: default
     </div>
 
     <div class="focus_value">
-        <input type="number" value="0" class="skill_holder" id="focus_value">
+        <input type="number" value="0" min="0", max="4" class="skill_holder" id="focus_value">
     </div>
 
     <div class="cunning_text">
@@ -128,7 +140,7 @@ layout: default
     </div>
 
     <div class="cunning_value">
-        <input type="number" value="0" class="skill_holder" id="cunning_value">
+        <input type="number" value="0" min="0", max="4" class="skill_holder" id="cunning_value">
     </div>
 
     <div class="agility_text">
@@ -136,9 +148,10 @@ layout: default
     </div>
 
     <div class="agility_value">
-        <input type="number" value="0" class="skill_holder" id="agility_value">
+        <input type="number" value="0" min="0", max="4" class="skill_holder" id="agility_value">
     </div>
 
+    <!-- Kits Section -->
     <div class="kit_header">
         <b>Kits</b>
     </div>
@@ -198,7 +211,7 @@ layout: default
 </div>
 
 
-
+<!-- Interactive Form Script  -->
 <script>
     // Load data on page initialization
     var data = {{ site.data.miracuse_kits | jsonify }}
@@ -214,10 +227,6 @@ layout: default
         ["Mage", [0, 0, 0, 0, 2, 2, 0, 0]],
         ["Scoundrel", [0, 0, 0, 0, 0, 0, 2, 2]]
 ])
-    // class_skill_map['Alchemist'] =  (2, 2, 0, 0, 0, 0, 0, 0)
-    // class_skill_map['Soldier'] =  (0, 0, 2, 2, 0, 0, 0, 0)
-    // class_skill_map['Mage'] =  (0, 0, 0, 0, 2, 2, 0, 0)
-    // class_skill_map['Scoundrel'] =  (0, 0, 0, 0, 0, 0, 2, 2)
     const skill_holder_ids = ["perception_value",
                             "knowledge_value",
                             "physique_value",
