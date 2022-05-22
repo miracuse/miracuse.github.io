@@ -33,24 +33,14 @@ layout: default
         <label>Mental Health</label>
     </div>
 
-    <div class="physical_health_track">
-        <input class="physical_health" type="checkbox">
-        <input class="physical_health" type="checkbox">
-        <input class="physical_health" type="checkbox">
-        <br>
-        <input class="physical_health" type="checkbox">
-        <input class="physical_health" type="checkbox">
-        <input class="physical_health" type="checkbox">
+    <div class="physical_health_track" id="physical_health_track">
+        <!-- Checkboxes are created at runtime. -->
+        <!-- <input type="checkbox"> -->
     </div>
 
-    <div class="mental_health_track">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <br>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
+    <div class="mental_health_track" id="mental_health_track">
+        <!-- Checkboxes are created at runtime. -->
+        <!-- <input type="checkbox"> -->
     </div>
 
     <div class="fortune_point_text">
@@ -61,24 +51,14 @@ layout: default
         <label>Prep Points</label>
     </div>
 
-    <div class="fortune_point_track">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <br>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
+    <div class="fortune_point_track" id="fortune_point_track">
+        <!-- Checkboxes are created at runtime. -->
+        <!-- <input type="checkbox"> -->
     </div>
 
-    <div class="prep_point_track">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <br>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
+    <div class="prep_point_track" id="prep_point_track">
+        <!-- Checkboxes are created at runtime. -->
+        <!-- <input type="checkbox"> -->
     </div>
         
 
@@ -226,7 +206,7 @@ layout: default
         ["Soldier", [0, 0, 2, 2, 0, 0, 0, 0]],
         ["Mage", [0, 0, 0, 0, 2, 2, 0, 0]],
         ["Scoundrel", [0, 0, 0, 0, 0, 0, 2, 2]]
-])
+    ])
     const skill_holder_ids = ["perception_value",
                             "knowledge_value",
                             "physique_value",
@@ -235,6 +215,12 @@ layout: default
                             "focus_value",
                             "cunning_value",
                             "agility_value"]
+    const skill_health_mappings = new Map([
+            ["physique_value", "physical_health_track"],
+            ["focus_value", "mental_health_track"],
+            ["bravery_value", "fortune_point_track"],
+            ["cunning_value", "prep_point_track"]
+    ])
 
     let class_selector = document.getElementById('class_select')
     let kit_type_selectors = [document.getElementById('kit_type_01'),
@@ -249,6 +235,15 @@ layout: default
                                      document.getElementById('kit_description_02'),
                                      document.getElementById('kit_description_03'),
                                      document.getElementById('kit_description_04')]
+    let skill_selectors = [document.getElementById("knowledge_value"),
+        document.getElementById("perception_value"),
+        document.getElementById("physique_value"),
+        document.getElementById("bravery_value"),
+        document.getElementById("aura_value"),
+        document.getElementById("focus_value"),
+        document.getElementById("agility_value"),
+        document.getElementById("cunning_value")
+    ]
     
     // Helper Functions
     function update_kit_description(kt_index)
@@ -340,6 +335,65 @@ layout: default
         }
     }
 
+    function update_health()
+    {
+        // Update physical and mental health
+        var target_health_skills = ["physique_value", "focus_value"]
+        const starting_health = 3
+        target_health_skills.forEach(element => 
+        {
+            var target_skill_val = document.getElementById(element).value
+            var health_boxes = Number(target_skill_val) + starting_health
+            var health_track_element_name = skill_health_mappings.get(element)
+            var health_track = document.getElementById(health_track_element_name)
+            var current_health_track_size = health_track.childElementCount
+            var new_box_element = document.createElement("input")
+            new_box_element.type = "checkbox"
+            var diff_health = current_health_track_size - health_boxes
+            for (var i=0; i<Math.abs(diff_health); i++)
+            {
+                if (diff_health > 0)
+                {
+                    health_track.removeChild(health_track.children[health_track.childElementCount - 1])
+                }
+                else if (diff_health < 0)
+                {
+                    var new_box_element = document.createElement("input")
+                    new_box_element.type = "checkbox"
+                    health_track.appendChild(new_box_element)
+                }
+            }
+        });
+
+        // Update fortune and prep points by Bravery and Cunning
+        var target_point_skills = ["bravery_value", "cunning_value"]
+        target_point_skills.forEach(element =>
+        {
+            var target_skill_val = document.getElementById(element).value
+            var health_boxes = Number(target_skill_val) * 2
+            var health_track_element_name = skill_health_mappings.get(element)
+            var health_track = document.getElementById(health_track_element_name)
+            var current_health_track_size = health_track.childElementCount
+            var new_box_element = document.createElement("input")
+            new_box_element.type = "checkbox"
+            var diff_health = current_health_track_size - health_boxes
+            for (var i=0; i<Math.abs(diff_health); i++)
+            {
+                if (diff_health > 0)
+                {
+                    health_track.removeChild(health_track.children[health_track.childElementCount - 1])
+                }
+                else if (diff_health < 0)
+                {
+                    var new_box_element = document.createElement("input")
+                    new_box_element.type = "checkbox"
+                    health_track.appendChild(new_box_element)
+                }
+            }
+        })
+
+    }
+
     function update_class() 
     {
         // Repopulate page variables
@@ -353,6 +407,9 @@ layout: default
 
         // Set default skill values
         update_skills()
+
+        // Set health values
+        update_health()
     }
 
     // Configure listeners to update state
@@ -377,6 +434,15 @@ layout: default
         kit_selector.addEventListener('change', event =>
         {
             update_kit_description(window.event.srcElement.name)
+        })
+    }
+
+    // // Change health or points (via skills)
+    for (skill_selector of skill_selectors)
+    {
+        skill_selector.addEventListener('change', event =>
+        {
+            update_health()
         })
     }
 
