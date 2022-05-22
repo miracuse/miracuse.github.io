@@ -143,6 +143,10 @@ layout: default
         <select id="kit_01" name="1">
             <option value="potion">Potion</option>
         </select>
+        <div id="kit_uses_01" name="1">
+            <!-- Checkboxes are created at runtime. -->
+            <!-- <input type="checkbox"> -->
+        </div>
     </div>
 
     <div class="kit_text_01">
@@ -156,6 +160,10 @@ layout: default
         <select id="kit_02" name="2">
             <option value="potion">Potion</option>
         </select>
+        <div id="kit_uses_02" name="2">
+            <!-- Checkboxes are created at runtime. -->
+            <!-- <input type="checkbox"> -->
+        </div>
     </div>
 
     <div class="kit_text_02">
@@ -169,6 +177,10 @@ layout: default
         <select id="kit_03" name="3">
             <option value="potion">Potion</option>
         </select>
+        <div id="kit_uses_03" name="3">
+            <!-- Checkboxes are created at runtime. -->
+            <!-- <input type="checkbox"> -->
+        </div>
     </div>
 
     <div class="kit_text_03">
@@ -182,6 +194,10 @@ layout: default
         <select id="kit_04" name="4">
             <option value="potion">Potion</option>
         </select>
+        <div id="kit_uses_04" name="4">
+            <!-- Checkboxes are created at runtime. -->
+            <!-- <input type="checkbox"> -->
+        </div>
     </div>
 
     <div class="kit_text_04">
@@ -335,7 +351,7 @@ layout: default
         }
     }
 
-    function update_health()
+    function update_health_and_points()
     {
         // Update physical and mental health
         var target_health_skills = ["physique_value", "focus_value"]
@@ -367,10 +383,11 @@ layout: default
 
         // Update fortune and prep points by Bravery and Cunning
         var target_point_skills = ["bravery_value", "cunning_value"]
+        const point_multiplier = 2
         target_point_skills.forEach(element =>
         {
             var target_skill_val = document.getElementById(element).value
-            var health_boxes = Number(target_skill_val) * 2
+            var health_boxes = Number(target_skill_val) * point_multiplier
             var health_track_element_name = skill_health_mappings.get(element)
             var health_track = document.getElementById(health_track_element_name)
             var current_health_track_size = health_track.childElementCount
@@ -392,6 +409,44 @@ layout: default
             }
         })
 
+        // Update uses per kit for Alchemist kits
+        const default_uses_value = 2
+        var target_skill_val = document.getElementById("knowledge_value").value
+        var health_boxes = 0
+        
+        for (kit_type_selector of kit_type_selectors)
+        {
+            // Fetch kit type class
+            var kit_type_class = data.filter(x => x.Type === kit_type_selector.value)[0].Class
+            if (kit_type_class == "Alchemist")
+            {
+                health_boxes = Number(target_skill_val) + default_uses_value
+            }
+            else
+            {
+                health_boxes = 0
+            }
+            var health_track = document.getElementById("kit_uses_0" + kit_type_selector.name)
+            var current_health_track_size = health_track.childElementCount
+            var new_box_element = document.createElement("input")
+            new_box_element.type = "checkbox"
+            var diff_health = current_health_track_size - health_boxes
+            
+            
+            for (var i=0; i<Math.abs(diff_health); i++)
+            {
+                if (diff_health > 0)
+                {
+                    health_track.removeChild(health_track.children[health_track.childElementCount - 1])
+                }
+                else if (diff_health < 0)
+                {
+                    var new_box_element = document.createElement("input")
+                    new_box_element.type = "checkbox"
+                    health_track.appendChild(new_box_element)
+                }
+            }
+        }
     }
 
     function update_class() 
@@ -409,7 +464,7 @@ layout: default
         update_skills()
 
         // Set health values
-        update_health()
+        update_health_and_points()
     }
 
     // Configure listeners to update state
@@ -442,7 +497,7 @@ layout: default
     {
         skill_selector.addEventListener('change', event =>
         {
-            update_health()
+            update_health_and_points()
         })
     }
 
