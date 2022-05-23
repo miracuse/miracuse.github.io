@@ -84,17 +84,19 @@ tbody tr:nth-child(odd) th {
 input[type='text'],
 input[type='email'],
 input[type='search'],
-input[type='submit'] {
+input[type='submit'],
+input[type='number'] {
   border: 1px solid $border-color;
   padding: $padding-v $padding-h;
 }
 
 select {
   display: block;
-  font-family: inherit;
+  font-family: $root-font-family;
   font-size: $root-small-font-size;
   color: inherit;
   width: 175px;
+  border: 1px solid $border-color;
 }
 
 .kit_description {
@@ -218,8 +220,18 @@ select {
 }
 
 .character_class {
-  grid-column: 3 / -1;
+  grid-column: 3;
   grid-row: 1;
+}
+
+.hybrid_kit_type_01 {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.hybrid_kit_type_02 {
+  grid-column: 4;
+  grid-row: 2;
 }
 
 .health_header {
