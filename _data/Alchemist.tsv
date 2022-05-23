@@ -1,0 +1,19 @@
+Class	Type	Kit	Tags	Description
+Alchemist	Drugs	Basilisk Venom	Attack	Venom applied to a weapon that turns flesh to stone, induces paralysis, or causes significant pain. The user chooses which effect takes place.
+Alchemist	Drugs	Beast’s Blood	Utility	Potion that grants the user a dog’s sense of smell, a falcon’s sense of sight, or a bat’s sense of hearing for a few hours. The user chooses which effect takes place.
+Alchemist	Drugs	Dead Nettle Dust	Attack, AoE	Powder that does one of the following: induces uncontrollable sneezing, inflicts burns on exposed skin, or blinds. The user chooses which effect takes place. Can be applied to a weapon like a venom.
+Alchemist	Drugs	Elixir	Recovery	Potion that recovers two Physical boxes or two Mental boxes. The user chooses which effect takes place.
+Alchemist	Drugs	Holy Water	Utility, Attack, Defense	Potion that renders the user inert to magic, making them highly resistant to spells, clearing away any lingering curses, and preventing them from using magic for a few hours. Can be applied to a weapon like a venom. Harmful to the undead and similar creatures.
+Alchemist	Drugs	Hyde’s Draught	Utility, Defense	Potion that changes the user’s skin to one of the following: thin fireproof dragon scales, fish scales that let the user breathe underwater, or sticky scales that let the user climb with ease.
+Alchemist	Munitions	Chemical Grenades	Hazard, AoE	Grenade that covers an area with a grease slick, a tangle of thick sticky webs, or a choking cloud of black smoke. The user chooses which effect takes place.
+Alchemist	Munitions	Elemental Grenades	Attack, Hazard, AoE	Grenade that covers an area with searing flames, a sheet of ice, or crackling electricity. The user chooses which effect takes place.
+Alchemist	Munitions	Flare Bullets	Attack, Utility	Ammo that burns hot and bright, piercing through stone, metal, and magic.
+Alchemist	Munitions	Timed Charge	Utility	Bomb that must be carefully placed and primed. More potent than other explosives, but unusable in combat.
+Alchemist	Munitions	Trenchsteel Grenades	Attack, Utility, AoE	Grenade that covers an area with hot metal caltrops, a bale of barbed wire, or flashing lights and deafening bangs. The user chooses which effect takes place.
+Alchemist	Munitions	Trick Bullets	Attack, Utility, AoE	Elastic ammo that strikes with blunt force, knocking over targets and rebounding in closed spaces. Can change course mid-flight by detonating a second time.
+Alchemist	Tools	Bag of Holding	Utility	Bag that’s bigger on the inside than the outside. Items placed within become weightless until withdrawn.
+Alchemist	Tools	Boots of Traversing	Utility	A pair of boots that allow the wearer to walk on water, glide down when falling from great heights, or stick to walls.
+Alchemist	Tools	Immovable Rod	Utility	Retractable steel pole that locks into place when activated, floating in defiance of gravity. Requires immense force to move.
+Alchemist	Tools	Quicksilver Homunculus	Utility	Sentient metal ooze that can change shape and hardness. Can be transformed into various tools, weapons, and objects when activated. Can follow simple orders.
+Alchemist	Tools	Spirit of Transmutation	Utility	Transmute substances into other, similar substances. You can spend this Kit’s uses to apply Knowledge or Perception instead of Aura when using this spirit.
+Alchemist	Tools	Trumps	Utility	A deck of cards, each painted to resemble a person that the owner knows. When focusing on one or more cards, the user can communicate telepathically with the person on the card, provided that the target is willing and able.

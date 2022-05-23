@@ -8,9 +8,10 @@ import os
 import pandas as pd
 
 ### Globals
-INPUT_FILE = "miracuse_kits.xlsx"
-OUTPUT_FILE = "_data/miracuse_kits.tsv"
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(PROJECT_DIR, "_data")
+INPUT_FILE = "miracuse_kits.xlsx"
+OUTPUT_FILE = "miracuse_kits.tsv"
 
 # Main
 def main():
@@ -22,8 +23,15 @@ def main():
         input_data[col] = input_data[col].apply(lambda x: x.strip())
 
     # Output data as TSV
-    output_path = os.path.join(PROJECT_DIR, OUTPUT_FILE)
+    output_path = os.path.join(OUTPUT_DIR, OUTPUT_FILE)
     input_data.to_csv(output_path, index=False, encoding="utf-8", sep="\t")
+
+    # Create smaller files for each gameplay class
+    classes = input_data['Class'].unique()
+    for game_class in classes:
+        class_kits = input_data[input_data["Class"] == game_class]
+        output_path = os.path.join(OUTPUT_DIR, f"{game_class}.tsv")
+        class_kits.to_csv(output_path, index=False, encoding="utf-8", sep="\t")
 
 
 if __name__ == "__main__":

@@ -12,6 +12,7 @@ layout: default
   <button class="tablinks" onclick="openTab(event, 'Alchemy')">Alchemy Basics</button>
   <!-- <button class="tablinks" onclick="openTab(event, 'Alchemic Items')">Alchemic Items</button> -->
   <button class="tablinks" onclick="openTab(event, 'Role')">Role</button>
+  <button class="tablinks" onclick="openTab(event, 'Kits')">Kits</button>
 </div>
 </div>
 
@@ -184,3 +185,17 @@ layout: default
     arrive.
   </p>
   </div>
+
+  <div id="Kits" class="tabcontent">
+    <h3><span style="color: #268bd2">Alchemist Kits</span></h3>
+  
+    <table class="kits_table">
+      {% for row in site.data.Alchemist %}
+      <tr>
+        <td><b>{{ row.Kit }}</b></td>
+        <td>{{ row.Type }}</td>
+        <td>{{ row.Tags }}</td>
+        <td>{{ row.Description }}</td>
+      </tr>
+      {% endfor %}
+    </table>

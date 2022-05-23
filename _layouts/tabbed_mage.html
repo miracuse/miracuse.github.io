@@ -16,6 +16,7 @@ layout: default
     Example Spells
   </button>
   <button class="tablinks" onclick="openTab(event, 'Role')">Role</button>
+  <button class="tablinks" onclick="openTab(event, 'Kits')">Kits</button>
 </div>
 
 <!-- Tab content -->
@@ -213,3 +214,17 @@ layout: default
     be helpful when dangerous magic is in the air.
   </p>
 </div>
+
+<div id="Kits" class="tabcontent">
+  <h3><span style="color: #953553">Mage Kits</span></h3>
+
+  <table class="kits_table">
+    {% for row in site.data.Mage %}
+    <tr>
+      <td><b>{{ row.Kit }}</b></td>
+      <td>{{ row.Type }}</td>
+      <td>{{ row.Tags }}</td>
+      <td>{{ row.Description }}</td>
+    </tr>
+    {% endfor %}
+  </table>
