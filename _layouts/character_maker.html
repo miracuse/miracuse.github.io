@@ -5,20 +5,43 @@ layout: default
 <h1>Character Sheet</h1>
 
 <div class="character_sheet">
-
     <!-- Header Row -->
     <div class="character_name">
-        <input type="text" id="name" name="charactername" placeholder="Character Name">
+        <input
+            type="text"
+            id="name"
+            name="charactername"
+            placeholder="Character Name"
+        />
     </div>
 
     <div class="character_class">
         <select id="class_select" name="characterclass">
-            <option value="alchemist">Alchemist</option>
-            <option value="soldier">Soldier</option>
-            <option value="mage">Mage</option>
-            <option value="scoundrel">Scoundrel</option>
+            <option value="Alchemist">Alchemist</option>
+            <option value="Soldier">Soldier</option>
+            <option value="Mage">Mage</option>
+            <option value="Scoundrel">Scoundrel</option>
+            <option value="Hybrid">Hybrid</option>
         </select>
     </div>
+
+    <select
+        class="hybrid_kit_type_01"
+        id="hybrid_kit_type_01"
+        name="1"
+        hidden="true"
+    >
+        <!-- Options generated at runtime -->
+    </select>
+
+    <select
+        class="hybrid_kit_type_02"
+        id="hybrid_kit_type_02"
+        name="2"
+        hidden="true"
+    >
+        <!-- Options generated at runtime -->
+    </select>
 
     <!-- Health and Fortune/Prep Points Section -->
     <div class="health_header">
@@ -60,7 +83,6 @@ layout: default
         <!-- Checkboxes are created at runtime. -->
         <!-- <input type="checkbox"> -->
     </div>
-        
 
     <!-- Skills Section -->
     <div class="skills_header">
@@ -72,7 +94,16 @@ layout: default
     </div>
 
     <div class="perception_value">
-        <input type="number" value="0" min="0", max="4" class="skill_holder" id="perception_value">
+        <input
+            type="number"
+            value="0"
+            min="0"
+            ,
+            max="4"
+            class="skill_holder"
+            id="perception_value"
+            name="perception"
+        />
     </div>
 
     <div class="knowledge_text">
@@ -80,7 +111,16 @@ layout: default
     </div>
 
     <div class="knowledge_value">
-        <input type="number" value="0" min="0", max="4" class="skill_holder" id="knowledge_value">
+        <input
+            type="number"
+            value="0"
+            min="0"
+            ,
+            max="4"
+            class="skill_holder"
+            id="knowledge_value"
+            name="knowledge"
+        />
     </div>
 
     <div class="physique_text">
@@ -88,7 +128,16 @@ layout: default
     </div>
 
     <div class="physique_value">
-        <input type="number" value="0" min="0", max="4" class="skill_holder" id="physique_value">
+        <input
+            type="number"
+            value="0"
+            min="0"
+            ,
+            max="4"
+            class="skill_holder"
+            id="physique_value"
+            name="physique"
+        />
     </div>
 
     <div class="bravery_text">
@@ -96,7 +145,16 @@ layout: default
     </div>
 
     <div class="bravery_value">
-        <input type="number" value="0" min="0", max="4" class="skill_holder" id="bravery_value">
+        <input
+            type="number"
+            value="0"
+            min="0"
+            ,
+            max="4"
+            class="skill_holder"
+            id="bravery_value"
+            name="bravery"
+        />
     </div>
 
     <div class="aura_text">
@@ -104,7 +162,16 @@ layout: default
     </div>
 
     <div class="aura_value">
-        <input type="number" value="0" min="0", max="4" class="skill_holder" id="aura_value">
+        <input
+            type="number"
+            value="0"
+            min="0"
+            ,
+            max="4"
+            class="skill_holder"
+            id="aura_value"
+            name="aura"
+        />
     </div>
 
     <div class="focus_text">
@@ -112,7 +179,16 @@ layout: default
     </div>
 
     <div class="focus_value">
-        <input type="number" value="0" min="0", max="4" class="skill_holder" id="focus_value">
+        <input
+            type="number"
+            value="0"
+            min="0"
+            ,
+            max="4"
+            class="skill_holder"
+            id="focus_value"
+            name="focus"
+        />
     </div>
 
     <div class="cunning_text">
@@ -120,7 +196,16 @@ layout: default
     </div>
 
     <div class="cunning_value">
-        <input type="number" value="0" min="0", max="4" class="skill_holder" id="cunning_value">
+        <input
+            type="number"
+            value="0"
+            min="0"
+            ,
+            max="4"
+            class="skill_holder"
+            id="cunning_value"
+            name="cunning"
+        />
     </div>
 
     <div class="agility_text">
@@ -128,7 +213,16 @@ layout: default
     </div>
 
     <div class="agility_value">
-        <input type="number" value="0" min="0", max="4" class="skill_holder" id="agility_value">
+        <input
+            type="number"
+            value="0"
+            min="0"
+            ,
+            max="4"
+            class="skill_holder"
+            id="agility_value"
+            name="agility"
+        />
     </div>
 
     <!-- Kits Section -->
@@ -150,7 +244,9 @@ layout: default
     </div>
 
     <div class="kit_text_01">
-        <p id="kit_description_01" class="kit_description" name="1">Description</p>
+        <p id="kit_description_01" class="kit_description" name="1">
+            Description
+        </p>
     </div>
 
     <div class="kit_chooser_02" name="2">
@@ -167,7 +263,9 @@ layout: default
     </div>
 
     <div class="kit_text_02">
-        <p id="kit_description_02" class="kit_description" name="2">Description</p>
+        <p id="kit_description_02" class="kit_description" name="2">
+            Description
+        </p>
     </div>
 
     <div class="kit_chooser_03" name="3">
@@ -184,7 +282,9 @@ layout: default
     </div>
 
     <div class="kit_text_03">
-        <p id="kit_description_03" class="kit_description" name="3">Description</p>
+        <p id="kit_description_03" class="kit_description" name="3">
+            Description
+        </p>
     </div>
 
     <div class="kit_chooser_04" name="4">
@@ -201,48 +301,89 @@ layout: default
     </div>
 
     <div class="kit_text_04">
-        <p id="kit_description_04" class="kit_description" name="4">Description</p>
+        <p id="kit_description_04" class="kit_description" name="4">
+            Description
+        </p>
     </div>
-
 </div>
 
-
-<!-- Interactive Form Script  -->
+<!-- Interactive Form Script ----------------------------------------->
 <script>
-    // Set starting variables /////////////////////////////////////////////////
-    var data = {{ site.data.miracuse_kits | jsonify }}
-    var active_class = "Alchemist"
-    var relevant_kits = data.filter(x => x.Class === active_class)
-    var relevant_kit_types = new Set(relevant_kits.map(x => x.Type))
-    var relevant_kit_names = new Set(relevant_kits.map(x => x.Kit))
-
+    // Globals //////////////////////////////////////////////////////////
     const kt_vals = [1, 2, 3, 4]
-    const class_skill_map = new Map([
-        ["Alchemist", [2, 2, 0, 0, 0, 0, 0, 0]],
-        ["Soldier", [0, 0, 2, 2, 0, 0, 0, 0]],
-        ["Mage", [0, 0, 0, 0, 2, 2, 0, 0]],
-        ["Scoundrel", [0, 0, 0, 0, 0, 0, 2, 2]]
-    ])
+    const class_skill_mapping = {
+    "Alchemist": {
+        "perception": 2,
+        "knowledge": 2,
+        "physique": 0,
+        "bravery": 0,
+        "aura": 0,
+        "focus": 0,
+        "cunning": 0,
+        "agility": 0},
+    "Soldier": {
+        "perception": 0,
+        "knowledge": 0,
+        "physique": 2,
+        "bravery": 2,
+        "aura": 0,
+        "focus": 0,
+        "cunning": 0,
+        "agility": 0},
+    "Mage": {
+        "perception": 0,
+        "knowledge": 0,
+        "physique": 0,
+        "bravery": 0,
+        "aura": 2,
+        "focus": 2,
+        "cunning": 0,
+        "agility": 0},
+    "Scoundrel": {
+        "perception": 0,
+        "knowledge": 0,
+        "physique": 0,
+        "bravery": 0,
+        "aura": 0,
+        "focus": 0,
+        "cunning": 2,
+        "agility": 2},
+    "Hybrid": {
+        "perception": 0,
+        "knowledge": 0,
+        "physique": 0,
+        "bravery": 0,
+        "aura": 0,
+        "focus": 0,
+        "cunning": 0,
+        "agility": 0}
+    }
     const skill_holder_ids = ["perception_value",
-                            "knowledge_value",
-                            "physique_value",
-                            "bravery_value",
-                            "aura_value",
-                            "focus_value",
-                            "cunning_value",
-                            "agility_value"]
-    const skill_health_mappings = new Map([
-            ["physique_value", "physical_health_track"],
-            ["focus_value", "mental_health_track"],
-            ["bravery_value", "fortune_point_track"],
-            ["cunning_value", "prep_point_track"]
-    ])
+                "knowledge_value",
+                "physique_value",
+                "bravery_value",
+                "aura_value",
+                "focus_value",
+                "cunning_value",
+                "agility_value"]
+    const skill_health_mappings = {
+    "physical_health_track": "physique",
+    "mental_health_track": "focus",
+    "fortune_point_track": "bravery",
+    "prep_point_track": "cunning",
+    "kit_uses_01": "knowledge",
+    "kit_uses_02": "knowledge",
+    "kit_uses_03": "knowledge",
+    "kit_uses_04": "knowledge",
+    }
 
     let class_selector = document.getElementById('class_select')
+    let hybrid_kit_type_selectors = [document.getElementById('hybrid_kit_type_01'),
+                                     document.getElementById('hybrid_kit_type_02')]
     let kit_type_selectors = [document.getElementById('kit_type_01'),
-                              document.getElementById('kit_type_02'),
-                              document.getElementById('kit_type_03'),
-                              document.getElementById('kit_type_04')]
+                             document.getElementById('kit_type_02'),
+                             document.getElementById('kit_type_03'),
+                             document.getElementById('kit_type_04')]
     let kit_selectors = [document.getElementById('kit_01'),
                          document.getElementById('kit_02'),
                          document.getElementById('kit_03'),
@@ -252,253 +393,332 @@ layout: default
                                      document.getElementById('kit_description_03'),
                                      document.getElementById('kit_description_04')]
     let skill_selectors = [document.getElementById("knowledge_value"),
-        document.getElementById("perception_value"),
-        document.getElementById("physique_value"),
-        document.getElementById("bravery_value"),
-        document.getElementById("aura_value"),
-        document.getElementById("focus_value"),
-        document.getElementById("agility_value"),
-        document.getElementById("cunning_value")
-    ]
-    // Helper Functions (Update Tracks) ///////////////////////////////////////
-    function update_track(track_element, amount)
-    {
+                           document.getElementById("perception_value"),
+                           document.getElementById("physique_value"),
+                           document.getElementById("bravery_value"),
+                           document.getElementById("aura_value"),
+                           document.getElementById("focus_value"),
+                           document.getElementById("agility_value"),
+                           document.getElementById("cunning_value")]
+
+    // Load Data ////////////////////////////////////////////////////////
+    var data = {{ site.data.miracuse_kits | jsonify }}
+
+    // Track Page State /////////////////////////////////////////////////
+    // Initialize defaults
+    var page_state = {
+    "class": "",
+    "kit_types": [""],
+    "selected_hybrid_kit_types": ["", "",],
+    "selected_kit_types": ["", "", "", ""],
+    "selected_kits": ["", "", "", ""],
+    "selected_kit_descriptions": ["", "", "", ""],
+    "skills": {
+        "perception": 0,
+        "knowledge": 0,
+        "physique": 0,
+        "bravery": 0,
+        "aura": 0,
+        "focus": 0,
+        "cunning": 0,
+        "agility": 0},
+    }
+
+    // Helper Functions (Update Data) /////////////////////////////////////////////////
+    function set_kit(kt_index, selection_index){
+        // Get available kits for this kit type
+        var available_kits = Array.from(new Set(data.filter(x => x.Type === page_state["selected_kit_types"][kt_index]).map(x => x.Kit)))
+        var available_kit_descriptions = Array.from(new Set(data.filter(x => x.Type === page_state["selected_kit_types"][kt_index]).map(x => x.Description)))
+
+        // Set the kit
+        page_state["selected_kits"][kt_index] = available_kits[selection_index]
+        page_state["selected_kit_descriptions"][kt_index] = available_kit_descriptions[selection_index]
+    }
+
+    function set_kit_type(kt_index, selection_index){
+        if (page_state["class"] === "Hybrid") {
+            // Kit types are selected from user input
+            page_state["kit_types"] = page_state.selected_hybrid_kit_types
+        }
+        else {
+            // Set kit types for class
+            page_state["kit_types"] = Array.from(new Set(data.filter(x => x.Class === page_state["class"]).map(x => x.Type)))
+        }
+
+        // Set selected kit types to first value as defaults
+        page_state["selected_kit_types"][kt_index] = page_state["kit_types"][selection_index]
+
+        // Set selected kits to first value as defaults
+        for(var i = 0; i < page_state["selected_kits"].length; i++){
+            set_kit(i, 0)
+        }
+    }
+
+    function set_skill(skill_name, value){
+        page_state["skills"][skill_name] = value
+    }
+
+    function set_class(class_name){
+        // Set the class
+        page_state["class"] = class_name
+
+        // Set the default skills for that class
+        page_state["skills"] = class_skill_mapping[page_state["class"]]
+
+        // Set the kits for that class
+        for(var i = 0; i < page_state["selected_kit_types"].length; i++){
+            set_kit_type(i, 0)
+        }
+    }
+
+    function set_hybrid_kit_types(kt_index, value){
+        page_state["selected_hybrid_kit_types"][kt_index] = value
+    }
+
+    // Helper Functions (Update Display) /////////////////////////////////////////////////
+    function update_track(track_element, amount) {
         var current_track_size = track_element.childElementCount
         var diff_amount = current_track_size - amount
-        for (var i=0; i<Math.abs(diff_amount); i++)
-        {
-            if (diff_amount > 0)
-            {
+        for (var i=0; i<Math.abs(diff_amount); i++) {
+            if (diff_amount > 0){
                 track_element.removeChild(track_element.children[track_element.childElementCount - 1])
             }
-            else if (diff_amount < 0)
-            {
+            else if (diff_amount < 0){
                 var new_box_element = document.createElement("input")
                 new_box_element.type = "checkbox"
                 track_element.appendChild(new_box_element)
             }
         }
     }
-    
-    // Helper Functions (Update Fields) ///////////////////////////////////////
-    function update_kit_description(kt_index)
-    {
-        // Set target to corresponding kit description
-        var kit_description_selector = kit_description_selectors[kt_index - 1]
 
-        // Fetch description by selected kit
-        var kit_selector_e = kit_selectors[kt_index - 1]
-        var kit_str = kit_selector_e.options[kit_selector_e.selectedIndex].value
-        var relevant_kits_sub_sub = relevant_kits.filter(x => x.Kit === kit_str)
-        var relevant_kit_description_sub = relevant_kits_sub_sub.map(x => x.Description)
+    function render_health_and_points(){
+        // For each health track...
+        Object.keys(skill_health_mappings).forEach(element => {
+            // Get the track being modified
+            var track_element = document.getElementById(element)
 
-        // Replace existing description
-        kit_description_selector.innerHTML = relevant_kit_description_sub
+            // Get the number of boxes this track should have
+            var matching_skill = skill_health_mappings[element]
+            var box_count = page_state["skills"][skill_health_mappings[element]]
+            if (matching_skill === "physique" || matching_skill === "focus") {box_count = box_count + 3}
+            else if (matching_skill === "bravery" || matching_skill === "cunning") {box_count = box_count * 2}
+            else if (matching_skill === "knowledge" ) {box_count = box_count + 2}
+
+            // Account for certain kits that increase box count
+            for (kit_name of page_state["selected_kits"]){
+                if ((kit_name === "Arta Forteiza" && matching_skill === "physique") ||
+                    (kit_name === "Iron Will" && matching_skill === "focus")){
+                        box_count = box_count +1
+                }
+                else if ((kit_name === "Lucky" && matching_skill === "bravery") ||
+                    (kit_name === "Prepared" && matching_skill === "cunning")) {
+                        box_count = box_count +2
+                    }
+            }
+
+            // Zero the track count for kit uses if the kit type is not alchemist
+            if (element.includes("kit_uses")) {
+                var kt_index = element.charAt(element.length - 1)
+                if (! (data.filter(x => x.Kit === page_state["selected_kits"][0]).map(x => x.Tags)[0].includes("Alchemy"))){
+                    box_count = 0
+                }
+
+            }
+
+            // Update accordingly
+            update_track(track_element, box_count)
+        });
     }
 
-    function update_kit(kt_index)
-    {
-        // Set target to corresponding kit selector
-        var kit_selector = kit_selectors[kt_index - 1]
+    function render_skills(){
+        // For each skill in the page state, set the value
+        Object.keys(page_state["skills"]).forEach(element => {
+            skill_value_selector = document.getElementById(element+"_value")
+            skill_value_selector.value = page_state["skills"][element]
+        });
+    }
 
-        // Fetch relevant kits by kit type
-        var kit_type_selector_e = kit_type_selectors[kt_index - 1]
-        var kit_type_str = kit_type_selector_e.options[kit_type_selector_e.selectedIndex].value
-        var relevant_kits_sub = relevant_kits.filter(x => x.Type === kit_type_str)
-        var relevant_kit_names_sub = relevant_kits_sub.map(x => x.Kit)
+    function render_kit_description(kt_index){
+        // Kit Description
+        var kit_description_selector = kit_description_selectors[kt_index]
 
-        // Delete existing options for kit selector
-        while (kit_selector.childElementCount > 0)
-        {
+        // Replace existing text
+        kit_description_selector.innerText = page_state["selected_kit_descriptions"][kt_index]
+    }
+
+    function update_kit_type_options(){
+        for(var i=0; i<kit_type_selectors.length; i++) {
+            // Update Kit Type Options
+            //// Kit Type Selector
+            var kit_type_selector = kit_type_selectors[i]
+
+            //// Remove existing options
+            while (kit_type_selector.childElementCount > 0) {
+                kit_type_selector[kit_type_selector.childElementCount - 1].remove()
+            }
+
+            //// Add new options
+            for(var j=0; j<page_state["kit_types"].length; j++){
+                // Create option
+                var opt = document.createElement("option")
+                opt.value = page_state["kit_types"][j]
+                opt.innerHTML = page_state["kit_types"][j]
+
+                // Append to list
+                kit_type_selector.appendChild(opt)
+            }
+
+            // Update related kit options
+            update_kit_options(i)
+        }
+    }
+
+    function update_kit_options(kt_index){
+        // Kit Selector
+        var kit_selector = kit_selectors[kt_index]
+
+        // Kit Type Selector
+        var kit_type_selector = kit_type_selectors[kt_index]
+
+        // Remove existing options
+        while (kit_selector.childElementCount > 0) {
             kit_selector[kit_selector.childElementCount - 1].remove()
         }
 
-        // Populate new options for kit selector
-        for(element of Array.from(relevant_kit_names_sub))
-        {
+        // Add new options
+        var kit_options = data.filter(x => x.Type === page_state["selected_kit_types"][kt_index]).map(x => x.Kit)
+        for(var j=0; j<kit_options.length; j++){
             // Create option
             var opt = document.createElement("option")
-            opt.value = element
-            opt.innerHTML = element
+            opt.value = kit_options[j]
+            opt.innerHTML = kit_options[j]
 
             // Append to list
             kit_selector.appendChild(opt)
         }
 
-        // Update the corresponding kit selector
-        update_kit_description(kt_index)
-        
+        render_kit_description(kt_index)
     }
 
-    function update_kit_type(kt_index)
-    {
-        // Set target to the corresponding kit type selector
-        var kit_type_selector = kit_type_selectors[kt_index - 1]
-
-        // Delete existing options for selector
-        while (kit_type_selector.childElementCount > 0)
-        {
-            kit_type_selector[kit_type_selector.childElementCount - 1].remove()
-        }
-
-        // Populate new options for selector
-        for(element of Array.from(relevant_kit_types))
-        {
-            // Create option
-            var opt = document.createElement("option")
-            opt.value = element
-            opt.innerHTML = element
-
-            // Append to list
-            kit_type_selector.appendChild(opt)
-        }
-        
-        // Update the corresponding kit selector
-        update_kit(kt_index)
+    function update_skill(skill, value){
+        // Update the skill value
+        page_state["skills"][skill] = parseInt(value,10)
     }
 
-    function update_skills()
-    {
-        var skill_defaults = class_skill_map.get(active_class)
-        for(var i=0; i<skill_defaults.length; i++)
-        {
-            // Fetch the input HTML object
-            skill_value_selector = document.getElementById(skill_holder_ids[i])
+    function update_hybrid_kit_type(kt_index, selected_index){
+        page_state["selected_hybrid_kit_types"][kt_index] = hybrid_kit_type_selectors[kt_index].options[selected_index].value
+    }
 
-            // Set its value to the default
-            skill_value_selector.value = skill_defaults[i]
+    function render_hybrid_kit_type_selectors_visibility(){
+        // Make hybrid kit type selectors visible/invisible
+        // based on whether or not hybrid class is selected
+        if (page_state["class"] === "Hybrid"){
+            state_text = "visible"
+        }
+        else {
+            state_text = "hidden"
+        }
+
+        for (kit_type_selector of hybrid_kit_type_selectors) {
+            kit_type_selector.style.visibility = state_text
         }
     }
 
-    function update_health_and_points()
-    {
-        // Update physical and mental health
-        var target_health_skills = ["physique_value", "focus_value"]
-        const starting_health = 3
-        target_health_skills.forEach(element => 
-        {
-            var target_skill_val = document.getElementById(element).value
-            var health_boxes = Number(target_skill_val) + starting_health
-            var health_track_element_name = skill_health_mappings.get(element)
-            var health_track = document.getElementById(health_track_element_name)
-            update_track(health_track, health_boxes)
-        });
+    function onetime_setup_hybrid_kit_type_selectors(){
+        // Populate options
+        for (kit_type_selector of hybrid_kit_type_selectors){
+            for (kit_type of new Set(data.map(x => x.Type))){
+                // Create option
+                var opt = document.createElement("option")
+                opt.value = kit_type
+                opt.innerHTML = kit_type
 
-        // Update fortune and prep points by Bravery and Cunning
-        var target_point_skills = ["bravery_value", "cunning_value"]
-        const point_multiplier = 2
-        target_point_skills.forEach(element =>
-        {
-            var target_skill_val = document.getElementById(element).value
-            var health_boxes = Number(target_skill_val) * point_multiplier
-            var health_track_element_name = skill_health_mappings.get(element)
-            var health_track = document.getElementById(health_track_element_name)
-            update_track(health_track, health_boxes)
-        })
+                // Append to list
+                kit_type_selector.appendChild(opt)
+                }
+            }
 
-        // Update uses per kit for Alchemist kits
-        const default_uses_value = 2
-        var target_skill_val = document.getElementById("knowledge_value").value
-        var health_boxes = 0
-        for (kit_type_selector of kit_type_selectors)
-        {
-            // Fetch kit type class
-            var kit_type_class = data.filter(x => x.Type === kit_type_selector.value)[0].Class
-            if (kit_type_class == "Alchemist")
-            {
-                health_boxes = Number(target_skill_val) + default_uses_value
-            }
-            else
-            {
-                health_boxes = 0
-            }
-            var health_track = document.getElementById("kit_uses_0" + kit_type_selector.name)
-            update_track(health_track, health_boxes)
-        }
-
-        // Check for kits that increase health or points
-        for (kit_selector of kit_selectors)
-        {
-            var kit_name = kit_selector.selectedOptions[0].value
-            if (kit_name == "Arta Forteiza")
-            {
-                var health_track = document.getElementById(skill_health_mappings.get("physique_value"))
-                update_track(health_track, health_track.childElementCount + 1)
-            }
-            else if (kit_name == "Iron Will")
-            {
-                var health_track = document.getElementById(skill_health_mappings.get("focus_value"))
-                update_track(health_track, health_track.childElementCount + 1)
-            }
-            else if (kit_name == "Lucky")
-            {
-                var health_track = document.getElementById(skill_health_mappings.get("bravery_value"))
-                update_track(health_track, health_track.childElementCount + 2)
-            }
-            else if (kit_name == "Prepared")
-            {
-                var health_track = document.getElementById(skill_health_mappings.get("cunning_value"))
-                update_track(health_track, health_track.childElementCount + 2)
-            }
-        }
+        // Set defaults
+        set_hybrid_kit_types(0, "Drugs")
+        set_hybrid_kit_types(1, "Drugs")
     }
 
-    function update_class() 
-    {
-        // Repopulate page variables
-        active_class = class_selector.options[class_selector.selectedIndex].innerHTML
-        relevant_kits = data.filter(x => x.Class === active_class)
-        relevant_kit_types = new Set(relevant_kits.map(x => x.Type))
-        relevant_kit_names = new Set(relevant_kits.map(x => x.Kit))
+    function render_page(){
+        // Render hybrid kit type selectors
+        render_hybrid_kit_type_selectors_visibility()
 
-        // Repopulate kit types
-        kt_vals.forEach( kt_index => update_kit_type(kt_index) )
+        // Render skills
+        render_skills()
 
-        // Set default skill values
-        update_skills()
+        // Render kit types
+        update_kit_type_options()
 
-        // Set health values
-        update_health_and_points()
+        // Render kits and kit descriptions
+        for(var i=0; i<kit_selectors.length; i++) {
+            render_kit_description(i)
+        }
+
+        // Render health
+        render_health_and_points()
     }
 
+    // Helper Functions (Configure Listeners) ////////////////////////////////
     // Configure listeners to act on user input ///////////////////////////////
-    // Change Class
-    class_selector.addEventListener('change', event => 
-    {
-        update_class()
-    })
-
-    // Change Kit Type
-    for (kit_type_selector of kit_type_selectors)
-    {
-        kit_type_selector.addEventListener('change', event =>
-        {
-            update_kit(window.event.srcElement.name)
+    function configure_listeners(){
+        // Change Class
+        class_selector.addEventListener('change', event => {
+            set_class(window.event.srcElement.value)
+            update_kit_type_options()
+            render_page()
         })
+
+        // Change Hybrid Class Kits
+        for (hybrid_kit_type_selector of hybrid_kit_type_selectors){
+            hybrid_kit_type_selector.addEventListener('change', event =>{
+                update_hybrid_kit_type(window.event.srcElement.name-1, window.event.srcElement.selectedIndex)
+                set_class("Hybrid")
+                update_kit_type_options()
+                render_page()
+            })
+        }
+
+        // Change Kit Type
+        for (kit_type_selector of kit_type_selectors) {
+            kit_type_selector.addEventListener('change', event => {
+                set_kit_type(window.event.srcElement.name-1, window.event.srcElement.selectedIndex)
+                update_kit_options(window.event.srcElement.name-1)
+            })
+        }
+
+        // Change Kit
+        for (kit_selector of kit_selectors) {
+            kit_selector.addEventListener('change', event =>
+            {
+                set_kit(window.event.srcElement.name-1, window.event.srcElement.selectedIndex)
+                render_kit_description(window.event.srcElement.name-1)
+                render_health_and_points()
+            })
+        }
+
+        // Change skills
+        for (skill_selector of skill_selectors) {
+            skill_selector.addEventListener('change', event => {
+                update_skill(window.event.srcElement.name, window.event.srcElement.value)
+                render_skills()
+                render_health_and_points()
+            })
+        }
     }
 
-    // Change Kit
-    for (kit_selector of kit_selectors)
-    {
-        kit_selector.addEventListener('change', event =>
-        {
-            update_kit_description(window.event.srcElement.name)
-            update_health_and_points()
-        })
-    }
 
-    // Change health or points (via skills)
-    for (skill_selector of skill_selectors)
-    {
-        skill_selector.addEventListener('change', event =>
-        {
-            update_health_and_points()
-        })
-    }
+    // // Initialize Page ///////////////////////////////////////////////////
+    // hybrid_skill_selector_onetime_setup()
+    configure_listeners()
+    onetime_setup_hybrid_kit_type_selectors()
 
-    // Update page with default settings //////////////////////////////////////
+
     window.addEventListener('load', (event) => {
-        update_class()
+        set_class("Alchemist")
+        render_page()
     });
-    
 </script>

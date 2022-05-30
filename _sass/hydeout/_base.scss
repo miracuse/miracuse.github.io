@@ -96,6 +96,7 @@ select {
   font-size: $root-small-font-size;
   color: inherit;
   width: 175px;
+  height: 1.25rem;
   border: 1px solid $border-color;
 }
 
@@ -212,7 +213,6 @@ select {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 10px;
-  // grid-auto-rows: minmax(100px, auto);
 }
 
 .character_name {
@@ -221,13 +221,13 @@ select {
 }
 
 .character_class {
-  grid-column: 3;
+  grid-column: 4;
   grid-row: 1;
 }
 
 .hybrid_kit_type_01 {
-  grid-column: 4;
-  grid-row: 1;
+  grid-column: 3;
+  grid-row: 2;
 }
 
 .hybrid_kit_type_02 {
