@@ -517,9 +517,10 @@ layout: default
             }
 
             // Zero the track count for kit uses if the kit type is not alchemist
-            if (element.includes("kit_uses")) {
-                var kt_index = element.charAt(element.length - 1)
-                if (! (data.filter(x => x.Kit === page_state["selected_kits"][0]).map(x => x.Tags)[0].includes("Alchemy"))){
+            if (track_element.id.includes("kit_uses")) {
+                var kt_index = track_element.attributes.name.value - 1
+                if (! (data.filter(x => x.Kit === page_state["selected_kits"][kt_index]).map(x => x.Tags)[0].includes("Alchemy"))){
+                    console.log()
                     box_count = 0
                 }
 
@@ -687,6 +688,7 @@ layout: default
             kit_type_selector.addEventListener('change', event => {
                 set_kit_type(window.event.srcElement.name-1, window.event.srcElement.selectedIndex)
                 update_kit_options(window.event.srcElement.name-1)
+                render_health_and_points()
             })
         }
 
