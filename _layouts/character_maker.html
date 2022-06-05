@@ -520,7 +520,6 @@ layout: default
             if (track_element.id.includes("kit_uses")) {
                 var kt_index = track_element.attributes.name.value - 1
                 if (! (data.filter(x => x.Kit === page_state["selected_kits"][kt_index]).map(x => x.Tags)[0].includes("Alchemy"))){
-                    console.log()
                     box_count = 0
                 }
 
