@@ -294,6 +294,9 @@ select {
   grid-column: 1;
   grid-row: 8;
 }
+.perception_text :enabled {
+  font-weight: bold;
+}
 
 .perception_value {
   grid-column: 2;

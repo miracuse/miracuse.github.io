@@ -93,7 +93,7 @@ layout: default
         <b>Skills</b>
     </div>
 
-    <div class="perception_text">
+    <div class="perception_text" id="perception_text">
         <label>Perception</label>
     </div>
 
@@ -110,7 +110,7 @@ layout: default
         />
     </div>
 
-    <div class="knowledge_text">
+    <div class="knowledge_text" id="knowledge_text">
         <label>Knowledge</label>
     </div>
 
@@ -127,7 +127,7 @@ layout: default
         />
     </div>
 
-    <div class="physique_text">
+    <div class="physique_text" id="physique_text">
         <label>Physique</label>
     </div>
 
@@ -144,7 +144,7 @@ layout: default
         />
     </div>
 
-    <div class="bravery_text">
+    <div class="bravery_text" id="bravery_text">
         <label>Bravery</label>
     </div>
 
@@ -161,7 +161,7 @@ layout: default
         />
     </div>
 
-    <div class="aura_text">
+    <div class="aura_text" id="aura_text">
         <label>Aura</label>
     </div>
 
@@ -178,7 +178,7 @@ layout: default
         />
     </div>
 
-    <div class="focus_text">
+    <div class="focus_text" id="focus_text">
         <label>Focus</label>
     </div>
 
@@ -195,7 +195,7 @@ layout: default
         />
     </div>
 
-    <div class="cunning_text">
+    <div class="cunning_text" id="cunning_text">
         <label>Cunning</label>
     </div>
 
@@ -212,7 +212,7 @@ layout: default
         />
     </div>
 
-    <div class="agility_text">
+    <div class="agility_text" id="agility_text">
         <label>Agility</label>
     </div>
 
@@ -381,6 +381,17 @@ layout: default
     "kit_uses_04": "knowledge",
     }
 
+    const skill_color_mapping = {
+        "perception": "#268bd2",
+        "knowledge": "#268bd2",
+        "physique": "#d28445",
+        "bravery": "#d28445",
+        "aura": "#953553",
+        "focus": "#953553",
+        "cunning": "#90a959",
+        "agility": "#90a959"
+    }
+
     let class_selector = document.getElementById('class_select')
     let hybrid_kit_type_selectors = [document.getElementById('hybrid_kit_type_01'),
                                      document.getElementById('hybrid_kit_type_02')]
@@ -539,6 +550,15 @@ layout: default
         Object.keys(page_state["skills"]).forEach(element => {
             skill_value_selector = document.getElementById(element+"_value")
             skill_value_selector.value = page_state["skills"][element]
+            console.log(element)
+            skill_text_element = document.getElementById(element+"_text")
+
+            if (page_state["skills"][element] > 0) {
+                skill_text_element.style.color = skill_color_mapping[element]
+            }
+            else {
+                skill_text_element.style.color = ""
+            }
         });
     }
 
