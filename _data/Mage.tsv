@@ -1,19 +1,19 @@
 Class	Type	Kit	Tags	Description
-Mage	Celestial	Spirit of Divination	Utility, Magic	Seek and learn. Used to scry for hidden things and reveal new information.
-Mage	Celestial	Spirit of Heavens	Attack, Utility, Magic	Smite and cleanse. Used to punish evil and dispel magic.
-Mage	Celestial	Spirit of Hells	Utility, Magic	Corrupt and wrong. Used to raise the dead and subvert the natural order.
+Mage	Celestial	Spirit of Divination	Exploration, Magic	Seek and learn. Used to scry for hidden things and reveal new information.
+Mage	Celestial	Spirit of Heavens	Combat, Magic	Smite and cleanse. Used to punish evil and dispel magic.
+Mage	Celestial	Spirit of Hells	Magic	Corrupt and wrong. Used to raise the dead and subvert the natural order.
 Mage	Celestial	Spirit of Language	Social, Magic	Speak and understand. Used to communicate with all manner of creatures, including animals and monsters.
-Mage	Celestial	Spirit of Restoration	Recovery, Utility, Magic	Restore and repair. Used to heal wounds and mend broken objects.
-Mage	Celestial	Spirit of Warding	Defense, Utility, Magic	Seal and repel. Used to create barriers and push targets away.
-Mage	Elemental	Spirit of Aether	Attack, Utility, Magic	Allows for control and limited manifestation of electricity.
-Mage	Elemental	Spirit of Air	Attack, Utility, Magic	Allows for control and limited manifestation of air.
-Mage	Elemental	Spirit of Earth	Attack, Utility, Magic	Allows for control and limited manifestation of earth.
-Mage	Elemental	Spirit of Flame	Attack, Utility, Magic	Allows for control and limited manifestation of flame.
-Mage	Elemental	Spirit of Water	Attack, Utility, Magic	Allows for control and limited manifestation of water.
-Mage	Elemental	Spirit of Force	Attack, Utility, Magic	Allows for control and limited manifestation of magnetism.
-Mage	Fundamental	Spirit of Binding	Utility, Magic	Adhere and restrain. Used to lash things together with gravitational force.
-Mage	Fundamental	Spirit of Entropy	Attack, Utility, Magic	Dissolve and decay. Used to unravel targets into their base elements.
-Mage	Fundamental	Spirit of Light	Utility, Social, Stealth, Magic	Brighten and dim. Used to create and manipulate illusory images.
-Mage	Fundamental	Spirit of Locomotion	Utility, Magic	Accelerate and slow. Used to manipulate kinetic energy.
-Mage	Fundamental	Spirit of Sound	Utility, Social, Stealth, Magic	Amplify and quiet. Used to create and manipulate sound.
-Mage	Fundamental	Spirit of Thermos	Utility, Magic	Heat and cool. Used to manipulate thermal energy.
+Mage	Celestial	Spirit of Restoration	Recovery, Magic	Restore and repair. Used to heal wounds and mend broken objects.
+Mage	Celestial	Spirit of Warding	Combat, Magic	Seal and repel. Used to create barriers and push targets away.
+Mage	Elemental	Spirit of Aether	Combat, Exploration, Magic	Allows for control and limited manifestation of electricity.
+Mage	Elemental	Spirit of Air	Combat, Exploration, Magic	Allows for control and limited manifestation of air.
+Mage	Elemental	Spirit of Earth	Combat, Exploration, Magic	Allows for control and limited manifestation of earth.
+Mage	Elemental	Spirit of Flame	Combat, Exploration, Magic	Allows for control and limited manifestation of flame.
+Mage	Elemental	Spirit of Water	Combat, Exploration, Magic	Allows for control and limited manifestation of water.
+Mage	Elemental	Spirit of Force	Combat, Exploration, Magic	Allows for control and limited manifestation of magnetism.
+Mage	Fundamental	Spirit of Binding	Exploration, Magic	Adhere and restrain. Used to lash things together with gravitational force.
+Mage	Fundamental	Spirit of Entropy	Combat, Magic	Dissolve and decay. Used to unravel targets into their base elements.
+Mage	Fundamental	Spirit of Light	Social, Magic	Brighten and dim. Used to create and manipulate illusory images.
+Mage	Fundamental	Spirit of Locomotion	Exploration, Magic	Accelerate and slow. Used to manipulate kinetic energy.
+Mage	Fundamental	Spirit of Sound	Social, Magic	Amplify and quiet. Used to create and manipulate sound.
+Mage	Fundamental	Spirit of Thermos	Exploration, Magic	Heat and cool. Used to manipulate thermal energy.
