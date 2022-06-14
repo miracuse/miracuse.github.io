@@ -12,6 +12,9 @@ layout: default
   <button class="tablinks" onclick="openTab(event, 'Magic')">
     Magic Basics
   </button>
+  <button class="tablinks" onclick="openTab(event, 'Example Cantrips')">
+    Example Cantrips
+  </button>
   <button class="tablinks" onclick="openTab(event, 'Example Spells')">
     Example Spells
   </button>
@@ -31,7 +34,7 @@ layout: default
   </p>
   <ul>
     <li><b>Skills</b>: Aura, Focus</li>
-    <li><b>Kits</b>: Celestial, Elemental, Fundamental</li>
+    <li><b>Kit Types</b>: Celestial, Elemental, Fundamental</li>
   </ul>
   <table>
     <th>Equipment and Appearance</th>
@@ -69,17 +72,23 @@ layout: default
 
   <p>
     Mage Kits are deliberately open-ended, allowing players creative
-    freedom to experiment with effects. A player might take the <i>Spirit
-    of Flame</i> Kit and use it to throw fire at enemies, make lights
-    while exploring in the dark, or keep themselves warm in a snowstorm.
+    freedom to experiment with effects. A player might take <i>Spirit
+    of Flame</i> and use it for:
   </p>
+
+  <ul>
+    <li>Throwing fire at enemies.</li>
+    <li>Making lights to help see while exploring in the dark.</li>
+    <li>Creating a fire to keep warm during a snowstorm.</li>
+    <li>Any other fire-related purpose.</li>
+  </ul>
 
   <h3>Cantrips and Spellcasting</h3>
 
   <p>
-    <b>Cantrips</b> are magic effects that characters perform with one Kit. 
-    The player chooses a spirit, describes an effect they want to achieve, and
-    rolls <strong><span style="color: #953553">Aura</span></strong> to see how
+    <b>Cantrips</b> are the default way to use a Mage Kit. 
+    The player describes an effect they want to achieve using their Kit and
+    roll <strong><span style="color: #953553">Aura</span></strong> to see how
     well it goes. 
   </p>
 
@@ -89,7 +98,7 @@ layout: default
     complex effects. Like Cantrips, the Mage rolls
     <strong><span style="color: #953553">Aura</span></strong> to determine
     how successful the attempt was. They must also mark a point of Mental
-    Health damage afterwards.
+    Health damage afterwards, reflecting the strain of using powerful magic.
   </p>
 
   <h3>Effect Power Levels</h3>
@@ -111,20 +120,15 @@ layout: default
         <td>Can have multiple targets</td>
       </tr>
       <tr>
-        <td>Usually has a short duration</td>
-        <td>Can have longer durations</td>
-      </tr>
-      <tr>
-        <td>Can heal Physical Health damage</td>
-        <td>Can heal a Physical Injury</td>
+        <td>Usually has a short duration and a small effect</td>
+        <td>Can have longer durations or larger effects</td>
       </tr>
     </tbody>
     </table>
-
 </div>
 
-<div id="Example Spells" class="tabcontent">
-  <h3><span style="color: #953553">Example Spells</span></h3>
+<div id="Example Cantrips" class="tabcontent">
+  <h3><span style="color: #953553">Example Cantrips</span></h3>
 
   <h3>Cantrips</h3>
   <table>
@@ -142,22 +146,56 @@ layout: default
         <td>Speak with and understand animals.</td>
       </tr>
       <tr>
-        <td>Firebolt</td>
-        <td>Spirit of Fire</td>
-        <td>Sling fire at targets, inflicting Physical damage.</td>
-      </tr>
-      <tr>
-        <td>Torch</td>
-        <td>Spirit of Fire</td>
-        <td>Create a floating ball of fire, illuminating the area.</td>
+        <td>Dispel Magic</td>
+        <td>Spirit of Heavens</td>
+        <td>Destroy a spell, spirit, or magical construct.</td>
       </tr>
       <tr>
         <td>Hold Person</td>
         <td>Spirit of Warding</td>
         <td>Trap a target in place, preventing them from acting.</td>
       </tr>
+      <tr>
+        <td>Locate</td>
+        <td>Spirit of Divination</td>
+        <td>Determine the general direction and distance of a person or object, provided you have a connection to it.</td>
+      </tr>
+      <tr>
+        <td>Firebolt</td>
+        <td>Spirit of Fire</td>
+        <td>Sling fire at targets, inflicting Physical damage.</td>
+      </tr>
+      <tr>
+        <td>Feather Fall</td>
+        <td>Spirit of Air</td>
+        <td>Float gently downwards, rather than falling.</td>
+      </tr>
+      <tr>
+        <td>Repel Metal</td>
+        <td>Spirit of Force</td>
+        <td>Create a magnetic field that deflects metal weapons and ammo.</td>
+      </tr>
+      <tr>
+        <td>Silence</td>
+        <td>Spirit of Sound</td>
+        <td>Prevent any sound from escaping an area.</td>
+      </tr>
+      <tr>
+        <td>Silent Image</td>
+        <td>Spirit of Light</td>
+        <td>Create and puppet an illusory image.</td>
+      </tr>
+      <tr>
+        <td>Heat Metal</td>
+        <td>Spirit of Thermos</td>
+        <td>Make metal burn red hot.</td>
+      </tr>
     </tbody>
     </table>
+</div>
+
+<div id="Example Spells" class="tabcontent">
+  <h3><span style="color: #953553">Example Spells</span></h3>
 
     <h3>Spells</h3>
     <table>
@@ -172,7 +210,7 @@ layout: default
         <tr>
           <td>Fireball</td>
           <td>Spirits of Flame and Air</td>
-          <td>Cause an explosion of flame, inflicting Physical damage to those in the area.</td>
+          <td>Cause an explosion of flame, inflicting damage to those in the area.</td>
         </tr>
         <tr>
           <td>Power Word: Stun</td>
@@ -188,6 +226,36 @@ layout: default
           <td>Quicksand</td>
           <td>Spirits of Earth and Water</td>
           <td>Transmute a large area of solid ground into dangerous quicksand.<br></td>
+        </tr>
+        <tr>
+          <td>Ice Coffin</td>
+          <td>Spirits of Water and Thermos</td>
+          <td>Cover an area with a thick sheet of ice, imprisoning those within.<br></td>
+        </tr>
+        <tr>
+          <td>Animate Dead</td>
+          <td>Spirits of Hell and Locomotion</td>
+          <td>Compel a corpse to walk and act on your behalf.<br></td>
+        </tr>
+        <tr>
+          <td>Chain Lightning</td>
+          <td>Spirits of Aether and Force</td>
+          <td>A bolt of lightning that bounces between enemies, ignoring allies.<br></td>
+        </tr>
+        <tr>
+          <td>Fly</td>
+          <td>Spirits of Binding and Wind</td>
+          <td>Float into the sky, controlling your rise and fall.<br></td>
+        </tr>
+        <tr>
+          <td>Phantasms</td>
+          <td>Spirits of Light and Sound</td>
+          <td>Create several mirror images of yourself, indistinguishable except by touch.<br></td>
+        </tr>
+        <tr>
+          <td>Speak With Dead</td>
+          <td>Spirits of Langauge and Hell</td>
+          <td>Compel a corpse to speak, forcing it to answer three questions truthfully.<br></td>
         </tr>
       </tbody>
       </table>

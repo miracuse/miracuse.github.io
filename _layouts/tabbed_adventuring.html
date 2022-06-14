@@ -5,33 +5,29 @@ layout: default
 
       <!-- Tab links -->
       <div class="tab">
-        <button class="tablinks active" onclick="openTab(event, 'Skirmish')">
-          Skirmish
-        </button>
-        <button class="tablinks" onclick="openTab(event, 'Combat')">
+        <button class="tablinks active" onclick="openTab(event, 'Combat')">
           Combat
         </button>
-        <button class="tablinks" onclick="openTab(event, 'Persuasion')">
-          Persuasion
-        </button>
-        <button class="tablinks" onclick="openTab(event, 'Scouting')">
+        <button class="tablinks" onclick="openTab(event, 'Exploration')">
           Scouting
         </button>
-        <button class="tablinks" onclick="openTab(event, 'Camping')">
-          Camping
+        <button class="tablinks" onclick="openTab(event, 'Social')">
+          Social
         </button>
-        <button class="tablinks" onclick="openTab(event, 'Teamwork')">
-          Teamwork
+        <button class="tablinks" onclick="openTab(event, 'Tactics')">
+          Tactics
         </button>
       </div>
 
       <!-- Tab content -->
-      <div id="Skirmish" class="tabcontent" style="display: block">
-        <h3>Skirmish</h3>
+      <div id="Combat" class="tabcontent" style="display: block">
+        <h3>Combat</h3>
+
+        <h3>Turn Order</h3>
         <p>
-          A skirmish is any situation where several characters need to take
+          Combat is any situation where several characters need to take
           different actions and <strong>turn order matters</strong>. The most
-          common scenario is combat, but other possibilities might include
+          common scenario involves fighting, but other possibilities might include
           fixing a sinking ship or racing a rival adventuring party for
           treasure.
         </p>
@@ -65,85 +61,88 @@ layout: default
           sense for a character to react outside of their turn, like stepping into oncoming fire to protect
           an ally.Ultimately, <b>a player's turn ends when it makes narrative sense</b>. The GM will provide guidance as necessary.
         </p>
-        
+
+        <h3>Understanding Damage</h3>
+        <p>
+          Normally, a successful attack by a Player causes one box of Physical damage.
+          There are a variety of situations where this can change though. Some Kits add additional
+          damage to an attack, or deal Mental damage, or have other effects. Likewise enemies may
+          have their own special abilities which modify the basic "one attack / one damage" result.
+        </p>
+        <p>
+          These effects are discussed in more detail under the <b>Tactics</b> tab for this section.
+        </p>
       </div>
 
-      <div id="Combat" class="tabcontent">
-        <h3>Combat</h3>
+      <div id="Exploration" class="tabcontent">
+        <h3>Exploration</h3>
+
+        <h3>Scouting</h3>
+
         <p>
-          Combat is a common type of skirmish where the objective involves defeating enemies, typically by inflicting harm.
+          Players looking to explore dangerous areas will need to be quiet and
+          observant. The following Skills apply:
         </p>
 
-        <h3>Using Skills to Cause Harm</h3>
+        <ul>
+          <li>
+            <strong><span style="color: #90a959">Cunning</span></strong>: Determines how stealthy the scout is (no roll), and whether or not they detect any danger (roll).
+          </li>
+          <li>
+            <strong><span style="color: #268bd2">Perception</span></strong>: Determines what information is gained about the area.
+          </li>
+          <li>
+            <b><span style="color: #953553">Focus</span></b>: Determines what magical effects are present in the area, if any.
+          </li>
+        </ul>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Skill</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong><span style="color: #268bd2">Perception</span></strong></td>
-              <td>
-                Shooting with a crossbow or other
-                <strong>precise</strong> weapon
-              </td>
-            </tr>
-            <tr>
-              <td><strong><span style="color:#d28445">Physique</span></strong></td>
-              <td>
-                Using a <strong>hefty</strong> weapon, such as a sword or
-                longbow
-              </td>
-            </tr>
-            <tr>
-              <td><strong><span style="color:#90a959">Agility</span></strong></td>
-              <td>
-                Using a <strong>swift</strong> weapon, such as throwing knives
-                or an epee
-              </td>
-            </tr>
-            <tr>
-              <td><strong><span style="color:#953553">Aura</span></strong></td>
-              <td>Using <strong>magic</strong> to cause harm</td>
-            </tr>
-          </tbody>
-        </table>
+        <h3>There and Back</h3>
 
-        <h3>Using Skills to Avoid Harm</h3>
+        <p>
+          By and large, Scouting takes place <strong>over a single action</strong>.
+          The player character quietly makes their way to the area being explored,
+          takes note of anything interesting, and reports back to their team.
+        </p>
+        <p>
+          Lengthier expeditions might be conducted if the party agrees to it, but
+          remember that spending too much time solo is dangerous, and not terribly
+          fun for the other players.
+        </p>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Skill</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong><span style="color:#90a959">Agility</span></strong></td>
-              <td>
-                <strong>Dodging</strong> out of the way, deflecting attacks
-              </td>
-            </tr>
-            <tr>
-              <td><strong><span style="color:#d28445">Physique</span></strong></td>
-              <td>
-                <strong>Enduring</strong>, pushing through difficulty or pain
-              </td>
-            </tr>
-            <tr>
-              <td><strong><span style="color:#d28445">Bravery</span></strong></td>
-              <td><strong>Overcoming</strong> fear, exhaustion, or attacks on the mind</td>
-            </tr>
-          </tbody>
-        </table>
+        <h3>Camping</h3>
+        <p>
+          Making camp gives characters the opportunity to recover and change
+          their Kits. However, resting in dangerous areas should be accompanied
+          by a watch to prevent ambushes.
+        </p>
 
+        <ul>
+          <li>
+            Two characters roll
+            <strong><span style="color: #268bd2">Perception</span></strong> and
+            take the <strong>lowest</strong> result
+          </li>
+        </ul>
+
+        <h3 id="changing-kits">Changing Kits</h3>
+
+        <p>
+          Characters can swap out their current Kits for new ones provided the
+          following is true:
+        </p>
+
+        <ul>
+          <li>They're somewhere safe (like a city or in camp)</li>
+          <li>They have at least one full hour of time</li>
+        </ul>
+
+        <p>
+          All boxes are cleared at this time, including Alchemist Uses per Kit, Soldier
+          Fortune Points, and Scoundrel Prep Points.
+        </p>
       </div>
 
-      <div id="Persuasion" class="tabcontent">
+      <div id="Social" class="tabcontent">
         <h3>Persuasion</h3>
         <p>
           Anytime you want to convince a non-player character of something,
@@ -186,88 +185,7 @@ layout: default
             </tr>
           </tbody>
         </table>
-      </div>
 
-      <div id="Scouting" class="tabcontent">
-        <h3>Scouting</h3>
-
-        <p>
-          Players looking to explore dangerous areas will need to be quiet and
-          observant. The following Skills apply:
-        </p>
-
-        <ul>
-          <li>
-            Use the <strong>lowest</strong>
-            <strong><span style="color: #90a959">Cunning</span></strong> of
-            everyone participating, no roll required
-          </li>
-          <li>
-            Roll
-            <strong><span style="color: #268bd2">Perception</span></strong> and
-            take the <strong>highest</strong> result of everyone participating
-          </li>
-          <li>
-            In case of magical effects, roll <b><span style="color: #953553">Focus</span></b>
-            and take the <b>highest</b> result of everyone participating
-          </li>
-        </ul>
-
-        <p>
-          Better Cunning results will ensure that the scouts are not discovered,
-          while better Perception and Focus rolls will reveal additional information
-          about the surroundings.
-        </p>
-
-        <h3>There and Back</h3>
-
-        <p>
-          By and large, Scouting takes place <strong>over a single action</strong>.
-          The player character quietly makes their way to the area being explored,
-          takes note of anything interesting, and reports back to their team.
-        </p>
-        <p>
-          Lengthier expeditions might be conducted if the party agrees to it, but
-          remember that spending too much time solo is dangerous, and not terribly
-          fun for the other players.
-        </p>
-      </div>
-
-      <div id="Camping" class="tabcontent">
-        <h3>Camping</h3>
-        <p>
-          Making camp gives characters the opportunity to recover and change
-          their Kits. However, resting in dangerous areas should be accompanied
-          by a watch to prevent ambushes.
-        </p>
-
-        <ul>
-          <li>
-            Two characters roll
-            <strong><span style="color: #268bd2">Perception</span></strong> and
-            take the <strong>lowest</strong> result
-          </li>
-        </ul>
-
-        <h3 id="changing-kits">Changing Kits</h3>
-
-        <p>
-          Characters can swap out their current Kits for new ones provided the
-          following is true:
-        </p>
-
-        <ul>
-          <li>They're somewhere safe (like a city or in camp)</li>
-          <li>They have at least one full hour of time</li>
-        </ul>
-
-        <p>
-          All boxes are cleared at this time, including Alchemist Uses per Kit, Soldier
-          Fortune Points, and Scoundrel Prep Points.
-        </p>
-      </div>
-
-      <div id="Teamwork" class="tabcontent">
         <h3>Teamwork</h3>
         <p>
           Players can help one another with actions provided that there's some 
@@ -290,5 +208,75 @@ layout: default
 
           <p>GM: Alright, Player 3 can help. Player 1, roll with Advantage.</p>
         </blockquote>
+      </div>
+
+      <div id="Tactics" class="tabcontent">
+        <h3>Tactics</h3>
+        <p>
+          Players are encouraged to take creative approaches when facing challenges
+          in-game. This section outlines a few suggestions.
+        </p>
+
+        <h3>Modified Attacks</h3>
+        <p>
+          A successful attack causes the target to mark a single box of damage.
+          However, many Kits can change this behavior. A few examples are listed
+          below, though clever players may find combinations not on this list by
+          exploring their options.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <td><b>Type</b></td>
+              <td><b>Examples</b></td>
+              <td><b>Description</b></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Standard</td>
+              <td>Sword, Arrow, Bullet, Spirit of Fire</td>
+              <td>One Box of Physical Damage</td>
+            </tr>
+            <tr>
+              <td>Area of Effect</td>
+              <td>Grenade, Hordebreaker, Fireball Spell</td>
+              <td>One Box of Physical Damage vs. Many Targets</td>
+            </tr>
+            <tr>
+              <td>Mental</td>
+              <td>Intimidate/Provoke, Arta Valar, Spirit of Sound</td>
+              <td>One Box of Mental Damage</td>
+            </tr>
+            <tr>
+              <td>High Damage</td>
+              <td>Iron Strength, Attack+Poison, Assassinate</td>
+              <td>Two Boxes of Physical Damage</td>
+            </tr>
+            <tr>
+              <td>Attack w/ Effect</td>
+              <td>Swordbreaker, Arta Tuco</td>
+              <td>One Box of Physical Damage + Effect</td>
+            </tr>
+            <tr>
+              <td>Attack w/ Hazard</td>
+              <td>Thermal Charges, Trenchsteel Charges, Fireball Spell</td>
+              <td>One Box of Physical Damage + Environmental Hazard</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Using the Environment</h3>
+        <p>
+          Your surroundings can be the key to overcoming a difficult challenge.
+          Think about how you can leverage them.
+        </p>
+
+        <ul>
+          <li>Creating Hazards and Obstacles, by setting things on fire or destroying architecture</li>
+          <li>Recruiting NPC's, by rallying a crowd to your cause or using "I Know a Guy"</li>
+          <li>Acquiring helpful items, through negotiation or theft</li>
+          <li>Strategizing Kits with party members, such as mixing Trenchsteel Charges and Spirit of Force</li>
+        </ul>
       </div>
 
