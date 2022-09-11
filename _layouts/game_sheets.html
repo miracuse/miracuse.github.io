@@ -11,10 +11,6 @@ layout: default
     <button class="tablinks" onclick="openTab(event, 'QuickReference')">
         Quick Reference
     </button>
-    <button class="tablinks" onclick="openTab(event, 'DamageExamples')">
-        Damage Examples
-    </button>
-    <!-- <button class="tablinks" onclick="openTab(event, 'Role')">Role</button> -->
 </div>
 
 <div id="CharacterSheet" class="tabcontent" style="display: block">
@@ -40,7 +36,7 @@ layout: default
                 <option value="Soldier">Soldier</option>
                 <option value="Mage">Mage</option>
                 <option value="Scoundrel">Scoundrel</option>
-                <option value="Hybrid">Hybrid</option>
+                <!-- <option value="Hybrid">Hybrid</option> -->
             </select>
         </div>
 
@@ -142,11 +138,11 @@ layout: default
             />
         </div>
 
-        <div class="physique_text" id="physique_text">
-            <label>Physique</label>
+        <div class="Strength_text" id="Strength_text">
+            <label>Strength</label>
         </div>
 
-        <div class="physique_value">
+        <div class="Strength_value">
             <input
                 type="number"
                 value="0"
@@ -154,8 +150,8 @@ layout: default
                 ,
                 max="4"
                 class="skill_holder"
-                id="physique_value"
-                name="physique"
+                id="Strength_value"
+                name="Strength"
             />
         </div>
 
@@ -176,11 +172,11 @@ layout: default
             />
         </div>
 
-        <div class="aura_text" id="aura_text">
-            <label>Aura</label>
+        <div class="Magic_text" id="Magic_text">
+            <label>Magic</label>
         </div>
 
-        <div class="aura_value">
+        <div class="Magic_value">
             <input
                 type="number"
                 value="0"
@@ -188,8 +184,8 @@ layout: default
                 ,
                 max="4"
                 class="skill_holder"
-                id="aura_value"
-                name="aura"
+                id="Magic_value"
+                name="Magic"
             />
         </div>
 
@@ -329,149 +325,9 @@ layout: default
 
 <div id="QuickReference" class="tabcontent">
     <h3>Quick Reference</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Roll</th>
-                <th>Result</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>-2</td>
-            </tr>
-            <tr>
-                <td>2, 3</td>
-                <td>-1</td>
-            </tr>
-            <tr>
-                <td>4, 5, 6, 7</td>
-                <td>+0</td>
-            </tr>
-            <tr>
-                <td>8, 9</td>
-                <td>+1</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>+2</td>
-            </tr>
-        </tbody>
-    </table>
+    {% include dice_table.html %}
 
-    <table>
-        <thead>
-            <tr>
-                <th>Skill</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <strong
-                        ><span style="color: #268bd2">Perception</span></strong
-                    >
-                </td>
-                <td>Awareness, investigation, precision shooting.</td>
-            </tr>
-            <tr>
-                <td>
-                    <strong
-                        ><span style="color: #268bd2">Knowledge</span></strong
-                    >
-                </td>
-                <td>General know-how, rhetoric, and proficiency in alchemy.</td>
-            </tr>
-            <tr>
-                <td>
-                    <strong><span style="color: #d28445">Bravery</span></strong>
-                </td>
-                <td>Willpower, intimidation, and courage.</td>
-            </tr>
-            <tr>
-                <td>
-                    <strong
-                        ><span style="color: #d28445">Physique</span></strong
-                    >
-                </td>
-                <td>Strength, martial arts, and physical health.</td>
-            </tr>
-            <tr>
-                <td>
-                    <strong><span style="color: #953553">Aura</span></strong>
-                </td>
-                <td>
-                    Rapport with spirits, supernatural charisma, and talent in
-                    magic.
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <strong><span style="color: #953553">Focus</span></strong>
-                </td>
-                <td>Concentration, sixth sense, and mental fortitude.</td>
-            </tr>
-            <tr>
-                <td>
-                    <strong><span style="color: #90a959">Cunning</span></strong>
-                </td>
-                <td>Stealth, misdirection, and lie detection.</td>
-            </tr>
-            <tr>
-                <td>
-                    <strong><span style="color: #90a959">Agility</span></strong>
-                </td>
-                <td>Mobility, evasion, and reaction time.</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<div id="DamageExamples" class="tabcontent">
-    <h3>Damage Examples</h3>
-    <table>
-        <thead>
-          <tr>
-            <td><b>Type</b></td>
-            <td><b>Examples</b></td>
-            <td><b>Description</b></td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Standard</td>
-            <td>Sword, Arrow, Bullet, Spirit of Fire</td>
-            <td>One Box of Physical Damage</td>
-          </tr>
-          <tr>
-            <td>Area of Effect</td>
-            <td>Grenade, Hordebreaker, Fireball Spell</td>
-            <td>One Box of Physical Damage vs. Many Targets</td>
-          </tr>
-          <tr>
-            <td>Mental</td>
-            <td>Intimidate/Provoke, Arta Valar, Spirit of Sound</td>
-            <td>One Box of Mental Damage</td>
-          </tr>
-          <tr>
-            <td>High Damage</td>
-            <td>Iron Strength, Attack+Poison, Assassinate</td>
-            <td>Two Boxes of Physical Damage</td>
-          </tr>
-          <tr>
-            <td>Attack w/ Effect</td>
-            <td>Swordbreaker, Arta Tuco</td>
-            <td>One Box of Physical Damage + Effect</td>
-          </tr>
-          <tr>
-            <td>Attack w/ Hazard</td>
-            <td>Thermal Charges, Trenchsteel Charges, Fireball Spell</td>
-            <td>One Box of Physical Damage + Environmental Hazard</td>
-          </tr>
-        </tbody>
-      </table>
+    {% include skill_list.html %}
 </div>
 
 <!-- Interactive Form Script ----------------------------------------->
@@ -482,59 +338,59 @@ layout: default
     "Alchemist": {
         "perception": 2,
         "knowledge": 2,
-        "physique": 0,
+        "Strength": 0,
         "bravery": 0,
-        "aura": 0,
+        "Magic": 0,
         "focus": 0,
         "cunning": 0,
         "agility": 0},
     "Soldier": {
         "perception": 0,
         "knowledge": 0,
-        "physique": 2,
+        "Strength": 2,
         "bravery": 2,
-        "aura": 0,
+        "Magic": 0,
         "focus": 0,
         "cunning": 0,
         "agility": 0},
     "Mage": {
         "perception": 0,
         "knowledge": 0,
-        "physique": 0,
+        "Strength": 0,
         "bravery": 0,
-        "aura": 2,
+        "Magic": 2,
         "focus": 2,
         "cunning": 0,
         "agility": 0},
     "Scoundrel": {
         "perception": 0,
         "knowledge": 0,
-        "physique": 0,
+        "Strength": 0,
         "bravery": 0,
-        "aura": 0,
+        "Magic": 0,
         "focus": 0,
         "cunning": 2,
         "agility": 2},
     "Hybrid": {
         "perception": 0,
         "knowledge": 0,
-        "physique": 0,
+        "Strength": 0,
         "bravery": 0,
-        "aura": 0,
+        "Magic": 0,
         "focus": 0,
         "cunning": 0,
         "agility": 0}
     }
     const skill_holder_ids = ["perception_value",
                 "knowledge_value",
-                "physique_value",
+                "Strength_value",
                 "bravery_value",
-                "aura_value",
+                "Magic_value",
                 "focus_value",
                 "cunning_value",
                 "agility_value"]
     const skill_health_mappings = {
-    "physical_health_track": "physique",
+    "physical_health_track": "Strength",
     "mental_health_track": "focus",
     "fortune_point_track": "bravery",
     "prep_point_track": "cunning",
@@ -547,9 +403,9 @@ layout: default
     const skill_color_mapping = {
         "perception": "#268bd2",
         "knowledge": "#268bd2",
-        "physique": "#d28445",
+        "Strength": "#d28445",
         "bravery": "#d28445",
-        "aura": "#953553",
+        "Magic": "#953553",
         "focus": "#953553",
         "cunning": "#90a959",
         "agility": "#90a959"
@@ -572,9 +428,9 @@ layout: default
                                      document.getElementById('kit_description_04')]
     let skill_selectors = [document.getElementById("knowledge_value"),
                            document.getElementById("perception_value"),
-                           document.getElementById("physique_value"),
+                           document.getElementById("Strength_value"),
                            document.getElementById("bravery_value"),
-                           document.getElementById("aura_value"),
+                           document.getElementById("Magic_value"),
                            document.getElementById("focus_value"),
                            document.getElementById("agility_value"),
                            document.getElementById("cunning_value")]
@@ -594,9 +450,9 @@ layout: default
     "skills": {
         "perception": 0,
         "knowledge": 0,
-        "physique": 0,
+        "Strength": 0,
         "bravery": 0,
-        "aura": 0,
+        "Magic": 0,
         "focus": 0,
         "cunning": 0,
         "agility": 0},
@@ -678,13 +534,13 @@ layout: default
             // Get the number of boxes this track should have
             var matching_skill = skill_health_mappings[element]
             var box_count = page_state["skills"][skill_health_mappings[element]]
-            if (matching_skill === "physique" || matching_skill === "focus") {box_count = box_count + 3}
+            if (matching_skill === "Strength" || matching_skill === "focus") {box_count = box_count + 3}
             else if (matching_skill === "bravery" || matching_skill === "cunning") {box_count = box_count * 2}
             else if (matching_skill === "knowledge" ) {box_count = box_count + 2}
 
             // Account for certain kits that increase box count
             for (kit_name of page_state["selected_kits"]){
-                if ((kit_name === "Arta Forteiza" && matching_skill === "physique") ||
+                if ((kit_name === "Arta Forteiza" && matching_skill === "Strength") ||
                     (kit_name === "Iron Will" && matching_skill === "focus")){
                         box_count = box_count +1
                 }

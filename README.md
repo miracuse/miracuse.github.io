@@ -1,8 +1,15 @@
-# miracuse.github.io
+# Miracuse
 
 ### Setup
 
-* Make sure you have rbenv installed
-* Make sure you have the version of Ruby in .ruby-version installed
-* `bundle install`
-* 'bundle exec jekyll serve`
+`make requirements`
+
+Installs required Ruby gems and Python libraries.
+
+`make local`
+
+Deploys the project locally.
+
+`make data`
+
+Converts the contents of `miracuse_kits.xlsx` to a CSV and places it under `assets/css`.

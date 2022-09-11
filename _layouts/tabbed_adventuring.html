@@ -14,9 +14,12 @@ layout: default
         <button class="tablinks" onclick="openTab(event, 'Social')">
           Social
         </button>
-        <button class="tablinks" onclick="openTab(event, 'Tactics')">
-          Tactics
+        <button class="tablinks" onclick="openTab(event, 'Magic')">
+          Magic
         </button>
+        <!-- <button class="tablinks" onclick="openTab(event, 'Tactics')">
+          Tactics
+        </button> -->
       </div>
 
       <!-- Tab content -->
@@ -34,7 +37,7 @@ layout: default
 
         <ul>
           <li>
-            Roll <strong><span style="color: #90a959">Agility</span></strong> to
+            Roll <strong><span style="color: {{ site.scoundrel_color }}">Agility</span></strong> to
             determine the order that characters will act.
           </li>
           <li>
@@ -45,14 +48,14 @@ layout: default
 
         <h3>Actions</h3>
         <p>
-          In general, a player's turn ends after they <b>roll dice</b> or do something time consuming. For example:
+          In general, a player's turn ends after they <b>roll dice</b> or <b>do something time consuming</b>. For example:
         </p>
         
         <ul>
           <li>Swinging a sword</li>
-          <li>Drinking an elixir</li>
+          <li>Drinking a potion</li>
           <li>Casting a spell</li>
-          <li>Intimidating an enemy</li>
+          <li>Intimidating a group of enemies</li>
         </ul>
 
         <p>
@@ -69,9 +72,6 @@ layout: default
           damage to an attack, or deal Mental damage, or have other effects. Likewise enemies may
           have their own special abilities which modify the basic "one attack / one damage" result.
         </p>
-        <p>
-          These effects are discussed in more detail under the <b>Tactics</b> tab for this section.
-        </p>
       </div>
 
       <div id="Exploration" class="tabcontent">
@@ -86,13 +86,13 @@ layout: default
 
         <ul>
           <li>
-            <strong><span style="color: #90a959">Cunning</span></strong>: Determines how stealthy the scout is (no roll), and whether or not they detect any danger (roll).
+            <strong><span style="color: {{ site.scoundrel_color }}">Cunning</span></strong>: Determines how stealthy the scout is (no roll), and whether or not they detect any danger (roll).
           </li>
           <li>
-            <strong><span style="color: #268bd2">Perception</span></strong>: Determines what information is gained about the area.
+            <strong><span style="color: {{ site.alchemist_color }}">Perception</span></strong>: Determines what information is gained about the area.
           </li>
           <li>
-            <b><span style="color: #953553">Focus</span></b>: Determines what magical effects are present in the area, if any.
+            <b><span style="color: {{ site.mage_color }}">Focus</span></b>: Determines what magical effects are present in the area, if any.
           </li>
         </ul>
 
@@ -119,7 +119,7 @@ layout: default
         <ul>
           <li>
             Two characters roll
-            <strong><span style="color: #268bd2">Perception</span></strong> and
+            <strong><span style="color: {{ site.alchemist_color }}">Perception</span></strong> and
             take the <strong>lowest</strong> result
           </li>
         </ul>
@@ -161,25 +161,25 @@ layout: default
           <tbody>
             <tr>
               <td>
-                <strong><span style="color: #268bd2">Knowledge</span></strong>
+                <strong><span style="color: {{ site.alchemist_color }}">Knowledge</span></strong>
               </td>
               <td>Debate, rhetorical skill, and logic.</td>
             </tr>
             <tr>
               <td>
-                <strong><span style="color: #d28445">Bravery</span></strong>
+                <strong><span style="color: {{ site.soldier_color }}">Bravery</span></strong>
               </td>
               <td>Challenge, intimidate, and impress.</td>
             </tr>
             <tr>
               <td>
-                <strong><span style="color: #953553">Aura</span></strong>
+                <strong><span style="color: {{ site.mage_color }}">Magic</span></strong>
               </td>
               <td>Awe, command, and speaking with spirits.</td>
             </tr>
             <tr>
               <td>
-                <strong><span style="color: #90a959">Cunning</span></strong>
+                <strong><span style="color: {{ site.scoundrel_color }}">Cunning</span></strong>
               </td>
               <td>Deceit, fast talking, and working with animals.</td>
             </tr>
@@ -196,11 +196,11 @@ layout: default
         <blockquote>
           <p>Player 1: I want to bend the metal bars on the prison door open.</p>
 
-          <p></p>GM: Okay, roll Physique.</p>
+          <p></p>GM: Okay, roll Strength.</p>
 
           <p>Player 2: Wait. Can I help them?</p>
 
-          <p>GM: Do you have any points in Physique?</p>
+          <p>GM: Do you have any points in Strength?</p>
 
           <p>Player 2: No...</p> 
 
@@ -210,7 +210,39 @@ layout: default
         </blockquote>
       </div>
 
-      <div id="Tactics" class="tabcontent">
+      <div id="Magic" class="tabcontent">
+        <h3>Magic</h3>
+        <p>
+          While <b><span style="color: {{ site.mage_color }}">Mages</span></b> are the undisputed masters of magic, they aren't the only
+          ones capable of using it. Other classes have Kits that allow them to make use of spirits.
+        </p>
+
+        <p>
+          Many of these Kits come with a cost. <b><span style="color: {{ site.scoundrel_color }}">Scoundrel</span></b> Kits may require a Prep
+          Point to use <b><span style="color: {{ site.scoundrel_color }}">Cunning</span></b> or <b><span style="color: {{ site.scoundrel_color }}">Agility</span></b>
+          instead of <b><span style="color: {{ site.mage_color }}">Magic</span></b> for a specific spirit.
+          Other classes have costs appropriate to their resources and Skills. Non-Mage Players can also 
+          opt to use the <b><span style="color: {{ site.mage_color }}">Magic</span></b> Skill directly,
+          though the likelihood of success will be low if they have no points in it.
+        </p>
+
+        <h3>Spellcasting</h3>
+
+        <p>
+          Non-Mages may also be able to cast spells if they have at least two spirit
+          Kits equipped. Spellcasting follows the same rules: users roll <b><span style="color: {{ site.mage_color }}">Magic</span></b>
+          (or a substitute Skill if the price has been paid) and take one box of Mental
+          damage.
+        </p>
+
+        <p>
+          <b>Note:</b> The price (Fortune Points, Prep Points, etc.) only needs to be
+          paid once per spell, even though two spirits are used.
+        </p>
+
+        </div>
+
+      <!-- <div id="Tactics" class="tabcontent">
         <h3>Tactics</h3>
         <p>
           Players are encouraged to take creative approaches when facing challenges
@@ -278,5 +310,5 @@ layout: default
           <li>Acquiring helpful items, through negotiation or theft</li>
           <li>Strategizing Kits with party members, such as mixing Trenchsteel Charges and Spirit of Force</li>
         </ul>
-      </div>
+      </div> -->
 

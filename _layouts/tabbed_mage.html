@@ -12,19 +12,22 @@ layout: default
   <button class="tablinks" onclick="openTab(event, 'Magic')">
     Magic Basics
   </button>
-  <button class="tablinks" onclick="openTab(event, 'Example Cantrips')">
+  <button class="tablinks" onclick="openTab(event, 'Spellcasting')">
+    Spellcasting
+  </button>
+  <!-- <button class="tablinks" onclick="openTab(event, 'Example Cantrips')">
     Example Cantrips
   </button>
   <button class="tablinks" onclick="openTab(event, 'Example Spells')">
     Example Spells
-  </button>
+  </button> -->
   <!-- <button class="tablinks" onclick="openTab(event, 'Role')">Role</button> -->
   <button class="tablinks" onclick="openTab(event, 'Kits')">Kits</button>
 </div>
 
 <!-- Tab content -->
 <div id="Description" class="tabcontent" style="display: block">
-  <h3><span style="color: #953553">The Mage</span></h3>
+  <h3><span style="color: {{ site.mage_color }}">The Mage</span></h3>
   <p>
     The Mage forms pacts with the primal spirits of the world to perform
     miracles and spells. Some come by their magic through careful study, others
@@ -33,8 +36,8 @@ layout: default
     human as they grow in power.
   </p>
   <ul>
-    <li><b>Skills</b>: Aura, Focus</li>
-    <li><b>Kit Types</b>: Celestial, Elemental, Fundamental</li>
+    <li><b>Skills</b>: Magic, Focus</li>
+    <li><b>Subclasses</b>: Priest, Shaman, Wizard</li>
   </ul>
   <table>
     <th>Equipment and Appearance</th>
@@ -66,7 +69,7 @@ layout: default
 </div>
 
 <div id="Magic" class="tabcontent">
-  <h3><span style="color: #953553">Magic Basics</span></h3>
+  <h3><span style="color: {{ site.mage_color }}">Magic Basics</span></h3>
 
   <h3>Magic Kits</h3>
 
@@ -82,21 +85,23 @@ layout: default
     <li>Creating a fire to keep warm during a snowstorm.</li>
     <li>Any other fire-related purpose.</li>
   </ul>
+</div>
 
-  <h3>Cantrips and Spellcasting</h3>
+<div id="Spellcasting" class="tabcontent">
+  <h3><span style="color: {{ site.mage_color }}">Cantrips and Spellcasting</span></h3>
 
   <p>
     <b>Cantrips</b> are the default way to use a Mage Kit. 
     The player describes an effect they want to achieve using their Kit and
-    roll <strong><span style="color: #953553">Aura</span></strong> to see how
+    roll <strong><span style="color: {{ site.mage_color }}">Magic</span></strong> to see how
     well it goes. 
   </p>
 
   <p>
     <b>Spellcasting</b> is a more powerful, but more costly, way to use
-    magic. Mages combine two of their Kits to produce stronger and more 
+    magic. Mages combine two different Spirit Kits to produce stronger and more 
     complex effects. Like Cantrips, the Mage rolls
-    <strong><span style="color: #953553">Aura</span></strong> to determine
+    <strong><span style="color: {{ site.mage_color }}">Magic</span></strong> to determine
     how successful the attempt was. They must also mark a point of Mental
     Health damage afterwards, reflecting the strain of using powerful magic.
   </p>
@@ -128,7 +133,7 @@ layout: default
 </div>
 
 <div id="Example Cantrips" class="tabcontent">
-  <h3><span style="color: #953553">Example Cantrips</span></h3>
+  <h3><span style="color: {{ site.mage_color }}">Example Cantrips</span></h3>
 
   <h3>Cantrips</h3>
   <table>
@@ -195,7 +200,7 @@ layout: default
 </div>
 
 <div id="Example Spells" class="tabcontent">
-  <h3><span style="color: #953553">Example Spells</span></h3>
+  <h3><span style="color: {{ site.mage_color }}">Example Spells</span></h3>
 
     <h3>Spells</h3>
     <table>
@@ -262,7 +267,7 @@ layout: default
 </div>
 
 <div id="Role" class="tabcontent">
-  <h3><span style="color: #953553">Mage Role</span></h3>
+  <h3><span style="color: {{ site.mage_color }}">Mage Role</span></h3>
 <h3>In combat...</h3>
   <p>
     The Mage unleashes unpredictable havoc on the enemy; striking foes blind,
@@ -284,7 +289,7 @@ layout: default
 </div>
 
 <div id="Kits" class="tabcontent">
-  <h3><span style="color: #953553">Mage Kits</span></h3>
+  <h3><span style="color: {{ site.mage_color }}">Mage Kits</span></h3>
 
   <table class="kits_table">
     {% for row in site.data.Mage %}

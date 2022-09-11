@@ -53,66 +53,7 @@ layout: default
     suited for related tasks.
   </p>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Skill</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <strong><span style="color: #268bd2">Perception</span></strong>
-        </td>
-        <td>Awareness, investigation, precision shooting.</td>
-      </tr>
-      <tr>
-        <td>
-          <strong><span style="color: #268bd2">Knowledge</span></strong>
-        </td>
-        <td>General know-how, rhetoric, and proficiency in alchemy.</td>
-      </tr>
-      <tr>
-        <td>
-          <strong><span style="color: #d28445">Bravery</span></strong>
-        </td>
-        <td>Willpower, intimidation, and courage.</td>
-      </tr>
-      <tr>
-        <td>
-          <strong><span style="color: #d28445">Physique</span></strong>
-        </td>
-        <td>Strength, martial arts, and physical health.</td>
-      </tr>
-      <tr>
-        <td>
-          <strong><span style="color: #953553">Aura</span></strong>
-        </td>
-        <td>
-          Rapport with spirits, supernatural charisma, and talent in magic.
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <strong><span style="color: #953553">Focus</span></strong>
-        </td>
-        <td>Concentration, sixth sense, and mental fortitude.</td>
-      </tr>
-      <tr>
-        <td>
-          <strong><span style="color: #90a959">Cunning</span></strong>
-        </td>
-        <td>Stealth, misdirection, and danger sense.</td>
-      </tr>
-      <tr>
-        <td>
-          <strong><span style="color: #90a959">Agility</span></strong>
-        </td>
-        <td>Mobility, evasion, and reaction time.</td>
-      </tr>
-    </tbody>
-  </table>
+  {% include skill_list.html %}
 </div>
 
 <div id="Taking Action" class="tabcontent">
@@ -131,36 +72,7 @@ layout: default
 
   <p>The table below shows how the dice roll translates to outcomes.</p>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Roll</th>
-        <th>Result</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>-2</td>
-      </tr>
-      <tr>
-        <td>2, 3</td>
-        <td>-1</td>
-      </tr>
-      <tr>
-        <td>4, 5, 6, 7</td>
-        <td>+0</td>
-      </tr>
-      <tr>
-        <td>8, 9</td>
-        <td>+1</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>+2</td>
-      </tr>
-    </tbody>
-  </table>
+  {% include dice_table.html %}
 
   <h3 id="examples">Example</h3>
 
@@ -229,8 +141,8 @@ layout: default
 
   <p>
     Characters with points in
-    <strong><span style="color: #d28445">Physique</span></strong> or
-    <strong><span style="color: #953553">Focus</span></strong> start each day
+    <strong><span style="color: {{ site.soldier_color }}">Strength</span></strong> or
+    <strong><span style="color: {{ site.mage_color }}">Focus</span></strong> start each day
     with extra boxes in one of the two tracks. They can withstand more damage
     before being taken out.
   </p>

@@ -10,14 +10,13 @@ layout: default
     Description
   </button>
   <button class="tablinks" onclick="openTab(event, 'Fortune')">Fortune</button>
-  <button class="tablinks" onclick="openTab(event, 'Morale')">Morale</button>
-  <!-- <button class="tablinks" onclick="openTab(event, 'Role')">Role</button> -->
+  <button class="tablinks" onclick="openTab(event, 'Techniques')">Techniques</button>
   <button class="tablinks" onclick="openTab(event, 'Kits')">Kits</button>
 </div>
 
 <!-- Tab content -->
 <div id="Description" class="tabcontent" style="display: block">
-  <h3><span style="color: #d28445">The Soldier</span></h3>
+  <h3><span style="color: {{ site.soldier_color }}">The Soldier</span></h3>
   <p>
     The Soldier is a warrior without peer. They may be knights, bandits,
     infantrymen, or come from other walks of life. What makes one a Soldier is
@@ -25,8 +24,8 @@ layout: default
     amount of luck.
   </p>
   <ul>
-    <li><b>Skills</b>: Physique, Bravery</li>
-    <li><b>Kit Types</b>: Discipline, Fortune, Valor</li>
+    <li><b>Skills</b>: Strength, Bravery</li>
+    <li><b>Subclasses</b>: Fencer, Knight, Myrmidon</li>
   </ul>
 
   <table>
@@ -49,12 +48,12 @@ layout: default
 </div>
 
 <div id="Fortune" class="tabcontent">
-  <h3><span style="color: #d28445">Fortune</span></h3>
+  <h3><span style="color: {{ site.soldier_color }}">Fortune</span></h3>
   <h3>Fortune Points</h3>
 
   <p>
     Soldiers have a number of <strong>Fortune Points</strong> equal to two times
-    their <strong><span style="color: #d28445">Bravery</span></strong
+    their <strong><span style="color: {{ site.soldier_color }}">Bravery</span></strong
     >. Fortune Points can be used to reroll any action the Soldier takes.
   </p>
 
@@ -106,62 +105,19 @@ layout: default
   </ul>
 </div>
 
-<div id="Morale" class="tabcontent">
-  <h3><span style="color: #d28445">Morale</span></h3>
-  <h3>Intimidate/Provoke</h3>
-
-  <p>
-    Instead of making a Physical attack on an enemy, Soldiers can deal
-    damage directly to a target's Mental health by <b>Intimidation</b> or
-    <b>Provocation</b>.
-  </p>
-
-  <ul>
-    <li><b>Intimidated</b> enemies will make distance or retreat, in addition to taking Mental damage.</li>
-    <li><b>Provoked</b> enemies will focus their attacks on the Soldier, in addition to taking Mental damage.</li>
-  </ul>
-
-  <p>
-    Note that enemies defend against psychological attacks differently than physical attacks.
-    Some enemies may be more vulnerable (or more resistant) to psychological attacks. Mindless enemies
-    (like slimes and golems) may be completely unaffected.
-  </p>
-
-  <h3>Rally</h3>
-
-  <p>
-    Soldier can also use their <b>Bravery</b> to assist allies in combat. Instead of using their turn in combat
-    to attack, they can:
-  </p>
-
-  <ul>
-    <li>Give an ally Advantage on their next combat-related roll. </li>
-    <li>Help an ally overcome a psycholgical status effect (i.e. being dazed, afraid, etc.) </li>
-  </ul>
-
-  <h3>Out of Combat</h3>
-
-  <p>
-    The <b><span style="color: #d28445">Bravery</span></b> Skill can be used in
-    social circumstances. Soldiers can intimidate bandits into walking
-    away from a fight, provoke a guard to cause a distraction while others sneak
-    away, or rally town folk into a mob.
-  </p>
-</div>
-
 <div id="Role" class="tabcontent">
-  <h3><span style="color: #d28445">Soldier Role</span></h3>
+  <h3><span style="color: {{ site.soldier_color }}">Soldier Role</span></h3>
   <h3>In combat...</h3>
   <p>
     The Soldier is often at the frontlines, terrorizing enemies and bringing
     ruin to those that approach. Their
-    <b><span style="color: #d28445">Physique</span></b>
+    <b><span style="color: {{ site.soldier_color }}">Strength</span></b>
     makes them dangerous and hardy opponents.
   </p>
   <h3>Socially...</h3>
   <p>
     The Soldier is an imposing figure. They carry an air of
-    <b><span style="color: #d28445">Bravery</span></b>
+    <b><span style="color: {{ site.soldier_color }}">Bravery</span></b>
     that impresses like-minded persons and cows others. Less militant audiences
     may be put off by their demeanor, seeing them as brutish and curt.
   </p>
@@ -173,8 +129,31 @@ layout: default
   </p>
 </div>
 
+<div id="Techniques" class="tabcontent">
+  <h3><span style="color: {{ site.soldier_color }}">Techniques</span></h3>
+  {% include example_kit.html %}
+  <p>
+    Techniques are Kits that modify attacks. They add additional
+    effects, such as increasing damage, hitting multiple enemies, or
+    targeting multiple enemies at once.
+  </p>
+
+  <p>
+    In addition to their passive effect, Techniques can also be amplified
+    or mixed together by expending Fortune Points. Two examples are provided
+    on this page, but the effects are based on what the Player is trying to
+    accomplish rather than a preset list of outcomes.
+  </p>
+
+  <ul>
+    <li><b>Cleave (Amplified)</b>: Greatly expand the area-of-effect of your attack.</li>
+    <li><b>Cleave + Sunder</b>: Make an area-of-effect attack that deals two boxes of 
+      Physical damage to all enemies and objects in range.</li>
+  </ul>
+</div>
+
 <div id="Kits" class="tabcontent">
-  <h3><span style="color: #d28445">Soldier Kits</span></h3>
+  <h3><span style="color: {{ site.soldier_color }}">Soldier Kits</span></h3>
 
   <table class="kits_table">
     {% for row in site.data.Soldier %}
@@ -186,3 +165,4 @@ layout: default
     </tr>
     {% endfor %}
   </table>
+</div>

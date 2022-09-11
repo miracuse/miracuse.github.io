@@ -21,7 +21,7 @@ layout: default
 
 <!-- Tab content -->
 <div id="Description" class="tabcontent" style="display: block">
-  <h3><span style="color: #90a959">The Scoundrel</span></h3>
+  <h3><span style="color: {{ site.scoundrel_color }}">The Scoundrel</span></h3>
   <p>
     The Scoundrel is a master of misdirection. They blend in with crowds and
     shadows, only revealing themselves when the time is right. Many employ their
@@ -30,7 +30,7 @@ layout: default
   </p>
   <ul>
     <li><b>Skills</b>: Cunning, Agility</li>
-    <li><b>Kit Types</b>: Ranger, Spy, Swashbuckler</li>
+    <li><b>Subclasses</b>: Assassin, Bard, Ranger</li>
   </ul>
   <table>
     <th>Equipment and Appearance</th>
@@ -61,7 +61,7 @@ layout: default
 </div>
 
 <div id="Prep" class="tabcontent">
-  <h3><span style="color: #90a959">Prep</span></h3>
+  <h3><span style="color: {{ site.scoundrel_color }}">Prep</span></h3>
 
   <h3>Prep Points</h3>
 
@@ -110,11 +110,6 @@ layout: default
   preoccupied.
 </p>
 
-<p>
-  <b>Note:</b> For Hybrid Class characters, changing Kits in this way does
-  not reset Alchemist Use per Day limits.
-</p>
-
 <h3>I Know a Guy</h3>
 <p>
   A Scoundrel can declare that his character <strong>Knows a Guy</strong> by
@@ -139,7 +134,7 @@ layout: default
 </div>
 
 <div id="Stealth" class="tabcontent">
-  <h3><span style="color: #90a959">Stealth</span></h3>
+  <h3><span style="color: {{ site.scoundrel_color }}">Stealth</span></h3>
 <h3>Moving Quietly</h3>
 
 <p>
@@ -150,8 +145,8 @@ layout: default
 
 <p>
   Anyone not actively searching an area must have a higher
-  <strong><span style="color: #268bd2">Perception</span></strong> than the
-  Scoundrel's <strong><span style="color: #90a959">Cunning</span></strong> to
+  <strong><span style="color: {{ site.alchemist_color }}">Perception</span></strong> than the
+  Scoundrel's <strong><span style="color: {{ site.scoundrel_color }}">Cunning</span></strong> to
   detect them.
 </p>
 
@@ -168,23 +163,23 @@ layout: default
 <h3>Disguises</h3>
 <p>
   While disguised, the Scoundrel counts as being in stealth. Onlookers need a
-  high enough Perception to see through the disguise and will only roll actively
+  high enough Perception to see through the disguise and will only roll to do so
   if the Scoundrel draws attention in some way.
 </p>
 </div>
 
 <div id="Role" class="tabcontent">
-  <h3><span style="color: #90a959">Scoundrel Role</span></h3>
+  <h3><span style="color: {{ site.scoundrel_color }}">Scoundrel Role</span></h3>
 <h3>In combat...</h3>
   <p>
     The Scoundrel waits for the right opportunity to dispatch an enemy, showing
     a preference for dangerous targets like Mages. Once exposed they might make
     a hasty getaway, or throw themselves into the fight with a frenzy of
-    <b><span style="color: #90a959">Agile</span></b> strikes.
+    <b><span style="color: {{ site.scoundrel_color }}">Agile</span></b> strikes.
   </p>
   <h3>Socially...</h3>
   <p>
-    The Scoundrel is an expert at <b><span style="color: #90a959">Cunning</span></b>.
+    The Scoundrel is an expert at <b><span style="color: {{ site.scoundrel_color }}">Cunning</span></b>.
     They can fast-talk, bluff, and sense the motivations of others.
     They're able to <b>Assume a Disguise</b>, helping the party gain access
     to areas otherwise off-limits, and may <b>Know A Guy</b> who can help with the tasks at hand.
@@ -198,7 +193,7 @@ layout: default
   </div>
 
   <div id="Kits" class="tabcontent">
-    <h3><span style="color: #90a959">Scoundrel Kits</span></h3>
+    <h3><span style="color: {{ site.scoundrel_color }}">Scoundrel Kits</span></h3>
   
     <table class="kits_table">
       {% for row in site.data.Scoundrel %}

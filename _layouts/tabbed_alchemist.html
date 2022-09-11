@@ -10,15 +10,14 @@ layout: default
     Description
   </button>
   <button class="tablinks" onclick="openTab(event, 'Alchemy')">Alchemy Basics</button>
-  <!-- <button class="tablinks" onclick="openTab(event, 'Alchemic Items')">Alchemic Items</button> -->
-  <!-- <button class="tablinks" onclick="openTab(event, 'Role')">Role</button> -->
+  <button class="tablinks" onclick="openTab(event, 'Items')">Items</button>
   <button class="tablinks" onclick="openTab(event, 'Kits')">Kits</button>
 </div>
 </div>
 
 <!-- Tab content -->
 <div id="Description" class="tabcontent" style="display: block">
-  <h3><span style="color: #268bd2">The Alchemist</span></h3>
+  <h3><span style="color: {{ site.alchemist_color }}">The Alchemist</span></h3>
   <p>
     The Alchemist is a keen adventurer, keeping a watchful eye out for danger
     and a finger on the trigger. They carry a collection of handy items to throw
@@ -26,7 +25,7 @@ layout: default
   </p>
   <ul>
     <li><b>Skills</b>: Perception, Knowledge</li>
-    <li><b>Kit Types</b>: Drugs, Golemcraft, Munitions</li>
+    <li><b>Subclasses</b>: Chemist, Enchanter, Sapper</li>
   </ul>
 
   <table>
@@ -58,13 +57,13 @@ layout: default
 </div>
 
 <div id="Alchemy" class="tabcontent">
-  <h3><span style="color: #268bd2">Alchemy Basics</span></h3>
+  <h3><span style="color: {{ site.alchemist_color }}">Alchemy Basics</span></h3>
 
   <h3>Alchemist Kits</h3>
 
   <p>
     Each Alchemist Kit has a limited number of uses based on the character's
-    <strong><span style="color: #268bd2">Knowledge</span></strong>.
+    <strong><span style="color: {{ site.alchemist_color }}">Knowledge</span></strong>.
     Alchemists mark a box each time they use a specific Kit, and recover all
     boxes for all Kits when resting at camp.
   </p>
@@ -95,40 +94,48 @@ layout: default
       </tr>
     </tbody>
   </table>
-
-  <h3>Sharing and Usage</h3>
-
-  <p>
-    Several Alchemist Kits can be used in multiple ways, with each way producing a different result.
-  </p>
-
-  <ul>
-    <li><b>Potions</b> can be used by anyone, and have positive effects determined by the Alchemist.</li>
-    <li><b>Poisons</b> are applied to weapons and add an effect to the next attack. Non-Alchemists will need to roll <b>Knowledge</b> to apply a poison safely.</li>
-    <li><b>Grenades</b> may cause area of effect damage and often produce hazards. Non-Alchemists will need to roll <b>Knowledge</b> to use these safely.</li>
-    <li><b>Bullets</b> produce precise effects. Non-Alchemists can use these without issue, provided they know how to use the matching weapon.</li>
-    <li><b>Tools</b> encompass everything else. Whether or not a Non-Alchemist can make use of them will vary.</li>
-  </ul>
 </div>
 
-<!-- <div id="Alchemic Items" class="tabcontent">
-  <h3><span style="color: #268bd2">Alchemic Items</span></h3>
-  
-</div> -->
+<div id="Items" class="tabcontent">
+  <h3><span style="color: {{ site.alchemist_color }}">Items</span></h3>
+  <table>
+    {% assign row = site.data.Alchemist[0] %}
+    <tr>
+      <td>{{ row.Class }}</td>
+      <td>{{ row.Type }}</td>
+      <td><b>{{ row.Kit }}</b></td>
+      <td>{{ row.Description }}</td>
+    </tr>
+  </table>
+
+  <ul>
+    <li><b>Potions</b> are consumable liquids that provide beneficial effects.</li>
+    <li><b>Substances</b> are versatile compounds that can produce a variety of effects in the hands of an Alchemist.</li>
+    <li><b>Grenades</b> are dangerous explosives that inflict damage and cause hazards in an area-of-effect.</li>
+    <li><b>Bullets</b> are modified projectiles with additional effects.</li>
+    <li><b>Tools</b> are Alchemy Kits that don't fall under one of the other categories.</li>
+  </ul>
+
+  <p>
+    <b>Note:</b> Potions are the only Alchemy Kits that other classes can safely use.
+    Non-Alchemist Players can roll Knowledge to try to use the other categories, though
+    failure can cause disastrous results.
+  </p>
+</div>
 
 
 <div id="Role" class="tabcontent">
-  <h3><span style="color: #268bd2">Alchemist Role</span></h3>
+  <h3><span style="color: {{ site.alchemist_color }}">Alchemist Role</span></h3>
   <h3>In combat...</h3>
   <p>
     The Alchemist keeps their distance, taking shots at range with 
-    <b><span style="color: #268bd2">Perception</span></b> and spreading
+    <b><span style="color: {{ site.alchemist_color }}">Perception</span></b> and spreading
     hazards across the battlefield with grenades. They may hand out potions 
     and apply poisons before a fight begins.
   </p>
   <h3>Socially...</h3>
   <p>
-    The Alchemist specializes in debate using <b><span style="color: #268bd2">Knowledge</span></b>.
+    The Alchemist specializes in debate using <b><span style="color: {{ site.alchemist_color }}">Knowledge</span></b>.
     Their rhetorical technique is
     well-received by the wealthy and educated, but not as effective on
     less affluent listeners.
@@ -142,7 +149,7 @@ layout: default
   </div>
 
   <div id="Kits" class="tabcontent">
-    <h3><span style="color: #268bd2">Alchemist Kits</span></h3>
+    <h3><span style="color: {{ site.alchemist_color }}">Alchemist Kits</span></h3>
   
     <table class="kits_table">
       {% for row in site.data.Alchemist %}
