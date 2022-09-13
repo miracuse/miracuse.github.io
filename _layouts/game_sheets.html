@@ -15,19 +15,18 @@ layout: default
 
 <div id="CharacterSheet" class="tabcontent" style="display: block">
     <h3>Character Sheet</h3>
+    <div class="character_name">
+        <input
+            type="text"
+            id="character_name"
+            name="character_name"
+            placeholder="Character Name"
+        />
+    </div>
     <div class="character_sheet">
         <!-- Header Row -->
         <div class="class_header">
             <b>Class</b>
-        </div>
-
-        <div class="character_name">
-            <input
-                type="text"
-                id="character_name"
-                name="character_name"
-                placeholder="Character Name"
-            />
         </div>
 
         <div class="character_class">
@@ -189,11 +188,11 @@ layout: default
             />
         </div>
 
-        <div class="focus_text" id="focus_text">
-            <label>Focus</label>
+        <div class="Presence_text" id="Presence_text">
+            <label>Presence</label>
         </div>
 
-        <div class="focus_value">
+        <div class="Presence_value">
             <input
                 type="number"
                 value="0"
@@ -201,8 +200,8 @@ layout: default
                 ,
                 max="4"
                 class="skill_holder"
-                id="focus_value"
-                name="focus"
+                id="Presence_value"
+                name="Presence"
             />
         </div>
 
@@ -341,7 +340,7 @@ layout: default
         "Strength": 0,
         "bravery": 0,
         "Magic": 0,
-        "focus": 0,
+        "Presence": 0,
         "cunning": 0,
         "agility": 0},
     "Soldier": {
@@ -350,7 +349,7 @@ layout: default
         "Strength": 2,
         "bravery": 2,
         "Magic": 0,
-        "focus": 0,
+        "Presence": 0,
         "cunning": 0,
         "agility": 0},
     "Mage": {
@@ -359,7 +358,7 @@ layout: default
         "Strength": 0,
         "bravery": 0,
         "Magic": 2,
-        "focus": 2,
+        "Presence": 2,
         "cunning": 0,
         "agility": 0},
     "Scoundrel": {
@@ -368,7 +367,7 @@ layout: default
         "Strength": 0,
         "bravery": 0,
         "Magic": 0,
-        "focus": 0,
+        "Presence": 0,
         "cunning": 2,
         "agility": 2},
     "Hybrid": {
@@ -377,7 +376,7 @@ layout: default
         "Strength": 0,
         "bravery": 0,
         "Magic": 0,
-        "focus": 0,
+        "Presence": 0,
         "cunning": 0,
         "agility": 0}
     }
@@ -386,12 +385,12 @@ layout: default
                 "Strength_value",
                 "bravery_value",
                 "Magic_value",
-                "focus_value",
+                "Presence_value",
                 "cunning_value",
                 "agility_value"]
     const skill_health_mappings = {
     "physical_health_track": "Strength",
-    "mental_health_track": "focus",
+    "mental_health_track": "Presence",
     "fortune_point_track": "bravery",
     "prep_point_track": "cunning",
     "kit_uses_01": "knowledge",
@@ -406,7 +405,7 @@ layout: default
         "Strength": "#d28445",
         "bravery": "#d28445",
         "Magic": "#953553",
-        "focus": "#953553",
+        "Presence": "#953553",
         "cunning": "#90a959",
         "agility": "#90a959"
     }
@@ -431,7 +430,7 @@ layout: default
                            document.getElementById("Strength_value"),
                            document.getElementById("bravery_value"),
                            document.getElementById("Magic_value"),
-                           document.getElementById("focus_value"),
+                           document.getElementById("Presence_value"),
                            document.getElementById("agility_value"),
                            document.getElementById("cunning_value")]
 
@@ -453,7 +452,7 @@ layout: default
         "Strength": 0,
         "bravery": 0,
         "Magic": 0,
-        "focus": 0,
+        "Presence": 0,
         "cunning": 0,
         "agility": 0},
     }
@@ -534,14 +533,14 @@ layout: default
             // Get the number of boxes this track should have
             var matching_skill = skill_health_mappings[element]
             var box_count = page_state["skills"][skill_health_mappings[element]]
-            if (matching_skill === "Strength" || matching_skill === "focus") {box_count = box_count + 3}
+            if (matching_skill === "Strength" || matching_skill === "Presence") {box_count = box_count + 3}
             else if (matching_skill === "bravery" || matching_skill === "cunning") {box_count = box_count * 2}
             else if (matching_skill === "knowledge" ) {box_count = box_count + 2}
 
             // Account for certain kits that increase box count
             for (kit_name of page_state["selected_kits"]){
-                if ((kit_name === "Arta Forteiza" && matching_skill === "Strength") ||
-                    (kit_name === "Iron Will" && matching_skill === "focus")){
+                if ((kit_name === "Resilience Arcana" && matching_skill === "Strength") ||
+                    (kit_name === "Iron Will" && matching_skill === "Presence")){
                         box_count = box_count +1
                 }
                 else if ((kit_name === "Lucky" && matching_skill === "bravery") ||

@@ -15,10 +15,10 @@ layout: default
   <button class="tablinks" onclick="openTab(event, 'Spellcasting')">
     Spellcasting
   </button>
-  <!-- <button class="tablinks" onclick="openTab(event, 'Example Cantrips')">
-    Example Cantrips
-  </button>
-  <button class="tablinks" onclick="openTab(event, 'Example Spells')">
+  <!-- <button class="tablinks" onclick="openTab(event, 'Examples')">
+    Examples
+  </button> -->
+  <!-- <button class="tablinks" onclick="openTab(event, 'Example Spells')">
     Example Spells
   </button> -->
   <!-- <button class="tablinks" onclick="openTab(event, 'Role')">Role</button> -->
@@ -36,11 +36,11 @@ layout: default
     human as they grow in power.
   </p>
   <ul>
-    <li><b>Skills</b>: Magic, Focus</li>
+    <li><b>Skills</b>: Magic, Presence</li>
     <li><b>Subclasses</b>: Priest, Shaman, Wizard</li>
   </ul>
   <table>
-    <th>Equipment and Appearance</th>
+    <th>Suggested Equipment and Appearance</th>
     <tr>
       <td>
         * A <b>staff, wand, book,</b> or other <b>object</b> used in your
@@ -71,8 +71,6 @@ layout: default
 <div id="Magic" class="tabcontent">
   <h3><span style="color: {{ site.mage_color }}">Magic Basics</span></h3>
 
-  <h3>Magic Kits</h3>
-
   <p>
     Mage Kits are deliberately open-ended, allowing players creative
     freedom to experiment with effects. A player might take <i>Spirit
@@ -85,54 +83,80 @@ layout: default
     <li>Creating a fire to keep warm during a snowstorm.</li>
     <li>Any other fire-related purpose.</li>
   </ul>
+
+  <h3>How To (Cantrips)</h3>
+
+  <p>
+    To use a Mage Kit, the caster describe an effect that they're trying
+    to achieve and rolls <strong><span style="color: {{ site.mage_color }}">Magic</span></strong>
+    to see how well it goes. More complex or powerful effects will have a higher difficulty,
+    and some effects may not be possible. Using Kits this way is called casting a <b>Cantrip</b>.
+  </p>
+
+  <h3>Example: Spirit of Healing</h3>
+
+  <ul>
+    <li><b>(Easy)</b> Healing Physical damage, reviving an incapacitated ally.</li>
+    <li><b>(Moderate)</b> Healing Physical injuries, treating poisons and diseases.</li>
+    <li><b>(Impossible)</b> Healing Mental damage or injuries.</li>
+  </ul>
 </div>
 
 <div id="Spellcasting" class="tabcontent">
-  <h3><span style="color: {{ site.mage_color }}">Cantrips and Spellcasting</span></h3>
-
-  <p>
-    <b>Cantrips</b> are the default way to use a Mage Kit. 
-    The player describes an effect they want to achieve using their Kit and
-    roll <strong><span style="color: {{ site.mage_color }}">Magic</span></strong> to see how
-    well it goes. 
-  </p>
+  <h3><span style="color: {{ site.mage_color }}">Spellcasting</span></h3>
 
   <p>
     <b>Spellcasting</b> is a more powerful, but more costly, way to use
-    magic. Mages combine two different Spirit Kits to produce stronger and more 
+    magic. Mages combine two different magic Kits to produce stronger and more 
     complex effects. Like Cantrips, the Mage rolls
     <strong><span style="color: {{ site.mage_color }}">Magic</span></strong> to determine
     how successful the attempt was. They must also mark a point of Mental
     Health damage afterwards, reflecting the strain of using powerful magic.
   </p>
 
-  <h3>Effect Power Levels</h3>
+  <h3>Spellcasting Examples</h3>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Cantrip Effects</th>
-        <th>Spellcasting Effects</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Uses one Spirit Kit</td>
-        <td>Uses two Spirit Kits</td>
-      </tr>
-      <tr>
-        <td>Usually single target<br></td>
-        <td>Can have multiple targets</td>
-      </tr>
-      <tr>
-        <td>Usually has a short duration and a small effect</td>
-        <td>Can have longer durations or larger effects</td>
-      </tr>
-    </tbody>
-    </table>
+  <ul>
+    <li><b>Fireball:</b> <i>(Flame + Air)</i> Inflicts damage in a wide area around a target and ignites everything nearby.</li>
+    <li><b>Wall of Fire:</b> <i>(Flame + Warding)</i> Creates a wall of intense flame that persists for an hour.</li>
+    <li><b>Fire Elemental:</b> <i>(Flame + Summoning)</i> Conjure a fire elemental to serve you for an hour.</li>
+    <li><b>Flame Sword:</b> <i>(Flame + Metal)</i> Bind fire to a weapon, causing it to deal an additional point of damage on successful attacks for an hour.</li>
+    <li><b>Blue Flame:</b> <i>(Flame + Thermos)</i> Create an extreme flame that can melt through metal with ease.</li>
+  </ul>
 </div>
 
-<div id="Example Cantrips" class="tabcontent">
+<!-- <div id="Examples" class="tabcontent">
+  <h3><span style="color: {{ site.mage_color }}">Examples</span></h3>
+
+  <h3>Spirit of Language</h3>
+  <ul>
+      <li><b>Easy Cantrips:</b> Speak with animals, read unfamiliar languages.</li>
+      <li><b>Moderate Cantrips:</b> Command others to drop their weapons.</li>
+      <li><b>Speak with Dead</b> <i>(Language + Necromancy)</i> Call up a ghost and ask them three questions.</li>
+      <li><b>Power Word: Stun</b> <i>(Language + Binding)</i> Paralyze a group of targets.</li>
+      <li><b>Healing Word</b> <i>(Language + Restoration)</i> Restore Physical damage for everyone within earshot.</li>
+  </ul>
+
+  <h3>Spirit of Entropy</h3>
+  <ul>
+      <li><b>Easy Cantrips:</b> Accelerate decay, rust metal.</li>
+      <li><b>Moderate Cantrips:</b> Destroy armor, .</li>
+      <li><b>Erosion</b> <i>(Entropy + Earth)</i> Rapidly wear down stone surfaces and buildings.</li>
+      <li><b>Ray of Disintegration</b> <i>(Entropy + Force)</i> Reduce enemies to dust.</li>
+      <li><b>Anti-life Shell</b> <i>(Entropy + Necromancy)</i> Create a field that causes harm to living creatures who pass through.</li>
+  </ul>
+
+  <h3>Spirit of Divination</h3>
+  <ul>
+      <li><b>Easy Cantrips:</b> Find person, find object.</li>
+      <li><b>Moderate Cantrips:</b> Scry, psychometry, find traps.</li>
+      <li><b>Zone of Truth</b> <i>(Divination + Language)</i> Compel others to speak only truth.</li>
+      <li><b>Foresight</b> <i>(Divination + Reinforcement)</i> Take Advantage when defending against attacks for an hour.</li>
+      <li><b>Magic Mirror</b> <i>(Divination + Water)</i> Create a connection between two reflective surfaces, allowing communication across great distances.</li>
+  </ul>
+</div> -->
+
+<!-- <div id="Example Cantrips" class="tabcontent">
   <h3><span style="color: {{ site.mage_color }}">Example Cantrips</span></h3>
 
   <h3>Cantrips</h3>
@@ -197,9 +221,9 @@ layout: default
       </tr>
     </tbody>
     </table>
-</div>
+</div> -->
 
-<div id="Example Spells" class="tabcontent">
+<!-- <div id="Example Spells" class="tabcontent">
   <h3><span style="color: {{ site.mage_color }}">Example Spells</span></h3>
 
     <h3>Spells</h3>
@@ -264,9 +288,9 @@ layout: default
         </tr>
       </tbody>
       </table>
-</div>
+</div> -->
 
-<div id="Role" class="tabcontent">
+<!-- <div id="Role" class="tabcontent">
   <h3><span style="color: {{ site.mage_color }}">Mage Role</span></h3>
 <h3>In combat...</h3>
   <p>
@@ -286,7 +310,7 @@ layout: default
     communicating with the inhabitants of a foreign land. Their sixth sense can
     be helpful when dangerous magic is in the air.
   </p>
-</div>
+</div> -->
 
 <div id="Kits" class="tabcontent">
   <h3><span style="color: {{ site.mage_color }}">Mage Kits</span></h3>

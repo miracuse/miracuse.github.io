@@ -54,12 +54,11 @@ layout: default
   </p>
 
   {% include skill_list.html %}
-</div>
 
-<div id="Taking Action" class="tabcontent">
-  <h3>Taking Action</h3>
+  <h3>Using Skills</h3>
+
   <p>
-    When a player decides to take an action with one of the eight Skills,
+    When a player uses one of the eight Skills,
     they'll roll a ten-sided die and add their character's Skill level. The
     higher the outcome, the better the result.
   </p>
@@ -70,9 +69,21 @@ layout: default
     >
   </p>
 
-  <p>The table below shows how the dice roll translates to outcomes.</p>
-
   {% include dice_table.html %}
+
+</div>
+
+<div id="Taking Action" class="tabcontent">
+  <h3>Difficulty Ratings</h3>
+
+  {% include skill_ladder.html %}
+
+  <p>
+    The difficulty of a task depends on the situation. Getting out of 
+    the way of a rolling boulder might require a result of +2 (Trained)
+    using Agility. Stopping that same boulder with your bare hands will
+    probably take a +4 (Master) in Strength.
+  </p>
 
   <h3 id="examples">Example</h3>
 
@@ -142,7 +153,7 @@ layout: default
   <p>
     Characters with points in
     <strong><span style="color: {{ site.soldier_color }}">Strength</span></strong> or
-    <strong><span style="color: {{ site.mage_color }}">Focus</span></strong> start each day
+    <strong><span style="color: {{ site.mage_color }}">Presence</span></strong> start each day
     with extra boxes in one of the two tracks. They can withstand more damage
     before being taken out.
   </p>

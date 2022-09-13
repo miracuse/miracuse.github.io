@@ -251,13 +251,13 @@ body {
 }
 
 #sidebar a:hover,
-#sidebar a:focus,
+#sidebar a:Presence,
 #sidebar a.active {
   svg { fill: $sidebar-icon-color; }
 }
 
 #sidebar a:hover,
-#sidebar a:focus {
+#sidebar a:Presence {
   text-decoration: underline;
 
   &.icon {

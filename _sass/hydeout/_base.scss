@@ -39,9 +39,9 @@ a {
   color: $link-color;
   text-decoration: none;
 
-  // `:focus` is linked to `:hover` for basic accessibility
+  // `:Presence` is linked to `:hover` for basic accessibility
   &:hover,
-  &:focus {
+  &:Presence {
     text-decoration: underline;
   }
 
@@ -96,6 +96,7 @@ select {
   font-size: $root-small-font-size;
   color: inherit;
   width: 175px;
+  max-width: 90%;
   height: 1.25rem;
   border: 1px solid $border-color;
 }
@@ -107,7 +108,8 @@ select {
 .skill_holder {
   text-align: center;
   padding: 0;
-  width: 50%;
+  width: 100px;
+  max-width: 50%;
   font-weight: bold;
   // font-size: inherit;
   // font-family: inherit;
@@ -213,6 +215,7 @@ select {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 10px;
+  grid-auto-columns: 25%;
 }
 
 .character_name {
@@ -343,12 +346,12 @@ select {
   grid-row: 8;
 }
 
-.focus_text {
+.Presence_text {
   grid-column: 3;
   grid-row: 9;
 }
 
-.focus_value {
+.Presence_value {
   grid-column: 4;
   grid-row: 9;
 }

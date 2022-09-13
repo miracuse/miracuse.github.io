@@ -29,7 +29,7 @@ layout: default
   </ul>
 
   <table>
-    <th>Equipment and Appearance</th>
+    <th>Suggested Equipment and Appearance</th>
     <tr>
       <td>* A <b>melee weapon</b> such as a sword, spear, or bayonet</td>
     </tr>
@@ -49,7 +49,6 @@ layout: default
 
 <div id="Fortune" class="tabcontent">
   <h3><span style="color: {{ site.soldier_color }}">Fortune</span></h3>
-  <h3>Fortune Points</h3>
 
   <p>
     Soldiers have a number of <strong>Fortune Points</strong> equal to two times
@@ -131,24 +130,32 @@ layout: default
 
 <div id="Techniques" class="tabcontent">
   <h3><span style="color: {{ site.soldier_color }}">Techniques</span></h3>
-  {% include example_kit.html %}
   <p>
     Techniques are Kits that modify attacks. They add additional
     effects, such as increasing damage, hitting multiple enemies, or
-    targeting multiple enemies at once.
-  </p>
-
-  <p>
-    In addition to their passive effect, Techniques can also be amplified
-    or mixed together by expending Fortune Points. Two examples are provided
-    on this page, but the effects are based on what the Player is trying to
-    accomplish rather than a preset list of outcomes.
+    targeting multiple enemies at once. For example, the <i>Cleave</i>
+    Kit might be used to:
   </p>
 
   <ul>
-    <li><b>Cleave (Amplified)</b>: Greatly expand the area-of-effect of your attack.</li>
-    <li><b>Cleave + Sunder</b>: Make an area-of-effect attack that deals two boxes of 
-      Physical damage to all enemies and objects in range.</li>
+    <li>Swing an axe through a horde of goblins.</li>
+    <li>Shoot a volley of arrows at several bandits.</li>
+    <li>Throw a javelin that destroys cover and strikes the assassin hiding behind it.</li>
+    <li>Ricochet a thrown shield off of one enemy and into another.</li>
+  </ul>
+
+  <h3>Empowered Techniques</h3>
+  <p>
+    In addition to their passive effect, Techniques can also be amplified
+    or mixed together by expending Fortune Points. 
+  </p>
+
+  <ul>
+      <li><b>Cleave (Amplified)</b>: Make an attack against every enemy in the room.</li>
+      <li><b>Cleave + Sunder</b>: Make an area-of-effect attack that deals additional 
+        Physical damage while destroying armor and weapons.</li>
+      <li><b>Cleave + Smite</b>: Make an area-of-effect attack that sends enemies flying.</li>
+      <li><b>Cleave + Spellbreak</b>: Obliterate a horde of zombies by cutting through the magic that animates them.</li>
   </ul>
 </div>
 
