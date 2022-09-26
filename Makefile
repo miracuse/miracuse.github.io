@@ -3,7 +3,7 @@
 #################################################################################
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
-PROJECT_NAME = miracuse
+PROJECT_NAME = school_district_clustering
 PYTHON_INTERPRETER = python3
 
 #################################################################################
@@ -30,7 +30,7 @@ lint:
 	# black *.py
 	npx prettier --write .
 
-## Compile the JSX into JS
+## Compile JSX into JS
 js:
 	npx babel --presets @babel/preset-react assets/js/character_creator_proto.js > assets/js/character_creator.js
 

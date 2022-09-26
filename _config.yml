@@ -1,16 +1,11 @@
-# Site Settings
+# Site settings
 title: Miracuse SRD
 email: thenaticswest@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  A swords and sorcery tabletop RPG.
-domain: miracuse.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://miracuse.github.io  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: ""
-
-# Exclusions
+description: A swords and sorcery tabletop RPG.
+domain: miracuse.github.io
+url: https://miracuse.github.io
 exclude:
   [
-    "README.md",
     ".ruby-version",
     "Gemfile",
     "Gemfile.lock",
@@ -25,10 +20,14 @@ exclude:
     "devel/",
   ]
 
-# Build settings
-remote_theme: fongandrew/hydeout
+# Theme Settings
+theme: "just-the-docs"
+search_enabled: false
+# color_scheme: dark
+
+# Plugins
 plugins:
-  - jekyll-feed
+  - jekyll-relative-links
 
 # Global Variables
 alchemist_color: "#268bd2"

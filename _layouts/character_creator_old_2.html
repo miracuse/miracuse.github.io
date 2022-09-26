@@ -1,0 +1,340 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="../assets/css/character_creator.css" />
+<script type="text/javascript" src="../assets/js/character_creator.js"></script>
+
+<h1>Character Sheet</h1>
+
+{{ content }}
+
+<div id="CharacterSheet" class="tabcontent" style="display: block">
+  <!-- Name -->
+  <input
+    type="text"
+    id="character_name"
+    name="character_name"
+    placeholder="Character Name"
+    class="character_name"
+  />
+
+  <div class="character_sheet">
+    <!-- Header Row -->
+    <div class="class_header">
+      <b>Class</b>
+    </div>
+
+    <div class="character_class">
+      <select id="class_select" name="characterclass">
+        <option value="Alchemist">Alchemist</option>
+        <option value="Soldier">Soldier</option>
+        <option value="Mage">Mage</option>
+        <option value="Scoundrel">Scoundrel</option>
+        <option value="Hybrid">Hybrid</option>
+      </select>
+    </div>
+
+    <div class="tier_header">
+      <b>Tier</b>
+    </div>
+
+    <div class="character_tier">
+      <select id="tier_select" name="tierselect">
+        <option value="1">Tier I</option>
+        <option value="2">Tier II</option>
+        <option value="3">Tier III</option>
+      </select>
+    </div>
+
+    <!-- Subclasses -->
+    <div class="subclass_header">
+      <b>Subclass</b>
+    </div>
+
+    <select class="subclass_01" id="subclass_01" name="1">
+      <!-- Options generated at runtime -->
+    </select>
+
+    <select
+      class="subclass_02"
+      id="subclass_02"
+      name="2"
+      style="visibility: hidden"
+    >
+      <!-- Options generated at runtime -->
+    </select>
+
+    <select
+      class="subclass_03"
+      id="subclass_03"
+      name="3"
+      style="visibility: hidden"
+    >
+      <!-- Options generated at runtime -->
+    </select>
+
+    <!-- Health and Fortune/Prep Points Section -->
+    <div class="health_header">
+      <b>Health</b>
+    </div>
+
+    <div class="physical_health_text">
+      <label>Physical Health</label>
+    </div>
+
+    <div class="mental_health_text">
+      <label>Mental Health</label>
+    </div>
+
+    <div class="physical_health_track" id="physical_health_track">
+      <!-- Checkboxes are created at runtime. -->
+      <!-- <input type="checkbox"> -->
+    </div>
+
+    <div class="mental_health_track" id="mental_health_track">
+      <!-- Checkboxes are created at runtime. -->
+      <!-- <input type="checkbox"> -->
+    </div>
+
+    <div class="fortune_point_text">
+      <label>Fortune Points</label>
+    </div>
+
+    <div class="prep_point_text">
+      <label>Prep Points</label>
+    </div>
+
+    <div class="fortune_point_track" id="fortune_point_track">
+      <!-- Checkboxes are created at runtime. -->
+      <!-- <input type="checkbox"> -->
+    </div>
+
+    <div class="prep_point_track" id="prep_point_track">
+      <!-- Checkboxes are created at runtime. -->
+      <!-- <input type="checkbox"> -->
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills_header">
+      <b>Skills</b>
+    </div>
+
+    <div class="perception_text" id="perception_text">
+      <label>Perception</label>
+    </div>
+
+    <div class="perception_value">
+      <input
+        type="number"
+        value="0"
+        min="0"
+        ,
+        max="4"
+        class="skill_holder"
+        id="perception_value"
+        name="perception"
+      />
+    </div>
+
+    <div class="knowledge_text" id="knowledge_text">
+      <label>Knowledge</label>
+    </div>
+
+    <div class="knowledge_value">
+      <input
+        type="number"
+        value="0"
+        min="0"
+        ,
+        max="4"
+        class="skill_holder"
+        id="knowledge_value"
+        name="knowledge"
+      />
+    </div>
+
+    <div class="strength_text" id="strength_text">
+      <label>Strength</label>
+    </div>
+
+    <div class="strength_value">
+      <input
+        type="number"
+        value="0"
+        min="0"
+        ,
+        max="4"
+        class="skill_holder"
+        id="strength_value"
+        name="strength"
+      />
+    </div>
+
+    <div class="bravery_text" id="bravery_text">
+      <label>Bravery</label>
+    </div>
+
+    <div class="bravery_value">
+      <input
+        type="number"
+        value="0"
+        min="0"
+        ,
+        max="4"
+        class="skill_holder"
+        id="bravery_value"
+        name="bravery"
+      />
+    </div>
+
+    <div class="magic_text" id="magic_text">
+      <label>Magic</label>
+    </div>
+
+    <div class="magic_value">
+      <input
+        type="number"
+        value="0"
+        min="0"
+        ,
+        max="4"
+        class="skill_holder"
+        id="magic_value"
+        name="magic"
+      />
+    </div>
+
+    <div class="focus_text" id="focus_text">
+      <label>Focus</label>
+    </div>
+
+    <div class="focus_value">
+      <input
+        type="number"
+        value="0"
+        min="0"
+        ,
+        max="4"
+        class="skill_holder"
+        id="focus_value"
+        name="focus"
+      />
+    </div>
+
+    <div class="cunning_text" id="cunning_text">
+      <label>Cunning</label>
+    </div>
+
+    <div class="cunning_value">
+      <input
+        type="number"
+        value="0"
+        min="0"
+        ,
+        max="4"
+        class="skill_holder"
+        id="cunning_value"
+        name="cunning"
+      />
+    </div>
+
+    <div class="agility_text" id="agility_text">
+      <label>Agility</label>
+    </div>
+
+    <div class="agility_value">
+      <input
+        type="number"
+        value="0"
+        min="0"
+        ,
+        max="4"
+        class="skill_holder"
+        id="agility_value"
+        name="agility"
+      />
+    </div>
+
+    <!-- Kits Section -->
+    <div class="kit_header">
+      <b>Kits</b>
+    </div>
+
+    <div class="kit_chooser_01" name="1">
+      <select id="kit_type_01" name="1">
+        <option value="placeholder">Placeholder</option>
+      </select>
+      <select id="kit_01" name="1">
+        <option value="potion">Potion</option>
+      </select>
+      <div id="kit_uses_01" name="1">
+        <!-- Checkboxes are created at runtime. -->
+        <!-- <input type="checkbox"> -->
+      </div>
+    </div>
+
+    <div class="kit_text_01">
+      <p id="kit_description_01" class="kit_description" name="1">
+        Description
+      </p>
+    </div>
+
+    <div class="kit_chooser_02" name="2">
+      <select id="kit_type_02" name="2">
+        <option value="placeholder">Placeholder</option>
+      </select>
+      <select id="kit_02" name="2">
+        <option value="potion">Potion</option>
+      </select>
+      <div id="kit_uses_02" name="2">
+        <!-- Checkboxes are created at runtime. -->
+        <!-- <input type="checkbox"> -->
+      </div>
+    </div>
+
+    <div class="kit_text_02">
+      <p id="kit_description_02" class="kit_description" name="2">
+        Description
+      </p>
+    </div>
+
+    <div class="kit_chooser_03" name="3">
+      <select id="kit_type_03" name="3">
+        <option value="placeholder">Placeholder</option>
+      </select>
+      <select id="kit_03" name="3">
+        <option value="potion">Potion</option>
+      </select>
+      <div id="kit_uses_03" name="3">
+        <!-- Checkboxes are created at runtime. -->
+        <!-- <input type="checkbox"> -->
+      </div>
+    </div>
+
+    <div class="kit_text_03">
+      <p id="kit_description_03" class="kit_description" name="3">
+        Description
+      </p>
+    </div>
+
+    <div class="kit_chooser_04" name="4">
+      <select id="kit_type_04" name="4">
+        <option value="placeholder">Placeholder</option>
+      </select>
+      <select id="kit_04" name="4">
+        <option value="potion">Potion</option>
+      </select>
+      <div id="kit_uses_04" name="4">
+        <!-- Checkboxes are created at runtime. -->
+        <!-- <input type="checkbox"> -->
+      </div>
+    </div>
+
+    <div class="kit_text_04">
+      <p id="kit_description_04" class="kit_description" name="4">
+        Description
+      </p>
+    </div>
+  </div>
+</div>

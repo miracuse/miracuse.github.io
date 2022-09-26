@@ -1,0 +1,254 @@
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="submit"],
+input[type="number"] {
+  border: 1px solid $border-color;
+  // padding: $padding-v $padding-h;
+}
+
+select {
+  display: block;
+  // font-family: $root-font-family;
+  font-size: $font-size-4;
+  color: inherit;
+  width: 175px;
+  max-width: 90%;
+  height: 1.25rem;
+  border: 1px solid $border-color;
+}
+
+.kit_description {
+  vertical-align: top;
+  font-size: $font-size-4;
+  margin: 0;
+}
+
+.skill_holder {
+  text-align: center;
+  padding: 0;
+  width: 100px;
+  max-width: 50%;
+  font-weight: bold;
+  // font-size: inherit;
+  // font-family: inherit;
+}
+
+.kits_table {
+  font-size: $font-size-4;
+}
+
+.character_name {
+  // font-size: $root-font-size;
+}
+
+/* Style the character sheet */
+.character_sheet {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 10px;
+  grid-auto-columns: 25%;
+}
+
+.character_name {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.class_header {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.character_class {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.hybrid_kit_type_01 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.hybrid_kit_type_02 {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.health_header {
+  grid-column: 1 / 2;
+  grid-row: 4;
+}
+
+.physical_health_text {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.mental_health_text {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.physical_health_track {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.mental_health_track {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+.fortune_point_text {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+.prep_point_text {
+  grid-column: 3;
+  grid-row: 6;
+}
+
+.fortune_point_track {
+  grid-column: 4;
+  grid-row: 5;
+}
+
+.prep_point_track {
+  grid-column: 4;
+  grid-row: 6;
+}
+
+.skills_header {
+  grid-column: 1 / 2;
+  grid-row: 7;
+}
+
+.perception_text {
+  grid-column: 1;
+  grid-row: 8;
+}
+.perception_text :enabled {
+  font-weight: bold;
+}
+
+.perception_value {
+  grid-column: 2;
+  grid-row: 8;
+}
+
+.knowledge_text {
+  grid-column: 1;
+  grid-row: 9;
+}
+
+.knowledge_value {
+  grid-column: 2;
+  grid-row: 9;
+}
+
+.Strength_text {
+  grid-column: 1;
+  grid-row: 10;
+}
+
+.Strength_value {
+  grid-column: 2;
+  grid-row: 10;
+}
+
+.bravery_text {
+  grid-column: 1;
+  grid-row: 11;
+}
+
+.bravery_value {
+  grid-column: 2;
+  grid-row: 11;
+}
+
+.Magic_text {
+  grid-column: 3;
+  grid-row: 8;
+}
+
+.Magic_value {
+  grid-column: 4;
+  grid-row: 8;
+}
+
+.Presence_text {
+  grid-column: 3;
+  grid-row: 9;
+}
+
+.Presence_value {
+  grid-column: 4;
+  grid-row: 9;
+}
+
+.agility_text {
+  grid-column: 3;
+  grid-row: 10;
+}
+
+.agility_value {
+  grid-column: 4;
+  grid-row: 10;
+}
+
+.cunning_text {
+  grid-column: 3;
+  grid-row: 11;
+}
+
+.cunning_value {
+  grid-column: 4;
+  grid-row: 11;
+}
+
+.kit_header {
+  grid-column: 1 / 2;
+  grid-row: 12;
+}
+
+.kit_chooser_01 {
+  grid-column: 1;
+  grid-row: 13;
+}
+
+.kit_text_01 {
+  grid-column: 2 / -1;
+  grid-row: 13;
+}
+
+.kit_chooser_02 {
+  grid-column: 1;
+  grid-row: 14;
+}
+
+.kit_text_02 {
+  grid-column: 2 / -1;
+  grid-row: 14;
+}
+
+.kit_chooser_03 {
+  grid-column: 1;
+  grid-row: 15;
+}
+
+.kit_text_03 {
+  grid-column: 2 / -1;
+  grid-row: 15;
+}
+
+.kit_chooser_04 {
+  grid-column: 1;
+  grid-row: 16;
+}
+
+.kit_text_04 {
+  grid-column: 2 / -1;
+  grid-row: 16;
+}
