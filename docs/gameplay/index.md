@@ -21,9 +21,8 @@ has_toc: false
 
 The GM sets the scene and the Players react. Gameplay rules describe how that process works.
 
-- [**Skills**](skills.md) describe what your character is good at.
+-   [**Skills**](skills.md) describe what your character is good at.
 
-- [**Kits**](kits.md) describe what special abilities your character has. They can be swapped for other Kits every time the party [Makes Camp](../adventuring/exploration/).
+-   [**Kits**](kits.md) describe what special abilities your character has. They can be swapped for other Kits every time the party [Makes Camp](../adventuring/exploration/).
 
-- [**Health**](health.md) describes how much damage your character can take before they fall over from exhaustion and injury.
-
+-   [**Health**](health.md) describes how much damage your character can take before they fall over from exhaustion and injury.

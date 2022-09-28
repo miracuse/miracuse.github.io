@@ -7,7 +7,7 @@ nav_order: 2
 
 # Kits
 
-**Kits** are special abilities tied to a character's Subclass. Players can equip up to four Kits at any given time, and can change their Kits whenever their characters rest.
+**Kits** are special abilities tied to a character's [Class](../classes/index.md). Players can equip up to four Kits at any given time, and can change their Kits whenever their characters rest.
 
 {% include example_kit.html %}
 

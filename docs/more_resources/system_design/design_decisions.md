@@ -8,7 +8,7 @@ nav_order: 3
 
 # Design Decisions
 
-**_Competency_**: Adventurers are good at what they're good at. The majority of rolls should reflect their ability, not their luck. 
+**_Competency_**: Adventurers are good at what they're good at. The majority of rolls should reflect their ability, not their luck.
 
     The dice system has hard boundaries [-2, +2].
 

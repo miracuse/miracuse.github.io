@@ -5,20 +5,20 @@ description: A swords and sorcery tabletop RPG.
 domain: miracuse.github.io
 url: https://miracuse.github.io
 exclude:
-  [
-    ".ruby-version",
-    "Gemfile",
-    "Gemfile.lock",
-    "node_modules/",
-    "package.json",
-    "package-lock.json",
-    "prettierrc.json",
-    ".prettierignore",
-    "kit_convert.py",
-    "miracuse_kits.xlsx",
-    "Makefile",
-    "devel/",
-  ]
+    [
+        ".ruby-version",
+        "Gemfile",
+        "Gemfile.lock",
+        "node_modules/",
+        "package.json",
+        "package-lock.json",
+        "prettierrc.json",
+        ".prettierignore",
+        "kit_convert.py",
+        "miracuse_kits.xlsx",
+        "Makefile",
+        "devel/",
+    ]
 
 # Theme Settings
 remote_theme: just-the-docs/just-the-docs
@@ -28,7 +28,7 @@ search_enabled: false
 
 # Plugins
 plugins:
-  - jekyll-relative-links
+    - jekyll-relative-links
 
 # Global Variables
 alchemist_color: "#268bd2"

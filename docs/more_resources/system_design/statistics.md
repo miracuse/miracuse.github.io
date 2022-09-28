@@ -16,11 +16,11 @@ One of the design principles of this system is that Player Characters are compet
 
 Put another way:
 
-- You have a 10% chance of rolling a +2
-- You have a 20% chance of rolling a +1
-- You have a 40% chance of rolling a +0
-- You have a 20% chance of rolling a -1
-- You have a 10% chance of rolling a -2
+-   You have a 10% chance of rolling a +2
+-   You have a 20% chance of rolling a +1
+-   You have a 40% chance of rolling a +0
+-   You have a 20% chance of rolling a -1
+-   You have a 10% chance of rolling a -2
 
 That means that a character has a **70% chance of getting their Skill Level or higher**.
 

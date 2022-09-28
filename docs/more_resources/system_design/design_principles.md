@@ -27,4 +27,3 @@ nav_order: 2
 **_Inexperienced GM's_**: Aspiring Game Masters with little to no background.
 
 **_Experienced GM's_**: Game Masters who have run different systems in the past.
-

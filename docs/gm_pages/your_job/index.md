@@ -51,4 +51,4 @@ _Miracuse_ is designed to avoid these scenarios as best as possible, but there's
 
 ### Further Reading
 
-- FATE Core on [running games](https://fate-srd.com/fate-core/running-game)
+-   FATE Core on [running games](https://fate-srd.com/fate-core/running-game)

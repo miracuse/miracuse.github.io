@@ -10,4 +10,4 @@ nav_order: 7
 # Advancement
 
 Coming soon
-{: .label .label-yellow }
+{: .label .label-red }

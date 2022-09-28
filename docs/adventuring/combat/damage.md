@@ -10,10 +10,10 @@ nav_order: 1
 
 In most cases, **a successful attack from a Player or an enemy will inflict one box of Physical damage**. Various Kits and spells can modify attacks. For instance:
 
-- Add additional Physical/Mental damage
-- Target enemies in an area-of-effect
-- Add status effects like blindness
-- Create environmental effects like setting the environment on fire.
+-   Add additional Physical/Mental damage
+-   Target enemies in an area-of-effect
+-   Add status effects like blindness
+-   Create environmental effects like setting the environment on fire.
 
 Similarly, enemies may have abilities that do the same for their attacks.
 
@@ -38,4 +38,4 @@ Players are encouraged to get creative in combat encounters. Try combining diffe
 | Bravery    | Endure Mental attacks, overcome fear.   |
 | Perception | Notice a trap before stepping on it.    |
 
-Most attacks can be defended against by either Strength or Agility. Other threats, like traps, may call on other Skills. Remember: [the Skill used should make narrative sense.](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule) 
+Most attacks can be defended against by either Strength or Agility. Other threats, like traps, may call on other Skills. Remember: [the Skill used should make narrative sense.](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule)

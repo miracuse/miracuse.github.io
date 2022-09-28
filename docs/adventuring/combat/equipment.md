@@ -27,7 +27,7 @@ That being said, choice of equipment has narrative effects. A Player Character i
 | Strength   | Swords, axes, longbows, etc.             |
 | Agility    | Throwing knives, garrotes, rapiers, etc. |
 | Perception | Guns, crossbows, slingshots, etc.        |
-| Magic      | Fire, lightning, ice, etc.           |
+| Magic      | Fire, lightning, ice, etc.               |
 
 The Skill a character uses when attacking roughly corresponds to the weapons they use, but isn't restricted by any means. A Player might make a reasonable argument for why they use a weapon with a different Skill. So long as the GM and other players approve of the justification, there's no reason why they shouldn't be able to flavor their character's fighting style appropriately.
 

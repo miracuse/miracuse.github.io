@@ -1,14 +1,14 @@
 <table>
-  <thead>
-    <td><b>Subclass</b></td>
-    <td><b>Kit</b></td>
-    <td><b>Description</b></td>
-  </thead>
-  {% for row in site.data.Alchemist %}
-  <tr>
-    <td>{{ row.Type }}</td>
-    <td><b>{{ row.Kit }}</b></td>
-    <td>{{ row.Description }}</td>
-  </tr>
-  {% endfor %}
+    <thead>
+        <td><b>Subclass</b></td>
+        <td><b>Kit</b></td>
+        <td><b>Description</b></td>
+    </thead>
+    {% for row in site.data.Alchemist %}
+    <tr>
+        <td>{{ row.Type }}</td>
+        <td><b>{{ row.Kit }}</b></td>
+        <td>{{ row.Description }}</td>
+    </tr>
+    {% endfor %}
 </table>

@@ -12,13 +12,13 @@ Players are welcome to customize their characters however they choose. However, 
 
 ### Suggested Equipment and Appearance
 
-- A crossbow or hand cannon that can launch grenades
+-   A crossbow or hand cannon that can launch grenades
 
-- A bandolier, toolbox, or collection of pouches filled with potions and tools
+-   A bandolier, toolbox, or collection of pouches filled with potions and tools
 
-- Padded clothing with many pockets, and face protection such as goggles or a plague doctor's mask
+-   Padded clothing with many pockets, and face protection such as goggles or a plague doctor's mask
 
-- A hefty pack filled with adventuring gear such as rope and torches
+-   A hefty pack filled with adventuring gear such as rope and torches
 
 ### Roles
 

@@ -15,29 +15,29 @@ Custom Classes allow players to change their starting Skills to better reflect a
 
 ### Creating a Custom Class
 
-- Choose one of the following Skill spreads
+-   Choose one of the following Skill spreads
 
-  - Standard (Two Skills at +2)
-  - Versatile (One Skill at +2, Two Skills at +1)
+    -   Standard (Two Skills at +2)
+    -   Versatile (One Skill at +2, Two Skills at +1)
 
-- Choose one Subclass, chosen from any of the base classes
+-   Choose one Subclass, chosen from any of the base classes
 
 ### Example: The Paladin
 
 **Subclass**
 
-- Mage/Priest
+-   Mage/Priest
 
 **Skills**
 
-- Strength +2
-- Bravery +1
-- Magic +1
+-   Strength +2
+-   Bravery +1
+-   Magic +1
 
 **Description**
 
 A holy knight trained in the arts of war and magic. Paladins
 aren't well-suited to spellcasting, but gain a great deal of
 versatility from their access to Priest Kits. Likewise, Paladins
-have none of the techniques of a Soldier, but have similar 
+have none of the techniques of a Soldier, but have similar
 durability and Strength.

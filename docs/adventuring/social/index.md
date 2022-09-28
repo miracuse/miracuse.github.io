@@ -24,7 +24,7 @@ nav_order: 6
 
     GM: It'll be a hard roll, but go ahead.
 
-**Social** encounters rely on the ability of Players to negotiate with the GM's fictional characters. 
+**Social** encounters rely on the ability of Players to negotiate with the GM's fictional characters.
 
 ### Persuasion
 
@@ -37,7 +37,7 @@ nav_order: 6
 
 Each of the classes has their own approach to persuasion. Some approaches work better or worse depending on the audience. A Soldier might threaten a bandit king into submission, but they probably won't succeed in intimidating an actual king.
 
->**Note**: Players shouldn't persuade other players using Skill rolls, unless both want to. It's better to roleplay discussions with words instead of dice.
+> **Note**: Players shouldn't persuade other players using Skill rolls, unless both want to. It's better to roleplay discussions with words instead of dice.
 
 ### Sense Motive
 

@@ -7,4 +7,4 @@ nav_order: 4
 # Character Sheet
 
 Under Construction
-{: .label .label-red }
+{: .label .label-yellow }
