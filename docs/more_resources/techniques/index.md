@@ -31,7 +31,7 @@ The effects that Techniques provide might plausibly be done without the correspo
 
 As with other mechanics in _Miracuse_, Techniques follow FATE's [Silver Rule](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule). The effect of a Technique might be greater or lesser depending on the narrative context it's used in.
 
-For example, _Harass_ won't much effect on a zombie or a gelatinous cube, in the same way that throwing fire at a fire elemental won't deal damage. On the other hand, a Technique like _Smite_ may be especially impactful against small targets, sending them flying through the air instead of simply knocking them over.
+For example, _Harass_ won't have much effect on a zombie or a gelatinous cube, in the same way that throwing fire at a fire elemental won't deal damage. On the other hand, a Technique like _Smite_ may be especially impactful against small targets, sending them flying through the air instead of simply knocking them over.
 
 ### Non-Combat Applications
 
@@ -44,6 +44,10 @@ While Techniques are often used in the context of combat, they are fully applica
 -   _Spellbreak_ can be used to break magical wards or threaten spirits that would normally only respond to a Mage.
 
 ### Techniques FAQ
+
+-   **Can I use a Technique with a Sneak Attack?**
+
+Yes.
 
 -   **Can I use a Technique with a cantrip?**
 

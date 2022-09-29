@@ -37,5 +37,7 @@ Players are encouraged to get creative in combat encounters. Try combining diffe
 | Agility    | Dodge Physical attacks, avoid harm.     |
 | Bravery    | Endure Mental attacks, overcome fear.   |
 | Perception | Notice a trap before stepping on it.    |
+| Cunning    | Sense danger before it strikes.         |
+| Presence   | Detect evil magic in the air.           |
 
-Most attacks can be defended against by either Strength or Agility. Other threats, like traps, may call on other Skills. Remember: [the Skill used should make narrative sense.](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule)
+Most attacks can be defended against by either **<span style="color: {{ site.soldier_color }}">Strength</span>** or **<span style="color: {{ site.scoundrel_color }}">Agility</span>**. Other threats, like traps or strange magic, may call on other Skills. Remember: [the Skill used should make narrative sense.](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule)

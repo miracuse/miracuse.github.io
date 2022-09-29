@@ -31,4 +31,4 @@ Scoundrels have a number of Prep Points equal to two times their **<span style="
 
 ### Techniques and Magic
 
-All Scoundrel subclasses have access to at least one [Technique](../soldier/#techniques) Kit and one [Magic](../mage/#magic) Kit.
+All Scoundrel subclasses have access to at least one [Technique](../soldier/#techniques) Kit and one [Spirit](../mage/#magic) Kit.

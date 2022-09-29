@@ -17,7 +17,7 @@ The Mage forms pacts with the primal spirits of the world to perform miracles an
 
 ### Magic
 
-The simplest form of magic is a **Cantrip**. A Mage chooses one of their Kits, describes something they want to do, and rolls **<span style="color: {{ site.mage_color }}">Magic</span>**. For example, a player might use the _Spirit of Flame_ Kit to:
+The simplest form of magic is a **Cantrip**. A Mage chooses a Kit with the "Spirit" tag, describes something they want to do, and rolls **<span style="color: {{ site.mage_color }}">Magic</span>**. For example, a player might use the _Spirit of Flame_ Kit to:
 
 -   Throw fire at enemies.
 -   Make light to help see while exploring in the dark.
@@ -25,7 +25,7 @@ The simplest form of magic is a **Cantrip**. A Mage chooses one of their Kits, d
 
 ### Spells
 
-Mages can also create larger effects by combining two of their Kits. Doing so produces more powerful and complex results, but forces the Mage to mark a point of Mental damage on themselves.
+Mages can also create larger effects by combining two Kits with the "Spirit" tag. Doing so produces more powerful and complex results, but forces the Mage to mark a point of Mental damage on themselves.
 
 | Spell           | Description                                                                                     |
 | --------------- | ----------------------------------------------------------------------------------------------- |

@@ -31,7 +31,7 @@ nav_order: 1
 
 > Allows for limited control and manifestation of earth.
 
--   _Stone Pillar_: Strike an enemy by forcing a pillar of stone to erupt from the ground into their body.
+-   _Stone Pillar_: Strike an enemy by forcing a thin pillar of stone to erupt from the ground into their body.
 
 -   _Mold Earth_: Reshape dirt or stone, creating tunnels and earthenware.
 

@@ -13,11 +13,11 @@ The Alchemist is a keen adventurer, keeping a watchful eye out for danger and a 
 
 -   **<span style="color: {{ site.alchemist_color }}">Perception</span>**: Alchemists are good at detecting danger, finding clues, and searching for hidden treasure. They also use this Skill to attack with ranged weapons (crossbows, guns, etc.)
 
--   **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**: Alchemists are familiar with many different fields that might be useful to an adventurer, such as monster biology or regional politics. This Skill also determines how many uses of their Kits they have, and their ability to persuade using others rhetoric.
+-   **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**: Alchemists are familiar with many different fields that might be useful to an adventurer, such as monster biology or regional politics. This Skill also determines how many uses of their Kits they have, and their ability to persuade others using rhetoric.
 
-### Alchemy
+### Charges
 
-Alchemist Kit's are powerful, but have a limited number of uses based on the character's **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**. Alchemists mark a box each time they use one of their Kits, and recover all of their uses for each Kit when they make camp.
+Alchemist Kit's are powerful, but have a limited number of **Charges** based on the character's **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**. Alchemists mark a box each time they use one of their Kits, and recover all of their Charges when they make camp.
 
 {% include alchemy_uses.html %}
 

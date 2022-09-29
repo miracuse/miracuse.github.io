@@ -11,7 +11,7 @@ nav_order: 3
 
 {% include ability_table.html %}
 
-Alchemy has a unique position in Miracuse. Unlike Magic and Techniques, each Kit has its own resource pool. This allows Alchemists to perform a great many "big" effects before depleting themselves.
+Alchemy has a unique position in _Miracuse_. Unlike Spirit and Technique Kits, each Alchemy Kit has its own resource pool. This allows Alchemists to perform a great many "big" effects before depleting themselves.
 
 The downside to Alchemy is that its Kits generally do not have passive effects. A Mage never runs out of Cantrips. A Soldier can always add a Technique to an attack. But an Alchemist that's spent all of their Kits has to rely solely on their Skills.
 
@@ -36,3 +36,11 @@ Yes. Narratively, you might imagine that drinking something like an _Elixir_ wou
 -   **Can I combine Alchemy Items like Spells or Techniques?**
 
 Usually no. A GM might allow you to roll Knowledge to combine Items if you have a specific outcome in mind, but doing so isn't a core part of Alchemy the way it is for the other two subsystems.
+
+-   **Can I have multiple golems/familiars/shikigami's/bags at one time?**
+
+Yes.
+
+-   **Can I use multiple runes on one object?**
+
+Usually no, but this is ultimately the GM's decision.

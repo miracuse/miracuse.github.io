@@ -9,7 +9,7 @@ has_toc: false
 # GM Pages
 
 Under Construction
-{: .label .label-red }
+{: .label .label-yellow }
 
 > _"As the gamemaster, it’s your job to decide how everyone and everything else in the world responds to what the PCs do, as well as what the PCs’ environment is like. If a PC botches a roll, you’re the one who gets to decide the consequences. When an NPC attempts to assassinate a PC’s friend, you’re the one who gets to decide how they go about it. When the PCs stroll up to a food vendor in a market, you get to decide what kind of day the vendor is having, what kind of personality he or she has, what’s on sale that day. You determine the weather when the PCs pull up to that dark cave."_ - FATE SRD on [Playing the World and the NPCs](https://fate-srd.com/fate-core/running-game#play-the-world-and-the-npcs)
 

@@ -13,6 +13,6 @@ nav_order: 2
 
 ### Skills vs. Kits
 
-Skills describe how good a character is at some category of tasks (Strength, Agility, etc.). Kits extend Skills, offering new ways to use them.
+Skills describe how good a character is at some category of tasks (**<span style="color: {{ site.soldier_color }}">Strength</span>**, **<span style="color: {{ site.scoundrel_color }}">Agility</span>**, etc.). Kits extend Skills, offering new ways to use them.
 
-Anyone can swing a sword with Strength, but only characters with the _Cleave_ Kit can hit multiple enemies in a single swing. Any Mage can use Magic, but only Mages with the _Spirit of Flame_ Kit can use Magic to control fire.
+Anyone can swing a sword with **<span style="color: {{ site.soldier_color }}">Strength</span>**, but only characters with the _Harass_ Kit can use that sword to cause Mental damage. Any Mage can use **<span style="color: {{ site.mage_color }}">Magic</span>**, but only Mages with the _Spirit of Flame_ Kit can use **<span style="color: {{ site.mage_color }}">Magic</span>** to control fire.

@@ -31,13 +31,10 @@ Soldiers have a number of Fortune Points equal to two times their **<span style=
 
 {% include single_solider_kit.html %}
 
-Techniques are Kits that modify attacks. They add additional
-effects, such as increasing damage, hitting multiple enemies, or
-targeting multiple enemies at once. For example, the _Cleave_
-Kit might be used to:
+Techniques are Kits that modify attacks. They add additional effects, such as increasing damage, hitting multiple enemies, or targeting multiple enemies at once. For example, the _Cleave_ Kit might be used to:
 
 -   Swing an axe through a horde of goblins.
--   Shoot a volley of arrows at several bandits.
+-   Shoot a volley of arrows at a cluster of bandits.
 -   Throw a javelin that destroys cover and strikes the assassin hiding behind it.
 -   Ricochet a thrown shield off of one enemy and into another.
 
