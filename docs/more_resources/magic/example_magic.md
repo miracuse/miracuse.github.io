@@ -49,7 +49,7 @@ nav_order: 1
 
 > Allows for limited control and manifestation of light.
 
--   _Silent Image_: Create an immobile phantom illusion that appears real at a glance, but falls apart when touched. The larger and more detailed the illusion, the more difficult the roll required.
+-   _Silent Image_: Create a phantom illusion that appears real at a glance, but falls apart when touched. The larger and more detailed the illusion, the more difficult the roll required.
 
 -   _Blinding Light_: Create a painfully bright light that blinds those who look directly at it. Does not deal damage, but does inflict blindness.
 

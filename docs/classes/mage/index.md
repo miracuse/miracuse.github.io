@@ -27,10 +27,10 @@ The simplest form of magic is a **Cantrip**. A Mage chooses a Kit with the "Spir
 
 Mages can also create larger effects by combining two Kits with the "Spirit" tag. Doing so produces more powerful and complex results, but forces the Mage to mark a point of Mental damage on themselves.
 
-| Spell           | Description                                                                                     |
-| --------------- | ----------------------------------------------------------------------------------------------- |
-| Fireball        | Spirits of Flame and Air. Causes an explosion of flame in a large area.                         |
-| Speak With Dead | Spirits of Language and Hells. Summons a ghost that must answer three questions truthfully.     |
-| Mirror Images   | Spirits of Light and Sound. Creates phantom copies of the caster that look and sound identical. |
+| Spell           | Description                                                                                      |
+| --------------- | ------------------------------------------------------------------------------------------------ |
+| Fireball        | Spirits of Flame and Air. Causes an explosion of flame in a large area.                          |
+| Speak With Dead | Spirits of Language and Necromancy. Summons a ghost that must answer three questions truthfully. |
+| Mirror Images   | Spirits of Light and Sound. Creates phantom copies of the caster that look and sound identical.  |
 
 Additional information about Magic can be found on [this page](../../more_resources/magic/index.md).

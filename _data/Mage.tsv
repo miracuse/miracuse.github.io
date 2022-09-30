@@ -1,19 +1,19 @@
 Class	Type	Kit	Tags	Description
-Mage	Priest	Spirit of Abjuration	Combat, Magic	Seal and purify. Used to create barriers and dispel magic.
-Mage	Priest	Spirit of Divination	Exploration, Magic	Seek and learn. Used to scry for hidden things and reveal new information.
-Mage	Priest	Spirit of Language	Social, Magic	Speak and understand. Used to commune with all creatures and compel others to your will.
-Mage	Priest	Spirit of Necromancy	Combat, Exploration, Magic	Corrupt and wrong. Used to raise the dead and curse the living.
-Mage	Priest	Spirit of Restoration	Recovery, Magic	Restore and repair. Used to heal wounds and mend broken objects.
-Mage	Priest	Spirit of Summoning	Exploration, Magic	Petition and conjure. Used to pull otherworldly influences into the mortal realm.
-Mage	Shaman	Spirit of Aether	Combat, Exploration, Magic	Allows for control and limited manifestation of electricity.
-Mage	Shaman	Spirit of Air	Combat, Exploration, Magic	Allows for control and limited manifestation of air.
-Mage	Shaman	Spirit of Earth	Combat, Exploration, Magic	Allows for control and limited manifestation of earth.
-Mage	Shaman	Spirit of Flame	Combat, Exploration, Magic	Allows for control and limited manifestation of flame.
-Mage	Shaman	Spirit of Metal	Combat, Exploration, Magic	Allows for control and limited manifestation of metal and magnetism.
-Mage	Shaman	Spirit of Water	Combat, Exploration, Magic	Allows for control and limited manifestation of water.
-Mage	Wizard	Spirit of Binding	Exploration, Magic	Adhere and restrain. Used to lash things together with gravitational force.
-Mage	Wizard	Spirit of Entropy	Combat, Exploration, Magic	Diminish and dissolve. Used to unravel targets into their base elements.
-Mage	Wizard	Spirit of Force	Combat, Exploration, Magic	Channel raw magical energy. Used to lob bolts of force at enemies, or otherwise manipulate energy.
-Mage	Wizard	Spirit of Locomotion	Exploration, Magic	Accelerate and slow. Used to manipulate kinetic energy, adding or taking away speed.
-Mage	Wizard	Spirit of Reinforcement	Exploration, Magic	Fortify and empower. Used to improve existing qualities, such as making someone stronger or faster.
-Mage	Wizard	Spirit of Thermos	Combat, Exploration, Magic	Heat and cool. Used to manipulate thermal energy, adding or taking away temperature.
+Mage	Priest	Spirit of Abjuration	Combat, Spirit	Create barriers, dispel magic, and repel otherworldly influences.
+Mage	Priest	Spirit of Divination	Exploration, Spirit	Find people, places, things, and hidden knowledge through divination.
+Mage	Priest	Spirit of Language	Social, Spirit	Speak all languages, use charm magic, and compel others to your will.
+Mage	Priest	Spirit of Necromancy	Combat, Exploration, Spirit	Raise the dead, curse the living, and meddle with the boundary between life and death.
+Mage	Priest	Spirit of Restoration	Recovery, Spirit	Heal Physical wounds, restore broken objects, and treat natural afflictions.
+Mage	Priest	Spirit of Summoning	Exploration, Social, Spirit	Call imps, pixies, and other minor magical creatures to serve you. Pull otherworldly influences into the world.
+Mage	Shaman	Spirit of Aether	Combat, Exploration, Spirit	Manipulate electricity, shoot lightning, and stun enemies.
+Mage	Shaman	Spirit of Air	Combat, Exploration, Spirit	Manipulate air, create gusts of wind, and fall gently.
+Mage	Shaman	Spirit of Earth	Combat, Exploration, Spirit	Manipulate earth, reshape terrain, and mold stone.
+Mage	Shaman	Spirit of Flame	Combat, Exploration, Spirit	Manipulate fire, throw flames, and ignite objects.
+Mage	Shaman	Spirit of Metal	Combat, Exploration, Spirit	Manipulate metal, create magnetic fields, and sharpen blades.
+Mage	Shaman	Spirit of Water	Combat, Exploration, Spirit	Manipulate water, freeze liquids, and conjure fog.
+Mage	Wizard	Spirit of Binding	Combat, Exploration, Spirit	Manipulate bonds, adhering things together or loosening them from one another.
+Mage	Wizard	Spirit of Entropy	Combat, Exploration, Spirit	Manipulate decay, accelerating or slowing processes like rotting and rusting.
+Mage	Wizard	Spirit of Force	Combat, Exploration, Spirit	Manipulate magic energy, lob bolts of raw power at enemies, and tinker with magical forces present in the world.
+Mage	Wizard	Spirit of Locomotion	Combat, Exploration, Spirit	Manipulate kinetic energy, add or reduce speed.
+Mage	Wizard	Spirit of Gravity	Combat, Exploration, Spirit	Manipulate gravity, add or reduce weight.
+Mage	Wizard	Spirit of Thermos	Combat, Exploration, Spirit	Manipulate thermal energy, add or reduce heat.

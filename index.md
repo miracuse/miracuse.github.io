@@ -17,3 +17,5 @@ One person will act as the **Game Master** (GM). They'll be responsible for play
 Players should pick a [Class](docs/classes/index.md) and fill out a [Character Sheet](docs/character_sheet.html).
 
 The GM should review all of the content on this site and prepare a short adventure. Resources on the [GM Pages](docs/gm_pages/index.md) will help.
+
+<!-- var data = {{ site.data.miracuse_kits | jsonify }} -->
