@@ -8,13 +8,15 @@ nav_order: 2
 
 # Stealth
 
-    Player: I want to blend in with the crowd. Look inconspicuous.
+    Player: I want to blend in with the crowd. Look 
+            inconspicuous.
 
-    GM: Alright. You're in Stealth.
+    GM:     Alright. You're in Stealth.
 
-    Player: Great. Now I want to sneak up behind the merchant and steal his purse.
+    Player: Great. Now I want to sneak up behind the
+            merchant and steal his purse.
 
-    GM: Roll Cunning to keep anyone from noticing.
+    GM:     Roll Cunning to keep anyone from noticing.
 
 Characters with points in the **<span style="color: #90a959">Cunning</span>** Skill are able to move and act without attracting notice.
 

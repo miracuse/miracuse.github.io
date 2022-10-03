@@ -13,7 +13,15 @@ nav_order: 2
 
 {% include ability_table.html %}
 
-In many respects, Techniques are a rough equivalent to Cantrips and Spells. They have a passive effect that augments attacks and various active effects that can be triggered by spending a resource.
+Techniques modify basic attacks with additional effects. Beyond that, they can also be amplified and combined to produce more potent results.
+
+### Narrative Ruling
+
+> "Never let the rules get in the way of what makes narrative sense." - FATE SRD
+
+As with other mechanics in _Miracuse_, Techniques follow FATE's [Silver Rule](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule). The effect of a Technique might be greater or lesser depending on the narrative context it's used in.
+
+For example, _Harass_ won't have much effect on a zombie or a gelatinous cube, in the same way that throwing fire at a fire elemental won't deal damage. On the other hand, a Technique like _Smite_ may be especially impactful against small targets, sending them flying through the air instead of simply knocking them over.
 
 ### Using Techniques without Kits
 
@@ -24,14 +32,6 @@ The effects that Techniques provide might plausibly be done without the correspo
 -   The action will require a higher roll to succeed.
 
 -   The action cannot be amplified or combined.
-
-### Narrative Ruling
-
-> "Never let the rules get in the way of what makes narrative sense." - FATE SRD
-
-As with other mechanics in _Miracuse_, Techniques follow FATE's [Silver Rule](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule). The effect of a Technique might be greater or lesser depending on the narrative context it's used in.
-
-For example, _Harass_ won't have much effect on a zombie or a gelatinous cube, in the same way that throwing fire at a fire elemental won't deal damage. On the other hand, a Technique like _Smite_ may be especially impactful against small targets, sending them flying through the air instead of simply knocking them over.
 
 ### Non-Combat Applications
 

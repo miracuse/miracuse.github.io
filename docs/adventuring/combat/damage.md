@@ -21,15 +21,15 @@ Players are encouraged to get creative in combat encounters. Try combining diffe
 
 ### Defense
 
-    GM: There's a boulder barreling down the hallway at you.
+    GM:       There's a boulder barreling down the hallway at you.
 
     Player 1: Can I use Agility to dive out of the way?
 
-    GM: Yeap.
+    GM:       Yeap.
 
     Player 2: Can I use Strength to "block" the boulder with my shield?
 
-    GM: You can try, but it's going to be a hard roll.
+    GM:       You can try, but it's going to be a hard roll.
 
 | Skill      | Defense                                 |
 | ---------- | --------------------------------------- |

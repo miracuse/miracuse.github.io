@@ -31,11 +31,11 @@ nav_order: 1
 
 > Allows for limited control and manifestation of earth.
 
--   _Stone Pillar_: Strike an enemy by forcing a thin pillar of stone to erupt from the ground into their body.
+-   _Stone Pillar_: Strike an enemy by forcing a thin pillar of stone to erupt from the ground and into their body.
 
 -   _Mold Earth_: Reshape dirt or stone, creating tunnels and earthenware.
 
--   _Break_: Sunder the ground, sending dirt flying into the air and making movement difficult.
+-   _Break_: Shatter the ground into uneven terrain, sending dirt flying into the air and making movement difficult.
 
 > Spells
 
@@ -57,6 +57,6 @@ nav_order: 1
 
 > Spells
 
--   _Searing Light (Spirit of Light + Fire)_: Create a concentrated beam of light that sets anything it touches ablaze. Does two boxes of Physical damage.
+-   _Searing Light (Spirit of Light + Fire)_: Create a concentrated beam of light that sets anything it touches ablaze. Does two boxes of Physical damage in a line.
 
--   _Major Illusion: (Spirit of Light + Sound)_: Create an illusion that looks and sounds real, capable of motion and speech. You can puppet the illusion with small hand gestures. The illusion collapses after one hour.
+-   _Major Illusion: (Spirit of Light + Sound)_: Create an illusion that looks and sounds real, capable of motion and speech. You can puppet the illusion with small hand gestures. The illusion collapses after twenty-four hours.

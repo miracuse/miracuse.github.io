@@ -8,18 +8,22 @@ has_children: false
 
 # Healing
 
-Although [Making Camp](../adventuring/exploration/index.md) is the primary way to recover from damage and injuries, certain Kits can allow Players to use their Skills to restore health.
+    Player: I want to use an Elixir to clear out some of the
+            Mage's Mental damage.
 
--   (Alchemist) _Elixir_
+    GM:     Alright. Roll Knowledge.
 
--   (Soldier) _Hospitaler_
+    Player: That's a +1, for a total of +3.
 
--   (Mage) _Spirit of Restoration_
+    GM:     Okay. The Mage can clear three Mental Boxes.
 
--   (Scoundrel) _Herbalism_
+Although [Making Camp](../adventuring/exploration/index.md) is the primary way to recover from damage and injuries, certain Kits allow Players to use their Skills.
 
-### Usage
+-   (Alchemist) **Elixir**: Roll Knowledge. Can treat Physical or Mental damage.
 
-When using these Kits, roll the associated Skill (such as Magic or Knowledge). The result determines either how many boxes of damage are cleared or whether or not a narrative outcome was achieved.
+-   (Soldier) **Hospitaler**: Roll Strength or Bravery. Can treat Physical damage.
 
-> **Note**: The Alchemist's _Elixir_ and the Scoundrel's _Herbalism_ are the only Kits capable of restoring Mental health.
+-   (Mage) **Spirit of Restoration**: Roll Magic. Can treat Physical damage.
+
+-   (Scoundrel) **Herbalism**: Roll Agility or Cunning. Can treat Physical or Mental damage.
+

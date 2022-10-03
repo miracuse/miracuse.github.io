@@ -11,18 +11,19 @@ nav_order: 6
 
     Player: Can I haggle a discount from the merchant?
 
-    GM: Sure. Roll Cunning.
+    GM:     Sure. Roll Cunning.
 
     Player: Uh... how about Bravery? I have points in that.
 
-    GM: If you want to use Bravery, you'll need to take a different
-    approach. You can intimidate, impress, or provoke them.
+    GM:     If you want to use Bravery, you'll need to take
+            a different approach. You can intimidate, impress,
+            or provoke them.
 
-    Player: Hm. I'll try to impress them. I'm a well-known mercenary,
-    so maybe I can convince him that other people will shop here if
-    they know I do?
+    Player: Hm. I'll try to impress them. I'm a well-known
+            mercenary, so maybe I can convince him that other
+            people will shop here if they know I do?
 
-    GM: It'll be a hard roll, but go ahead.
+    GM:     It'll be a hard roll, but go ahead.
 
 **Social** encounters rely on the ability of Players to negotiate with the GM's fictional characters.
 
@@ -41,12 +42,14 @@ Each of the classes has their own approach to persuasion. Some approaches work b
 
 ### Sense Motive
 
-    Player 1: Does it seem like this farmer is lying to us about the wolves?
+    Player: Does it seem like this farmer is lying
+            to us about the wolves?
 
-    GM: Roll Cunning, or Perception.
+    GM:     Roll Cunning, or Perception.
 
-    Player 1: What does a +1 get me?
+    Player: What does a +1 get me?
 
-    GM: There's something off here, but you don't know what.
+    GM:     There's something off here, but you don't
+            know what.
 
 Players might find themselves questioning the sincerity of shady merchants or suspicious witches. If they feel like an NPC is hiding something, they can use a Skill like **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** or **<span style="color: {{ site.alchemist_color }}">Perception</span>** to deduce more information.

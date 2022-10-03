@@ -37,14 +37,7 @@ Savvy Mages will need to strike a careful balance between preserving their healt
 
 The other three base classes have access to some _Spirit_ Kits.
 
-While they are able to use those Kits with the Magic Skill, they'll generally get better results by paying the "price". This might be Fortune Points, Prep Points, or Alchemist Uses depending on the Kit.
+While they are able to use those Kits with the Magic Skill, they'll generally get better results by paying the "price". This might be Fortune Points, Prep Points, or Charges depending on the Kit.
 
 Paying the price allows these classes to cast a cantrip one time using a Skill other than Magic. If the Player has multiple _Spirit_ Kits equipped they can also cast a single spell in the same fashion, though they will also need to expend a Mental Health box just like a Mage would.
 
-### The Magic Skill
-
-One of the "prices" that a Mage pays for being able to use cantrips and spells is investing in the Magic Skill.
-
-Unlike other Skills, Magic has a narrow focus. It lets Players use _Spirit_ Kits without paying some additional cost like Fortune or Prep Points.
-
-Compare that to Strength, which increases a Character's health, allows them to attack, allows them to defend, and more.
