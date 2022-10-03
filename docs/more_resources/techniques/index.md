@@ -13,15 +13,23 @@ nav_order: 2
 
 {% include ability_table.html %}
 
-Techniques modify basic attacks with additional effects. Beyond that, they can also be amplified and combined to produce more potent results.
+### Modify Attacks
 
-### Narrative Ruling
+Every Technique adds an additional effect to basic attacks. _Sunder_, for example, causes all successful attacks to deal an additional box of damage. _Smite_ staggers and knocks down enemies. _Cleave_ causes attacks to function in a small area-of-effect.
 
-> "Never let the rules get in the way of what makes narrative sense." - FATE SRD
+These effects have narrative implications as well. A character with _Sunder_ has no issue piercing armor or destroying metal obstacles with their weapons. Another with _Spellbreak_ might be able to parry fireballs and lightning bolts. As with other mechanics in _Miracuse_, Techniques follow FATE's [Silver Rule](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule). 
 
-As with other mechanics in _Miracuse_, Techniques follow FATE's [Silver Rule](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule). The effect of a Technique might be greater or lesser depending on the narrative context it's used in.
+> "Never let the rules get in the way of what makes narrative sense." - FATE's Silver Rule
 
-For example, _Harass_ won't have much effect on a zombie or a gelatinous cube, in the same way that throwing fire at a fire elemental won't deal damage. On the other hand, a Technique like _Smite_ may be especially impactful against small targets, sending them flying through the air instead of simply knocking them over.
+### Amplify Effects
+
+Techniques can also be bolstered to near-superhuman levels by expending a Fortune or Prep Point. These effects operate on a similar power level to a Mage's Spells or an Alchemist's Items.
+
+_Smite_ normally adds knockback to regular attacks. Amplifying _Smite_ might cause an enemy to go flying through the air, crashing into the ground dramatically with the wind knocked out of them. Or it might be used to knock over an enemy that would otherwise be resistant, like an elephant or a giant.
+
+### Combining Effects
+
+By default, **only one Technique can be activated on a regular attack**. Two Techniques can be used simultaneously if the Player pays a Fortune or Prep Points. In which case, the resulting effect will be on the same power level as an amplified Technique.
 
 ### Using Techniques without Kits
 
@@ -33,17 +41,12 @@ The effects that Techniques provide might plausibly be done without the correspo
 
 -   The action cannot be amplified or combined.
 
-### Non-Combat Applications
-
-While Techniques are often used in the context of combat, they are fully applicable to other kinds of challenges. Players are encouraged to get creative in their problem-solving.
-
--   _Sunder_ can be used to destroy obstacles. A Player might cut through metal prison bars or obliterate a stone wall during an escape.
-
--   _Rally_, _Harass_, and _Impose_ provide Advantage when using Bravery to inspire, provoke, or intimidate respectively.
-
--   _Spellbreak_ can be used to break magical wards or threaten spirits that would normally only respond to a Mage.
 
 ### Techniques FAQ
+
+-   **Can I spend a Fortune Point to reroll an amplified or combined Technique?**
+
+No. Only one Fortune Point can be expended per action.
 
 -   **Can I use a Technique with a Sneak Attack?**
 

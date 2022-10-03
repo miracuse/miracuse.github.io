@@ -8,7 +8,7 @@ nav_order: 1
 
 # Subclasses
 
-**Subclasses** are specializations for each class that determine which [Kits](kits.md) a player can use. New characters start with one subclass, gaining more the longer they adventure.
+**Subclasses** are specializations for each class that determine which [Kits](kits.md) a player can use. New characters start with one subclass, gaining more the longer they adventure. Additional information can be found on the [subclass page](../subclasses.html).
 
 -   **<span style="color: {{ site.mage_color }}">Shaman</span>**: A Mage that trained in elemental magic, combining the primal forces of fire, earth, water, air, lightning, and metal.
 

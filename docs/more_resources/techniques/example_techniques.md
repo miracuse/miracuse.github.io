@@ -21,9 +21,9 @@ nav_order: 2
 
 > **(Amplified)**: _Make a shot with Olympian precision, at the upper limits of human ability._
 
--   Throw a knife through a gap in a knight's visor.
+-   Throw a knife through the gap in a knight's visor.
 
--   Ricochet a bullet to hit a wizard hiding behind cover.
+-   Ricochet a bullet off the wall to hit a wizard hiding behind cover.
 
 ---
 
@@ -57,6 +57,6 @@ nav_order: 2
 
 > **(Amplified)**: _Lock down movement in an area or for a group of targets._
 
--   Throw caltrops at a target, dealing damage to them and creating a hazard.
+-   Throw caltrops at an enemy, dealing damage to them and creating a hazard for others.
 
 -   Force a group of goblins into taking cover with a hail of arrows.

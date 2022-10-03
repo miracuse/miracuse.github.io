@@ -8,7 +8,7 @@ nav_order: 1
 
 # Subclasses
 
-**Subclasses** are specializations for each class that determine which [Kits](kits.md) a player can use. New characters start with one subclass, gaining more the longer they adventure.
+**Subclasses** are specializations for each class that determine which [Kits](kits.md) a player can use. New characters start with one subclass, gaining more the longer they adventure. Additional information can be found on the [subclass page](../subclasses.html).
 
 -   **<span style="color: {{ site.scoundrel_color }}">Assassin</span>**: A Scoundrel that focuses on espionage, capable of quiet assassinations and webs of conspiracy.
 

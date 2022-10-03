@@ -45,11 +45,11 @@ nav_order: 3
 
 > (Substance) Create dazzling fireworks displays.
 
--   Create a whistling fountain of sparks that terrifies animals and astonishes viewers.
+-   Create a whistling fountain of sparks that terrifies an attacking pack of wolves.
 
 -   Launch a signal flare that can be seen for miles.
 
--   Toss a cloud of coughing powder that stuns and inflicts Physical damage.
+-   Toss a cloud of coughing powder that stuns a target and inflicts Physical damage.
 
 > (Grenade) Create tactical effects using combustible powder.
 

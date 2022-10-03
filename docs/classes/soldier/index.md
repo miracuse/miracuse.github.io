@@ -29,7 +29,7 @@ Soldiers have a number of Fortune Points equal to two times their **<span style=
 
 ### Techniques
 
-{% include single_solider_kit.html %}
+{% include single_soldier_kit.html %}
 
 Techniques are Kits that modify attacks. They add additional effects, such as increasing damage, hitting multiple enemies, or targeting multiple enemies at once. For example, the _Cleave_ Kit might be used to:
 

@@ -1,19 +1,19 @@
 Class	Type	Kit	Tags	Description
-Mage	Priest	Spirit of Abjuration	Combat, Spirit	Create barriers, dispel magic, and repel otherworldly influences.
+Mage	Priest	Spirit of Abjuration	Combat, Exploration, Spirit	Create barriers, dispel magic, and repel otherworldly influences.
 Mage	Priest	Spirit of Divination	Exploration, Spirit	Find people, places, things, and hidden knowledge through divination.
-Mage	Priest	Spirit of Language	Social, Spirit	Speak all languages, use charm magic, and compel others to your will.
+Mage	Priest	Spirit of Language	Social, Spirit	Communicate with all creatures, use charm magic, and compel others to your will.
 Mage	Priest	Spirit of Necromancy	Combat, Exploration, Spirit	Raise the dead, curse the living, and meddle with the boundary between life and death.
 Mage	Priest	Spirit of Restoration	Recovery, Spirit	Heal Physical wounds, restore broken objects, and treat natural afflictions.
 Mage	Priest	Spirit of Summoning	Exploration, Social, Spirit	Call imps, pixies, and other minor magical creatures to serve you. Pull otherworldly influences into the world.
-Mage	Shaman	Spirit of Aether	Combat, Exploration, Spirit	Manipulate electricity, shoot lightning, and stun enemies.
+Mage	Shaman	Spirit of Aether	Combat, Exploration, Spirit	Manipulate electricity, create lightning, and stun enemies.
 Mage	Shaman	Spirit of Air	Combat, Exploration, Spirit	Manipulate air, create gusts of wind, and fall gently.
 Mage	Shaman	Spirit of Earth	Combat, Exploration, Spirit	Manipulate earth, reshape terrain, and mold stone.
-Mage	Shaman	Spirit of Flame	Combat, Exploration, Spirit	Manipulate fire, throw flames, and ignite objects.
-Mage	Shaman	Spirit of Metal	Combat, Exploration, Spirit	Manipulate metal, create magnetic fields, and sharpen blades.
-Mage	Shaman	Spirit of Water	Combat, Exploration, Spirit	Manipulate water, freeze liquids, and conjure fog.
-Mage	Wizard	Spirit of Binding	Combat, Exploration, Spirit	Manipulate bonds, adhering things together or loosening them from one another.
-Mage	Wizard	Spirit of Entropy	Combat, Exploration, Spirit	Manipulate decay, accelerating or slowing processes like rotting and rusting.
-Mage	Wizard	Spirit of Force	Combat, Exploration, Spirit	Manipulate magic energy, lob bolts of raw power at enemies, and tinker with magical forces present in the world.
-Mage	Wizard	Spirit of Locomotion	Combat, Exploration, Spirit	Manipulate kinetic energy, add or reduce speed.
+Mage	Shaman	Spirit of Flame	Combat, Exploration, Spirit	Manipulate fire, conjure flames, and blast enemies.
+Mage	Shaman	Spirit of Metal	Combat, Exploration, Spirit	Manipulate metal, magnetize metallic objects, and sharpen metal.
+Mage	Shaman	Spirit of Water	Combat, Exploration, Spirit	Manipulate water, conjure fog, and freeze liquids.
+Mage	Wizard	Spirit of Entropy	Combat, Exploration, Spirit	Manipulate decay, accelerating processes like rotting and rusting.
+Mage	Wizard	Spirit of Force	Combat, Exploration, Spirit	Manipulate raw magical energy, lobbing bolts of force at enemies and tampering with other people’s spells.
 Mage	Wizard	Spirit of Gravity	Combat, Exploration, Spirit	Manipulate gravity, add or reduce weight.
+Mage	Wizard	Spirit of Locomotion	Combat, Exploration, Spirit	Manipulate kinetic energy, add or reduce speed.
+Mage	Wizard	Spirit of Siphoning	Combat, Exploration, Spirit	Manipulate lifeforce, steal Physical health from others, or bequeath your own.
 Mage	Wizard	Spirit of Thermos	Combat, Exploration, Spirit	Manipulate thermal energy, add or reduce heat.
