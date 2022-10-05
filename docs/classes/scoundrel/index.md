@@ -21,6 +21,10 @@ Scoundrels have a number of Prep Points equal to two times their **<span style="
 
 -   **Change a Kit** without [making camp](../../adventuring/exploration/#making_camp).
 
+-   **Amplify** Kits with the _Technique_ tag.
+
+-   **Combine** Kits with the _Technique_ tag.
+
 -   **Assume a Disguise** to infiltrate or confuse.
 
 -   Declare "**I Know a Guy**", describing an NPC that can help your party in some way, such as a palace guard that owes you a favor.
@@ -31,4 +35,4 @@ Scoundrels have a number of Prep Points equal to two times their **<span style="
 
 ### Techniques and Magic
 
-All Scoundrel subclasses have access to at least one [Technique](../soldier/#techniques) Kit and one [Spirit](../mage/#magic) Kit.
+All Scoundrels have access to at least one [Technique](../soldier/#techniques) Kit and one [Spirit](../mage/#magic) Kit.

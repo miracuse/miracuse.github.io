@@ -10,8 +10,14 @@ nav_order: 1
 
 **Subclasses** are specializations for each class that determine which [Kits](kits.md) a player can use. New characters start with one subclass, gaining more the longer they adventure. Additional information can be found on the [subclass page](../subclasses.html).
 
--   **<span style="color: {{ site.soldier_color }}">Fencer</span>**: An Soldier trained in a wide variety of combat techniques.
+### <span style="color: {{ site.soldier_color }}">Fencer</span>
 
--   **<span style="color: {{ site.soldier_color }}">Knight</span>**: An Soldier hardier than most, with access to Kits that protect others.
+A Soldier trained in numerous combat techniques. The Fencer's abilities border on the supernatural. They can strike with pinpoint accuracy, create cutting blades of wind, and draw on their own Physical health to fuel powerful strikes.
 
--   **<span style="color: {{ site.soldier_color }}">Myrmidon</span>**: An Soldier with abundant luck and a specialization in offense.
+### <span style="color: {{ site.soldier_color }}">Knight</span>
+
+A Soldier hardier than most. The Knight is an implacable obstacle to their enemies. Their attacks drive foes back with brutal force, while they themselves resist Physical and Mental harm. Knights also have access to abilities that let them heal and support their allies.
+
+### <span style="color: {{ site.soldier_color }}">Myrmidon</span>
+
+A Soldier with abundant luck and a specialization in offense. The Myrmidon is a force of destruction. Their attacks hit hordes of foes at once, causing terrible injury and obliterating armor. They have an affinity for chance magic and an abundance of good luck.

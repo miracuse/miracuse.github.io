@@ -51,4 +51,4 @@ Each Tier allows a Player to select an additional Subclass from any Class. This 
 
 **Description**
 
-A veteran Ranger that has supplemented their abilities with Alchemy. They tend to shoot from the hip rather than taking careful aim, using Agility instead of Perception to fire their guns. Their grenade-based ambushes are particularly deadly.
+A veteran Ranger that has supplemented their abilities with Alchemy. They tend to shoot from the hip rather than taking careful aim, using Agility instead of Perception to fire their guns. Their grenade-based ambushes are deadly.

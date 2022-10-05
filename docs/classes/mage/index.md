@@ -13,7 +13,7 @@ The Mage forms pacts with the primal spirits of the world to perform miracles an
 
 -   **<span style="color: {{ site.mage_color }}">Magic</span>**: Mages can commune with spirits. They use this Skill whenever they use magic.
 
--   **<span style="color: {{ site.mage_color }}">Focus</span>**: Mages have deep reserves of inner strength. This Skill determines how much Mental health they have, which in turn determines how many spells they can cast without injuring themselves. Focus can also be used to detect and understand magic in the area.
+-   **<span style="color: {{ site.mage_color }}">Focus</span>**: Mages have deep reserves of inner strength. This Skill increases their Mental [Health](../../gameplay/health.md), which in turn determines how many spells they can cast without injuring themselves. Focus can also be used to detect and understand magic in the area.
 
 ### Magic
 

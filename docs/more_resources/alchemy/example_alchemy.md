@@ -41,18 +41,18 @@ nav_order: 3
 
 ---
 
-### Faerie Fire
+### Rune of Quickening
 
-> (Substance) Create dazzling fireworks displays.
+> (Tool: Sigil) Turn solid objects into liquids for a short time.
 
--   Create a whistling fountain of sparks that terrifies an attacking pack of wolves.
+-   Create an opening in a building to quietly sneak in.
 
--   Launch a signal flare that can be seen for miles.
+-   Melt an enemy's armor.
 
--   Toss a cloud of coughing powder that stuns a target and inflicts Physical damage.
+-   Fix a broken wagon wheel by melting it down and reshaping it.
 
-> (Grenade) Create tactical effects using combustible powder.
+> (Tool: Golem) Create a metal ooze that can take the shape of various objects.
 
--   Throw a smoke bomb that immediately blocks sight and induces coughing.
+-   Transform the ooze into a grappling hook and chain to scale a wall.
 
--   Lob a mortar firework that explodes brightly and painfully, dealing Physical damage and disorienting targets.
+-   Transform the ooze into a ten-foot pole to check for traps.

@@ -8,16 +8,11 @@ nav_order: 1
 
 # Damage
 
-In most cases, **a successful attack from a Player or an enemy will inflict one box of Physical damage**. Various Kits and spells can modify attacks. For instance:
+In most cases, **a successful attack from a Player or an enemy will inflict one box of Physical damage**. This is the case regardless of whether the attack comes from a sword, arrow, fireball, or anywhere else.
 
--   Add additional Physical/Mental damage
--   Target enemies in an area-of-effect
--   Add status effects like blindness
--   Create environmental effects like setting the environment on fire.
+However, various Kits can modify attacks. [Techniques](../../classes/soldier/index.md) can add damage and effects like knockback. [Items](../../classes/alchemist/index.md) like grenades deal damage in an area-of-effect. [Cantrips and Spells](../../classes/mage/index.md) might ignite enemies, pin them to the ground with gravity, or change the terrain. 
 
 Similarly, enemies may have abilities that do the same for their attacks.
-
-Players are encouraged to get creative in combat encounters. Try combining different Kits to produce new results. While you can always make a basic attack, there's nothing stopping you from using your turn to recruit bystanders or taunt the guard captain.
 
 ### Defense
 
@@ -25,19 +20,19 @@ Players are encouraged to get creative in combat encounters. Try combining diffe
 
     Player 1: Can I use Agility to dive out of the way?
 
-    GM:       Yeap.
+    GM:       Yep.
 
-    Player 2: Can I use Strength to "block" the boulder with my shield?
+    Player 2: Can I use Strength to block the boulder with my shield?
 
     GM:       You can try, but it's going to be a hard roll.
 
-| Skill      | Defense                                 |
-| ---------- | --------------------------------------- |
-| Strength   | Block Physical attacks, withstand harm. |
-| Agility    | Dodge Physical attacks, avoid harm.     |
-| Bravery    | Endure Mental attacks, overcome fear.   |
-| Perception | Notice a trap before stepping on it.    |
-| Cunning    | Sense danger before it strikes.         |
-| Presence   | Detect evil magic in the air.           |
+| Skill      | Defense                                                     |
+| ---------- | ----------------------------------------------------------- |
+| Strength   | Block attacks, withstand harm.                              |
+| Agility    | Dodge attacks, avoid harm.                                  |
+| Bravery    | Endure psychological attacks, overcome fear.                |
+| Perception | Notice threats, analyze enemy behavior.                     |
+| Cunning    | Sense danger, detect bad intentions.                        |
+| Presence   | Detect hostile magic, identify the effects of enemy spells. |
 
-Most attacks can be defended against by either **<span style="color: {{ site.soldier_color }}">Strength</span>** or **<span style="color: {{ site.scoundrel_color }}">Agility</span>**. Other threats, like traps or strange magic, may call on other Skills. Remember: [the Skill used should make narrative sense.](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule)
+Most attacks can be defended against with either **<span style="color: {{ site.soldier_color }}">Strength</span>** or **<span style="color: {{ site.scoundrel_color }}">Agility</span>**. Other threats, like traps or magic, may call on other Skills. Remember: [the Skill used should make narrative sense.](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule)

@@ -9,15 +9,15 @@ nav_order: 4
 
 # Combat
 
-    Player 1: I'm going to stab the wolf.
+    Player: I'm going to stab the wolf.
 
-    GM:       Alright, give me a Strength or Agility roll.
+    GM:     Alright, give me a Strength or Agility roll.
 
-    Player 1: My guy is pretty fast, so let's go with
-              Agility. That's... a +2.
+    Player: My guy is pretty fast, so let's go with
+            Agility. That's... a +2.
 
-    GM:       That hits. You take out the wolf, but the
-              rest of its pack is still circling.
+    GM:     That hits. You take out the wolf, but the
+            rest of its pack is still circling.
 
 **Combat** is any situation where several characters need to take different actions and turn order matters. The most common scenario involves fighting, but other possibilities might include fixing a sinking ship or racing a rival adventuring party for treasure.
 
@@ -41,14 +41,14 @@ Actions and turn order rules aren't set in stone. There are plenty of things tha
 
 ### Offense and Defense
 
-Just like any other situation in the game, combat works through Skill use. If you want to swing a sword, you need to roll a Skill that makes sense (usually **<span style="color: {{ site.soldier_color }}">Strength</span>** or **<span style="color: {{ site.scoundrel_color }}">Agility</span>**). Some general guidelines are provided here but remember that narrative sense is more important than specific rules.
+Just like any other situation in the game, combat works through Skill use. If you want to swing a sword, you need to roll a Skill that makes sense (usually **<span style="color: {{ site.soldier_color }}">Strength</span>** or **<span style="color: {{ site.scoundrel_color }}">Agility</span>**). Some general guidelines are provided here but remember that [narrative context](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule) is more important than specific rules.
 
-| Action                      | Skill      |
-| --------------------------- | ---------- |
-| Swinging a sword forcefully | Strength   |
-| Swinging a sword gracefully | Agility    |
-| Shooting a bow precisely    | Perception |
-| Shooting a bow swiftly      | Agility    |
-| Throwing a fireball         | Magic      |
-| Blocking an arrow           | Strength   |
-| Dodging an arrow            | Agility    |
+| Action                        | Skill      |
+| ----------------------------- | ---------- |
+| Swinging a sword forcefully   | Strength   |
+| Swinging a sword gracefully   | Agility    |
+| Shooting a crossbow precisely | Perception |
+| Shooting a crossbow deftly    | Agility    |
+| Throwing a fireball           | Magic      |
+| Blocking an arrow             | Strength   |
+| Dodging an arrow              | Agility    |
