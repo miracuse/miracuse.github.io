@@ -17,13 +17,13 @@ nav_order: 2
 
 Every Technique adds an additional effect to basic attacks. _Sunder_, for example, causes all successful attacks to deal an additional box of damage. _Smite_ staggers and knocks down enemies. _Cleave_ causes attacks to function in a small area-of-effect.
 
-These effects have narrative implications as well. A character with _Sunder_ has no issue piercing armor or destroying metal obstacles with their weapons. Another with _Spellbreak_ might be able to parry fireballs and lightning bolts. As with other mechanics in _Miracuse_, Techniques follow FATE's [Silver Rule](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule). 
+These effects have narrative implications as well. A character with _Sunder_ has no issue piercing armor or destroying metal obstacles with their weapons. Another with _Spellbreak_ might be able to parry fireballs and lightning bolts. As with other mechanics in _Miracuse_, Techniques follow FATE's [Silver Rule](https://fate-srd.com/fate-core/what-do-during-play#the-silver-rule).
 
-> "Never let the rules get in the way of what makes narrative sense." - FATE's Silver Rule
+> "Never let the rules get in the way of what makes narrative sense."
 
-### Amplify Effects
+### Amplifying Effects
 
-Techniques can also be bolstered to near-superhuman levels by expending a Fortune or Prep Point. These effects operate on a similar power level to a Mage's Spells or an Alchemist's Items.
+Techniques can also be bolstered to superhuman levels by expending a Fortune or Prep Point. These effects operate on a similar power level to a Mage's [Spells](../magic/index.md) or an Alchemist's [Items](../alchemy/index.md).
 
 _Smite_ normally adds knockback to regular attacks. Amplifying _Smite_ might cause an enemy to go flying through the air, crashing into the ground dramatically with the wind knocked out of them. Or it might be used to knock over an enemy that would otherwise be resistant, like an elephant or a giant.
 
@@ -40,7 +40,6 @@ The effects that Techniques provide might plausibly be done without the correspo
 -   The action will require a higher roll to succeed.
 
 -   The action cannot be amplified or combined.
-
 
 ### Techniques FAQ
 

@@ -56,6 +56,8 @@ nav_order: 3
 
     Subclasses have 6 Kits each with concise descriptions, so as to mitigate player decision paralysis when changing Kits, and to reduce the amount of memorization required of GM's.
 
+---
+
 ### Design Inspirations
 
 **FATE**, for its Skill-oriented resolution mechanics and design philosophy.

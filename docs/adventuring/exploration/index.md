@@ -16,7 +16,7 @@ nav_order: 5
     Player: I have a 0 in Agility and rolled a -1. That's
             a total of -1.
 
-    GM:     That's not good. You get to the top, but it 
+    GM:     That's not good. You get to the top, but it
             took a lot out of you. Mark a box of Physical
             damage from exhaustion.
 

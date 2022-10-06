@@ -27,3 +27,12 @@ Although [Making Camp](../adventuring/exploration/index.md) is the primary way t
 
 -   (Scoundrel) **Herbalism**: Roll Agility or Cunning. Can treat Physical or Mental damage.
 
+### Recovery Table
+
+| Roll Result | Boxes Recovered |
+| ----------- | --------------- |
+| +3          | 3               |
+| +2          | 2               |
+| +1          | 1               |
+| +0          | 1               |
+| <0          | 0               |

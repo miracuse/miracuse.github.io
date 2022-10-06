@@ -8,7 +8,7 @@ nav_order: 1
 
 # Teamwork
 
-    Player 1: I want to bend the metal bars on the 
+    Player 1: I want to bend the metal bars on the
               prison door open.
 
     GM:       Okay, roll Strength.

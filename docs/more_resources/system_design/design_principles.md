@@ -16,6 +16,8 @@ nav_order: 2
 
 **_Constraints_**: In contrast to the previous design principle, some elements have premade rulings that restrict player agency. This is done to reduce the group's cognitive load.
 
+---
+
 ### Target User Groups
 
 **_Inexperienced Players_**: Players with limited experience playing tabletop RPGs.

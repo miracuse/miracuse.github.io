@@ -34,13 +34,13 @@ The Skill a character uses when attacking roughly corresponds to the weapons the
 
 ### Adventuring Gear
 
-    GM:       The pit is about 50 feet deep, and the 
+    GM:       The pit is about 50 feet deep, and the
               sides look difficult to climb down.
 
     Player 1: Do I have any rope?
 
     GM:       Given how you've described your character as
-              a wizard carrying around wands and books, 
+              a wizard carrying around wands and books,
               probably not.
 
     Player 2: How about me? I'm like an Indiana Jones

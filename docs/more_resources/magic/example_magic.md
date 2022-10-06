@@ -21,7 +21,7 @@ nav_order: 1
 
 > Spells
 
--   _Restoration (Spirit of Healing + Abjuration):_ Remove a Physical Injury or similarly serious wound.
+-   _Restoration (Spirit of Healing Amplified):_ Remove a Physical Injury or similarly serious wound.
 
 -   _Spring of Life (Spirit of Healing + Water):_ Draw forth a permanent natural spring from the ground whose water has a healing effect.
 
@@ -38,6 +38,8 @@ nav_order: 1
 -   _Break_: Shatter the ground into uneven terrain, sending dirt flying into the air and making movement difficult.
 
 > Spells
+
+-   _Quake (Spirit of Earth Amplified):_ Force the ground to shake violently, knocking targets over, dealing damage, and destabilizing buildings.
 
 -   _Transmute Earth (Spirit of Earth + Water):_ Destabilize a large area of dirt or stone, turning it into quicksand.
 
@@ -56,6 +58,8 @@ nav_order: 1
 -   _Farsight_: Bend light between your hands, allowing you to see things from a great distance.
 
 > Spells
+
+-   _Hypnotic Pattern (Spirit of Light Amplified)_: Create a kaleidoscope of colors and lights that baffle the senses of enemies. Those struck must either take a box of Mental damage or be stunned.
 
 -   _Searing Light (Spirit of Light + Fire)_: Create a concentrated beam of light that sets anything it touches ablaze. Does two boxes of Physical damage in a line.
 

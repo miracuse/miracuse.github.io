@@ -22,6 +22,8 @@ Custom Classes allow players to change their starting Skills to better reflect a
     -   Standard (Two Skills at +2)
     -   Versatile (One Skill at +2, Two Skills at +1)
 
+---
+
 ### Example: **<span style="color: {{ site.paladin_color }}">The Paladin</span>**
 
 **Subclass**

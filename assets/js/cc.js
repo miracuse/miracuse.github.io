@@ -126,7 +126,7 @@ var data = [
         Kit: "Beast's Blood",
         Tags: "Exploration, Alchemy, Potion, Substance",
         Description:
-            "Adopt an animal-like adaption for a short period of time by drinking a potion. Example of effects could include a cat's night vision, a bat's sense of hearing, or a gecko's skin. Can be used as a substance to attract animals and monsters.",
+            "Adopt an animal-like adaption for a short period of time by drinking a potion. Examples of effects could include a cat's night vision, a bat's sense of hearing, or a gecko's skin. Can be used as a substance to attract animals and monsters.",
     },
     {
         Class: "Alchemist",
@@ -134,7 +134,7 @@ var data = [
         Kit: "Elixir",
         Tags: "Recovery, Alchemy, Potion",
         Description:
-            "Recover from harm and illness by drinking a potion. This can include recovering Physical damage, recovering Mental damage, treating an Injury, or curing various natural afflictions. Can be used to revitalize most living creatures.",
+            "Recover from harm and illness by drinking a potion. Can be used to recover Physical damage, recover Mental damage, treat an injury, or cure various natural afflictions.",
     },
     {
         Class: "Alchemist",
@@ -142,15 +142,15 @@ var data = [
         Kit: "Faerie Fire",
         Tags: "Combat, Exploration, Alchemy, Substance, Grenade",
         Description:
-            "Create dazzling fireworks displays with a highly volatile powder. Capable of producing blinding lights, making smoke screens, emitting deafening noises, and causing painful coughing when breathed. Can be used as a grenade to produce any two of the effects listed or inflict Physical damage.",
+            "Create dazzling fireworks displays with a highly volatile powder. Capable of producing blinding lights, making smoke screens, emitting deafening noises, or causing painful coughing when breathed. Can be used as a grenade to produce one of the effects listed and inflict Physical damage.",
     },
     {
         Class: "Alchemist",
         Type: "Chemist",
         Kit: "Golden Silk",
-        Tags: "Combat, Exploration, Alchemy, Substance, Grenade",
+        Tags: "Combat, Exploration, Social, Alchemy, Substance, Grenade",
         Description:
-            "Distort perceptions with a potent hallucinogenic. Can be used as a potion to see through illusions, ignore the effects of injuries, and change mental states. Can be used as a grenade to inflict Mental damage. Can be used as an offering to powerful spirits and supernatural creatures.",
+            "Distort perceptions with a potent hallucinogenic. Can be used to induce confusion, to put others into a stupor, to provide Advantage against Mental attacks, or to make targets highly suggestible. Can be used as a grenade to produce one of the effects listed or inflict Mental damage. Can be used as an offering to powerful spirits and supernatural creatures.",
     },
     {
         Class: "Alchemist",
@@ -158,15 +158,15 @@ var data = [
         Kit: "Holy Water",
         Tags: "Exploration, Alchemy, Substance, Grenade",
         Description:
-            "Neutralize magic by spraying specially treated water. Can be used to negate spells, harm the undead, treat curses, or produce anti-magic effects. Can be used as a grenade. Can be used as a substance to repel monsters and magical creatures.",
+            "Neutralize magical energy with treated water. Can be used to counter spells, disperse spirits, damage magical objects, nullify magical effects, or repel monsters. Can be used as a grenade to produce all of the listed effects.",
     },
     {
         Class: "Alchemist",
         Type: "Chemist",
         Kit: "Manifold Venom",
-        Tags: "Exploration, Alchemy, Substance",
+        Tags: "Combat, Exploration, Alchemy, Substance, Grenade",
         Description:
-            "Cause harm by applying poisons to weapons and ammunition. Example of effects could include additional Physical damage, temporary blindness, or gradual petrification.",
+            "Inflict debilitating effects with a collection of dangerous poisons. Can be used to induce paralysis, sap strength, create nausea, or cause blindness. Can be used as a grenade to produce one of the effects listed or inflict Physical damage. Can be applied to weapons to provide one of the effects listed on the next successful attack, in addition to any damage dealt by the attack.",
     },
     {
         Class: "Alchemist",
@@ -190,7 +190,7 @@ var data = [
         Kit: "Rune of Quickening",
         Tags: "Exploration, Alchemy, Tool",
         Description:
-            "A sigil that makes solid objects malleable and liquid for a short period of time when applied. Can be used to create a quicksilver familiar, a sentient metal ooze that can reshape itself into tools and weapons on command. The familiar hardens into whatever shape it was holding after two hours.",
+            "A sigil that makes solid objects malleable and liquid for two minutes when applied. Can be used to create a quicksilver familiar, a sentient metal ooze that can reshape itself into tools and weapons on command. The familiar hardens into whatever shape it was holding after two hours.",
     },
     {
         Class: "Alchemist",
@@ -246,7 +246,7 @@ var data = [
         Kit: "Thermic Charges",
         Tags: "Combat, Alchemy, Grenade, Bullet",
         Description:
-            "Grenade that covers an area with roaring flames, or a layer of ice. When used as a bullet, deals an additional box of Physical damage and one of the grenade effects.",
+            "Grenade that covers an area with roaring flames, or a sheet of frost. When used as a bullet, deals an additional box of Physical damage and one of the grenade effects.",
     },
     {
         Class: "Alchemist",
@@ -254,7 +254,7 @@ var data = [
         Kit: "Trenchsteel Charges",
         Tags: "Combat, Alchemy, Grenade, Bullet",
         Description:
-            "Grenade that covers an area with metal ball bearings, or a sprawl of barbed wire. When used as a bullet, ricochets in closed spaces, deals an additional box of Physical damage, and can change course mid-flight by detonating a second time .",
+            "Grenade that covers an area with metal ball bearings, or a sprawl of barbed wire. When used as a bullet, ricochets in closed spaces, deals an additional box of Physical damage, and can change course mid-flight by detonating a second time.",
     },
     {
         Class: "Alchemist",
@@ -268,7 +268,7 @@ var data = [
         Class: "Mage",
         Type: "Priest",
         Kit: "Spirit of Abjuration",
-        Tags: "Combat, Spirit",
+        Tags: "Combat, Exploration, Spirit",
         Description:
             "Create barriers, dispel magic, and repel otherworldly influences.",
     },
@@ -286,7 +286,7 @@ var data = [
         Kit: "Spirit of Language",
         Tags: "Social, Spirit",
         Description:
-            "Speak all languages, use charm magic, and compel others to your will.",
+            "Communicate with all creatures, use charm magic, and compel others to your will.",
     },
     {
         Class: "Mage",
@@ -318,28 +318,31 @@ var data = [
         Kit: "Spirit of Aether",
         Tags: "Combat, Exploration, Spirit",
         Description:
-            "Manipulate electricity, shoot lightning, and stun enemies.",
+            "Manipulate electricity, create lightning, and stun enemies. Represents emptiness and divinity.",
     },
     {
         Class: "Mage",
         Type: "Shaman",
         Kit: "Spirit of Air",
         Tags: "Combat, Exploration, Spirit",
-        Description: "Manipulate air, create gusts of wind, and fall gently.",
+        Description:
+            "Manipulate air, create gusts of wind, and fall gently. Represents movement and freedom.",
     },
     {
         Class: "Mage",
         Type: "Shaman",
         Kit: "Spirit of Earth",
         Tags: "Combat, Exploration, Spirit",
-        Description: "Manipulate earth, reshape terrain, and mold stone.",
+        Description:
+            "Manipulate earth, reshape terrain, and mold stone. Represents solidity and strength.",
     },
     {
         Class: "Mage",
         Type: "Shaman",
         Kit: "Spirit of Flame",
         Tags: "Combat, Exploration, Spirit",
-        Description: "Manipulate fire, throw flames, and ignite objects.",
+        Description:
+            "Manipulate fire, conjure flames, and blast enemies. Represents cleansing and destruction.",
     },
     {
         Class: "Mage",
@@ -347,22 +350,15 @@ var data = [
         Kit: "Spirit of Metal",
         Tags: "Combat, Exploration, Spirit",
         Description:
-            "Manipulate metal, create magnetic fields, and sharpen blades.",
+            "Manipulate metal, magnetize metallic objects, and sharpen metal. Represents clarity and reason.",
     },
     {
         Class: "Mage",
         Type: "Shaman",
         Kit: "Spirit of Water",
         Tags: "Combat, Exploration, Spirit",
-        Description: "Manipulate water, freeze liquids, and conjure fog.",
-    },
-    {
-        Class: "Mage",
-        Type: "Wizard",
-        Kit: "Spirit of Binding",
-        Tags: "Combat, Exploration, Spirit",
         Description:
-            "Manipulate bonds, adhering things together or loosening them from one another.",
+            "Manipulate water, conjure fog, and freeze liquids. Represents tranquility and adaptability.",
     },
     {
         Class: "Mage",
@@ -370,7 +366,7 @@ var data = [
         Kit: "Spirit of Entropy",
         Tags: "Combat, Exploration, Spirit",
         Description:
-            "Manipulate decay, accelerating or slowing processes like rotting and rusting.",
+            "Manipulate decay, accelerating processes like rotting and rusting.",
     },
     {
         Class: "Mage",
@@ -378,7 +374,14 @@ var data = [
         Kit: "Spirit of Force",
         Tags: "Combat, Exploration, Spirit",
         Description:
-            "Manipulate magic energy, lob bolts of raw power at enemies, and tinker with magical forces present in the world.",
+            "Manipulate raw magical energy, lobbing bolts of force at enemies and tampering with other people's spells.",
+    },
+    {
+        Class: "Mage",
+        Type: "Wizard",
+        Kit: "Spirit of Gravity",
+        Tags: "Combat, Exploration, Spirit",
+        Description: "Manipulate gravity, add or reduce weight.",
     },
     {
         Class: "Mage",
@@ -390,9 +393,10 @@ var data = [
     {
         Class: "Mage",
         Type: "Wizard",
-        Kit: "Spirit of Gravity",
+        Kit: "Spirit of Siphoning",
         Tags: "Combat, Exploration, Spirit",
-        Description: "Manipulate gravity, add or reduce weight.",
+        Description:
+            "Manipulate lifeforce, steal Physical health from others, or bequeath your own.",
     },
     {
         Class: "Mage",
@@ -407,15 +411,15 @@ var data = [
         Kit: "Assassinate",
         Tags: "Combat, Stealth",
         Description:
-            "Your sneak attacks deal an additional box of Physical damage. You can use Assume a Disguise to disappear from sight, taking an action to do so if done in combat. You can tell if a target will be incapacitated by your sneak attack before you make it.",
+            "Your sneak attacks deal an additional box of Physical damage. You can use Assume a Disguise to disappear from sight, taking an action to do so if done in combat. You can tell if a target will be incapacitated by your sneak attack before you strike.",
     },
     {
         Class: "Scoundrel",
         Type: "Assassin",
         Kit: "Convincing Fake",
-        Tags: "Exploration, Social, Health",
+        Tags: "Exploration, Health",
         Description:
-            "Choose a Skill and raise it to half the level of your highest Skill (rounded down). You can spend a Prep Point to change the chosen Skill, provided you have a few minutes to concentrate. You can use Assume a Disguise without spending Prep Points.",
+            "Choose a Skill and raise it to half the level of your highest Skill (rounded down). You can spend a Prep Point to change the chosen Skill, provided you have a few minutes to concentrate.",
     },
     {
         Class: "Scoundrel",
@@ -455,21 +459,21 @@ var data = [
         Kit: "Charm Arcana",
         Tags: "Social",
         Description:
-            "You can use Cunning as though it were Presence, Bravery, or Knowledge for social purposes. You can spend a Prep Point to reroll a social action and take the new result, a maximum of one time per social action. You can use I Know a Guy without spending Prep Points.",
+            "You can use Cunning as though it were Presence, Bravery, or Knowledge for social purposes. You can spend a Prep Point to reroll a social action and take the higher result, a maximum of one time per social action. You can use I Know a Guy without spending Prep Points.",
     },
     {
         Class: "Scoundrel",
         Type: "Bard",
         Kit: "Lore Arcana",
-        Tags: "Combat, Exploration",
+        Tags: "Exploration",
         Description:
-            "You can use Cunning or Agility to detect and identify magic. You can use What You Needed to produce an item that briefly channels or negates magic you've identified. You can use Cunning or Agility when recalling information about history, religion, magic, or politics.",
+            "You have a perfect memory while this Kit is equipped, capable of recalling minute details or committing a book to memory in minutes. You can use What You Needed to recall information in place of a Knowledge roll.",
     },
     {
         Class: "Scoundrel",
         Type: "Bard",
         Kit: "Resilience Arcana",
-        Tags: "Health, Exploration, Recovery",
+        Tags: "Health, Recovery",
         Description:
             "Gain an additional Physical box. You can exchange Mental boxes for Prep Points and vice versa, and can do so as an action while in combat. You do not need to sleep, and cannot be rendered unconscious against your will, but can be incapacitated in other ways.",
     },
@@ -477,7 +481,7 @@ var data = [
         Class: "Scoundrel",
         Type: "Bard",
         Kit: "Spirit of Light",
-        Tags: "Exploration, Spirit",
+        Tags: "Combat, Exploration, Spirit",
         Description:
             "Manipulate light, create ghostly illusions, and see afar. You can spend a Prep Point to use Cunning or Agility when using this spirit.",
     },
@@ -485,7 +489,7 @@ var data = [
         Class: "Scoundrel",
         Type: "Bard",
         Kit: "Spirit of Sound",
-        Tags: "Exploration, Spirit",
+        Tags: "Combat, Exploration, Spirit",
         Description:
             "Manipulate sound, shatter eardrums, and eavesdrop from afar. You can spend a Prep Point to use Cunning or Agility when using this spirit.",
     },
@@ -495,7 +499,7 @@ var data = [
         Kit: "War Arcana",
         Tags: "Combat, Technique",
         Description:
-            "Your fighting style resembles dancing, making you particularly mobile. Using this technique allows you to move before and after making an attack, escaping from melee range or otherwise covering ground. You have Advantage reacting to traps or similar surprise attacks.",
+            "Your fighting style resembles dancing, making you particularly mobile. Using this technique allows you to move before and after making an attack, escaping from melee range or otherwise covering ground. You have Advantage when reacting to traps or similar surprise attacks.",
     },
     {
         Class: "Scoundrel",
@@ -503,7 +507,7 @@ var data = [
         Kit: "Herbalism",
         Tags: "Recovery",
         Description:
-            "You can use What You Needed to heal Physical and Mental damage outside of combat.",
+            "You can use What You Needed to heal Physical and Mental damage outside of combat. You are immune to all poisons, diseases, and similar effects.",
     },
     {
         Class: "Scoundrel",
@@ -519,7 +523,7 @@ var data = [
         Kit: "Quickdraw",
         Tags: "Combat, Technique, Stealth",
         Description:
-            "Your attacks are swift and silent, preventing targets from crying out when struck or otherwise making noise. Using this technique ensures that an enemy won't cause a commotion for a brief period of time, in addition to any Physical damage dealt. You have Advantage when determining who acts first, including combat turn order.",
+            "Your attacks are swift and silent, preventing targets from crying out when struck. Using this technique ensures that an enemy won't cause a commotion for a brief period of time, in addition to any Physical damage dealt. You have Advantage when determining who acts first, including combat turn order.",
     },
     {
         Class: "Scoundrel",
@@ -527,7 +531,7 @@ var data = [
         Kit: "Spirit of Wood",
         Tags: "Combat, Exploration, Spirit",
         Description:
-            "Manipulate plants, encourage growth, and influence the environment. You can spend a Prep Point to use Cunning or Agility when using this spirit.",
+            "Manipulate plants, encourage growth, and influence the environment. Represents growth and vitality. You can spend a Prep Point to use Cunning or Agility when using this spirit.",
     },
     {
         Class: "Scoundrel",
@@ -559,7 +563,7 @@ var data = [
         Kit: "Harass",
         Tags: "Combat, Social, Technique",
         Description:
-            "Your attacks taunt and frustrate targets in addition to dealing damage. Using this technique inflicts a box of Mental damage on successful attacks, in addition to any Physical damage dealt. You have Advantage when using Bravery to provoke others.",
+            "Your attacks unnerve and frustrate targets in addition to dealing damage. Using this technique inflicts a box of Mental damage on successful attacks, in addition to any Physical damage dealt. You have Advantage when using Bravery to provoke others.",
     },
     {
         Class: "Soldier",
@@ -575,7 +579,7 @@ var data = [
         Kit: "Riposte",
         Tags: "Combat",
         Description:
-            "On a successful defense against a melee attack, you inflict a box of Physical damage to the attacker. You recover a Fortune Point when an enemy is incapacitated using this Kit.",
+            "On a successful defense against a melee attack, you inflict a box of Physical damage to the attacker. You recover a Fortune Point when an enemy is incapacitated in this fashion.",
     },
     {
         Class: "Soldier",
@@ -583,7 +587,7 @@ var data = [
         Kit: "Spellbreak",
         Tags: "Combat, Exploration, Technique",
         Description:
-            "Your attacks interfere with magic. Using this technique allows your attacks to destroy spells and spirits, in addition to any Physical damage dealt. You have Advantage when defending against magical attacks.",
+            "Your attacks interfere with magic. Using this technique allows your attacks to harm spells and spirits, in addition to any Physical damage dealt. You have Advantage when defending against magical attacks.",
     },
     {
         Class: "Soldier",
@@ -607,7 +611,7 @@ var data = [
         Kit: "Hospitaler",
         Tags: "Combat, Exploration, Recovery",
         Description:
-            "You can spend a Fortune Point to revive an incapacitated ally, restoring one box of either of their damage tracks and taking your action to do so if done in combat. You can use Strength or Bravery to perform medical tasks outside of combat, giving you the ability to heal Physical damage and treat Physical injuries.",
+            "You can use Strength or Bravery to perform medical tasks outside of combat, giving you the ability to heal Physical damage and treat Physical injuries. You can spend a Fortune Point to revive an incapacitated ally, restoring one box of either of their damage tracks and taking your action to do so if done in combat.",
     },
     {
         Class: "Soldier",
@@ -615,7 +619,7 @@ var data = [
         Kit: "Impose",
         Tags: "Combat, Social, Technique",
         Description:
-            "Your attacks demand the attention of targets and cloud their perception. Using this technique compels an enemy to focus on you on successful attacks, in addition to any Physical damage dealt. You have Advantage when using Bravery to intimidate others.",
+            "Your attacks demand the attention of targets and cloud their perception. Using this technique compels an enemy to focus on you after a successful attack, in addition to any Physical damage dealt. You have Advantage when using Bravery to intimidate others.",
     },
     {
         Class: "Soldier",
@@ -639,7 +643,7 @@ var data = [
         Kit: "Smite",
         Tags: "Combat, Technique",
         Description:
-            "Your attacks strike with enough force to knock targets back or topple them over. Using this technique allows your attacks to forcibly reposition enemies, in addition to any Physical damage dealt. You have Advantage against any attempt to forcibly move you and against any effect that impedes your movement, including terrain hazards like ice or mud.",
+            "Your attacks strike with enough force to knock targets around or topple them over. Using this technique allows your attacks to forcibly reposition enemies, in addition to any Physical damage dealt. You have Advantage against any attempt to forcibly move you, and against any effect that impedes your movement, including terrain hazards like ice or mud.",
     },
     {
         Class: "Soldier",
@@ -663,7 +667,7 @@ var data = [
         Kit: "Iron Blow",
         Tags: "Combat, Technique",
         Description:
-            "Your attacks cause harm even on glancing blows. Using this technique allows your attacks to inflict damage when your roll would normally have tied with the defender, increasing the odds of a successful attack. You have Advantage when performing feats that rely solely on raw muscle, such as lifting heavy objects or bending metal bars.",
+            "Your attacks cause harm even on glancing blows. Using this technique allows your attacks to succeed when your roll would normally have tied with the defender. You have Advantage when performing feats that rely solely on raw muscle, such as lifting heavy objects or bending metal bars.",
     },
     {
         Class: "Soldier",

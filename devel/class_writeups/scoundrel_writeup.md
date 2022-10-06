@@ -2,7 +2,6 @@
 
 Scoundrels are the most flexible class. In addition to their natural speed and stealthiness, they're capable fighters and passable magicians. Their capacity to combine capabilities opens the door to unusual playstyles.
 
-
 ### Agility
 
 > Offense, Defense, Mobility
@@ -17,7 +16,7 @@ The Scoundrel's social skill is Cunning. It's used to fast-talk, deceive others,
 
 ### Prep Points
 
-The Scoundrel's resource is **Prep Points**, calculated using their Cunning Skill. Prep Points have numerous uses intended to make the Scoundrel feel more versatile than other classes. They might be used to call in help, spoof a disguise, or change Kits at a moment's notice. 
+The Scoundrel's resource is **Prep Points**, calculated using their Cunning Skill. Prep Points have numerous uses intended to make the Scoundrel feel more versatile than other classes. They might be used to call in help, spoof a disguise, or change Kits at a moment's notice.
 
 ### Techniques and Magic
 
@@ -25,15 +24,14 @@ Reinforcing their theme of flexibility, Scoundrels borrow tricks from other clas
 
 ### Skill Point Advancement
 
-* **Agility** will make a Scoundrel better at combat by improving their ability to deal and avoid damage. It also bolsters their reaction time and mobility.
+-   **Agility** will make a Scoundrel better at combat by improving their ability to deal and avoid damage. It also bolsters their reaction time and mobility.
 
-* **Cunning** will provide additional Prep Points, making a Scoundrel more versatile. It also reinforces stealth and social abilities.
+-   **Cunning** will provide additional Prep Points, making a Scoundrel more versatile. It also reinforces stealth and social abilities.
 
 Other interesting options might include:
 
-* **Magic** can be useful for any of the Scoundrel subclasses. All of them have at least one magic-oriented Kit that will become usable without needing Prep Points.
+-   **Magic** can be useful for any of the Scoundrel subclasses. All of them have at least one magic-oriented Kit that will become usable without needing Prep Points.
 
-* **Strength** can increase a Scoundrel's Physical health, putting them on a similar standing with Soldiers for combat efficacy. 
+-   **Strength** can increase a Scoundrel's Physical health, putting them on a similar standing with Soldiers for combat efficacy.
 
-* **Presence** for the Bard subclass, to leverage *Resiliency Arcana* for a large pool of Prep Points at the cost of Mental Health.
-
+-   **Presence** for the Bard subclass, to leverage _Resiliency Arcana_ for a large pool of Prep Points at the cost of Mental Health.

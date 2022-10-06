@@ -8,7 +8,7 @@ nav_order: 2
 
 # Stealth
 
-    Player: I want to blend in with the crowd. Look 
+    Player: I want to blend in with the crowd. Look
             inconspicuous.
 
     GM:     Alright. You're in Stealth.

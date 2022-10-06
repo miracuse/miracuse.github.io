@@ -36,4 +36,3 @@ A character that marks all of their Boxes in either health track is taken out of
 Characters recover all of their health and clear away all injuries by [Making Camp](../adventuring/exploration/index.md).
 
 Certain Kits can also give characters the ability to recover Boxes or treat injuries. See the page on [Healing](../more_resources/healing.md) for more information.
-
