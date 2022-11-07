@@ -24,14 +24,14 @@ Reinforcing their theme of flexibility, Scoundrels borrow tricks from other clas
 
 ### Skill Point Advancement
 
--   **Agility** will make a Scoundrel better at combat by improving their ability to deal and avoid damage. It also bolsters their reaction time and mobility.
+- **Agility** will make a Scoundrel better at combat by improving their ability to deal and avoid damage. It also bolsters their reaction time and mobility.
 
--   **Cunning** will provide additional Prep Points, making a Scoundrel more versatile. It also reinforces stealth and social abilities.
+- **Cunning** will provide additional Prep Points, making a Scoundrel more versatile. It also reinforces stealth and social abilities.
 
 Other interesting options might include:
 
--   **Magic** can be useful for any of the Scoundrel subclasses. All of them have at least one magic-oriented Kit that will become usable without needing Prep Points.
+- **Magic** can be useful for any of the Scoundrel specializations. All of them have at least one magic-oriented Kit that will become usable without needing Prep Points.
 
--   **Strength** can increase a Scoundrel's Physical health, putting them on a similar standing with Soldiers for combat efficacy.
+- **Strength** can increase a Scoundrel's Physical health, putting them on a similar standing with Soldiers for combat efficacy.
 
--   **Presence** for the Bard subclass, to leverage _Resiliency Arcana_ for a large pool of Prep Points at the cost of Mental Health.
+- **Presence** for the Bard specialization, to leverage _Resiliency Arcana_ for a large pool of Prep Points at the cost of Mental Health.

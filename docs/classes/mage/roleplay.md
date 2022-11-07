@@ -12,13 +12,13 @@ Players are welcome to customize their characters however they choose. However, 
 
 ### Suggested Equipment and Appearance
 
--   A staff, wand, book, or other object used in your spellcasting
+- A staff, wand, book, or other object used in your spellcasting
 
--   An unnatural physical characteristic, such as red irises or glowing tattoos
+- An unnatural physical characteristic, such as red irises or glowing tattoos
 
--   Clothing that marks you as a Mage, such as rune-embroidered robes or vestments of faith
+- Clothing that marks you as a Mage, such as rune-embroidered robes or vestments of faith
 
--   A voice that commands attention in some way, such as a gravelly rasp or tendency to rhyme
+- A voice that commands attention in some way, such as a gravelly rasp or tendency to rhyme
 
 ### Roles
 

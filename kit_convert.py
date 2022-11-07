@@ -12,6 +12,8 @@ PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_DIR = os.path.join(PROJECT_DIR, "_data")
 INPUT_FILE = "miracuse_kits.xlsx"
 OUTPUT_FILE = "miracuse_kits.tsv"
+ASSETS_DIR = os.path.join(PROJECT_DIR, "assets")
+JS_DIR = os.path.join(ASSETS_DIR, "js")
 
 # Main
 def main():
@@ -25,6 +27,9 @@ def main():
     # Output data as TSV
     output_path = os.path.join(OUTPUT_DIR, OUTPUT_FILE)
     input_data.to_csv(output_path, index=False, encoding="utf-8", sep="\t")
+
+    # Output data as a JSON
+    input_data.to_json("data.json", orient="records")
 
     # Create smaller files for each gameplay class
     classes = input_data['Class'].unique()

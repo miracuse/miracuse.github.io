@@ -12,13 +12,13 @@ Players are welcome to customize their characters however they choose. However, 
 
 ### Suggested Equipment and Appearance
 
--   An easily hidden melee weapon, such as a dagger or garrote
+- An easily hidden melee weapon, such as a dagger or garrote
 
--   An unassuming ranged weapon, such as throwing knives or a shortbow
+- An unassuming ranged weapon, such as throwing knives or a shortbow
 
--   Inconspicuous clothes for traveling, and fashionable dress for formal affairs
+- Inconspicuous clothes for traveling, and fashionable dress for formal affairs
 
--   Lockpicks, wire cutters, and other thieves' tools hidden on your person
+- Lockpicks, wire cutters, and other thieves' tools hidden on your person
 
 ### Roles
 

@@ -3,7 +3,7 @@
 #################################################################################
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
-PROJECT_NAME = school_district_clustering
+PROJECT_NAME = miracuse_character_creator
 PYTHON_INTERPRETER = python3
 
 #################################################################################

@@ -11,35 +11,37 @@ nav_order: 2
 
 The Soldier is a warrior without peer. They may be knights, bandits, infantrymen, or come from other walks of life. What makes one a Soldier is not their profession but their skill at arms, courage, and a surprising amount of luck.
 
--   **<span style="color: {{ site.soldier_color }}">Strength</span>**: Soldiers are strong and resilient. They use this Skill when attacking with most weapons or defending against Physical attacks. This Skill also gives them more Physical [Health](../../gameplay/health.md) than other classes.
+- **<span style="color: {{ site.soldier_color }}">Strength</span>**: Soldiers are strong and resilient. They use this Skill when attacking with most weapons or defending against Physical attacks. This Skill also gives them more Physical [Health](../../gameplay/health.md) than other classes.
 
--   **<span style="color: {{ site.soldier_color }}">Bravery</span>**: Soldiers don't flinch in the face of danger. They use this Skill when defending against Mental attacks. It also determines how many Fortune Points they have, and can be used to provoke, intimidate, or impress others.
-
-### Fortune
-
-Soldiers have a number of Fortune Points equal to two times their **<span style="color: {{ site.soldier_color }}">Bravery</span>**. Fortune Points can be used to:
-
--   **Reroll** any roll the Soldier makes.
-
--   **Amplify** Kits with the _Technique_ tag.
-
--   **Combine** Kits with the _Technique_ tag.
-
-{% include fortune_uses.html %}
+- **<span style="color: {{ site.soldier_color }}">Bravery</span>**: Soldiers don't flinch in the face of danger. They use this Skill when defending against Mental attacks. It also determines how many Fortune Points they have, and can be used to provoke, intimidate, or impress others.
 
 ### Techniques
 
 {% include single_soldier_kit.html %}
 
-Techniques are Kits that modify attacks. They add additional effects, such as increasing damage, hitting multiple enemies, or targeting multiple enemies at once. For example, the _Cleave_ Kit might be used to:
+Kits with the _Technique_ tag add additional effects to attacks.
 
--   Swing an axe through a horde of goblins.
--   Shoot a volley of arrows at a cluster of bandits.
--   Ricochet a thrown shield off of one enemy and into another.
+- _Cleave_ allows attacks to hit multiple enemies and objects in an area of effect.
+- _Smite_ moves targets on impact, knocking them over or staggering them with force.
+- _Wind Strike_ extends the range of attacks by creating blades or gusts of wind around weapons.
 
-### Amplify and Combine Techniques
+### Fortune
 
-In addition to their passive effect, Techniques can also be amplified or mixed together by expending Fortune Points.
+Soldiers have a number of Fortune Points equal to two times their **<span style="color: {{ site.soldier_color }}">Bravery</span>**. Fortune Points can be used to:
+
+- **Reroll** any roll the Soldier makes.
+
+- **Escape Harm** by negating or greatly reducing damage you would otherwise take.
+
+- Use _Spirit_ Kits with **<span style="color: {{ site.soldier_color }}">Strength</span>** or **<span style="color: {{ site.soldier_color }}">Bravery</span>** instead of **<span style="color: {{ site.mage_color }}">Magic</span>**.
+
+- **Empower** Kits with the _Technique_ tag.
+
+{% include fortune_uses.html %}
+
+### Empower Techniques
+
+Soldiers can perform dazzling feats of superhuman skill by amplifying or combining _Technique_ Kits. Doing so costs a Fortune Point.
 
 | Technique          | Description                                                                                             |
 | ------------------ | ------------------------------------------------------------------------------------------------------- |

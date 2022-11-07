@@ -25,7 +25,7 @@ At the end of every session, Players are awarded a **Skill Point**. These can be
 Not Yet Implemented
 {: .label .label-red }
 
-| Tier | Number of Subclasses | Approx. Number of Skill Points |
+| Tier | Number of Specializations | Approx. Number of Skill Points |
 | ---- | -------------------- | ------------------------------ |
 | 1    | 1                    | 10                             |
 | 2    | 2                    | 20                             |
@@ -33,21 +33,21 @@ Not Yet Implemented
 
 A Character's **Tier** represents a larger increase in power. Tier upgrades are generally awarded after Players have completed a significant milestone in-game, such as completing a major arc of a campaign.
 
-Each Tier allows a Player to select an additional Subclass from any Class. This gives their Character six new Kits to choose from when [Making Camp](../../adventuring/exploration/index.md). The overall limit over four Kits remains unchanged.
+Each Tier allows a Player to select an additional specialization from any Class. This gives their Character six new Kits to choose from when [Making Camp](../../adventuring/exploration/index.md). The overall limit over four Kits remains unchanged.
 
 ### Example: Tier II Gunslinger
 
-**Subclasses**
+**Specializations**
 
--   Scoundrel/Ranger
--   Alchemist/Sapper
+- Scoundrel/Ranger
+- Alchemist/Sapper
 
 **Skills (10 Sessions Completed)**
 
--   Agility +3
--   Cunning +3
--   Knowledge +2
--   Magic +1
+- Agility +3
+- Cunning +3
+- Knowledge +2
+- Magic +1
 
 **Description**
 

@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Subclasses
+title: Specializations
 parent: Mage
 grand_parent: Classes
 nav_order: 1
 ---
 
-# Subclasses
+# Specializations
 
-**Subclasses** are specializations for each class that determine which [Kits](kits.md) a player can use. New characters start with one subclass, gaining more the longer they adventure. Additional information can be found on the [subclass page](../subclasses.html).
+**Specializations** determine which [Kits](kits.md) a player can use. New characters start with one subclass, gaining more the longer they adventure. 
 
 ### <span style="color: {{ site.mage_color }}">The Priest</span>
 

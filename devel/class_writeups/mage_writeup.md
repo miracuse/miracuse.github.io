@@ -26,14 +26,14 @@ Most Spirit Kits imply dominion over an element or an aspect. Something like _Sp
 
 ### Skill Point Advancement
 
--   **Magic** improves the efficacy of all magical abilities, both cantrips and spells. Similarly, it improves a Mage's ability to hurt enemies with magic.
+- **Magic** improves the efficacy of all magical abilities, both cantrips and spells. Similarly, it improves a Mage's ability to hurt enemies with magic.
 
--   **Presence** will provide more Mental Health, which allows for more spells between rests. It also reinforces a Mage's social ability to hypnotize and awe others.
+- **Presence** will provide more Mental Health, which allows for more spells between rests. It also reinforces a Mage's social ability to hypnotize and awe others.
 
 Other interesting options might include:
 
--   **Strength** to increase a Mage's limited Physical health and defense.
+- **Strength** to increase a Mage's limited Physical health and defense.
 
--   **Agility** to increase defense, and to react with magic before others can take their actions.
+- **Agility** to increase defense, and to react with magic before others can take their actions.
 
--   **Bravery** to gain Fortune Points for use in rerolling spells, which are costly to cast.
+- **Bravery** to gain Fortune Points for use in rerolling spells, which are costly to cast.

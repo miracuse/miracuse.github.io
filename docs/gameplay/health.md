@@ -25,9 +25,9 @@ nav_order: 3
 
 A character that marks all of their Boxes in either health track is taken out of play for a short time. They become **Incapacitated** and **Injured**.
 
--   **Incapacitated** characters cannot act until at least one Box of their filled track is clear. They also can't be damaged any further.
+- **Incapacitated** characters cannot act until at least one Box of their filled track is clear. They also can't be damaged any further.
 
--   **Injured** characters take a -1 penalty to most rolls until they rest at camp. A character can only have one injury at a time; further injuries have no gameplay effect.
+- **Injured** characters take a -1 penalty to most rolls until they rest at camp. A character can only have one injury at a time; further injuries have no gameplay effect.
 
 > **Note**: Each point in the **<span style="color: {{ site.soldier_color }}">Strength</span>** Skill adds a Box to the Physical Health track. Likewise, each point in the **<span style="color: {{ site.mage_color }}">Presence</span>** Skill adds a Box to the Mental Health track.
 

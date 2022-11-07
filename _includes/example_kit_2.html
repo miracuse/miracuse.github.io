@@ -1,29 +1,29 @@
 <table>
-    <thead>
-        <td><b>Class</b></td>
-        <td><b>Subclass</b></td>
-        <td><b>Kit</b></td>
-        <td><b>Description</b></td>
-    </thead>
-    {% assign row = site.data.Soldier[1] %}
-    <tr>
-        <td>{{ row.Class }}</td>
-        <td>{{ row.Type }}</td>
-        <td><b>{{ row.Kit }}</b></td>
-        <td>{{ row.Description }}</td>
-    </tr>
-    {% assign row2 = site.data.Soldier[7] %}
-    <tr>
-        <td>{{ row2.Class }}</td>
-        <td>{{ row2.Type }}</td>
-        <td><b>{{ row2.Kit }}</b></td>
-        <td>{{ row2.Description }}</td>
-    </tr>
-    {% assign row3 = site.data.Soldier[12] %}
-    <tr>
-        <td>{{ row3.Class }}</td>
-        <td>{{ row3.Type }}</td>
-        <td><b>{{ row3.Kit }}</b></td>
-        <td>{{ row3.Description }}</td>
-    </tr>
+  <thead>
+    <td><b>Class</b></td>
+    <td><b>Specialization</b></td>
+    <td><b>Kit</b></td>
+    <td><b>Description</b></td>
+  </thead>
+  {% assign row = site.data.Soldier[1] %}
+  <tr>
+    <td>{{ row.Class }}</td>
+    <td>{{ row.Type }}</td>
+    <td><b>{{ row.Kit }}</b></td>
+    <td>{{ row.Description }}</td>
+  </tr>
+  {% assign row2 = site.data.Soldier[7] %}
+  <tr>
+    <td>{{ row2.Class }}</td>
+    <td>{{ row2.Type }}</td>
+    <td><b>{{ row2.Kit }}</b></td>
+    <td>{{ row2.Description }}</td>
+  </tr>
+  {% assign row3 = site.data.Soldier[12] %}
+  <tr>
+    <td>{{ row3.Class }}</td>
+    <td>{{ row3.Type }}</td>
+    <td><b>{{ row3.Kit }}</b></td>
+    <td>{{ row3.Description }}</td>
+  </tr>
 </table>

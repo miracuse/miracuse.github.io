@@ -21,21 +21,21 @@ nav_order: 4
 
 **Combat** is any situation where several characters need to take different actions and turn order matters. The most common scenario involves fighting, but other possibilities might include fixing a sinking ship or racing a rival adventuring party for treasure.
 
--   Roll **<span style="color: {{ site.scoundrel_color }}">Agility</span>** to determine the order that characters will act.
+- Roll **<span style="color: {{ site.scoundrel_color }}">Agility</span>** to determine the order that characters will act.
 
--   On their turn, characters can take one action (usually a single roll of the dice).
+- On their turn, characters can take one action (usually a single roll of the dice).
 
 ### Actions
 
 In general, a player's turn ends after they roll dice or do something. For example:
 
--   Swinging a sword
+- Swinging a sword
 
--   Drinking an elixir
+- Drinking an elixir
 
--   Casting a spell
+- Casting a spell
 
--   Intimidating an enemy
+- Intimidating an enemy
 
 Actions and turn order rules aren't set in stone. There are plenty of things that won't take up an entire action, like saying a few words to another person. There are also times when it makes sense for a character to react outside of their turn, like stepping into oncoming fire to protect an ally. Ultimately, a **player's turn begins and ends when it makes narrative sense**. The GM will provide guidance as necessary.
 

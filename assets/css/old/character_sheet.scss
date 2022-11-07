@@ -1,0 +1,361 @@
+[role="tooltip"],
+.hidetooltip.hidetooltip.hidetooltip + [role="tooltip"] {
+  visibility: hidden;
+  position: relative;
+  //   top: 2rem;
+  //   left: 2rem;
+  background: black;
+  color: white;
+  z-index: 1;
+}
+[aria-describedby]:hover,
+[aria-describedby]:focus {
+  position: relative;
+}
+[aria-describedby]:hover + [role="tooltip"],
+[aria-describedby]:focus + [role="tooltip"] {
+  visibility: visible;
+}
+
+.character_sheet {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-columns: 25%;
+  row-gap: 10px;
+
+  // UI Styling /////////////////////////////////////////////////////////////
+  input[type="text"],
+  input[type="email"],
+  input[type="search"],
+  input[type="submit"],
+  input[type="number"] {
+    border: 1px solid $border-color;
+    // padding: $padding-v $padding-h;
+  }
+
+  select {
+    display: block;
+    // font-family: $body-font-family;
+    font-size: $font-size-4;
+    color: inherit;
+    width: 175px;
+    max-width: 90%;
+    height: 1.25rem;
+    border: 1px solid $border-color;
+  }
+
+  #class_select,
+  #subclass_select_01 {
+    font-size: $font-size-4;
+    height: 1.5rem;
+  }
+
+  .kit_description,
+  .kit_tags {
+    vertical-align: top;
+    font-size: $font-size-4;
+    margin: 0;
+  }
+
+  .kit_tags {
+    font-style: italic;
+  }
+
+  .skill_holder {
+    text-align: center;
+    padding: 0;
+    width: 100px;
+    max-width: 50%;
+    font-weight: bold;
+    // font-size: inherit;
+    // font-family: inherit;
+  }
+
+  .kits_table {
+    font-size: $font-size-4;
+  }
+
+  // Grid Structure (Desktop) ///////////////////////////////////////////////
+  @include mq(md) {
+    // Grid: Character Info ///////////////////////////////////////////////////
+    // .character_name {
+    //     grid-column: 1;
+    //     grid-row: 1;
+    // }
+
+    .character_class {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .character_tier {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .character_subclass_01 {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .info_tab {
+      grid-column: 2 / -1;
+      grid-row: 2 / 4;
+      p {
+        vertical-align: top;
+        margin: 0;
+      }
+    }
+
+    // Grid: Health ///////////////////////////////////////////////////////////
+    .health_header {
+      grid-column: 1 / 2;
+      grid-row: 4;
+    }
+
+    .physical_health_text {
+      grid-column: 1;
+      grid-row: 5;
+    }
+
+    .mental_health_text {
+      grid-column: 3;
+      grid-row: 5;
+    }
+
+    .physical_health_track {
+      grid-column: 2;
+      grid-row: 5;
+    }
+
+    .mental_health_track {
+      grid-column: 4;
+      grid-row: 5;
+    }
+
+    // Grid: Resources ////////////////////////////////////////////////////////
+    .resources_header {
+      grid-column: 1;
+      grid-row: 6;
+    }
+
+    .charge_point_text {
+      grid-column: 1;
+      grid-row: 7;
+    }
+
+    .charge_point_track {
+      grid-column: 2;
+      grid-row: 7;
+    }
+
+    .mana_point_text {
+      grid-column: 3;
+      grid-row: 7;
+    }
+
+    .mana_point_track {
+      grid-column: 4;
+      grid-row: 7;
+    }
+
+    .fortune_point_text {
+      grid-column: 1;
+      grid-row: 8;
+    }
+
+    .fortune_point_track {
+      grid-column: 2;
+      grid-row: 8;
+    }
+
+    .prep_point_text {
+      grid-column: 3;
+      grid-row: 8;
+    }
+
+    .prep_point_track {
+      grid-column: 4;
+      grid-row: 8;
+    }
+
+    // Grid: Skills ///////////////////////////////////////////////////////////
+    .skills_header {
+      grid-column: 1 / 2;
+      grid-row: 9;
+    }
+
+    .perception_text {
+      grid-column: 1;
+      grid-row: 10;
+    }
+    .perception_text :enabled {
+      font-weight: bold;
+    }
+
+    .perception_value {
+      grid-column: 2;
+      grid-row: 10;
+    }
+
+    .knowledge_text {
+      grid-column: 1;
+      grid-row: 11;
+    }
+
+    .knowledge_value {
+      grid-column: 2;
+      grid-row: 11;
+    }
+
+    .Strength_text {
+      grid-column: 1;
+      grid-row: 12;
+    }
+
+    .Strength_value {
+      grid-column: 2;
+      grid-row: 12;
+    }
+
+    .bravery_text {
+      grid-column: 1;
+      grid-row: 13;
+    }
+
+    .bravery_value {
+      grid-column: 2;
+      grid-row: 13;
+    }
+
+    .Magic_text {
+      grid-column: 3;
+      grid-row: 10;
+    }
+
+    .Magic_value {
+      grid-column: 4;
+      grid-row: 10;
+    }
+
+    .Presence_text {
+      grid-column: 3;
+      grid-row: 11;
+    }
+
+    .Presence_value {
+      grid-column: 4;
+      grid-row: 11;
+    }
+
+    .agility_text {
+      grid-column: 3;
+      grid-row: 12;
+    }
+
+    .agility_value {
+      grid-column: 4;
+      grid-row: 12;
+    }
+
+    .cunning_text {
+      grid-column: 3;
+      grid-row: 13;
+    }
+
+    .cunning_value {
+      grid-column: 4;
+      grid-row: 13;
+    }
+
+    // Grid: Kits /////////////////////////////////////////////////////////////
+    .kit_header {
+      grid-column: 1 / 2;
+      grid-row: 14;
+    }
+
+    .kit_chooser_01 {
+      grid-column: 1;
+      grid-row: 15;
+    }
+
+    .kit_text_01 {
+      grid-column: 2 / -1;
+      grid-row: 15;
+    }
+
+    .kit_chooser_02 {
+      grid-column: 1;
+      grid-row: 16;
+    }
+
+    .kit_text_02 {
+      grid-column: 2 / -1;
+      grid-row: 16;
+    }
+
+    .kit_chooser_03 {
+      grid-column: 1;
+      grid-row: 17;
+    }
+
+    .kit_text_03 {
+      grid-column: 2 / -1;
+      grid-row: 17;
+    }
+
+    .kit_chooser_04 {
+      grid-column: 1;
+      grid-row: 18;
+    }
+
+    .kit_text_04 {
+      grid-column: 2 / -1;
+      grid-row: 18;
+    }
+  }
+
+  // Grid Structure (Mobile) ////////////////////////////////////////////////
+
+  // Grid: Character Info ///////////////////////////////////////////////////
+  .character_name {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .character_class {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .character_subclass_01 {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  // Grid: Health ///////////////////////////////////////////////////////////
+  .health_header {
+    grid-column: 1 / -1;
+    grid-row: 4;
+  }
+
+  .physical_health_text {
+    grid-column: 1 / -1;
+    grid-row: 5;
+  }
+
+  .mental_health_text {
+    grid-column: 1 / -1;
+    grid-row: 7;
+  }
+
+  .physical_health_track {
+    grid-column: 1 / -1;
+    grid-row: 6;
+  }
+
+  .mental_health_track {
+    grid-column: 1 / -1;
+    grid-row: 8;
+  }
+}

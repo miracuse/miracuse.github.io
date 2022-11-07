@@ -7,6 +7,9 @@ has_toc: false
 nav_order: 99
 ---
 
+Not Yet Implemented
+{: .label .label-red }
+
 # Custom Classes
 
 The base classes can be used for many character concepts, but players may also choose to make a **Custom Class**.
@@ -15,26 +18,26 @@ Custom Classes allow players to change their starting Skills to better reflect a
 
 ### Creating a Custom Class
 
--   Choose one Subclass, chosen from any of the base classes.
+- Choose one specialization, taken from any of the base classes.
 
--   Choose one of the following Skill spreads.
+- Choose one of the following Skill spreads.
 
-    -   Standard (Two Skills at +2)
-    -   Versatile (One Skill at +2, Two Skills at +1)
+  - Standard (Two Skills at +2)
+  - Versatile (One Skill at +2, Two Skills at +1)
 
 ---
 
 ### Example: **<span style="color: {{ site.paladin_color }}">The Paladin</span>**
 
-**Subclass**
+**Specialization**
 
--   **<span style="color: {{ site.mage_color }}">Mage</span>**/Priest
+- **<span style="color: {{ site.mage_color }}">Mage</span>**/Priest
 
 **Skills**
 
--   **<span style="color: {{ site.soldier_color }}">Strength</span>** +2
--   **<span style="color: {{ site.soldier_color }}">Bravery</span>** +1
--   **<span style="color: {{ site.mage_color }}">Magic</span>** +1
+- **<span style="color: {{ site.soldier_color }}">Strength</span>** +2
+- **<span style="color: {{ site.soldier_color }}">Bravery</span>** +1
+- **<span style="color: {{ site.mage_color }}">Magic</span>** +1
 
 **Description**
 

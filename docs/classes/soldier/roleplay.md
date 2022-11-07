@@ -12,13 +12,13 @@ Players are welcome to customize their characters however they choose. However, 
 
 ### Suggested Equipment and Appearance
 
--   A melee weapon such as a sword, spear, or bayonet
+- A melee weapon such as a sword, spear, or bayonet
 
--   A ranged weapon such as a longbow, musket, or flintlocks
+- A ranged weapon such as a longbow, musket, or flintlocks
 
--   Armor ranging from thick leathers to metal plates
+- Armor ranging from thick leathers to metal plates
 
--   A sign of rank, storied weapon, or other marking of prowess
+- A sign of rank, storied weapon, or other marking of prowess
 
 ### Roles
 

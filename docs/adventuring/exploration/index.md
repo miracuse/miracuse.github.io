@@ -28,9 +28,9 @@ to overcome.
 
 **Making Camp** allows characters to recover and lets Players change their equipped Kits. It can be done anytime the characters are somewhere safe and comfortable enough to rest.
 
--   **Recovering Health and Injuries** requires eight hours of rest.
+- **Recovering Health and Injuries** requires eight hours of rest.
 
--   **Changing Kits** requires one hour of rest. During this time, resources like Fortune Points, Prep Points, and Alchemist Kit uses are recovered.
+- **Changing Kits** requires one hour of rest. During this time, resources like Fortune Points, Prep Points, and Alchemist Kit uses are recovered.
 
 > **Note**: In dangerous areas, Players might want to set a watch to avoid getting ambushed. Any Player that takes a shift should roll **<span style="color: #268bd2">Perception</span>**.
 

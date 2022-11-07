@@ -22,14 +22,14 @@ The Alchemist's resource is **Charges**, calculated using their Knowledge Skill.
 
 ### Skill Point Advancement
 
--   **Perception** will make an Alchemist better at aiming their weapons. It will also improve their ability to acquire information, either passively or actively.
+- **Perception** will make an Alchemist better at aiming their weapons. It will also improve their ability to acquire information, either passively or actively.
 
--   **Knowledge** will provide additional Charges for each Kit. It also empowers an Alchemist's social skills.
+- **Knowledge** will provide additional Charges for each Kit. It also empowers an Alchemist's social skills.
 
 Other interesting options might include:
 
--   **Strength** to add Physical health and defense to the otherwise vulnerable Alchemist.
+- **Strength** to add Physical health and defense to the otherwise vulnerable Alchemist.
 
--   **Presence** for the Enchanter subclass, allowing them to cast more spells using the _Spirit of Animation_ and _Spirit of Transmutation_ Kits.
+- **Presence** for the Enchanter subclass, allowing them to cast more spells using the _Spirit of Animation_ and _Spirit of Transmutation_ Kits.
 
--   **Cunning** to add Stealth and Prep to the Alchemist's repertoire, expanding their burst potential even further.
+- **Cunning** to add Stealth and Prep to the Alchemist's repertoire, expanding their burst potential even further.

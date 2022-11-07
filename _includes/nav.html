@@ -31,95 +31,95 @@ string_ordered_groups | sort:"name" -%} {%- endif -%} {%- assign groups_list =
 sorted_number_ordered_groups | concat: sorted_string_ordered_groups -%}
 
 <ul class="nav-list">
-    {%- for node_group in groups_list -%} {%- for node in node_group.items -%}
-    {%- if node.parent == nil -%} {%- unless node.nav_exclude -%}
-    <li
-        class="nav-list-item{% if page.collection == include.key and page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}"
+  {%- for node_group in groups_list -%} {%- for node in node_group.items -%} {%-
+  if node.parent == nil -%} {%- unless node.nav_exclude -%}
+  <li
+    class="nav-list-item{% if page.collection == include.key and page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}"
+  >
+    {%- if node.has_children -%}
+    <a
+      href="#"
+      class="nav-list-expander"
+      aria-label="toggle links in {{ node.title }} category"
     >
-        {%- if node.has_children -%}
+      <svg viewBox="0 0 24 24">
+        <use xlink:href="#svg-arrow-right"></use>
+      </svg>
+    </a>
+    {%- endif -%}
+    <a
+      href="{{ node.url | relative_url }}"
+      class="nav-list-link{% if page.url == node.url %} active{% endif %}"
+      >{{ node.title }}</a
+    >
+    {%- if node.has_children -%} {%- assign children_list = "" | split: "" -%}
+    {%- for parent_group in groups_list -%} {%- assign children_list =
+    children_list | concat: parent_group.items | where: "parent", node.title |
+    where_exp:"item", "item.grand_parent == nil" -%} {%- endfor -%} {%- if
+    node.child_nav_order == 'desc' -%} {%- assign children_list = children_list
+    | reverse -%} {%- endif -%}
+    <ul class="nav-list">
+      {%- for child in children_list -%} {%- unless child.nav_exclude -%}
+      <li
+        class="nav-list-item {% if page.url == child.url or page.parent == child.title %} active{% endif %}"
+      >
+        {%- if child.has_children -%}
         <a
-            href="#"
-            class="nav-list-expander"
-            aria-label="toggle links in {{ node.title }} category"
+          href="#"
+          class="nav-list-expander"
+          aria-label="toggle links in {{ child.title }} category"
         >
-            <svg viewBox="0 0 24 24">
-                <use xlink:href="#svg-arrow-right"></use>
-            </svg>
+          <svg viewBox="0 0 24 24">
+            <use xlink:href="#svg-arrow-right"></use>
+          </svg>
         </a>
         {%- endif -%}
         <a
-            href="{{ node.url | relative_url }}"
-            class="nav-list-link{% if page.url == node.url %} active{% endif %}"
-            >{{ node.title }}</a
+          href="{{ child.url | relative_url }}"
+          class="nav-list-link{% if page.url == child.url %} active{% endif %}"
+          >{{ child.title }}</a
         >
-        {%- if node.has_children -%} {%- assign children_list = "" | split: ""
-        -%} {%- for parent_group in groups_list -%} {%- assign children_list =
-        children_list | concat: parent_group.items | where: "parent", node.title
-        | where_exp:"item", "item.grand_parent == nil" -%} {%- endfor -%} {%- if
-        node.child_nav_order == 'desc' -%} {%- assign children_list =
-        children_list | reverse -%} {%- endif -%}
+        {%- if child.has_children -%} {%- assign grandchildren_list = "" |
+        split: "" -%} {%- for grandparent_group in groups_list -%} {%- assign
+        grandchildren_list = grandchildren_list | concat:
+        grandparent_group.items | where: "parent", child.title | where:
+        "grand_parent", node.title -%} {%- endfor -%} {%- if
+        node.child_nav_order == 'desc' -%} {%- assign grandchildren_list =
+        grandchildren_list | reverse -%} {%- endif -%}
         <ul class="nav-list">
-            {%- for child in children_list -%} {%- unless child.nav_exclude -%}
-            <li
-                class="nav-list-item {% if page.url == child.url or page.parent == child.title %} active{% endif %}"
+          {%- for grandchild in grandchildren_list -%} {%- unless
+          grandchild.nav_exclude -%}
+          <li
+            class="nav-list-item {% if page.url == grandchild.url %} active{% endif %}"
+          >
+            <a
+              href="{{ grandchild.url | relative_url }}"
+              class="nav-list-link{% if page.url == grandchild.url %} active{% endif %}"
+              >{{ grandchild.title }}</a
             >
-                {%- if child.has_children -%}
-                <a
-                    href="#"
-                    class="nav-list-expander"
-                    aria-label="toggle links in {{ child.title }} category"
-                >
-                    <svg viewBox="0 0 24 24">
-                        <use xlink:href="#svg-arrow-right"></use>
-                    </svg>
-                </a>
-                {%- endif -%}
-                <a
-                    href="{{ child.url | relative_url }}"
-                    class="nav-list-link{% if page.url == child.url %} active{% endif %}"
-                    >{{ child.title }}</a
-                >
-                {%- if child.has_children -%} {%- assign grandchildren_list = ""
-                | split: "" -%} {%- for grandparent_group in groups_list -%} {%-
-                assign grandchildren_list = grandchildren_list | concat:
-                grandparent_group.items | where: "parent", child.title | where:
-                "grand_parent", node.title -%} {%- endfor -%} {%- if
-                node.child_nav_order == 'desc' -%} {%- assign grandchildren_list
-                = grandchildren_list | reverse -%} {%- endif -%}
-                <ul class="nav-list">
-                    {%- for grandchild in grandchildren_list -%} {%- unless
-                    grandchild.nav_exclude -%}
-                    <li
-                        class="nav-list-item {% if page.url == grandchild.url %} active{% endif %}"
-                    >
-                        <a
-                            href="{{ grandchild.url | relative_url }}"
-                            class="nav-list-link{% if page.url == grandchild.url %} active{% endif %}"
-                            >{{ grandchild.title }}</a
-                        >
-                    </li>
-                    {%- endunless -%} {%- endfor -%}
-                </ul>
-                {%- endif -%}
-            </li>
-            {%- endunless -%} {%- endfor -%}
+          </li>
+          {%- endunless -%} {%- endfor -%}
         </ul>
         {%- endif -%}
-    </li>
-    {%- endunless -%} {%- endif -%} {%- endfor -%} {%- endfor -%} {%- assign
-    nav_external_links = site.nav_external_links -%} {%- for node in
-    nav_external_links -%}
-    <li class="nav-list-item external">
-        <a href="{{ node.url | absolute_url }}" class="nav-list-link external">
-            {{ node.title }} {% unless node.hide_icon %}<svg
-                viewBox="0 0 24 24"
-                aria-labelledby="svg-external-link-title"
-            >
-                <use xlink:href="#svg-external-link"></use></svg
-            >{% endunless %}
-        </a>
-    </li>
-    {%- endfor -%}
+      </li>
+      {%- endunless -%} {%- endfor -%}
+    </ul>
+    {%- endif -%}
+  </li>
+  {%- endunless -%} {%- endif -%} {%- endfor -%} {%- endfor -%} {%- assign
+  nav_external_links = site.nav_external_links -%} {%- for node in
+  nav_external_links -%}
+  <li class="nav-list-item external">
+    <a href="{{ node.url | absolute_url }}" class="nav-list-link external">
+      {{ node.title }} {% unless node.hide_icon %}<svg
+        viewBox="0 0 24 24"
+        aria-labelledby="svg-external-link-title"
+      >
+        <use xlink:href="#svg-external-link"></use></svg
+      >{% endunless %}
+    </a>
+  </li>
+  {%- endfor -%}
 </ul>
 
 {%- if page.collection == include.key -%} {%- for node_group in groups_list -%}

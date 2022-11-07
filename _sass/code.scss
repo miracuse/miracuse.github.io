@@ -4,16 +4,16 @@
 // {% raw %}
 
 code {
-    padding: 0.2em 0.15em;
-    font-weight: 400;
-    background-color: $code-background-color;
-    border: $border $border-color;
-    border-radius: $border-radius;
+  padding: 0.2em 0.15em;
+  font-weight: 400;
+  background-color: $code-background-color;
+  border: $border $border-color;
+  border-radius: $border-radius;
 }
 
 // Avoid appearance of dark border around visited code links in Safari
 a:visited code {
-    border-color: $border-color;
+  border-color: $border-color;
 }
 
 // Content structure for highlighted code blocks using fences or Liquid
@@ -49,70 +49,70 @@ a:visited code {
 // ```[LANG]...```
 div.highlighter-rouge,
 div.listingblock > div.content {
-    padding: $sp-3;
-    margin-top: 0;
-    margin-bottom: $sp-3;
-    overflow-x: auto;
-    background-color: $code-background-color;
-    border-radius: $border-radius;
-    box-shadow: none;
-    -webkit-overflow-scrolling: touch;
+  padding: $sp-3;
+  margin-top: 0;
+  margin-bottom: $sp-3;
+  overflow-x: auto;
+  background-color: $code-background-color;
+  border-radius: $border-radius;
+  box-shadow: none;
+  -webkit-overflow-scrolling: touch;
 
-    div.highlight,
-    pre.highlight,
-    code {
-        padding: 0;
-        margin: 0;
-        border: 0;
-    }
+  div.highlight,
+  pre.highlight,
+  code {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
 }
 
 // {% highlight LANG %}...{% endhighlight %},
 // {% highlight LANG linenos %}...{% endhighlight %}:
 figure.highlight {
-    padding: $sp-3;
-    margin-top: 0;
-    margin-bottom: $sp-3;
-    overflow-x: auto;
-    background-color: $code-background-color;
-    border-radius: $border-radius;
-    box-shadow: none;
-    -webkit-overflow-scrolling: touch;
+  padding: $sp-3;
+  margin-top: 0;
+  margin-bottom: $sp-3;
+  overflow-x: auto;
+  background-color: $code-background-color;
+  border-radius: $border-radius;
+  box-shadow: none;
+  -webkit-overflow-scrolling: touch;
 
-    pre,
-    code {
-        padding: 0;
-        margin: 0;
-        border: 0;
-    }
+  pre,
+  code {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
 }
 
 // ```[LANG]...```, kramdown line_numbers = true,
 // {% highlight LANG linenos %}...{% endhighlight %}:
 .highlight .table-wrapper {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+
+  td,
+  pre {
+    @include fs-2;
+
+    min-width: 0;
     padding: 0;
-    margin: 0;
+    background-color: $code-background-color;
     border: 0;
-    box-shadow: none;
+  }
 
-    td,
-    pre {
-        @include fs-2;
+  td.gl {
+    padding-right: $sp-3;
+  }
 
-        min-width: 0;
-        padding: 0;
-        background-color: $code-background-color;
-        border: 0;
-    }
-
-    td.gl {
-        padding-right: $sp-3;
-    }
-
-    pre {
-        margin: 0;
-        line-height: 2;
-    }
+  pre {
+    margin: 0;
+    line-height: 2;
+  }
 }
 
 //
@@ -121,31 +121,31 @@ figure.highlight {
 
 .code-example,
 .listingblock > .title {
-    padding: $sp-3;
-    margin-bottom: $sp-3;
-    overflow: auto;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
+  padding: $sp-3;
+  margin-bottom: $sp-3;
+  overflow: auto;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
 
-    + .highlighter-rouge,
-    + .sectionbody .listingblock,
-    + .content,
-    + figure.highlight {
-        position: relative;
-        margin-top: -$sp-4;
-        border-right: 1px solid $border-color;
-        border-bottom: 1px solid $border-color;
-        border-left: 1px solid $border-color;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
+  + .highlighter-rouge,
+  + .sectionbody .listingblock,
+  + .content,
+  + figure.highlight {
+    position: relative;
+    margin-top: -$sp-4;
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 }
 
 // Mermaid diagram code blocks should be left unstyled.
 code.language-mermaid {
-    padding: 0;
-    background-color: inherit;
-    border: 0;
+  padding: 0;
+  background-color: inherit;
+  border: 0;
 }
 
 // {% endraw %}

@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Subclasses
+title: Specializations
 parent: Soldier
 grand_parent: Classes
 nav_order: 1
 ---
 
-# Subclasses
+# Specializations
 
-**Subclasses** are specializations for each class that determine which [Kits](kits.md) a player can use. New characters start with one subclass, gaining more the longer they adventure. Additional information can be found on the [subclass page](../subclasses.html).
+**Specializations** are specializations for each class that determine which [Kits](kits.md) a player can use. New characters start with one subclass, gaining more the longer they adventure.
 
 ### <span style="color: {{ site.soldier_color }}">Fencer</span>
 
-A Soldier trained in numerous combat techniques. The Fencer's abilities border on the supernatural. They can strike with pinpoint accuracy, create cutting blades of wind, and draw on their own Physical health to fuel powerful strikes.
+A Soldier trained in numerous combat techniques. The Fencer's abilities border on the supernatural. They can create cutting blades of wind, curve bullets around walls, and draw on their own Physical health to fuel techniques.
 
 ### <span style="color: {{ site.soldier_color }}">Knight</span>
 

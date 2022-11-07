@@ -1,9 +1,9 @@
 <table>
-    {% assign row = site.data.Soldier[1] %}
-    <tr>
-        <td>{{ row.Class }}</td>
-        <td>{{ row.Type }}</td>
-        <td><b>{{ row.Kit }}</b></td>
-        <td>{{ row.Description }}</td>
-    </tr>
+  {% assign row = site.data.Soldier[1] %}
+  <tr>
+    <td>{{ row.Class }}: {{ row.Type }}</td>
+    <td>{{ row.Tags }}</td>
+    <td><b>{{ row.Kit }}</b></td>
+    <td>{{ row.Description }}</td>
+  </tr>
 </table>
