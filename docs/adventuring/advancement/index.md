@@ -2,6 +2,8 @@
 layout: default
 title: Advancement
 parent: Adventuring
+has_children: true
+has_toc: false
 nav_order: 7
 ---
 
@@ -26,14 +28,15 @@ Not Yet Implemented
 {: .label .label-red }
 
 | Tier | Number of Specializations | Approx. Number of Skill Points |
-| ---- | -------------------- | ------------------------------ |
-| 1    | 1                    | 10                             |
-| 2    | 2                    | 20                             |
-| 3    | 3                    | 30                             |
+| ---- | ------------------------- | ------------------------------ |
+| 1    | 1                         | 10                             |
+| 2    | 2                         | 20                             |
+| 3    | 3                         | 30                             |
+| ...  | ...                       | ...                            |
 
 A Character's **Tier** represents a larger increase in power. Tier upgrades are generally awarded after Players have completed a significant milestone in-game, such as completing a major arc of a campaign.
 
-Each Tier allows a Player to select an additional specialization from any Class. This gives their Character six new Kits to choose from when [Making Camp](../../adventuring/exploration/index.md). The overall limit over four Kits remains unchanged.
+Each Tier allows a Player to select an additional specialization from any Class. This gives their Character six new Kits to choose from when [Making Camp](../../adventuring/exploration/index.md). The overall limit of equipping four Kits remains unchanged.
 
 ### Example: Tier II Gunslinger
 
@@ -51,4 +54,4 @@ Each Tier allows a Player to select an additional specialization from any Class.
 
 **Description**
 
-A veteran Ranger that has supplemented their abilities with Alchemy. They tend to shoot from the hip rather than taking careful aim, using Agility instead of Perception to fire their guns. Their grenade-based ambushes are deadly.
+A veteran Ranger that has supplemented their abilities with Alchemy. They tend to shoot from the hip rather than taking careful aim, using Agility instead of Perception to fire their guns. Their grenade ambushes are deadly.

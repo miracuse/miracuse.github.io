@@ -1,5 +1,6 @@
 // Imports ////////////////////////////////////////////////////////////////////
 import get_data from "./data.js";
+import get_class_mapping from "./class_mapping.js";
 
 // Globals ////////////////////////////////////////////////////////////////////
 // A list of game-specific skills that a character can put points into
@@ -57,6 +58,14 @@ function fetchKitDescription(kit) {
   return kit_description_data;
 }
 
+// Fetch a kit's tags given a kit name
+function fetchKitTags(kit) {
+  const kit_tag_data = DATA.filter((x) => x.Kit === kit).map(
+    (x) => x.Tags
+  );
+  return kit_tag_data;
+}
+
 // Components /////////////////////////////////////////////////////////////////
 // Specialization selector
 class SubclassHolder extends React.Component {
@@ -104,6 +113,37 @@ class ResourceTrack extends React.Component {
     ));
 
     return <div className={this.props.prefix + "_track"}>{box_holders}</div>;
+  }
+}
+
+// Number inputs for skills
+class SkillHolder extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(skill, event) {
+    this.props.onChange(skill, event);
+  }
+
+  render() {
+    return(
+      <div
+        key={this.props.skill.toLowerCase() + "_value"}
+        id={this.props.skill.toLowerCase() + "_value"}
+        className={this.props.skill.toLowerCase() + "_value"}
+      >
+        <input
+          name={this.props.skill.toLowerCase() + "_input_name"}
+          type="number"
+          value={this.props.skillValue}
+          min="0"
+          max="4"
+          onChange={(e) => this.handleChange(this.props.skill, e)}
+        />
+      </div>
+    )
   }
 }
 
@@ -164,11 +204,17 @@ class KitDescriptionHolder extends React.Component {
 
   render() {
     const kit_description = fetchKitDescription(this.props.kit);
+    const kit_tags = fetchKitTags(this.props.kit);
     return (
       <div
         id={"kit_text_0" + this.props.index}
         className={"kit_text_0" + this.props.index}
       >
+        <p
+        id={"kit_tags_0" + this.props.index}
+        className={"kit_tags"}  >
+          Tags: {kit_tags}
+        </p>
         <p
           id={"kit_description_0" + this.props.index}
           className="kit_description"
@@ -211,7 +257,14 @@ class CharacterSheet extends React.Component {
 
   componentDidMount() {
     // Initialize the page
+    // Set the class
     this.setState({ Class: "Alchemist" });
+
+    // Set the default skills for the class
+    var class_skills = get_class_mapping("Alchemist");
+    this.setState(class_skills);
+
+    // Cascade the change, setting the specialization to the top-most value
     var specialization_data = fetchSpecializations("Alchemist");
     this.handleSpecializationChange(0, specialization_data[0]);
   }
@@ -219,6 +272,10 @@ class CharacterSheet extends React.Component {
   handleClassChange(event) {
     // Set the class
     this.setState({ Class: event.target.value });
+
+    // Set the default skills for the class
+    var class_skills = get_class_mapping(event.target.value);
+    this.setState(class_skills);
 
     // Cascade the change, setting the specialization to the top-most value
     var specialization_data = fetchSpecializations(event.target.value);
@@ -263,19 +320,11 @@ class CharacterSheet extends React.Component {
   render() {
     // Generate the skills
     const skill_holders = SKILLS.map((skill) => (
-      <div
-        key={skill.toLowerCase() + "_value"}
-        id={skill.toLowerCase() + "_value"}
-        className={skill.toLowerCase() + "_value"}
-      >
-        <input
-          type="number"
-          defaultValue="0"
-          min="0"
-          max="4"
-          onChange={(e) => this.handleSkillChange(skill, e)}
-        />
-      </div>
+      <SkillHolder 
+        skill={skill}
+        skillValue={this.state[skill]}
+        onChange={this.handleSkillChange}
+      />
     ));
 
     const skill_text_holders = SKILLS.map((skill) => (
@@ -297,14 +346,6 @@ class CharacterSheet extends React.Component {
         onChange={this.handleKitChange}
       />
     ));
-
-    // const kit_description_holders = arange(KIT_COUNT).map((counter) => (
-    //   <KitDescriptionHolder
-    //     key={counter}
-    //     index={counter}
-    //     kit={this.state.Kits[counter-1]}
-    //     />
-    // ));
 
     // Put everything together
     return (
