@@ -84,9 +84,10 @@
     font-size: $font-size-4;
   }
 
+  // Mobile Layout ////////////////////////////////////////////////////////////
   // Grid: Character Info ///////////////////////////////////////////////////
   .character_info_header {
-    grid-column: 1;
+    grid-column: 1 / -1;
     grid-row: 1;
     font-weight: bold;
   }
@@ -113,233 +114,495 @@
 
   // Grid: Subclasses ///////////////////////////////////////////////////////
   .subclass_header {
-    grid-column: 3 / -1;
-    grid-row: 1;
-    font-weight: bold;
-  }
-
-  .character_subclass_01 {
-    grid-column: 3;
-    grid-row: 2;
-  }
-
-  .character_subclass_02 {
-    grid-column: 4;
-    grid-row: 2;
-  }
-
-  .character_subclass_03 {
-    grid-column: 3;
-    grid-row: 3;
-  }
-
-  .character_subclass_04 {
-    grid-column: 4;
-    grid-row: 3;
-  }
-
-  // Grid: Health ///////////////////////////////////////////////////////////
-  .health_header {
     grid-column: 1 / -1;
     grid-row: 4;
     font-weight: bold;
   }
 
-  .physical_health_text {
+  .character_subclass_01 {
     grid-column: 1;
     grid-row: 5;
   }
 
-  .physical_health_track {
+  .character_subclass_02 {
     grid-column: 2;
     grid-row: 5;
   }
 
-  .mental_health_text {
-    grid-column: 3;
-    grid-row: 5;
-  }
-
-  .mental_health_track {
-    grid-column: 4;
-    grid-row: 5;
-  }
-
-  // Grid: Resources ////////////////////////////////////////////////////////
-  .resources_header {
+  .character_subclass_03 {
     grid-column: 1;
     grid-row: 6;
   }
 
+  .character_subclass_04 {
+    grid-column: 2;
+    grid-row: 6;
+  }
+
+  // Grid: Health ///////////////////////////////////////////////////////////
+  .health_header {
+    grid-column: 1 / -1;
+    grid-row: 7;
+    font-weight: bold;
+  }
+
+  .physical_health_text {
+    grid-column: 1;
+    grid-row: 8;
+  }
+
+  .physical_health_track {
+    grid-column: 2;
+    grid-row: 8;
+  }
+
+  .mental_health_text {
+    grid-column: 1;
+    grid-row: 9;
+  }
+
+  .mental_health_track {
+    grid-column: 2;
+    grid-row: 9;
+  }
+
+  // Grid: Resources ////////////////////////////////////////////////////////
+  .resources_header {
+    grid-column: 1 / -1;
+    grid-row: 10;
+  }
+
   .charge_point_text {
     grid-column: 1;
-    grid-row: 7;
+    grid-row: 11;
   }
 
   .charge_point_track {
     grid-column: 2;
-    grid-row: 7;
+    grid-row: 11;
   }
 
   .mana_point_text {
-    grid-column: 3;
-    grid-row: 7;
+    grid-column: 1;
+    grid-row: 12;
   }
 
   .mana_point_track {
-    grid-column: 4;
-    grid-row: 7;
+    grid-column: 2;
+    grid-row: 12;
   }
 
   .fortune_point_text {
     grid-column: 1;
-    grid-row: 8;
+    grid-row: 13;
   }
 
   .fortune_point_track {
     grid-column: 2;
-    grid-row: 8;
+    grid-row: 13;
   }
 
   .prep_point_text {
-    grid-column: 3;
-    grid-row: 8;
+    grid-column: 1;
+    grid-row: 14;
   }
 
   .prep_point_track {
-    grid-column: 4;
-    grid-row: 8;
+    grid-column: 2;
+    grid-row: 14;
   }
 
   // Grid: Skills ///////////////////////////////////////////////////////////
   .skills_header {
     grid-column: 1 / 2;
-    grid-row: 9;
+    grid-row: 15;
   }
 
   .perception_text {
     grid-column: 1;
-    grid-row: 10;
+    grid-row: 16;
   }
 
   .perception_value {
     grid-column: 2;
-    grid-row: 10;
+    grid-row: 16;
   }
 
   .knowledge_text {
     grid-column: 1;
-    grid-row: 11;
+    grid-row: 17;
   }
 
   .knowledge_value {
     grid-column: 2;
-    grid-row: 11;
+    grid-row: 17;
   }
 
   .strength_text {
     grid-column: 1;
-    grid-row: 12;
+    grid-row: 18;
   }
 
   .strength_value {
     grid-column: 2;
-    grid-row: 12;
+    grid-row: 18;
   }
 
   .bravery_text {
     grid-column: 1;
-    grid-row: 13;
+    grid-row: 19;
   }
 
   .bravery_value {
     grid-column: 2;
-    grid-row: 13;
+    grid-row: 19;
   }
 
   .magic_text {
-    grid-column: 3;
-    grid-row: 10;
+    grid-column: 1;
+    grid-row: 20;
   }
 
   .magic_value {
-    grid-column: 4;
-    grid-row: 10;
+    grid-column: 2;
+    grid-row: 20;
   }
 
   .presence_text {
-    grid-column: 3;
-    grid-row: 11;
+    grid-column: 1;
+    grid-row: 21;
   }
 
   .presence_value {
-    grid-column: 4;
-    grid-row: 11;
+    grid-column: 2;
+    grid-row: 21;
   }
 
   .agility_text {
-    grid-column: 3;
-    grid-row: 12;
+    grid-column: 1;
+    grid-row: 22;
   }
 
   .agility_value {
-    grid-column: 4;
-    grid-row: 12;
+    grid-column: 2;
+    grid-row: 22;
   }
 
   .cunning_text {
-    grid-column: 3;
-    grid-row: 13;
+    grid-column: 1;
+    grid-row: 23;
   }
 
   .cunning_value {
-    grid-column: 4;
-    grid-row: 13;
+    grid-column: 2;
+    grid-row: 23;
   }
 
   // Grid: Kits /////////////////////////////////////////////////////////////
   .kit_header {
-    grid-column: 1 / 2;
-    grid-row: 14;
+    grid-column: 1 / -1;
+    grid-row: 24;
   }
 
   .kit_chooser_01 {
-    grid-column: 1;
-    grid-row: 15;
+    grid-column: 1 / -1;
+    grid-row: 25;
   }
 
   .kit_text_01 {
-    grid-column: 2 / -1;
-    grid-row: 15;
+    grid-column: 1 / -1;
+    grid-row: 26;
   }
 
   .kit_chooser_02 {
-    grid-column: 1;
-    grid-row: 16;
+    grid-column: 1 / -1;
+    grid-row: 27;
   }
 
   .kit_text_02 {
-    grid-column: 2 / -1;
-    grid-row: 16;
+    grid-column: 1 / -1;
+    grid-row: 28;
   }
 
   .kit_chooser_03 {
-    grid-column: 1;
-    grid-row: 17;
+    grid-column: 1 / -1;
+    grid-row: 29;
   }
 
   .kit_text_03 {
-    grid-column: 2 / -1;
-    grid-row: 17;
+    grid-column: 1 / -1;
+    grid-row: 30;
   }
 
   .kit_chooser_04 {
-    grid-column: 1;
-    grid-row: 18;
+    grid-column: 1 / -1;
+    grid-row: 31;
   }
 
   .kit_text_04 {
-    grid-column: 2 / -1;
-    grid-row: 18;
+    grid-column: 1 / -1;
+    grid-row: 32;
+  }
+
+  // Desktop Layout /////////////////////////////////////////////////////////
+  @include mq(md) {
+    // Grid: Character Info ///////////////////////////////////////////////////
+    .character_info_header {
+      grid-column: 1;
+      grid-row: 1;
+      font-weight: bold;
+    }
+
+    .character_class_text {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .character_class {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .character_tier_text {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .character_tier {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    // Grid: Subclasses ///////////////////////////////////////////////////////
+    .subclass_header {
+      grid-column: 3 / -1;
+      grid-row: 1;
+      font-weight: bold;
+    }
+
+    .character_subclass_01 {
+      grid-column: 3;
+      grid-row: 2;
+    }
+
+    .character_subclass_02 {
+      grid-column: 4;
+      grid-row: 2;
+    }
+
+    .character_subclass_03 {
+      grid-column: 3;
+      grid-row: 3;
+    }
+
+    .character_subclass_04 {
+      grid-column: 4;
+      grid-row: 3;
+    }
+
+    // Grid: Health ///////////////////////////////////////////////////////////
+    .health_header {
+      grid-column: 1 / -1;
+      grid-row: 4;
+      font-weight: bold;
+    }
+
+    .physical_health_text {
+      grid-column: 1;
+      grid-row: 5;
+    }
+
+    .physical_health_track {
+      grid-column: 2;
+      grid-row: 5;
+    }
+
+    .mental_health_text {
+      grid-column: 3;
+      grid-row: 5;
+    }
+
+    .mental_health_track {
+      grid-column: 4;
+      grid-row: 5;
+    }
+
+    // Grid: Resources ////////////////////////////////////////////////////////
+    .resources_header {
+      grid-column: 1;
+      grid-row: 6;
+    }
+
+    .charge_point_text {
+      grid-column: 1;
+      grid-row: 7;
+    }
+
+    .charge_point_track {
+      grid-column: 2;
+      grid-row: 7;
+    }
+
+    .mana_point_text {
+      grid-column: 3;
+      grid-row: 7;
+    }
+
+    .mana_point_track {
+      grid-column: 4;
+      grid-row: 7;
+    }
+
+    .fortune_point_text {
+      grid-column: 1;
+      grid-row: 8;
+    }
+
+    .fortune_point_track {
+      grid-column: 2;
+      grid-row: 8;
+    }
+
+    .prep_point_text {
+      grid-column: 3;
+      grid-row: 8;
+    }
+
+    .prep_point_track {
+      grid-column: 4;
+      grid-row: 8;
+    }
+
+    // Grid: Skills ///////////////////////////////////////////////////////////
+    .skills_header {
+      grid-column: 1 / 2;
+      grid-row: 9;
+    }
+
+    .perception_text {
+      grid-column: 1;
+      grid-row: 10;
+    }
+
+    .perception_value {
+      grid-column: 2;
+      grid-row: 10;
+    }
+
+    .knowledge_text {
+      grid-column: 1;
+      grid-row: 11;
+    }
+
+    .knowledge_value {
+      grid-column: 2;
+      grid-row: 11;
+    }
+
+    .strength_text {
+      grid-column: 1;
+      grid-row: 12;
+    }
+
+    .strength_value {
+      grid-column: 2;
+      grid-row: 12;
+    }
+
+    .bravery_text {
+      grid-column: 1;
+      grid-row: 13;
+    }
+
+    .bravery_value {
+      grid-column: 2;
+      grid-row: 13;
+    }
+
+    .magic_text {
+      grid-column: 3;
+      grid-row: 10;
+    }
+
+    .magic_value {
+      grid-column: 4;
+      grid-row: 10;
+    }
+
+    .presence_text {
+      grid-column: 3;
+      grid-row: 11;
+    }
+
+    .presence_value {
+      grid-column: 4;
+      grid-row: 11;
+    }
+
+    .agility_text {
+      grid-column: 3;
+      grid-row: 12;
+    }
+
+    .agility_value {
+      grid-column: 4;
+      grid-row: 12;
+    }
+
+    .cunning_text {
+      grid-column: 3;
+      grid-row: 13;
+    }
+
+    .cunning_value {
+      grid-column: 4;
+      grid-row: 13;
+    }
+
+    // Grid: Kits /////////////////////////////////////////////////////////////
+    .kit_header {
+      grid-column: 1 / 2;
+      grid-row: 14;
+    }
+
+    .kit_chooser_01 {
+      grid-column: 1;
+      grid-row: 15;
+    }
+
+    .kit_text_01 {
+      grid-column: 2 / -1;
+      grid-row: 15;
+    }
+
+    .kit_chooser_02 {
+      grid-column: 1;
+      grid-row: 16;
+    }
+
+    .kit_text_02 {
+      grid-column: 2 / -1;
+      grid-row: 16;
+    }
+
+    .kit_chooser_03 {
+      grid-column: 1;
+      grid-row: 17;
+    }
+
+    .kit_text_03 {
+      grid-column: 2 / -1;
+      grid-row: 17;
+    }
+
+    .kit_chooser_04 {
+      grid-column: 1;
+      grid-row: 18;
+    }
+
+    .kit_text_04 {
+      grid-column: 2 / -1;
+      grid-row: 18;
+    }
   }
 }
