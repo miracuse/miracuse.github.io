@@ -15,34 +15,12 @@ nav_order: 2
 
 Each Kit has one or more **Tags** that describe the type of ability it provides.
 
-- **Technique**: Kits that add additional effects to attacks.
+- **Technique**: Kits that add additional effects to attacks, such as knocking enemies over or hitting multiple enemies at once.
 
-- **Spirit**: Kits that let Players perform miracles using the **<span style="color: {{ site.mage_color }}">Magic</span>** Skill.
+- **Spirit**: Kits that let Players perform magic using the **<span style="color: {{ site.mage_color }}">Magic</span>** Skill.
 
-- **Alchemy**: Kits that provide abilities related to alchemy.
+- **Alchemy**: Kits that provide abilities related to alchemy, such as poisons and items.
 
 - **Reaction**: Kits that allow Players to act outside their turn in combat if certain conditions are met.
 
-- **Resource**: Kits that provide additional health or resources like Fortune Points.
-
-### Amplification and Combination
-
-| Tag       | Price                                        |
-| --------- | -------------------------------------------- |
-| Technique | Fortune Point, Prep Point, Mental Health Box |
-| Spirit    | Mana Point, Prep Point, Mental Health Box    |
-| Alchemy   | Charge Point, Prep Point, Mental Health Box  |
-
-Kits with the _Technique_, _Spirit_, or _Alchemy_ tags can be briefly powered up or combined by expending the right [Resource](resources.md). **Amplified** Kits produce much larger effects, while **Combined** Kits create more complex effects.
-
-- **High Impact** (Smite Amplified): Send an enemy flying through the air with an especially forceful swing.
-
-- **Ruin** (Cleave + Sunder): Make a massive attack that hits a wide area of enemies and objects, causing extensive collateral damage.
-
-- **Fireball** (Spirit of Flame Amplified): Create an explosion of flame in a wide area.
-
-- **Sinkhole** (Spirit of Water + Earth): Turn a large area of ground into quicksand.
-
-- **Open Path** (Transmute Shape Amplified): Instantly reshape a wall, creating a large opening to walk through.
-
-- **Hazard Round** (Trenchsteel + Friction Charge): Shoot a bullet that bursts into numerous greased ball bearings, making an area very difficult to traverse.
+- **Resource**: Kits that provide additional health or points.

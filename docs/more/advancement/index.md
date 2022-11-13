@@ -1,13 +1,16 @@
 ---
 layout: default
 title: Advancement
-parent: Adventuring
-has_children: true
+parent: More
+has_children: false
 has_toc: false
-nav_order: 7
+nav_order: 1
 ---
 
 # Advancement
+
+Not Yet Implemented
+{: .label .label-red }
 
 Characters will gradually become more skilled as Players use them over several sessions. This is reflected in their **Skill Points** and **Tier**.
 
@@ -23,9 +26,6 @@ Characters will gradually become more skilled as Players use them over several s
 At the end of every session, Players are awarded a **Skill Point**. These can be used to upgrade a Character's Skills. Higher level Skills take more points to upgrade.
 
 ### Tiers
-
-Not Yet Implemented
-{: .label .label-red }
 
 | Tier | Number of Specializations | Approx. Number of Skill Points |
 | ---- | ------------------------- | ------------------------------ |

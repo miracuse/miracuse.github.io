@@ -29,16 +29,16 @@ nav_order: 6
 
 ### Persuasion
 
-| Skill     | Good For...                                               |
-| --------- | --------------------------------------------------------- |
-| Bravery   | Inspiring, intimidating, provoking                        |
-| Knowledge | Rhetorical discussion, legal disputes, educated audiences |
-| Magic     | Petitioning spirits, communing with forces of nature      |
-| Cunning   | Bluffing, fast-talk, animal handling                      |
+| Skill     | Good For...                                                     |
+| --------- | --------------------------------------------------------------- |
+| Bravery   | Inspiring, intimidating, provoking                              |
+| Knowledge | Rhetorical discussion, legal disputes, educated audiences       |
+| Presence  | Petitioning spirits, hypnotizing the weak-willed, shock and awe |
+| Cunning   | Bluffing, fast-talk, animal handling                            |
 
 Each of the classes has their own approach to persuasion. Some approaches work better or worse depending on the audience. A **<span style="color: {{ site.soldier_color }}">Soldier</span>** might threaten a bandit king into submission, but they probably won't succeed in intimidating an actual king.
 
-> **Note**: Players shouldn't persuade other Players using Skill rolls, unless both want to.
+> **Note**: Players normally shouldn't persuade other Players using Skill rolls, unless the two both decide to roleplay that way.
 
 ### Sense Motive
 

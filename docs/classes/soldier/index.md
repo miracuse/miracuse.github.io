@@ -17,36 +17,10 @@ The Soldier is a warrior without peer. They may be knights, bandits, infantrymen
 
 ### Techniques
 
-{% include single_soldier_kit.html %}
+Kits with the _Technique_ tag add additional effects to attacks and provide other benefits.
 
-Kits with the _Technique_ tag add additional effects to attacks.
+- **Cleave** allows attacks to hit multiple enemies and objects in an area of effect. It also gives Advantage when lifting heavy objects or performing similar feats of **<span style="color: {{ site.soldier_color }}">Strength</span>**.
 
-- _Cleave_ allows attacks to hit multiple enemies and objects in an area of effect.
-- _Smite_ moves targets on impact, knocking them over or staggering them with force.
-- _Wind Strike_ extends the range of attacks by creating blades or gusts of wind around weapons.
+- **Windcutter** extends the range of attacks by creating blades of wind. It also gives Advantage when defending against projectiles.
 
-### Fortune
-
-Soldiers have a number of Fortune Points equal to two times their **<span style="color: {{ site.soldier_color }}">Bravery</span>**. Fortune Points can be used to:
-
-- **Reroll** any roll the Soldier makes.
-
-- **Escape Harm** by negating or greatly reducing damage you would otherwise take.
-
-- Use _Spirit_ Kits with **<span style="color: {{ site.soldier_color }}">Strength</span>** or **<span style="color: {{ site.soldier_color }}">Bravery</span>** instead of **<span style="color: {{ site.mage_color }}">Magic</span>**.
-
-- **Empower** Kits with the _Technique_ tag.
-
-{% include fortune_uses.html %}
-
-### Empower Techniques
-
-Soldiers can perform dazzling feats of superhuman skill by amplifying or combining _Technique_ Kits. Doing so costs a Fortune Point.
-
-| Technique          | Description                                                                                             |
-| ------------------ | ------------------------------------------------------------------------------------------------------- |
-| Cleave (Amplified) | Make an attack that effects a large area, hitting many enemies and objects.                             |
-| Cleave + Sunder    | Make an area-of-effect attack that deals additional Physical damage while destroying armor and weapons. |
-| Cleave + Smite     | Make an area-of-effect attack that sends enemies flying.                                                |
-
-Additional information about Techniques can be found on [this page](../../more_resources/techniques/index.md).
+- **Harass** inflicts Physical and Mental damage on successful attacks. It also gives Advantage when using **<span style="color: {{ site.soldier_color }}">Bravery</span>** to provoke others.

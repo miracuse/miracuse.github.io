@@ -11,18 +11,18 @@ export default function get_data() {
     {
       Class: "Alchemist",
       Type: "Enchanter",
-      Kit: "Golem",
+      Kit: "Flying Carpet",
       Tags: "Alchemy",
       Description:
-        "You have a golem made from clay, capable of fighting and lifting heavy objects. The golem has a Strength equal to half your Knowledge rounded down. You can expend a Charge Point to create an additional golem.",
+        "You have a flying carpet, capable of carrying you into the air for short periods of time. When not in use the carpet folds itself into a scarf, cloak, or other wearable object. You can expend a Charge Point to extend the carpet\u2019s flight or to allow it to carry multiple people for a time.",
     },
     {
       Class: "Alchemist",
       Type: "Enchanter",
-      Kit: "Potency",
-      Tags: "Resource",
+      Kit: "Golem",
+      Tags: "Alchemy",
       Description:
-        "Gain an additional two Charge Points. When you Produce a Potion, the potion restores an additional box of Physical damage.",
+        "You have a golem made from clay, capable of fighting and lifting heavy objects. The golem has a Strength equal to half your Knowledge rounded down. You can expend a Charge Point to create additional golems.",
     },
     {
       Class: "Alchemist",
@@ -38,7 +38,7 @@ export default function get_data() {
       Kit: "Shikigami",
       Tags: "Alchemy",
       Description:
-        "You have a servant made from enchanted paper, capable of flying, spying, and carrying messages. The shikigami has a Cunning equal to half your Knowledge rounded down. You can expend a Charge Point to create an additional servant.",
+        "You have a servant made from enchanted paper, capable of flying, scouting, and carrying messages. The shikigami has a Cunning equal to half your Knowledge rounded down. You can expend a Charge Point to create additional servants.",
     },
     {
       Class: "Alchemist",
@@ -46,7 +46,7 @@ export default function get_data() {
       Kit: "Spirit of Animation",
       Tags: "Spirit",
       Description:
-        "Awaken inanimate objects, compel them to move and act on your orders.",
+        "Awaken inanimate objects. Can be used to imbue lightweight objects with motion and purpose, such as compelling a broom to sweep by itself.",
     },
     {
       Class: "Alchemist",
@@ -99,50 +99,50 @@ export default function get_data() {
     {
       Class: "Alchemist",
       Type: "Transmuter",
-      Kit: "Transmute Division",
-      Tags: "Alchemy",
+      Kit: "Efficient",
+      Tags: "Resource",
       Description:
-        "Separate objects. Can be used to physically sever two objects from one another, or to distill an object into its base elements. The more complex the intended result is, the more difficult the change. Requires physical contact.",
+        "Gain an additional two Charge Points. When you expend a Mental Box to recover a Charge Point, you recover two instead of one.",
     },
     {
       Class: "Alchemist",
       Type: "Transmuter",
-      Kit: "Transmute Self",
-      Tags: "Alchemy, Resource",
+      Kit: "Sigil of Conversion",
+      Tags: "Alchemy",
       Description:
-        "Expend a Mental box to recover a Physical box or vice versa. Can only be applied to yourself. When done in combat, requires an action.",
+        "A formula circle that can be drawn on objects. When completed, converts one material into another. The greater the difference from the original, the more difficult it is to perform the change. Can be drawn and completed instantly by expending a Charge Point.",
     },
     {
       Class: "Alchemist",
       Type: "Transmuter",
-      Kit: "Transmute Shape",
+      Kit: "Sigil of Division",
       Tags: "Alchemy",
       Description:
-        "Reshape an object, altering its form by expanding or contracting its mass. Requires physical contact.",
+        "A formula circle that can be drawn on objects. When completed, breaks apart two objects, or reduces one object into its constituent elements. Can be drawn and completed instantly by expending a Charge Point.",
     },
     {
       Class: "Alchemist",
       Type: "Transmuter",
-      Kit: "Transmute Strength",
+      Kit: "Sigil of Shape",
       Tags: "Alchemy",
       Description:
-        "Strengthen an object, making it harder and more durable. Or weaken an object, making it flimsy and more brittle. Requires physical contact.",
+        "A formula circle that can be drawn on objects. When completed, reshapes an object, altering its form by expanding or contracting its mass. Can be drawn and completed instantly by expending a Charge Point.",
     },
     {
       Class: "Alchemist",
       Type: "Transmuter",
-      Kit: "Transmute Substance",
+      Kit: "Sigil of Strength",
       Tags: "Alchemy",
       Description:
-        "Convert one material into another. The greater the difference from the original, the more difficult the change. Requires physical contact.",
+        "A formula circle that can be drawn on objects. When completed, strengthens an object, making it harder and more durable. Can also be used to weaken an object, making it flimsy and brittle. Can be drawn and completed instantly by expending a Charge Point.",
     },
     {
       Class: "Alchemist",
       Type: "Transmuter",
-      Kit: "Transmute Synthesis",
+      Kit: "Sigil of Synthesis",
       Tags: "Alchemy",
       Description:
-        "Combine objects. Can be used to physically weld two objects to one another, or to mix them into one another as a means of creating a new object. The more complex the intended result is, the more difficult the change. Requires physical contact.",
+        "A formula circle that can be drawn on objects. When completed, welds two objects together. Can be drawn and completed instantly by expending a Charge Point.",
     },
     {
       Class: "Mage",
@@ -150,7 +150,7 @@ export default function get_data() {
       Kit: "Spirit of Abjuration",
       Tags: "Spirit, Reaction",
       Description:
-        "Create barriers, dispel magic, and repel otherworldly influences. You can expend a Mana Point to deflect an attack aimed at you.",
+        "Repel and dispel. Can be used to create barriers, destroy magic, and scare away otherworldly influences. You can expend a Mana Point to deflect an attack aimed at you.",
     },
     {
       Class: "Mage",
@@ -158,7 +158,15 @@ export default function get_data() {
       Kit: "Spirit of Divination",
       Tags: "Spirit",
       Description:
-        "Find people, places, things, and hidden knowledge through divination.",
+        "Find and seek. Can be used to divine the location of people, places, and things through magical means.",
+    },
+    {
+      Class: "Mage",
+      Type: "Priest",
+      Kit: "Spirit of Dreaming",
+      Tags: "Spirit",
+      Description:
+        "Meddle with the boundary between conscious and unconscious. Can be used to induce sleep, daze enemies, and put others into a trance. You have Advantage when using Presence to hypnotize the weak-willed.",
     },
     {
       Class: "Mage",
@@ -166,7 +174,7 @@ export default function get_data() {
       Kit: "Spirit of Language",
       Tags: "Spirit",
       Description:
-        "Communicate with all creatures, use charm magic, and compel others to your will.",
+        "Speak and undestand all creatures. Can be used to communicate with animals, use charm magic, and compel others to your will. You have Advantage when using Presence to awe others.",
     },
     {
       Class: "Mage",
@@ -174,7 +182,7 @@ export default function get_data() {
       Kit: "Spirit of Necromancy",
       Tags: "Spirit",
       Description:
-        "Raise the dead, curse the living, and meddle with the boundary between life and death.",
+        "Meddle with the boundary between life and death. Can be used to puppet corpses to do your bidding, summon ghosts, and stave off death.",
     },
     {
       Class: "Mage",
@@ -182,14 +190,7 @@ export default function get_data() {
       Kit: "Spirit of Restoration",
       Tags: "Spirit",
       Description:
-        "Heal Physical wounds, restore broken objects, and treat natural afflictions.",
-    },
-    {
-      Class: "Mage",
-      Type: "Priest",
-      Kit: "Spirit of Summoning",
-      Tags: "Spirit",
-      Description: "Pull otherworldly influences into the world.",
+        "Restore what is broken. Can be used to heal Physical damage, repair broken objects, and treat natural afflictions.",
     },
     {
       Class: "Mage",
@@ -197,7 +198,7 @@ export default function get_data() {
       Kit: "Spirit of Aether",
       Tags: "Spirit",
       Description:
-        "Manipulate electricity, create lightning, and stun enemies. Represents emptiness and void.",
+        "Manipulate electricity. Can be used to shoot lightning from your hands, induce pain without damage, and x. Represents emptiness and void.",
     },
     {
       Class: "Mage",
@@ -205,7 +206,7 @@ export default function get_data() {
       Kit: "Spirit of Air",
       Tags: "Spirit",
       Description:
-        "Manipulate air, create gusts of wind, and fall gently. Represents movement and freedom.",
+        "Manipulate air. Can be used to create ferocious whirlwinds, fall gently from great heights, and rebuff projectiles. Represents movement and freedom.",
     },
     {
       Class: "Mage",
@@ -213,7 +214,7 @@ export default function get_data() {
       Kit: "Spirit of Earth",
       Tags: "Spirit",
       Description:
-        "Manipulate earth, reshape terrain, and mold stone. Represents solidity and strength.",
+        "Manipulate earth. Can be used to throw jagged spikes from the ground, reshape stone, and x. Represents solidity and strength.",
     },
     {
       Class: "Mage",
@@ -221,7 +222,7 @@ export default function get_data() {
       Kit: "Spirit of Flame",
       Tags: "Spirit",
       Description:
-        "Manipulate fire, conjure flames, and blast enemies. Represents cleansing and destruction.",
+        "Manipulate fire. Can be used to conjure flames from nothing, create floating torches, and x. Represents cleansing and destruction.",
     },
     {
       Class: "Mage",
@@ -229,7 +230,7 @@ export default function get_data() {
       Kit: "Spirit of Metal",
       Tags: "Spirit",
       Description:
-        "Manipulate metal, magnetize metallic objects, and sharpen or dull blades. Represents clarity and reason.",
+        "Manipulate metal. Can be used to magnetize metallic objects, binding them together or pushing them apart. Represents clarity and reason.",
     },
     {
       Class: "Mage",
@@ -237,7 +238,7 @@ export default function get_data() {
       Kit: "Spirit of Water",
       Tags: "Spirit",
       Description:
-        "Manipulate water, conjure fog, and freeze liquids. Represents tranquility and adaptability.",
+        "Manipulate water. Can be used to create spears of ice, conjure fog, and purify liquids. Represents tranquility and adaptability.",
     },
     {
       Class: "Mage",
@@ -245,7 +246,7 @@ export default function get_data() {
       Kit: "Manafont",
       Tags: "Resource",
       Description:
-        "Gain an additional two Mana Points. When you Sacrifice a Mental health box, you gain two Mana Points instead of one.",
+        "Gain an additional two Mana Points. When you expend a Mental health box to recover a Mana Point, you gain two instead of one.",
     },
     {
       Class: "Mage",
@@ -253,7 +254,7 @@ export default function get_data() {
       Kit: "Spirit of Entropy",
       Tags: "Spirit",
       Description:
-        "Manipulate decay, accelerating or decelerating processes like rotting and rusting.",
+        "Manipulate decay. Can be used to accelerate or decelerate processes like rotting and rusting.",
     },
     {
       Class: "Mage",
@@ -261,28 +262,31 @@ export default function get_data() {
       Kit: "Spirit of Force",
       Tags: "Spirit, Reaction",
       Description:
-        "Perform limited telekinesis, levitating objects and lobbing them through the air. You can expend a Mana Point to deflect an attack aimed at you.",
+        "Perform limited telekinesis. Can be used to levitate nearby objects and launch them through the air. You can expend a Mana Point to deflect an attack aimed at you.",
     },
     {
       Class: "Mage",
       Type: "Wizard",
       Kit: "Spirit of Gravity",
       Tags: "Spirit",
-      Description: "Manipulate gravity, add or reduce weight.",
+      Description:
+        "Manipulate gravity. Can be used to add or reduce weight for a short time.",
     },
     {
       Class: "Mage",
       Type: "Wizard",
       Kit: "Spirit of Locomotion",
       Tags: "Spirit",
-      Description: "Manipulate kinetic energy, add or reduce speed.",
+      Description:
+        "Manipulate kinetic energy. Can be used to add or reduce speed of a moving object.",
     },
     {
       Class: "Mage",
       Type: "Wizard",
       Kit: "Spirit of Thermos",
       Tags: "Spirit",
-      Description: "Manipulate thermal energy, add or reduce heat.",
+      Description:
+        "Manipulate thermal energy. Can be used to add or reduce heat.",
     },
     {
       Class: "Scoundrel",
@@ -290,7 +294,7 @@ export default function get_data() {
       Kit: "Golden Silk",
       Tags: "Alchemy",
       Description:
-        "A potent hallucinogenic. Can be used to induce confusion, to put a target into a stupor, to render someone highly suggestable, or to inflict Mental damage.",
+        "A potent hallucinogenic. Can be used to induce confusion, to numb pain, to put a target into a stupor, to render someone highly suggestable, or to inflict Mental damage.",
     },
     {
       Class: "Scoundrel",
@@ -319,10 +323,10 @@ export default function get_data() {
     {
       Class: "Scoundrel",
       Type: "Assassin",
-      Kit: "Spirit of Shadow",
+      Kit: "Spirit of Darkness",
       Tags: "Spirit",
       Description:
-        "Manipulate shadows, obscure appearances, and blind enemies.",
+        "Manipulate darkness. Can be used to obscure appearances, darken areas, and blind enemies.",
     },
     {
       Class: "Scoundrel",
@@ -361,7 +365,8 @@ export default function get_data() {
       Type: "Bard",
       Kit: "Spirit of Light",
       Tags: "Spirit",
-      Description: "Manipulate light, create ghostly illusions, and see afar.",
+      Description:
+        "Manipulate light. Can be used to create ghostly illusions, see afar, and produce lighting.",
     },
     {
       Class: "Scoundrel",
@@ -369,7 +374,7 @@ export default function get_data() {
       Kit: "Spirit of Sound",
       Tags: "Spirit",
       Description:
-        "Manipulate sound, shatter eardrums, and eavesdrop from afar.",
+        "Manipulate sound. Can be used to shatter eardrums, eavesdrop from afar, and mimic sounds.",
     },
     {
       Class: "Scoundrel",
@@ -377,7 +382,7 @@ export default function get_data() {
       Kit: "War Arcana",
       Tags: "Technique",
       Description:
-        "Your fighting style resembles dancing, making you particularly mobile. Using this technique allows you to take a second action after making an attack, so long as the second action is not an attack. Examples might include moving out of range, using an item, or using magic.",
+        "Your fighting style resembles dancing, making you particularly mobile. Using this technique allows you to move before and after making an attack, darting outside of melee range or firing shots while running. You have Advantage when performing acrobatics, such as climbing walls or jumping over obstacles.",
     },
     {
       Class: "Scoundrel",
@@ -400,7 +405,8 @@ export default function get_data() {
       Type: "Ranger",
       Kit: "Prepared",
       Tags: "Resource",
-      Description: "Gain an additional two Prep Points.",
+      Description:
+        "Gain an additional two Prep Points. You can expend a Prep Point to change a Kit without resting, provided you have a few minutes to do so.",
     },
     {
       Class: "Scoundrel",
@@ -408,7 +414,7 @@ export default function get_data() {
       Kit: "Quickdraw",
       Tags: "Technique",
       Description:
-        "Your attacks are swift and silent, preventing targets from crying out when struck. Using this technique ensures that an enemy won\u2019t cause a commotion for a brief period of time, in addition to any Physical damage dealt. You have Advantage when determining who acts first, including combat turn order.",
+        "Your attacks are swift and silent, preventing targets from crying out when struck. Using this technique ensures that an enemy won\u2019t cause a commotion for a brief period of time, in addition to any Physical damage dealt. You have Advantage when determining who acts first, such as when determining combat turn order.",
     },
     {
       Class: "Scoundrel",
@@ -416,31 +422,15 @@ export default function get_data() {
       Kit: "Spirit of Wood",
       Tags: "Spirit",
       Description:
-        "Manipulate plants, encourage growth, and influence the environment. Represents growth and vitality. Can be used to accelerate the process of natural healing outside of combat.",
+        "Manipulate plants. Can be used to accelerate plant growth, speed up natural healing, and command flora. Represents growth and vitality.",
     },
     {
       Class: "Scoundrel",
       Type: "Ranger",
-      Kit: "Twin Strike",
+      Kit: "Ambush",
       Tags: "Technique",
       Description:
-        "Your attacks hit two targets instead of one. Using this technique gives your attack an additional target, with both hits landing within moments of one another. The additional target cannot be the same as the original target.",
-    },
-    {
-      Class: "Soldier",
-      Type: "Fencer",
-      Kit: "Aura Strike",
-      Tags: "Technique",
-      Description:
-        "Your melee attacks create blades of cutting wind, while your ranged attacks are propelled by gusts. Using this technique greatly extends the range of your attacks. You have Advantage when defending against projectile attacks like arrows and bullets.",
-    },
-    {
-      Class: "Soldier",
-      Type: "Fencer",
-      Kit: "Curve",
-      Tags: "Technique",
-      Description:
-        "Your melee attacks bend the shape of your weapon in unpredictable ways, while your ranged attacks can change trajectory in mid-flight. Using this technique allows your attacks to circumvent cover and obstacles. When you tie with a defender while attacking, you deal damage regardless.",
+        "Your attacks hit two targets instead of one. Using this technique gives your attack an additional target, with both hits landing within moments of one another. The additional target cannot be the same as the original target. You have Advantage when tracking a target, such as when finding the trail of a monster or criminal.",
     },
     {
       Class: "Soldier",
@@ -448,7 +438,7 @@ export default function get_data() {
       Kit: "Flourish",
       Tags: "Technique",
       Description:
-        "Your attacks are complex, dazzling, and distracting to enemies. Using this technique can either give Disadvantage to the target\u2019s next action, or give Advantage to the next attack made on the target. You have Advantage when using Bravery to inspire or rally others.",
+        "Your attacks are complex, dazzling, and distracting to enemies. Using this technique gives Advantage to the next attack made on the target, either by you or by one of your allies, in addition to any Physical damage dealt. You have Advantage when using Bravery to inspire or rally others.",
     },
     {
       Class: "Soldier",
@@ -473,6 +463,22 @@ export default function get_data() {
       Tags: "Reaction",
       Description:
         "On a successful defense against a melee attack, you inflict a box of Physical damage to the attacker. You recover a Fortune Point when an enemy is incapacitated in this fashion.",
+    },
+    {
+      Class: "Soldier",
+      Type: "Fencer",
+      Kit: "Whirlwind",
+      Tags: "Technique",
+      Description:
+        "Your attacks hit all enemies adjacent to you. Using this technique gives your attacks a small area of effect around your body, targeting enemies immediately next to you. You have Advantage when defending against melee attacks made with weapons.",
+    },
+    {
+      Class: "Soldier",
+      Type: "Fencer",
+      Kit: "Windcutter",
+      Tags: "Technique",
+      Description:
+        "Your melee attacks create blades of cutting wind, while your ranged attacks are propelled by gusts. Using this technique greatly extends the range of your attacks. You have Advantage when defending against projectile attacks like arrows and bullets.",
     },
     {
       Class: "Soldier",
@@ -512,7 +518,7 @@ export default function get_data() {
       Kit: "Smite",
       Tags: "Technique",
       Description:
-        "Your attacks strike with enough force to knock targets around or launch them into the air. Using this technique allows your attacks to forcibly reposition enemies, in addition to any Physical damage dealt. You have Advantage against any attempt to forcibly move you, and against any effect that impedes your movement.",
+        "Your attacks strike with enough force to knock targets around or launch them into the air. Using this technique allows your attacks to forcibly reposition enemies, in addition to any Physical damage dealt. You have Advantage against any effect that attempts to forcibly move you or impede your movement.",
     },
     {
       Class: "Soldier",
@@ -520,7 +526,7 @@ export default function get_data() {
       Kit: "Spellbreak",
       Tags: "Technique",
       Description:
-        "Your attacks interfere with magic. Using this technique allows your attacks to destroy spells and spirits, in addition to any Physical damage dealt. You have Advantage when defending against magical attacks.",
+        "Your attacks interfere with magic. Using this technique allows your attacks to destroy spells and spirits, in addition to any Physical damage dealt. You have Advantage when defending against magical effects.",
     },
     {
       Class: "Soldier",
@@ -536,12 +542,12 @@ export default function get_data() {
       Kit: "Cleave",
       Tags: "Technique",
       Description:
-        "Your attacks are especially destructive, hitting enemies and objects adjacent to your target. Using this technique allows your attacks to inflict damage in a small area of effect.",
+        "Your attacks are especially destructive, hitting enemies and objects adjacent to your target. Using this technique allows your attacks to inflict damage in a small area of effect centered around your main target. You have Advantage when using raw Strength to overcome an obstacle, such as bending metal bars or lifting heavy objects.",
     },
     {
       Class: "Soldier",
       Type: "Myrmidon",
-      Kit: "Danger Zone",
+      Kit: "No Escape",
       Tags: "Reaction",
       Description:
         "Enemies that attempt to leave your melee range take one box of Physical damage. You recover a Fortune Point when an enemy is incapacitated in this fashion.",
@@ -560,7 +566,7 @@ export default function get_data() {
       Kit: "Spirit of Chance",
       Tags: "Spirit",
       Description:
-        "Manipulate probability, tweak the odds in your favor, and jinx enemies.",
+        "Manipulate probability. Can be used to tweak the odds in your favor, jinx enemies with poor luck, and make improbable outcomes more likely.",
     },
     {
       Class: "Soldier",

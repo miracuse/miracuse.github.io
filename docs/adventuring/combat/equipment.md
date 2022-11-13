@@ -8,18 +8,18 @@ nav_order: 2
 
 # Equipment
 
-    GM:       The thorny brambles jab into your skin, causing
-              Physical damage.
+    GM:     The thorny brambles jab into your skin, causing
+            Physical damage.
 
-    Player 1: Wait. I'm wearing a full suit of metal armor.
+    Player: Wait. I'm wearing a full suit of metal armor.
 
-    GM:       Oh. Yeah, then you don't take any damage.
+    GM:     Oh. Yeah, then you don't take any damage.
 
 Equipment in _Miracuse_ is handled narratively. Meaning that Players don't manage individual items in an inventory, as would be the case for many other TTRPG's.
 
-The weapons and armor that a Player Character carries around are part of how they're described. A Soldier might march in full metal armor with a massive sword on their back. Or they might wear a cloth uniform and carry a musket. Their health, defense, and other statistics aren't affected by the choice.
+The weapons and armor that a character carries around are part of how they're described. A Soldier might march in full metal armor with a massive sword on their back. Or they might wear a cloth uniform and carry a musket. Their health, defense, and other statistics aren't affected by the choice.
 
-That being said, choice of equipment has narrative effects. A Player Character in metal armor isn't going to be bothered by biting insects. They will, however, have a much harder time swimming.
+That being said, choice of equipment has narrative effects. A character in metal armor isn't going to be bothered by biting insects. They will, however, have a much harder time swimming.
 
 ### Weapons and Skills
 
@@ -58,4 +58,4 @@ The Skill a character uses when attacking roughly corresponds to the weapons the
 
 Many situations may call for some specific piece of gear like a coil of rope or a torch. Unless the Players have gone out of their way to acquire that gear, the GM will decide whether or not their character is likely to have it on hand.
 
-An exception to this is the **<span style="color: {{ site.scoundrel_color }}">Scoundrel's</span>** [What You Needed](../../classes/scoundrel/index.md) ability. They can spend a Prep Point to pull out equipment that their character might not normally have on hand.
+An exception to this is the **<span style="color: {{ site.alchemist_color }}">Alchemist's</span>** [What You Needed](../../classes/scoundrel/index.md) ability. They can spend a Charge Point to pull out equipment that their character might not normally have on hand.

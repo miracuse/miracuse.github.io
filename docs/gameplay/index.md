@@ -27,4 +27,4 @@ The GM sets the scene and the Players react. Gameplay rules describe how that pr
 
 - [**Health**](health.md) describes how much damage your character can take before they fall over from exhaustion and injury.
 
-- [**Resources**](resources.md) describe the various pools of power that characters can use to pull off big moves, like complex spells or powerful techniques.
+- [**Resources**](resources.md) describe limited-use "points" that characters can draw on to pull off complex spells, powerful techniques, or advanced alchemy. These points recharge after [Making Camp](../adventuring/exploration/).

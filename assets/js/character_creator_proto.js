@@ -60,9 +60,7 @@ function fetchKitDescription(kit) {
 
 // Fetch a kit's tags given a kit name
 function fetchKitTags(kit) {
-  const kit_tag_data = DATA.filter((x) => x.Kit === kit).map(
-    (x) => x.Tags
-  );
+  const kit_tag_data = DATA.filter((x) => x.Kit === kit).map((x) => x.Tags);
   return kit_tag_data;
 }
 
@@ -128,7 +126,7 @@ class SkillHolder extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <div
         key={this.props.skill.toLowerCase() + "_value"}
         id={this.props.skill.toLowerCase() + "_value"}
@@ -143,7 +141,39 @@ class SkillHolder extends React.Component {
           onChange={(e) => this.handleChange(this.props.skill, e)}
         />
       </div>
-    )
+    );
+  }
+}
+
+// Number inputs for skills
+class SkillTextHolder extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    if (this.props.skillValue > 0) {
+      return (
+        <div
+          key={this.props.skill.toLowerCase() + "_text"}
+          id={this.props.skill.toLowerCase() + "_text"}
+          className={this.props.skill.toLowerCase() + "_text"}
+        >
+          <label>
+            <span>{this.props.skill}</span>
+          </label>
+        </div>
+      );
+    }
+    return (
+      <div
+        key={this.props.skill.toLowerCase() + "_text"}
+        id={this.props.skill.toLowerCase() + "_text"}
+        className={this.props.skill.toLowerCase() + "_text"}
+      >
+        <label>{this.props.skill}</label>
+      </div>
+    );
   }
 }
 
@@ -210,9 +240,7 @@ class KitDescriptionHolder extends React.Component {
         id={"kit_text_0" + this.props.index}
         className={"kit_text_0" + this.props.index}
       >
-        <p
-        id={"kit_tags_0" + this.props.index}
-        className={"kit_tags"}  >
+        <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
           Tags: {kit_tags}
         </p>
         <p
@@ -320,7 +348,7 @@ class CharacterSheet extends React.Component {
   render() {
     // Generate the skills
     const skill_holders = SKILLS.map((skill) => (
-      <SkillHolder 
+      <SkillHolder
         skill={skill}
         skillValue={this.state[skill]}
         onChange={this.handleSkillChange}
@@ -328,13 +356,7 @@ class CharacterSheet extends React.Component {
     ));
 
     const skill_text_holders = SKILLS.map((skill) => (
-      <div
-        key={skill.toLowerCase() + "_text"}
-        id={skill.toLowerCase() + "_text"}
-        className={skill.toLowerCase() + "_text"}
-      >
-        <label>{skill}</label>
-      </div>
+      <SkillTextHolder skill={skill} skillValue={this.state[skill]} />
     ));
 
     // Generate the kits
@@ -445,7 +467,10 @@ class CharacterSheet extends React.Component {
           <div className="mana_point_text">
             <label>Mana Points</label>
           </div>
-          <ResourceTrack prefix="mana_point" boxCount={2 * this.state.Presence} />
+          <ResourceTrack
+            prefix="mana_point"
+            boxCount={2 * this.state.Presence}
+          />
 
           <div className="fortune_point_text">
             <label>Fortune Points</label>

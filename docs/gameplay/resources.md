@@ -10,31 +10,27 @@ nav_order: 5
     Player: I want to make a bridge out of ice using Spirit of Water
             so that we can get over the river.
 
-    GM:     That's a big spell. Mark off a Mana Point and roll Aura for it.
+    GM:     That's a big spell. Mark off a Mana Point and roll Magic for it.
 
-| Class     | Resource       | Skill     |
-| --------- | -------------- | --------- |
-| Alchemist | Charge Points  | Knowledge |
-| Soldier   | Fortune Points | Bravery   |
-| Mage      | Mana Points    | Presence  |
-| Scoundrel | Prep Points    | Cunning   |
+| Class     | Resource       | Skill     | Kit Tag   |
+| --------- | -------------- | --------- | --------- |
+| Alchemist | Charge Points  | Knowledge | Alchemy   |
+| Soldier   | Fortune Points | Bravery   | Technique |
+| Mage      | Mana Points    | Presence  | Spirit    |
+| Scoundrel | Prep Points    | Cunning   | Any       |
 
-**Resources** are pools of power that characters can draw on to perform incredible feats. Like health, resources are measured in boxes and tied to specific Skills.
+**Resources** are pools of power that characters can draw on to perform incredible feats. Like health, resources are measured in boxes and tied to specific Skills. Resources can be spent to do any of the following:
 
-### Recovery
+- Class Abilities (such as the Alchemist's **Produce a Potion** or the Scoundrel's **Disappear from Sight**)
 
-    Fortune Points ☐ ☐ ☐ ☐
+- [Empowering Kits](../more/resources/empower_kits.md)
 
-Resources are completely replenished after [Making Camp](../adventuring/exploration/index.md). Some Kits can restore resources when specific conditions are met.
+- [Combining Kits](../more/resources/empower_kits.md)
+
+- [Skill Substitution](../more/resources/skill_substitution.md)
 
 ### Pushing It
 
-    Player: I want to cut through the prison bars and set off a jailbreak.
+Resource points recover after making camp and resting. However, Players can also sacrifice one of their Mental boxes in place of a Resource point.
 
-    GM:     Okay. Do you have any Fortune Points left?
-
-    Player: Nope.
-
-    GM:     Mark a Mental box then.
-
-Players can expend Mental health boxes in places of any Resource when the situation is desperate. Be careful though, a character can incapacitate themselves by using **Pushing It**.
+> **Note:** It's possible to incapacitate your character by **Pushing It** and spending your last Mental box.

@@ -8,7 +8,7 @@ nav_order: 1
 
 # Specializations
 
-**Specializations** determine which [Kits](kits.md) a player can use. New characters start with one subclass, gaining more the longer they adventure. 
+**Specializations** determine which [Kits](kits.md) a player can use. New characters start with one subclass, gaining more the longer they adventure.
 
 ### <span style="color: {{ site.scoundrel_color }}">The Assassin</span>
 

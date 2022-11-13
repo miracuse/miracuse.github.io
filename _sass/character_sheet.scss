@@ -34,8 +34,12 @@
   input[type="submit"],
   input[type="number"] {
     border: 1px solid $border-color;
-    max-width: 90%;
+    max-width: 95%;
     // padding: $padding-v $padding-h;
+
+    @include mq(md) {
+      max-width: 90%;
+    }
   }
 
   select {
@@ -44,10 +48,16 @@
     font-size: $font-size-4;
     color: inherit;
     // width: 175px;
-    max-width: 90%;
-    min-width: 90%;
-    height: 1.25rem;
+    max-width: 95%;
+    min-width: 95%;
+    height: 1.5rem;
     border: 1px solid $border-color;
+
+    @include mq(md) {
+      max-width: 90%;
+      min-width: 90%;
+      height: 1.25rem;
+    }
   }
 
   p {
@@ -57,7 +67,6 @@
   #class_select,
   #subclass_select_01 {
     font-size: $font-size-4;
-    height: 1.5rem;
   }
 
   .kit_description,
@@ -221,6 +230,11 @@
   .perception_text {
     grid-column: 1;
     grid-row: 16;
+
+    label span {
+      font-weight: bold;
+      color: $alchemist_color;
+    }
   }
 
   .perception_value {
@@ -231,6 +245,11 @@
   .knowledge_text {
     grid-column: 1;
     grid-row: 17;
+
+    label span {
+      font-weight: bold;
+      color: $alchemist_color;
+    }
   }
 
   .knowledge_value {
@@ -241,6 +260,11 @@
   .strength_text {
     grid-column: 1;
     grid-row: 18;
+
+    label span {
+      font-weight: bold;
+      color: $soldier_color;
+    }
   }
 
   .strength_value {
@@ -251,6 +275,11 @@
   .bravery_text {
     grid-column: 1;
     grid-row: 19;
+
+    label span {
+      font-weight: bold;
+      color: $soldier_color;
+    }
   }
 
   .bravery_value {
@@ -261,6 +290,11 @@
   .magic_text {
     grid-column: 1;
     grid-row: 20;
+
+    label span {
+      font-weight: bold;
+      color: $mage_color;
+    }
   }
 
   .magic_value {
@@ -271,6 +305,11 @@
   .presence_text {
     grid-column: 1;
     grid-row: 21;
+
+    label span {
+      font-weight: bold;
+      color: $mage_color;
+    }
   }
 
   .presence_value {
@@ -281,6 +320,11 @@
   .agility_text {
     grid-column: 1;
     grid-row: 22;
+
+    label span {
+      font-weight: bold;
+      color: $scoundrel_color;
+    }
   }
 
   .agility_value {
@@ -291,6 +335,11 @@
   .cunning_text {
     grid-column: 1;
     grid-row: 23;
+
+    label span {
+      font-weight: bold;
+      color: $scoundrel_color;
+    }
   }
 
   .cunning_value {

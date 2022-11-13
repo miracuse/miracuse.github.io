@@ -9,11 +9,11 @@ nav_order: 1
 
 # Specializations
 
-**Specializations** determine which [Kits](kits.md) a player can use. New characters start with one subclass, gaining more the longer they adventure. 
+**Specializations** determine which [Kits](kits.md) a player can use. New characters start with one subclass, gaining more the longer they adventure.
 
 ### <span style="color: {{ site.alchemist_color }}">The Enchanter</span>
 
-An Alchemist that dabbles in magic, using their abilities to create servants and magical tools. 
+An Alchemist that dabbles in magic, using their abilities to create servants and magical tools.
 
 ### <span style="color: {{ site.alchemist_color }}">The Sapper</span>
 

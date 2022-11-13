@@ -1,16 +1,16 @@
 ---
 layout: default
 title: Custom Classes
-parent: Classes
+parent: More
 has_children: false
 has_toc: false
 nav_order: 99
 ---
 
+# Custom Classes
+
 Not Yet Implemented
 {: .label .label-red }
-
-# Custom Classes
 
 The base classes can be used for many character concepts, but players may also choose to make a **Custom Class**.
 
