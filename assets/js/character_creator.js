@@ -56,8 +56,33 @@ function fetchKitDescription(kit) {
 function fetchKitTags(kit) {
   const kit_tag_data = DATA.filter((x) => x.Kit === kit).map((x) => x.Tags);
   return kit_tag_data;
-} // Components /////////////////////////////////////////////////////////////////
-// Specialization selector
+} // // Components /////////////////////////////////////////////////////////////////
+
+class InfoBox extends React.Component {
+  constructor(props) {
+    super(props);
+    this.onClick = this.onClick.bind(this);
+    this.state = {
+      active: false,
+    };
+  }
+
+  onClick(event) {
+    alert(this.props.message);
+  }
+
+  render() {
+    return /*#__PURE__*/ React.createElement(
+      "icon",
+      {
+        className: "info-btn",
+        onClick: this.onClick,
+      },
+      " ",
+      /*#__PURE__*/ React.createElement("b", null, "?")
+    );
+  }
+} // Specialization selector
 
 class SubclassHolder extends React.Component {
   constructor(props) {
@@ -210,16 +235,18 @@ class KitHolder extends React.Component {
     ); // Populate the kit selections based on the kit types
 
     const kit_options_data = fetchKits(this.props.specializations);
-    const kit_options = kit_options_data.map((x) =>
-      /*#__PURE__*/ React.createElement(
-        "option",
-        {
-          key: x,
-          value: x,
-        },
-        x
-      )
-    );
+    const kit_options = kit_options_data.map(function (x) {
+      {
+        return /*#__PURE__*/ React.createElement(
+          "option",
+          {
+            key: x,
+            value: x,
+          },
+          x
+        );
+      }
+    });
     return /*#__PURE__*/ React.createElement(
       "div",
       {
@@ -408,6 +435,12 @@ class CharacterSheet extends React.Component {
         index: counter,
         specializations: this.state.Specializations,
         onChange: this.handleKitChange,
+        selected_kits: [
+          this.state.Kit_01,
+          this.state.Kit_02,
+          this.state.Kit_03,
+          this.state.Kit_04,
+        ],
       })
     ); // Put everything together
 
@@ -618,7 +651,11 @@ class CharacterSheet extends React.Component {
           {
             className: "charge_point_text",
           },
-          /*#__PURE__*/ React.createElement("label", null, "Charge Points")
+          /*#__PURE__*/ React.createElement("label", null, "Charge Points"),
+          /*#__PURE__*/ React.createElement(InfoBox, {
+            message:
+              "Charge Points can be used to work potent alchemy, amplifying the effects of an equipped Alchemy kit. They can also be used to 'Produce a Potion', 'Produce a Grenade', or declare that you have 'What You Needed'.",
+          })
         ),
         /*#__PURE__*/ React.createElement(ResourceTrack, {
           prefix: "charge_point",
@@ -629,7 +666,11 @@ class CharacterSheet extends React.Component {
           {
             className: "mana_point_text",
           },
-          /*#__PURE__*/ React.createElement("label", null, "Mana Points")
+          /*#__PURE__*/ React.createElement("label", null, "Mana Points"),
+          /*#__PURE__*/ React.createElement(InfoBox, {
+            message:
+              "Mana Points can be used to cast powerful spells, amplifying the effects of an equipped Spirit kit.",
+          })
         ),
         /*#__PURE__*/ React.createElement(ResourceTrack, {
           prefix: "mana_point",
@@ -640,7 +681,11 @@ class CharacterSheet extends React.Component {
           {
             className: "fortune_point_text",
           },
-          /*#__PURE__*/ React.createElement("label", null, "Fortune Points")
+          /*#__PURE__*/ React.createElement("label", null, "Fortune Points"),
+          /*#__PURE__*/ React.createElement(InfoBox, {
+            message:
+              "Fortune Points can be used to pull off fantastical physical feats, amplifying the effects of an equipped Technique kit. They can also be used to 'Reroll' or 'Avoid Harm'.",
+          })
         ),
         /*#__PURE__*/ React.createElement(ResourceTrack, {
           prefix: "fortune_point",
@@ -651,7 +696,11 @@ class CharacterSheet extends React.Component {
           {
             className: "prep_point_text",
           },
-          /*#__PURE__*/ React.createElement("label", null, "Prep Points")
+          /*#__PURE__*/ React.createElement("label", null, "Prep Points"),
+          /*#__PURE__*/ React.createElement(InfoBox, {
+            message:
+              "Prep Points can be used in place of any of the other resources, amplifying the effects of an equipped kit. They can also be used to 'Disappear From Sight', 'Assume a Disguise', or declare 'I Know a Guy'.",
+          })
         ),
         /*#__PURE__*/ React.createElement(ResourceTrack, {
           prefix: "prep_point",

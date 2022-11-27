@@ -196,9 +196,9 @@ export default function get_data() {
       Class: "Mage",
       Type: "Shaman",
       Kit: "Spirit of Aether",
-      Tags: "Spirit",
+      Tags: "Spirit, Reaction",
       Description:
-        "Manipulate electricity. Can be used to shoot lightning from your hands, induce pain without damage, and x. Represents emptiness and void.",
+        "Manipulate electricity. Can be used to shoot lightning from your hands, induce pain without damage, and shock enemies that harm you. Represents emptiness and void. You can expend a Mana Point to inflict Physical damage on enemies that harm you from melee range.",
     },
     {
       Class: "Mage",
@@ -214,7 +214,7 @@ export default function get_data() {
       Kit: "Spirit of Earth",
       Tags: "Spirit",
       Description:
-        "Manipulate earth. Can be used to throw jagged spikes from the ground, reshape stone, and x. Represents solidity and strength.",
+        "Manipulate earth. Can be used to throw jagged spikes from the ground, reshape stone, and send tremors through the earth. Represents solidity and strength.",
     },
     {
       Class: "Mage",
@@ -222,7 +222,7 @@ export default function get_data() {
       Kit: "Spirit of Flame",
       Tags: "Spirit",
       Description:
-        "Manipulate fire. Can be used to conjure flames from nothing, create floating torches, and x. Represents cleansing and destruction.",
+        "Manipulate fire. Can be used to throw flames, create floating torches, and cause burns. Represents cleansing and destruction.",
     },
     {
       Class: "Mage",
@@ -302,7 +302,7 @@ export default function get_data() {
       Kit: "Manifold Venom",
       Tags: "Alchemy",
       Description:
-        "A collection of dangerous poisons. Can be applied to the user\u2019s weapons to induce paralysis, sap strength, create nausea, cause blindness, or inflict additional Physical damage. Requires an action if applied in combat, unless the Kit is amplified.",
+        "A collection of dangerous poisons. Can be applied to the user\u2019s weapons to induce paralysis, sap strength, create nausea, cause blindness, or inflict additional Physical damage. Requires an action if applied in combat.",
     },
     {
       Class: "Scoundrel",
@@ -310,7 +310,7 @@ export default function get_data() {
       Kit: "Pin Down",
       Tags: "Technique",
       Description:
-        "Your attacks reduce an enemy\u2019s movement, cutting off their ability to escape or pursue. Using this technique greatly reduces a target\u2019s mobility, in addition to any Physical damage dealt. You have Advantage when using Agility to sprint, as might be the case when chasing after someone or retreating from danger.",
+        "Your attacks reduce an enemy\u2019s movement, cutting off their ability to escape or pursue. Using this technique greatly reduces a target\u2019s mobility, in addition to any Physical damage dealt. You have Advantage when using sprinting, as might be the case when chasing after someone or retreating from danger.",
     },
     {
       Class: "Scoundrel",
@@ -323,18 +323,18 @@ export default function get_data() {
     {
       Class: "Scoundrel",
       Type: "Assassin",
-      Kit: "Spirit of Darkness",
-      Tags: "Spirit",
+      Kit: "Shifting Sniper",
+      Tags: "Technique, Reaction",
       Description:
-        "Manipulate darkness. Can be used to obscure appearances, darken areas, and blind enemies.",
+        "Your ranged attacks are difficult to trace. Using this technique reduces the likelihood that you\u2019ll be exposed after making a ranged sneak attack. You can expend a Prep Point to avoid harm from an attack or hazard.",
     },
     {
       Class: "Scoundrel",
       Type: "Assassin",
-      Kit: "Uncanny Dodge",
-      Tags: "Reaction",
+      Kit: "Spirit of Darkness",
+      Tags: "Spirit",
       Description:
-        "You can expend a Prep Point to avoid harm from an attack or hazard. You have Advantage against traps and area of effect attacks.",
+        "Manipulate darkness. Can be used to obscure appearances, darken areas, and blind enemies.",
     },
     {
       Class: "Scoundrel",
@@ -366,7 +366,7 @@ export default function get_data() {
       Kit: "Spirit of Light",
       Tags: "Spirit",
       Description:
-        "Manipulate light. Can be used to create ghostly illusions, see afar, and produce lighting.",
+        "Manipulate light. Can be used to create ghostly illusions, see afar, and blind enemies.",
     },
     {
       Class: "Scoundrel",
@@ -387,7 +387,15 @@ export default function get_data() {
     {
       Class: "Scoundrel",
       Type: "Ranger",
-      Kit: "Beast Balm",
+      Kit: "Ambush",
+      Tags: "Technique",
+      Description:
+        "Your attacks hit two targets instead of one. Using this technique gives your attack an additional target, with both hits landing within moments of one another. The additional target cannot be the same as the original target. You have Advantage when tracking a target, such as when finding the trail of a monster or criminal.",
+    },
+    {
+      Class: "Scoundrel",
+      Type: "Ranger",
+      Kit: "Beast\u2019s Balm",
       Tags: "Alchemy",
       Description:
         "A mixture that bewitches animals. You can communicate with and befriend beasts. You can use I Know a Guy to recruit a local beast to aid you. The beast can track, fight, and is capable of anything that a creature of its kind might otherwise do.",
@@ -425,20 +433,12 @@ export default function get_data() {
         "Manipulate plants. Can be used to accelerate plant growth, speed up natural healing, and command flora. Represents growth and vitality.",
     },
     {
-      Class: "Scoundrel",
-      Type: "Ranger",
-      Kit: "Ambush",
-      Tags: "Technique",
-      Description:
-        "Your attacks hit two targets instead of one. Using this technique gives your attack an additional target, with both hits landing within moments of one another. The additional target cannot be the same as the original target. You have Advantage when tracking a target, such as when finding the trail of a monster or criminal.",
-    },
-    {
       Class: "Soldier",
       Type: "Fencer",
       Kit: "Flourish",
       Tags: "Technique",
       Description:
-        "Your attacks are complex, dazzling, and distracting to enemies. Using this technique gives Advantage to the next attack made on the target, either by you or by one of your allies, in addition to any Physical damage dealt. You have Advantage when using Bravery to inspire or rally others.",
+        "Your attacks are complex, dazzling, and distracting to enemies. Using this technique gives Advantage to the next attack made on the target, either by you or by one of your allies, in addition to any Physical damage dealt. You have Advantage when inspiring or rallying others.",
     },
     {
       Class: "Soldier",
@@ -446,7 +446,7 @@ export default function get_data() {
       Kit: "Harass",
       Tags: "Technique",
       Description:
-        "Your attacks unnerve and frustrate targets in addition to dealing damage. Using this technique inflicts a box of Mental damage on successful attacks, in addition to any Physical damage dealt. You have Advantage when using Bravery to provoke others.",
+        "Your attacks unnerve and frustrate targets in addition to dealing damage. Using this technique inflicts a box of Mental damage on successful attacks, in addition to any Physical damage dealt. You have Advantage when provoking others.",
     },
     {
       Class: "Soldier",
@@ -454,23 +454,23 @@ export default function get_data() {
       Kit: "Inner Flame",
       Tags: "Resource",
       Description:
-        "At any time when you would otherwise spend a Fortune Point, you can spend a Physical box instead. When you recover Physical or Mental boxes, you recover one more than you would otherwise.",
+        "At any time when you would otherwise spend a Fortune Point, you can spend a Physical box instead. When you recover Physical boxes, you recover one more than you would otherwise.",
     },
     {
       Class: "Soldier",
       Type: "Fencer",
-      Kit: "Riposte",
-      Tags: "Reaction",
+      Kit: "Thunderclap",
+      Tags: "Technique",
       Description:
-        "On a successful defense against a melee attack, you inflict a box of Physical damage to the attacker. You recover a Fortune Point when an enemy is incapacitated in this fashion.",
+        "Your attacks culminate in deafening peals of thunder, causing harm through sound and shockwaves. Using this technique circumvents armor, barriers, and similar defenses.",
     },
     {
       Class: "Soldier",
       Type: "Fencer",
       Kit: "Whirlwind",
-      Tags: "Technique",
+      Tags: "Technique, Reaction",
       Description:
-        "Your attacks hit all enemies adjacent to you. Using this technique gives your attacks a small area of effect around your body, targeting enemies immediately next to you. You have Advantage when defending against melee attacks made with weapons.",
+        "Your attacks hit all enemies adjacent to you. Using this technique gives your attacks a small area of effect around your body, targeting enemies immediately next to you. On a successful defense against a melee attack, you inflict a box of Physical damage to the attacker.",
     },
     {
       Class: "Soldier",
@@ -486,15 +486,15 @@ export default function get_data() {
       Kit: "Guardian",
       Tags: "Reaction",
       Description:
-        "When a nearby ally would otherwise take damage, you can take damage in their place, so long as you are able to provide a narrative justification for how you do so. You recover a Fortune Point when using this Kit. You cannot attempt to block, dodge, or otherwise reduce damage taken using this Kit.",
+        "When a nearby ally would otherwise take damage, you can take damage in their place, so long as you are able to provide a narrative justification for how you do so. You recover a Fortune Point when using this Kit. You cannot attempt to block, dodge, or otherwise reduce damage taken from using this Kit.",
     },
     {
       Class: "Soldier",
       Type: "Knight",
       Kit: "Hospitaler Salts",
-      Tags: "Alchemy, Recovery",
+      Tags: "Alchemy",
       Description:
-        "Revive an incapacitated ally and allow them to briefly ignore the effects of their injuries. Revived allies clear one box of damage, Physical or Mental, depending on which is necessary. Requires physical contact.",
+        "Smelling salts that wake the unconscious. Can be used to revive an incapacitated ally and allow them to briefly ignore the effects of their injuries. Revived allies clear one box of damage, Physical or Mental, depending on which is necessary. Requires physical contact.",
     },
     {
       Class: "Soldier",
@@ -502,7 +502,7 @@ export default function get_data() {
       Kit: "Impose",
       Tags: "Technique",
       Description:
-        "Your attacks demand the attention of targets and cloud their perception. Using this technique compels an enemy to focus on you after a successful attack, in addition to any Physical damage dealt. You have Advantage when using Bravery to intimidate others.",
+        "Your attacks demand the attention of targets and cloud their perception. Using this technique compels an enemy to focus on you after a successful attack, in addition to any Physical damage dealt. You have Advantage when intimidating others.",
     },
     {
       Class: "Soldier",
@@ -518,7 +518,7 @@ export default function get_data() {
       Kit: "Smite",
       Tags: "Technique",
       Description:
-        "Your attacks strike with enough force to knock targets around or launch them into the air. Using this technique allows your attacks to forcibly reposition enemies, in addition to any Physical damage dealt. You have Advantage against any effect that attempts to forcibly move you or impede your movement.",
+        "Your attacks strike with enough force to knock targets back or launch them into the air. Using this technique allows your attacks to forcibly reposition enemies, in addition to any Physical damage dealt. You have Advantage against any effect that attempts to forcibly move you or impede your movement.",
     },
     {
       Class: "Soldier",
@@ -532,9 +532,9 @@ export default function get_data() {
       Class: "Soldier",
       Type: "Myrmidon",
       Kit: "Blitz",
-      Tags: "Technique",
+      Tags: "Technique, Reaction",
       Description:
-        "Your attacks are more likely to cause harm. Using this technique adds +1 to the roll result of your attacks, significantly improving the chance that they\u2019ll inflict damage.",
+        "Your attacks are more likely to cause harm. Using this technique adds +1 to the roll result of your attacks, significantly improving the chance that they\u2019ll inflict damage. Enemies that attempt to leave your melee range take one box of Physical damage.",
     },
     {
       Class: "Soldier",
@@ -542,15 +542,15 @@ export default function get_data() {
       Kit: "Cleave",
       Tags: "Technique",
       Description:
-        "Your attacks are especially destructive, hitting enemies and objects adjacent to your target. Using this technique allows your attacks to inflict damage in a small area of effect centered around your main target. You have Advantage when using raw Strength to overcome an obstacle, such as bending metal bars or lifting heavy objects.",
+        "Your attacks are especially destructive, hitting enemies and objects adjacent to your target. Using this technique allows your attacks to inflict damage in a small area of effect centered around your main target.",
     },
     {
       Class: "Soldier",
       Type: "Myrmidon",
-      Kit: "No Escape",
-      Tags: "Reaction",
+      Kit: "Ferocious",
+      Tags: "Technique",
       Description:
-        "Enemies that attempt to leave your melee range take one box of Physical damage. You recover a Fortune Point when an enemy is incapacitated in this fashion.",
+        "Your attacks inspire fear and caution from enemies. Using this technique intimidates enemies you harm, causing targets with a sense of self-preservation to flee or otherwise behave more cautiously.",
     },
     {
       Class: "Soldier",
