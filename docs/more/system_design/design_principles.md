@@ -2,7 +2,7 @@
 layout: default
 title: Design Principles
 parent: System Design
-grand_parent: More Resources
+grand_parent: More
 nav_order: 2
 ---
 

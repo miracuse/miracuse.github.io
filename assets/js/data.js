@@ -2,19 +2,51 @@ export default function get_data() {
   var data = [
     {
       Class: "Alchemist",
-      Type: "Enchanter",
-      Kit: "Bag of Holding",
-      Tags: "Alchemy",
+      Type: "Chemist",
+      Kit: "Battle Chemist",
+      Tags: "Technique",
       Description:
-        "You have a bag that\u2019s bigger on the inside than the outside, capable of reducing the weight of objects placed within. You can expend a Charge Point to place a particularly large or heavy object within. The object should generally be less than 300 lbs. and less than five times the bag\u2019s size.",
+        "You\u2019re able to multitask while fighting. You can use Produce a Potion or What You Needed in the same action as making an attack.",
     },
     {
       Class: "Alchemist",
-      Type: "Enchanter",
-      Kit: "Flying Carpet",
+      Type: "Chemist",
+      Kit: "Bigger Batches",
       Tags: "Alchemy",
       Description:
-        "You have a flying carpet, capable of carrying you into the air for short periods of time. When not in use the carpet folds itself into a scarf, cloak, or other wearable object. You can expend a Charge Point to extend the carpet\u2019s flight or to allow it to carry multiple people for a time.",
+        "When you use Produce a Potion or Produce a Grenade, you produce two items instead of one. You are still limited to using one item per action in combat.",
+    },
+    {
+      Class: "Alchemist",
+      Type: "Chemist",
+      Kit: "Midnight Oil",
+      Tags: "Alchemy",
+      Description:
+        "A slick and highly flammable liquid. Can be used to create oil slicks, waterproof flames, thick tar, or light-absorbing materials that darken their surroundings.",
+    },
+    {
+      Class: "Alchemist",
+      Type: "Chemist",
+      Kit: "Perfect Acid",
+      Tags: "Alchemy",
+      Description:
+        "A dangerously potent acid that can be diluted for use in many tasks. Can be used to dissolve most materials, break locks, sabotage equipment, or deal Physical damage.",
+    },
+    {
+      Class: "Alchemist",
+      Type: "Chemist",
+      Kit: "Pocket Wall",
+      Tags: "Alchemy",
+      Description:
+        "A rapidly expanding cement-like substance. Can be used to create cover, seal doors shut, impede movement, or adhere objects together.",
+    },
+    {
+      Class: "Alchemist",
+      Type: "Chemist",
+      Kit: "Potency",
+      Tags: "Alchemy",
+      Description:
+        "Potions from Produce a Potion heal an additional box of damage. Grenades from Produce a Grenade can either a create a larger blast radius or deal additional damage.",
     },
     {
       Class: "Alchemist",
@@ -22,7 +54,7 @@ export default function get_data() {
       Kit: "Golem",
       Tags: "Alchemy",
       Description:
-        "You have a golem made from clay, capable of fighting and lifting heavy objects. The golem has a Strength equal to half your Knowledge rounded down. You can expend a Charge Point to create additional golems.",
+        "You have a servant made from clay, capable of fighting and lifting heavy objects. Equipping this Kit provides one golem. You can expend a Charge Point to create additional golems.",
     },
     {
       Class: "Alchemist",
@@ -30,7 +62,7 @@ export default function get_data() {
       Kit: "Quicksilver Familiar",
       Tags: "Alchemy, Reaction",
       Description:
-        "You have a familiar made from liquid metal, capable of shaping itself into weapons, tools, and objects. You can expend a Charge Point to deflect an attack by having the familiar change into a shield or similar object.",
+        "You have a servant made from liquid metal, capable of shaping itself into weapons, tools, and objects. You can expend a Charge Point to deflect an attack by having the familiar change into a shield or similar object.",
     },
     {
       Class: "Alchemist",
@@ -38,15 +70,31 @@ export default function get_data() {
       Kit: "Shikigami",
       Tags: "Alchemy",
       Description:
-        "You have a servant made from enchanted paper, capable of flying, scouting, and carrying messages. The shikigami has a Cunning equal to half your Knowledge rounded down. You can expend a Charge Point to create additional servants.",
+        "You have a servant made from enchanted paper, capable of flying, scouting, and carrying messages.  Equipping this kit provides one shikigami. You can expend a Charge Point to create additional servants.",
     },
     {
       Class: "Alchemist",
       Type: "Enchanter",
-      Kit: "Spirit of Animation",
-      Tags: "Spirit",
+      Kit: "Substance Empower",
+      Tags: "Alchemy",
       Description:
-        "Awaken inanimate objects. Can be used to imbue lightweight objects with motion and purpose, such as compelling a broom to sweep by itself.",
+        "Reinforce an object, making it harder to damage or break. The larger the object is, the more difficult and time-consuming it is to perform the change. Can be completed instantly by expending a Charge Point Requires physical contact.",
+    },
+    {
+      Class: "Alchemist",
+      Type: "Enchanter",
+      Kit: "Substance Reshape",
+      Tags: "Alchemy",
+      Description:
+        "Change the shape of an object, without changing its mass. The more intricate the intended result is, the more difficult and time-consuming it is to perform the change. Can be completed instantly by expending a Charge Point. Requires physical contact.",
+    },
+    {
+      Class: "Alchemist",
+      Type: "Enchanter",
+      Kit: "Substance Transmute",
+      Tags: "Alchemy",
+      Description:
+        "Converts one material into another. The greater the difference from the original, the more difficult and time-consuming it is to perform the change. Can be completed instantly by expending a Charge Point. Requires physical contact.",
     },
     {
       Class: "Alchemist",
@@ -86,7 +134,7 @@ export default function get_data() {
       Kit: "Trenchsteel Charges",
       Tags: "Alchemy",
       Description:
-        "Attacks that use this ammunition are physically loaded, exploding into a mass of ball bearings or barbed wire in addition to any Physical damage dealt. When used with Produce a Grenade this kit inflicts Physical damage and one other effect in a wide area.",
+        "Attacks that use this ammunition are physically loaded, exploding into a mass of ball bearings or coils of barbed wire in addition to any Physical damage dealt. When used with Produce a Grenade this kit inflicts Physical damage and one other effect in a wide area.",
     },
     {
       Class: "Alchemist",
@@ -97,60 +145,12 @@ export default function get_data() {
         "Attacks that use this ammunition are chemically loaded, instantly rusting through metal or producing small clouds of tear gas in addition to any Physical damage dealt. When used with Produce a Grenade this kit inflicts Physical damage and one other effect in a wide area.",
     },
     {
-      Class: "Alchemist",
-      Type: "Transmuter",
-      Kit: "Efficient",
-      Tags: "Resource",
-      Description:
-        "Gain an additional two Charge Points. When you expend a Mental Box to recover a Charge Point, you recover two instead of one.",
-    },
-    {
-      Class: "Alchemist",
-      Type: "Transmuter",
-      Kit: "Sigil of Conversion",
-      Tags: "Alchemy",
-      Description:
-        "A formula circle that can be drawn on objects. When completed, converts one material into another. The greater the difference from the original, the more difficult it is to perform the change. Can be drawn and completed instantly by expending a Charge Point.",
-    },
-    {
-      Class: "Alchemist",
-      Type: "Transmuter",
-      Kit: "Sigil of Division",
-      Tags: "Alchemy",
-      Description:
-        "A formula circle that can be drawn on objects. When completed, breaks apart two objects, or reduces one object into its constituent elements. Can be drawn and completed instantly by expending a Charge Point.",
-    },
-    {
-      Class: "Alchemist",
-      Type: "Transmuter",
-      Kit: "Sigil of Shape",
-      Tags: "Alchemy",
-      Description:
-        "A formula circle that can be drawn on objects. When completed, reshapes an object, altering its form by expanding or contracting its mass. Can be drawn and completed instantly by expending a Charge Point.",
-    },
-    {
-      Class: "Alchemist",
-      Type: "Transmuter",
-      Kit: "Sigil of Strength",
-      Tags: "Alchemy",
-      Description:
-        "A formula circle that can be drawn on objects. When completed, strengthens an object, making it harder and more durable. Can also be used to weaken an object, making it flimsy and brittle. Can be drawn and completed instantly by expending a Charge Point.",
-    },
-    {
-      Class: "Alchemist",
-      Type: "Transmuter",
-      Kit: "Sigil of Synthesis",
-      Tags: "Alchemy",
-      Description:
-        "A formula circle that can be drawn on objects. When completed, welds two objects together. Can be drawn and completed instantly by expending a Charge Point.",
-    },
-    {
       Class: "Mage",
       Type: "Priest",
       Kit: "Spirit of Abjuration",
       Tags: "Spirit, Reaction",
       Description:
-        "Repel and dispel. Can be used to create barriers, destroy magic, and scare away otherworldly influences. You can expend a Mana Point to deflect an attack aimed at you.",
+        "Repel and dispel. Can be used to create barriers, destroy magic, and turn away otherworldly influences. You can expend a Mana Point to deflect an attack aimed at you.",
     },
     {
       Class: "Mage",
@@ -158,7 +158,7 @@ export default function get_data() {
       Kit: "Spirit of Divination",
       Tags: "Spirit",
       Description:
-        "Find and seek. Can be used to divine the location of people, places, and things through magical means.",
+        "Petition otherworldly forces for information. Can be used to divine the location of people, places, and things through magical means.",
     },
     {
       Class: "Mage",
@@ -190,15 +190,15 @@ export default function get_data() {
       Kit: "Spirit of Restoration",
       Tags: "Spirit",
       Description:
-        "Restore what is broken. Can be used to heal Physical damage, repair broken objects, and treat natural afflictions.",
+        "Restore what is broken. Can be used to heal Physical damage, repair broken objects, and treat natural afflictions. The number of Physical boxes healed is equal to the result of the roll.",
     },
     {
       Class: "Mage",
       Type: "Shaman",
       Kit: "Spirit of Aether",
-      Tags: "Spirit, Reaction",
+      Tags: "Spirit",
       Description:
-        "Manipulate electricity. Can be used to shoot lightning from your hands, induce pain without damage, and shock enemies that harm you. Represents emptiness and void. You can expend a Mana Point to inflict Physical damage on enemies that harm you from melee range.",
+        "Manipulate electricity. Can be used to shoot lightning from your hands, induce pain without damage, and shock enemies that harm you.",
     },
     {
       Class: "Mage",
@@ -206,7 +206,7 @@ export default function get_data() {
       Kit: "Spirit of Air",
       Tags: "Spirit",
       Description:
-        "Manipulate air. Can be used to create ferocious whirlwinds, fall gently from great heights, and rebuff projectiles. Represents movement and freedom.",
+        "Manipulate air. Can be used to create ferocious whirlwinds, fall gently from great heights, and rebuff projectiles.",
     },
     {
       Class: "Mage",
@@ -214,7 +214,7 @@ export default function get_data() {
       Kit: "Spirit of Earth",
       Tags: "Spirit",
       Description:
-        "Manipulate earth. Can be used to throw jagged spikes from the ground, reshape stone, and send tremors through the earth. Represents solidity and strength.",
+        "Manipulate earth. Can be used to throw jagged spikes from the ground, reshape stone, and send tremors through the earth.",
     },
     {
       Class: "Mage",
@@ -222,7 +222,7 @@ export default function get_data() {
       Kit: "Spirit of Flame",
       Tags: "Spirit",
       Description:
-        "Manipulate fire. Can be used to throw flames, create floating torches, and cause burns. Represents cleansing and destruction.",
+        "Manipulate fire. Can be used to throw flames, create floating torches, and control raging fires.",
     },
     {
       Class: "Mage",
@@ -230,7 +230,7 @@ export default function get_data() {
       Kit: "Spirit of Metal",
       Tags: "Spirit",
       Description:
-        "Manipulate metal. Can be used to magnetize metallic objects, binding them together or pushing them apart. Represents clarity and reason.",
+        "Manipulate metal. Can be used to magnetize metallic objects, binding them together or pushing them apart.",
     },
     {
       Class: "Mage",
@@ -238,7 +238,7 @@ export default function get_data() {
       Kit: "Spirit of Water",
       Tags: "Spirit",
       Description:
-        "Manipulate water. Can be used to create spears of ice, conjure fog, and purify liquids. Represents tranquility and adaptability.",
+        "Manipulate water. Can be used to create spears of ice, conjure fog, and purify liquids.",
     },
     {
       Class: "Mage",
@@ -254,7 +254,7 @@ export default function get_data() {
       Kit: "Spirit of Entropy",
       Tags: "Spirit",
       Description:
-        "Manipulate decay. Can be used to accelerate or decelerate processes like rotting and rusting.",
+        "Manipulate the rate of decay. Can be used to accelerate or decelerate rotting, rusting, and other decomposition processes.",
     },
     {
       Class: "Mage",
@@ -294,7 +294,7 @@ export default function get_data() {
       Kit: "Golden Silk",
       Tags: "Alchemy",
       Description:
-        "A potent hallucinogenic. Can be used to induce confusion, to numb pain, to put a target into a stupor, to render someone highly suggestable, or to inflict Mental damage.",
+        "A potent hallucinogenic dust. Can be used to induce confusion, to numb pain, to put a target into a stupor, to render someone highly suggestable, or to inflict Mental damage.",
     },
     {
       Class: "Scoundrel",
@@ -302,7 +302,7 @@ export default function get_data() {
       Kit: "Manifold Venom",
       Tags: "Alchemy",
       Description:
-        "A collection of dangerous poisons. Can be applied to the user\u2019s weapons to induce paralysis, sap strength, create nausea, cause blindness, or inflict additional Physical damage. Requires an action if applied in combat.",
+        "A collection of dangerous poisons. Can be applied to the user\u2019s weapons to induce paralysis, sap strength, cause blindness, or inflict additional Physical damage. Requires an action if applied in combat.",
     },
     {
       Class: "Scoundrel",
@@ -310,7 +310,7 @@ export default function get_data() {
       Kit: "Pin Down",
       Tags: "Technique",
       Description:
-        "Your attacks reduce an enemy\u2019s movement, cutting off their ability to escape or pursue. Using this technique greatly reduces a target\u2019s mobility, in addition to any Physical damage dealt. You have Advantage when using sprinting, as might be the case when chasing after someone or retreating from danger.",
+        "Your attacks reduce an enemy\u2019s movement, cutting off their ability to escape or pursue. Using this technique greatly reduces a target\u2019s mobility, in addition to any Physical damage dealt. You have Advantage when sprinting, as might be the case when chasing after someone or retreating from danger.",
     },
     {
       Class: "Scoundrel",
@@ -318,7 +318,7 @@ export default function get_data() {
       Kit: "Pressure Points",
       Tags: "Technique",
       Description:
-        "Your attacks strike at an enemy\u2019s nerves. Using this technique can incapacitate targets without lasting harm or visible injury, in addition to any Physical damage dealt. You have Advantage when sensing the motivations of others, such as detecting lies, by picking up on nervous ticks or other tells.",
+        "Your attacks strike at an enemy\u2019s nerves. Using this technique can incapacitate targets without lasting harm or visible injury, in addition to any Physical damage dealt. You have Advantage when sensing the motivations of others and detecting lies.",
     },
     {
       Class: "Scoundrel",
@@ -326,7 +326,7 @@ export default function get_data() {
       Kit: "Shifting Sniper",
       Tags: "Technique, Reaction",
       Description:
-        "Your ranged attacks are difficult to trace. Using this technique reduces the likelihood that you\u2019ll be exposed after making a ranged sneak attack. You can expend a Prep Point to avoid harm from an attack or hazard.",
+        "Your ranged attacks are difficult to trace. Using this technique reduces the likelihood that you\u2019ll be exposed after making a sneak attack. You can expend a Prep Point to avoid harm from an attack or hazard.",
     },
     {
       Class: "Scoundrel",
@@ -335,6 +335,14 @@ export default function get_data() {
       Tags: "Spirit",
       Description:
         "Manipulate darkness. Can be used to obscure appearances, darken areas, and blind enemies.",
+    },
+    {
+      Class: "Scoundrel",
+      Type: "Bard",
+      Kit: "Dervish",
+      Tags: "Technique",
+      Description:
+        "Your fighting style resembles dancing, making you particularly mobile. Using this technique allows you to move before and after making an attack, darting outside of melee range or firing shots while running. You have Advantage when performing acrobatics, such as climbing walls or jumping over obstacles.",
     },
     {
       Class: "Scoundrel",
@@ -355,14 +363,6 @@ export default function get_data() {
     {
       Class: "Scoundrel",
       Type: "Bard",
-      Kit: "Resilience Arcana",
-      Tags: "Resource",
-      Description:
-        "Gain an additional Physical box. You do not need to sleep, and cannot be rendered unconscious against your will, but can be incapacitated in other ways.",
-    },
-    {
-      Class: "Scoundrel",
-      Type: "Bard",
       Kit: "Spirit of Light",
       Tags: "Spirit",
       Description:
@@ -374,15 +374,15 @@ export default function get_data() {
       Kit: "Spirit of Sound",
       Tags: "Spirit",
       Description:
-        "Manipulate sound. Can be used to shatter eardrums, eavesdrop from afar, and mimic sounds.",
+        "Manipulate sound. Can be used to project noises, eavesdrop from afar, and shatter eardrums.",
     },
     {
       Class: "Scoundrel",
       Type: "Bard",
-      Kit: "War Arcana",
-      Tags: "Technique",
+      Kit: "Warded Heart",
+      Tags: "Resource",
       Description:
-        "Your fighting style resembles dancing, making you particularly mobile. Using this technique allows you to move before and after making an attack, darting outside of melee range or firing shots while running. You have Advantage when performing acrobatics, such as climbing walls or jumping over obstacles.",
+        "Gain an additional Physical box. You do not need to sleep, and cannot be rendered unconscious against your will, but can be incapacitated in other ways.",
     },
     {
       Class: "Scoundrel",
@@ -430,12 +430,12 @@ export default function get_data() {
       Kit: "Spirit of Wood",
       Tags: "Spirit",
       Description:
-        "Manipulate plants. Can be used to accelerate plant growth, speed up natural healing, and command flora. Represents growth and vitality.",
+        "Manipulate plants. Can be used to accelerate plant growth, speed up natural healing, and command flora.",
     },
     {
       Class: "Soldier",
       Type: "Fencer",
-      Kit: "Flourish",
+      Kit: "Flash",
       Tags: "Technique",
       Description:
         "Your attacks are complex, dazzling, and distracting to enemies. Using this technique gives Advantage to the next attack made on the target, either by you or by one of your allies, in addition to any Physical damage dealt. You have Advantage when inspiring or rallying others.",
@@ -443,15 +443,7 @@ export default function get_data() {
     {
       Class: "Soldier",
       Type: "Fencer",
-      Kit: "Harass",
-      Tags: "Technique",
-      Description:
-        "Your attacks unnerve and frustrate targets in addition to dealing damage. Using this technique inflicts a box of Mental damage on successful attacks, in addition to any Physical damage dealt. You have Advantage when provoking others.",
-    },
-    {
-      Class: "Soldier",
-      Type: "Fencer",
-      Kit: "Inner Flame",
+      Kit: "Inner Light",
       Tags: "Resource",
       Description:
         "At any time when you would otherwise spend a Fortune Point, you can spend a Physical box instead. When you recover Physical boxes, you recover one more than you would otherwise.",
@@ -463,6 +455,14 @@ export default function get_data() {
       Tags: "Technique",
       Description:
         "Your attacks culminate in deafening peals of thunder, causing harm through sound and shockwaves. Using this technique circumvents armor, barriers, and similar defenses.",
+    },
+    {
+      Class: "Soldier",
+      Type: "Fencer",
+      Kit: "Whiplash",
+      Tags: "Technique",
+      Description:
+        "Your attacks unnerve and frustrate targets in addition to dealing damage. Using this technique inflicts a box of Mental damage on successful attacks, in addition to any Physical damage dealt. You have Advantage when provoking others.",
     },
     {
       Class: "Soldier",
@@ -518,7 +518,7 @@ export default function get_data() {
       Kit: "Smite",
       Tags: "Technique",
       Description:
-        "Your attacks strike with enough force to knock targets back or launch them into the air. Using this technique allows your attacks to forcibly reposition enemies, in addition to any Physical damage dealt. You have Advantage against any effect that attempts to forcibly move you or impede your movement.",
+        "Your attacks strike with enough force to knock targets down or launch them into the air. Using this technique allows your attacks to forcibly reposition enemies, in addition to any Physical damage dealt. You have Advantage against any effect that attempts to forcibly move you or impede your movement.",
     },
     {
       Class: "Soldier",
@@ -542,15 +542,7 @@ export default function get_data() {
       Kit: "Cleave",
       Tags: "Technique",
       Description:
-        "Your attacks are especially destructive, hitting enemies and objects adjacent to your target. Using this technique allows your attacks to inflict damage in a small area of effect centered around your main target.",
-    },
-    {
-      Class: "Soldier",
-      Type: "Myrmidon",
-      Kit: "Ferocious",
-      Tags: "Technique",
-      Description:
-        "Your attacks inspire fear and caution from enemies. Using this technique intimidates enemies you harm, causing targets with a sense of self-preservation to flee or otherwise behave more cautiously.",
+        "Your attacks are especially destructive, hitting enemies and objects adjacent to your target. Using this technique allows your attacks to inflict damage in a small area of effect centered around your main target. If you incapacitate a target with this technique, you recover a Fortune Point (to a maximum of one point per action).",
     },
     {
       Class: "Soldier",
@@ -563,10 +555,10 @@ export default function get_data() {
     {
       Class: "Soldier",
       Type: "Myrmidon",
-      Kit: "Spirit of Chance",
-      Tags: "Spirit",
+      Kit: "Menace",
+      Tags: "Reaction",
       Description:
-        "Manipulate probability. Can be used to tweak the odds in your favor, jinx enemies with poor luck, and make improbable outcomes more likely.",
+        "When you successfully defend against an enemy\u2019s melee attack, they take a box of Mental damage. When you successfully intimidate enemies in combat, they take a box of Mental damage.",
     },
     {
       Class: "Soldier",
@@ -574,7 +566,15 @@ export default function get_data() {
       Kit: "Sunder",
       Tags: "Technique",
       Description:
-        "Your attacks are brutally effective, causing great harm and breaking through defences. Using this technique allows your attacks to cut or pierce durable materials like stone and metal. Successful attacks also deal an additional box of Physical damage. You have Advantage when using this technique to destroy objects and obstacles.",
+        "Your attacks are brutally effective, causing great harm and breaking through defences. Using this technique allows your attacks to cut or pierce materials like stone and metal. Successful attacks also deal an additional box of Physical damage. You have Advantage when using this technique to destroy objects and obstacles.",
+    },
+    {
+      Class: "Soldier",
+      Type: "Myrmidon",
+      Kit: "Unstoppable",
+      Tags: "Reaction",
+      Description:
+        "You are highly resistant to indirect forms of harm. You are immune to poisons, diseases, and curses. You have Advantage against hazards like sweltering heat, bitter cold, or traps.",
     },
   ];
 

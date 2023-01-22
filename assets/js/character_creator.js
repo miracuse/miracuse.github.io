@@ -3,9 +3,7 @@ import get_data from "./data.js";
 import get_class_mapping from "./class_mapping.js"; // Globals ////////////////////////////////////////////////////////////////////
 // A list of game-specific skills that a character can put points into
 
-const SKILLS = ["Perception", "Knowledge", "Strength", "Bravery", "Magic", "Presence", "Agility", "Cunning"]; // The number of "kits" that a character can equip
-
-const KIT_COUNT = 4; // Hard-coded descriptions of "kits" that a character can equip
+const SKILLS = ["Perception", "Knowledge", "Strength", "Bravery", "Magic", "Presence", "Agility", "Cunning"]; // Hard-coded descriptions of "kits" that a character can equip
 
 const DATA = get_data(); // Functions //////////////////////////////////////////////////////////////////
 // JS simplified mockup of np.arange(x)
@@ -202,16 +200,7 @@ class KitHolder extends React.Component {
       value: x
     }, x)); // Populate the kit selections based on the kit types
 
-    const kit_options_data = fetchKits(this.props.specializations); // const kit_options = kit_options_data.map(function (x) {
-    //   {
-    //     return (
-    //       <option key={x} value={x}>
-    //         {x}
-    //       </option>
-    //     );
-    //   }
-    // });
-
+    const kit_options_data = fetchKits(this.props.specializations);
     const kit_options = kit_options_data.map(x => this.generateKitOption(x));
     return /*#__PURE__*/React.createElement("div", {
       id: "kit_chooser_0" + this.props.index,
@@ -364,16 +353,7 @@ class CharacterSheet extends React.Component {
     const skill_text_holders = SKILLS.map(skill => /*#__PURE__*/React.createElement(SkillTextHolder, {
       skill: skill,
       skillValue: this.state[skill]
-    })); // Generate the kits
-    // const kit_holders = arange(KIT_COUNT).map((counter) => (
-    //   <KitHolder
-    //     key={counter}
-    //     index={counter}
-    //     specializations={this.state.Specializations}
-    //     onChange={this.handleKitChange}
-    //   />
-    // ));
-    // Put everything together
+    })); // Put everything together
 
     return /*#__PURE__*/React.createElement("div", {
       id: "CharacterSheet"
@@ -384,7 +364,7 @@ class CharacterSheet extends React.Component {
     }, /*#__PURE__*/React.createElement("p", null, "Class")), /*#__PURE__*/React.createElement("div", {
       className: "character_class_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Your Class determines what skills you start with and which specializations you can choose from."
+      message: "Your Class determines what skills you start with."
     }), /*#__PURE__*/React.createElement("label", null, "Class")), /*#__PURE__*/React.createElement("div", {
       className: "character_class"
     }, /*#__PURE__*/React.createElement("select", {
@@ -402,7 +382,7 @@ class CharacterSheet extends React.Component {
     }, "Scoundrel"))), /*#__PURE__*/React.createElement("div", {
       className: "character_tier_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Your Tier determines how many specializations (and kits) you have have access to. Higher Tier characters are considered more powerful than lower Tier characters."
+      message: "Your Tier determines how many specializations you can have at one time. More experienced characters have a higher tier."
     }), /*#__PURE__*/React.createElement("label", null, "Tier")), /*#__PURE__*/React.createElement("div", {
       className: "character_tier"
     }, /*#__PURE__*/React.createElement("div", {
@@ -454,7 +434,7 @@ class CharacterSheet extends React.Component {
     }), /*#__PURE__*/React.createElement("div", {
       className: "mental_health_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Mental Health represents how much psychological harm you can withstand before becoming incapacitated. Increasing Presence will add more boxes. You can spend a Mental Health box in place of Charge, Fortune, Mana, and Prep Points. "
+      message: "Mental Health represents how much psychological harm you can withstand before becoming incapacitated. Increasing Presence will add more boxes."
     }), /*#__PURE__*/React.createElement("label", null, "Mental Health")), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "mental_health",
       boxCount: 3 + this.state.Presence

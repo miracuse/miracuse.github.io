@@ -1,12 +1,12 @@
 ---
 layout: character_creator
-title: Character Sheet
+title: Game Sheets
 nav_order: 1
 has_children: false
 has_toc: false
 ---
 
-# Character Sheet
+# Game Sheets
 
 Under Construction
 {: .label .label-yellow }

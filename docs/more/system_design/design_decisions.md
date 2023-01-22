@@ -2,7 +2,7 @@
 layout: default
 title: Design Decisions
 parent: System Design
-grand_parent: More Resources
+grand_parent: More
 nav_order: 3
 ---
 
@@ -20,7 +20,7 @@ nav_order: 3
 
     Emulating features of a different class comes at a cost (Kits, Skill points, etc.).
 
-**_Universal Participation_**: Every player should be able to participate in D&D's three pillars (social, exploration, combat) regardless of class. Players should not feel the need to sit out scenes for mechanical reasons.
+**_Universal Participation_**: Every player should be able to participate in the "three pillars" (social, exploration, combat) regardless of class. Players should not feel the need to sit out scenes for mechanical reasons.
 
     Each base class has a Social Skill and an Attack Skill.
 

@@ -15,9 +15,6 @@ const SKILLS = [
   "Cunning",
 ];
 
-// The number of "kits" that a character can equip
-const KIT_COUNT = 4;
-
 // Hard-coded descriptions of "kits" that a character can equip
 const DATA = get_data();
 
@@ -392,16 +389,6 @@ class CharacterSheet extends React.Component {
       <SkillTextHolder skill={skill} skillValue={this.state[skill]} />
     ));
 
-    // Generate the kits
-    // const kit_holders = arange(KIT_COUNT).map((counter) => (
-    //   <KitHolder
-    //     key={counter}
-    //     index={counter}
-    //     specializations={this.state.Specializations}
-    //     onChange={this.handleKitChange}
-    //   />
-    // ));
-
     // Put everything together
     return (
       <div id="CharacterSheet">
@@ -411,7 +398,7 @@ class CharacterSheet extends React.Component {
             <p>Class</p>
           </div>
           <div className="character_class_text">
-          <InfoBox message="Your Class determines what skills you start with and which specializations you can choose from." />
+          <InfoBox message="Your Class determines what skills you start with." />
             <label>Class</label>
           </div>
           <div className="character_class">
@@ -428,7 +415,7 @@ class CharacterSheet extends React.Component {
           </div>
 
           <div className="character_tier_text">
-          <InfoBox message="Your Tier determines how many specializations (and kits) you have have access to. Higher Tier characters are considered more powerful than lower Tier characters." />
+          <InfoBox message="Your Tier determines how many specializations you can have at one time. More experienced characters have a higher tier." />
             <label>Tier</label>
           </div>
           <div className="character_tier">
@@ -479,7 +466,7 @@ class CharacterSheet extends React.Component {
           />
 
           <div className="mental_health_text">
-          <InfoBox message="Mental Health represents how much psychological harm you can withstand before becoming incapacitated. Increasing Presence will add more boxes. You can spend a Mental Health box in place of Charge, Fortune, Mana, and Prep Points. " />
+          <InfoBox message="Mental Health represents how much psychological harm you can withstand before becoming incapacitated. Increasing Presence will add more boxes." />
             <label>Mental Health</label>
           </div>
 

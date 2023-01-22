@@ -6,15 +6,153 @@ layout: default
 <html>
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="stylesheet" href="../assets/css/character_creator.css" /> -->
   </head>
   <body>
+    <!-- Markdown Content -->
     {{ content }}
-    <!-- React will populate the page into this div -->
-    <div id="root"></div>
 
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks active" onclick="openTab(event, 'character_sheet')">Play</button>
+      <button class="tablinks" onclick="openTab(event, 'rules')">Basic Rules</button>
+      <button class="tablinks" onclick="openTab(event, 'health')">Health</button>
+      <button class="tablinks" onclick="openTab(event, 'fighting')">Fighting</button>
+      <button class="tablinks" onclick="openTab(event, 'resources')">Resources</button>
+    </div>
+
+    <!-- Character Sheet Tab -->
+    <div id="character_sheet" class="tabcontent" style="display: block">
+      <h3>Character Sheet</h3>
+
+      <!-- Dice Roller -->
+      <button class="btn" onclick="diceRoll(event)">Roll Dice</button>
+      <label id="dice_outcome">+0</label>
+      <br/>
+
+      <!-- React will populate the character sheet into this div -->
+      <div id="root"></div>
+    </div>
+
+    <!-- Rules Tab -->
+    <div id="rules" class="tabcontent">
+      <h3>Doing Things</h3>
+      <p>
+        When you <b>do something challenging</b>, the GM will tell you to roll a ten-sided die.
+      </p>
+      <ul>
+        <li><b>10</b>: Add +2 to your Skill to determine the result.</li>
+        <li><b>8-9</b>: Add +1 to your Skill to determine the result.</li>
+        <li><b>4-7</b>: Add +0 to your Skill to determine the result.</li>
+        <li><b>2-3</b>: Subtract -1 from your Skill to determine the result.</li>
+        <li><b>1</b>: Subtract -2 from your Skill to determine the result.</li>
+      </ul>
+
+      <h3>Skills</h3>
+      <p>
+        <b>Skills are what you're good at</b>. The more points you have in a Skill, the better outcomes you'll have when using it.
+      </p>
+
+      <h3>Kits</h3>
+      <p>
+        <b>Kits are what special abilities you have</b>. They let you cast magic, perform alchemy, or do advanced martial techniques. The Kits you have access to depend on your Class and Specialization.
+      </p>
+
+      <h3>Advantage and Disadvantage</h3>
+      <p>
+        When the GM tells you to take Advantage, <b>you roll twice and take the better result</b>. Similarly, Disadvantage has you roll twice and take the worse result.
+      </p>
+    </div>
+
+    <!-- Health Tab -->
+    <div id="health" class="tabcontent">
+      <h3>Health</h3>
+      <p>
+        Health is measured in Boxes. <b>Whenever you take damage, mark a Box</b> in either the Physical or Mental health tracks.
+      </p>
+      <p>
+        <b>If you run out of boxes (Physical or Mental), you become incapacitated</b>. You cannot act in the game until at least one of those boxes is cleared, either by resting or healing.
+      </p>
+
+      <h3>Making Camp</h3>
+      <p>
+        Boxes are recovered by resting at camp. Some characters have Kits that can heal Physical boxes. No Kits exist to heal Mental boxes.
+      </p>
+      <p>
+        While resting at camp, you can also swap out your Kits.
+      </p>
+
+      <h3>Pushing It</h3>
+      <p>
+        You can <b>sacrifice a Mental Health Box</b> to recover a Resource (Charge Point, Fortune Point, Mana Point, Prep Point). Be careful, it's possible to to incapacitate yourself by doing this.
+      </p>
+    </div>
+
+    <!-- Fighting Tab -->
+    <div id="fighting" class="tabcontent">
+      <h3>Offense</h3>
+      <p>
+        <b>When you attack something, you roll a Skill</b>. Hitting something with a sword might be Strength or Agility. Attacking with a spell would be Magic. Shooting with a bow or gun could be Perception.
+      </p>
+      <p>
+        <b>If you hit, the target takes a Box of damage.</b> Certain Kits and situations might change this to two Boxes, deal Mental damage instead of Physical, or produce effects in addition to damage.
+      </p>
+      
+      <h3>Defense</h3>
+      <p>
+        <b>When you try to avoid harm, you roll a Skill.</b> Blocking an attack might use Strength. Dodging could use Agility. If you fail to avoid harm, you mark a Box of damage. 
+      </p>
+
+      <h3>Turn Order</h3>
+      <p>
+        Turn order is decided at the beginning of some (but not all) conflicts. The GM will tell you to <b>roll Agility to determine when you can act</b>.
+      </p>
+    </div>
+
+    <!-- Resources Tab -->
+    <div id="resources" class="tabcontent">
+      <h3>Resources</h3>
+      <p>
+        Resources are pools of power that you can spend to briefly supercharge Kits.
+      </p>
+
+      <h5>Charge Points</h5>
+      <p>
+        The Alchemist's resource, able to supercharge kits with the "Alchemy" tag. Can also be used to:
+      </p>
+      <ul>
+        <li><b>Produce a Potion</b> to heal two Boxes of Physical damage or treat afflictions like poison.</li>
+        <li><b>Produce a Grenade</b> to inflict destruction in an area-of-effect.</li>
+        <li>Pull out <b>What You Needed</b>, bringing out an item that you might plausibly have that can help you with your current situation.</li>
+      </ul>
+
+      <h5>Fortune Points</h5>
+      <p>
+        The Soldier's resource, able to supercharge kits with the "Technique" tag. Can also be used to:
+        <ul>
+          <li><b>Reroll</b> any roll, a maximum of one time.</li>
+          <li><b>Escape Harm</b> by sheer luck or skill, avoiding damage.</li>
+        </ul>
+      </p>
+
+      <h5>Mana Points</h5>
+      <p>
+        The Mage's resource, able to supercharge kits with the "Spirit" tag. Has no other uses.
+      </p>
+
+      <h5>Prep Points</h5>
+      <p>
+        The Scoundrel's resource, able to supercharge kits with any tag. Can also be used to:
+        <ul>
+          <li><b>Produce a Disguise</b> to infiltrate, confuse, or assume an alias.</li>
+          <li><b>Disappear from Sight</b> even in the middle of combat.</li>
+          <li>Declare <b>I Know a Guy</b>, describing a contact you might plausibly have that owes you a favor.</li>
+          <li><b>Use a Magic Device</b> to use a Skill other than Magic with a "Spirit" Kit.</li>
+        </ul>
+      </p>
+    </div>
+
+
+    <!-- Load Javascript -->
     <!-- <script src="../assets/js/react.development.js"></script>
         <script src="../assets/js/react-dom.development.js"></script>  -->
     <!-- <script
@@ -34,5 +172,7 @@ layout: default
       crossorigin
     ></script>
     <script src="../assets/js/character_creator.js" type="module"></script>
+    <script src="../assets/js/tabs.js"></script>
+    <script src="../assets/js/dice_roll.js"></script>
   </body>
 </html>

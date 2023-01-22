@@ -23,11 +23,10 @@ nav_order: 3
     GM:     Alright. You're down for the count until someone can
             heal you. Don't forget that you're Injured too.
 
-A character that marks all of their boxes in either health track is taken out of play for a short time. They become **Incapacitated** and **Injured**.
+A character that marks all of their boxes in either health track is taken out of play for a short time. They become **Incapacitated**.
 
 - **Incapacitated** characters cannot act until at least one box of their filled track is clear. They also can't be damaged any further.
 
-- **Injured** characters take a -1 penalty to most rolls until they rest at camp. A character can only have one injury at a time. Any further injuries sustained have no mechanical impact.
 
 > **Note**: Each point in the **<span style="color: {{ site.soldier_color }}">Strength</span>** Skill adds a Box to the Physical Health track. Likewise, each point in the **<span style="color: {{ site.mage_color }}">Presence</span>** Skill adds a Box to the Mental Health track.
 

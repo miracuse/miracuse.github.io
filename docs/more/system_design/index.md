@@ -1,7 +1,7 @@
 ---
 layout: default
 title: System Design
-parent: More Resources
+parent: More
 has_children: true
 has_toc: false
 nav_order: 99

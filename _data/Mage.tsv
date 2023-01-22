@@ -1,18 +1,18 @@
 Class	Type	Kit	Tags	Description
-Mage	Priest	Spirit of Abjuration	Spirit, Reaction	Repel and dispel. Can be used to create barriers, destroy magic, and scare away otherworldly influences. You can expend a Mana Point to deflect an attack aimed at you.
-Mage	Priest	Spirit of Divination	Spirit	Find and seek. Can be used to divine the location of people, places, and things through magical means.
+Mage	Priest	Spirit of Abjuration	Spirit, Reaction	Repel and dispel. Can be used to create barriers, destroy magic, and turn away otherworldly influences. You can expend a Mana Point to deflect an attack aimed at you.
+Mage	Priest	Spirit of Divination	Spirit	Petition otherworldly forces for information. Can be used to divine the location of people, places, and things through magical means.
 Mage	Priest	Spirit of Dreaming	Spirit	Meddle with the boundary between conscious and unconscious. Can be used to induce sleep, daze enemies, and put others into a trance. You have Advantage when using Presence to hypnotize the weak-willed.
 Mage	Priest	Spirit of Language	Spirit	Speak and undestand all creatures. Can be used to communicate with animals, use charm magic, and compel others to your will. You have Advantage when using Presence to awe others.
 Mage	Priest	Spirit of Necromancy	Spirit	Meddle with the boundary between life and death. Can be used to puppet corpses to do your bidding, summon ghosts, and stave off death.
-Mage	Priest	Spirit of Restoration	Spirit	Restore what is broken. Can be used to heal Physical damage, repair broken objects, and treat natural afflictions.
-Mage	Shaman	Spirit of Aether	Spirit, Reaction	Manipulate electricity. Can be used to shoot lightning from your hands, induce pain without damage, and shock enemies that harm you. Represents emptiness and void. You can expend a Mana Point to inflict Physical damage on enemies that harm you from melee range.
-Mage	Shaman	Spirit of Air	Spirit	Manipulate air. Can be used to create ferocious whirlwinds, fall gently from great heights, and rebuff projectiles. Represents movement and freedom.
-Mage	Shaman	Spirit of Earth	Spirit	Manipulate earth. Can be used to throw jagged spikes from the ground, reshape stone, and send tremors through the earth. Represents solidity and strength.
-Mage	Shaman	Spirit of Flame	Spirit	Manipulate fire. Can be used to throw flames, create floating torches, and cause burns. Represents cleansing and destruction.
-Mage	Shaman	Spirit of Metal	Spirit	Manipulate metal. Can be used to magnetize metallic objects, binding them together or pushing them apart. Represents clarity and reason.
-Mage	Shaman	Spirit of Water	Spirit	Manipulate water. Can be used to create spears of ice, conjure fog, and purify liquids. Represents tranquility and adaptability.
+Mage	Priest	Spirit of Restoration	Spirit	Restore what is broken. Can be used to heal Physical damage, repair broken objects, and treat natural afflictions. The number of Physical boxes healed is equal to the result of the roll.
+Mage	Shaman	Spirit of Aether	Spirit	Manipulate electricity. Can be used to shoot lightning from your hands, induce pain without damage, and shock enemies that harm you.
+Mage	Shaman	Spirit of Air	Spirit	Manipulate air. Can be used to create ferocious whirlwinds, fall gently from great heights, and rebuff projectiles.
+Mage	Shaman	Spirit of Earth	Spirit	Manipulate earth. Can be used to throw jagged spikes from the ground, reshape stone, and send tremors through the earth.
+Mage	Shaman	Spirit of Flame	Spirit	Manipulate fire. Can be used to throw flames, create floating torches, and control raging fires.
+Mage	Shaman	Spirit of Metal	Spirit	Manipulate metal. Can be used to magnetize metallic objects, binding them together or pushing them apart.
+Mage	Shaman	Spirit of Water	Spirit	Manipulate water. Can be used to create spears of ice, conjure fog, and purify liquids.
 Mage	Wizard	Manafont	Resource	Gain an additional two Mana Points. When you expend a Mental health box to recover a Mana Point, you gain two instead of one.
-Mage	Wizard	Spirit of Entropy	Spirit	Manipulate decay. Can be used to accelerate or decelerate processes like rotting and rusting.
+Mage	Wizard	Spirit of Entropy	Spirit	Manipulate the rate of decay. Can be used to accelerate or decelerate rotting, rusting, and other decomposition processes.
 Mage	Wizard	Spirit of Force	Spirit, Reaction	Perform limited telekinesis. Can be used to levitate nearby objects and launch them through the air. You can expend a Mana Point to deflect an attack aimed at you.
 Mage	Wizard	Spirit of Gravity	Spirit	Manipulate gravity. Can be used to add or reduce weight for a short time.
 Mage	Wizard	Spirit of Locomotion	Spirit	Manipulate kinetic energy. Can be used to add or reduce speed of a moving object.
