@@ -14,13 +14,10 @@ One person will act as the **Game Master** (GM). They'll be responsible for play
 
 ### Getting Started
 
-Players should pick a [Class](docs/classes/index.md) and fill out a [Character Sheet](docs/character_sheet.html).
+Players should create a character on the [Game Sheets](docs/game_sheets.html) page, looking over some of the basic rules.
 
 The GM should review all of the content on this site and prepare a short adventure. Resources on the [GM Pages](docs/gm_pages/index.md) will help.
 
-
 ### For Experienced Players
 
-Interested in how _Miracuse_ compares to systems like Dungeons and Dragons? [This Page](docs/more/system_design/about_the_system.html) goes into detail on the differences and design philosophy.
-
-<!-- var data = {{ site.data.miracuse_kits | jsonify }} -->
+Interested in the differences between _Miracuse_ and games like _Dungeons and Dragons_? Take a look at [this page](docs/more/system_design/about_the_system.md) for a quick overview.

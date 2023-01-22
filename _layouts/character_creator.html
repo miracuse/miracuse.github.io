@@ -17,6 +17,7 @@ layout: default
       <button class="tablinks" onclick="openTab(event, 'rules')">Basic Rules</button>
       <button class="tablinks" onclick="openTab(event, 'health')">Health</button>
       <button class="tablinks" onclick="openTab(event, 'fighting')">Fighting</button>
+      <button class="tablinks" onclick="openTab(event, 'kits')">Kits</button>
       <button class="tablinks" onclick="openTab(event, 'resources')">Resources</button>
     </div>
 
@@ -35,32 +36,93 @@ layout: default
 
     <!-- Rules Tab -->
     <div id="rules" class="tabcontent">
-      <h3>Doing Things</h3>
-      <p>
-        When you <b>do something challenging</b>, the GM will tell you to roll a ten-sided die.
-      </p>
-      <ul>
-        <li><b>10</b>: Add +2 to your Skill to determine the result.</li>
-        <li><b>8-9</b>: Add +1 to your Skill to determine the result.</li>
-        <li><b>4-7</b>: Add +0 to your Skill to determine the result.</li>
-        <li><b>2-3</b>: Subtract -1 from your Skill to determine the result.</li>
-        <li><b>1</b>: Subtract -2 from your Skill to determine the result.</li>
-      </ul>
-
       <h3>Skills</h3>
       <p>
         <b>Skills are what you're good at</b>. The more points you have in a Skill, the better outcomes you'll have when using it.
       </p>
 
-      <h3>Kits</h3>
+      <h3>Doing Things</h3>
+      <code>Outcome = Skill Level + Roll Result</code>
+      <p>
+        When you <b>do something challenging</b>, the GM will tell you to roll a ten-sided die. You'll convert the roll using the list below, then add it to your Skill.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Roll</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10</td>
+            <td>+2</td>
+          </tr>
+          <tr>
+            <td>8, 9</td>
+            <td>+1</td>
+          </tr>
+          <tr>
+            <td>4, 5, 6, 7</td>
+            <td>+0</td>
+          </tr>
+          <tr>
+            <td>2, 3</td>
+            <td>-1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>-2</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Success and Failure</h3>
+      <p>
+        The GM will determine if you've succeeded based on how hard the task was and how high you rolled. 
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Difficulty</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>+0</td>
+          <td>Easy</td>
+        </tr>
+        <tr>
+          <td>+1</td>
+          <td>Challenging</td>
+        </tr>
+        <tr>
+          <td>+2</td>
+          <td>Professional</td>
+        </tr>
+        <tr>
+          <td>+3</td>
+          <td>Expert</td>
+        </tr>
+        <tr>
+          <td>+4</td>
+          <td>Master</td>
+        </tr>
+        <tr>
+          <td>+5</td>
+          <td>Olympic</td>
+        </tr>
+      </table>
+
+      <!-- <h3>Kits</h3>
       <p>
         <b>Kits are what special abilities you have</b>. They let you cast magic, perform alchemy, or do advanced martial techniques. The Kits you have access to depend on your Class and Specialization.
-      </p>
+      </p> -->
 
       <h3>Advantage and Disadvantage</h3>
       <p>
         When the GM tells you to take Advantage, <b>you roll twice and take the better result</b>. Similarly, Disadvantage has you roll twice and take the worse result.
-      </p>
+      </p> 
     </div>
 
     <!-- Health Tab -->
@@ -91,7 +153,7 @@ layout: default
     <div id="fighting" class="tabcontent">
       <h3>Offense</h3>
       <p>
-        <b>When you attack something, you roll a Skill</b>. Hitting something with a sword might be Strength or Agility. Attacking with a spell would be Magic. Shooting with a bow or gun could be Perception.
+        <b>When you attack something, you roll a Skill</b>. Hitting something with a sword might be Strength or Agility. Attacking with a spell would be Magic. Shooting with a bow or gun could be Perception. You successfully hit an enemy if your roll is higher than their Defense.
       </p>
       <p>
         <b>If you hit, the target takes a Box of damage.</b> Certain Kits and situations might change this to two Boxes, deal Mental damage instead of Physical, or produce effects in addition to damage.
@@ -99,12 +161,35 @@ layout: default
       
       <h3>Defense</h3>
       <p>
-        <b>When you try to avoid harm, you roll a Skill.</b> Blocking an attack might use Strength. Dodging could use Agility. If you fail to avoid harm, you mark a Box of damage. 
+        <b>When you try to avoid harm, you roll a Skill.</b> Blocking an attack might use Strength. Dodging could use Agility. If you fail to avoid harm, you mark a Box of damage. You successfully defend against against harm if your roll is equal to or greater than the enemy's Offense.
       </p>
+
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Note: Enemies do not roll any dice.
+Their Offense and Defense are flat values that you roll against.</code></pre></div></div>
 
       <h3>Turn Order</h3>
       <p>
         Turn order is decided at the beginning of some (but not all) conflicts. The GM will tell you to <b>roll Agility to determine when you can act</b>.
+      </p>
+    </div>
+
+    <div id="kits" class="tabcontent">
+      <h3>Kits</h3>
+      <p>
+        <b>Kits are special abilities you have</b>. They let you cast magic, perform alchemy, or do advanced martial techniques. The Kits you have access to depend on your Class and Specialization.
+      </p>
+
+      <h3>Changing Kits</h3>
+      <p>
+        You can swap out your equipped Kits whenever you make camp. You can have four Kits equipped at one time.
+      </p>
+
+      <h3>Acquiring New Kits</h3>
+      <p>
+        You start with six Kits available based on your character's Specialization. When your character has spent enough time adventuring, they'll unlock a second Specialization with six more Kits to choose from.
+      </p>
+      <p>
+        The number of Kits you can equip at one time will always be four.
       </p>
     </div>
 

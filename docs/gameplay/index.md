@@ -12,7 +12,7 @@ has_toc: false
 
     Player: I want to use my fire magic to create a light.
 
-    GM: Okay, roll Magic.
+    GM: Okay, that's pretty easy. Roll Magic and try to get at least a +1.
 
     Player: I rolled a +1, and my character starts with a +2. So, I have a +3 total.
 
