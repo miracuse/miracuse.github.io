@@ -1,4 +1,4 @@
-function diceRoll(event) {
+function diceRoll(event, matching_id) {
     // Roll the dice
     var result;
     var dice_outcome = Math.floor(Math.random() * 10) + 1;
@@ -10,9 +10,9 @@ function diceRoll(event) {
     else {result = "err"}
     
     // Fill the dice outcome element
-    document.getElementById("dice_outcome").innerHTML = "...";
+    document.getElementById(matching_id).innerHTML = "...";
     setTimeout(() => {
-        document.getElementById("dice_outcome").innerHTML = result;
+        document.getElementById(matching_id).innerHTML = result;
       }, 250)
       
 }

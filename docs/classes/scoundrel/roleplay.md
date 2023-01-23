@@ -8,19 +8,26 @@ nav_order: 2
 
 # Roleplay
 
-Players are welcome to customize their characters however they choose. However, if they aren't sure where to start, this section can provide some prompts and guidance.
+{% include class_prompt.html %}
 
-### Suggested Equipment and Appearance
+### Equipment and Appearance
 
-- An easily hidden melee weapon, such as a dagger or garrote
+- What kind of clothes do you wear? Bright and colorful? Grey and plain?
 
-- An unassuming ranged weapon, such as throwing knives or a shortbow
+- What kind of tools do you keep on your person? Lockpicks? Wirecutters?
 
-- Inconspicuous clothes for traveling, and fashionable dress for formal affairs
+- What kind of personality do you show to others?
 
-- Lockpicks, wire cutters, and other thieves' tools hidden on your person
+### Background
 
-### Roles
+- What work do you do for money?
+
+- Who holds a grudge against you?
+
+- What's your most important belief or conviction?
+
+
+<!-- ### Roles
 
 **_In combat..._**
 
@@ -32,4 +39,4 @@ The Scoundrel is an expert at **<span style="color: {{ site.scoundrel_color }}">
 
 **_While exploring..._**
 
-The Scoundrel is nearly always the scout of a party. They can move carefully through dangerous areas, ever ready to book a fast retreat should danger arise. They also have **What You Needed**, which might be anything from a grappling hook to a bottle of lamp oil.
+The Scoundrel is nearly always the scout of a party. They can move carefully through dangerous areas, ever ready to book a fast retreat should danger arise. They also have **What You Needed**, which might be anything from a grappling hook to a bottle of lamp oil. -->

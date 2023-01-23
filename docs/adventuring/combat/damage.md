@@ -10,7 +10,7 @@ nav_order: 1
 
 In most cases, **a successful attack from a Player or an enemy will inflict one box of Physical damage**. This is the case regardless of whether the attack comes from a sword, arrow, fireball, or anywhere else.
 
-However, various Kits can modify attacks. [Techniques](../../classes/soldier/index.md) can add damage and effects like knockback. [Items](../../classes/alchemist/index.md) like grenades deal damage in an area-of-effect. [Magic](../../classes/mage/index.md) might ignite enemies, pin them to the ground with gravity, or change the terrain.
+However, various Kits can modify attacks. [Weapons](../../classes/soldier/index.md) can add damage and effects like knockback. [Items](../../classes/alchemist/index.md) like grenades deal damage in an area-of-effect. [Magic](../../classes/mage/index.md) might ignite enemies, pin them to the ground with gravity, or change the terrain.
 
 Similarly, enemies may have abilities that do the same for their attacks.
 

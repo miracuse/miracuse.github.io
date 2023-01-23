@@ -8,19 +8,25 @@ nav_order: 2
 
 # Roleplay
 
-Players are welcome to customize their characters however they choose. However, if they aren't sure where to start, this section can provide some prompts and guidance.
+{% include class_prompt.html %}
 
-### Suggested Equipment and Appearance
+### Equipment and Appearance
 
-- A crossbow or hand cannon that can launch grenades
+- Do you use a gun? A crossbow? Something else?
 
-- A bandolier, toolbox, or collection of pouches filled with potions and tools
+- Do you carry your items in a bandolier, toolbox, or backpack?
 
-- Padded clothing with many pockets, and face protection such as goggles or a plague doctor's mask
+- What kind of armor do you wear? Padded clothing with pockets? Goggles?
 
-- A hefty pack filled with adventuring gear such as rope and torches
+### Background
 
-### Roles
+- What was your alchemy master like?
+
+- What kind of apprenticeship did you have? Was it in a city, a battlefield, or somewhere else?
+
+- How long have you been a journeyman?
+
+<!-- ### Roles
 
 **_In combat..._**
 
@@ -32,4 +38,4 @@ The Alchemist specializes in debate using **<span style="color: {{ site.alchemis
 
 **_While exploring..._**
 
-The Alchemist makes for an excellent lookout. Their sharp senses and wealth of lore will keep the party informed of approaching dangers well before they arrive.
+The Alchemist makes for an excellent lookout. Their sharp senses and wealth of lore will keep the party informed of approaching dangers well before they arrive. -->

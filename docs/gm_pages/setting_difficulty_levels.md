@@ -14,7 +14,9 @@ Part of the learning curve in running sessions is learning to "eyeball" the diff
 
 {% include skill_ladder.html %}
 
-With any task, ask yourself where it falls on the Skill Ladder. Is this something that you think a **Proficient (+1)** person could manage? Or would you have to be a **Professional (+2)** to pull it off?
+With any task, ask yourself where it falls on the Skill Ladder. Is this something that you think a **Proficient (+1)** person could manage? Or would you have to be a **Professional (+2)** to pull it off? 
+
+> **Tip:** When in doubt, default to **Proficient (+1)**.  
 
 * **Mediocre (+0):** Climbing a one-story building with a ladder. Usually so easy that the GM won't even call for a roll.
 

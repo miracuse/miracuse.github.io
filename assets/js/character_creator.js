@@ -450,21 +450,21 @@ class CharacterSheet extends React.Component {
     }), /*#__PURE__*/React.createElement("div", {
       className: "mana_point_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Mana Points can be used to cast powerful spells, amplifying the effects of an equipped Spirit kit."
+      message: "Mana Points can be used to cast powerful spells, amplifying the effects of an equipped Talisman or combining two Talismans to produce a complex effect."
     }), /*#__PURE__*/React.createElement("label", null, "Mana Points")), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "mana_point",
       boxCount: 2 * this.state.Presence
     }), /*#__PURE__*/React.createElement("div", {
       className: "fortune_point_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Fortune Points can be used to pull off fantastical physical feats, amplifying the effects of an equipped Technique kit. They can also be used to 'Reroll' or 'Avoid Harm'."
+      message: "Fortune Points can be used to pull off fantastical physical feats, amplifying the effects of an equipped Weapon. They can also be used to 'Reroll' or 'Avoid Harm'."
     }), /*#__PURE__*/React.createElement("label", null, "Fortune Points")), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "fortune_point",
       boxCount: 2 * this.state.Bravery
     }), /*#__PURE__*/React.createElement("div", {
       className: "prep_point_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Prep Points can be used in place of any of the other resources, amplifying the effects of an equipped kit. They can also be used to 'Disappear From Sight', 'Assume a Disguise', or declare 'I Know a Guy'."
+      message: "Prep Points can be used to 'Disappear From Sight', 'Produce a Disguise', 'Use a Magic Device', or declare 'I Know a Guy'."
     }), /*#__PURE__*/React.createElement("label", null, "Prep Points")), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "prep_point",
       boxCount: 2 * this.state.Cunning

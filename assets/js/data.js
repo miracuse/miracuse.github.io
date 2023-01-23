@@ -3,14 +3,6 @@ export default function get_data() {
     {
       Class: "Alchemist",
       Type: "Chemist",
-      Kit: "Battle Chemist",
-      Tags: "Technique",
-      Description:
-        "You\u2019re able to multitask while fighting. You can use Produce a Potion or What You Needed in the same action as making an attack.",
-    },
-    {
-      Class: "Alchemist",
-      Type: "Chemist",
       Kit: "Bigger Batches",
       Tags: "Alchemy",
       Description:
@@ -27,10 +19,18 @@ export default function get_data() {
     {
       Class: "Alchemist",
       Type: "Chemist",
+      Kit: "Millow Fog",
+      Tags: "Alchemy",
+      Description:
+        "Distilled extract from the Millow flower. When exposed to air, explodes into a billowing cloud of fog that extinguishes flames, confuses the senses, and blocks line of sight.",
+    },
+    {
+      Class: "Alchemist",
+      Type: "Chemist",
       Kit: "Perfect Acid",
       Tags: "Alchemy",
       Description:
-        "A dangerously potent acid that can be diluted for use in many tasks. Can be used to dissolve most materials, break locks, sabotage equipment, or deal Physical damage.",
+        "A dangerously potent acid that can be diluted for many uses. Can be used to dissolve most materials, break locks, sabotage equipment, or deal Physical damage.",
     },
     {
       Class: "Alchemist",
@@ -43,10 +43,10 @@ export default function get_data() {
     {
       Class: "Alchemist",
       Type: "Chemist",
-      Kit: "Potency",
-      Tags: "Alchemy",
+      Kit: "Pyre Powder",
+      Tags: "Resource",
       Description:
-        "Potions from Produce a Potion heal an additional box of damage. Grenades from Produce a Grenade can either a create a larger blast radius or deal additional damage.",
+        "A caustic powder that augments potions and grenades. Potions from Produce a Potion heal an additional box of damage. Grenades from Produce a Grenade can either a create a larger blast radius or deal additional damage.",
     },
     {
       Class: "Alchemist",
@@ -59,10 +59,10 @@ export default function get_data() {
     {
       Class: "Alchemist",
       Type: "Enchanter",
-      Kit: "Quicksilver Familiar",
+      Kit: "Quicksilver",
       Tags: "Alchemy, Reaction",
       Description:
-        "You have a servant made from liquid metal, capable of shaping itself into weapons, tools, and objects. You can expend a Charge Point to deflect an attack by having the familiar change into a shield or similar object.",
+        "You have a servant made from liquid metal, capable of shaping itself into weapons, tools, and objects. You can expend a Charge Point to deflect an attack by having the metal change into a shield or similar object.",
     },
     {
       Class: "Alchemist",
@@ -99,14 +99,6 @@ export default function get_data() {
     {
       Class: "Alchemist",
       Type: "Sapper",
-      Kit: "Called Shot",
-      Tags: "Technique",
-      Description:
-        "Your attacks are exceptionally precise. Using this technique allows you to harm specific targets (like eyes or hands), in addition to any Physical damage dealt. You have Advantage when making ranged attacks without any distractions.",
-    },
-    {
-      Class: "Alchemist",
-      Type: "Sapper",
       Kit: "Electromagnetic Charges",
       Tags: "Alchemy",
       Description:
@@ -119,6 +111,14 @@ export default function get_data() {
       Tags: "Alchemy",
       Description:
         "Attacks that use this ammunition involve capsules of liquid, producing quick-drying adhesive or slippery grease in addition to any Physical damage dealt. When used with Produce a Grenade this kit inflicts Physical damage and one other effect in a wide area.",
+    },
+    {
+      Class: "Alchemist",
+      Type: "Sapper",
+      Kit: "Iron-Sighted Rifle",
+      Tags: "Weapon",
+      Description:
+        "A long-barreled gun used for prevision shooting. Using this weapon allows you to harm specific targets (like eyes or hands), in addition to any Physical damage dealt. You have Advantage when making ranged attacks without any distractions.",
     },
     {
       Class: "Alchemist",
@@ -147,146 +147,154 @@ export default function get_data() {
     {
       Class: "Mage",
       Type: "Priest",
-      Kit: "Spirit of Abjuration",
-      Tags: "Spirit, Reaction",
+      Kit: "Talisman of Abjuration",
+      Tags: "Talisman, Reaction",
       Description:
-        "Repel and dispel. Can be used to create barriers, destroy magic, and turn away otherworldly influences. You can expend a Mana Point to deflect an attack aimed at you.",
+        "A wand or other object that can be used to repel and dispel. Can be used to create barriers, destroy magic, and turn away otherworldly influences. You can expend a Mana Point to deflect an attack aimed at you.",
     },
     {
       Class: "Mage",
       Type: "Priest",
-      Kit: "Spirit of Divination",
-      Tags: "Spirit",
+      Kit: "Talisman of Divination",
+      Tags: "Talisman",
       Description:
-        "Petition otherworldly forces for information. Can be used to divine the location of people, places, and things through magical means.",
+        "A wand or other object that can be used to petition otherworldly forces for information. Can be used to divine the location of people, places, and things through magical means.",
     },
     {
       Class: "Mage",
       Type: "Priest",
-      Kit: "Spirit of Dreaming",
-      Tags: "Spirit",
+      Kit: "Talisman of Dreaming",
+      Tags: "Talisman",
       Description:
-        "Meddle with the boundary between conscious and unconscious. Can be used to induce sleep, daze enemies, and put others into a trance. You have Advantage when using Presence to hypnotize the weak-willed.",
+        "A wand or other object that can be used to meddle with the boundary between conscious and unconscious. Can be used to induce sleep, daze enemies, and put others into a trance. You have Advantage when using Presence to hypnotize the weak-willed.",
     },
     {
       Class: "Mage",
       Type: "Priest",
-      Kit: "Spirit of Language",
-      Tags: "Spirit",
+      Kit: "Talisman of Language",
+      Tags: "Talisman",
       Description:
-        "Speak and undestand all creatures. Can be used to communicate with animals, use charm magic, and compel others to your will. You have Advantage when using Presence to awe others.",
+        "A wand or other object that can be used to speak and undestand all creatures. Can be used to communicate with animals, use charm magic, and compel others to your will. You have Advantage when using Presence to awe others.",
     },
     {
       Class: "Mage",
       Type: "Priest",
-      Kit: "Spirit of Necromancy",
-      Tags: "Spirit",
+      Kit: "Talisman of Necromancy",
+      Tags: "Talisman",
       Description:
-        "Meddle with the boundary between life and death. Can be used to puppet corpses to do your bidding, summon ghosts, and stave off death.",
+        "A wand or other object that can be used to meddle with the boundary between life and death. Can be used to puppet corpses to do your bidding, summon ghosts, and stave off death.",
     },
     {
       Class: "Mage",
       Type: "Priest",
-      Kit: "Spirit of Restoration",
-      Tags: "Spirit",
+      Kit: "Talisman of Restoration",
+      Tags: "Talisman",
       Description:
-        "Restore what is broken. Can be used to heal Physical damage, repair broken objects, and treat natural afflictions. The number of Physical boxes healed is equal to the result of the roll.",
+        "A wand or other object that can be used to restore what is broken. Can be used to heal Physical damage, repair broken objects, and treat natural afflictions. The number of Physical boxes healed is equal to the result of the roll.",
     },
     {
       Class: "Mage",
       Type: "Shaman",
-      Kit: "Spirit of Aether",
-      Tags: "Spirit",
+      Kit: "Talisman of Aether",
+      Tags: "Talisman",
       Description:
-        "Manipulate electricity. Can be used to shoot lightning from your hands, induce pain without damage, and shock enemies that harm you.",
+        "A wand or other object that can be used to manipulate electricity. Can be used to shoot lightning from your hands, induce pain without damage, and shock enemies that harm you.",
     },
     {
       Class: "Mage",
       Type: "Shaman",
-      Kit: "Spirit of Air",
-      Tags: "Spirit",
+      Kit: "Talisman of Air",
+      Tags: "Talisman",
       Description:
-        "Manipulate air. Can be used to create ferocious whirlwinds, fall gently from great heights, and rebuff projectiles.",
+        "A wand or other object that can be used to manipulate air. Can be used to create ferocious whirlwinds, fall gently from great heights, and rebuff projectiles.",
     },
     {
       Class: "Mage",
       Type: "Shaman",
-      Kit: "Spirit of Earth",
-      Tags: "Spirit",
+      Kit: "Talisman of Earth",
+      Tags: "Talisman",
       Description:
-        "Manipulate earth. Can be used to throw jagged spikes from the ground, reshape stone, and send tremors through the earth.",
+        "A wand or other object that can be used to manipulate earth. Can be used to throw jagged spikes from the ground, reshape stone, and send tremors through the earth.",
     },
     {
       Class: "Mage",
       Type: "Shaman",
-      Kit: "Spirit of Flame",
-      Tags: "Spirit",
+      Kit: "Talisman of Flame",
+      Tags: "Talisman",
       Description:
-        "Manipulate fire. Can be used to throw flames, create floating torches, and control raging fires.",
+        "A wand or other object that can be used to manipulate fire. Can be used to throw flames, create floating torches, and control raging fires.",
     },
     {
       Class: "Mage",
       Type: "Shaman",
-      Kit: "Spirit of Metal",
-      Tags: "Spirit",
+      Kit: "Talisman of Metal",
+      Tags: "Talisman",
       Description:
-        "Manipulate metal. Can be used to magnetize metallic objects, binding them together or pushing them apart.",
+        "A wand or other object that can be used to manipulate metal. Can be used to magnetize metallic objects, binding them together or pushing them apart.",
     },
     {
       Class: "Mage",
       Type: "Shaman",
-      Kit: "Spirit of Water",
-      Tags: "Spirit",
+      Kit: "Talisman of Water",
+      Tags: "Talisman",
       Description:
-        "Manipulate water. Can be used to create spears of ice, conjure fog, and purify liquids.",
+        "A wand or other object that can be used to manipulate water. Can be used to create spears of ice, conjure fog, and purify liquids.",
     },
     {
       Class: "Mage",
       Type: "Wizard",
-      Kit: "Manafont",
-      Tags: "Resource",
+      Kit: "Talisman of Entropy",
+      Tags: "Talisman",
       Description:
-        "Gain an additional two Mana Points. When you expend a Mental health box to recover a Mana Point, you gain two instead of one.",
+        "A wand or other object that can be used to manipulate the rate of decay. Can be used to accelerate or slow rotting, rusting, and other decomposition processes.",
     },
     {
       Class: "Mage",
       Type: "Wizard",
-      Kit: "Spirit of Entropy",
-      Tags: "Spirit",
+      Kit: "Talisman of Force",
+      Tags: "Talisman, Reaction",
       Description:
-        "Manipulate the rate of decay. Can be used to accelerate or decelerate rotting, rusting, and other decomposition processes.",
+        "A wand or other object that can be used to perform limited telekinesis. Can be used to levitate nearby objects and launch them through the air. You can expend a Mana Point to deflect an attack aimed at you.",
     },
     {
       Class: "Mage",
       Type: "Wizard",
-      Kit: "Spirit of Force",
-      Tags: "Spirit, Reaction",
+      Kit: "Talisman of Gravity",
+      Tags: "Talisman",
       Description:
-        "Perform limited telekinesis. Can be used to levitate nearby objects and launch them through the air. You can expend a Mana Point to deflect an attack aimed at you.",
+        "A wand or other object that can be used to manipulate gravity. Can be used to add or reduce weight for a short time.",
     },
     {
       Class: "Mage",
       Type: "Wizard",
-      Kit: "Spirit of Gravity",
-      Tags: "Spirit",
+      Kit: "Talisman of Locomotion",
+      Tags: "Talisman",
       Description:
-        "Manipulate gravity. Can be used to add or reduce weight for a short time.",
+        "A wand or other object that can be used to manipulate kinetic energy. Can be used to add or reduce the speed of a moving object.",
     },
     {
       Class: "Mage",
       Type: "Wizard",
-      Kit: "Spirit of Locomotion",
-      Tags: "Spirit",
+      Kit: "Talisman of Siphon",
+      Tags: "Talisman",
       Description:
-        "Manipulate kinetic energy. Can be used to add or reduce speed of a moving object.",
+        "A wand or other object that can be used to sap energy. Can be used to steal away lifeforce and pull it into oneself, or tap into the magic energy of enchanted objects.",
     },
     {
       Class: "Mage",
       Type: "Wizard",
-      Kit: "Spirit of Thermos",
-      Tags: "Spirit",
+      Kit: "Talisman of Thermos",
+      Tags: "Talisman",
       Description:
-        "Manipulate thermal energy. Can be used to add or reduce heat.",
+        "A wand or other object that can be used to manipulate thermal energy. Can be used to add or reduce heat.",
+    },
+    {
+      Class: "Scoundrel",
+      Type: "Assassin",
+      Kit: "Barbed Thorns",
+      Tags: "Weapon",
+      Description:
+        "A set of poisoned barbed arrows and needles that hamper an enemy\u2019s movement. Using this weapon greatly reduces a target\u2019s mobility, in addition to any Physical damage dealt. You have Advantage when sprinting, as might be the case when chasing after someone or retreating from danger.",
     },
     {
       Class: "Scoundrel",
@@ -307,42 +315,42 @@ export default function get_data() {
     {
       Class: "Scoundrel",
       Type: "Assassin",
-      Kit: "Pin Down",
-      Tags: "Technique",
+      Kit: "Nerve Thorns",
+      Tags: "Weapon",
       Description:
-        "Your attacks reduce an enemy\u2019s movement, cutting off their ability to escape or pursue. Using this technique greatly reduces a target\u2019s mobility, in addition to any Physical damage dealt. You have Advantage when sprinting, as might be the case when chasing after someone or retreating from danger.",
+        "A set of needles laced with nerve poison. Using this technique can incapacitate targets without lasting harm or visible injury, in addition to any Physical damage dealt. You have Advantage when sensing the motivations of others and detecting lies.",
     },
     {
       Class: "Scoundrel",
       Type: "Assassin",
-      Kit: "Pressure Points",
-      Tags: "Technique",
+      Kit: "Talisman of Darkness",
+      Tags: "Talisman",
       Description:
-        "Your attacks strike at an enemy\u2019s nerves. Using this technique can incapacitate targets without lasting harm or visible injury, in addition to any Physical damage dealt. You have Advantage when sensing the motivations of others and detecting lies.",
+        "A wand or other object that can be used to manipulate darkness. Can be used to obscure appearances, darken areas, and blind enemies.",
     },
     {
       Class: "Scoundrel",
       Type: "Assassin",
-      Kit: "Shifting Sniper",
-      Tags: "Technique, Reaction",
+      Kit: "Traceless Thorns",
+      Tags: "Weapon",
       Description:
-        "Your ranged attacks are difficult to trace. Using this technique reduces the likelihood that you\u2019ll be exposed after making a sneak attack. You can expend a Prep Point to avoid harm from an attack or hazard.",
-    },
-    {
-      Class: "Scoundrel",
-      Type: "Assassin",
-      Kit: "Spirit of Darkness",
-      Tags: "Spirit",
-      Description:
-        "Manipulate darkness. Can be used to obscure appearances, darken areas, and blind enemies.",
+        "A set of transparent glass arrows and needles that make it difficult to trace the trajectory of attacks. Using this weapon reduces the likelihood that you\u2019ll be exposed after making a sneak attack.",
     },
     {
       Class: "Scoundrel",
       Type: "Bard",
-      Kit: "Dervish",
-      Tags: "Technique",
+      Kit: "Charmed Chain",
+      Tags: "Weapon",
       Description:
-        "Your fighting style resembles dancing, making you particularly mobile. Using this technique allows you to move before and after making an attack, darting outside of melee range or firing shots while running. You have Advantage when performing acrobatics, such as climbing walls or jumping over obstacles.",
+        "A length of enchanted chain that can become rigid or loose on command. Using this weapon allows your attacks to grapple enemies with ease, in addition to any damage dealt. Can be used in place of rope, a grappling hook, or a whip.",
+    },
+    {
+      Class: "Scoundrel",
+      Type: "Bard",
+      Kit: "Dervish Knives",
+      Tags: "Weapon",
+      Description:
+        "A set of throwing knives that can be flicked through the air with ease. Using this weapon allows you to move before and after making an attack, darting outside of melee range or throwing blades while running. You have Advantage when performing acrobatics, such as climbing walls or jumping over obstacles.",
     },
     {
       Class: "Scoundrel",
@@ -363,34 +371,18 @@ export default function get_data() {
     {
       Class: "Scoundrel",
       Type: "Bard",
-      Kit: "Spirit of Light",
-      Tags: "Spirit",
+      Kit: "Talisman of Light",
+      Tags: "Talisman",
       Description:
-        "Manipulate light. Can be used to create ghostly illusions, see afar, and blind enemies.",
+        "A wand or other object that can be used to manipulate light. Can be used to create ghostly illusions, see afar, and blind enemies.",
     },
     {
       Class: "Scoundrel",
       Type: "Bard",
-      Kit: "Spirit of Sound",
-      Tags: "Spirit",
+      Kit: "Talisman of Sound",
+      Tags: "Talisman",
       Description:
-        "Manipulate sound. Can be used to project noises, eavesdrop from afar, and shatter eardrums.",
-    },
-    {
-      Class: "Scoundrel",
-      Type: "Bard",
-      Kit: "Warded Heart",
-      Tags: "Resource",
-      Description:
-        "Gain an additional Physical box. You do not need to sleep, and cannot be rendered unconscious against your will, but can be incapacitated in other ways.",
-    },
-    {
-      Class: "Scoundrel",
-      Type: "Ranger",
-      Kit: "Ambush",
-      Tags: "Technique",
-      Description:
-        "Your attacks hit two targets instead of one. Using this technique gives your attack an additional target, with both hits landing within moments of one another. The additional target cannot be the same as the original target. You have Advantage when tracking a target, such as when finding the trail of a monster or criminal.",
+        "A wand or other object that can be used to manipulate sound. Can be used to project noises, eavesdrop from afar, and shatter eardrums.",
     },
     {
       Class: "Scoundrel",
@@ -411,82 +403,98 @@ export default function get_data() {
     {
       Class: "Scoundrel",
       Type: "Ranger",
-      Kit: "Prepared",
-      Tags: "Resource",
+      Kit: "Monster Hunter\u2019s Salve",
+      Tags: "Alchemy",
       Description:
-        "Gain an additional two Prep Points. You can expend a Prep Point to change a Kit without resting, provided you have a few minutes to do so.",
+        "A thick medicinal paste that can neutralize most poisons, diseases, and noxious odors. Allows the user to pierce through illusions when worn over the eyes, ears, and nose.",
     },
     {
       Class: "Scoundrel",
       Type: "Ranger",
-      Kit: "Quickdraw",
-      Tags: "Technique",
+      Kit: "Silent Arrows",
+      Tags: "Weapon",
       Description:
-        "Your attacks are swift and silent, preventing targets from crying out when struck. Using this technique ensures that an enemy won\u2019t cause a commotion for a brief period of time, in addition to any Physical damage dealt. You have Advantage when determining who acts first, such as when determining combat turn order.",
+        "A set of arrows that seem to absorb sound. Using this weapon ensures that an enemy won\u2019t cause a commotion for a brief period of time, in addition to any Physical damage dealt. You have Advantage when determining who acts first, such as when determining combat turn order.",
     },
     {
       Class: "Scoundrel",
       Type: "Ranger",
-      Kit: "Spirit of Wood",
-      Tags: "Spirit",
+      Kit: "Splitting Arrows",
+      Tags: "Weapon",
       Description:
-        "Manipulate plants. Can be used to accelerate plant growth, speed up natural healing, and command flora.",
+        "A set of arrows that split apart in mid-flight. Using this weapon gives your attack an additional target, with both hits landing within moments of one another. The additional target cannot be the same as the original target. You have Advantage when tracking a target, such as when finding the trail of a monster or criminal.",
+    },
+    {
+      Class: "Scoundrel",
+      Type: "Ranger",
+      Kit: "Talisman of Wood",
+      Tags: "Talisman",
+      Description:
+        "A wand or other object that can be used to manipulate plants. Can be used to accelerate plant growth, speed up natural healing, and command flora.",
     },
     {
       Class: "Soldier",
-      Type: "Fencer",
-      Kit: "Flash",
-      Tags: "Technique",
+      Type: "Blademaster",
+      Kit: "Blinding Silver",
+      Tags: "Weapon",
       Description:
-        "Your attacks are complex, dazzling, and distracting to enemies. Using this technique gives Advantage to the next attack made on the target, either by you or by one of your allies, in addition to any Physical damage dealt. You have Advantage when inspiring or rallying others.",
+        "A sleek sword with an alchemical mirror finish that blinds enemies with reflected light. Using this weapon gives Advantage to the next attack made on the target, either by you or by one of your allies, in addition to any Physical damage dealt.",
     },
     {
       Class: "Soldier",
-      Type: "Fencer",
-      Kit: "Inner Light",
-      Tags: "Resource",
+      Type: "Blademaster",
+      Kit: "Flametongue",
+      Tags: "Weapon",
       Description:
-        "At any time when you would otherwise spend a Fortune Point, you can spend a Physical box instead. When you recover Physical boxes, you recover one more than you would otherwise.",
+        "An enchanted iron sword that glows with heat, as though it was just taken out of a forge. Using this weapon ignites flammable surfaces on contact. Successful attacks also deal an additional box of Physical damage.",
     },
     {
       Class: "Soldier",
-      Type: "Fencer",
-      Kit: "Thunderclap",
-      Tags: "Technique",
+      Type: "Blademaster",
+      Kit: "Harmonic Steel",
+      Tags: "Weapon",
       Description:
-        "Your attacks culminate in deafening peals of thunder, causing harm through sound and shockwaves. Using this technique circumvents armor, barriers, and similar defenses.",
+        "A weighty length of steel that resonates like a tuning fork when struck. Using this weapon bypasses the effects of armor or similar defenses by sending destructive vibrations on contact. Can be used to shatter glass, ice, and similar materials without physical contact.",
     },
     {
       Class: "Soldier",
-      Type: "Fencer",
-      Kit: "Whiplash",
-      Tags: "Technique",
+      Type: "Blademaster",
+      Kit: "Stormbringer",
+      Tags: "Weapon, Resource",
       Description:
-        "Your attacks unnerve and frustrate targets in addition to dealing damage. Using this technique inflicts a box of Mental damage on successful attacks, in addition to any Physical damage dealt. You have Advantage when provoking others.",
+        "A cursed blade that feeds off the living. Using this weapon restores a Fortune Point whenever it\u2019s used to incapacitate an enemy. At any time when you would otherwise spend a Fortune Point, you can spend a Physical box instead.",
     },
     {
       Class: "Soldier",
-      Type: "Fencer",
-      Kit: "Whirlwind",
-      Tags: "Technique, Reaction",
+      Type: "Blademaster",
+      Kit: "Twin Edges",
+      Tags: "Weapon, Reaction",
       Description:
-        "Your attacks hit all enemies adjacent to you. Using this technique gives your attacks a small area of effect around your body, targeting enemies immediately next to you. On a successful defense against a melee attack, you inflict a box of Physical damage to the attacker.",
+        "A pair of swords used together to create a whirlwind of slashes. Using this weapon gives your attacks an area of effect around your body, damaging enemies nearby. On a successful defense against a melee attack, you inflict a box of Physical damage to the attacker.",
     },
     {
       Class: "Soldier",
-      Type: "Fencer",
+      Type: "Blademaster",
       Kit: "Windcutter",
-      Tags: "Technique",
+      Tags: "Weapon",
       Description:
-        "Your melee attacks create blades of cutting wind, while your ranged attacks are propelled by gusts. Using this technique greatly extends the range of your attacks. You have Advantage when defending against projectile attacks like arrows and bullets.",
+        "A curved sword that catches the wind and turns it into sharp blades. Using this weapon greatly extends the range of your attacks. You have Advantage when defending against projectile attacks like arrows and bullets.",
     },
     {
       Class: "Soldier",
       Type: "Knight",
-      Kit: "Guardian",
-      Tags: "Reaction",
+      Kit: "Arrows of Light",
+      Tags: "Weapon",
       Description:
-        "When a nearby ally would otherwise take damage, you can take damage in their place, so long as you are able to provide a narrative justification for how you do so. You recover a Fortune Point when using this Kit. You cannot attempt to block, dodge, or otherwise reduce damage taken from using this Kit.",
+        "A set of silver-tipped arrows that glow brightly in the dark. Using this weapon allows your ranged attacks to ignore magical defenses and prevent targets from healing by magic or alchemy.",
+    },
+    {
+      Class: "Soldier",
+      Type: "Knight",
+      Kit: "Blessed Sword",
+      Tags: "Weapon",
+      Description:
+        "A blade quenched in holy water, used to break curses and strike down otherworldly forces. Using this weapon allows your attacks to interfere with magic, in addition to any Physical damage dealt. You have Advantage when inspiring or rallying others.",
     },
     {
       Class: "Soldier",
@@ -499,82 +507,74 @@ export default function get_data() {
     {
       Class: "Soldier",
       Type: "Knight",
-      Kit: "Impose",
-      Tags: "Technique",
+      Kit: "Impact Mace",
+      Tags: "Weapon",
       Description:
-        "Your attacks demand the attention of targets and cloud their perception. Using this technique compels an enemy to focus on you after a successful attack, in addition to any Physical damage dealt. You have Advantage when intimidating others.",
+        "An enchanted warmace that stores kinetic energy. Using this weapon allows your attacks to forcibly reposition enemies, knocking them back or into the air, in addition to any Physical damage dealt. You have Advantage against any effect that attempts to forcibly move you or impede your movement.",
     },
     {
       Class: "Soldier",
       Type: "Knight",
-      Kit: "Iron Will",
-      Tags: "Resource",
+      Kit: "Ironheart Shield",
+      Tags: "Weapon, Reaction",
       Description:
-        "Gain an additional Mental box. You are immune to Mental damage from exhaustion, fear, or similar psychological effects.",
+        "A magnetically-charged shield, capable of attracting arrows and blades. Using this weapon allows your attacks to trap metal objects and armored enemies, in addition to any Physical damage dealt. When a nearby ally would otherwise take damage, you can take damage in their place, so long as you are able to provide a narrative justification for how you do so.",
     },
     {
       Class: "Soldier",
       Type: "Knight",
-      Kit: "Smite",
-      Tags: "Technique",
+      Kit: "Mythril Spear",
+      Tags: "Weapon",
       Description:
-        "Your attacks strike with enough force to knock targets down or launch them into the air. Using this technique allows your attacks to forcibly reposition enemies, in addition to any Physical damage dealt. You have Advantage against any effect that attempts to forcibly move you or impede your movement.",
-    },
-    {
-      Class: "Soldier",
-      Type: "Knight",
-      Kit: "Spellbreak",
-      Tags: "Technique",
-      Description:
-        "Your attacks interfere with magic. Using this technique allows your attacks to destroy spells and spirits, in addition to any Physical damage dealt. You have Advantage when defending against magical effects.",
+        "A featherweight spear with a chain attached to its base, allowing it to be thrown or spun. Using this weapon compels an enemy to focus their attentions on you after a successful attack, in addition to any Physical damage dealt.",
     },
     {
       Class: "Soldier",
       Type: "Myrmidon",
-      Kit: "Blitz",
-      Tags: "Technique, Reaction",
+      Kit: "Breaker Axe",
+      Tags: "Weapon",
       Description:
-        "Your attacks are more likely to cause harm. Using this technique adds +1 to the roll result of your attacks, significantly improving the chance that they\u2019ll inflict damage. Enemies that attempt to leave your melee range take one box of Physical damage.",
+        "An alchemically-enhanced axe that\u2019s just as effective on doors and walls as enemies. Using this weapon allows your attacks to breakthrough materials like stone and metal. Successful attacks also deal an additional box of Physical damage. You have Advantage when using this weapon to destroy objects.",
     },
     {
       Class: "Soldier",
       Type: "Myrmidon",
-      Kit: "Cleave",
-      Tags: "Technique",
+      Kit: "Compliant Rod",
+      Tags: "Weapon",
       Description:
-        "Your attacks are especially destructive, hitting enemies and objects adjacent to your target. Using this technique allows your attacks to inflict damage in a small area of effect centered around your main target. If you incapacitate a target with this technique, you recover a Fortune Point (to a maximum of one point per action).",
+        "A metal staff that can shrink to fit in a pocket or grow to ten feet in length. Using this weapon allows your attacks to inflict damage in an area around your main target.",
     },
     {
       Class: "Soldier",
       Type: "Myrmidon",
-      Kit: "Lucky",
-      Tags: "Resource",
+      Kit: "Ogre Draught",
+      Tags: "Alchemy",
       Description:
-        "Gain an additional two Fortune Points. When you use a Fortune Point to reroll, take the better result of the two rolls.",
+        "A dangerous drug that requires training to withstand. While this kit is equipped you are immune to poisons, diseases, and curses. You have Advantage against hazards like sweltering heat, bitter cold, or traps.",
     },
     {
       Class: "Soldier",
       Type: "Myrmidon",
-      Kit: "Menace",
-      Tags: "Reaction",
+      Kit: "Shocklance",
+      Tags: "Weapon",
       Description:
-        "When you successfully defend against an enemy\u2019s melee attack, they take a box of Mental damage. When you successfully intimidate enemies in combat, they take a box of Mental damage.",
+        "An spear whose tip crackles with electricity, causing intense pain on contact. Using this weapon inflicts a box of Mental damage on successful attacks, in addition to any Physical damage dealt. You have Advantage when intimidating others.",
     },
     {
       Class: "Soldier",
       Type: "Myrmidon",
-      Kit: "Sunder",
-      Tags: "Technique",
+      Kit: "Thunderclap Javelins",
+      Tags: "Weapon",
       Description:
-        "Your attacks are brutally effective, causing great harm and breaking through defences. Using this technique allows your attacks to cut or pierce materials like stone and metal. Successful attacks also deal an additional box of Physical damage. You have Advantage when using this technique to destroy objects and obstacles.",
+        "A set of javelins that release sonic booms when they land. Using this weapon shatters the eardrums of enemies, deafening and disorienting in an area around your main target.",
     },
     {
       Class: "Soldier",
       Type: "Myrmidon",
-      Kit: "Unstoppable",
-      Tags: "Reaction",
+      Kit: "Wicked Blade",
+      Tags: "Weapon, Reaction",
       Description:
-        "You are highly resistant to indirect forms of harm. You are immune to poisons, diseases, and curses. You have Advantage against hazards like sweltering heat, bitter cold, or traps.",
+        "An implausably sharp shortsword that excels in quick, piercing strikes. Using this weapon adds +1 to the roll result of your attacks, significantly improving the chance that they\u2019ll inflict damage. Enemies that attempt to leave your melee range take one box of Physical damage.",
     },
   ];
 

@@ -8,19 +8,25 @@ nav_order: 2
 
 # Roleplay
 
-Players are welcome to customize their characters however they choose. However, if they aren't sure where to start, this section can provide some prompts and guidance.
+{% include class_prompt.html %}
 
-### Suggested Equipment and Appearance
+### Equipment and Appearance
 
-- A staff, wand, book, or other object used in your spellcasting
+- What kind of objects do you use to perform magic? Wands? Scrolls?
 
-- An unnatural physical characteristic, such as red irises or glowing tattoos
+- Do you have an unusual appearance? Glowing eyes? Tattoos?
 
-- Clothing that marks you as a Mage, such as rune-embroidered robes or vestments of faith
+- What kind of armor do you wear? Robes? Vestments of faith?
 
-- A voice that commands attention in some way, such as a gravelly rasp or tendency to rhyme
+### Background
 
-### Roles
+- What does your magic tradition look like?
+
+- What kind of relationship do you have with the spirits? Do you worship them? Study them? Steal their power?
+
+- In the place you come from, how do they treat Mages?
+
+<!-- ### Roles
 
 **_In combat..._**
 
@@ -32,4 +38,4 @@ The Mage's presence inspires unease among most, though they are beloved by spiri
 
 **_While exploring..._**
 
-The Mage may call on their spirits to aid in finding hidden locations or communicating with the inhabitants of a foreign land. Their sixth sense can be helpful when dangerous magic is in the air.
+The Mage may call on their spirits to aid in finding hidden locations or communicating with the inhabitants of a foreign land. Their sixth sense can be helpful when dangerous magic is in the air. -->

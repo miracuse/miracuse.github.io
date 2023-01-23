@@ -15,12 +15,45 @@ The Mage forms pacts with the primal spirits of the world to perform miracles an
 
 - **<span style="color: {{ site.mage_color }}">Presence</span>**: Mages have deep reserves of inner strength. This Skill increases their Mental [Health](../../gameplay/health.md), which can let them cast big spells when they're [out of resources](../../gameplay/resources#pushing-it). Presence can also be used to detect and understand magic in the area.
 
-### Spirits
+- **[Mana Points](#mana-points)**: The Mage's resource lets them amplify their magic to new heights, combining spirits to create new spells or simplify fueling larger-than-life castings.
 
-Kits with the _Spirit_ tag can be used to create magical effects using the **<span style="color: {{ site.mage_color }}">Magic</span>** Skill. For example, a player might use the _Spirit of Flame_ Kit to:
+---
 
-- **Throw Fire** at enemies.
+### Spirits and Talismans
 
-- **Make Light** to help see while exploring in the dark.
+There are worlds beyond this one and strange things live within them. Things that some call gods, or spirits, or the Platonic ideals of natural phenomenon. Their natures are unknowable to mortal minds and their power is unfathomable. "Mage" is a title, sometimes a slur, for someone that taps into these fonts to perform miracles.
 
-- **Keep Warm** during a snowstorm or icy cavern.
+Practitioners vary between societies and traditions. It's common across many regions for magic to be inherited through bloodlines, though whether this is due to some natural predisposition or simply the inheritance of a trade is in dispute. Other lands believe magic to be a holy calling for priests, or the despicable practice of cowards. In a few, aristocratic clubs exist that regard the practice of magic to be an essential part of a gentleman's education.
+
+The majority of traditions center around the use of Talismans, objects of symbolic importance that act as conduits for otherworldly energy. Each talisman is attuned to a particular spirit and reflects their aspect. A spirit of earth, for example, might resonate with a wand made of quartz crystal. A Mage could then use the wand to pull energy into their bodies and channel it outward.
+
+<!-- 
+Unlike Alchemy, casting spells is rarely a matter of **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**. There may be rituals and names to memorize, but **<span style="color: {{ site.mage_color }}">Magic</span>** is ultimately an expression of spirit and instinct. A Mage must have honed their inner selves to withstand currents of foreign energy and trained their bodies to redirect it. -->
+
+<!-- One can usually tell a true Mage from a dabbler. Regular exposure to otherworldly influences leads to stigmata; strangely colored eyes, an odd ring to one's voice, or the gradual formation of sigils on skin. The more marked the practitioner, the more powerful, and often the less sane. These characteristics are often accompanied by a unique **<span style="color: {{ site.mage_color }}">Presence</span>**, a supernatural charisma with the capacity to enthrall those with weak wills. -->
+
+---
+
+### Mana Points
+
+Mages can draw heavily on the spirits a few times each day to produce grand workings of magic. These instances are represented as **Mana Points** and can be used for the following:
+
+* **Amplify a Talisman**: Empower an equipped Talisman to go far beyond its usual usage.
+
+* **Combine Talismans**: Combine two Talismans to produce a more complex effect.
+
+---
+
+### Specializations
+
+### <span style="color: {{ site.mage_color }}">The Priest</span>
+
+A Mage that arbitrates between worlds and enforces the boundaries between them. They govern over the living and the dead, the worldly and the otherworldly. They can pull strange influences into the world or push them out.
+
+### <span style="color: {{ site.mage_color }}">The Shaman</span>
+
+A Mage that draws upon the elements, pulling strength from their very concepts. The symbolic importance of each element and the balance between them are as relevant as their physical manifestations.
+
+### <span style="color: {{ site.mage_color }}">The Wizard</span>
+
+A Mage that manipulates fundamental energies, such as motion and heat, by drawing inspiration from the practice of alchemy.

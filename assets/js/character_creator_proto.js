@@ -490,7 +490,7 @@ class CharacterSheet extends React.Component {
           />
 
           <div className="mana_point_text">
-          <InfoBox message="Mana Points can be used to cast powerful spells, amplifying the effects of an equipped Spirit kit." />
+          <InfoBox message="Mana Points can be used to cast powerful spells, amplifying the effects of an equipped Talisman or combining two Talismans to produce a complex effect." />
             <label>Mana Points</label>
           </div>
           <ResourceTrack
@@ -499,7 +499,7 @@ class CharacterSheet extends React.Component {
           />
 
           <div className="fortune_point_text">
-          <InfoBox message="Fortune Points can be used to pull off fantastical physical feats, amplifying the effects of an equipped Technique kit. They can also be used to 'Reroll' or 'Avoid Harm'." />
+          <InfoBox message="Fortune Points can be used to pull off fantastical physical feats, amplifying the effects of an equipped Weapon. They can also be used to 'Reroll' or 'Avoid Harm'." />
             <label>Fortune Points</label>
           </div>
           <ResourceTrack
@@ -508,7 +508,7 @@ class CharacterSheet extends React.Component {
           />
 
           <div className="prep_point_text">
-          <InfoBox message="Prep Points can be used in place of any of the other resources, amplifying the effects of an equipped kit. They can also be used to 'Disappear From Sight', 'Assume a Disguise', or declare 'I Know a Guy'." />
+          <InfoBox message="Prep Points can be used to 'Disappear From Sight', 'Produce a Disguise', 'Use a Magic Device', or declare 'I Know a Guy'." />
             <label>Prep Points</label>
           </div>
           <ResourceTrack

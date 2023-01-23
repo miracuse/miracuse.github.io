@@ -66,7 +66,7 @@ GM's can tweak the baseline Mook stat block to produce a variety of different en
 
 * With low health and defense, this enemy is easy to take out
 
-* Play around with thematically appropriate abilities; borrowing from the Soldier's "Technique" Kits is a good idea
+* Play around with thematically appropriate abilities; borrowing from the Soldier's "Weapon" Kits is a good idea
 
 
 ***Tank***

@@ -8,19 +8,24 @@ nav_order: 2
 
 # Roleplay
 
-Players are welcome to customize their characters however they choose. However, if they aren't sure where to start, this section can provide some prompts and guidance.
+{% include class_prompt.html %}
 
-### Suggested Equipment and Appearance
+### Equipment and Appearance
 
-- A melee weapon such as a sword, spear, or bayonet
+- What kind of armor do you wear?
 
-- A ranged weapon such as a longbow, musket, or flintlocks
+- Do you carry a sign of rank, storied weapon, or other marking of prowess?
 
-- Armor ranging from thick leathers to metal plates
 
-- A sign of rank, storied weapon, or other marking of prowess
+### Background
 
-### Roles
+- Do you have a moniker or title?
+
+- What kind of stories are told about you?
+
+- What does your fighting style look like? 
+
+<!-- ### Roles
 
 **_In combat..._**
 
@@ -32,4 +37,4 @@ The Soldier is an imposing figure. They carry an air of **<span style="color: {{
 
 **_While exploring..._**
 
-The Soldier provides raw muscle, breaking down obstacles by sheer force. Their abundant luck has saved many a party from unexpected traps and ambushes.
+The Soldier provides raw muscle, breaking down obstacles by sheer force. Their abundant luck has saved many a party from unexpected traps and ambushes. -->
