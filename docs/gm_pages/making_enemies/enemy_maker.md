@@ -6,7 +6,7 @@ grand_parent: GM Pages
 nav_order: 1
 ---
 
-# Enemy Maker
+# Enemy Maker Tool
 
 Coming soon
 {: .label .label-yellow }

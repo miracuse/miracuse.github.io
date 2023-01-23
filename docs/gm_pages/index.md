@@ -10,3 +10,5 @@ has_toc: false
 
 Under Construction
 {: .label .label-yellow }
+
+Advice for GM's (Game Masters). 

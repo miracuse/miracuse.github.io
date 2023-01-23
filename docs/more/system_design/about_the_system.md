@@ -10,7 +10,7 @@ nav_order: 1
 
 _Miracuse_ is a Tabletop Role Playing Game designed for fast-paced, creative dungeon crawling. 
 
-* **Simple Mechanics**: Spend less time looking up rules and more time gaming. Everything uses the same [single-roll dice system](../../gameplay/skills.md), in or out of combat.
+* **Simple Mechanics**: Spend less time looking up rules and more time gaming. Everything uses the same [single-roll dice system](statistics.md), in or out of combat.
 
 * **Be Good At Your Job**: Don't let the dice decide everything. Skill outweighs luck in _Miracuse_, ensuring that your sneaky assassin won't be tripping alarms just because of a bad roll.
 
@@ -36,16 +36,12 @@ All of these aspects tie together to produce a game that encourages daring deeds
 
 _Miracuse_ is less tactical and mechanics-based than its older cousins. Player's won't be tracking inventories, hit points, or bonuses to attack.
 
-The lower complexity of the system can be a turn-off for players with a particular interest in optimization. They may, however, enjoy the new challenges inherent to this system, such as planning particular Kit/Class combinations. 
+The lower complexity of the system can be a turn-off for players with a particular interest in optimization. They may, however, enjoy the new challenges inherent to this system, such as planning particular Kit/Class combinations. Many also appreciate the reduced impact of randomness when carrying out strategies. 
 
 ***FATE***
 
-_Miracuse_ is a little more mechanically-driven than FATE but retains a similar philosophy towards gameplay. While you won't be working with Aspects and Stunts, you will have similar Skill and Health systems. GM's should find that the Gold and Silver rules of FATE undergird this system as well.
+_Miracuse_ is a little more mechanically-driven than FATE but retains a similar philosophy towards gameplay. While you won't be working with Aspects and Stunts, you will have similar Skill and Health systems, as well as a "fiction first" approach. GM's should find the [Gold and Silver](https://fate-srd.com/fate-core/what-do-during-play#the-golden-rule) rules of FATE to be just as integrated in _Miracuse_ as in FATE.
 
-***Dungeon World***
+***Dungeon World and OSR***
 
-_Miracuse_ borrows from Dungeon World's concepts. The simplified character creation system and purposefully limited character ability sets (Kits) were both inspired by Dungeon World. 
-
-***OSR***
-
-_Miracuse_ occupies an adjacent genre to OSR (Old School Renaissance) games in that it generally focuses on dungeon crawling and resource utilization. However, it trends closer to modern TTRPG's in power level, eschewing the survival aspect of OSR for pulp action gameplay.
+_Miracuse_ borrows from Dungeon World's concepts. The simplified character creation system and purposefully limited character ability sets (Kits) were both inspired by Dungeon World. Likewise, _Miracuse_ occupies an adjacent genre to OSR (Old School Renaissance) games in that it generally focuses on dungeon crawling and resource utilization. However, it trends closer to modern TTRPG's in power level, eschewing the survival aspect of OSR for pulp action gameplay.
