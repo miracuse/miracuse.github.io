@@ -21,7 +21,7 @@ The Soldier is a warrior without peer. They may be knights, bandits, infantrymen
 
 ### Career 
 
-Unlike common footmen, Soldiers have distinguished themselves as expert combatants. They enjoy (or suffer from) a reputation among the general public. Many have monikers such as, "The Lion's Roar" or "The Templar Prince", earned through great deeds. 
+Unlike common footmen, Soldiers have distinguished themselves as expert combatants. They carry a reputation among the general public. Many have monikers like "The Lion's Roar" or "The Templar Prince". 
 
 Soldiers are also known by the equipment they bear. The rising prevalence of alchemy has made enchanted weaponry more common than ever before, and a veteran Soldier can expect to accumulate a small arsenal over the length of their career. Each is designed in such a way that they can be disassembled and stored on one's person when not in use.
 
@@ -52,12 +52,12 @@ Soldiers have an unusual relationship with luck, able to occasionally pull on th
 
 ### <span style="color: {{ site.soldier_color }}">Blademaster</span>
 
-A Soldier that dedicates themselves to swordplay. They carry a variety of blades with unusual properties.
+Recognized masters of the sword, in great demand across the world as mercenaries and bodyguards. Blademasters carry a collection of enchanted and alchemically-enhanced blades that require years of study to properly wield. Their tradition dates back thousands of years.
 
 ### <span style="color: {{ site.soldier_color }}">Knight</span>
 
-A Soldier of unmatched determination. They wield arms that fend off harm and smite foes with impunity.
+A warrior sworn to uphold a code of honor, one who employs their skills towards noble ends. Knights are best known for their holy swords, but are trained with a variety of weapons. Many knighthood orders are well-regarded across the known world, with some nations going so far as to permit recognized members to act as legal officials.
 
 ### <span style="color: {{ site.soldier_color }}">Myrmidon</span>
 
-A Soldier talented in destruction. They leverage weapons that rend and sunder with frightening ease. 
+A recent addition to modern military forces, Myrmidons are commonly used as the backbone of assault teams. They emphasize offensive tactics and tools to cause the most destruction in the least amount of time. Commonly associated with the "Breaker Axe", a recent alchemical innovation hardy enough to break normal swords and breach walls.

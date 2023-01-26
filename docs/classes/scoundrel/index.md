@@ -35,7 +35,7 @@ Scoundrels always have a few tricks up their sleeves. These are represented as *
 
 * **Produce a Disguise**: Impersonate others, assume a false identity, or simply camouflage yourself to better blend in.
 
-* **Use a Magic Device**: Pull out a charm, gem, or other charged object to use a Talisman with a Skill other than **<span style="color: {{ site.mage_color }}">Magic</span>**. The object is depleted after a single use.
+* **Use a Magic Device**: Pull out a charm, gem, or other charged object to use a Talisman with **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** instead of **<span style="color: {{ site.mage_color }}">Magic</span>**. The object is depleted after a single use.
 
 * **I Know a Guy**: Declare that you just so happen to have a contact in the area that owes you a favor, and can help with your present situation.
 
@@ -45,12 +45,12 @@ Scoundrels always have a few tricks up their sleeves. These are represented as *
 
 ### <span style="color: {{ site.scoundrel_color }}">The Assassin</span>
 
-A Scoundrel that focuses on espionage, capable at quiet assassinations and webs of conspiracy. They are an unmatched infiltrator with abilities that emphasize stealth.
+Expert infiltrators proficient in the use of poisons. Their weapon of choice are "thorns", small needles that can be discretely thrown or attached to the ends of arrows. Though not formally organized under a guild, Assassins tend to operate in a loose network of criminal organizations.
 
 ### <span style="color: {{ site.scoundrel_color }}">The Bard</span>
 
-A Scoundrel with talents in combat, magic, and persuasion. They are the hero of their own story. They fight with grace, dancing between foes as they strike, and draw on illusory magic.
+Members of a courier's guild, trained in a little magic, a little stage alchemy, and the art of throwing knives. Bards are frequently employed as messengers, entertainers, spies, and legal consul. Their social position is nebulous enough that they can comfortably interact with aristocrats and peasants. 
 
 ### <span style="color: {{ site.scoundrel_color }}">The Ranger</span>
 
-A Scoundrel with a deep connection to nature. They are skilled warriors that can call upon flora and fauna for aid. 
+A catch-all term for hunters, tribal warriors, and nomads. Skilled archers with an affinity for nature, whose traditional medicines predate the modern practice of alchemy. 

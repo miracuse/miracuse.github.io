@@ -3,10 +3,18 @@ export default function get_data() {
     {
       Class: "Alchemist",
       Type: "Chemist",
-      Kit: "Bigger Batches",
+      Kit: "Agua Regia",
       Tags: "Alchemy",
       Description:
-        "When you use Produce a Potion or Produce a Grenade, you produce two items instead of one. You are still limited to using one item per action in combat.",
+        "A dangerously potent acid that eats through metals with ease. Can be used to break locks, sabotage equipment, and create clouds of poisonous gas. When you Produce a Grenade, you can create a canister of poisonous gas instead.",
+    },
+    {
+      Class: "Alchemist",
+      Type: "Chemist",
+      Kit: "Lunar Silver",
+      Tags: "Alchemy",
+      Description:
+        "Crystallized holy water, a substance that leeches away magic on contact. Can be used to deaden a person to magic for a short time, rendering them immune and incapable of casting spells. When you Produce a Grenade, magic in the area of effect is torn apart. You have Advantage when defending against magic in any form while this kit is equipped.",
     },
     {
       Class: "Alchemist",
@@ -14,23 +22,7 @@ export default function get_data() {
       Kit: "Midnight Oil",
       Tags: "Alchemy",
       Description:
-        "A slick and highly flammable liquid. Can be used to create oil slicks, waterproof flames, thick tar, or light-absorbing materials that darken their surroundings.",
-    },
-    {
-      Class: "Alchemist",
-      Type: "Chemist",
-      Kit: "Millow Fog",
-      Tags: "Alchemy",
-      Description:
-        "Distilled extract from the Millow flower. When exposed to air, explodes into a billowing cloud of fog that extinguishes flames, confuses the senses, and blocks line of sight.",
-    },
-    {
-      Class: "Alchemist",
-      Type: "Chemist",
-      Kit: "Perfect Acid",
-      Tags: "Alchemy",
-      Description:
-        "A dangerously potent acid that can be diluted for many uses. Can be used to dissolve most materials, break locks, sabotage equipment, or deal Physical damage.",
+        "A dark oil that absorbs sound and light, muting its surroundings. When burned it produces an invisible flame that gives off heat but not light, and an odorless gas that lulls others to sleep. When you Produce a Grenade, you can create a canister of sleeping gas instead, which deals Mental damage rather than Physical.",
     },
     {
       Class: "Alchemist",
@@ -38,15 +30,47 @@ export default function get_data() {
       Kit: "Pocket Wall",
       Tags: "Alchemy",
       Description:
-        "A rapidly expanding cement-like substance. Can be used to create cover, seal doors shut, impede movement, or adhere objects together.",
+        "A rapidly expanding cement-like substance. Can be used to create shelter, mend cracks, seal doors, or adhere objects to one another. You have Advantage when creating or repairing objects with this substance. When you Produce a Potion, it heals an additional Physical box.",
     },
     {
       Class: "Alchemist",
       Type: "Chemist",
       Kit: "Pyre Powder",
-      Tags: "Resource",
+      Tags: "Alchemy",
       Description:
-        "A caustic powder that augments potions and grenades. Potions from Produce a Potion heal an additional box of damage. Grenades from Produce a Grenade can either a create a larger blast radius or deal additional damage.",
+        "A crackling dust that serves as the ideal catalyst. When you use Produce a Potion or Produce a Grenade, you produce two items instead of one. You are still limited to using one item per action in combat.",
+    },
+    {
+      Class: "Alchemist",
+      Type: "Chemist",
+      Kit: "Winterbloom Extract",
+      Tags: "Alchemy",
+      Description:
+        "Highly-concentrated extract from the Winterbloom flower. A droplet can freeze fifty gallons of water into hard ice, create a billowing cloud of fog, or plummet the temperature of anything it comes into contact with. When you Produce a Grenade, you can create a flash freeze grenade instead.",
+    },
+    {
+      Class: "Alchemist",
+      Type: "Enchanter",
+      Kit: "Dancing Shadow",
+      Tags: "Alchemy",
+      Description:
+        "You have a servant made of shadow, granting you a limited form of telekinesis. The servant exists within your shadow, but can move independently and interact with the physical world. The shadow is able to retrieve lightweight objects and jostle objects, but cannot fight.",
+    },
+    {
+      Class: "Alchemist",
+      Type: "Enchanter",
+      Kit: "Familiar",
+      Tags: "Alchemy",
+      Description:
+        "You have a servant that takes the form of a small animal, such as a crow or cat. You are able to borrow its senses, temporarily gaining a bird\u2019s eye view or a dog\u2019s sense of smell for example. The form of the familiar is chosen when the kit is equipped, and may be changed by expending a Charge Point.",
+    },
+    {
+      Class: "Alchemist",
+      Type: "Enchanter",
+      Kit: "Featherweave",
+      Tags: "Alchemy, Reaction",
+      Description:
+        "You have a servant made from enchanted cloth, capable of resisting gravity to a limited degree. You glide gently to the ground while wearing this kit. When folded into a bag, you can carry heavy objects with ease. When unrolled it becomes a flying carpet, able to carry you through the air across short distances.",
     },
     {
       Class: "Alchemist",
@@ -60,9 +84,9 @@ export default function get_data() {
       Class: "Alchemist",
       Type: "Enchanter",
       Kit: "Quicksilver",
-      Tags: "Alchemy, Reaction",
+      Tags: "Weapon, Alchemy, Reaction",
       Description:
-        "You have a servant made from liquid metal, capable of shaping itself into weapons, tools, and objects. You can expend a Charge Point to deflect an attack by having the metal change into a shield or similar object.",
+        "You have a servant made from liquid metal, capable of shaping itself into weapons, tools, and objects. Using this weapon allows you to use Perception when attacking in melee. You can expend a Charge Point to deflect an attack.",
     },
     {
       Class: "Alchemist",
@@ -70,31 +94,7 @@ export default function get_data() {
       Kit: "Shikigami",
       Tags: "Alchemy",
       Description:
-        "You have a servant made from enchanted paper, capable of flying, scouting, and carrying messages.  Equipping this kit provides one shikigami. You can expend a Charge Point to create additional servants.",
-    },
-    {
-      Class: "Alchemist",
-      Type: "Enchanter",
-      Kit: "Substance Empower",
-      Tags: "Alchemy",
-      Description:
-        "Reinforce an object, making it harder to damage or break. The larger the object is, the more difficult and time-consuming it is to perform the change. Can be completed instantly by expending a Charge Point Requires physical contact.",
-    },
-    {
-      Class: "Alchemist",
-      Type: "Enchanter",
-      Kit: "Substance Reshape",
-      Tags: "Alchemy",
-      Description:
-        "Change the shape of an object, without changing its mass. The more intricate the intended result is, the more difficult and time-consuming it is to perform the change. Can be completed instantly by expending a Charge Point. Requires physical contact.",
-    },
-    {
-      Class: "Alchemist",
-      Type: "Enchanter",
-      Kit: "Substance Transmute",
-      Tags: "Alchemy",
-      Description:
-        "Converts one material into another. The greater the difference from the original, the more difficult and time-consuming it is to perform the change. Can be completed instantly by expending a Charge Point. Requires physical contact.",
+        "You have a servant made from enchanted paper, capable of flying, spying, and carrying messages.  Equipping this kit provides one shikigami. You can expend a Charge Point to create additional servants.",
     },
     {
       Class: "Alchemist",
@@ -102,7 +102,7 @@ export default function get_data() {
       Kit: "Electromagnetic Charges",
       Tags: "Alchemy",
       Description:
-        "Attacks that use this ammunition are electrically charged, shocking or magnetizing targets in addition to any Physical damage dealt. When used with Produce a Grenade inflicts Physical damage and one other effect in a wide area.",
+        "Electrically charged bullets that shock (dealing Mental damage) or magnetize targets instead of dealing Physical damage. When used with Produce a Grenade inflicts one of the two effects in a wide area.",
     },
     {
       Class: "Alchemist",
@@ -110,7 +110,7 @@ export default function get_data() {
       Kit: "Friction Charges",
       Tags: "Alchemy",
       Description:
-        "Attacks that use this ammunition involve capsules of liquid, producing quick-drying adhesive or slippery grease in addition to any Physical damage dealt. When used with Produce a Grenade this kit inflicts Physical damage and one other effect in a wide area.",
+        "Capsule bullets filled with liquid that produces quick-drying adhesive or slippery grease instead of dealing Physical damage. When used with Produce a Grenade this kit inflicts one of the two effects in a wide area.",
     },
     {
       Class: "Alchemist",
@@ -118,31 +118,31 @@ export default function get_data() {
       Kit: "Iron-Sighted Rifle",
       Tags: "Weapon",
       Description:
-        "A long-barreled gun used for prevision shooting. Using this weapon allows you to harm specific targets (like eyes or hands), in addition to any Physical damage dealt. You have Advantage when making ranged attacks without any distractions.",
+        "A long-barreled gun used for precision shooting. Using this weapon allows your ranged attacks to harm specific targets (like eyes or hands), in addition to any Physical damage dealt. You have Advantage when making ranged attacks without any distractions.",
     },
     {
       Class: "Alchemist",
       Type: "Sapper",
-      Kit: "Thermic Charges",
+      Kit: "Phosphos Charges",
       Tags: "Alchemy",
       Description:
-        "Attacks that use this ammunition have thermal properties, producing flames or frost on targets in addition to any Physical damage dealt. When used with Produce a Grenade this kit inflicts Physical damage and one other effect in a wide area.",
+        "Volatile bullets that ignite (dealing Physical damage) or produce blinding flashes of light on impact. When used with Produce a Grenade this kit inflicts one of the two effects in a wide area.",
     },
     {
       Class: "Alchemist",
       Type: "Sapper",
-      Kit: "Trenchsteel Charges",
+      Kit: "Sonic Charges",
       Tags: "Alchemy",
       Description:
-        "Attacks that use this ammunition are physically loaded, exploding into a mass of ball bearings or coils of barbed wire in addition to any Physical damage dealt. When used with Produce a Grenade this kit inflicts Physical damage and one other effect in a wide area.",
+        "Explosive bullets that create powerful shockwaves to knock enemies over or deliver deafening sonic booms, instead of dealing Physical damage. When used with Produce a Grenade inflicts one of the two effects in a wide area.",
     },
     {
       Class: "Alchemist",
       Type: "Sapper",
-      Kit: "Vapor Charges",
-      Tags: "Alchemy",
+      Kit: "Trenchcoat Boomstick",
+      Tags: "Weapon",
       Description:
-        "Attacks that use this ammunition are chemically loaded, instantly rusting through metal or producing small clouds of tear gas in addition to any Physical damage dealt. When used with Produce a Grenade this kit inflicts Physical damage and one other effect in a wide area.",
+        "A short-barreled gun used for clearing rooms. Using this weapon allows your ranged attacks to cause harm in a cone area-of-effect immediately in front of you.",
     },
     {
       Class: "Mage",
@@ -275,7 +275,7 @@ export default function get_data() {
     {
       Class: "Mage",
       Type: "Wizard",
-      Kit: "Talisman of Siphon",
+      Kit: "Talisman of Siphoning",
       Tags: "Talisman",
       Description:
         "A wand or other object that can be used to sap energy. Can be used to steal away lifeforce and pull it into oneself, or tap into the magic energy of enchanted objects.",
@@ -342,7 +342,7 @@ export default function get_data() {
       Kit: "Charmed Chain",
       Tags: "Weapon",
       Description:
-        "A length of enchanted chain that can become rigid or loose on command. Using this weapon allows your attacks to grapple enemies with ease, in addition to any damage dealt. Can be used in place of rope, a grappling hook, or a whip.",
+        "A length of enchanted chain that can become rigid or loose on command. Using this weapon allows your attacks to grapple enemies with ease, in addition to any damage dealt. You have Advantage when climbing.",
     },
     {
       Class: "Scoundrel",
@@ -350,7 +350,7 @@ export default function get_data() {
       Kit: "Dervish Knives",
       Tags: "Weapon",
       Description:
-        "A set of throwing knives that can be flicked through the air with ease. Using this weapon allows you to move before and after making an attack, darting outside of melee range or throwing blades while running. You have Advantage when performing acrobatics, such as climbing walls or jumping over obstacles.",
+        "A set of throwing knives that can be flicked through the air with ease. Using this weapon allows you to move before and after making an attack, darting outside of melee range or throwing blades while running. You have Advantage when performing acrobatics.",
     },
     {
       Class: "Scoundrel",
@@ -358,7 +358,7 @@ export default function get_data() {
       Kit: "Faerie Fire",
       Tags: "Alchemy",
       Description:
-        "A volatile powder used in fireworks. Can create plumes of smoke, bright lights, flames, loud noises, or induce violent coughing.",
+        "A volatile powder used in fireworks. Can create plumes of smoke, bright lights, flames, loud noises, or induce violent coughing. When you Disappear from Sight, you can create a cloud of smoke that blocks line of sight.",
     },
     {
       Class: "Scoundrel",
@@ -390,15 +390,7 @@ export default function get_data() {
       Kit: "Beast\u2019s Balm",
       Tags: "Alchemy",
       Description:
-        "A mixture that bewitches animals. You can communicate with and befriend beasts. You can use I Know a Guy to recruit a local beast to aid you. The beast can track, fight, and is capable of anything that a creature of its kind might otherwise do.",
-    },
-    {
-      Class: "Scoundrel",
-      Type: "Ranger",
-      Kit: "Beast\u2019s Blood",
-      Tags: "Alchemy",
-      Description:
-        "A mixture that heightens senses. Can provide a bat\u2019s sense of hearing, a hound\u2019s sense of smell, or similar effects. When amplified, can provide more drastic animal adaptations, like fireproof scales or a fish\u2019s gills. Can also be used to attract beasts and monsters.",
+        "A mixture that bewitches animals. You can communicate with and befriend beasts. You can use I Know a Guy to recruit a local beast to aid you. The beast can track, fight, and is capable of anything that a creature of its kind might otherwise do. Can also be used to attract beasts and monsters.",
     },
     {
       Class: "Scoundrel",
@@ -419,18 +411,26 @@ export default function get_data() {
     {
       Class: "Scoundrel",
       Type: "Ranger",
-      Kit: "Splitting Arrows",
-      Tags: "Weapon",
-      Description:
-        "A set of arrows that split apart in mid-flight. Using this weapon gives your attack an additional target, with both hits landing within moments of one another. The additional target cannot be the same as the original target. You have Advantage when tracking a target, such as when finding the trail of a monster or criminal.",
-    },
-    {
-      Class: "Scoundrel",
-      Type: "Ranger",
       Kit: "Talisman of Wood",
       Tags: "Talisman",
       Description:
         "A wand or other object that can be used to manipulate plants. Can be used to accelerate plant growth, speed up natural healing, and command flora.",
+    },
+    {
+      Class: "Scoundrel",
+      Type: "Ranger",
+      Kit: "Twin Edges",
+      Tags: "Weapon, Reaction",
+      Description:
+        "A pair of swords used together to create a whirlwind of slashes. Using this weapon gives your attacks an area of effect around your body, damaging enemies nearby. On a successful defense against a melee attack, you inflict a box of Physical damage to the attacker.",
+    },
+    {
+      Class: "Scoundrel",
+      Type: "Ranger",
+      Kit: "Twinned Arrows",
+      Tags: "Weapon",
+      Description:
+        "A set of arrows that split apart in mid-flight. Using this weapon gives your attack an additional target, with both hits landing within moments of one another. The additional target cannot be the same as the original target.",
     },
     {
       Class: "Soldier",
@@ -454,31 +454,31 @@ export default function get_data() {
       Kit: "Harmonic Steel",
       Tags: "Weapon",
       Description:
-        "A weighty length of steel that resonates like a tuning fork when struck. Using this weapon bypasses the effects of armor or similar defenses by sending destructive vibrations on contact. Can be used to shatter glass, ice, and similar materials without physical contact.",
+        "A vibrating length of metal that resonates like a tuning fork when struck. Using this weapon bypasses the effects of armor and shields by sending shockwaves through strikes. Can be used to cause tremors in the ground and shatter glass at range.",
     },
     {
       Class: "Soldier",
       Type: "Blademaster",
-      Kit: "Stormbringer",
+      Kit: "Mournblade",
       Tags: "Weapon, Resource",
       Description:
-        "A cursed blade that feeds off the living. Using this weapon restores a Fortune Point whenever it\u2019s used to incapacitate an enemy. At any time when you would otherwise spend a Fortune Point, you can spend a Physical box instead.",
+        "A cursed sword that feeds off the living. Using this weapon restores a Fortune Point whenever it\u2019s used to incapacitate an enemy. At any time when you would otherwise spend a Fortune Point, you can spend a Physical box instead.",
     },
     {
       Class: "Soldier",
       Type: "Blademaster",
-      Kit: "Twin Edges",
-      Tags: "Weapon, Reaction",
+      Kit: "Shaping Oil",
+      Tags: "Alchemy",
       Description:
-        "A pair of swords used together to create a whirlwind of slashes. Using this weapon gives your attacks an area of effect around your body, damaging enemies nearby. On a successful defense against a melee attack, you inflict a box of Physical damage to the attacker.",
+        "An ointment that temporarily softens metal and stone when rubbed in. Can be used to sharpen objects into blades, repair damaged tools, and bend steel bars.",
     },
     {
       Class: "Soldier",
       Type: "Blademaster",
       Kit: "Windcutter",
-      Tags: "Weapon",
+      Tags: "Weapon, Reaction",
       Description:
-        "A curved sword that catches the wind and turns it into sharp blades. Using this weapon greatly extends the range of your attacks. You have Advantage when defending against projectile attacks like arrows and bullets.",
+        "A curved scimitar that catches the wind and turns it into sharp blades. Using this weapon greatly extends the range of your attacks. You have Advantage when defending against projectile attacks like arrows and bullets.",
     },
     {
       Class: "Soldier",
@@ -486,7 +486,7 @@ export default function get_data() {
       Kit: "Arrows of Light",
       Tags: "Weapon",
       Description:
-        "A set of silver-tipped arrows that glow brightly in the dark. Using this weapon allows your ranged attacks to ignore magical defenses and prevent targets from healing by magic or alchemy.",
+        "A set of silver-tipped arrows that glow brightly in the dark. Using this weapon allows your ranged attacks to ignore magical defenses and prevents targets from healing by magic or alchemy.",
     },
     {
       Class: "Soldier",
@@ -534,7 +534,7 @@ export default function get_data() {
       Kit: "Breaker Axe",
       Tags: "Weapon",
       Description:
-        "An alchemically-enhanced axe that\u2019s just as effective on doors and walls as enemies. Using this weapon allows your attacks to breakthrough materials like stone and metal. Successful attacks also deal an additional box of Physical damage. You have Advantage when using this weapon to destroy objects.",
+        "An alchemically-enhanced axe that\u2019s just as effective on doors and walls as enemies. Using this weapon allows your attacks to cut through materials like stone and metal. Successful attacks also deal an additional box of Physical damage. You have Advantage when using this weapon to destroy objects.",
     },
     {
       Class: "Soldier",
@@ -558,7 +558,7 @@ export default function get_data() {
       Kit: "Shocklance",
       Tags: "Weapon",
       Description:
-        "An spear whose tip crackles with electricity, causing intense pain on contact. Using this weapon inflicts a box of Mental damage on successful attacks, in addition to any Physical damage dealt. You have Advantage when intimidating others.",
+        "A spear whose tip crackles with electricity, causing intense pain on contact. Using this weapon inflicts a box of Mental damage on successful attacks, in addition to any Physical damage dealt. You have Advantage when intimidating others.",
     },
     {
       Class: "Soldier",

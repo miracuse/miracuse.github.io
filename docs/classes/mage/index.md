@@ -48,12 +48,13 @@ Mages can draw heavily on the spirits a few times each day to produce grand work
 
 ### <span style="color: {{ site.mage_color }}">The Priest</span>
 
-A Mage that arbitrates between worlds and enforces the boundaries between them. They govern over the living and the dead, the worldly and the otherworldly. They can pull strange influences into the world or push them out.
+Priests arbitrate the boundaries between worlds. They govern over the living and the dead, the worldly and the otherworldly. Some claim to serve the spirits. Others stand in opposition, drawing from one set of spirits to curb the influence of others.
 
 ### <span style="color: {{ site.mage_color }}">The Shaman</span>
 
-A Mage that draws upon the elements, pulling strength from their very concepts. The symbolic importance of each element and the balance between them are as relevant as their physical manifestations.
+Shamans draw on the primordial concepts of the elements. Not just fire, but the symbolic meaning of fire, as a representation of destruction and cleaning. 
+
 
 ### <span style="color: {{ site.mage_color }}">The Wizard</span>
 
-A Mage that manipulates fundamental energies, such as motion and heat, by drawing inspiration from the practice of alchemy.
+Wizards are a recent historical development. They manipulate fundamental energies such as motion and heat by drawing inspiration from the practice of alchemy. Though many traditionalists are skeptical of something like a "Spirit of Gravity", Wizards have found a surprising degree of acceptance among Mage communities.
