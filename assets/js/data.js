@@ -126,7 +126,7 @@ export default function get_data() {
       Kit: "Phosphos Charges",
       Tags: "Alchemy",
       Description:
-        "Volatile bullets that ignite (dealing Physical damage) or produce blinding flashes of light on impact. When used with Produce a Grenade this kit inflicts one of the two effects in a wide area.",
+        "Volatile bullets that ignite targets (dealing Physical damage) or produce blinding flashes of light on impact. When used with Produce a Grenade this kit inflicts one of the two effects in a wide area.",
     },
     {
       Class: "Alchemist",
@@ -291,18 +291,10 @@ export default function get_data() {
     {
       Class: "Scoundrel",
       Type: "Assassin",
-      Kit: "Barbed Thorns",
-      Tags: "Weapon",
-      Description:
-        "A set of poisoned barbed arrows and needles that hamper an enemy\u2019s movement. Using this weapon greatly reduces a target\u2019s mobility, in addition to any Physical damage dealt. You have Advantage when sprinting, as might be the case when chasing after someone or retreating from danger.",
-    },
-    {
-      Class: "Scoundrel",
-      Type: "Assassin",
       Kit: "Golden Silk",
       Tags: "Alchemy",
       Description:
-        "A potent hallucinogenic dust. Can be used to induce confusion, to numb pain, to put a target into a stupor, to render someone highly suggestable, or to inflict Mental damage.",
+        "A potent hallucinogenic dust. Can be used to induce confusion, put a target into a stupor, render someone highly suggestable, or inflict Mental damage.",
     },
     {
       Class: "Scoundrel",
@@ -310,7 +302,7 @@ export default function get_data() {
       Kit: "Manifold Venom",
       Tags: "Alchemy",
       Description:
-        "A collection of dangerous poisons. Can be applied to the user\u2019s weapons to induce paralysis, sap strength, cause blindness, or inflict additional Physical damage. Requires an action if applied in combat.",
+        "A collection of dangerous liquid venoms. Can be applied to the user\u2019s weapons to induce paralysis, sap strength, or cause blindness. Requires an action if applied in combat.",
     },
     {
       Class: "Scoundrel",
@@ -319,6 +311,14 @@ export default function get_data() {
       Tags: "Weapon",
       Description:
         "A set of needles laced with nerve poison. Using this technique can incapacitate targets without lasting harm or visible injury, in addition to any Physical damage dealt. You have Advantage when sensing the motivations of others and detecting lies.",
+    },
+    {
+      Class: "Scoundrel",
+      Type: "Assassin",
+      Kit: "Speed Thorns",
+      Tags: "Weapon",
+      Description:
+        "A set of needles tipped with slowing poison. Using this weapon greatly reduces a target\u2019s mobility, in addition to any Physical damage dealt. You have Advantage when sprinting, as might be the case when chasing after someone or retreating from danger.",
     },
     {
       Class: "Scoundrel",
@@ -334,7 +334,7 @@ export default function get_data() {
       Kit: "Traceless Thorns",
       Tags: "Weapon",
       Description:
-        "A set of transparent glass arrows and needles that make it difficult to trace the trajectory of attacks. Using this weapon reduces the likelihood that you\u2019ll be exposed after making a sneak attack.",
+        "A set of transparent needles that make it difficult to trace the trajectory of attacks. Using this weapon reduces the likelihood that you\u2019ll be exposed after making a sneak attack.",
     },
     {
       Class: "Scoundrel",
@@ -395,10 +395,18 @@ export default function get_data() {
     {
       Class: "Scoundrel",
       Type: "Ranger",
-      Kit: "Monster Hunter\u2019s Salve",
+      Kit: "Ricochet Arrows",
+      Tags: "Weapon",
+      Description:
+        "A set of magicked arrows with blunt heads. Using this weapon allows your attacks to ricochet to nearby enemies, bouncing at least once.",
+    },
+    {
+      Class: "Scoundrel",
+      Type: "Ranger",
+      Kit: "Shepherd\u2019s Flute",
       Tags: "Alchemy",
       Description:
-        "A thick medicinal paste that can neutralize most poisons, diseases, and noxious odors. Allows the user to pierce through illusions when worn over the eyes, ears, and nose.",
+        "A ritually crafted flute that has power over simple-minded creatures. Playing the flute with care can calm wild animals and insects. Playing the flute recklessly can stir them into a frenzy, attacking anything nearby.",
     },
     {
       Class: "Scoundrel",
@@ -423,22 +431,6 @@ export default function get_data() {
       Tags: "Weapon, Reaction",
       Description:
         "A pair of swords used together to create a whirlwind of slashes. Using this weapon gives your attacks an area of effect around your body, damaging enemies nearby. On a successful defense against a melee attack, you inflict a box of Physical damage to the attacker.",
-    },
-    {
-      Class: "Scoundrel",
-      Type: "Ranger",
-      Kit: "Twinned Arrows",
-      Tags: "Weapon",
-      Description:
-        "A set of arrows that split apart in mid-flight. Using this weapon gives your attack an additional target, with both hits landing within moments of one another. The additional target cannot be the same as the original target.",
-    },
-    {
-      Class: "Soldier",
-      Type: "Blademaster",
-      Kit: "Blinding Silver",
-      Tags: "Weapon",
-      Description:
-        "A sleek sword with an alchemical mirror finish that blinds enemies with reflected light. Using this weapon gives Advantage to the next attack made on the target, either by you or by one of your allies, in addition to any Physical damage dealt.",
     },
     {
       Class: "Soldier",
@@ -471,6 +463,14 @@ export default function get_data() {
       Tags: "Alchemy",
       Description:
         "An ointment that temporarily softens metal and stone when rubbed in. Can be used to sharpen objects into blades, repair damaged tools, and bend steel bars.",
+    },
+    {
+      Class: "Soldier",
+      Type: "Blademaster",
+      Kit: "Vorpal Blade",
+      Tags: "Weapon",
+      Description:
+        "An impossibly sharp sword made of liquid metal. Using this weapon allows your attacks to cleanly slice through most objects. Successful attacks also deal an additional box of damage.",
     },
     {
       Class: "Soldier",
@@ -534,7 +534,7 @@ export default function get_data() {
       Kit: "Breaker Axe",
       Tags: "Weapon",
       Description:
-        "An alchemically-enhanced axe that\u2019s just as effective on doors and walls as enemies. Using this weapon allows your attacks to cut through materials like stone and metal. Successful attacks also deal an additional box of Physical damage. You have Advantage when using this weapon to destroy objects.",
+        "An indestructable axe that\u2019s just as effective on doors and walls as enemies. Using this weapon allows your attacks to smash through materials like stone and metal. Successful attacks also deal an additional box of Physical damage. You have Advantage when using this weapon to destroy objects.",
     },
     {
       Class: "Soldier",
@@ -574,7 +574,7 @@ export default function get_data() {
       Kit: "Wicked Blade",
       Tags: "Weapon, Reaction",
       Description:
-        "An implausably sharp shortsword that excels in quick, piercing strikes. Using this weapon adds +1 to the roll result of your attacks, significantly improving the chance that they\u2019ll inflict damage. Enemies that attempt to leave your melee range take one box of Physical damage.",
+        "An implausibly sharp shortsword that excels in quick, piercing strikes. Using this weapon adds +1 to the roll result of your attacks, significantly improving the chance that they\u2019ll inflict damage. Enemies that attempt to leave your melee range take one box of Physical damage.",
     },
   ];
 

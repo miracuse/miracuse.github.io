@@ -16,7 +16,7 @@ One person will act as the **Game Master** (GM). They'll be responsible for play
 
 Players should create a character on the [Game Sheets](docs/game_sheets.html) page, looking over some of the basic rules.
 
-The GM should review all of the content on this site and prepare a short adventure. Resources on the [GM Pages](docs/gm_pages/index.md) will help.
+The GM should review all of the content on this site and [prepare a short adventure](docs/gm_pages/first_session.md).
 
 ### For Experienced Players
 

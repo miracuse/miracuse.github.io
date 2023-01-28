@@ -9,7 +9,7 @@ nav_order: 2
 
 # Making Enemies
 
-"Bad Guys" are the bread-and-butter of running games. They're the main source of opposition Players will face, an "interactive obstacle" with personality. This section will provide guidelines for creating and running them.
+Bad Guys are the bread-and-butter of running games. They're the main source of opposition Players will face, an "interactive obstacle" with personality. This section will provide guidelines for creating and running them.
 
 ### The Baseline "Mook"
 
@@ -46,6 +46,20 @@ From a statistics point of view, Players will hit Mooks 90% of the time. The Pla
 
 Depending on a Player's class, a plain Mook will either hit 10% of the time (Soldier/Scoundrel) or 70% of the time (Alchemist/Mage). The Player rolls a Skill to avoid harm (Strength/Agility). If they roll _equal to or greater_ than the enemy's Offense, they take no damage.
 
+***Victory and Defeat***
+
+Just because an enemy runs out of health doesn't mean they've been killed. A few alternatives, depending on the kind of enemy and game being run:
+
+* **Morale Failure**: The enemies are routed, booking a hasty retreat
+
+* **Immobile**: The enemies are beaten up to the point that they can't move, laying on the ground while moaning and cursing
+
+* **Removal from Location**: The enemy is hit through a window, a wall, or knocked down a pit
+
+> **Tip**: You can apply these to incapacitated players as well.
+
+---
+
 ### Building Bigger Enemies
 
 GM's can tweak the  Mook stat block to produce enemies that are more dangerous or difficult to fight. A few examples are listed below, along with suggestions for their use. The FATE SRD's [Adversary Toolkit](https://fate-srd.com/fate-adversary-toolkit/types-adversaries#enemies) can be a good reference as well.
@@ -81,6 +95,8 @@ GM's can tweak the  Mook stat block to produce enemies that are more dangerous o
 | Phy. Health | ☐                       |
 | Men. Health | ☐                       |
 | Ability     | Prevent movement on hit |
+
+---
 
 | Tank (Tough) |                  |
 | ------------ | ---------------- |

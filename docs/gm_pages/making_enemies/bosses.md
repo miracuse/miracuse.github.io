@@ -60,6 +60,7 @@ In those situations, **don't roll turn order**. Treat these "fights" like puzzle
 
 * Set a timer to keep Players on their toes. What happens if they can't stop the colossus? Mark off boxes in a visible track so that Players understand the enemy's rate of progress.
 
+---
 
 ### Starter Boss Pack
 

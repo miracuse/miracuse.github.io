@@ -43,7 +43,7 @@ Example Concepts:
 
 > **Tip**: The three most common uses of Bravery are **intimidation**, **provocation**, and **inspiration**.
 
-The Soldier's social skill is focused on emotional persuasion. **<span style="color: {{ site.soldier_color }}">Bravery</span>** could be used to cow a group of bandits into submission, relying on a character's reputation and frightening competency. It could also be used to rally a peasant militia in defense of their town or taunt an arrogant noble into a duel. More generally, the three most common applications are:
+The Soldier's social skill is focused on emotional persuasion. **<span style="color: {{ site.soldier_color }}">Bravery</span>** could be used to cow a group of bandits into submission, relying on a character's reputation and frightening competency. It could also be used to rally a peasant militia in defense of their town or taunt an arrogant noble into a duel. 
 
 ### Weaponry
 

@@ -21,11 +21,11 @@ The Mage forms pacts with the primal spirits of the world to perform miracles an
 
 ### Spirits and Talismans
 
-There are worlds beyond this one and strange things live within them. Things that some call gods, or spirits, or the Platonic ideals of natural phenomenon. Their natures are unknowable to mortal minds and their power is unfathomable. "Mage" is a title, sometimes a slur, for someone that taps into these fonts to perform miracles.
+There are worlds beyond this one and strange things live within them. Things that some call gods, or spirits, or the Platonic ideals of natural phenomenon. "Mage" is a title, sometimes a slur, for someone that taps into these fonts to perform miracles.
 
 Practitioners vary between societies and traditions. It's common across many regions for magic to be inherited through bloodlines, though whether this is due to some natural predisposition or simply the inheritance of a trade is in dispute. Other lands believe magic to be a holy calling for priests, or the despicable practice of cowards. In a few, aristocratic clubs exist that regard the practice of magic to be an essential part of a gentleman's education.
 
-The majority of traditions center around the use of Talismans, objects of symbolic importance that act as conduits for otherworldly energy. Each talisman is attuned to a particular spirit and reflects their aspect. A spirit of earth, for example, might resonate with a wand made of quartz crystal. A Mage could then use the wand to pull energy into their bodies and channel it outward.
+The majority of traditions center around the use of Talismans, objects of symbolic importance that act as conduits for otherworldly energy. Each talisman is attuned to a particular spirit and reflects their aspect. A spirit of earth, for example, might resonate with a wand made of quartz crystal.
 
 <!-- 
 Unlike Alchemy, casting spells is rarely a matter of **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**. There may be rituals and names to memorize, but **<span style="color: {{ site.mage_color }}">Magic</span>** is ultimately an expression of spirit and instinct. A Mage must have honed their inner selves to withstand currents of foreign energy and trained their bodies to redirect it. -->
@@ -57,4 +57,4 @@ Shamans draw on the primordial concepts of the elements. Not just fire, but the 
 
 ### <span style="color: {{ site.mage_color }}">The Wizard</span>
 
-Wizards are a recent historical development. They manipulate fundamental energies such as motion and heat by drawing inspiration from the practice of alchemy. Though many traditionalists are skeptical of something like a "Spirit of Gravity", Wizards have found a surprising degree of acceptance among Mage communities.
+Wizards are a recent historical development. They manipulate fundamental energies like motion and heat by drawing inspiration from the practice of alchemy. Though many traditionalists are skeptical of something like a "Spirit of Gravity", Wizards have found a surprising degree of acceptance among Mage communities.

@@ -29,10 +29,10 @@ At the end of every session, Players are awarded a **Skill Point**. These can be
 
 | Tier | Number of Specializations | Approx. Number of Skill Points |
 | ---- | ------------------------- | ------------------------------ |
-| 1    | 1                         | 10                             |
-| 2    | 2                         | 20                             |
-| 3    | 3                         | 30                             |
-| ...  | ...                       | ...                            |
+| 1    | 1                         | 0                              |
+| 2    | 2                         | 10                             |
+| 3    | 3                         | 20                             |
+| 4    | 4                         | 30                             |
 
 A Character's **Tier** represents a larger increase in power. Tier upgrades are generally awarded after Players have completed a significant milestone in-game, such as completing a major arc of a campaign.
 

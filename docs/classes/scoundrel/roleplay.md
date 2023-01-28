@@ -48,8 +48,6 @@ Example Concepts:
 
 ### Sneak Attack
 
-> **Tip**: Any attack made while hidden counts as though the player rolled a perfect +2.
-
 Scoundrels aren't as dedicated the art of war as Soldiers, but they're still formidable opponents. One of their greatest assets is the ability to strike when an enemy least expects it. 
 
 **Sneak Attacks** are any attack made while an enemy is unaware of you. Unlike normal attacks, no roll is required. A Sneak Attack has the same outcome as the best possible roll (+2). There are very few enemies that can avoid harm from an attack that they can't see.
