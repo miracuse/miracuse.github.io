@@ -40,13 +40,15 @@ The baseline "Mook" is a catch-all stat block for any nobody the Players are fig
 
 ***Statistics***
 
+> **Tip**: When it comes to ties, a handy phrase to keep in mind is "Defender Wins". A player needs to _beat_ an enemy's Defense to hit them, and _match_ an enemy's Offense to avoid harm.
+
 From a statistics point of view, Players will hit Mooks 90% of the time. The Player rolls their Skill to attack (usually a +2). If they exceed the enemy's Defense stat, they deal a box of damage. Since Mooks only have one of those, they're instantly taken out.
 
-Depending on a Player's class, Mooks will either hit 10% of the time (Soldier/Scoundrel) or 70% of the time (Alchemist/Mage). The Player rolls a Skill to avoid harm (Strength/Agility). If they roll _equal to or greater_ than the enemy's Offense, they take no damage.
+Depending on a Player's class, a plain Mook will either hit 10% of the time (Soldier/Scoundrel) or 70% of the time (Alchemist/Mage). The Player rolls a Skill to avoid harm (Strength/Agility). If they roll _equal to or greater_ than the enemy's Offense, they take no damage.
 
-### Starter Enemy Pack
+### Building Bigger Enemies
 
-GM's can tweak the baseline Mook stat block to produce a variety of different enemy types. A few examples are listed below, along with suggestions for their use. The FATE SRD's [Adversary Toolkit](https://fate-srd.com/fate-adversary-toolkit/types-adversaries#enemies) can be a good reference as well.
+GM's can tweak the  Mook stat block to produce enemies that are more dangerous or difficult to fight. A few examples are listed below, along with suggestions for their use. The FATE SRD's [Adversary Toolkit](https://fate-srd.com/fate-adversary-toolkit/types-adversaries#enemies) can be a good reference as well.
 
 
 ***Hitter***
@@ -66,7 +68,7 @@ GM's can tweak the baseline Mook stat block to produce a variety of different en
 
 * With low health and defense, this enemy is easy to take out
 
-* Play around with thematically appropriate abilities; borrowing from the Soldier's "Weapon" Kits is a good idea
+* Play around with thematically appropriate abilities in place of "area of effect" attacks
 
 
 ***Tank***
@@ -79,8 +81,6 @@ GM's can tweak the baseline Mook stat block to produce a variety of different en
 | Phy. Health | ☐                       |
 | Men. Health | ☐                       |
 | Ability     | Prevent movement on hit |
-
----
 
 | Tank (Tough) |                  |
 | ------------ | ---------------- |

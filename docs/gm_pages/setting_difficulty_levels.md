@@ -63,3 +63,17 @@ Returning to our climbing example, the other Players don't want to wait while th
 
 * Temporarily Lose Access to a Kit (consider rolling a 1d4 to determine which)
 
+***Critical Success***
+
+In situations where a player greatly exceeds the difficulty threshold for a task, consider providing a little flair as a reward.
+
+"With a +4, you nimbly scale the building in a matter of seconds, giving you the first look of the castle grounds."
+
+***Critical Failure***
+
+_Miracuse_ is designed for players to feel competent. A master swordsman won't drop their blade just because the player rolled poorly. For a critical failure to take place, **the roll result must be less than zero.** That only occurs when the following are true:
+
+1. The player is using a Skill they don't have (+0).
+2. The player rolls a -1 or a -2 (30% chance).
+
+When a critical failure does take place, GM's can narrate an outcome befitting of a **Buffoon (-2)** or **Incompetent (-1)** result.

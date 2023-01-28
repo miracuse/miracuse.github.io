@@ -10,38 +10,52 @@ nav_order: 1
 
 _Miracuse_ is a Tabletop Role Playing Game designed for fast-paced, creative dungeon crawling. 
 
-* **Simple Mechanics**: Spend less time looking up rules and more time gaming. Everything uses the same [single-roll dice system](statistics.md), in or out of combat.
+* **Keep It Simple**: Use the same [Skill + Dice Roll](statistics.html) for anything, in or out of combat.
 
 * **Be Good At Your Job**: Don't let the dice decide everything. Skill outweighs luck in _Miracuse_, ensuring that your sneaky assassin won't be tripping alarms just because of a bad roll.
 
-* **Participate**: No more "Face" characters or "White Mages". Every class has the capacity to contribute in combat, in social encounters, and in exploration.
+* **Participate**: No more pulling out your phone while the "Face" talks things over with the guard or the wizard decides which spell to use. Every class has the skills to fight, explore, and persuade in their own unique ways. 
 
-* **Momentum**: Make the best of your sessions! Avoid long slogs through combat, shopping trips, and spell preparation. Gameplay built for action-packed adventuring.
+---
 
 ### What kind of games is Miracuse intended to run?
 
-_Miracuse_ is built for use as a streamlined dungeon crawler with an emphasis on creativity, competency, and simplicity.
+_Miracuse_ is built for classic high fantasy adventures. Players can search long-forgotten abandoned temples, fight pirates on the high seas, or thwart evil necromancers plotting world domination. 
 
-Players should be able to create a character quickly and easily. At a glance, it's apparent what a character is good at (Skills) and what special abilities they have (Kits). The number of both is restricted so that players and GM's can easily keep track of capabilities.
+Sessions of _Miracuse_ look to emulate fantasy series like [The Farseer Trilogy](https://en.wikipedia.org/wiki/Farseer_trilogy), [The Wheel of Time](https://en.wikipedia.org/wiki/The_Wheel_of_Time), or [The Chronicles of Amber](https://en.wikipedia.org/wiki/The_Chronicles_of_Amber). Abilities and items are more than just damage calculations; they're narrative tools that allow players to interact with the world and solve problems.
 
-Gameplay is likewise designed to be intuitive. There are no complex calculations to determine whether or not an attack hits or how much damage is dealt. Magic and abilities are open-ended, with wording that encourages exploration rather than prescribing specific outcomes. 
+A mage with mastery over fire might create a floating ball of flame to light the way forward, or try concentrating the flame to melt through a lock. Likewise, a knight with a holy sword isn't limited to swiping it at bandits. They could use it to break a terrible curse and repel a swarm of vampires with divine light. Players are encouraged to explore creative solutions to the obstacles they face.
 
-And most importantly, the narrative of a session is driven predominately by the intentions of the players. The impact of luck on any given action is less than the impact of character skill. Strong characters will usually succeed in being strong, magical characters will usually succeed in doing magic, and so on.
+Game Masters, in turn, are given the tools they need to facilitate lively sessions. A simple [difficulty system](../../gm_pages/setting_difficulty_levels.html) inspired by FATE makes it easy to ad-lib challenges and interpret results. The [enemy template system](../../gm_pages/making_enemies/index.html) performs a similar task by allowing GM's to whip-up bad guys on the spot.
 
-All of these aspects tie together to produce a game that encourages daring deeds and clever problem solving.
+These pieces come together to create a dynamic, fast-paced game system.
+
+---
 
 ### Comparisons
 
 ***D&D / Pathfinder***
 
-_Miracuse_ is less tactical and mechanics-based than its older cousins. Player's won't be tracking inventories, hit points, or bonuses to attack.
+_Miracuse_ is less tactical and mechanics-oriented than its older cousins, but it occupies the same genre of swords-and-sorcery adventure.
 
-The lower complexity of the system can be a turn-off for players with a particular interest in optimization. They may, however, enjoy the new challenges inherent to this system, such as planning particular Kit/Class combinations. Many also appreciate the reduced impact of randomness when carrying out strategies. 
+Veterans of _D&D_ will find fewer calculations. There are no armor classes, proficiency bonuses, modifiers, or even hit points. Many of the minute details have been abstracted away in favor of gameplay that evokes the same feelings but requires less bookkeeping. A few notable points:
+
+* **Freeform Magic**: _Miracuse_ does not use Vanican magic. Players "equip" a small number of spells like _Talisman of Fire_ and are given much more leeway in how they choose to use them.
+
+* **No Inventory**: Items are handled in a narrative fashion. Your character has rope if they're the sort of person that normally has rope, or if they knew they'd need rope in advance. A [specialized mechanic](../../classes/alchemist/index.html#charge-points) exists for producing unlikely items.
+
+* **Single-Roll Resolution System**: Whether you're scaling a mountain, swinging a halberd, or grappling, the [same d10 mechanic](statistics.html) decides success. 
+
 
 ***FATE***
 
-_Miracuse_ is a little more mechanically-driven than FATE but retains a similar philosophy towards gameplay. While you won't be working with Aspects and Stunts, you will have similar Skill and Health systems, as well as a "fiction first" approach. GM's should find the [Gold and Silver](https://fate-srd.com/fate-core/what-do-during-play#the-golden-rule) rules of FATE to be just as integrated in _Miracuse_ as in FATE.
+_Miracuse_ shares a lot in common with FATE. It leverages a similar Skill-oriented resolution mechanic and follows FATE's [Gold and Silver rules](https://fate-srd.com/fate-core/what-do-during-play#the-golden-rule).
+
+Unlike _FATE_, this system does not employ aspects. _Miracuse_ may be more narratively focused than _D&D_, but it doesn't compare to _FATE Core_. Gameplay mechanics ground the narrative more firmly, closer to [FATE Freeport](https://greenroninstore.com/products/fate-freeport-companion-pdf) or [The Dresden Files RPG](https://evilhat.com/product/dresden-files-rpg-your-story/).
+
 
 ***Dungeon World and OSR***
 
-_Miracuse_ borrows from Dungeon World's concepts. The simplified character creation system and purposefully limited character ability sets (Kits) were both inspired by Dungeon World. Likewise, _Miracuse_ occupies an adjacent genre to OSR (Old School Renaissance) games in that it generally focuses on dungeon crawling and resource utilization. However, it trends closer to modern TTRPG's in power level, eschewing the survival aspect of OSR for pulp action gameplay.
+_Miracuse_ borrows from Dungeon World's concepts but shares little overlap in mechanics. The simplified character creation system and purposefully limited character ability sets (Kits) were both inspired by Dungeon World.
+
+_Miracuse_ occupies an adjacent genre to OSR (Old School Renaissance) games in that it generally focuses on dungeon crawling and resource utilization. However, it trends closer to modern _D&D_ in power level, eschewing the survival aspect of OSR for pulp action gameplay.

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: GM Pages
-nav_order: 99
+nav_order: 8
 has_children: true
 has_toc: false
 ---
