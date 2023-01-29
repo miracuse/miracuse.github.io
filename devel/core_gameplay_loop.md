@@ -1,6 +1,6 @@
 # Core Gameplay Loop
 
-***Players***
+**_Players_**
 
 1. Make Characters
 
@@ -8,7 +8,7 @@
 
 3. Level Up
 
-***GM***
+**_GM_**
 
 1. Session Prep
 
@@ -16,12 +16,11 @@
 
 3. (Optional) Campaign Planning
 
-
 ---
 
 ### Players
 
-***Make Characters***
+**_Make Characters_**
 
 - The Character Creation page is designed to make this as streamlined as possible
   - Choose a class
@@ -30,36 +29,35 @@
   - Kits are selectable from dropdowns
   - Reference page for Skill names and dice rolling
 
+**_Dungeon Crawl_**
 
-***Dungeon Crawl***
+- Challenges
 
-* Challenges
-  * Combat
-  * Exploration
-  * Social
+  - Combat
+  - Exploration
+  - Social
 
-* Recovery
-  * Resource Management (Health, Points)
-  * Kit Selection and Adaptation
+- Recovery
+  - Resource Management (Health, Points)
+  - Kit Selection and Adaptation
 
+**_Level Up_**
 
-***Level Up***
+- Skill Points
 
-* Skill Points
-  * One per Session
-  * Represent minor changes in player options
-    * Increased efficacy at class competencies (fighting, magic, etc.)
-    * Or, increased resource pool (charge points, fortune points, etc)
-    * Or, improve non-class competencies (health for mages, magic for scoundrels, etc.)
+  - One per Session
+  - Represent minor changes in player options
+    - Increased efficacy at class competencies (fighting, magic, etc.)
+    - Or, increased resource pool (charge points, fortune points, etc)
+    - Or, improve non-class competencies (health for mages, magic for scoundrels, etc.)
 
-* Tiers
-  * One per Milestone
-  * Represent major changes in player options
-    * New kits available via specializations
-      * Expand class-related kits (more magic for mages, more techniques for soldiers, etc.)
-      * Or, mix-and-match other classes for hybrid capabilities (add magic to soldiers, add alchemy to scoundrels, etc.)
-      * Or, take an "advanced" specialization that doesn't correspond to one of the four classes
-
+- Tiers
+  - One per Milestone
+  - Represent major changes in player options
+    - New kits available via specializations
+      - Expand class-related kits (more magic for mages, more techniques for soldiers, etc.)
+      - Or, mix-and-match other classes for hybrid capabilities (add magic to soldiers, add alchemy to scoundrels, etc.)
+      - Or, take an "advanced" specialization that doesn't correspond to one of the four classes
 
 ### GM's
 

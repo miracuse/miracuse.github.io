@@ -32,15 +32,15 @@ nav_order: 2
 
 Every culture has its own perception of Mages. In some nations magic is considered a privilege of nobility. Anyone incapable of channeling the spirits is deemed unfit to rule. In others, demonstrating an aptitude for magic results in forced adoption to a church, a temple, a coven, or other organization. It isn't uncommon for the life of a Mage to border on slavery in lands where magic is feared.
 
-No nation, however, throws away its Mages. Practitioners are universally recognized as a powerful resource. If they are not the rulers of a country, then they are kept tightly controlled by those who do. 
+No nation, however, throws away its Mages. Practitioners are universally recognized as a powerful resource. If they are not the rulers of a country, then they are kept tightly controlled by those who do.
 
 Example Concepts:
 
-* An escaped slave magician, fleeing from bounty hunters
+- An escaped slave magician, fleeing from bounty hunters
 
-* A member of high nobility, developing their skills as an adventurer
+- A member of high nobility, developing their skills as an adventurer
 
-* A priestess of a benign spirit, charged by her order to exorcise agents of a dark god
+- A priestess of a benign spirit, charged by her order to exorcise agents of a dark god
 
 ### Presence
 
@@ -58,15 +58,15 @@ However, their influence is intended to be subtle rather than overt. Those who r
 
 Most Mages require some form of medium to conduct otherworldly energies into their bodies. Various traditions exist that dictate what those mediums are and how they are used, though the resulting magic will be similar in shape and power no matter the implement. A few examples are given below:
 
-* **Wands**: The most common kind of Talisman, favored for their portability.
+- **Wands**: The most common kind of Talisman, favored for their portability.
 
-* **Prayer Beads**: A frequent choice among religious practitioners. The beads are carved with iconography of saints and demigods.
+- **Prayer Beads**: A frequent choice among religious practitioners. The beads are carved with iconography of saints and demigods.
 
-* **Ofuda**: Paper Talismans with ornate symbols drawn upon them. Often burned in the process of casting.
+- **Ofuda**: Paper Talismans with ornate symbols drawn upon them. Often burned in the process of casting.
 
-* **Runes**: Sigils of great power, said to represent the true names of spirits and carved onto precious gems.
+- **Runes**: Sigils of great power, said to represent the true names of spirits and carved onto precious gems.
 
-* **Pacts**: Stylized contracts with spirits, commonly engraved into stone tablets.
+- **Pacts**: Stylized contracts with spirits, commonly engraved into stone tablets.
 
 <!-- ### Roles
 

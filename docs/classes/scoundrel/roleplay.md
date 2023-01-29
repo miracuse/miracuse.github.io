@@ -30,25 +30,25 @@ nav_order: 2
 
 ### Place in Society
 
-Scoundrels are talented at blending in, but they're outsiders at heart. They exist on the outskirts of societies as traveling merchants, foreign emissaries, and criminal elements. Their uncertain position gives them the freedom to flaunt social norms, though at the price of always being under suspicion. 
+Scoundrels are talented at blending in, but they're outsiders at heart. They exist on the outskirts of societies as traveling merchants, foreign emissaries, and criminal elements. Their uncertain position gives them the freedom to flaunt social norms, though at the price of always being under suspicion.
 
 Example Concepts:
 
-* A royal cartographer updating world maps for a distant emperor
+- A royal cartographer updating world maps for a distant emperor
 
-* A professional thief-catcher that does contract work for law enforcement agencies
+- A professional thief-catcher that does contract work for law enforcement agencies
 
-* A young Skald sent out from their tribe to bring back stories of the world beyond their native lands
+- A young Skald sent out from their tribe to bring back stories of the world beyond their native lands
 
 ### Cunning
 
 > **Tip**: The most common uses of Cunning are **stealth**, **danger sense**, and **deceiving others**.
 
- The Scoundrel's social skill allows them to move without attracting notice, to sense impending harm, and to bluff. **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** is used for all manner of "thief-like" behavior.
+The Scoundrel's social skill allows them to move without attracting notice, to sense impending harm, and to bluff. **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** is used for all manner of "thief-like" behavior.
 
 ### Sneak Attack
 
-Scoundrels aren't as dedicated the art of war as Soldiers, but they're still formidable opponents. One of their greatest assets is the ability to strike when an enemy least expects it. 
+Scoundrels aren't as dedicated the art of war as Soldiers, but they're still formidable opponents. One of their greatest assets is the ability to strike when an enemy least expects it.
 
 **Sneak Attacks** are any attack made while an enemy is unaware of you. Unlike normal attacks, no roll is required. A Sneak Attack has the same outcome as the best possible roll (+2). There are very few enemies that can avoid harm from an attack that they can't see.
 
@@ -58,13 +58,13 @@ Scoundrels aren't as dedicated the art of war as Soldiers, but they're still for
 
 Magic has been around for as long as history can recall. And in that time, many individuals have coveted its power despite lacking training or aptitude. Unorthodox methods gradually came into being to allow lay persons brief access to the spirits. Many of these methods exist in a grey legal area, where they aren't outright banned for the dangers they represent.
 
-* **Mage Blood**: Some spirits seem happy enough to accept Mage blood in exchange for power, regardless of whether or not the Mage is present.
+- **Mage Blood**: Some spirits seem happy enough to accept Mage blood in exchange for power, regardless of whether or not the Mage is present.
 
-* **Arcane Focus**: A reservoir of power, usually in the form of a crystal, that a Mage has prepared in advance. Sold in alley markets for a tidy profit.
+- **Arcane Focus**: A reservoir of power, usually in the form of a crystal, that a Mage has prepared in advance. Sold in alley markets for a tidy profit.
 
-* **Favor**: A few spirits and their servants are able to bequeath a "favor" in exchange for services rendered. In the best scenario the spirit in question has offered a benign reward. In the worst, the spirit seeks to spread its influence by corrupting mortals for petty wishes.
+- **Favor**: A few spirits and their servants are able to bequeath a "favor" in exchange for services rendered. In the best scenario the spirit in question has offered a benign reward. In the worst, the spirit seeks to spread its influence by corrupting mortals for petty wishes.
 
-* **Sacrifice**: Some of the oldest magic traditions were built around the ritual sacrifice of rare animals and precious goods. A number of those rituals still hold power.
+- **Sacrifice**: Some of the oldest magic traditions were built around the ritual sacrifice of rare animals and precious goods. A number of those rituals still hold power.
 
 <!-- ### Roles
 

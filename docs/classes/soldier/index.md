@@ -19,14 +19,13 @@ The Soldier is a warrior without peer. They may be knights, bandits, infantrymen
 
 ---
 
-### Career 
+### Career
 
-Unlike common footmen, Soldiers have distinguished themselves as expert combatants. They carry a reputation among the general public. Many have monikers like "The Lion's Roar" or "The Templar Prince". 
+Unlike common footmen, Soldiers have distinguished themselves as expert combatants. They carry a reputation among the general public. Many have monikers like "The Lion's Roar" or "The Templar Prince".
 
 Soldiers are also known by the equipment they bear. The rising prevalence of alchemy has made enchanted weaponry more common than ever before, and a veteran Soldier can expect to accumulate a small arsenal over the length of their career. Each is designed in such a way that they can be disassembled and stored on one's person when not in use.
 
 But beyond reputation and armaments, the true mark of a Soldier is an uncanny air of intensity. A Soldier's full regard can feel as suffocating as iron. Their contempt, like needles under skin.
-
 
 <!-- A Soldier starts their career as an ordinary fighter. A conscript in a noble's army, or a vagabond in a bandit camp are both common origins. They learn their way around a weapon and might have a few skirmishes under their belt. But there is a moment when _something_ changes. For some it's a near-death experience. For others, a glorious victory against the odds. Whatever the cause, they are never quite the same after.
 
@@ -40,11 +39,11 @@ Unless they let their emotions run wild, a Soldier appears the same as any other
 
 Soldiers have an unusual relationship with luck, able to occasionally pull on the threads of chance in times of great need. These flares of energy are represented as **Fortune Points** and can be used for the following:
 
-* **Amplify a Weapon**: Empower an equipped Weapon to go far beyond its usual usage.
+- **Amplify a Weapon**: Empower an equipped Weapon to go far beyond its usual usage.
 
-* **Avoid Harm**: Negate or greatly the reduce harm from an incoming threat.
+- **Avoid Harm**: Negate or greatly the reduce harm from an incoming threat.
 
-* **Reroll**: Change the outcome of a roll by rolling again and taking the new result, a maximum of one time per action.
+- **Reroll**: Change the outcome of a roll by rolling again and taking the new result, a maximum of one time per action.
 
 ---
 
@@ -52,7 +51,7 @@ Soldiers have an unusual relationship with luck, able to occasionally pull on th
 
 ### <span style="color: {{ site.soldier_color }}">Blademaster</span>
 
-Recognized masters of the sword, in great demand across the world as mercenaries and bodyguards. Blademasters carry a collection of enchanted and alchemically-enhanced blades that require years of study to properly wield. The best known are the "Vorpal Swords", liquid metal blades whose unmatched sharpness makes them unusable by those without training. 
+Recognized masters of the sword, in great demand across the world as mercenaries and bodyguards. Blademasters carry a collection of enchanted and alchemically-enhanced blades that require years of study to properly wield. The best known are the "Vorpal Swords", liquid metal blades whose unmatched sharpness makes them unusable by those without training.
 
 ### <span style="color: {{ site.soldier_color }}">Knight</span>
 

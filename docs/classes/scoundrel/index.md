@@ -15,13 +15,13 @@ The Scoundrel is a master of misdirection. They blend in with crowds and shadows
 
 - **<span style="color: {{ site.scoundrel_color }}">Cunning</span>**: Scoundrels are sly. They use this Skill to talk circles around others, to [move unnoticed](../../gameplay/exploration/stealth.md), and to sense danger or lies. Cunning also determines how many Prep Points a Scoundrel has.
 
-- **[Prep Points](#prep-points)**: The Scoundrel's resource lets them disappear from sight, disguise themselves both in appearance and behavior, perform **<span style="color: {{ site.mage_color }}">Magic</span>** with the aid of tools, and reach out to their various social contacts for favors. 
+- **[Prep Points](#prep-points)**: The Scoundrel's resource lets them disappear from sight, disguise themselves both in appearance and behavior, perform **<span style="color: {{ site.mage_color }}">Magic</span>** with the aid of tools, and reach out to their various social contacts for favors.
 
 ---
 
 ### Rogue
 
-A Scoundrel is someone caught between worlds. Hunters, between civilization and nature. Spies, between two masters. Thieves, between polite society and its cruel underbelly. A Scoundrel knows the importance of _seeming_. What others call "deceit" they call survival. 
+A Scoundrel is someone caught between worlds. Hunters, between civilization and nature. Spies, between two masters. Thieves, between polite society and its cruel underbelly. A Scoundrel knows the importance of _seeming_. What others call "deceit" they call survival.
 
 They are not Alchemists, but they dabble in alchemy. They are not Mages, but they can perform a few spells. They are not Soldiers, but they can hold their own in a fight. Above all, a Scoundrel is someone who understands that survival is dependent on adaptability. And that no amount alchemic knowledge, arcane might, or martial prowess can keep you safe while you sleep.
 
@@ -31,13 +31,13 @@ They are not Alchemists, but they dabble in alchemy. They are not Mages, but the
 
 Scoundrels always have a few tricks up their sleeves. These are represented as **Prep Points** and can be used for the following:
 
-* **Disappear From Sight**: Make a hasty getaway, vanishing from sight even in the middle of combat.
+- **Disappear From Sight**: Make a hasty getaway, vanishing from sight even in the middle of combat.
 
-* **Produce a Disguise**: Impersonate others, assume a false identity, or simply camouflage yourself to better blend in.
+- **Produce a Disguise**: Impersonate others, assume a false identity, or simply camouflage yourself to better blend in.
 
-* **Use a Magic Device**: Pull out a charm, gem, or other charged object to use a Talisman with **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** instead of **<span style="color: {{ site.mage_color }}">Magic</span>**. The object is depleted after a single use.
+- **Use a Magic Device**: Pull out a charm, gem, or other charged object to use a Talisman with **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** instead of **<span style="color: {{ site.mage_color }}">Magic</span>**. The object is depleted after a single use.
 
-* **I Know a Guy**: Declare that you just so happen to have a contact in the area that owes you a favor, and can help with your present situation.
+- **I Know a Guy**: Declare that you just so happen to have a contact in the area that owes you a favor, and can help with your present situation.
 
 ---
 
@@ -49,8 +49,8 @@ Expert infiltrators proficient in the use of poisons. Their weapon of choice are
 
 ### <span style="color: {{ site.scoundrel_color }}">The Bard</span>
 
-Members of a courier's guild, trained in a little magic, a little stage alchemy, and the art of throwing knives. Bards are frequently employed as messengers, entertainers, spies, and legal consul. Their social position is nebulous enough that they can comfortably interact with aristocrats and peasants. 
+Members of a courier's guild, trained in a little magic, a little stage alchemy, and the art of throwing knives. Bards are frequently employed as messengers, entertainers, spies, and legal consul. Their social position is nebulous enough that they can comfortably interact with aristocrats and peasants.
 
 ### <span style="color: {{ site.scoundrel_color }}">The Ranger</span>
 
-A catch-all term for hunters, tribal warriors, and nomads. Skilled archers with an affinity for nature, whose traditional medicines predate the modern practice of alchemy. 
+A catch-all term for hunters, tribal warriors, and nomads. Skilled archers with an affinity for nature, whose traditional medicines predate the modern practice of alchemy.

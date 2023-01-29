@@ -8,12 +8,11 @@ nav_order: 2
 
 # Equipment
 
-    GM:     The thorny brambles jab into your skin, causing
-            Physical damage.
-
-    Player: Wait. I'm wearing a full suit of metal armor.
-
-    GM:     Oh. Yeah, then you don't take any damage.
+> **GM**: The thorny brambles jab into your skin, causing Physical damage.
+>
+> **Player**: Wait. I'm wearing a full suit of metal armor.
+>
+> **GM**: Oh. Yeah, then you don't take any damage.
 
 Equipment in _Miracuse_ is handled narratively. Meaning that Players don't manage individual items in an inventory, as would be the case for many other TTRPG's.
 
@@ -34,27 +33,19 @@ The Skill a character uses when attacking roughly corresponds to the weapons the
 
 ### Adventuring Gear
 
-    GM:       The pit is about 50 feet deep, and the
-              sides look difficult to climb down.
-
-    Player 1: Do I have any rope?
-
-    GM:       Given how you've described your character as
-              a wizard carrying around wands and books,
-              probably not.
-
-    Player 2: How about me? I'm like an Indiana Jones
-              adventurer.
-
-    GM:       Yeah, your character probably has some
-              rope on hand. I'll have y'all roll Strength
-              or Agility to do some mountaineering.
-
-    Player 3: Could I use "What You Needed" to pull out a
-              full set of climbing gear?
-
-    GM:       Okay. I'll say that with that, no one needs
-              to roll to climb down the pit.
+> **GM**: The pit is about 50 feet deep, and the sides look difficult to climb down.
+>
+> **Player 1**: Do I have any rope?
+>
+> **GM**: Given how you've described your character as a wizard carrying around wands and books, probably not.
+>
+> **Player 2**: How about me? I'm like an Indiana Jones adventurer.
+>
+> **GM**: Yeah, your character probably has some rope on hand. I'll have y'all roll Strength or Agility to do some mountaineering.
+>
+> **Player 3**: Could I use "What You Needed" to pull out a full set of climbing gear?
+>
+> **GM**: Okay. I'll say that with that, no one needs to roll to climb down the pit.
 
 Many situations may call for some specific piece of gear like a coil of rope or a torch. Unless the Players have gone out of their way to acquire that gear, the GM will decide whether or not their character is likely to have it on hand.
 

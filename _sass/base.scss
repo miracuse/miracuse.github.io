@@ -112,4 +112,8 @@ blockquote {
   margin-inline-start: 0;
   padding-left: 15px;
   border-left: 3px solid $border-color;
+
+  // Formats blockquotes as light grey boxes
+  background-color: $grey-lt-000;
+  font-family: $header-font-family;
 }

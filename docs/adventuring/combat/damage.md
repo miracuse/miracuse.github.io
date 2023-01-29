@@ -16,15 +16,15 @@ Similarly, enemies may have abilities that do the same for their attacks.
 
 ### Defense
 
-    GM:       There's a boulder barreling down the hallway at you.
-
-    Player 1: Can I use Agility to dive out of the way?
-
-    GM:       Yep.
-
-    Player 2: Can I use Strength to block the boulder with my shield?
-
-    GM:       You can try, but it's going to be a hard roll.
+> **GM**: There's a boulder barreling down the hallway at you.
+>
+> **Player 1**: Can I use Agility to dive out of the way?
+>
+> **GM**: Yep.
+>
+> **Player 2**: Can I use Strength to block the boulder with my shield?
+>
+> **GM**: You can try, but it's going to be a hard roll.
 
 | Skill      | Defense                                                     |
 | ---------- | ----------------------------------------------------------- |

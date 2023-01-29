@@ -25,9 +25,9 @@ A hazard is like an enemy in that it can hurt characters. It has an **Offense** 
 
 Arrow trap? Rockslide? Lingering curse? All of them can be modeled with the same **Proficient (+1)** difficulty. The Skill that players use to overcome the issue might vary (after all, "blocking" a rockslide is going to be harder than moving out of the way), but the fundamental concept will not.
 
-***Fiction First***
+**_Fiction First_**
 
-Let the fiction of the environment take precedence over any stat block. Escaping from a rolling boulder is a **Proficient (+1)** Agility challenge, but stopping a boulder in its tracks is an **Expert (+3)** Strength challenge. 
+Let the fiction of the environment take precedence over any stat block. Escaping from a rolling boulder is a **Proficient (+1)** Agility challenge, but stopping a boulder in its tracks is an **Expert (+3)** Strength challenge.
 
 When in doubt, fall back on the basics of [setting difficulties](setting_difficulty_levels.html). "How hard would it be for the player to do XYZ?"
 
@@ -50,6 +50,6 @@ Solving hazards usually involves some amount of player ingenuity. Characters can
 | Ability          | None             |
 | Trigger          | Trying to climb. |
 
-Not all hazards are outright dangerous. Something as straightforward as "climbing a cliff" can be a hazard. 
+Not all hazards are outright dangerous. Something as straightforward as "climbing a cliff" can be a hazard.
 
 In this scenario, a player that fails the roll can still succeed in climbing the cliff. They simply incur a cost in the form of damage. See [success at a cost](setting_difficulty_levels.html#advanced-approaches) for more details.

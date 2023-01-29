@@ -8,16 +8,15 @@ has_toc: false
 
 # Gameplay
 
-    GM: You enter the dark cave and smell something rotten. What do you do?
-
-    Player: I want to use my fire magic to create a light.
-
-    GM: Okay, that's pretty easy. Roll Magic and try to get at least a +1.
-
-    Player: I rolled a +1, and my character starts with a +2. So, I have a +3 total.
-
-    GM: Alright. The room brightens immediately. You see skeletons all over the floor.
-    The skeletons look up and see you too.
+> **GM:** You enter the dark cave and smell something rotten. What do you do?
+>
+> **Player:** I want to use my fire magic to create a light.
+>
+> **GM:** Okay, that's pretty easy. Roll Magic and try to get at least a +1.
+>
+> **Player:** I rolled a +1, and my character starts with a +2. So, I have a +3 total.
+>
+> **GM:** Alright. The room brightens immediately. You see skeletons all over the floor. The skeletons look up and see you too.
 
 The GM sets the scene and the Players react. Gameplay rules describe how that process works.
 

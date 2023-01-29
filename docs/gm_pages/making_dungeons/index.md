@@ -11,13 +11,13 @@ nav_order: 4
 
 "Dungeon" is a loose term, used here to represent any location filled with threats to the players. Though not the only kind of area in _Miracuse_, dungeons are excellent for challenging players with a direct goal and obvious danger. A handful of examples:
 
-* A cursed temple, lousy with undead and ancient traps
+- A cursed temple, lousy with undead and ancient traps
 
-* A foreboding forest, filled with hungry wolves and hazardous terrain
+- A foreboding forest, filled with hungry wolves and hazardous terrain
 
-* A tunnel network, crawling with goblins and their improvised weapons
+- A tunnel network, crawling with goblins and their improvised weapons
 
-* A wizard's tower, protected by golems and warding spells
+- A wizard's tower, protected by golems and warding spells
 
 ---
 
@@ -25,23 +25,23 @@ nav_order: 4
 
 | Worg Cave |                                                                                                      |
 | --------- | ---------------------------------------------------------------------------------------------------- |
-| Rooms     | *Entrance Cave*, *Cursed Cave*, *Snake-infested Cave*, *Slime Cave*, *Wolf Den*, *Alpha Worg's Lair* |
+| Rooms     | _Entrance Cave_, _Cursed Cave_, _Snake-infested Cave_, _Slime Cave_, _Wolf Den_, _Alpha Worg's Lair_ |
 | Enemies   | Wolves, dark spirits, alpha wolves, gelatinous slimes                                                |
 | Hazards   | Old bear traps, primitive curses, snake nests                                                        |
 | Boss      | Elder Worg                                                                                           |
 
 > **Tip**: It's a good idea to have more content (floors, enemies, hazards) than you think you need. If player progress is slow, you can always cut out content to ensure a timely finale.
 
-***Rooms***
+**_Rooms_**
 
 ```
 GM:  You enter a set of caves that feels darker than those above.
      Something unnatural stirs here. Roll Presence.
 ```
 
-Rooms are discrete areas in a dungeon. That might mean a single cave or an entire floor depending on context. _The Wizard's Alchemical Lab_ could be a room. So could _The Hall of Cursed Mirrors_. 
+Rooms are discrete areas in a dungeon. That might mean a single cave or an entire floor depending on context. _The Wizard's Alchemical Lab_ could be a room. So could _The Hall of Cursed Mirrors_.
 
-Rooms generally contain [enemies](making_enemies/index.html) or [hazards](making_hazards.html), sometimes both. It's a good idea to think about how you'd describe a room to a group. 
+Rooms generally contain [enemies](making_enemies/index.html) or [hazards](making_hazards.html), sometimes both. It's a good idea to think about how you'd describe a room to a group.
 
 ---
 

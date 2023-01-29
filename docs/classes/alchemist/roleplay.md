@@ -34,20 +34,19 @@ Alchemists in _Miracuse_ are a recent historical development. Their arrival is s
 
 Example Concepts:
 
-* A field researcher compiling notes for their next publication
+- A field researcher compiling notes for their next publication
 
-* A mercenary gunslinger offering their services to the highest bidder
+- A mercenary gunslinger offering their services to the highest bidder
 
-* The second son of noble family tasked with making his own inheritance
+- The second son of noble family tasked with making his own inheritance
 
 ### Knowledge
 
 > **Tip**: The most common uses of Knowledge are **asking questions about the world** and **rhetoric**.
- 
+
 The Alchemist's social skill focuses on exploration and logical arguments. **<span style="color: {{ site.alchemist_color }}">Knowledge</span>** is used when a player has a question about the world. "What kind of disease is this person suffering from?" "What do I know about this general's reputation?"
 
-It's also used when persuading others with reason. Convincing a bandit that you aren't worth robbing because the risk doesn't outweigh the reward falls under this category. 
-
+It's also used when persuading others with reason. Convincing a bandit that you aren't worth robbing because the risk doesn't outweigh the reward falls under this category.
 
 ### Trade Secrets
 

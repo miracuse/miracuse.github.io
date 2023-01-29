@@ -27,7 +27,7 @@ Practitioners vary between societies and traditions. It's common across many reg
 
 The majority of traditions center around the use of Talismans, objects of symbolic importance that act as conduits for otherworldly energy. Each talisman is attuned to a particular spirit and reflects their aspect. A spirit of earth, for example, might resonate with a wand made of quartz crystal.
 
-<!-- 
+<!--
 Unlike Alchemy, casting spells is rarely a matter of **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**. There may be rituals and names to memorize, but **<span style="color: {{ site.mage_color }}">Magic</span>** is ultimately an expression of spirit and instinct. A Mage must have honed their inner selves to withstand currents of foreign energy and trained their bodies to redirect it. -->
 
 <!-- One can usually tell a true Mage from a dabbler. Regular exposure to otherworldly influences leads to stigmata; strangely colored eyes, an odd ring to one's voice, or the gradual formation of sigils on skin. The more marked the practitioner, the more powerful, and often the less sane. These characteristics are often accompanied by a unique **<span style="color: {{ site.mage_color }}">Presence</span>**, a supernatural charisma with the capacity to enthrall those with weak wills. -->
@@ -38,9 +38,9 @@ Unlike Alchemy, casting spells is rarely a matter of **<span style="color: {{ si
 
 Mages can draw heavily on the spirits a few times each day to produce grand workings of magic. These instances are represented as **Mana Points** and can be used for the following:
 
-* **Amplify a Talisman**: Empower an equipped Talisman to go far beyond its usual usage.
+- **Amplify a Talisman**: Empower an equipped Talisman to go far beyond its usual usage.
 
-* **Combine Talismans**: Combine two Talismans to produce a more complex effect.
+- **Combine Talismans**: Combine two Talismans to produce a more complex effect.
 
 ---
 
@@ -52,8 +52,7 @@ Priests arbitrate the boundaries between worlds. They govern over the living and
 
 ### <span style="color: {{ site.mage_color }}">The Shaman</span>
 
-Shamans draw on the primordial concepts of the elements. Not just fire, but the symbolic meaning of fire, as a representation of destruction and cleaning. 
-
+Shamans draw on the primordial concepts of the elements. Not just fire, but the symbolic meaning of fire, as a representation of destruction and cleaning.
 
 ### <span style="color: {{ site.mage_color }}">The Wizard</span>
 

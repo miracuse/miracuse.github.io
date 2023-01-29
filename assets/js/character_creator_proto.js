@@ -208,12 +208,11 @@ class KitHolder extends React.Component {
   generateKitOption(x) {
     if (x == this.props.kit) {
       return (
-              <option key={x} value={x} selected>
-                {x}
-              </option>
-            );
-    }
-    else {
+        <option key={x} value={x} selected>
+          {x}
+        </option>
+      );
+    } else {
       return (
         <option key={x} value={x}>
           {x}
@@ -232,7 +231,7 @@ class KitHolder extends React.Component {
 
     // Populate the kit selections based on the kit types
     const kit_options_data = fetchKits(this.props.specializations);
-    const kit_options = kit_options_data.map((x) => this.generateKitOption(x))
+    const kit_options = kit_options_data.map((x) => this.generateKitOption(x));
 
     return (
       <div
@@ -398,7 +397,7 @@ class CharacterSheet extends React.Component {
             <p>Class</p>
           </div>
           <div className="character_class_text">
-          <InfoBox message="Your Class determines what skills you start with." />
+            <InfoBox message="Your Class determines what skills you start with." />
             <label>Class</label>
           </div>
           <div className="character_class">
@@ -415,7 +414,7 @@ class CharacterSheet extends React.Component {
           </div>
 
           <div className="character_tier_text">
-          <InfoBox message="Your Tier determines how many specializations you can have at one time. More experienced characters have a higher tier." />
+            <InfoBox message="Your Tier determines how many specializations you can have at one time. More experienced characters have a higher tier." />
             <label>Tier</label>
           </div>
           <div className="character_tier">
@@ -456,7 +455,7 @@ class CharacterSheet extends React.Component {
           </div>
 
           <div className="physical_health_text">
-          <InfoBox message="Physical Health represents how many times you can be hit before becoming incapacitated. Increasing Strength will add more boxes." />
+            <InfoBox message="Physical Health represents how many times you can be hit before becoming incapacitated. Increasing Strength will add more boxes." />
             <label>Physical Health</label>
           </div>
 
@@ -466,7 +465,7 @@ class CharacterSheet extends React.Component {
           />
 
           <div className="mental_health_text">
-          <InfoBox message="Mental Health represents how much psychological harm you can withstand before becoming incapacitated. Increasing Presence will add more boxes." />
+            <InfoBox message="Mental Health represents how much psychological harm you can withstand before becoming incapacitated. Increasing Presence will add more boxes." />
             <label>Mental Health</label>
           </div>
 
@@ -490,7 +489,7 @@ class CharacterSheet extends React.Component {
           />
 
           <div className="mana_point_text">
-          <InfoBox message="Mana Points can be used to cast powerful spells, amplifying the effects of an equipped Talisman or combining two Talismans to produce a complex effect." />
+            <InfoBox message="Mana Points can be used to cast powerful spells, amplifying the effects of an equipped Talisman or combining two Talismans to produce a complex effect." />
             <label>Mana Points</label>
           </div>
           <ResourceTrack
@@ -499,7 +498,7 @@ class CharacterSheet extends React.Component {
           />
 
           <div className="fortune_point_text">
-          <InfoBox message="Fortune Points can be used to pull off fantastical physical feats, amplifying the effects of an equipped Weapon. They can also be used to 'Reroll' or 'Avoid Harm'." />
+            <InfoBox message="Fortune Points can be used to pull off fantastical physical feats, amplifying the effects of an equipped Weapon. They can also be used to 'Reroll' or 'Avoid Harm'." />
             <label>Fortune Points</label>
           </div>
           <ResourceTrack
@@ -508,7 +507,7 @@ class CharacterSheet extends React.Component {
           />
 
           <div className="prep_point_text">
-          <InfoBox message="Prep Points can be used to 'Disappear From Sight', 'Produce a Disguise', 'Use a Magic Device', or declare 'I Know a Guy'." />
+            <InfoBox message="Prep Points can be used to 'Disappear From Sight', 'Produce a Disguise', 'Use a Magic Device', or declare 'I Know a Guy'." />
             <label>Prep Points</label>
           </div>
           <ResourceTrack
@@ -527,21 +526,33 @@ class CharacterSheet extends React.Component {
           <div className="kit_header">
             <b>Kits</b>
           </div>
-          <KitHolder key={1} index={1} kit={this.state.Kit_01}
-          specializations={this.state.Specializations}
-          onChange={this.handleKitChange}
+          <KitHolder
+            key={1}
+            index={1}
+            kit={this.state.Kit_01}
+            specializations={this.state.Specializations}
+            onChange={this.handleKitChange}
           />
-          <KitHolder key={2} index={2} kit={this.state.Kit_02}
-          specializations={this.state.Specializations}
-          onChange={this.handleKitChange}
+          <KitHolder
+            key={2}
+            index={2}
+            kit={this.state.Kit_02}
+            specializations={this.state.Specializations}
+            onChange={this.handleKitChange}
           />
-          <KitHolder key={3} index={3} kit={this.state.Kit_03}
-          specializations={this.state.Specializations}
-          onChange={this.handleKitChange}
+          <KitHolder
+            key={3}
+            index={3}
+            kit={this.state.Kit_03}
+            specializations={this.state.Specializations}
+            onChange={this.handleKitChange}
           />
-          <KitHolder key={4} index={4} kit={this.state.Kit_04}
-          specializations={this.state.Specializations}
-          onChange={this.handleKitChange}
+          <KitHolder
+            key={4}
+            index={4}
+            kit={this.state.Kit_04}
+            specializations={this.state.Specializations}
+            onChange={this.handleKitChange}
           />
 
           <KitDescriptionHolder key={1} index={1} kit={this.state.Kit_01} />
