@@ -1,6 +1,148 @@
 export default function get_data() {
   var data = [
     {
+      Class: "Advanced",
+      Type: "Gunslinger",
+      Kit: "Armor Piercing Bullets",
+      Tags: "Alchemy",
+      Description: "Steel-tipped bullets that punch through armor and cover.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Gunslinger",
+      Kit: "Hollow Point Bullets",
+      Tags: "Alchemy",
+      Description:
+        "Bullets designed to cause great harm. Deals an additional box of Physical damage on successful attacks.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Gunslinger",
+      Kit: "Quickdraw Pistol",
+      Tags: "Weapon, Reaction",
+      Description:
+        "A handgun specialized for near-instant withdraw. Using this weapon, have Advantage when turn order is rolled, and your first attack counts as a sneak attack. You cannot use grenades when using this weapon to attack.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Gunslinger",
+      Kit: "Rubber Bullets",
+      Tags: "Alchemy",
+      Description:
+        "Rubberized bullets that can be used for non-lethal attacks. Ricochet uncontrollably in closed spaces.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Gunslinger",
+      Kit: "Silver Bullets",
+      Tags: "Alchemy",
+      Description: "Anti-magic bullets that can shatter spells.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Gunslinger",
+      Kit: "Twoshot Bullets",
+      Tags: "Alchemy",
+      Description:
+        "Trick bullets that can fire twice, changing trajectory in midair. Can be used to fire around corners or other obstacles.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Metallurgist",
+      Kit: "Adamantine Gloves",
+      Tags: "Alchemy, Reaction",
+      Description:
+        "A set of flexible gloves that have somehow been crafted out of finely worked adamantium. They protect the wearer\u2019s hands from conditions as extreme as molten lava or caustic acid. You have Advantage when blocking attacks with the gloves.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Metallurgist",
+      Kit: "Reshape Metal",
+      Tags: "Alchemy",
+      Description:
+        "Reshape metal, altering its form by expanding or reducing its mass. The more drastic the change, the more difficult and time consuming it is. Requires physical contact. Can be completed instantaneously by expending a Charge Point.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Metallurgist",
+      Kit: "Runehammer",
+      Tags: "Weapon",
+      Description:
+        "A warhammer with power over metals. Using this weapon shatters metal objects and heavily damages enchanted items.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Metallurgist",
+      Kit: "Talisman of Forge",
+      Tags: "Talisman",
+      Description:
+        "A wand or other object that can be used to alter the properties of metals. Can be used to heat metals, purge them of impurities, and strengthen or weaken them.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Metallurgist",
+      Kit: "Transmute Metal",
+      Tags: "Alchemy",
+      Description:
+        "Convert one metal into another. The greater the difference from the original, the more difficult the change. Requires physical contact.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Metallurgist",
+      Kit: "Vitrolic Edge",
+      Tags: "Weapon",
+      Description:
+        "A shortsword that sweats sulfuric acid. Using this weapon causes painful acid burns. Successful attacks deal an additional box of Physical damage.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Templar",
+      Kit: "Abjuring Chain",
+      Tags: "Weapon",
+      Description:
+        "A metal chainlink whip engraved with warding runes. Using this weapon allows your attacks to interfere with magic, similar to a knight\u2019s holy sword. The whip can be joined together to create a magic circle that repels magic from the outside and contains magic within.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Templar",
+      Kit: "Blinding Spear",
+      Tags: "Weapon",
+      Description:
+        "A shaft of steel tipped with enchanted silver that permanently glows with light. Using this weapon blinds creatures with strong night vision. Successful attacks against magical creatures deal an additional point of damage.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Templar",
+      Kit: "Sacred Censure",
+      Tags: "Alchemy",
+      Description:
+        "A brass vessel suspended by a chain, made for burning incense. Can be used to create swirls of white smoke that dampen the effects of magic in an area. Monsters and other animals are repelled by the smell, making it useful for setting up camp in dangerous areas.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Templar",
+      Kit: "Talisman of Binding",
+      Tags: "Talisman",
+      Description:
+        "A wand or other object that can be used to restrict and reinforce. Can be used to imprison enemies, to fortify doors, and to seal away magic.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Templar",
+      Kit: "Talisman of Purity",
+      Tags: "Talisman",
+      Description:
+        "A wand or other object that can be used to purify and sanctify. Can be used to expel poisons, harm magical creatures, and bless objects with the power to ward off evil spirits.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Templar",
+      Kit: "Tolling Bell",
+      Tags: "Alchemy",
+      Description:
+        "A metal bell whose deep sound sends a feeling of peace through those who hear it. Weak undead in the area are immediately put to rest, while stronger undead take Physical and Mental damage. Can be used softly to put others into a stupor, but only if they\u2019re caught unaware.",
+    },
+    {
       Class: "Alchemist",
       Type: "Chemist",
       Kit: "Agua Regia",
@@ -395,10 +537,10 @@ export default function get_data() {
     {
       Class: "Scoundrel",
       Type: "Ranger",
-      Kit: "Ricochet Arrows",
+      Kit: "Bouncing Arrows",
       Tags: "Weapon",
       Description:
-        "A set of magicked arrows with blunt heads. Using this weapon allows your attacks to ricochet to nearby enemies, bouncing at least once.",
+        "A set of magicked arrows with blunt heads. Using this weapon allows your attacks to ricochet to one other nearby enemy in the same action.",
     },
     {
       Class: "Scoundrel",

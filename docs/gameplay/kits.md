@@ -7,13 +7,15 @@ nav_order: 2
 
 # Kits
 
-**Kits** are special equipment tied to a character's class. Players can equip four Kits at any given time, and can change their Kits whenever their characters [Make Camp](../adventuring/exploration/index.html#making-camp).
+**Kits** are special equipment tied to a character's class. Players can equip four kits at any given time, and can change their Kits whenever their characters [Make Camp](../adventuring/exploration/index.html#making-camp).
 
 {% include example_kit.html %}
 
+---
+
 ### Kit Tags
 
-Each Kit has one or more **Tags** that describe it.
+Each kit has one or more **Tags** that describe it.
 
 - **Weapon**: An item used when attacking. Adds additional effects, such as knocking enemies over or setting targets ablaze.
 
@@ -24,6 +26,16 @@ Each Kit has one or more **Tags** that describe it.
 - **Reaction**: Items that allow Players to act outside their turn in combat if certain conditions are met.
 
 - **Resource**: Items that provide additional health or resources.
+
+---
+
+### Specializations
+
+Kits come in groups of six by **Specializations**. For example, the **Priest** specialization for **<span style="color: {{ site.mage_color }}">Mages</span>** contains six kits related to divine magic, while the **Shaman** specialization has six kits related to elemental magic.
+
+New characters start with access to one specialization. As they become [more experienced](../more/advancement/index.html) they unlock additional specializations.
+
+---
 
 ### Kits in Game Fiction
 

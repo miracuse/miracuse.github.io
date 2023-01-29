@@ -1,0 +1,19 @@
+Class	Type	Kit	Tags	Description
+Advanced	Gunslinger	Armor Piercing Bullets	Alchemy	Steel-tipped bullets that punch through armor and cover.
+Advanced	Gunslinger	Hollow Point Bullets	Alchemy	Bullets designed to cause great harm. Deals an additional box of Physical damage on successful attacks.
+Advanced	Gunslinger	Quickdraw Pistol	Weapon, Reaction	A handgun specialized for near-instant withdraw. Using this weapon, have Advantage when turn order is rolled, and your first attack counts as a sneak attack. You cannot use grenades when using this weapon to attack.
+Advanced	Gunslinger	Rubber Bullets	Alchemy	Rubberized bullets that can be used for non-lethal attacks. Ricochet uncontrollably in closed spaces.
+Advanced	Gunslinger	Silver Bullets	Alchemy	Anti-magic bullets that can shatter spells.
+Advanced	Gunslinger	Twoshot Bullets	Alchemy	Trick bullets that can fire twice, changing trajectory in midair. Can be used to fire around corners or other obstacles.
+Advanced	Metallurgist	Adamantine Gloves	Alchemy, Reaction	A set of flexible gloves that have somehow been crafted out of finely worked adamantium. They protect the wearer’s hands from conditions as extreme as molten lava or caustic acid. You have Advantage when blocking attacks with the gloves.
+Advanced	Metallurgist	Reshape Metal	Alchemy	Reshape metal, altering its form by expanding or reducing its mass. The more drastic the change, the more difficult and time consuming it is. Requires physical contact. Can be completed instantaneously by expending a Charge Point.
+Advanced	Metallurgist	Runehammer	Weapon	A warhammer with power over metals. Using this weapon shatters metal objects and heavily damages enchanted items.
+Advanced	Metallurgist	Talisman of Forge	Talisman	A wand or other object that can be used to alter the properties of metals. Can be used to heat metals, purge them of impurities, and strengthen or weaken them.
+Advanced	Metallurgist	Transmute Metal	Alchemy	Convert one metal into another. The greater the difference from the original, the more difficult the change. Requires physical contact.
+Advanced	Metallurgist	Vitrolic Edge	Weapon	A shortsword that sweats sulfuric acid. Using this weapon causes painful acid burns. Successful attacks deal an additional box of Physical damage.
+Advanced	Templar	Abjuring Chain	Weapon	A metal chainlink whip engraved with warding runes. Using this weapon allows your attacks to interfere with magic, similar to a knight’s holy sword. The whip can be joined together to create a magic circle that repels magic from the outside and contains magic within.
+Advanced	Templar	Blinding Spear	Weapon	A shaft of steel tipped with enchanted silver that permanently glows with light. Using this weapon blinds creatures with strong night vision. Successful attacks against magical creatures deal an additional point of damage.
+Advanced	Templar	Sacred Censure	Alchemy	A brass vessel suspended by a chain, made for burning incense. Can be used to create swirls of white smoke that dampen the effects of magic in an area. Monsters and other animals are repelled by the smell, making it useful for setting up camp in dangerous areas.
+Advanced	Templar	Talisman of Binding	Talisman	A wand or other object that can be used to restrict and reinforce. Can be used to imprison enemies, to fortify doors, and to seal away magic.
+Advanced	Templar	Talisman of Purity	Talisman	A wand or other object that can be used to purify and sanctify. Can be used to expel poisons, harm magical creatures, and bless objects with the power to ward off evil spirits.
+Advanced	Templar	Tolling Bell	Alchemy	A metal bell whose deep sound sends a feeling of peace through those who hear it. Weak undead in the area are immediately put to rest, while stronger undead take Physical and Mental damage. Can be used softly to put others into a stupor, but only if they’re caught unaware.

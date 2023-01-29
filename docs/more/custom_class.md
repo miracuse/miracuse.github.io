@@ -9,18 +9,20 @@ nav_order: 99
 
 # Custom Classes
 
-The base classes can be used for many character concepts, but players may also choose to make a **Custom Class**.
+Custom Classes allow players to change their starting [Skills](../gameplay/skills.html) to better reflect a specific character idea. For example, a **<span style="color: {{ site.paladin_color }}">Paladin</span>** might mix a **<span style="color: {{ site.soldier_color }}">Soldier's</span>** Skills with a **<span style="color: {{ site.mage_color }}">Mage's</span>** Kits to create a character that's strong and has access to magic.
 
-Custom Classes allow players to change their starting Skills to better reflect a specific character idea. For example, a **<span style="color: {{ site.paladin_color }}">Paladin</span>** might mix a **<span style="color: {{ site.soldier_color }}">Soldier's</span>** Skills with a **<span style="color: {{ site.mage_color }}">Mage's</span>** Kits to create a character that can use magic and fight with weapons.
+---
 
 ### Creating a Custom Class
+
+>**Tip**: The difference between a Custom Class and other Classes are their starting Skills. Standard Classes start with a +2 to two preset Skills, while Custom Classes can choose their own.
 
 - Choose a base class and specialization, as though you were making a standard character.
 
 - Choose one of the following Skill spreads and adjust your character accordingly.
 
-  - Standard (Two Skills at +2)
-  - Versatile (One Skill at +2, Two Skills at +1)
+  - Standard (Any Two Skills at +2)
+  - Versatile (Any One Skill at +2, Any Two Skills at +1)
 
 ---
 

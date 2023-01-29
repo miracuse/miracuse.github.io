@@ -14,11 +14,13 @@ nav_order: 2
 >
 > **GM**: Oh. Yeah, then you don't take any damage.
 
-Equipment in _Miracuse_ is handled narratively. Meaning that Players don't manage individual items in an inventory, as would be the case for many other TTRPG's.
+Most mundane equipment in _Miracuse_ is handled narratively. Meaning that Players don't manage individual items in an inventory, as would be the case for many other TTRPG's.
 
-The weapons and armor that a character carries around are part of how they're described. A Soldier might march in full metal armor with a massive sword on their back. Or they might wear a cloth uniform and carry a musket. Their health, defense, and other statistics aren't affected by the choice.
+The weapons and armor that a character carries around are part of how they're described. A Soldier might march in full metal armor with a massive sword on their back. Or they might wear a cloth uniform and carry a crossbow. Their health, defense, and other statistics aren't affected by the choice.
 
 That being said, choice of equipment has narrative effects. A character in metal armor isn't going to be bothered by biting insects. They will, however, have a much harder time swimming.
+
+---
 
 ### Weapons and Skills
 
@@ -29,7 +31,17 @@ That being said, choice of equipment has narrative effects. A character in metal
 | Perception | Guns, crossbows, slingshots, etc.        |
 | Magic      | Fire, lightning, ice, etc.               |
 
-The Skill a character uses when attacking roughly corresponds to the weapons they use, but isn't restricted by any means. A Player might make a reasonable argument for why they use a weapon with a different Skill. So long as the GM and other players approve of the justification, there's no reason why they shouldn't be able to flavor their character's fighting style appropriately.
+The Skill a character uses when attacking roughly corresponds to the weapons they use, but isn't necessarily restricted. A Player might make a reasonable argument for why they use a weapon with a different Skill. So long as the GM and other players approve of the justification, there's no reason why they shouldn't be able to flavor their character's fighting style appropriately.
+
+---
+
+### Kits
+
+> **Tip**: Most kits require special training to use, which is represented by players having access to that kit in the first place. Just because someone picks up a magical sword or deadly poison doesn't mean that they know how to wield it effectively.
+
+[Kits](../../gameplay/kits.html) are powerful items and equipment that players choose each day. While mundane items like clothes and rations are kept abstract, players always know which kits they do or do not have on their person. 
+
+---
 
 ### Adventuring Gear
 
@@ -50,3 +62,4 @@ The Skill a character uses when attacking roughly corresponds to the weapons the
 Many situations may call for some specific piece of gear like a coil of rope or a torch. Unless the Players have gone out of their way to acquire that gear, the GM will decide whether or not their character is likely to have it on hand.
 
 An exception to this is the **<span style="color: {{ site.alchemist_color }}">Alchemist's</span>** [What You Needed](../../classes/scoundrel/index.md) ability. They can spend a Charge Point to pull out equipment that their character might not normally have on hand.
+

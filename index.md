@@ -20,4 +20,4 @@ The GM should review all of the content on this site and [prepare a short advent
 
 ### For Experienced Players
 
-Interested in the differences between _Miracuse_ and games like _Dungeons and Dragons_? Take a look at [this page](docs/more/system_design/about_the_system.md) for a quick overview.
+Interested in the differences between _Miracuse_ and games like _Dungeons and Dragons_? Take a look at [this page](docs/more/system_design/about_the_system.html#comparisons) for a quick overview.

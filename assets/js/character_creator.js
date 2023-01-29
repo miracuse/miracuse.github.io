@@ -3,16 +3,7 @@ import get_data from "./data.js";
 import get_class_mapping from "./class_mapping.js"; // Globals ////////////////////////////////////////////////////////////////////
 // A list of game-specific skills that a character can put points into
 
-const SKILLS = [
-  "Perception",
-  "Knowledge",
-  "Strength",
-  "Bravery",
-  "Magic",
-  "Presence",
-  "Agility",
-  "Cunning",
-]; // Hard-coded descriptions of "kits" that a character can equip
+const SKILLS = ["Perception", "Knowledge", "Strength", "Bravery", "Magic", "Presence", "Agility", "Cunning"]; // Hard-coded descriptions of "kits" that a character can equip
 
 const DATA = get_data(); // Functions //////////////////////////////////////////////////////////////////
 // JS simplified mockup of np.arange(x)
@@ -28,40 +19,55 @@ function arange(size) {
   }
 
   return generated_array;
-} // Fetch specializations given a class
+} // Fetch "Specializations" data.
+//
+//     Pull "Specializations" data where the data matches the provided game Class.
+//
+
 
 function fetchSpecializations(characterClass) {
-  const specialization_data = Array.from(
-    new Set(DATA.filter((x) => x.Class === characterClass).map((x) => x.Type))
-  );
+  const specialization_data = Array.from(new Set(DATA.filter(x => x.Class === characterClass).map(x => x.Type)));
   return specialization_data;
-} // Fetch kits given a specialization
+} // Fetch "Kit" data.
+//
+//     Pull "Kit" data where the data matches the provided Specialization.
+//
+
 
 function fetchKits(specializations) {
-  const kit_data = DATA.filter((x) =>
-    specializations.find((element) => element === x.Type)
-  ).map((x) => x.Kit);
+  const kit_data = DATA.filter(x => specializations.find(element => element === x.Type)).map(x => x.Kit);
   return kit_data;
-} // Fetch a kit description given a kit name
+} // Fetch "Kit Description" data.
+//
+//     Pull "Kit Description" data where the data matches the provided Kit.
+//
+
 
 function fetchKitDescription(kit) {
-  const kit_description_data = DATA.filter((x) => x.Kit === kit).map(
-    (x) => x.Description
-  );
+  const kit_description_data = DATA.filter(x => x.Kit === kit).map(x => x.Description);
   return kit_description_data;
-} // Fetch a kit's tags given a kit name
+} // Fetch "Kit Tag" data.
+//
+//     Pull "Kit Tag" data where the data matches the provided Kit.
+//
+
 
 function fetchKitTags(kit) {
-  const kit_tag_data = DATA.filter((x) => x.Kit === kit).map((x) => x.Tags);
+  const kit_tag_data = DATA.filter(x => x.Kit === kit).map(x => x.Tags);
   return kit_tag_data;
-} // // Components /////////////////////////////////////////////////////////////////
+} // Components /////////////////////////////////////////////////////////////////
+// A button that presents information.
+//
+//     When clicked, the button launches an alert with a pre-configured message.
+//
+
 
 class InfoBox extends React.Component {
   constructor(props) {
     super(props);
     this.onClick = this.onClick.bind(this);
     this.state = {
-      active: false,
+      active: false
     };
   }
 
@@ -70,16 +76,17 @@ class InfoBox extends React.Component {
   }
 
   render() {
-    return /*#__PURE__*/ React.createElement(
-      "icon",
-      {
-        className: "info-btn",
-        onClick: this.onClick,
-      },
-      /*#__PURE__*/ React.createElement("b", null, "?")
-    );
+    return /*#__PURE__*/React.createElement("icon", {
+      className: "info-btn",
+      onClick: this.onClick
+    }, /*#__PURE__*/React.createElement("b", null, "?"));
   }
-} // Specialization selector
+
+} // A dropdown for specializations.
+//
+//     When clicked, the dropdown lists available specializations.
+//
+
 
 class SubclassHolder extends React.Component {
   constructor(props) {
@@ -93,33 +100,24 @@ class SubclassHolder extends React.Component {
 
   render() {
     const specialization_options_data = fetchSpecializations(this.props.class);
-    const specialization_options = specialization_options_data.map((x) =>
-      /*#__PURE__*/ React.createElement(
-        "option",
-        {
-          key: x,
-          value: x,
-        },
-        x
-      )
-    );
-    return /*#__PURE__*/ React.createElement(
-      "div",
-      {
-        className: "character_subclass_01",
-      },
-      /*#__PURE__*/ React.createElement(
-        "select",
-        {
-          id: "subclass_select_01",
-          name: "subclass_01",
-          onChange: this.handleChange,
-        },
-        specialization_options
-      )
-    );
+    const specialization_options = specialization_options_data.map(x => /*#__PURE__*/React.createElement("option", {
+      key: x,
+      value: x
+    }, x));
+    return /*#__PURE__*/React.createElement("div", {
+      className: "character_subclass_01"
+    }, /*#__PURE__*/React.createElement("select", {
+      id: "subclass_select_01",
+      name: "subclass_01",
+      onChange: this.handleChange
+    }, specialization_options));
   }
-} // Checkbox tracks for resources (health, points, etc.)
+
+} // Checkboxes for health and resources.
+//
+//     Provides a number of checkboxes proportional to some value (Strength, Cunning, etc.)
+//
+
 
 class ResourceTrack extends React.Component {
   constructor(props) {
@@ -128,21 +126,20 @@ class ResourceTrack extends React.Component {
 
   render() {
     // Create checkbox elements equal to the boxCount
-    const box_holders = arange(this.props.boxCount).map((index) =>
-      /*#__PURE__*/ React.createElement("input", {
-        key: index,
-        type: "checkbox",
-      })
-    );
-    return /*#__PURE__*/ React.createElement(
-      "div",
-      {
-        className: this.props.prefix + "_track",
-      },
-      box_holders
-    );
+    const box_holders = arange(this.props.boxCount).map(index => /*#__PURE__*/React.createElement("input", {
+      key: index,
+      type: "checkbox"
+    }));
+    return /*#__PURE__*/React.createElement("div", {
+      className: this.props.prefix + "_track"
+    }, box_holders);
   }
-} // Number inputs for skills
+
+} // Numeric inputs for Skills.
+//
+//     Clickable increase/decrease fields that represent Skill values.
+//
+
 
 class SkillHolder extends React.Component {
   constructor(props) {
@@ -155,24 +152,25 @@ class SkillHolder extends React.Component {
   }
 
   render() {
-    return /*#__PURE__*/ React.createElement(
-      "div",
-      {
-        key: this.props.skill.toLowerCase() + "_value",
-        id: this.props.skill.toLowerCase() + "_value",
-        className: this.props.skill.toLowerCase() + "_value",
-      },
-      /*#__PURE__*/ React.createElement("input", {
-        name: this.props.skill.toLowerCase() + "_input_name",
-        type: "number",
-        value: this.props.skillValue,
-        min: "0",
-        max: "4",
-        onChange: (e) => this.handleChange(this.props.skill, e),
-      })
-    );
+    return /*#__PURE__*/React.createElement("div", {
+      key: this.props.skill.toLowerCase() + "_value",
+      id: this.props.skill.toLowerCase() + "_value",
+      className: this.props.skill.toLowerCase() + "_value"
+    }, /*#__PURE__*/React.createElement("input", {
+      name: this.props.skill.toLowerCase() + "_input_name",
+      type: "number",
+      value: this.props.skillValue,
+      min: "0",
+      max: "4",
+      onChange: e => this.handleChange(this.props.skill, e)
+    }));
   }
-} // Number inputs for skills
+
+} // Text labels for Skills.
+//
+//     Text that becomes bolded and colored when their corresponding value is > 0.
+//
+
 
 class SkillTextHolder extends React.Component {
   constructor(props) {
@@ -181,32 +179,25 @@ class SkillTextHolder extends React.Component {
 
   render() {
     if (this.props.skillValue > 0) {
-      return /*#__PURE__*/ React.createElement(
-        "div",
-        {
-          key: this.props.skill.toLowerCase() + "_text",
-          id: this.props.skill.toLowerCase() + "_text",
-          className: this.props.skill.toLowerCase() + "_text",
-        },
-        /*#__PURE__*/ React.createElement(
-          "label",
-          null,
-          /*#__PURE__*/ React.createElement("span", null, this.props.skill)
-        )
-      );
-    }
-
-    return /*#__PURE__*/ React.createElement(
-      "div",
-      {
+      return /*#__PURE__*/React.createElement("div", {
         key: this.props.skill.toLowerCase() + "_text",
         id: this.props.skill.toLowerCase() + "_text",
-        className: this.props.skill.toLowerCase() + "_text",
-      },
-      /*#__PURE__*/ React.createElement("label", null, this.props.skill)
-    );
+        className: this.props.skill.toLowerCase() + "_text"
+      }, /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, this.props.skill)));
+    }
+
+    return /*#__PURE__*/React.createElement("div", {
+      key: this.props.skill.toLowerCase() + "_text",
+      id: this.props.skill.toLowerCase() + "_text",
+      className: this.props.skill.toLowerCase() + "_text"
+    }, /*#__PURE__*/React.createElement("label", null, this.props.skill));
   }
-} // Auto-generated kit dropdowns
+
+} // A dropdown for Kit options.
+//
+//     When clicked, the dropdown lists available kits.
+//
+
 
 class KitHolder extends React.Component {
   constructor(props) {
@@ -220,68 +211,46 @@ class KitHolder extends React.Component {
 
   generateKitOption(x) {
     if (x == this.props.kit) {
-      return /*#__PURE__*/ React.createElement(
-        "option",
-        {
-          key: x,
-          value: x,
-          selected: true,
-        },
-        x
-      );
+      return /*#__PURE__*/React.createElement("option", {
+        key: x,
+        value: x,
+        selected: true
+      }, x);
     } else {
-      return /*#__PURE__*/ React.createElement(
-        "option",
-        {
-          key: x,
-          value: x,
-        },
-        x
-      );
+      return /*#__PURE__*/React.createElement("option", {
+        key: x,
+        value: x
+      }, x);
     }
   }
 
   render() {
     // Generate kit type selections
-    const kit_types = this.props.specializations.map((x) =>
-      /*#__PURE__*/ React.createElement(
-        "option",
-        {
-          key: x,
-          value: x,
-        },
-        x
-      )
-    ); // Populate the kit selections based on the kit types
+    const kit_types = this.props.specializations.map(x => /*#__PURE__*/React.createElement("option", {
+      key: x,
+      value: x
+    }, x)); // Populate the kit selections based on the kit types
 
     const kit_options_data = fetchKits(this.props.specializations);
-    const kit_options = kit_options_data.map((x) => this.generateKitOption(x));
-    return /*#__PURE__*/ React.createElement(
-      "div",
-      {
-        id: "kit_chooser_0" + this.props.index,
-        className: "kit_chooser_0" + this.props.index,
-      },
-      /*#__PURE__*/ React.createElement(
-        "select",
-        {
-          id: "kit_type_0" + this.props.index,
-          className: "kit_type_0" + this.props.index,
-        },
-        kit_types
-      ),
-      /*#__PURE__*/ React.createElement(
-        "select",
-        {
-          id: "kit_0" + this.props.index,
-          className: "kit_0" + this.props.index,
-          onChange: this.handleChange,
-        },
-        kit_options
-      )
-    );
+    const kit_options = kit_options_data.map(x => this.generateKitOption(x));
+    return /*#__PURE__*/React.createElement("div", {
+      id: "kit_chooser_0" + this.props.index,
+      className: "kit_chooser_0" + this.props.index
+    }, /*#__PURE__*/React.createElement("select", {
+      id: "kit_type_0" + this.props.index,
+      className: "kit_type_0" + this.props.index
+    }, kit_types), /*#__PURE__*/React.createElement("select", {
+      id: "kit_0" + this.props.index,
+      className: "kit_0" + this.props.index,
+      onChange: this.handleChange
+    }, kit_options));
   }
-}
+
+} // Text for kit descriptions.
+//
+//     Plain text that changes depending on what Kit is selected.
+//
+
 
 class KitDescriptionHolder extends React.Component {
   constructor(props) {
@@ -291,32 +260,20 @@ class KitDescriptionHolder extends React.Component {
   render() {
     const kit_description = fetchKitDescription(this.props.kit);
     const kit_tags = fetchKitTags(this.props.kit);
-    return /*#__PURE__*/ React.createElement(
-      "div",
-      {
-        id: "kit_text_0" + this.props.index,
-        className: "kit_text_0" + this.props.index,
-      },
-      /*#__PURE__*/ React.createElement(
-        "p",
-        {
-          id: "kit_tags_0" + this.props.index,
-          className: "kit_tags",
-        },
-        "Tags: ",
-        kit_tags
-      ),
-      /*#__PURE__*/ React.createElement(
-        "p",
-        {
-          id: "kit_description_0" + this.props.index,
-          className: "kit_description",
-        },
-        kit_description
-      )
-    );
+    return /*#__PURE__*/React.createElement("div", {
+      id: "kit_text_0" + this.props.index,
+      className: "kit_text_0" + this.props.index
+    }, /*#__PURE__*/React.createElement("p", {
+      id: "kit_tags_0" + this.props.index,
+      className: "kit_tags"
+    }, "Tags: ", kit_tags), /*#__PURE__*/React.createElement("p", {
+      id: "kit_description_0" + this.props.index,
+      className: "kit_description"
+    }, kit_description));
   }
+
 } // Main App ///////////////////////////////////////////////////////////////////
+
 
 class CharacterSheet extends React.Component {
   // State
@@ -324,8 +281,7 @@ class CharacterSheet extends React.Component {
     super(props);
     this.handleClassChange = this.handleClassChange.bind(this);
     this.handleSkillChange = this.handleSkillChange.bind(this);
-    this.handleSpecializationChange =
-      this.handleSpecializationChange.bind(this);
+    this.handleSpecializationChange = this.handleSpecializationChange.bind(this);
     this.handleKitChange = this.handleKitChange.bind(this);
     this.state = {
       Class: "",
@@ -342,15 +298,16 @@ class CharacterSheet extends React.Component {
       Magic: 0,
       Presence: 0,
       Agility: 0,
-      Cunning: 0,
+      Cunning: 0
     };
-  }
+  } // Runs on Startup //////////////////////////////////////////////////////////
+
 
   componentDidMount() {
     // Initialize the page
     // Set the class
     this.setState({
-      Class: "Alchemist",
+      Class: "Alchemist"
     }); // Set the default skills for the class
 
     var class_skills = get_class_mapping("Alchemist");
@@ -358,12 +315,13 @@ class CharacterSheet extends React.Component {
 
     var specialization_data = fetchSpecializations("Alchemist");
     this.handleSpecializationChange(0, specialization_data[0]);
-  }
+  } // Handlers for Events //////////////////////////////////////////////////////
+
 
   handleClassChange(event) {
     // Set the class
     this.setState({
-      Class: event.target.value,
+      Class: event.target.value
     }); // Set the default skills for the class
 
     var class_skills = get_class_mapping(event.target.value);
@@ -378,7 +336,7 @@ class CharacterSheet extends React.Component {
     var specializations_copy = this.state.Specializations.slice(0);
     specializations_copy[index] = specialization;
     this.setState({
-      Specializations: specializations_copy,
+      Specializations: specializations_copy
     }); // Cascade the change, setting the kits based on the specializations
 
     var kit_data = fetchKits([specialization]);
@@ -391,7 +349,7 @@ class CharacterSheet extends React.Component {
   handleSkillChange(skill, event) {
     // Set the skill value
     this.setState({
-      [skill]: parseInt(event.target.value),
+      [skill]: parseInt(event.target.value)
     });
   }
 
@@ -399,391 +357,206 @@ class CharacterSheet extends React.Component {
     // Set the kit
     if (index === 1) {
       this.setState({
-        Kit_01: kit,
+        Kit_01: kit
       });
     }
 
     if (index === 2) {
       this.setState({
-        Kit_02: kit,
+        Kit_02: kit
       });
     }
 
     if (index === 3) {
       this.setState({
-        Kit_03: kit,
+        Kit_03: kit
       });
     }
 
     if (index === 4) {
       this.setState({
-        Kit_04: kit,
+        Kit_04: kit
       });
     }
-  }
+  } // Render the Page on State Change //////////////////////////////////////////
+
 
   render() {
     // Generate the skills
-    const skill_holders = SKILLS.map((skill) =>
-      /*#__PURE__*/ React.createElement(SkillHolder, {
-        skill: skill,
-        skillValue: this.state[skill],
-        onChange: this.handleSkillChange,
-      })
-    );
-    const skill_text_holders = SKILLS.map((skill) =>
-      /*#__PURE__*/ React.createElement(SkillTextHolder, {
-        skill: skill,
-        skillValue: this.state[skill],
-      })
-    ); // Put everything together
+    const skill_holders = SKILLS.map(skill => /*#__PURE__*/React.createElement(SkillHolder, {
+      skill: skill,
+      skillValue: this.state[skill],
+      onChange: this.handleSkillChange
+    }));
+    const skill_text_holders = SKILLS.map(skill => /*#__PURE__*/React.createElement(SkillTextHolder, {
+      skill: skill,
+      skillValue: this.state[skill]
+    })); // Put everything together
 
-    return /*#__PURE__*/ React.createElement(
-      "div",
-      {
-        id: "CharacterSheet",
-      },
-      /*#__PURE__*/ React.createElement(
-        "div",
-        {
-          className: "character_sheet",
-        },
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "character_info_header",
-          },
-          /*#__PURE__*/ React.createElement("p", null, "Class")
-        ),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "character_class_text",
-          },
-          /*#__PURE__*/ React.createElement(InfoBox, {
-            message: "Your Class determines what skills you start with.",
-          }),
-          /*#__PURE__*/ React.createElement("label", null, "Class")
-        ),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "character_class",
-          },
-          /*#__PURE__*/ React.createElement(
-            "select",
-            {
-              id: "class_select",
-              name: "characterclass",
-              onChange: this.handleClassChange,
-            },
-            /*#__PURE__*/ React.createElement(
-              "option",
-              {
-                value: "Alchemist",
-              },
-              "Alchemist"
-            ),
-            /*#__PURE__*/ React.createElement(
-              "option",
-              {
-                value: "Soldier",
-              },
-              "Soldier"
-            ),
-            /*#__PURE__*/ React.createElement(
-              "option",
-              {
-                value: "Mage",
-              },
-              "Mage"
-            ),
-            /*#__PURE__*/ React.createElement(
-              "option",
-              {
-                value: "Scoundrel",
-              },
-              "Scoundrel"
-            )
-          )
-        ),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "character_tier_text",
-          },
-          /*#__PURE__*/ React.createElement(InfoBox, {
-            message:
-              "Your Tier determines how many specializations you can have at one time. More experienced characters have a higher tier.",
-          }),
-          /*#__PURE__*/ React.createElement("label", null, "Tier")
-        ),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "character_tier",
-          },
-          /*#__PURE__*/ React.createElement(
-            "div",
-            {
-              id: "tier_select",
-              name: "charactertier",
-            },
-            /*#__PURE__*/ React.createElement("input", {
-              type: "number",
-              defaultValue: "1",
-              min: "1",
-              max: "4",
-            })
-          )
-        ),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "subclass_header",
-          },
-          /*#__PURE__*/ React.createElement("p", null, "Specializations")
-        ),
-        /*#__PURE__*/ React.createElement(SubclassHolder, {
-          class: this.state.Class,
-          onChange: this.handleSpecializationChange,
-        }),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "character_subclass_02",
-          },
-          /*#__PURE__*/ React.createElement(
-            "select",
-            {
-              id: "subclass_select_02",
-              name: "subclass_02",
-              disabled: true,
-            },
-            /*#__PURE__*/ React.createElement(
-              "option",
-              {
-                value: "None",
-              },
-              "Locked"
-            )
-          )
-        ),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "character_subclass_03",
-          },
-          /*#__PURE__*/ React.createElement(
-            "select",
-            {
-              id: "subclass_select_03",
-              name: "subclass_03",
-              disabled: true,
-            },
-            /*#__PURE__*/ React.createElement(
-              "option",
-              {
-                value: "None",
-              },
-              "Locked"
-            )
-          )
-        ),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "character_subclass_04",
-          },
-          /*#__PURE__*/ React.createElement(
-            "select",
-            {
-              id: "subclass_select_04",
-              name: "subclass_04",
-              disabled: true,
-            },
-            /*#__PURE__*/ React.createElement(
-              "option",
-              {
-                value: "None",
-              },
-              "Locked"
-            )
-          )
-        ),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "health_header",
-          },
-          /*#__PURE__*/ React.createElement("p", null, "Health")
-        ),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "physical_health_text",
-          },
-          /*#__PURE__*/ React.createElement(InfoBox, {
-            message:
-              "Physical Health represents how many times you can be hit before becoming incapacitated. Increasing Strength will add more boxes.",
-          }),
-          /*#__PURE__*/ React.createElement("label", null, "Physical Health")
-        ),
-        /*#__PURE__*/ React.createElement(ResourceTrack, {
-          prefix: "physical_health",
-          boxCount: 3 + this.state.Strength,
-        }),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "mental_health_text",
-          },
-          /*#__PURE__*/ React.createElement(InfoBox, {
-            message:
-              "Mental Health represents how much psychological harm you can withstand before becoming incapacitated. Increasing Presence will add more boxes.",
-          }),
-          /*#__PURE__*/ React.createElement("label", null, "Mental Health")
-        ),
-        /*#__PURE__*/ React.createElement(ResourceTrack, {
-          prefix: "mental_health",
-          boxCount: 3 + this.state.Presence,
-        }),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "resources_header",
-          },
-          /*#__PURE__*/ React.createElement("b", null, "Resources")
-        ),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "charge_point_text",
-          },
-          /*#__PURE__*/ React.createElement(InfoBox, {
-            message:
-              "Charge Points can be used to work potent alchemy, amplifying the effects of an equipped Alchemy kit. They can also be used to 'Produce a Potion', 'Produce a Grenade', or declare that you have 'What You Needed'.",
-          }),
-          /*#__PURE__*/ React.createElement("label", null, "Charge Points")
-        ),
-        /*#__PURE__*/ React.createElement(ResourceTrack, {
-          prefix: "charge_point",
-          boxCount: 2 * this.state.Knowledge,
-        }),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "mana_point_text",
-          },
-          /*#__PURE__*/ React.createElement(InfoBox, {
-            message:
-              "Mana Points can be used to cast powerful spells, amplifying the effects of an equipped Talisman or combining two Talismans to produce a complex effect.",
-          }),
-          /*#__PURE__*/ React.createElement("label", null, "Mana Points")
-        ),
-        /*#__PURE__*/ React.createElement(ResourceTrack, {
-          prefix: "mana_point",
-          boxCount: 2 * this.state.Presence,
-        }),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "fortune_point_text",
-          },
-          /*#__PURE__*/ React.createElement(InfoBox, {
-            message:
-              "Fortune Points can be used to pull off fantastical physical feats, amplifying the effects of an equipped Weapon. They can also be used to 'Reroll' or 'Avoid Harm'.",
-          }),
-          /*#__PURE__*/ React.createElement("label", null, "Fortune Points")
-        ),
-        /*#__PURE__*/ React.createElement(ResourceTrack, {
-          prefix: "fortune_point",
-          boxCount: 2 * this.state.Bravery,
-        }),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "prep_point_text",
-          },
-          /*#__PURE__*/ React.createElement(InfoBox, {
-            message:
-              "Prep Points can be used to 'Disappear From Sight', 'Produce a Disguise', 'Use a Magic Device', or declare 'I Know a Guy'.",
-          }),
-          /*#__PURE__*/ React.createElement("label", null, "Prep Points")
-        ),
-        /*#__PURE__*/ React.createElement(ResourceTrack, {
-          prefix: "prep_point",
-          boxCount: 2 * this.state.Cunning,
-        }),
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "skills_header",
-          },
-          /*#__PURE__*/ React.createElement("b", null, "Skills")
-        ),
-        skill_holders,
-        skill_text_holders,
-        /*#__PURE__*/ React.createElement(
-          "div",
-          {
-            className: "kit_header",
-          },
-          /*#__PURE__*/ React.createElement("b", null, "Kits")
-        ),
-        /*#__PURE__*/ React.createElement(KitHolder, {
-          key: 1,
-          index: 1,
-          kit: this.state.Kit_01,
-          specializations: this.state.Specializations,
-          onChange: this.handleKitChange,
-        }),
-        /*#__PURE__*/ React.createElement(KitHolder, {
-          key: 2,
-          index: 2,
-          kit: this.state.Kit_02,
-          specializations: this.state.Specializations,
-          onChange: this.handleKitChange,
-        }),
-        /*#__PURE__*/ React.createElement(KitHolder, {
-          key: 3,
-          index: 3,
-          kit: this.state.Kit_03,
-          specializations: this.state.Specializations,
-          onChange: this.handleKitChange,
-        }),
-        /*#__PURE__*/ React.createElement(KitHolder, {
-          key: 4,
-          index: 4,
-          kit: this.state.Kit_04,
-          specializations: this.state.Specializations,
-          onChange: this.handleKitChange,
-        }),
-        /*#__PURE__*/ React.createElement(KitDescriptionHolder, {
-          key: 1,
-          index: 1,
-          kit: this.state.Kit_01,
-        }),
-        /*#__PURE__*/ React.createElement(KitDescriptionHolder, {
-          key: 2,
-          index: 2,
-          kit: this.state.Kit_02,
-        }),
-        /*#__PURE__*/ React.createElement(KitDescriptionHolder, {
-          key: 3,
-          index: 3,
-          kit: this.state.Kit_03,
-        }),
-        /*#__PURE__*/ React.createElement(KitDescriptionHolder, {
-          key: 4,
-          index: 4,
-          kit: this.state.Kit_04,
-        })
-      )
-    );
+    return /*#__PURE__*/React.createElement("div", {
+      id: "CharacterSheet"
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "character_sheet"
+    }, /*#__PURE__*/React.createElement("div", {
+      className: "character_info_header"
+    }, /*#__PURE__*/React.createElement("p", null, "Class")), /*#__PURE__*/React.createElement("div", {
+      className: "character_class_text"
+    }, /*#__PURE__*/React.createElement(InfoBox, {
+      message: "Your Class determines what skills you start with."
+    }), /*#__PURE__*/React.createElement("label", null, "Class")), /*#__PURE__*/React.createElement("div", {
+      className: "character_class"
+    }, /*#__PURE__*/React.createElement("select", {
+      id: "class_select",
+      name: "characterclass",
+      onChange: this.handleClassChange
+    }, /*#__PURE__*/React.createElement("option", {
+      value: "Alchemist"
+    }, "Alchemist"), /*#__PURE__*/React.createElement("option", {
+      value: "Soldier"
+    }, "Soldier"), /*#__PURE__*/React.createElement("option", {
+      value: "Mage"
+    }, "Mage"), /*#__PURE__*/React.createElement("option", {
+      value: "Scoundrel"
+    }, "Scoundrel"))), /*#__PURE__*/React.createElement("div", {
+      className: "character_tier_text"
+    }, /*#__PURE__*/React.createElement(InfoBox, {
+      message: "Your Tier determines how many specializations you can have at one time. More experienced characters have a higher tier."
+    }), /*#__PURE__*/React.createElement("label", null, "Tier")), /*#__PURE__*/React.createElement("div", {
+      className: "character_tier"
+    }, /*#__PURE__*/React.createElement("div", {
+      id: "tier_select",
+      name: "charactertier"
+    }, /*#__PURE__*/React.createElement("input", {
+      type: "number",
+      defaultValue: "1",
+      min: "1",
+      max: "4"
+    }))), /*#__PURE__*/React.createElement("div", {
+      className: "subclass_header"
+    }, /*#__PURE__*/React.createElement("p", null, "Specializations")), /*#__PURE__*/React.createElement(SubclassHolder, {
+      class: this.state.Class,
+      onChange: this.handleSpecializationChange
+    }), /*#__PURE__*/React.createElement("div", {
+      className: "character_subclass_02"
+    }, /*#__PURE__*/React.createElement("select", {
+      id: "subclass_select_02",
+      name: "subclass_02",
+      disabled: true
+    }, /*#__PURE__*/React.createElement("option", {
+      value: "None"
+    }, "Locked"))), /*#__PURE__*/React.createElement("div", {
+      className: "character_subclass_03"
+    }, /*#__PURE__*/React.createElement("select", {
+      id: "subclass_select_03",
+      name: "subclass_03",
+      disabled: true
+    }, /*#__PURE__*/React.createElement("option", {
+      value: "None"
+    }, "Locked"))), /*#__PURE__*/React.createElement("div", {
+      className: "character_subclass_04"
+    }, /*#__PURE__*/React.createElement("select", {
+      id: "subclass_select_04",
+      name: "subclass_04",
+      disabled: true
+    }, /*#__PURE__*/React.createElement("option", {
+      value: "None"
+    }, "Locked"))), /*#__PURE__*/React.createElement("div", {
+      className: "health_header"
+    }, /*#__PURE__*/React.createElement("p", null, "Health")), /*#__PURE__*/React.createElement("div", {
+      className: "physical_health_text"
+    }, /*#__PURE__*/React.createElement(InfoBox, {
+      message: "Physical Health represents how many times you can be hit before becoming incapacitated. Increasing Strength will add more boxes."
+    }), /*#__PURE__*/React.createElement("label", null, "Physical Health")), /*#__PURE__*/React.createElement(ResourceTrack, {
+      prefix: "physical_health",
+      boxCount: 3 + this.state.Strength
+    }), /*#__PURE__*/React.createElement("div", {
+      className: "mental_health_text"
+    }, /*#__PURE__*/React.createElement(InfoBox, {
+      message: "Mental Health represents how much psychological harm you can withstand before becoming incapacitated. Increasing Presence will add more boxes."
+    }), /*#__PURE__*/React.createElement("label", null, "Mental Health")), /*#__PURE__*/React.createElement(ResourceTrack, {
+      prefix: "mental_health",
+      boxCount: 3 + this.state.Presence
+    }), /*#__PURE__*/React.createElement("div", {
+      className: "resources_header"
+    }, /*#__PURE__*/React.createElement("b", null, "Resources")), /*#__PURE__*/React.createElement("div", {
+      className: "charge_point_text"
+    }, /*#__PURE__*/React.createElement(InfoBox, {
+      message: "Charge Points can be used to work potent alchemy, amplifying the effects of an equipped Alchemy kit. They can also be used to 'Produce a Potion', 'Produce a Grenade', or declare that you have 'What You Needed'."
+    }), /*#__PURE__*/React.createElement("label", null, "Charge Points")), /*#__PURE__*/React.createElement(ResourceTrack, {
+      prefix: "charge_point",
+      boxCount: 2 * this.state.Knowledge
+    }), /*#__PURE__*/React.createElement("div", {
+      className: "mana_point_text"
+    }, /*#__PURE__*/React.createElement(InfoBox, {
+      message: "Mana Points can be used to cast powerful spells, amplifying the effects of an equipped Talisman or combining two Talismans to produce a complex effect."
+    }), /*#__PURE__*/React.createElement("label", null, "Mana Points")), /*#__PURE__*/React.createElement(ResourceTrack, {
+      prefix: "mana_point",
+      boxCount: 2 * this.state.Presence
+    }), /*#__PURE__*/React.createElement("div", {
+      className: "fortune_point_text"
+    }, /*#__PURE__*/React.createElement(InfoBox, {
+      message: "Fortune Points can be used to pull off fantastical physical feats, amplifying the effects of an equipped Weapon. They can also be used to 'Reroll' or 'Avoid Harm'."
+    }), /*#__PURE__*/React.createElement("label", null, "Fortune Points")), /*#__PURE__*/React.createElement(ResourceTrack, {
+      prefix: "fortune_point",
+      boxCount: 2 * this.state.Bravery
+    }), /*#__PURE__*/React.createElement("div", {
+      className: "prep_point_text"
+    }, /*#__PURE__*/React.createElement(InfoBox, {
+      message: "Prep Points can be used to 'Disappear From Sight', 'Produce a Disguise', 'Use a Magic Device', or declare 'I Know a Guy'."
+    }), /*#__PURE__*/React.createElement("label", null, "Prep Points")), /*#__PURE__*/React.createElement(ResourceTrack, {
+      prefix: "prep_point",
+      boxCount: 2 * this.state.Cunning
+    }), /*#__PURE__*/React.createElement("div", {
+      className: "skills_header"
+    }, /*#__PURE__*/React.createElement("b", null, "Skills")), skill_holders, skill_text_holders, /*#__PURE__*/React.createElement("div", {
+      className: "kit_header"
+    }, /*#__PURE__*/React.createElement("b", null, "Kits")), /*#__PURE__*/React.createElement(KitHolder, {
+      key: 1,
+      index: 1,
+      kit: this.state.Kit_01,
+      specializations: this.state.Specializations,
+      onChange: this.handleKitChange
+    }), /*#__PURE__*/React.createElement(KitHolder, {
+      key: 2,
+      index: 2,
+      kit: this.state.Kit_02,
+      specializations: this.state.Specializations,
+      onChange: this.handleKitChange
+    }), /*#__PURE__*/React.createElement(KitHolder, {
+      key: 3,
+      index: 3,
+      kit: this.state.Kit_03,
+      specializations: this.state.Specializations,
+      onChange: this.handleKitChange
+    }), /*#__PURE__*/React.createElement(KitHolder, {
+      key: 4,
+      index: 4,
+      kit: this.state.Kit_04,
+      specializations: this.state.Specializations,
+      onChange: this.handleKitChange
+    }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
+      key: 1,
+      index: 1,
+      kit: this.state.Kit_01
+    }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
+      key: 2,
+      index: 2,
+      kit: this.state.Kit_02
+    }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
+      key: 3,
+      index: 3,
+      kit: this.state.Kit_03
+    }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
+      key: 4,
+      index: 4,
+      kit: this.state.Kit_04
+    })));
   }
-}
+
+} // Configure React ////////////////////////////////////////////////////////////
+
 
 const domContainer = document.querySelector("#root");
 const root = ReactDOM.createRoot(domContainer);
-root.render(/*#__PURE__*/ React.createElement(CharacterSheet, null));
+root.render( /*#__PURE__*/React.createElement(CharacterSheet, null));
+

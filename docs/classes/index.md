@@ -23,3 +23,7 @@ The [Mage](mage/index.md) forms pacts with the primal spirits of the world to pe
 ### <span style="color: {{ site.scoundrel_color }}">The Scoundrel</span>
 
 The [Scoundrel](scoundrel/index.md) is a master of misdirection. They blend in with crowds and shadows, only revealing themselves when the time is right. Many employ their talents as hunters or merchants, though it's just as common to see them working as thieves and assassins.
+
+### Create Your Own
+
+Interested in something outside the established four classes? See the [Custom Class](../more/custom_class.html) page for rules on rolling your own.

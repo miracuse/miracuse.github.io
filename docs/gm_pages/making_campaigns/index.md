@@ -3,6 +3,7 @@ layout: default
 title: Making Campaigns
 parent: GM Pages
 has_toc: true
+has_children: true
 nav_order: 5
 ---
 

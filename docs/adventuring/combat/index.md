@@ -13,9 +13,9 @@ nav_order: 4
 >
 > **GM**: Alright, give me a Strength or Agility roll.
 >
-> **Player**: My guy is pretty fast, so let's go withAgility. That's... a +2.
+> **Player**: My guy is pretty fast, so let's go with Agility. That's... a +2.
 >
-> **GM**: That hits. You take out the wolf, but therest of its pack is still circling.
+> **GM**: That hits. You take out the wolf, but the rest of its pack is still circling.
 
 **Combat** is any situation where several characters need to take different actions and turn order matters. The most common scenario involves fighting, but other possibilities might include fixing a sinking ship or racing a rival adventuring party for treasure.
 

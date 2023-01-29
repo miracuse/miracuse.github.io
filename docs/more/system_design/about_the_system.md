@@ -24,7 +24,7 @@ _Miracuse_ is built for classic high fantasy adventures. Players can search long
 
 Sessions of _Miracuse_ look to emulate fantasy series like [The Farseer Trilogy](https://en.wikipedia.org/wiki/Farseer_trilogy), [The Wheel of Time](https://en.wikipedia.org/wiki/The_Wheel_of_Time), or [The Chronicles of Amber](https://en.wikipedia.org/wiki/The_Chronicles_of_Amber). Abilities and items are more than just damage calculations; they're narrative tools that allow players to interact with the world and solve problems.
 
-A mage with mastery over fire might create a floating ball of flame to light the way forward, or try concentrating the flame to melt through a lock. Likewise, a knight with a holy sword isn't limited to swiping it at bandits. They could use it to break a terrible curse and repel a swarm of vampires with divine light. Players are encouraged to explore creative solutions to the obstacles they face.
+A mage with mastery over fire might create a floating ball of flame to light the way forward, or try concentrating the flame to melt through a lock. Likewise, a knight with a holy sword isn't limited to swiping it at bandits. They could use it to break a terrible curse, or repel a swarm of vampires with divine light. Players are encouraged to explore creative solutions to the obstacles they face.
 
 Game Masters, in turn, are given the tools they need to facilitate lively sessions. A simple [difficulty system](../../gm_pages/setting_difficulty_levels.html) inspired by FATE makes it easy to ad-lib challenges and interpret results. The [enemy template system](../../gm_pages/making_enemies/index.html) performs a similar task by allowing GM's to whip-up bad guys on the spot.
 
@@ -56,4 +56,4 @@ Unlike _FATE_, this system does not employ aspects. _Miracuse_ may be more narra
 
 _Miracuse_ borrows from Dungeon World's concepts but shares little overlap in mechanics. The simplified character creation system and purposefully limited character ability sets (Kits) were both inspired by Dungeon World.
 
-_Miracuse_ occupies an adjacent genre to OSR (Old School Renaissance) games in that it generally focuses on dungeon crawling and resource utilization. However, it trends closer to modern _D&D_ in power level, eschewing the survival aspect of OSR for pulp action gameplay.
+_Miracuse_ occupies an adjacent genre to OSR (Old School Renaissance) games in that it offers dungeon crawling and emphasizes resource utilization. However, it trends closer to modern _D&D_ in power level, eschewing the survival aspect of OSR for pulp action gameplay.

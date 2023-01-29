@@ -31,7 +31,10 @@ function arange(size) {
   return generated_array;
 }
 
-// Fetch specializations given a class
+// Fetch "Specializations" data.
+//
+//     Pull "Specializations" data where the data matches the provided game Class.
+//
 function fetchSpecializations(characterClass) {
   const specialization_data = Array.from(
     new Set(DATA.filter((x) => x.Class === characterClass).map((x) => x.Type))
@@ -39,7 +42,10 @@ function fetchSpecializations(characterClass) {
   return specialization_data;
 }
 
-// Fetch kits given a specialization
+// Fetch "Kit" data.
+//
+//     Pull "Kit" data where the data matches the provided Specialization.
+//
 function fetchKits(specializations) {
   const kit_data = DATA.filter((x) =>
     specializations.find((element) => element === x.Type)
@@ -47,7 +53,10 @@ function fetchKits(specializations) {
   return kit_data;
 }
 
-// Fetch a kit description given a kit name
+// Fetch "Kit Description" data.
+//
+//     Pull "Kit Description" data where the data matches the provided Kit.
+//
 function fetchKitDescription(kit) {
   const kit_description_data = DATA.filter((x) => x.Kit === kit).map(
     (x) => x.Description
@@ -55,13 +64,20 @@ function fetchKitDescription(kit) {
   return kit_description_data;
 }
 
-// Fetch a kit's tags given a kit name
+// Fetch "Kit Tag" data.
+//
+//     Pull "Kit Tag" data where the data matches the provided Kit.
+//
 function fetchKitTags(kit) {
   const kit_tag_data = DATA.filter((x) => x.Kit === kit).map((x) => x.Tags);
   return kit_tag_data;
 }
 
-// // Components /////////////////////////////////////////////////////////////////
+// Components /////////////////////////////////////////////////////////////////
+// A button that presents information.
+//
+//     When clicked, the button launches an alert with a pre-configured message.
+//
 class InfoBox extends React.Component {
   constructor(props) {
     super(props);
@@ -82,7 +98,10 @@ class InfoBox extends React.Component {
   }
 }
 
-// Specialization selector
+// A dropdown for specializations.
+//
+//     When clicked, the dropdown lists available specializations.
+//
 class SubclassHolder extends React.Component {
   constructor(props) {
     super(props);
@@ -115,7 +134,10 @@ class SubclassHolder extends React.Component {
   }
 }
 
-// Checkbox tracks for resources (health, points, etc.)
+// Checkboxes for health and resources.
+//
+//     Provides a number of checkboxes proportional to some value (Strength, Cunning, etc.)
+//
 class ResourceTrack extends React.Component {
   constructor(props) {
     super(props);
@@ -131,7 +153,10 @@ class ResourceTrack extends React.Component {
   }
 }
 
-// Number inputs for skills
+// Numeric inputs for Skills.
+//
+//     Clickable increase/decrease fields that represent Skill values.
+//
 class SkillHolder extends React.Component {
   constructor(props) {
     super(props);
@@ -162,7 +187,10 @@ class SkillHolder extends React.Component {
   }
 }
 
-// Number inputs for skills
+// Text labels for Skills.
+//
+//     Text that becomes bolded and colored when their corresponding value is > 0.
+//
 class SkillTextHolder extends React.Component {
   constructor(props) {
     super(props);
@@ -194,7 +222,10 @@ class SkillTextHolder extends React.Component {
   }
 }
 
-// Auto-generated kit dropdowns
+// A dropdown for Kit options.
+//
+//     When clicked, the dropdown lists available kits.
+//
 class KitHolder extends React.Component {
   constructor(props) {
     super(props);
@@ -256,6 +287,10 @@ class KitHolder extends React.Component {
   }
 }
 
+// Text for kit descriptions.
+//
+//     Plain text that changes depending on what Kit is selected.
+//
 class KitDescriptionHolder extends React.Component {
   constructor(props) {
     super(props);
@@ -312,6 +347,7 @@ class CharacterSheet extends React.Component {
     };
   }
 
+  // Runs on Startup //////////////////////////////////////////////////////////
   componentDidMount() {
     // Initialize the page
     // Set the class
@@ -326,6 +362,7 @@ class CharacterSheet extends React.Component {
     this.handleSpecializationChange(0, specialization_data[0]);
   }
 
+  // Handlers for Events //////////////////////////////////////////////////////
   handleClassChange(event) {
     // Set the class
     this.setState({ Class: event.target.value });
@@ -374,6 +411,7 @@ class CharacterSheet extends React.Component {
     }
   }
 
+  // Render the Page on State Change //////////////////////////////////////////
   render() {
     // Generate the skills
     const skill_holders = SKILLS.map((skill) => (
@@ -565,6 +603,7 @@ class CharacterSheet extends React.Component {
   }
 }
 
+// Configure React ////////////////////////////////////////////////////////////
 const domContainer = document.querySelector("#root");
 const root = ReactDOM.createRoot(domContainer);
 root.render(<CharacterSheet />);
