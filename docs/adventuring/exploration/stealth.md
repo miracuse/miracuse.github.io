@@ -20,6 +20,8 @@ Characters with points in the **<span style="color: #90a959">Cunning</span>** Sk
 
 In most cases, a Player can simply declare that they're in **Stealth**. Dice rolls are only required when there might be some reason for onlookers to pay attention. For example, if the character is being chased, or if they're trying to pick someone's pocket.
 
+---
+
 ### When to Roll
 
 | Don't Roll                                                           | Do Roll                                  |
@@ -27,6 +29,8 @@ In most cases, a Player can simply declare that they're in **Stealth**. Dice rol
 | Sneaking past disinterested villagers                                | Sneaking past on-duty guards             |
 | [Disguising](../../classes/scoundrel/index.md) yourself as a cultist | Lying to the cult leader while disguised |
 | Blending in with a crowd                                             | Hiding from hot pursuit                  |
+
+---
 
 ### Sneak Attacks
 

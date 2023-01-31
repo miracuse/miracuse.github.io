@@ -4,7 +4,7 @@ title: Custom Classes
 parent: More
 has_children: false
 has_toc: false
-nav_order: 99
+nav_order: 1
 ---
 
 # Custom Classes

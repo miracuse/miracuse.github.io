@@ -23,6 +23,8 @@ nav_order: 6
 
 **Social** encounters rely on the ability of Players to negotiate with the GM's fictional characters.
 
+---
+
 ### Persuasion
 
 | Skill     | Good For...                                                     |
@@ -34,7 +36,9 @@ nav_order: 6
 
 Each of the classes has their own approach to persuasion. Some approaches work better or worse depending on the audience. A **<span style="color: {{ site.soldier_color }}">Soldier</span>** might threaten a bandit king into submission, but they probably won't succeed in intimidating an actual king.
 
-> **Tip**: Players normally shouldn't persuade other Players using Skill rolls, unless the two both decide to roleplay that way.
+> **Note**: Players normally shouldn't persuade other Players using Skill rolls, unless the two both decide to roleplay that way.
+
+---
 
 ### Sense Motive
 

@@ -7,21 +7,28 @@ nav_order: 3
 
 # Health
 
-**Health** is measured in **Boxes**. Whenever a character takes damage, they mark a Box in either the Physical or Mental health tracks.
-
-### Three Strikes, You're Out
-
 > **GM**: The giant scorpion gets past your guard and stabs you. Mark a box of Physical damage.
 >
 > **Player**: That's my last box.
 >
-> **GM**: Alright. You're down for the count until someone can heal you. Don't forget that you're Injured too.
+> **GM**: Alright. You're down for the count until someone can heal you. 
 
-A character that marks all of their boxes in either health track is taken out of play for a short time. They become **Incapacitated**.
+**Health** is measured in **Boxes**. Whenever a character takes damage, they mark a box in either the Physical or Mental health tracks.
 
-- **Incapacitated** characters cannot act until at least one box of their filled track is clear. They also can't be damaged any further.
+---
 
-> **Note**: Each point in the **<span style="color: {{ site.soldier_color }}">Strength</span>** Skill adds a Box to the Physical Health track. Likewise, each point in the **<span style="color: {{ site.mage_color }}">Presence</span>** Skill adds a Box to the Mental Health track.
+### Three Strikes, You're Out
+
+> {% include health_track_example.html %}
+
+
+A character that marks all of their boxes in either health track is taken out of play for a short time, becoming **Incapacitated**. Incapacitated characters cannot act until at least one box of their filled track is clear. They also can't be damaged any further.
+
+***Getting Tougher***
+
+Each point in the **<span style="color: {{ site.soldier_color }}">Strength</span>** Skill adds an additional box to the Physical Health track.
+
+Likewise, each point in the **<span style="color: {{ site.mage_color }}">Presence</span>** Skill adds an additional box to the Mental Health track.
 
 <!-- ### Recovery
 

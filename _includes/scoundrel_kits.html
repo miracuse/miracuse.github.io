@@ -1,14 +1,51 @@
+<h3>Assassin</h3>
 <table>
   <thead>
-    <td><b>Specialization</b></td>
     <td><b>Kit</b></td>
     <td><b>Description</b></td>
   </thead>
-  {% for row in site.data.Scoundrel %}
+  {% for row in site.data.miracuse_kits %}
+  {% if row.Type == "Assassin" %}
   <tr>
-    <td>{{ row.Type }}</td>
     <td><b>{{ row.Kit }}</b></td>
     <td>{{ row.Description }}</td>
   </tr>
+  {% endif %}
+  {% endfor %}
+</table>
+
+<hr>
+
+<h3>Bard</h3>
+<table>
+  <thead>
+    <td><b>Kit</b></td>
+    <td><b>Description</b></td>
+  </thead>
+  {% for row in site.data.miracuse_kits %}
+  {% if row.Type == "Bard" %}
+  <tr>
+    <td><b>{{ row.Kit }}</b></td>
+    <td>{{ row.Description }}</td>
+  </tr>
+  {% endif %}
+  {% endfor %}
+</table>
+
+<hr>
+
+<h3>Ranger</h3>
+<table>
+  <thead>
+    <td><b>Kit</b></td>
+    <td><b>Description</b></td>
+  </thead>
+  {% for row in site.data.miracuse_kits %}
+  {% if row.Type == "Ranger" %}
+  <tr>
+    <td><b>{{ row.Kit }}</b></td>
+    <td>{{ row.Description }}</td>
+  </tr>
+  {% endif %}
   {% endfor %}
 </table>

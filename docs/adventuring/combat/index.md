@@ -23,6 +23,8 @@ nav_order: 4
 
 - On their turn, characters can take one action (usually a single roll of the dice).
 
+---
+
 ### Actions
 
 In general, a player's turn ends after they roll dice or do something. For example:
@@ -36,6 +38,8 @@ In general, a player's turn ends after they roll dice or do something. For examp
 - Intimidating an enemy
 
 Actions and turn order rules aren't set in stone. There are plenty of things that won't take up an entire action, like saying a few words to another person. There are also times when it makes sense for a character to react outside of their turn, like stepping into oncoming fire to protect an ally. Ultimately, a **player's turn begins and ends when it makes narrative sense**. The GM will provide guidance as necessary.
+
+---
 
 ### Offense and Defense
 

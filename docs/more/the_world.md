@@ -2,9 +2,7 @@
 layout: default
 title: The World
 parent: More
-has_children: false
-has_toc: false
-nav_order: 99
+nav_order: 4
 ---
 
 # The World

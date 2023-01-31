@@ -2,6 +2,54 @@ export default function get_data() {
   var data = [
     {
       Class: "Advanced",
+      Type: "Conjurer",
+      Kit: "Brimstone Powder",
+      Tags: "Alchemy",
+      Description:
+        "An otherworldly dust that conducts and magnifies magical energy. When added to fire it becomes hellfire, burning hotter and creating a noxious stench. When you use Produce a Grenade, the resulting explosion deals an additional point of damage.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Conjurer",
+      Kit: "Fey Venom",
+      Tags: "Alchemy",
+      Description:
+        "A chemical that can stem the flow of blood or increase the rate of blood loss depending on how the substance is prepared. When you Produce a Potion, it heals an additional Physical box.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Conjurer",
+      Kit: "Solomon Rod",
+      Tags: "Weapon",
+      Description:
+        "An metal rod that holds sway over otherworldly creatures. Wielding this weapon compels nearby magical creatures into obedience, providing Advantage on all rolls to influence them. Successful attacks against magical creatures deal one additional box of Mental damage.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Conjurer",
+      Kit: "Talisman of Demons",
+      Tags: "Talisman",
+      Description:
+        "A wand or other object that can be used to bring forth demonic influence. Can be used to summon imps, consult devils for knowledge, or fling hellfire. You have Advantage when using Knowledge to recall forbidden information.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Conjurer",
+      Kit: "Talisman of Fey",
+      Tags: "Talisman",
+      Description:
+        "A wand or other object that can be used to bring forth faerie influence. Can be used to summon pixies, bewitch the senses, and change your appearence. You have Advantage when using Presence to confuse and bewilder others.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Conjurer",
+      Kit: "Talisman of Jinn",
+      Tags: "Talisman",
+      Description:
+        "A wand or other object that can be used to bring forth jinn influence. Can be used to summon snakes, call forth hot desert wind, and see into the past of an object. You have Advantage when using Knowledge to recall history.",
+    },
+    {
+      Class: "Advanced",
       Type: "Gunslinger",
       Kit: "Armor Piercing Bullets",
       Tags: "Alchemy",
@@ -57,10 +105,18 @@ export default function get_data() {
     {
       Class: "Advanced",
       Type: "Metallurgist",
-      Kit: "Reshape Metal",
+      Kit: "Ring of Change",
       Tags: "Alchemy",
       Description:
-        "Reshape metal, altering its form by expanding or reducing its mass. The more drastic the change, the more difficult and time consuming it is. Requires physical contact. Can be completed instantaneously by expending a Charge Point.",
+        "A red ring with the power to convert metals into other metals. The greater the difference from the original, the more difficult the change. Requires physical contact.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Metallurgist",
+      Kit: "Ring of Form",
+      Tags: "Alchemy",
+      Description:
+        "A black ring with the power to reshape metal. The more drastic the change, the more difficult and time consuming it is. Requires physical contact. Can be completed instantaneously by expending a Charge Point.",
     },
     {
       Class: "Advanced",
@@ -81,14 +137,6 @@ export default function get_data() {
     {
       Class: "Advanced",
       Type: "Metallurgist",
-      Kit: "Transmute Metal",
-      Tags: "Alchemy",
-      Description:
-        "Convert one metal into another. The greater the difference from the original, the more difficult the change. Requires physical contact.",
-    },
-    {
-      Class: "Advanced",
-      Type: "Metallurgist",
       Kit: "Vitrolic Edge",
       Tags: "Weapon",
       Description:
@@ -105,7 +153,7 @@ export default function get_data() {
     {
       Class: "Advanced",
       Type: "Templar",
-      Kit: "Blinding Spear",
+      Kit: "Lantern Spear",
       Tags: "Weapon",
       Description:
         "A shaft of steel tipped with enchanted silver that permanently glows with light. Using this weapon blinds creatures with strong night vision. Successful attacks against magical creatures deal an additional point of damage.",
@@ -172,7 +220,7 @@ export default function get_data() {
       Kit: "Pocket Wall",
       Tags: "Alchemy",
       Description:
-        "A rapidly expanding cement-like substance. Can be used to create shelter, mend cracks, seal doors, or adhere objects to one another. You have Advantage when creating or repairing objects with this substance. When you Produce a Potion, it heals an additional Physical box.",
+        "A rapidly expanding cement-like substance. Can be used to create shelter, mend cracks, seal doors, or adhere objects to one another. You have Advantage when creating or repairing objects with this substance.",
     },
     {
       Class: "Alchemist",

@@ -17,9 +17,9 @@ nav_order: 5
 >
 > **GM**: That's not good. You get to the top, but it took a lot out of you. Mark a box of Physical damage from exhaustion.
 
-**Exploration** plays a large part in most adventures. Players will undoubtedly
-find themselves faced with hazards and obstacles that require careful planning
-to overcome.
+**Exploration** plays a large part in most adventures. Players will undoubtedly find themselves faced with hazards and obstacles that require careful planning to overcome.
+
+---
 
 ### Making Camp
 
@@ -30,6 +30,8 @@ to overcome.
 - **Changing Kits** requires one hour of rest. During this time, resources like Fortune Points, Prep Points, and Alchemist Kit uses are recovered.
 
 > **Note**: In dangerous areas, Players might want to set a watch to avoid getting ambushed. Any Player that takes a shift should roll **<span style="color: #268bd2">Perception</span>**.
+
+--- 
 
 ### Scouting
 
