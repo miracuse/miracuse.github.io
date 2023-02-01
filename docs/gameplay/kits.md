@@ -7,7 +7,7 @@ nav_order: 2
 
 # Kits
 
-**Kits** are special equipment tied to a character's class. Players can equip four kits at any given time, and can change their Kits whenever their characters [Make Camp](../adventuring/exploration/index.html#making-camp).
+**Kits** are special equipment tied to a character's class. Players can equip four kits at any given time, and can change their Kits whenever their characters [Make Camp](../adventuring/exploration/making_camp.html).
 
 {% include example_kit.html %}
 

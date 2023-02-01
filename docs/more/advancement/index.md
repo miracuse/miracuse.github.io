@@ -25,7 +25,7 @@ Characters will gradually become more skilled as Players use them over several s
 | 2 -> 3              | 3                |
 | 3 -> 4              | 4                |
 
-At the end of every session, Players are awarded a **Skill Point**. These can be used to upgrade a Character's Skills. Higher level Skills take more points to upgrade.
+At the beginning of every session, Players receive one **Skill Point**. These can be used to upgrade a Character's Skills. Higher level Skills take more points to upgrade.
 
 ---
 
@@ -40,7 +40,7 @@ At the end of every session, Players are awarded a **Skill Point**. These can be
 
 A Character's **Tier** represents a larger increase in power. Tier increases are generally awarded after Players have completed a significant milestone in-game, such as completing a major arc of a campaign. As a rule of thumb, a tier increase happens roughly every 10 sessions, though this is dependent on GM discretion.
 
-Each Tier allows a Player to select an additional specialization from any Class. This gives their Character six new Kits to choose from when [Making Camp](../../adventuring/exploration/index.md). The overall limit of equipping four Kits remains unchanged.
+Each Tier allows a Player to select an additional specialization from any Class. This gives their Character six new Kits to choose from when [Making Camp](../../adventuring/exploration/making_camp.html). The overall limit of equipping four Kits remains unchanged.
 
 ---
 

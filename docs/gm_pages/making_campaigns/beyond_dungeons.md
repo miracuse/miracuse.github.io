@@ -44,7 +44,7 @@ As the GM you will be responsible for ensuring that the Players have a goal to w
 
 You can't prepare for every eventuality, but you can build a set of tools to make improvising easier.
 
-**_NPC Deck_**
+##### NPC Deck
 
 >**Tip**: Don't get too attached to any of your NPC's. Players (and the dice) have a tendency to keep their lives short.
 
@@ -52,13 +52,13 @@ Spend some time generating a pool of characters related to the area your players
 
 Of course, you can always improvise NPC's on the fly. And usually you'll have to (players are notorious for befriending [any character that strikes their fancy](https://tvtropes.org/pmwiki/pmwiki.php/Main/AscendedExtra)). But keeping a dedicated stash of characters in your pocket will be a major help when you find yourself drawing a blank.
 
-**_Enemy and Hazard Deck_**
+##### Enemy and Hazard Deck
 
 Just as with NPC's, it can be handy to have a stack of premade challenges to deploy when your brain stalls out. If you know that your players are going to heading into demon-infested waters in the next few sessions, spend some time workshopping hell frogs, shark men, clouds of evil fog, and other threats.
 
 You may not use all of these cards in the next session. But by slowly building a stockpile of nasty problems, you'll create a safety cushion for use in future games.
 
-**_Room Deck_**
+##### Room Deck
 
 Rooms aren't just for dungeons. If your players decide to skip the local village with plot important information, it can be a good idea to direct them towards a pre-generated pit stop and present the plot hooks there instead. Doing so buys you time to adjust your game on the fly while maintaining momentum. A couple examples:
 

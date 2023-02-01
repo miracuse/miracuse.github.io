@@ -22,8 +22,8 @@ The GM sets the scene and the Players react. Gameplay rules describe how that pr
 
 - [**Skills**](skills.md) describe what your character is good at.
 
-- [**Kits**](kits.md) are powerful items that your character has. They can be swapped for other kits every time the party [Makes Camp](../adventuring/exploration/).
+- [**Kits**](kits.md) are powerful items that your character has. They can be swapped for other kits every time the party [Makes Camp](../adventuring/exploration/making_camp.html).
 
 - [**Health**](health.md) describes how much damage your character can take before they fall over from exhaustion and injury.
 
-- [**Resources**](resources.md) describe limited-use "points" that characters can draw on to pull off complex spells, powerful techniques, or advanced alchemy. These points recharge after [Making Camp](../adventuring/exploration/).
+- [**Resources**](resources.md) describe limited-use "points" that characters can draw on to pull off complex spells, powerful techniques, or advanced alchemy. These points recharge after [Making Camp](../adventuring/exploration/making_camp.html).

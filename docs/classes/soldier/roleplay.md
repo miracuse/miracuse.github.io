@@ -26,6 +26,22 @@ nav_order: 2
 
 ---
 
+### Career
+
+Unlike common footmen, Soldiers have distinguished themselves as expert combatants. They carry a reputation among the general public. Many have monikers like "The Lion's Roar" or "The Templar Prince".
+
+Soldiers are also known by the equipment they bear. The rising prevalence of alchemy has made enchanted weaponry more common than ever before, and a veteran Soldier can expect to accumulate a small arsenal over the length of their career. Each is designed in such a way that they can be disassembled and stored on one's person when not in use.
+
+But beyond reputation and armaments, the true mark of a Soldier is an uncanny air of intensity. A Soldier's full regard can feel as suffocating as iron. Their contempt, like needles under skin.
+
+<!-- A Soldier starts their career as an ordinary fighter. A conscript in a noble's army, or a vagabond in a bandit camp are both common origins. They learn their way around a weapon and might have a few skirmishes under their belt. But there is a moment when _something_ changes. For some it's a near-death experience. For others, a glorious victory against the odds. Whatever the cause, they are never quite the same after.
+
+Soldiers are marked. By the grudges of their enemies, by the reputation they've earned in battle, or (according to some) by dark spirits. They wear an air of danger, or perhaps **<span style="color: {{ site.soldier_color }}">Bravery</span>**, that presses against the senses of those around them. A Soldier's full regard can feel as suffocating as iron. Their contempt, like needles under skin. And their praise, like the sun itself.
+
+Unless they let their emotions run wild, a Soldier appears the same as any other knight errant or sellsword. A touch luckier, they claim. A little more skilled than others, they boast. But in their heart of hearts a Soldier knows that they're different. Whatever mark they carry bears them forward towards greater glory or brutal death. -->
+
+---
+
 ### Place in Society
 
 Although the term implies a formal military role, "Soldier" can cover a variety of character concepts. Martial prowess is a universally recognized asset in a dangerous world, and most societies will treat members of the class respectfully regardless of background.
@@ -38,11 +54,7 @@ Example Concepts:
 
 - A bounty hunter pursuing a notorious criminal
 
-### Bravery
-
-> **Tip**: The three most common uses of Bravery are **intimidation**, **provocation**, and **inspiration**.
-
-The Soldier's social skill is focused on emotional persuasion. **<span style="color: {{ site.soldier_color }}">Bravery</span>** could be used to cow a group of bandits into submission, relying on a character's reputation and frightening competency. It could also be used to rally a peasant militia in defense of their town or taunt an arrogant noble into a duel.
+---
 
 ### Weaponry
 
@@ -54,16 +66,18 @@ Given the expense involved in their creation, it's unsurprising that the majorit
 
 Firearms, though potent, remain a trade secret of the Alchemists. Few Soldiers see the use in training with weapons that they cannot reliable keep loaded. Rumors of misfires and accidental explosions discourage any from experimenting with grenades.
 
-<!-- ### Roles
+---
+
+### Roles
 
 **_In combat..._**
 
-The Soldier is often at the frontlines, terrorizing enemies and bringing ruin to those that approach. Their **<span style="color: {{ site.soldier_color }}">Strength</span>** makes them dangerous and hardy opponents.
+The Soldier is often at the frontlines, terrorizing enemies and bringing ruin to those that approach. Their **<span style="color: {{ site.soldier_color }}">Strength</span>** makes them dangerous and hardy opponents. Their many Weapon kits allow for a variety of ways to debilitate enemies.
 
 **_Socially..._**
 
-The Soldier is an imposing figure. They carry an air of **<span style="color: {{ site.soldier_color }}">Bravery</span>** that impresses like-minded persons and cows others. Less gruff audiences may be put off by their demeanor, seeing them as brutish and rough.
+The Soldier is an imposing figure. They carry an air of **<span style="color: {{ site.soldier_color }}">Bravery</span>** that impresses and cows others. Less gruff audiences may be put off by their demeanor, seeing them as brutish and rough.
 
 **_While exploring..._**
 
-The Soldier provides raw muscle, breaking down obstacles by sheer force. Their abundant luck has saved many a party from unexpected traps and ambushes. -->
+The Soldier provides raw muscle, breaking down obstacles by sheer force. Their abundant luck has saved many a party from unexpected traps and ambushes.

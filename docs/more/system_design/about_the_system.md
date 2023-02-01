@@ -34,7 +34,7 @@ These pieces come together to create a dynamic, fast-paced game system.
 
 ### Comparisons
 
-**_D&D / Pathfinder_**
+##### D&D / Pathfinder
 
 _Miracuse_ is less tactical and mechanics-oriented than its older cousins, but it occupies the same genre of swords-and-sorcery adventure.
 
@@ -46,13 +46,13 @@ Veterans of _D&D_ will find fewer calculations. There are no armor classes, prof
 
 - **Single-Roll Resolution System**: Whether you're scaling a mountain, swinging a halberd, or grappling, the [same d10 mechanic](statistics.html) decides success.
 
-**_FATE_**
+##### FATE
 
 _Miracuse_ shares a lot in common with FATE. It leverages a similar Skill-oriented resolution mechanic and follows FATE's [Gold and Silver rules](https://fate-srd.com/fate-core/what-do-during-play#the-golden-rule).
 
 Unlike _FATE_, this system does not employ aspects. _Miracuse_ may be more narratively focused than _D&D_, but it doesn't compare to _FATE Core_. Gameplay mechanics ground the narrative more firmly, closer to [FATE Freeport](https://greenroninstore.com/products/fate-freeport-companion-pdf) or [The Dresden Files RPG](https://evilhat.com/product/dresden-files-rpg-your-story/).
 
-**_Dungeon World and OSR_**
+##### Dungeon World and OSR
 
 _Miracuse_ borrows from Dungeon World's concepts but shares little overlap in mechanics. The simplified character creation system and purposefully limited character ability sets (Kits) were both inspired by Dungeon World.
 

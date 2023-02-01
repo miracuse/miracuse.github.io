@@ -24,7 +24,7 @@ nav_order: 3
 
 A character that marks all of their boxes in either health track is taken out of play for a short time, becoming **Incapacitated**. Incapacitated characters cannot act until at least one box of their filled track is clear. They also can't be damaged any further.
 
-***Getting Tougher***
+##### Getting Tougher
 
 Each point in the **<span style="color: {{ site.soldier_color }}">Strength</span>** Skill adds an additional box to the Physical Health track.
 

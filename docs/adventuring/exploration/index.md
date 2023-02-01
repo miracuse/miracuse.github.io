@@ -17,24 +17,27 @@ nav_order: 5
 >
 > **GM**: That's not good. You get to the top, but it took a lot out of you. Mark a box of Physical damage from exhaustion.
 
-**Exploration** plays a large part in most adventures. Players will undoubtedly find themselves faced with hazards and obstacles that require careful planning to overcome.
+**Exploration** plays a large part in most adventures. Players will undoubtedly find themselves faced with threats from the environment, and will need to find ways to avoid harm.
 
 ---
 
-### Making Camp
+### Hazards
 
-**Making Camp** allows characters to recover and lets Players change their equipped Kits. It can be done anytime the characters are somewhere safe and comfortable enough to rest.
+[Hazards](../../gm_pages/making_hazards.html) are threats that can't be resolved through combat. Examples might include:
 
-- **Recovering Health and Injuries** requires eight hours of rest.
+* Arrow traps in ancient ruins
 
-- **Changing Kits** requires one hour of rest. During this time, resources like Fortune Points, Prep Points, and Alchemist Kit uses are recovered.
+* Arctic cold that gradually causes frostbite
 
-> **Note**: In dangerous areas, Players might want to set a watch to avoid getting ambushed. Any Player that takes a shift should roll **<span style="color: #268bd2">Perception</span>**.
+* Lingering curses in a desecrated shrine room
 
---- 
+* An avalanche rushing down a mountain
 
-### Scouting
+* An indestructible golem standing watch over a tomb
 
-To **Scout** ahead, a Player rolls **<span style="color: #90a959">Cunning</span>**. Their character [quietly moves forward](stealth.md), collects information about the area, then returns to their party. A successful scouting mission can identify traps and ambushes, while failed scouting missions can result in triggering traps or alerting enemies.
+##### Solving Hazards
 
-> **Note**: Scouting missions usually take place over one action. Longer scouting missions are possible, but not recommended. [Splitting the Party](https://tvtropes.org/pmwiki/pmwiki.php/Main/NeverSplitTheParty) doesn't usually end well after all.
+Hazards often require Skill rolls to overcome. An arrow trap, for example, might be noticed with a **<span style="color: {{ site.alchemist_color }}">Perception</span>** roll, dodged with an **<span style="color: {{ site.scoundrel_color }}">Agility</span>** roll, and disabled with a **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** roll.
+
+Other solutions could involve the use of kits and resources. A trapped door might be opened with a grenade, or triggered with a ten-foot pole. 
+

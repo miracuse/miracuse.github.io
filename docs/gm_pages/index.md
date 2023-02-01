@@ -22,10 +22,10 @@ Most of the system mechanics discussed so far cover gameplay for _players_. We'v
 
 The GM is also playing the game, but their role is fundamentally different. Their play consists of "running the game" and "preparing the game", both of which can be enjoyable.
 
-***Running the Game***
+##### Running the Game
 
 This is the activity that usually comes to mind when GM'ing is discussed. On game days, with players participating, you act as a narrator. You set the scene, the players react to the scene, then you react to the players' actions. 
 
-***Preparing the Game***
+##### Preparing the Game
 
 This is a solo activity you do before game day. This is where you workshop dungeons, come up with plot lines, and brainstorm challenges for the players to face. -->

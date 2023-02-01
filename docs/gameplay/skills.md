@@ -11,7 +11,7 @@ nav_order: 1
 
 Almost anything you do in-game will fall under one of the eight Skills. The level of success depends on a combination of luck and your character's Skill levels.
 
-***Rolling Skills***
+##### Rolling Skills
 
 To use a Skill, either use the [Roll Dice](../game_sheets.html) button on the game sheets or roll a ten-sided die and map the result with the below table:
 

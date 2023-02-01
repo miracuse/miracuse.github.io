@@ -15,7 +15,7 @@ Not Yet Implemented
 
 When a character moves up a [Tier](../advancement/index.html#tier) they acquire another specialization, giving them access to six more kits. Specializations can be chosen from any of the sets available to new characters, including those outside of their starting class.
 
-***Advanced Specializations***
+##### Advanced Specializations
 
 Some specializations exist outside the four classes. These can't be taken during character creation, but can be acquired after advancing to a new tier.
 

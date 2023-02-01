@@ -18,27 +18,31 @@ It can be difficult for new players and GM's to get a feel for the baseline powe
 
 ### Kit Usage Examples
 
-***Talisman of Fire***
+> **Tip**: Mana Points can also be used to combine two Talismans for a single spell.
 
-| Action                                | Approx. Difficulty  |
-| ------------------------------------- | ------------------- |
-| Create a floating torch               | +0 (No Roll Needed) |
-| Throw a bolt of flame without missing | +1                  |
-| Melt a lock with a concentrated flame | +2                  |
-| Throw a fireball                      | +3 or Mana Point    |
-| Create a wall of flame                | +4 or Mana Point    |
+##### Talisman of Fire
 
-***Talisman of Abjuration***
+| Action                                              | Approx. Difficulty  |
+| --------------------------------------------------- | ------------------- |
+| Create a floating torch                             | +0 (No Roll Needed) |
+| Throw a bolt of flame without missing               | +1                  |
+| Melt a lock with a concentrated flame               | +2                  |
+| Throw a fireball                                    | +3 or Mana Point    |
+| Create a wall of flame                              | +4 or Mana Point    |
+| Cause metal to heat bright red (+Talisman of Metal) | Mana Point          |
 
-| Action                                     | Approx. Difficulty  |
-| ------------------------------------------ | ------------------- |
-| Create a force field the size of your hand | +0 (No Roll Needed) |
-| Create a force field the size of a door    | +1                  |
-| Compel a group of zombies to flee          | +2                  |
-| Break a curse of petrification             | +3 or Mana Point    |
-| Break an enchanted weapon                  | +4 or Mana Point    |
+##### Talisman of Abjuration
 
-***Talisman of Gravity***
+| Action                                               | Approx. Difficulty  |
+| ---------------------------------------------------- | ------------------- |
+| Create a force field the size of your hand           | +0 (No Roll Needed) |
+| Create a force field the size of a door              | +1                  |
+| Compel a group of zombies to flee                    | +2                  |
+| Break a curse of petrification                       | +3 or Mana Point    |
+| Damage an enchanted weapon                           | +4 or Mana Point    |
+| Destroy a group of zombies (+Talisman of Necromancy) | Mana Point          |
+
+##### Talisman of Gravity
 
 | Action                                     | Approx. Difficulty  |
 | ------------------------------------------ | ------------------- |
@@ -47,12 +51,17 @@ It can be difficult for new players and GM's to get a feel for the baseline powe
 | Walk on water                              | +2                  |
 | Float a wagon off the ground               | +3 or Mana Point    |
 | Bring a group of enemies to their knees    | +4 or Mana Point    |
+| Take flight (+Talisman of Force)           | Mana Point          |
 
 ---
 
 ### Other Notes
 
-***Narrative Context***
+##### Skill Use
+
+Most uses of Talismans will leverage the Magic skill. The exception to this are Scoundrels, who can spend a Prep Point to _Use a Magic Device_ with Cunning instead.
+
+##### Narrative Context
 
 The uses of a Talisman are decided by the game's fiction, not the text of the kit. For example, _Talisman of Water_ might work on oil or other liquids, if a player can make a convincing case for why it should do so.
 

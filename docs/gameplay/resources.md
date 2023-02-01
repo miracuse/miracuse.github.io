@@ -34,19 +34,21 @@ Like health, resources are measured in boxes, and are affiliated with a specific
 
 Most resources allow players to "amplify" one of their Kits, bringing out more power than it normally has or creating a narrative effect that's thematically appropriate.
 
-**_Charge Points_**
+##### Charge Points
 
 Used to amplify alchemy kits. For example, taking the _Agua Regia_ acid kit and empowering it to instantly eat a person-sized hole through a stone floor, allowing the players to sneak into the castle basement.
 
-**_Fortune Points_**
+##### Fortune Points
 
 Used to amplify weapon kits. For example, taking the _Blessed Sword_ kit and using it to repel a horde of zombies by shining with divine light.
 
-**_Mana Points_**
+##### Mana Points
 
 Used to amplify talisman kits. For example, taking the _Spirit of Gravity_ kit and using it to float an entire wagon of explosives, so that the Soldier can pick it up and throw it at an oncoming army.
 
-***Pushing It***
+---
+
+### Pushing It
 
 Resource points recover after making camp and resting. However, Players can also sacrifice one of their Mental boxes in place of a Resource.
 

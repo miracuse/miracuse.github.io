@@ -500,15 +500,15 @@ export default function get_data() {
       Kit: "Nerve Thorns",
       Tags: "Weapon",
       Description:
-        "A set of needles laced with nerve poison. Using this technique can incapacitate targets without lasting harm or visible injury, in addition to any Physical damage dealt. You have Advantage when sensing the motivations of others and detecting lies.",
+        "A set of needles laced with nerve poison. Using this technique can incapacitate targets without lasting harm or visible injury, in addition to any Physical damage dealt.",
     },
     {
       Class: "Scoundrel",
       Type: "Assassin",
-      Kit: "Speed Thorns",
+      Kit: "Slowing Thorns",
       Tags: "Weapon",
       Description:
-        "A set of needles tipped with slowing poison. Using this weapon greatly reduces a target\u2019s mobility, in addition to any Physical damage dealt. You have Advantage when sprinting, as might be the case when chasing after someone or retreating from danger.",
+        "A set of needles tipped with slowing poison. Using this weapon greatly reduces a target\u2019s mobility, in addition to any Physical damage dealt.",
     },
     {
       Class: "Scoundrel",
@@ -524,7 +524,7 @@ export default function get_data() {
       Kit: "Traceless Thorns",
       Tags: "Weapon",
       Description:
-        "A set of transparent needles that make it difficult to trace the trajectory of attacks. Using this weapon reduces the likelihood that you\u2019ll be exposed after making a sneak attack.",
+        "A set of transparent needles that make it difficult to trace the origin of attacks. Using this weapon reduces the likelihood that you\u2019ll be exposed after making a sneak attack.",
     },
     {
       Class: "Scoundrel",
@@ -585,14 +585,6 @@ export default function get_data() {
     {
       Class: "Scoundrel",
       Type: "Ranger",
-      Kit: "Bouncing Arrows",
-      Tags: "Weapon",
-      Description:
-        "A set of magicked arrows with blunt heads. Using this weapon allows your attacks to ricochet to one other nearby enemy in the same action.",
-    },
-    {
-      Class: "Scoundrel",
-      Type: "Ranger",
       Kit: "Shepherd\u2019s Flute",
       Tags: "Alchemy",
       Description:
@@ -601,10 +593,10 @@ export default function get_data() {
     {
       Class: "Scoundrel",
       Type: "Ranger",
-      Kit: "Silent Arrows",
-      Tags: "Weapon",
+      Kit: "Talisman of Life",
+      Tags: "Talisman",
       Description:
-        "A set of arrows that seem to absorb sound. Using this weapon ensures that an enemy won\u2019t cause a commotion for a brief period of time, in addition to any Physical damage dealt. You have Advantage when determining who acts first, such as when determining combat turn order.",
+        "A wand or other object that can be used to preserve life. Can be used to heal wounds, sense the presence of living things, and detect perversions of the natural order.",
     },
     {
       Class: "Scoundrel",
@@ -612,7 +604,7 @@ export default function get_data() {
       Kit: "Talisman of Wood",
       Tags: "Talisman",
       Description:
-        "A wand or other object that can be used to manipulate plants. Can be used to accelerate plant growth, speed up natural healing, and command flora.",
+        "A wand or other object that can be used to manipulate plants. Can be used to accelerate plant growth, command flora, and commune with the spirits of the land.",
     },
     {
       Class: "Scoundrel",
@@ -620,7 +612,15 @@ export default function get_data() {
       Kit: "Twin Edges",
       Tags: "Weapon, Reaction",
       Description:
-        "A pair of swords used together to create a whirlwind of slashes. Using this weapon gives your attacks an area of effect around your body, damaging enemies nearby. On a successful defense against a melee attack, you inflict a box of Physical damage to the attacker.",
+        "A pair of charmed swords that gravitate towards one another. Using this weapon gives your attacks an area of effect around your body, damaging enemies nearby. On a successful defense against a melee attack, you inflict a box of Physical damage to the attacker.",
+    },
+    {
+      Class: "Scoundrel",
+      Type: "Ranger",
+      Kit: "Whisper Bowstring",
+      Tags: "Weapon",
+      Description:
+        "A bowstring that enchants arrows to \u2018eat sound\u2019, creating small pockets of silence on impact. Using this weapon ensures that an enemy won\u2019t cause a commotion for a brief period of time, in addition to any Physical damage dealt.",
     },
     {
       Class: "Soldier",
@@ -764,7 +764,7 @@ export default function get_data() {
       Kit: "Wicked Blade",
       Tags: "Weapon, Reaction",
       Description:
-        "An implausibly sharp shortsword that excels in quick, piercing strikes. Using this weapon adds +1 to the roll result of your attacks, significantly improving the chance that they\u2019ll inflict damage. Enemies that attempt to leave your melee range take one box of Physical damage.",
+        "A sharp shortsword that seeks out targets. Using this weapon adds +1 to the roll result of your attacks, significantly improving the chance that they\u2019ll inflict damage. Enemies that attempt to leave your melee range take one box of Physical damage.",
     },
   ];
 

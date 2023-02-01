@@ -42,7 +42,7 @@ When everyone has a class, move into introductions. Have each player provide a n
 
 Prepping for the big day is the first half of your job. The second half is putting your prep into action. **This will take practice.** Few people develop the ability to improv without spending some time flubbing, drawing blanks, or otherwise making mistakes. The good news is that it will get easier the more you do it.
 
-**_Set the Scene_**
+##### Set the Scene
 
 ```
 GM:  You find yourselves standing in front of a dark cavern.
@@ -54,7 +54,7 @@ GM:  You find yourselves standing in front of a dark cavern.
 
 Tell the players where they are and what's around them. Give them a few moments to get into character, get their bearings, etc. Be sure to make the "direction" clear.
 
-**_React to Player Actions_**
+##### React to Player Actions
 
 ```
 Player:  I light a torch and enter the cave.
@@ -69,7 +69,7 @@ GM:      Roll Knowledge.
 
 Gameplay will gradually fall into a rhythm. You set the scene, a player reacts to the scene, then you react to the player. Both you and the players will gradually get the hang of bouncing ideas back and forth.
 
-**_Keep Things Moving_**
+##### Keep Things Moving
 
 ```
 Player:  Alright. We've checked for traps, tested if the door

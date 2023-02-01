@@ -22,7 +22,7 @@ GM:  You enter a room covered in thick sticky spider webs.
      dark corners, where something seems to lurk.
 ```
 
-**_Dungeon Cards_**
+##### Dungeon Cards
 
 One way to prep dungeons is by brainstorming a set of **Enemies**, **Hazards**, and **Descriptions** as flash cards. Then, try fitting cards from each pool together.
 
@@ -32,7 +32,7 @@ One way to prep dungeons is by brainstorming a set of **Enemies**, **Hazards**, 
 
 > Demons + Swarming Diseased Insects + Graveyard
 
-**_Randomly Generated Dungeons_**
+##### Randomly Generated Dungeons
 
 The internet contains plenty of resources for [improvising dungeons](https://watabou.itch.io/one-page-dungeon). Try drawing inspiration from a pre-made dungeon, using it to generate your own rooms and layout.
 

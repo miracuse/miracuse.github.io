@@ -35,3 +35,11 @@ In most cases, a Player can simply declare that they're in **Stealth**. Dice rol
 ### Sneak Attacks
 
 A character that attacks while in Stealth does not need to roll. Their attack receives an automatic +2, as though they had rolled a 10. However, the act of making a **Sneak Attack** usually breaks stealth and alerts others to your presence.
+
+---
+
+### Scouting
+
+To **Scout** ahead, a Player rolls **<span style="color: #90a959">Cunning</span>**. Their character [quietly moves forward](stealth.md), collects information about the area, then returns to their party. A successful scouting mission can identify traps and ambushes, while failed scouting missions can result in triggering traps or alerting enemies.
+
+> **Note**: Scouting missions usually take place over one action. Longer scouting missions are possible, but not recommended. [Splitting the Party](https://tvtropes.org/pmwiki/pmwiki.php/Main/NeverSplitTheParty) doesn't usually end well after all.

@@ -47,7 +47,7 @@ Likewise, in situations where conditions are unusually favorable, make use of Ad
 
 ### Advanced Approaches
 
-**_Success at a Cost_**
+##### Success at a Cost
 
 In situations where failure would be boring, have the Player succeed but pay a price.
 
@@ -59,13 +59,13 @@ Returning to our climbing example, the other Players don't want to wait while th
 
 - Temporarily Lose Access to a Kit (consider rolling a 1d4 to determine which)
 
-**_Critical Success_**
+##### Critical Success
 
 In situations where a player greatly exceeds the difficulty threshold for a task, consider providing a little flair as a reward.
 
 "With a +4, you nimbly scale the building in a matter of seconds, giving you the first look of the castle grounds."
 
-**_Critical Failure_**
+##### Critical Failure
 
 _Miracuse_ is designed for players to feel competent. A master swordsman won't drop their blade just because the player rolled poorly. For a critical failure to take place, **the roll result must be less than zero.** That only occurs when the following are true:
 

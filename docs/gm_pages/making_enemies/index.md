@@ -38,7 +38,7 @@ When it comes to combat, you don't need (or want) full-blown character sheets fo
 
 The baseline "Mook" is a catch-all stat block for any nobody the Players are fighting. The party stumbles on to a pack of wolves? Mooks. The party is ambushed by bandits? Mooks. If there's nothing special about the opposition, they're mooks.
 
-**_Statistics_**
+##### Statistics
 
 > **Tip**: When it comes to ties, a handy phrase to keep in mind is "Defender Wins". A player needs to _beat_ an enemy's Defense to hit them, and _match_ an enemy's Offense to avoid harm.
 
@@ -46,7 +46,7 @@ From a statistics point of view, Players will hit Mooks 90% of the time. The Pla
 
 Depending on a Player's class, a plain Mook will either hit 10% of the time (Soldier/Scoundrel) or 70% of the time (Alchemist/Mage). The Player rolls a Skill to avoid harm (Strength/Agility). If they roll _equal to or greater_ than the enemy's Offense, they take no damage.
 
-**_Victory and Defeat_**
+##### Victory and Defeat
 
 Just because an enemy runs out of health doesn't mean they've been killed. A few alternatives, depending on the kind of enemy and game being run:
 
@@ -64,7 +64,7 @@ Just because an enemy runs out of health doesn't mean they've been killed. A few
 
 GM's can tweak the Mook stat block to produce enemies that are more dangerous or difficult to fight. A few examples are listed below, along with suggestions for their use. The FATE SRD's [Adversary Toolkit](https://fate-srd.com/fate-adversary-toolkit/types-adversaries#enemies) can be a good reference as well.
 
-**_Hitter_**
+##### Hitter
 
 | Hitter      |                            |
 | ----------- | -------------------------- |
@@ -83,7 +83,7 @@ GM's can tweak the Mook stat block to produce enemies that are more dangerous or
 
 - Play around with thematically appropriate abilities in place of "area of effect" attacks
 
-**_Tank_**
+##### Tank
 
 | Tank (Fast) |                         |
 | ----------- | ----------------------- |

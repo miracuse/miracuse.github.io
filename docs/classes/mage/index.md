@@ -19,21 +19,6 @@ The Mage forms pacts with the primal spirits of the world to perform miracles an
 
 ---
 
-### Spirits and Talismans
-
-There are worlds beyond this one and strange things live within them. Things that some call gods, or spirits, or the Platonic ideals of natural phenomenon. "Mage" is a title, sometimes a slur, for someone that taps into these fonts to perform miracles.
-
-Practitioners vary between societies and traditions. It's common across many regions for magic to be inherited through bloodlines, though whether this is due to some natural predisposition or simply the inheritance of a trade is in dispute. Other lands believe magic to be a holy calling for priests, or the despicable practice of cowards. In a few, aristocratic clubs exist that regard the practice of magic to be an essential part of a gentleman's education.
-
-The majority of traditions center around the use of Talismans, objects of symbolic importance that act as conduits for otherworldly energy. Each talisman is attuned to a particular spirit and reflects their aspect. A spirit of earth, for example, might resonate with a wand made of quartz crystal.
-
-<!--
-Unlike Alchemy, casting spells is rarely a matter of **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**. There may be rituals and names to memorize, but **<span style="color: {{ site.mage_color }}">Magic</span>** is ultimately an expression of spirit and instinct. A Mage must have honed their inner selves to withstand currents of foreign energy and trained their bodies to redirect it. -->
-
-<!-- One can usually tell a true Mage from a dabbler. Regular exposure to otherworldly influences leads to stigmata; strangely colored eyes, an odd ring to one's voice, or the gradual formation of sigils on skin. The more marked the practitioner, the more powerful, and often the less sane. These characteristics are often accompanied by a unique **<span style="color: {{ site.mage_color }}">Presence</span>**, a supernatural charisma with the capacity to enthrall those with weak wills. -->
-
----
-
 ### Mana Points
 
 Mages can draw heavily on the spirits a few times each day to produce grand workings of magic. These instances are represented as **Mana Points** and can be used for the following:
@@ -41,6 +26,18 @@ Mages can draw heavily on the spirits a few times each day to produce grand work
 - **Amplify a Talisman**: Empower an equipped Talisman to go far beyond its usual usage.
 
 - **Combine Talismans**: Combine two Talismans to produce a more complex effect.
+
+---
+
+### Presence
+
+> **Tip:** The most common uses of Presence are to **identify magical forces at play** and **bend others to your will**.
+
+The Mage's social skill allows them to sense supernatural disturbances and charm others into doing their bidding. **<span style="color: {{ site.mage_color }}">Presence</span>** is used when a player wants to understand magical elements in an area. "Does the magic in this place feel evil?" "Can I tell what the spell on that door does?"
+
+It's also used influence the minds of others. A Mage can muddle the mind of a disinterested guard, "These are not the adventurers you're looking for". They can make themselves appear more attractive to the eyes of a merchant, or create an unnerving sense of dread to make animals anxious.
+
+However, their influence is intended to be subtle rather than overt. Those who realize they're being charmed can break away with ease, and are often furious at having been manipulated. Many jurisdictions consider the exercise of **<span style="color: {{ site.mage_color }}">Presence</span>** to be a form of assault.
 
 ---
 

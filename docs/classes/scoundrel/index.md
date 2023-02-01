@@ -19,14 +19,6 @@ The Scoundrel is a master of misdirection. They blend in with crowds and shadows
 
 ---
 
-### Rogue
-
-A Scoundrel is someone caught between worlds. Hunters, between civilization and nature. Spies, between two masters. Thieves, between polite society and its cruel underbelly. A Scoundrel knows the importance of _seeming_. What others call "deceit" they call survival.
-
-They are not Alchemists, but they dabble in alchemy. They are not Mages, but they can perform a few spells. They are not Soldiers, but they can hold their own in a fight. Above all, a Scoundrel is someone who understands that survival is dependent on adaptability. And that no amount alchemic knowledge, arcane might, or martial prowess can keep you safe while you sleep.
-
----
-
 ### Prep Points
 
 Scoundrels always have a few tricks up their sleeves. These are represented as **Prep Points** and can be used for the following:
@@ -38,6 +30,14 @@ Scoundrels always have a few tricks up their sleeves. These are represented as *
 - **Use a Magic Device**: Pull out a charm, gem, or other charged object to use a Talisman with **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** instead of **<span style="color: {{ site.mage_color }}">Magic</span>**. The object is depleted after a single use.
 
 - **I Know a Guy**: Declare that you just so happen to have a contact in the area that owes you a favor, and can help with your present situation.
+
+---
+
+### Cunning
+
+> **Tip**: The most common uses of Cunning are **stealth**, **danger sense**, and **deceiving others**.
+
+The Scoundrel's social skill allows them to move without attracting notice, to sense impending harm, and to bluff. **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** is used for all manner of "thief-like" behavior.
 
 ---
 

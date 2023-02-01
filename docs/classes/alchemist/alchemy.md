@@ -18,7 +18,7 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 
 ### Kit Usage Examples
 
-***Friction Charge***
+##### Friction Charge
 
 | Action                                          | Approx. Difficulty  |
 | ----------------------------------------------- | ------------------- |
@@ -28,7 +28,7 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 | Throw a grease slick grenade                    | Charge Point        |
 | Throw a glue grenade                            | Charge Point        |
 
-***Agua Regia***
+##### Agua Regia
 
 | Action                                                     | Approx. Difficulty  |
 | ---------------------------------------------------------- | ------------------- |
@@ -38,7 +38,7 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 | Instantly create a hole in the floor to reach the basement | Charge Point        |
 | Throw a poisonous gas grenade                              | Charge Point        |
 
-***Quicksilver***
+##### Quicksilver
 
 | Action                                                  | Approx. Difficulty  |
 | ------------------------------------------------------- | ------------------- |
@@ -57,7 +57,7 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 
 Charge Points can be spent to _Produce a Potion_, allowing someone to recover two Physical boxes. Unlike most alchemy kits, potions can be used by non-Alchemists without issue. 
 
-***Flashback Handoffs***
+##### Flashback Handoffs
 
 As part of _Produce a Potion_, an Alchemist can declare that they gave a potion to one of the other player characters earlier in the day, so long as they could have plausibly done so.
 
@@ -73,11 +73,11 @@ Charge Points can also be spent to _Produce a Grenade_, which cause damage in a 
 
 ### Other Notes
 
-***Skill Use***
+##### Skill Use
 
 Unlike Talismans, alchemy kits are not generally tied to a specific skill. A kit like the Bard's _Faerie Fire_ might be used with Cunning to perform, Agility to cause harm, or with no skill at all for simple tasks like creating smokescreens.
 
 
-***Kits Without Direct Uses***
+##### Kits Without Direct Uses
 
 Not all Alchemy kits have direct uses. The _Golem_ kit, for example, provides a rock golem servant that follows orders.

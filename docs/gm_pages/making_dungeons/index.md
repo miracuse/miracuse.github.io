@@ -32,7 +32,7 @@ nav_order: 4
 
 > **Tip**: It's a good idea to have more content (floors, enemies, hazards) than you think you need. If player progress is slow, you can always cut out content to ensure a timely finale.
 
-**_Rooms_**
+##### Rooms
 
 ```
 GM:  You enter a set of caves that feels darker than those above.
