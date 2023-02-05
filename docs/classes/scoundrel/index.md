@@ -45,12 +45,12 @@ The Scoundrel's social skill allows them to move without attracting notice, to s
 
 ### <span style="color: {{ site.scoundrel_color }}">The Assassin</span>
 
-Expert infiltrators proficient in the use of poisons. Their weapon of choice are "thorns", small needles that can be discretely thrown or attached to the ends of arrows. Though not formally organized under a guild, Assassins tend to operate in a loose network of criminal organizations.
+Expert infiltrators proficient in the use of poisons. Their weapon of choice are "thorns", small needles that can be discretely thrown or attached to the ends of arrows. Though not formally organized under a guild, [Assassins](../../more/specializations/assassin.html) tend to operate in a loose network of criminal organizations.
 
 ### <span style="color: {{ site.scoundrel_color }}">The Bard</span>
 
-Members of a courier's guild, trained in a little magic, a little stage alchemy, and the art of throwing knives. Bards are frequently employed as messengers, entertainers, spies, and legal consul. Their social position is nebulous enough that they can comfortably interact with aristocrats and peasants.
+Members of a courier's guild, trained in a little magic, a little stage alchemy, and the art of throwing knives. [Bards](../../more/specializations/bard.html) are frequently employed as messengers, entertainers, spies, and legal consul. Their social position is nebulous enough that they can comfortably interact with aristocrats and peasants.
 
 ### <span style="color: {{ site.scoundrel_color }}">The Ranger</span>
 
-A catch-all term for hunters, tribal warriors, and nomads. Skilled archers with an affinity for nature, whose traditional medicines predate the modern practice of alchemy.
+A catch-all term for hunters, tribal warriors, and nomads. Skilled archers with an affinity for nature, whose traditional practices predate the modern practice of alchemy. [Rangers](../../more/specializations/ranger.html) exist between the urban and natural worlds. 

@@ -25,13 +25,11 @@ Each kit has one or more **Tags** that describe it.
 
 - **Reaction**: Items that allow Players to act outside their turn in combat if certain conditions are met.
 
-- **Resource**: Items that provide additional health or resources.
-
 ---
 
 ### Specializations
 
-Kits come in groups of six by **Specializations**. For example, the **Priest** specialization for **<span style="color: {{ site.mage_color }}">Mages</span>** contains six kits related to divine magic, while the **Shaman** specialization has six kits related to elemental magic.
+Kits come in groups of six by **[Specializations](../more/specializations/index.html)**. For example, the [Priest](../more/specializations/priest.html) specialization for **<span style="color: {{ site.mage_color }}">Mages</span>** contains six kits related to divine magic, while the [Shaman](../more/specializations/shaman.html) specialization has six kits related to elemental magic.
 
 New characters start with access to one specialization. As they become [more experienced](../more/advancement/index.html) they unlock additional specializations.
 

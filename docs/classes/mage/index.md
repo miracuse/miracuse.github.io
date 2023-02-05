@@ -45,12 +45,12 @@ However, their influence is intended to be subtle rather than overt. Those who r
 
 ### <span style="color: {{ site.mage_color }}">The Priest</span>
 
-Priests arbitrate the boundaries between worlds. They govern over the living and the dead, the worldly and the otherworldly. Some claim to serve the spirits. Others stand in opposition, drawing from one set of spirits to curb the influence of others.
+[Priests](../../more/specializations/priest.html) arbitrate the boundaries between worlds. They govern over the living and the dead, the worldly and the otherworldly. Some claim to serve the spirits. Others stand in opposition, drawing from one set of spirits to curb the influence of others.
 
 ### <span style="color: {{ site.mage_color }}">The Shaman</span>
 
-Shamans draw on the primordial concepts of the elements. Not just fire, but the symbolic meaning of fire, as a representation of destruction and cleaning.
+[Shamans](../../more/specializations/shaman.html) draw on the primordial concepts of the elements. Not just fire, but the symbolic meaning of fire, as a representation of destruction and cleaning.
 
 ### <span style="color: {{ site.mage_color }}">The Wizard</span>
 
-Wizards are a recent historical development. They manipulate fundamental energies like motion and heat by drawing inspiration from the practice of alchemy. Though many traditionalists are skeptical of something like a "Spirit of Gravity", Wizards have found a surprising degree of acceptance among Mage communities.
+[Wizards](../../more/specializations/wizard.html) are a recent historical development. They manipulate fundamental energies like motion and heat by drawing inspiration from the practice of alchemy. Though many traditionalists are skeptical of something like a "Spirit of Gravity", Wizards have found a surprising degree of acceptance among Mage communities.

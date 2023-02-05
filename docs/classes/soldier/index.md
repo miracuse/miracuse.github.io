@@ -43,12 +43,12 @@ The Soldier's social skill is focused on emotional persuasion. **<span style="co
 
 ### <span style="color: {{ site.soldier_color }}">Blademaster</span>
 
-Recognized masters of the sword, in great demand across the world as mercenaries and bodyguards. Blademasters carry a collection of enchanted and alchemically-enhanced blades that require years of study to properly wield. The best known are the "Vorpal Swords", liquid metal blades whose unmatched sharpness makes them unusable by those without training.
+Recognized masters of the sword, in great demand across the world as mercenaries and bodyguards. [Blademasters](../../more/specializations/blademaster.html) carry a collection of enchanted and alchemically-enhanced blades that require years of study to properly wield. The best known are the "Vorpal Swords", liquid metal blades whose unmatched sharpness makes them unusable by those without training.
 
 ### <span style="color: {{ site.soldier_color }}">Knight</span>
 
-A warrior sworn to uphold a code of honor, one who employs their skills towards noble ends. Knights are recognized by their holy swords, but are trained with a variety of weapons and tools. Knighthood orders are held in particularly high esteem, and are empowered to act as civil officials in times of need.
+A warrior sworn to uphold a code of honor, one who employs their skills towards noble ends. [Knights](../../more/specializations/knight.html) are recognized by their holy swords, but are trained with a variety of weapons and tools. Knighthood orders are held in particularly high esteem, and are empowered to act as civil officials in times of need.
 
 ### <span style="color: {{ site.soldier_color }}">Myrmidon</span>
 
-A recent addition to modern military forces, Myrmidons are commonly used as the backbone of assault teams. They emphasize offensive tactics and tools to cause the most destruction in the least amount of time. Commonly associated with the "Breaker Axe", a recent alchemical innovation sturdy enough to break normal swords and breach walls.
+A recent addition to modern military forces, [Myrmidons](../../more/specializations/myrmidon.html) are commonly used as the backbone of assault teams. They emphasize offensive tactics and tools to cause the most destruction in the least amount of time. Commonly associated with the "Breaker Axe", a recent alchemical innovation sturdy enough to break normal swords and breach walls.

@@ -22,7 +22,7 @@ Custom Classes allow players to change their starting [Skills](../gameplay/skill
 - Choose one of the following Skill spreads and adjust your character accordingly.
 
   - Standard (Any Two Skills at +2)
-  - Versatile (Any One Skill at +2, Any Two Skills at +1)
+  - Versatile (Any One Skill at +2, Any Three Skills at +1)
 
 ---
 
@@ -37,7 +37,8 @@ Custom Classes allow players to change their starting [Skills](../gameplay/skill
 - **<span style="color: {{ site.soldier_color }}">Strength</span>** +2
 - **<span style="color: {{ site.soldier_color }}">Bravery</span>** +1
 - **<span style="color: {{ site.mage_color }}">Magic</span>** +1
+- - **<span style="color: {{ site.mage_color }}">Presence</span>** +1
 
 **Description**
 
-A holy knight trained in the arts of war and magic. **<span style="color: {{ site.paladin_color }}">Paladins</span>** don't have Mana Points, but gain a great deal of versatility from their access to Talismans. Likewise, **<span style="color: {{ site.paladin_color }}">Paladins</span>** have none of the Weapons of a **<span style="color: {{ site.soldier_color }}">Soldier</span>**, but have similar durability, a small pool of Fortune Points, and high **<span style="color: {{ site.soldier_color }}">Strength</span>**.
+A holy knight trained in the arts of war and magic. **<span style="color: {{ site.paladin_color }}">Paladins</span>** are less capable at spellcasting than Mages, but gain a great deal of versatility from their access to Talismans. Likewise, **<span style="color: {{ site.paladin_color }}">Paladins</span>** have none of the Weapons of a **<span style="color: {{ site.soldier_color }}">Soldier</span>**, but have similar durability, a small pool of Fortune Points, and high **<span style="color: {{ site.soldier_color }}">Strength</span>**.

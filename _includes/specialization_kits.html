@@ -1,0 +1,15 @@
+<table>
+  <thead>
+    <td><b>Kit</b></td>
+    <td><b>Description</b></td>
+  </thead>
+  {% for row in site.data.miracuse_kits %}
+  {% if row.Type == page.title %}
+  <tr>
+    <td><b>{{ row.Kit }}</b></td>
+    <td><i>({{ row.Tags }})</i> {{ row.Description }}</td>
+  </tr>
+  {% endif %}
+  {% endfor %}
+</table>
+

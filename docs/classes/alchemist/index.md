@@ -47,12 +47,12 @@ It's also used when persuading others with reason. Convincing a bandit that you 
 
 ### <span style="color: {{ site.alchemist_color }}">The Chemist</span>
 
-Every Alchemist can brew potions and craft grenades, but a Chemist goes beyond proficiency into mastery. Their emphasis on the fundamentals results in higher grade products with superb potency. Chemists are commonly recruited as Court Alchemists, researchers, and physicians by influential organizations.
+Every Alchemist can brew potions and craft grenades, but a [Chemist](../../more/specializations/chemist.html) goes beyond proficiency into mastery. Their emphasis on the fundamentals results in higher grade products with superb potency. Chemists are commonly recruited as Court Alchemists, researchers, and physicians by influential organizations.
 
 ### <span style="color: {{ site.alchemist_color }}">The Enchanter</span>
 
-Esoteric philosophers seeking to unify alchemy and magic by creating life. Enchanters have succeeded in engineering a variety of constructs to serve their needs. Though coveted by ambitious nations, many Enchanters are held in low esteem by other Alchemists, and are generally considered heretical by Mages.
+Esoteric philosophers seeking to unify alchemy and magic by creating life. [Enchanters](../../more/specializations/enchanter.html) have succeeded in engineering a variety of constructs to serve their needs. Though coveted by ambitious nations, many Enchanters are held in low esteem by other Alchemists, and are generally considered heretical by Mages.
 
 ### <span style="color: {{ site.alchemist_color }}">The Sapper</span>
 
-Military Alchemists that specialize in munitions. Sappers have played a large part in checking the traditional role of Mages on the battlefield in recent years. Their elemental grenades and sharpshooting skills have changed the shape of warfare.
+Military Alchemists that specialize in munitions. [Sappers](../../more/specializations/sapper.html) have played a large part in checking the traditional role of Mages on the battlefield in recent years. Their elemental grenades and sharpshooting skills have changed the shape of warfare.
