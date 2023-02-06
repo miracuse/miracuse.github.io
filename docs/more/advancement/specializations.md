@@ -17,7 +17,9 @@ When a character moves up a [Tier](../advancement/index.html#tier) they acquire 
 
 ##### Advanced Specializations
 
-Some specializations exist outside the four classes. These can't be taken during character creation, but can be acquired after advancing to a new tier.
+**Advanced Specializations** are those that aren't associated with a class. Though typically taken when a character reaches a higher tier, players using a [Custom Class](../custom_class.html) can choose them at Tier 1.
+
+> **Note**: Advanced Specializations are not stronger than the others. Rather, they include kits across a broader range of Skills, making them well-suited for higher tier characters with more [Skill Points](../more/advancement/index.html).
 
 ---
 

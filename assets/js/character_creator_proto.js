@@ -36,10 +36,19 @@ function arange(size) {
 //     Pull "Specializations" data where the data matches the provided game Class.
 //
 function fetchSpecializations(characterClass) {
-  const specialization_data = Array.from(
-    new Set(DATA.filter((x) => x.Class === characterClass).map((x) => x.Type))
-  );
-  return specialization_data;
+  if (characterClass != "Custom") {
+    const specialization_data = Array.from(
+      new Set(DATA.filter((x) => x.Class === characterClass).map((x) => x.Type))
+    );
+    return specialization_data;
+  }
+  else {
+    const specialization_data = Array.from(
+      new Set(DATA.map((x) => x.Type))
+    );
+    return specialization_data;
+  }
+  
 }
 
 // Fetch "Kit" data.
@@ -102,7 +111,7 @@ class InfoBox extends React.Component {
 //
 //     When clicked, the dropdown lists available specializations.
 //
-class SubclassHolder extends React.Component {
+class SpecializationHolder extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
@@ -126,6 +135,7 @@ class SubclassHolder extends React.Component {
           id="subclass_select_01"
           name="subclass_01"
           onChange={this.handleChange}
+          value={this.props.specialization}
         >
           {specialization_options}
         </select>
@@ -331,7 +341,7 @@ class CharacterSheet extends React.Component {
     this.state = {
       Class: "",
       Tier: 1,
-      Specializations: [""],
+      Specialization_01: [""],
       Kit_01: "",
       Kit_02: "",
       Kit_03: "",
@@ -378,9 +388,10 @@ class CharacterSheet extends React.Component {
 
   handleSpecializationChange(index, specialization) {
     // Set the specialization
-    var specializations_copy = this.state.Specializations.slice(0);
-    specializations_copy[index] = specialization;
-    this.setState({ Specializations: specializations_copy });
+    // var specializations_copy = this.state.Specialization_01.slice(0);
+    // specializations_copy[index] = specialization;
+    // this.setState({ Specialization_01: specializations_copy });
+    this.setState( {Specialization_01 : specialization} );
 
     // Cascade the change, setting the kits based on the specializations
     var kit_data = fetchKits([specialization]);
@@ -448,6 +459,7 @@ class CharacterSheet extends React.Component {
               <option value="Soldier">Soldier</option>
               <option value="Mage">Mage</option>
               <option value="Scoundrel">Scoundrel</option>
+              <option value="Custom">Custom</option>
             </select>
           </div>
 
@@ -466,8 +478,9 @@ class CharacterSheet extends React.Component {
             <p>Specializations</p>
           </div>
 
-          <SubclassHolder
+          <SpecializationHolder
             class={this.state.Class}
+            specialization={this.state.Specialization_01}
             onChange={this.handleSpecializationChange}
           />
 
@@ -568,28 +581,28 @@ class CharacterSheet extends React.Component {
             key={1}
             index={1}
             kit={this.state.Kit_01}
-            specializations={this.state.Specializations}
+            specializations={[this.state.Specialization_01]}
             onChange={this.handleKitChange}
           />
           <KitHolder
             key={2}
             index={2}
             kit={this.state.Kit_02}
-            specializations={this.state.Specializations}
+            specializations={[this.state.Specialization_01]}
             onChange={this.handleKitChange}
           />
           <KitHolder
             key={3}
             index={3}
             kit={this.state.Kit_03}
-            specializations={this.state.Specializations}
+            specializations={[this.state.Specialization_01]}
             onChange={this.handleKitChange}
           />
           <KitHolder
             key={4}
             index={4}
             kit={this.state.Kit_04}
-            specializations={this.state.Specializations}
+            specializations={[this.state.Specialization_01]}
             onChange={this.handleKitChange}
           />
 

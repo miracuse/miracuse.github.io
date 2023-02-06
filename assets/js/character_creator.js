@@ -26,8 +26,13 @@ function arange(size) {
 
 
 function fetchSpecializations(characterClass) {
-  const specialization_data = Array.from(new Set(DATA.filter(x => x.Class === characterClass).map(x => x.Type)));
-  return specialization_data;
+  if (characterClass != "Custom") {
+    const specialization_data = Array.from(new Set(DATA.filter(x => x.Class === characterClass).map(x => x.Type)));
+    return specialization_data;
+  } else {
+    const specialization_data = Array.from(new Set(DATA.map(x => x.Type)));
+    return specialization_data;
+  }
 } // Fetch "Kit" data.
 //
 //     Pull "Kit" data where the data matches the provided Specialization.
@@ -88,7 +93,7 @@ class InfoBox extends React.Component {
 //
 
 
-class SubclassHolder extends React.Component {
+class SpecializationHolder extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
@@ -109,7 +114,8 @@ class SubclassHolder extends React.Component {
     }, /*#__PURE__*/React.createElement("select", {
       id: "subclass_select_01",
       name: "subclass_01",
-      onChange: this.handleChange
+      onChange: this.handleChange,
+      value: this.props.specialization
     }, specialization_options));
   }
 
@@ -286,7 +292,7 @@ class CharacterSheet extends React.Component {
     this.state = {
       Class: "",
       Tier: 1,
-      Specializations: [""],
+      Specialization_01: [""],
       Kit_01: "",
       Kit_02: "",
       Kit_03: "",
@@ -333,10 +339,11 @@ class CharacterSheet extends React.Component {
 
   handleSpecializationChange(index, specialization) {
     // Set the specialization
-    var specializations_copy = this.state.Specializations.slice(0);
-    specializations_copy[index] = specialization;
+    // var specializations_copy = this.state.Specialization_01.slice(0);
+    // specializations_copy[index] = specialization;
+    // this.setState({ Specialization_01: specializations_copy });
     this.setState({
-      Specializations: specializations_copy
+      Specialization_01: specialization
     }); // Cascade the change, setting the kits based on the specializations
 
     var kit_data = fetchKits([specialization]);
@@ -417,7 +424,9 @@ class CharacterSheet extends React.Component {
       value: "Mage"
     }, "Mage"), /*#__PURE__*/React.createElement("option", {
       value: "Scoundrel"
-    }, "Scoundrel"))), /*#__PURE__*/React.createElement("div", {
+    }, "Scoundrel"), /*#__PURE__*/React.createElement("option", {
+      value: "Custom"
+    }, "Custom"))), /*#__PURE__*/React.createElement("div", {
       className: "character_tier_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
       message: "Your Tier determines how many specializations you can have at one time. More experienced characters have a higher tier."
@@ -433,8 +442,9 @@ class CharacterSheet extends React.Component {
       max: "4"
     }))), /*#__PURE__*/React.createElement("div", {
       className: "subclass_header"
-    }, /*#__PURE__*/React.createElement("p", null, "Specializations")), /*#__PURE__*/React.createElement(SubclassHolder, {
+    }, /*#__PURE__*/React.createElement("p", null, "Specializations")), /*#__PURE__*/React.createElement(SpecializationHolder, {
       class: this.state.Class,
+      specialization: this.state.Specialization_01,
       onChange: this.handleSpecializationChange
     }), /*#__PURE__*/React.createElement("div", {
       className: "character_subclass_02"
@@ -514,25 +524,25 @@ class CharacterSheet extends React.Component {
       key: 1,
       index: 1,
       kit: this.state.Kit_01,
-      specializations: this.state.Specializations,
+      specializations: [this.state.Specialization_01],
       onChange: this.handleKitChange
     }), /*#__PURE__*/React.createElement(KitHolder, {
       key: 2,
       index: 2,
       kit: this.state.Kit_02,
-      specializations: this.state.Specializations,
+      specializations: [this.state.Specialization_01],
       onChange: this.handleKitChange
     }), /*#__PURE__*/React.createElement(KitHolder, {
       key: 3,
       index: 3,
       kit: this.state.Kit_03,
-      specializations: this.state.Specializations,
+      specializations: [this.state.Specialization_01],
       onChange: this.handleKitChange
     }), /*#__PURE__*/React.createElement(KitHolder, {
       key: 4,
       index: 4,
       kit: this.state.Kit_04,
-      specializations: this.state.Specializations,
+      specializations: [this.state.Specialization_01],
       onChange: this.handleKitChange
     }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
       key: 1,

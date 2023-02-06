@@ -9,28 +9,34 @@ nav_order: 1
 
 # Custom Classes
 
-Custom Classes allow players to change their starting [Skills](../gameplay/skills.html) to better reflect a specific character idea. For example, a **<span style="color: {{ site.paladin_color }}">Paladin</span>** might mix a **<span style="color: {{ site.soldier_color }}">Soldier's</span>** Skills with a **<span style="color: {{ site.mage_color }}">Mage's</span>** Kits to create a character that's strong and has access to magic.
+> **Tip**: Custom Classes require a good understanding of the system to build and use properly. Be sure you're familiar with _Miracuse_ before proceeding.
+
+**Custom Classes** allow players more flexibility in creating their characters. Players can explore combinations of [Skills](../gameplay/skills.html) and [Kits](../gameplay/kits.html) outside of what the four base classes provide.
 
 ---
 
 ### Creating a Custom Class
 
->**Tip**: The difference between a Custom Class and other Classes are their starting Skills. Standard Classes start with a +2 to two preset Skills, while Custom Classes can choose their own.
+The process for creating a custom class is not much different from using the base classes.
 
-- Choose a base class and specialization, as though you were making a standard character.
+- Choose any [Specialization](../more/specializations/index.html)
 
 - Choose one of the following Skill spreads and adjust your character accordingly.
 
   - Standard (Any Two Skills at +2)
   - Versatile (Any One Skill at +2, Any Three Skills at +1)
 
+> **<span style="color: red">Warning:</span>** Make sure that your character has the proper Skills to use their kits. If you take a specialization that consists mainly of Talisman kits, you should have at least one point in Magic.
+
+> **Note:** Despite the name, [Advanced Specializations](../more/advancement/specializations.html) aren't any more powerful than other specializations. They do tend to involve multiple Kit types though, and may be harder to use for characters with few [Skill Points](../more/advancement/index.html).
+
 ---
 
 ### Example: **<span style="color: {{ site.paladin_color }}">The Paladin</span>**
 
-**Base Class/Specialization**
+**Specialization**
 
-- **<span style="color: {{ site.mage_color }}">Mage</span>**/Priest
+- **<span style="color: {{ site.mage_color }}">Priest</span>**
 
 **Skills**
 
