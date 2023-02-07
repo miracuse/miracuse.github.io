@@ -43,7 +43,7 @@ The process for creating a custom class is not much different from using the bas
 - **<span style="color: {{ site.soldier_color }}">Strength</span>** +2
 - **<span style="color: {{ site.soldier_color }}">Bravery</span>** +1
 - **<span style="color: {{ site.mage_color }}">Magic</span>** +1
-- - **<span style="color: {{ site.mage_color }}">Presence</span>** +1
+- **<span style="color: {{ site.mage_color }}">Presence</span>** +1
 
 **Description**
 

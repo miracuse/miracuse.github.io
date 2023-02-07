@@ -8,13 +8,13 @@ nav_order: 2
 
 # Making Camp
 
->**Player**: Alright, I think we're pretty beat up. Let's setup camp.
+> **Player**: Alright, I think we're pretty beat up. Let's setup camp.
 >
->**GM**: You're in the middle of a cursed forest with a lot of nasty critters prowling.
+> **GM**: You're in the middle of a cursed forest with a lot of nasty critters prowling.
 >
->**Player**: Oh. Yeah. Can I use _Talisman of Abjuration_ to warn them off?
+> **Player**: Oh. Yeah. Can I use _Talisman of Abjuration_ to warn them off?
 >
->**GM**: Roll Magic for it.
+> **GM**: Roll Magic for it.
 
 **Making Camp** allows characters to recover and lets Players change their equipped Kits. It can be done anytime the characters are somewhere safe and comfortable enough to rest.
 

@@ -46,7 +46,7 @@ You can't prepare for every eventuality, but you can build a set of tools to mak
 
 ##### NPC Deck
 
->**Tip**: Don't get too attached to any of your NPC's. Players (and the dice) have a tendency to keep their lives short.
+> **Tip**: Don't get too attached to any of your NPC's. Players (and the dice) have a tendency to keep their lives short.
 
 Spend some time generating a pool of characters related to the area your players are in. Start with the ones that your players are most likely to encounter; law enforcement, town mayors, barkeepers, healers, shady back alley contacts, etc. Ask yourself who holds power in the the region?
 
@@ -62,8 +62,8 @@ You may not use all of these cards in the next session. But by slowly building a
 
 Rooms aren't just for dungeons. If your players decide to skip the local village with plot important information, it can be a good idea to direct them towards a pre-generated pit stop and present the plot hooks there instead. Doing so buys you time to adjust your game on the fly while maintaining momentum. A couple examples:
 
-* A long-forgotten shrine to a dead god
+- A long-forgotten shrine to a dead god
 
-* A crossroads with a smiling demon waiting at the corner
+- A crossroads with a smiling demon waiting at the corner
 
-* A haunted battlefield
+- A haunted battlefield

@@ -10,6 +10,6 @@ nav_exclude: true
 
 > Scoundrel Specialization
 
-A catch-all term for hunters, tribal warriors, and nomads. Skilled archers with an affinity for nature, whose traditional practices predate the modern practice of alchemy. Rangers exist between the urban and natural worlds. 
+A catch-all term for those trained in a martial tradition popularized by the Tribes. Rangers are fleet-footed warriors with an affinity for the natural world.
 
 {% include specialization_kits.html %}

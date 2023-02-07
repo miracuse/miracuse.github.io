@@ -8,7 +8,7 @@ nav_order: 1
 
 # Damage
 
->**Tip**: By default, any successful hit on a character or enemy deals one box of damage.
+> **Tip**: By default, any successful hit on a character or enemy deals one box of damage.
 
 Various Kits can modify attacks. [Weapons](../../classes/soldier/index.md) can add damage and effects like knockback. Certain [Alchemy Items](../../classes/alchemist/index.md) like grenades deal damage in an area-of-effect. [Magic](../../classes/mage/index.md) might ignite enemies, pin them to the ground with gravity, or change the terrain. Similarly, enemies may have abilities that do the same for their attacks.
 

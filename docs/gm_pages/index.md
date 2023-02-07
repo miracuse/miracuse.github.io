@@ -24,7 +24,7 @@ The GM is also playing the game, but their role is fundamentally different. Thei
 
 ##### Running the Game
 
-This is the activity that usually comes to mind when GM'ing is discussed. On game days, with players participating, you act as a narrator. You set the scene, the players react to the scene, then you react to the players' actions. 
+This is the activity that usually comes to mind when GM'ing is discussed. On game days, with players participating, you act as a narrator. You set the scene, the players react to the scene, then you react to the players' actions.
 
 ##### Preparing the Game
 

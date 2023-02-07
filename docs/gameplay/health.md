@@ -11,7 +11,7 @@ nav_order: 3
 >
 > **Player**: That's my last box.
 >
-> **GM**: Alright. You're down for the count until someone can heal you. 
+> **GM**: Alright. You're down for the count until someone can heal you.
 
 **Health** is measured in **Boxes**. Whenever a character takes damage, they mark a box in either the Physical or Mental health tracks.
 
@@ -20,7 +20,6 @@ nav_order: 3
 ### Three Strikes, You're Out
 
 > {% include health_track_example.html %}
-
 
 A character that marks all of their boxes in either health track is taken out of play for a short time, becoming **Incapacitated**. Incapacitated characters cannot act until at least one box of their filled track is clear. They also can't be damaged any further.
 
@@ -36,9 +35,9 @@ Likewise, each point in the **<span style="color: {{ site.mage_color }}">Presenc
 
 Some dangers can cause issues besides damage to health.
 
-* **Poisons, Curses, and Diseases** cause an ongoing -1 to all rolls until treated.
+- **Poisons, Curses, and Diseases** cause an ongoing -1 to all rolls until treated.
 
-* **Damaged, Stolen, or Lost Kits** are unavailable for use until they've been recovered.
+- **Damaged, Stolen, or Lost Kits** are unavailable for use until they've been recovered.
 
 <!-- ### Recovery
 

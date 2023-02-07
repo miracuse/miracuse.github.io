@@ -44,7 +44,7 @@ Example Concepts:
 
 - A royal cartographer updating world maps for a distant emperor
 
-- A professional thief-catcher that does contract work for law enforcement agencies
+- A professional thief-catcher that does work for law enforcement agencies
 
 - A young Skald sent out from their tribe to bring back stories of the world beyond their native lands
 

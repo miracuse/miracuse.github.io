@@ -41,14 +41,10 @@ function fetchSpecializations(characterClass) {
       new Set(DATA.filter((x) => x.Class === characterClass).map((x) => x.Type))
     );
     return specialization_data;
-  }
-  else {
-    const specialization_data = Array.from(
-      new Set(DATA.map((x) => x.Type))
-    );
+  } else {
+    const specialization_data = Array.from(new Set(DATA.map((x) => x.Type)));
     return specialization_data;
   }
-  
 }
 
 // Fetch "Kit" data.
@@ -391,7 +387,7 @@ class CharacterSheet extends React.Component {
     // var specializations_copy = this.state.Specialization_01.slice(0);
     // specializations_copy[index] = specialization;
     // this.setState({ Specialization_01: specializations_copy });
-    this.setState( {Specialization_01 : specialization} );
+    this.setState({ Specialization_01: specialization });
 
     // Cascade the change, setting the kits based on the specializations
     var kit_data = fetchKits([specialization]);

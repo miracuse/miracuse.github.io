@@ -25,9 +25,9 @@ Alchemists keep a small stash of potent reagents, capable of greatly empowering 
 
 - **Amplify an Alchemy Kit**: Empower an equipped alchemy kit to go far beyond its usual usage.
 
-- **Produce a Potion**: Create a drinkable panacea that can instantly recover two Physical boxes or treat a natural affliction (poison, disease, etc.)
+- **Produce a Potion**: Pull out a drinkable panacea that can instantly recover two Physical boxes or treat a natural affliction (poison, disease, etc.)
 
-- **Produce a Grenade**: Create an explosive that can harm others in an area-of-effect and destroy obstacles.
+- **Produce a Grenade**: Pull out an explosive that can harm others in an area-of-effect and destroy obstacles.
 
 - **What You Needed**: Declare that you just so happen to have an item that can help with the present situation, like climbing gear or a collapsible 10 foot pole.
 

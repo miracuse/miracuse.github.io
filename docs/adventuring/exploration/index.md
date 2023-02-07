@@ -25,19 +25,18 @@ nav_order: 5
 
 [Hazards](../../gm_pages/making_hazards.html) are threats that can't be resolved through combat. Examples might include:
 
-* Arrow traps in ancient ruins
+- Arrow traps in ancient ruins
 
-* Arctic cold that gradually causes frostbite
+- Arctic cold that gradually causes frostbite
 
-* Lingering curses in a desecrated shrine room
+- Lingering curses in a desecrated shrine room
 
-* An avalanche rushing down a mountain
+- An avalanche rushing down a mountain
 
-* An indestructible golem standing watch over a tomb
+- An indestructible golem standing watch over a tomb
 
 ##### Solving Hazards
 
 Hazards often require Skill rolls to overcome. An arrow trap, for example, might be noticed with a **<span style="color: {{ site.alchemist_color }}">Perception</span>** roll, dodged with an **<span style="color: {{ site.scoundrel_color }}">Agility</span>** roll, and disabled with a **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** roll.
 
-Other solutions could involve the use of kits and resources. A trapped door might be opened with a grenade, or triggered with a ten-foot pole. 
-
+Other solutions could involve the use of kits and resources. A trapped door might be opened with a grenade, or triggered with a ten-foot pole.

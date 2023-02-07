@@ -53,4 +53,4 @@ Members of a courier's guild, trained in a little magic, a little stage alchemy,
 
 ### <span style="color: {{ site.scoundrel_color }}">The Ranger</span>
 
-A catch-all term for hunters, tribal warriors, and nomads. Skilled archers with an affinity for nature, whose traditional practices predate the modern practice of alchemy. [Rangers](../../more/specializations/ranger.html) exist between the urban and natural worlds. 
+A catch-all term for those trained in a martial tradition popularized by the Tribes. [Rangers](../../more/specializations/ranger.html) are fleet-footed warriors with an affinity for the natural world.

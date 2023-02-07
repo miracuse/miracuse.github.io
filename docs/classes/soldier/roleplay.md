@@ -62,9 +62,7 @@ Example Concepts:
 
 Soldiers are easy to spot. No one would openly carry around enchanted weapons unless they were confident in their ability to deal with prospective thieves. Likewise, few thieves are desperate enough to try taking a magical sword from someone that earns their pay using it.
 
-Given the expense involved in their creation, it's unsurprising that the majority of imbued weaponry is designed for melee combat. Recent innovations in alchemy have led to the production of relatively inexpensive ranged weapons, but the norm continues to be reusable swords, shields, and similar tools.
-
-Firearms, though potent, remain a trade secret of the Alchemists. Few Soldiers see the use in training with weapons that they cannot reliable keep loaded. Rumors of misfires and accidental explosions discourage any from experimenting with grenades.
+Given the expense involved in their creation, it's unsurprising that the majority of imbued weaponry is designed for melee combat. Recent innovations in alchemy have led to the production of relatively inexpensive ranged weapons, but the norm continues to be reusable swords, shields, and similar tools. Firearms, though potent, remain a trade secret of the Alchemists. Few Soldiers see the use in training with weapons that they cannot reliable keep loaded and maintained.
 
 ---
 

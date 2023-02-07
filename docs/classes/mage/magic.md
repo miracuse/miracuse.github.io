@@ -8,9 +8,9 @@ nav_order: 3
 
 # Magic
 
->**Player**: I want to throw a big exploding fireball into the middle of the bad guys.
+> **Player**: I want to throw a big exploding fireball into the middle of the bad guys.
 >
->**GM**: That's a bigger spell than you can usually pull off with *Talisman of Fire*. I'll say you either have to get a +3 or give me a Mana Point.
+> **GM**: That's a bigger spell than you can usually pull off with _Talisman of Fire_. I'll say you either have to get a +3 or give me a Mana Point.
 
 It can be difficult for new players and GM's to get a feel for the baseline power of magic in _Miracuse_. This section provides a few examples to offer some context.
 
@@ -64,4 +64,3 @@ Most uses of Talismans will leverage the Magic skill. The exception to this are 
 ##### Narrative Context
 
 The uses of a Talisman are decided by the game's fiction, not the text of the kit. For example, _Talisman of Water_ might work on oil or other liquids, if a player can make a convincing case for why it should do so.
-

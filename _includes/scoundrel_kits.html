@@ -4,17 +4,15 @@
     <td><b>Kit</b></td>
     <td><b>Description</b></td>
   </thead>
-  {% for row in site.data.miracuse_kits %}
-  {% if row.Type == "Assassin" %}
+  {% for row in site.data.miracuse_kits %} {% if row.Type == "Assassin" %}
   <tr>
     <td><b>{{ row.Kit }}</b></td>
     <td>{{ row.Description }}</td>
   </tr>
-  {% endif %}
-  {% endfor %}
+  {% endif %} {% endfor %}
 </table>
 
-<hr>
+<hr />
 
 <h3>Bard</h3>
 <table>
@@ -22,17 +20,15 @@
     <td><b>Kit</b></td>
     <td><b>Description</b></td>
   </thead>
-  {% for row in site.data.miracuse_kits %}
-  {% if row.Type == "Bard" %}
+  {% for row in site.data.miracuse_kits %} {% if row.Type == "Bard" %}
   <tr>
     <td><b>{{ row.Kit }}</b></td>
     <td>{{ row.Description }}</td>
   </tr>
-  {% endif %}
-  {% endfor %}
+  {% endif %} {% endfor %}
 </table>
 
-<hr>
+<hr />
 
 <h3>Ranger</h3>
 <table>
@@ -40,12 +36,10 @@
     <td><b>Kit</b></td>
     <td><b>Description</b></td>
   </thead>
-  {% for row in site.data.miracuse_kits %}
-  {% if row.Type == "Ranger" %}
+  {% for row in site.data.miracuse_kits %} {% if row.Type == "Ranger" %}
   <tr>
     <td><b>{{ row.Kit }}</b></td>
     <td>{{ row.Description }}</td>
   </tr>
-  {% endif %}
-  {% endfor %}
+  {% endif %} {% endfor %}
 </table>

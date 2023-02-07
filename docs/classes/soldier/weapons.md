@@ -8,9 +8,9 @@ nav_order: 3
 
 # Weapons
 
->**Player**: Can I make a hole in the ceiling with the _Vorpal Blade_? Just enough to let in some sunlight.
+> **Player**: Can I make a hole in the ceiling with the _Vorpal Blade_? Just enough to let in some sunlight.
 >
->**GM**: Yeah. The ceiling is pretty thick, but that sword slips through like there's nothing in they way.
+> **GM**: Yeah. The ceiling is pretty thick, but that sword slips through like there's nothing in they way.
 
 Weapon kits add extra effects to attacks, but they're also useful tools for interacting with the world. This section provides a few examples of how they can be used.
 
@@ -48,7 +48,6 @@ Weapon kits add extra effects to attacks, but they're also useful tools for inte
 | Break a section of brick wall down in a single strike | +3 or Fortune Point |
 | Break a wagon down the middle                         | +3 or Fortune Point |
 
-
 ---
 
 ### Other Notes
@@ -57,7 +56,6 @@ Weapon kits add extra effects to attacks, but they're also useful tools for inte
 
 Weapons are usually tied to a skill used for attacking (i.e. Strength, Agility). In some situations, it might make sense to use a different skill. Bravery, for example, might let a knight use some of the more mystic powers in a _Blessed Sword_.
 
-
 ##### Losing and Breaking Weapons
 
 Enchanted weapons are pretty sturdy, but they can be damaged. Depending on the severity the GM may rule:
@@ -65,4 +63,3 @@ Enchanted weapons are pretty sturdy, but they can be damaged. Depending on the s
 1. You can't use that Weapon kit again until the next time the party [makes camp](../../adventuring/exploration/making_camp.html) and you have time to fix it.
 
 2. You can't use that Weapon kit again until the party finds a way to fix or replace it.
-

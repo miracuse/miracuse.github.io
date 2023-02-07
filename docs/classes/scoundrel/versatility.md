@@ -9,7 +9,7 @@ nav_order: 3
 # Versatility
 
 > **Player**: I'm going to use _Talisman of Light_ to create the illusion of a wall over the door we just went through.
-> 
+>
 > **GM**: Okay. Do you want to roll Magic, or spend a Prep Point to roll Cunning?
 
 Scoundrels are able to use Alchemy, Weapon, and Talisman kits, making them the best all-rounders in _Miracuse_. A handful of examples are presented on this page.

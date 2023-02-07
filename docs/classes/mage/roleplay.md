@@ -81,11 +81,11 @@ Most Mages require some form of medium to conduct otherworldly energies into the
 
 **_In combat..._**
 
-The Mage is a capable ranged fighter, using **<span style="color: {{ site.mage_color }}">Magic</span>** to cause harm and change the shape of the battle.  They have little in the way of **<span style="color: {{ site.soldier_color }}">Strength</span>** or **<span style="color: {{ site.scoundrel_color }}">Agility</span>** and generally avoid close combat. 
+The Mage is a capable ranged fighter, using **<span style="color: {{ site.mage_color }}">Magic</span>** to cause harm and change the shape of the battle. They have little in the way of **<span style="color: {{ site.soldier_color }}">Strength</span>** or **<span style="color: {{ site.scoundrel_color }}">Agility</span>** and generally avoid close combat.
 
 **_Socially..._**
 
-The Mage's **<span style="color: {{ site.mage_color }}">Presence</span>** can be used to beguile and charm the unwary. Those with stronger wills are less likely to be affected, and more likely to react violently to failed attempts. 
+The Mage's **<span style="color: {{ site.mage_color }}">Presence</span>** can be used to beguile and charm the unwary. Those with stronger wills are less likely to be affected, and more likely to react violently to failed attempts.
 
 **_While exploring..._**
 

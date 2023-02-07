@@ -11,7 +11,7 @@ nav_order: 1
 Not Yet Implemented
 {: .label .label-red }
 
->**Tip**: Make sure that your character has the right skills to use kits they acquire. Gaining access to Talismans won't be very helpful if your character has no points in the Magic skill.
+> **Tip**: Make sure that your character has the right skills to use kits they acquire. Gaining access to Talismans won't be very helpful if your character has no points in the Magic skill.
 
 When a character moves up a [Tier](../advancement/index.html#tier) they acquire another specialization, giving them access to six more kits. Specializations can be chosen from any of the sets available to new characters, including those outside of their starting class.
 

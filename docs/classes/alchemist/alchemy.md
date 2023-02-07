@@ -8,9 +8,9 @@ nav_order: 3
 
 # Alchemy
 
->**Player**: I want to take down the wall with a grenade.
+> **Player**: I want to take down the wall with a grenade.
 >
->**GM**: Alright. The grenade goes off, making a loud explosion and blowing a hole in the wall. Mark off a Charge Point.
+> **GM**: Alright. The grenade goes off, making a loud explosion and blowing a hole in the wall. Mark off a Charge Point.
 
 Alchemy kits are some of the most versatile in _Miracuse_. They include strange substances, poisons, explosives, and semi-magical tools. This section provides a few examples of how alchemy kits are used.
 
@@ -18,15 +18,14 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 
 ### Kit Usage Examples
 
-##### Friction Charge
+##### Grease Charge
 
-| Action                                          | Approx. Difficulty  |
-| ----------------------------------------------- | ------------------- |
-| Create a grease slick on the floor              | +0 (No Roll Needed) |
-| Shoot someone with a glue bullet                | +1                  |
-| Shoot someone's sword sheath with a glue bullet | +2                  |
-| Throw a grease slick grenade                    | Charge Point        |
-| Throw a glue grenade                            | Charge Point        |
+| Action                                                          | Approx. Difficulty  |
+| --------------------------------------------------------------- | ------------------- |
+| Create a small grease slick on the floor                        | +0 (No Roll Needed) |
+| Shoot someone with a grease bullet                              | +1                  |
+| Shoot someone's feet with a grease bullet, causing them to slip | +2                  |
+| Throw a grease slick grenade                                    | Charge Point        |
 
 ##### Agua Regia
 
@@ -48,14 +47,13 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 | Change the servant into a small wagon                   | Charge Point        |
 | Deflect an attack using the servant                     | Charge Point        |
 
-
 ---
 
 ### Potions
 
 > **Tip**: Using a potion in combat takes an action.
 
-Charge Points can be spent to _Produce a Potion_, allowing someone to recover two Physical boxes. Unlike most alchemy kits, potions can be used by non-Alchemists without issue. 
+Charge Points can be spent to _Produce a Potion_, allowing someone to recover two Physical boxes. Unlike most alchemy kits, potions can be used by non-Alchemists without issue.
 
 ##### Flashback Handoffs
 
@@ -76,7 +74,6 @@ Charge Points can also be spent to _Produce a Grenade_, which cause damage in a 
 ##### Skill Use
 
 Unlike Talismans, alchemy kits are not generally tied to a specific skill. A kit like the Bard's _Faerie Fire_ might be used with Cunning to perform, Agility to cause harm, or with no skill at all for simple tasks like creating smokescreens.
-
 
 ##### Kits Without Direct Uses
 

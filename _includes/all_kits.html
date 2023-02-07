@@ -5,18 +5,16 @@
     <td><b>Kit</b></td>
     <td><b>Description</b></td>
   </thead>
-  {% for row in site.data.miracuse_kits %}
-  {% if row.Class == "Alchemist" %}
+  {% for row in site.data.miracuse_kits %} {% if row.Class == "Alchemist" %}
   <tr>
     <td>{{ row.Type }}</td>
     <td><b>{{ row.Kit }}</b></td>
     <td>{{ row.Description }}</td>
   </tr>
-  {% endif %}
-  {% endfor %}
+  {% endif %} {% endfor %}
 </table>
 
-<hr>
+<hr />
 
 <h3>Soldier</h3>
 <table>
@@ -25,18 +23,16 @@
     <td><b>Kit</b></td>
     <td><b>Description</b></td>
   </thead>
-  {% for row in site.data.miracuse_kits %}
-  {% if row.Class == "Soldier" %}
+  {% for row in site.data.miracuse_kits %} {% if row.Class == "Soldier" %}
   <tr>
     <td>{{ row.Type }}</td>
     <td><b>{{ row.Kit }}</b></td>
     <td>{{ row.Description }}</td>
   </tr>
-  {% endif %}
-  {% endfor %}
+  {% endif %} {% endfor %}
 </table>
 
-<hr>
+<hr />
 
 <h3>Mage</h3>
 <table>
@@ -45,18 +41,16 @@
     <td><b>Kit</b></td>
     <td><b>Description</b></td>
   </thead>
-  {% for row in site.data.miracuse_kits %}
-  {% if row.Class == "Mage" %}
+  {% for row in site.data.miracuse_kits %} {% if row.Class == "Mage" %}
   <tr>
     <td>{{ row.Type }}</td>
     <td><b>{{ row.Kit }}</b></td>
     <td>{{ row.Description }}</td>
   </tr>
-  {% endif %}
-  {% endfor %}
+  {% endif %} {% endfor %}
 </table>
 
-<hr>
+<hr />
 
 <h3>Scoundrel</h3>
 <table>
@@ -65,18 +59,16 @@
     <td><b>Kit</b></td>
     <td><b>Description</b></td>
   </thead>
-  {% for row in site.data.miracuse_kits %}
-  {% if row.Class == "Scoundrel" %}
+  {% for row in site.data.miracuse_kits %} {% if row.Class == "Scoundrel" %}
   <tr>
     <td>{{ row.Type }}</td>
     <td><b>{{ row.Kit }}</b></td>
     <td>{{ row.Description }}</td>
   </tr>
-  {% endif %}
-  {% endfor %}
+  {% endif %} {% endfor %}
 </table>
 
-<hr>
+<hr />
 
 <h3>Advanced</h3>
 <table>
@@ -85,13 +77,11 @@
     <td><b>Kit</b></td>
     <td><b>Description</b></td>
   </thead>
-  {% for row in site.data.miracuse_kits %}
-  {% if row.Class == "Advanced" %}
+  {% for row in site.data.miracuse_kits %} {% if row.Class == "Advanced" %}
   <tr>
     <td>{{ row.Type }}</td>
     <td><b>{{ row.Kit }}</b></td>
     <td>{{ row.Description }}</td>
   </tr>
-  {% endif %}
-  {% endfor %}
+  {% endif %} {% endfor %}
 </table>

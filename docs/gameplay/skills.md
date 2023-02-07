@@ -28,5 +28,3 @@ To use a Skill, either use the [Roll Dice](../game_sheets.html) button on the ga
 > **Player**: I rolled a 9, which gives me a +1. Since I started with a +2 in Cunning, that gives a total of +3.
 >
 > **GM**: You spot a couple of loose tiles that hook into an arrow trap of some kind. With a +3, I'll say you can disable it if you want to.
-
-

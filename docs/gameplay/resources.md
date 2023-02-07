@@ -11,7 +11,7 @@ nav_order: 5
 >
 > **GM**: That's a big spell. I'll say you can pull it off if you spend a Mana Point.
 
-**Resources** are pools of power that characters can draw on to perform incredible feats. 
+**Resources** are pools of power that characters can draw on to perform incredible feats.
 
 ---
 

@@ -14,7 +14,7 @@ nav_order: 2
 
 - What does your weapon look like? Is it a gun? A crossbow?
 
-- Do you carry your items in a bandolier, toolbox, or backpack?
+- How do you carry your tools? In a bandolier? A toolbox?
 
 - What kind of armor do you wear? Padded clothing with pockets? Goggles?
 
@@ -30,9 +30,7 @@ nav_order: 2
 
 ### Alchemy
 
-Alchemy is a scientific discipline. The conventional process for becoming an Alchemist is to study under a master, developing careful discernment and committing formulae to memory over an apprenticeship. Students graduate as full-fledged journeymen when they prove their ability "to heal and to harm" by brewing a potion and fabricating a grenade. Such recipes are only taught when a student is believed to be ready to handle the responsibility of both.
-
-Journeyman are encouraged to develop their skills through travel. They ply their trade in cities, battlefields, ancient ruins, and elsewhere. Their skill in creating miraculous healing draughts makes them welcome in many communities, though finding true companions is rare. An Alchemist's foreign worldview make it difficult to fit amongst locals.
+Alchemy is a scientific discipline. The conventional process for becoming an Alchemist is to study under a master, developing careful discernment and committing formulae to memory over an apprenticeship. Journeyman are encouraged to develop their skills through travel. They ply their trade in cities, battlefields, ancient ruins, and elsewhere. Their skill in creating miraculous healing draughts makes them welcome in many communities, though finding true companions is rare. An Alchemist's foreign worldview make it difficult to fit amongst locals.
 
 While often compared to **<span style="color: {{ site.mage_color }}">Magic</span>**, the products of Alchemy are distinctly more consistent. A Mage's power depends on their relationship with spirits. Their spells are never quite the same across any two castings. In contrast, an Alchemist's workings are more reliable. Their grenades do not misfire, their potions are never duds, and any particular workings they've come up with are predictable in their effects.
 
@@ -54,9 +52,7 @@ Example Concepts:
 
 ### Trade Secrets
 
-> **Tip**: The Alchemist's Guild is a highly-influential group, though its role in society is ambiguous. GM's might vary their level of involvement depending on the kind of adventure being run.
-
-Many organizations are interested in controlling the secrets of alchemy. Ambitious kings see the potential of an army outfitted with firearms, and greedy merchants would love nothing more than to see miraculous potions at a premium. Alchemists are tasked with protecting the secrets of their art from those who would misuse them. Only masters designated by the guild are allowed to pass the art on. Alchemists that violate that trust find themselves hunted by well-paid bounty hunters.
+Alchemists are not the only ones capable of producing potions and grenades, though they're certainly the best. Many adventurers find it worthwhile to study enough chemistry to create their own, or at the very least, to tell duds from the genuine article when shopping.
 
 ---
 
@@ -68,7 +64,7 @@ The Alchemist keeps their distance, taking shots at range with firearms using **
 
 ##### Socially...
 
-The Alchemist specializes in debate using **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**. Their rhetorical technique is well-received by the wealthy and educated, but not as effective on less affluent listeners. 
+The Alchemist specializes in debate using **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**. Their rhetorical technique is well-received by the wealthy and educated, but not as effective on less affluent listeners.
 
 ##### While exploring...
 

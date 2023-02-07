@@ -198,7 +198,7 @@ export default function get_data() {
       Kit: "Brimstone Powder",
       Tags: "Alchemy",
       Description:
-        "An otherworldly dust that conducts and magnifies magical energy. When added to fire it becomes hellfire, burning hotter and creating a noxious stench. When you use Produce a Grenade, the resulting explosion deals an additional point of damage.",
+        "An otherworldly dust that conducts and magnifies magical energy. When added to fire it becomes hellfire, burning hotter and creating a noxious stench. When you use Produce a Grenade, the resulting explosion deals an additional box of damage.",
     },
     {
       Class: "Advanced",
@@ -214,7 +214,7 @@ export default function get_data() {
       Kit: "Solomon Rod",
       Tags: "Weapon",
       Description:
-        "An metal rod that holds sway over otherworldly creatures. Wielding this weapon compels nearby magical creatures into obedience, providing Advantage on all rolls to influence them. Successful attacks against magical creatures deal one additional box of Mental damage.",
+        "A metal rod that holds sway over otherworldly creatures. Wielding this weapon compels nearby magical creatures into obedience, providing Advantage on all rolls to influence them. Successful attacks against magical creatures deal one additional box of Mental damage.",
     },
     {
       Class: "Advanced",
@@ -254,7 +254,7 @@ export default function get_data() {
       Kit: "Marauder Flintlock",
       Tags: "Weapon",
       Description:
-        "A bewitched handgun whose bullets hammer through ships and sails. Using this weapon allows your ranged attacks to cause outsized damage to objects.",
+        "A bewitched handgun whose bullets hit like cannon balls. Using this weapon breaks through armor and obstacles, but it requires several minutes to reload. Successful attacks deal an additional box of damage.",
     },
     {
       Class: "Advanced",
@@ -334,53 +334,7 @@ export default function get_data() {
       Kit: "Shikigami",
       Tags: "Alchemy",
       Description:
-        "You have many servants made from enchanted paper, capable of flying, spying, and carrying messages.  Equipping this kit provides half a dozen shikigami. You can expend a Charge Point to create an additional six servants.",
-    },
-    {
-      Class: "Advanced",
-      Type: "Gunslinger",
-      Kit: "Piercing Bullets",
-      Tags: "Alchemy",
-      Description: "Steel-tipped bullets that punch through armor and cover.",
-    },
-    {
-      Class: "Advanced",
-      Type: "Gunslinger",
-      Kit: "Quickdraw Pistol",
-      Tags: "Weapon, Reaction",
-      Description:
-        "A handgun specialized for near-instant withdraw. Using this weapon, your first attack in combat counts as a sneak attack. You cannot use grenades when using this weapon to attack. You have Advantage on rolls to determine who acts first, including turn order for combat.",
-    },
-    {
-      Class: "Advanced",
-      Type: "Gunslinger",
-      Kit: "Rubber Bullets",
-      Tags: "Alchemy",
-      Description:
-        "Rubberized bullets that can be used for non-lethal attacks. Ricochet uncontrollably in closed spaces.",
-    },
-    {
-      Class: "Advanced",
-      Type: "Gunslinger",
-      Kit: "Silver Bullets",
-      Tags: "Alchemy",
-      Description: "Anti-magic bullets that can shatter spells.",
-    },
-    {
-      Class: "Advanced",
-      Type: "Gunslinger",
-      Kit: "Trenchsteel Charges",
-      Tags: "Alchemy",
-      Description:
-        "Attacks that use this ammunition are physically loaded, exploding into a mass of ball bearings or coils of barbed wire in addition to any Physical damage dealt. When used with Produce a Grenade this kit inflicts Physical damage and one other effect in a wide area.",
-    },
-    {
-      Class: "Advanced",
-      Type: "Gunslinger",
-      Kit: "Twoshot Bullets",
-      Tags: "Alchemy",
-      Description:
-        "Trick bullets that can fire twice, changing trajectory in midair. Can be used to fire around corners or other obstacles.",
+        "You have servants made from enchanted paper, capable of flying, spying, and carrying messages.  Equipping this kit provides half a dozen shikigami. You can expend a Charge Point to create an additional six servants.",
     },
     {
       Class: "Soldier",
@@ -548,7 +502,7 @@ export default function get_data() {
       Kit: "Talisman of Dreaming",
       Tags: "Talisman",
       Description:
-        "A wand or other object that can be used to meddle with the boundary between conscious and unconscious. Can be used to induce sleep, daze enemies, and put others into a trance. You have Advantage when using Presence to hypnotize the weak-willed.",
+        "A wand or other object that can be used to meddle with the boundary between conscious and unconscious. Can be used to induce sleep, daze enemies, and put others into a trance. You have Advantage when using Presence to put others into a stupor.",
     },
     {
       Class: "Mage",
@@ -556,7 +510,7 @@ export default function get_data() {
       Kit: "Talisman of Language",
       Tags: "Talisman",
       Description:
-        "A wand or other object that can be used to speak and undestand all creatures. Can be used to communicate with animals, use charm magic, and compel others to your will. You have Advantage when using Presence to awe others.",
+        "A wand or other object that can be used to speak and undestand all creatures. Can be used to communicate with animals, use charm magic, and compel others to your will. You have Advantage when using Presence to command others.",
     },
     {
       Class: "Mage",
@@ -625,18 +579,18 @@ export default function get_data() {
     {
       Class: "Alchemist",
       Type: "Sapper",
-      Kit: "Electromagnetic Charges",
+      Kit: "Concussive Charges",
       Tags: "Alchemy",
       Description:
-        "Electrically charged bullets that shock (dealing Mental damage) or magnetize targets instead of dealing Physical damage. When used with Produce a Grenade inflicts one of the two effects in a wide area.",
+        "Explosive bullets that create powerful shockwaves to knock enemies over with instead of dealing Physical damage. When used with Produce a Grenade inflicts an additional box of damage and greater environmental destruction.",
     },
     {
       Class: "Alchemist",
       Type: "Sapper",
-      Kit: "Friction Charges",
+      Kit: "Grease Charges",
       Tags: "Alchemy",
       Description:
-        "Capsule bullets filled with liquid that produces quick-drying adhesive or slippery grease instead of dealing Physical damage. When used with Produce a Grenade this kit inflicts one of the two effects in a wide area.",
+        "Capsule bullets filled with slippery and flammable grease, covering targets instead of dealing Physical damage. When used with Produce a Grenade this kit covers an area in a grease slick.",
     },
     {
       Class: "Alchemist",
@@ -652,15 +606,7 @@ export default function get_data() {
       Kit: "Phosphos Charges",
       Tags: "Alchemy",
       Description:
-        "Volatile bullets that ignite targets (dealing Physical damage) or produce blinding flashes of light on impact. When used with Produce a Grenade this kit inflicts one of the two effects in a wide area.",
-    },
-    {
-      Class: "Alchemist",
-      Type: "Sapper",
-      Kit: "Sonic Charges",
-      Tags: "Alchemy",
-      Description:
-        "Explosive bullets that create powerful shockwaves to knock enemies over or deliver deafening sonic booms, instead of dealing Physical damage. When used with Produce a Grenade inflicts one of the two effects in a wide area.",
+        "Volatile bullets that ignite targets and produce blinding flashes of light. When used with Produce a Grenade this kit either ignites the area or creates a harmless but blinding burst of light.",
     },
     {
       Class: "Alchemist",
@@ -671,12 +617,12 @@ export default function get_data() {
         "A short-barreled gun used for clearing rooms. Using this weapon allows your ranged attacks to cause harm in a cone area-of-effect immediately in front of you.",
     },
     {
-      Class: "Mage",
-      Type: "Shaman",
-      Kit: "Talisman of Aether",
-      Tags: "Talisman",
+      Class: "Alchemist",
+      Type: "Sapper",
+      Kit: "Trenchsteel Charges",
+      Tags: "Alchemy",
       Description:
-        "A wand or other object that can be used to manipulate electricity. Can be used to shoot lightning from your hands, induce pain without damage, and shock enemies that harm you.",
+        "Loaded bullets that fire twice, changing trajectory in mid-air to shoot around corners or cover. When used with Produce a Grenade this kit explodes into a mass of ball bearings, dealing Physical damage and significantly impacting mobility.",
     },
     {
       Class: "Mage",
@@ -705,18 +651,26 @@ export default function get_data() {
     {
       Class: "Mage",
       Type: "Shaman",
-      Kit: "Talisman of Metal",
-      Tags: "Talisman",
-      Description:
-        "A wand or other object that can be used to manipulate metal. Can be used to magnetize metallic objects, binding them together or pushing them apart.",
-    },
-    {
-      Class: "Mage",
-      Type: "Shaman",
       Kit: "Talisman of Water",
       Tags: "Talisman",
       Description:
         "A wand or other object that can be used to manipulate water. Can be used to create spears of ice, conjure fog, and purify liquids.",
+    },
+    {
+      Class: "Mage",
+      Type: "Shaman",
+      Kit: "Totemic Staff",
+      Tags: "Weapon",
+      Description:
+        "A decorated staff that fosters balance between the elements. Using this weapon, attacks with Talismans become more precise, able to strike multiple enemies without harming allies. You have Advantage when petitioning spirits with Presence.",
+    },
+    {
+      Class: "Mage",
+      Type: "Shaman",
+      Kit: "Vision Powder",
+      Tags: "Alchemy",
+      Description:
+        "A ritually prepared dust that enhances magical senses. Can be used to induce deep trances and to disperse illusions. You have Advantage on Presence rolls to sense magical phenomenon.",
     },
     {
       Class: "Advanced",
@@ -804,7 +758,7 @@ export default function get_data() {
       Kit: "Talisman of Purity",
       Tags: "Talisman",
       Description:
-        "A wand or other object that can be used to purify and sanctify. Can be used to expel poisons, harm magical creatures, and bless objects with the power to ward off evil spirits.",
+        "A wand or other object that can be used to purify and sanctify. Can be used to expel poisons, harm magical creatures, and bless objects with the power to ward off evil.",
     },
     {
       Class: "Advanced",
@@ -828,7 +782,7 @@ export default function get_data() {
       Kit: "Talisman of Force",
       Tags: "Talisman, Reaction",
       Description:
-        "A wand or other object that can be used to perform limited telekinesis. Can be used to levitate nearby objects and launch them through the air. You can expend a Mana Point to deflect an attack aimed at you.",
+        "A wand or other object that can be used to perform telekinesis. Can be used to levitate nearby objects and launch them through the air. You can expend a Mana Point to deflect an attack aimed at you.",
     },
     {
       Class: "Mage",

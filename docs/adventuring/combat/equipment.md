@@ -39,7 +39,7 @@ The Skill a character uses when attacking roughly corresponds to the weapons the
 
 > **Tip**: Most kits require special training to use, which is represented by players having access to that kit in the first place. Just because someone picks up a magical sword or deadly poison doesn't mean that they know how to wield it effectively.
 
-[Kits](../../gameplay/kits.html) are powerful items and equipment that players choose each day. While mundane items like clothes and rations are kept abstract, players always know which kits they do or do not have on their person. 
+[Kits](../../gameplay/kits.html) are powerful items and equipment that players choose each day. While mundane items like clothes and rations are kept abstract, players always know which kits they do or do not have on their person.
 
 ---
 
@@ -62,4 +62,3 @@ The Skill a character uses when attacking roughly corresponds to the weapons the
 Many situations may call for some specific piece of gear like a coil of rope or a torch. Unless the Players have gone out of their way to acquire that gear, the GM will decide whether or not their character is likely to have it on hand.
 
 An exception to this is the **<span style="color: {{ site.alchemist_color }}">Alchemist's</span>** [What You Needed](../../classes/scoundrel/index.md) ability. They can spend a Charge Point to pull out equipment that their character might not normally have on hand.
-
