@@ -60,7 +60,7 @@ Scoundrels aren't as dedicated the art of war as Soldiers, but they're still for
 
 ### Use Magic Device
 
-> **Tip**: Scoundrels can spend a Prep Point to use Talismans with **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** instead of **<span style="color: {{ site.mage_color }}">Magic</span>**.
+> **Tip**: Scoundrels can spend a Trick box to use Talismans with **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** instead of **<span style="color: {{ site.mage_color }}">Magic</span>**.
 
 Magic has been around for as long as history can recall. And in that time, many individuals have coveted its power despite lacking training or aptitude. Unorthodox methods gradually came into being to allow lay persons brief access to the spirits. Many of these methods exist in a grey legal area, where they aren't outright banned for the dangers they represent.
 

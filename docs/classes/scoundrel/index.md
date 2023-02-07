@@ -13,23 +13,22 @@ The Scoundrel is a master of misdirection. They blend in with crowds and shadows
 
 - **<span style="color: {{ site.scoundrel_color }}">Agility</span>**: Scoundrels are quick on their feet. They use this Skill when making swift strikes or defending against Physical attacks. Agility also determines who acts first in a conflict, as well as the Scoundrel's ability to scale walls and sprint away from danger.
 
-- **<span style="color: {{ site.scoundrel_color }}">Cunning</span>**: Scoundrels are sly. They use this Skill to talk circles around others, to [move unnoticed](../../gameplay/exploration/stealth.md), and to sense danger or lies. Cunning also determines how many Prep Points a Scoundrel has.
+- **<span style="color: {{ site.scoundrel_color }}">Cunning</span>**: Scoundrels are sly. They use this Skill to talk circles around others, to [move unnoticed](../../gameplay/exploration/stealth.md), and to sense danger or lies. Cunning also determines how many Tricks a Scoundrel has.
 
-- **[Prep Points](#prep-points)**: The Scoundrel's resource lets them disappear from sight, disguise themselves both in appearance and behavior, perform **<span style="color: {{ site.mage_color }}">Magic</span>** with the aid of tools, and reach out to their various social contacts for favors.
+- **[Tricks](#tricks)**: Scoundrels have a great many tricks up their sleeves, ranging from favors owed by local contacts to minor magical artifacts.
 
 ---
 
-### Prep Points
+### Tricks
 
-Scoundrels always have a few tricks up their sleeves. These are represented as **Prep Points** and can be used for the following:
-
-- **Disappear From Sight**: Make a hasty getaway, vanishing from sight even in the middle of combat.
-
-- **Produce a Disguise**: Impersonate others, assume a false identity, or simply camouflage yourself to better blend in.
+**<span style="color: {{ site.scoundrel_color }}">Cunning</span>** adventurers know that there's more than one way to solve any given problem. They keep a variety of **Tricks** handy.
 
 - **Use a Magic Device**: Pull out a charm, gem, or other charged object to use a Talisman with **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** instead of **<span style="color: {{ site.mage_color }}">Magic</span>**. The object is depleted after a single use.
 
 - **I Know a Guy**: Declare that you just so happen to have a contact in the area that owes you a favor, and can help with your present situation.
+
+- **What You Needed**: Declare that you have an unlikely item, such as a smoke bomb or valuable bribe, that can help with the current situation.
+
 
 ---
 

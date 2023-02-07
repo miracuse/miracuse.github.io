@@ -13,21 +13,19 @@ The Soldier is a warrior without peer. They may be knights, bandits, infantrymen
 
 - **<span style="color: {{ site.soldier_color }}">Strength</span>**: Soldiers are strong and resilient. They use this Skill when attacking with most weapons or defending against Physical attacks. This Skill also gives them more Physical [Health](../../gameplay/health.md) than other classes.
 
-- **<span style="color: {{ site.soldier_color }}">Bravery</span>**: Soldiers don't break in the face of danger. They use this Skill when defending against Mental attacks. It also determines how many Fortune Points they have, and can be used to provoke, intimidate, or impress others.
+- **<span style="color: {{ site.soldier_color }}">Bravery</span>**: Soldiers don't break in the face of danger. They use this Skill when defending against Mental attacks. It also determines how much Fortune they have, and can be used to provoke, intimidate, or impress others.
 
-- **[Fortune Points](#fortune-points)**: The Soldier's resource allows them to reroll dice and avoid harm. They can also spend points to perform near-impossible feats of martial prowess, amplifying their _Weapon_ Kits.
+- **[Fortune](#fortune)**: Soldiers have an odd relationship with luck, which they can draw on to tilt the odds in their favor a few times each day.
 
 ---
 
-### Fortune Points
+### Fortune
 
-Soldiers have an unusual relationship with luck, able to occasionally pull on the threads of chance in times of great need. These flares of energy are represented as **Fortune Points** and can be used for the following:
-
-- **Amplify a Weapon**: Empower an equipped Weapon to go far beyond its usual usage.
-
-- **Avoid Harm**: Negate or greatly the reduce harm from an incoming threat.
+**Fortune** represents how often an adventurer can influence luck in their favor. It's widely said that Fortune favors the **<span style="color: {{ site.soldier_color }}">Brave</span>** and the bold.
 
 - **Reroll**: Change the outcome of a roll by rolling again and taking the new result, a maximum of one time per action.
+
+- **Perform Heroics**: Empower a Weapon kit to go beyond its usual usage for a single action.
 
 ---
 

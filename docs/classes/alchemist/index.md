@@ -13,23 +13,17 @@ The Alchemist is a keen adventurer, keeping a watchful eye out for danger and a 
 
 - **<span style="color: {{ site.alchemist_color }}">Perception</span>**: Alchemists are good at detecting danger, finding clues, and searching for hidden treasure. They also use this skill to make precise attacks with ranged weapons.
 
-- **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**: Alchemists are familiar with many different fields that might be useful to an adventurer, such as monster biology or regional politics. This Skill also determines how many uses of their Kits they have, and their ability to persuade others using rhetoric.
+- **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**: Alchemists are familiar with many different fields that might be useful to an adventurer, such as monster biology or regional politics. This Skill also influences their ability to persuade others using rhetoric.
 
-- **[Charge Points](#charge-points)**: The Alchemist's resource allows them to produce potions, create grenades, and improvise items to save the day. They can also use it to pull off a fantastical display of alchemy by amplifying one of their Kits.
+- **[Potions](#potions)**: Alchemists keep a stash of potions on hand, able to miraculously heal wounds or fuel powerful alchemy.
 
 ---
 
-### Charge Points
+### Potions
 
-Alchemists keep a small stash of potent reagents, capable of greatly empowering alchemy. These are represented as **Charge Points** and can be used for the following:
+**Potions** are a valuable resource, both as a tool for recovering from harm and as an item to be bartered. **<span style="color: {{ site.alchemist_color }}">Knowledgeable</span>** adventurers have access to more potions than others.
 
-- **Amplify an Alchemy Kit**: Empower an equipped alchemy kit to go far beyond its usual usage.
-
-- **Produce a Potion**: Pull out a drinkable panacea that can instantly recover two Physical boxes or treat a natural affliction (poison, disease, etc.)
-
-- **Produce a Grenade**: Pull out an explosive that can harm others in an area-of-effect and destroy obstacles.
-
-- **What You Needed**: Declare that you just so happen to have an item that can help with the present situation, like climbing gear or a collapsible 10 foot pole.
+- **Heal**: Drinking a potion can instantly recover two Physical boxes or treat a natural affliction (poison, disease, etc.)
 
 ---
 

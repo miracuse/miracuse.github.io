@@ -12,11 +12,11 @@ nav_exclude: true
 >
 > Social, Resource Pool, Thievery, Sense
 
-**<span style="color: {{ site.scoundrel_color }}">Cunning</span>** encompasses most thief-like activities. It is the skill for bluffing, sneaking, finding traps, and picking locks. It is also tied to Prep Points, which give characters access to stealth related abilities and a limited capacity to cast spells with Cunning instead of Magic.
+**<span style="color: {{ site.scoundrel_color }}">Cunning</span>** encompasses most thief-like activities. It is the skill for bluffing, sneaking, finding traps, and picking locks. It is also tied to Tricks.
 
 ##### When Increased...
 
-- Gain two additional Prep Point boxes
+- Gain two additional Trick boxes
 - Increase the success rate for stealth and theft
 - Increase the success rate for lying and detecting lies
 - Increase the success rate for detecting danger

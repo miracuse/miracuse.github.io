@@ -12,11 +12,11 @@ nav_exclude: true
 >
 > Sense, Resource Pool
 
-**<span style="color: {{ site.alchemist_color }}">Knowledge</span>** is a broad skill that covers history, medicine, science, and most kinds of formal learning. It is one of the main observation skills used to gain information about the world. Knowledge is also responsible for the quantity of Charge Points a character has, giving them access to healing potions and grenades.
+**<span style="color: {{ site.alchemist_color }}">Knowledge</span>** is a broad skill that covers history, medicine, science, and most kinds of formal learning. It is one of the main observation skills used to gain information about the world. Knowledge is also responsible for the quantity of potions a character has access to.
 
 ##### When Increased...
 
-- Gain two additional Charge Point boxes
+- Gain two additional Potion boxes
 - Improves success rate for recalling information
 
 ##### Example Uses

@@ -12,11 +12,11 @@ nav_exclude: true
 >
 > Mystic, Resource Pool, Sense
 
-**<span style="color: {{ site.mage_color }}">Presence</span>** is the skill for sensing magic and bewitching others. It also determines the number of Mana Points a character has, allowing them to amplify and combine Talismans to create complex magical effects.
+**<span style="color: {{ site.mage_color }}">Presence</span>** is the skill for sensing magic and bewitching others. It also determines the amount of Mana a character has, allowing them to amplify and combine Talismans to create complex magical effects.
 
 ##### When Increased...
 
-- Gain two additional Mana Point boxes
+- Gain two additional Mana boxes
 - Improves success rate for detecting and identifying magic
 - Improves success rate for charming, bewitching, and hypnotizing others
 

@@ -150,7 +150,7 @@ export default function get_data() {
       Kit: "Agua Regia",
       Tags: "Alchemy",
       Description:
-        "A dangerously potent acid that eats through metals with ease. Can be used to break locks, sabotage equipment, and create clouds of poisonous gas. When you Produce a Grenade, you can create a canister of poisonous gas instead.",
+        "A dangerously potent acid that eats through metals with ease. Can be used to break locks, sabotage equipment, and create clouds of poisonous gas. You can expend a Potion to create a poisonous gas bomb that fills the air with thick toxic smoke.",
     },
     {
       Class: "Alchemist",
@@ -158,7 +158,7 @@ export default function get_data() {
       Kit: "Lunar Silver",
       Tags: "Alchemy",
       Description:
-        "Crystallized holy water, a substance that leeches away magic on contact. Can be used to deaden a person to magic for a short time, rendering them immune and incapable of casting spells. When you Produce a Grenade, magic in the area of effect is torn apart. You have Advantage when defending against magic in any form while this kit is equipped.",
+        "Crystallized holy water, a substance that leeches away magic on contact. Can be used to deaden a person to magic for a short time, rendering them immune and incapable of casting spells. You can expend a Potion to create an anti-magic bomb that nullifies magic in an area. You have Advantage when defending against magic in any form while this kit is equipped.",
     },
     {
       Class: "Alchemist",
@@ -166,7 +166,7 @@ export default function get_data() {
       Kit: "Midnight Oil",
       Tags: "Alchemy",
       Description:
-        "A dark oil that absorbs sound and light, muting its surroundings. When burned it produces an invisible flame that gives off heat but not light, and an odorless gas that lulls others to sleep. When you Produce a Grenade, you can create a canister of sleeping gas instead, which deals Mental damage rather than Physical.",
+        "A dark oil that absorbs sound and light, muting its surroundings. When burned it produces an invisible flame that gives off heat but not light, and an odorless gas that lulls others to sleep. You can expend a Potion to create a knockout grenade that releases sleeping gas into an area, dealing Mental damage.",
     },
     {
       Class: "Alchemist",
@@ -174,15 +174,15 @@ export default function get_data() {
       Kit: "Pocket Wall",
       Tags: "Alchemy",
       Description:
-        "A rapidly expanding cement-like substance. Can be used to create shelter, mend cracks, seal doors, or adhere objects to one another. You have Advantage when creating or repairing objects with this substance.",
+        "A rapidly expanding cement-like substance. Can be used to create shelter, mend cracks, seal doors, or adhere objects to one another. You have Advantage when creating or repairing objects with this substance. You can expend a Potion to create an instant concrete barricade.",
     },
     {
       Class: "Alchemist",
       Type: "Chemist",
-      Kit: "Pyre Powder",
+      Kit: "Vaccuum Space",
       Tags: "Alchemy",
       Description:
-        "A crackling dust that serves as the ideal catalyst. When you use Produce a Potion or Produce a Grenade, you produce two items instead of one. You are still limited to using one item per action in combat.",
+        "A jar of carefully prepared void, which emits a strong suction force when opened. Can be used to capture a fog of poisonous gas, put out fires, propel yourself forward. You can expend a Potion to create an implosion grenade.",
     },
     {
       Class: "Alchemist",
@@ -190,7 +190,7 @@ export default function get_data() {
       Kit: "Winterbloom Extract",
       Tags: "Alchemy",
       Description:
-        "Highly-concentrated extract from the Winterbloom flower. A droplet can freeze fifty gallons of water into hard ice, create a billowing cloud of fog, or plummet the temperature of anything it comes into contact with. When you Produce a Grenade, you can create a flash freeze grenade instead.",
+        "Highly-concentrated extract from the Winterbloom flower. A droplet can freeze fifty gallons of water into hard ice, create a billowing cloud of fog, or plummet the temperature of anything it comes into contact with. You can expend a Potion to create a flash freeze bomb that deals damage and covers an area with a thin sheet of ice.",
     },
     {
       Class: "Advanced",
@@ -198,7 +198,7 @@ export default function get_data() {
       Kit: "Brimstone Powder",
       Tags: "Alchemy",
       Description:
-        "An otherworldly dust that conducts and magnifies magical energy. When added to fire it becomes hellfire, burning hotter and creating a noxious stench. When you use Produce a Grenade, the resulting explosion deals an additional box of damage.",
+        "An otherworldly dust that conducts and magnifies magical energy. When added to fire it becomes hellfire, burning hotter and creating a noxious stench. You can expend a Potion to create a hellfire grenade that deals damage and creates waterproof flames.",
     },
     {
       Class: "Advanced",
@@ -254,7 +254,7 @@ export default function get_data() {
       Kit: "Marauder Flintlock",
       Tags: "Weapon",
       Description:
-        "A bewitched handgun whose bullets hit like cannon balls. Using this weapon breaks through armor and obstacles, but it requires several minutes to reload. Successful attacks deal an additional box of damage.",
+        "A bewitched handgun whose bullets hit like cannon balls. Using this weapon breaks through armor and obstacles with significant force, but it requires several minutes to reload. Successful attacks deal an additional box of damage.",
     },
     {
       Class: "Advanced",
@@ -292,9 +292,9 @@ export default function get_data() {
       Class: "Alchemist",
       Type: "Enchanter",
       Kit: "Dancing Shadow",
-      Tags: "Alchemy",
+      Tags: "Alchemy, Reaction",
       Description:
-        "You have a servant made of shadow, granting you a limited form of telekinesis. The servant exists within your shadow, but can move independently and interact with the physical world. The shadow is able to retrieve and store lightweight objects within itself, but is lacking in strength.",
+        "You have a servant made of shadow, granting you a limited form of telekinesis. The servant exists within your shadow, but can move independently and interact with the physical world. The shadow is able to retrieve and store lightweight objects within itself, but is lacking in strength. You can expend a Potion to have the shadow deflect an incoming attack.",
     },
     {
       Class: "Alchemist",
@@ -302,7 +302,7 @@ export default function get_data() {
       Kit: "Familiar",
       Tags: "Alchemy",
       Description:
-        "You have a servant that takes the form of a small animal, such as a crow or cat. You are able to borrow its senses, temporarily gaining a bird\u2019s eye view or a dog\u2019s sense of smell for example. The form of the familiar is chosen when the kit is equipped, and may be changed by expending a Charge Point.",
+        "You have a servant that takes the form of a small animal, such as a crow or cat. You are able to borrow its senses, temporarily gaining a bird\u2019s eye view or a dog\u2019s sense of smell for example. The form of the familiar is chosen when the kit is equipped, and may be changed by expending a Potion.",
     },
     {
       Class: "Alchemist",
@@ -310,7 +310,7 @@ export default function get_data() {
       Kit: "Featherweave",
       Tags: "Alchemy, Reaction",
       Description:
-        "You have a servant made from enchanted cloth, capable of resisting gravity to a limited degree. You glide gently to the ground while wearing this kit. When folded into a bag, you can carry heavy objects with ease. When unrolled it becomes a flying carpet, able to carry you through the air across short distances.",
+        "You have a servant made from enchanted cloth, capable of resisting gravity to a limited degree. You glide gently to the ground while wearing this kit. When folded into a bag, you can carry heavy objects with ease. You can expend a Potion to turn the Featherweave into a flying carpet, able to carry multiple people for a short time.",
     },
     {
       Class: "Alchemist",
@@ -318,15 +318,15 @@ export default function get_data() {
       Kit: "Golem",
       Tags: "Alchemy",
       Description:
-        "You have a servant made from clay, capable of fighting and lifting heavy objects. Equipping this Kit provides one golem. You can expend a Charge Point to create additional golems.",
+        "You have a servant made from clay, capable of fighting and lifting heavy objects. Equipping this Kit provides one golem. You can expend a Potion to create additional golems.",
     },
     {
       Class: "Alchemist",
       Type: "Enchanter",
       Kit: "Quicksilver",
-      Tags: "Weapon, Alchemy, Reaction",
+      Tags: "Weapon, Alchemy",
       Description:
-        "You have a servant made from liquid metal, capable of shaping itself into weapons, tools, and objects. Using this weapon allows you to use Perception when attacking in melee. You can expend a Charge Point to deflect an attack.",
+        "You have a servant made from liquid metal, capable of shaping itself into weapons, tools, and objects. Using this weapon allows you to use Perception when attacking in melee. You can expend a Potion to have the Quicksilver transform into something large or complex.",
     },
     {
       Class: "Alchemist",
@@ -334,7 +334,7 @@ export default function get_data() {
       Kit: "Shikigami",
       Tags: "Alchemy",
       Description:
-        "You have servants made from enchanted paper, capable of flying, spying, and carrying messages.  Equipping this kit provides half a dozen shikigami. You can expend a Charge Point to create an additional six servants.",
+        "You have servants made from enchanted paper, capable of flying, spying, and carrying messages.  Equipping this kit provides half a dozen shikigami. You can expend a Potion to create an additional six servants.",
     },
     {
       Class: "Soldier",
@@ -582,7 +582,7 @@ export default function get_data() {
       Kit: "Concussive Charges",
       Tags: "Alchemy",
       Description:
-        "Explosive bullets that create powerful shockwaves to knock enemies over with instead of dealing Physical damage. When used with Produce a Grenade inflicts an additional box of damage and greater environmental destruction.",
+        "Explosive bullets that create powerful shockwaves to knock enemies over with instead of dealing Physical damage. You can expend a Potion to create a concussive grenade that deals damage and creates a shockwave.",
     },
     {
       Class: "Alchemist",
@@ -590,7 +590,7 @@ export default function get_data() {
       Kit: "Grease Charges",
       Tags: "Alchemy",
       Description:
-        "Capsule bullets filled with slippery and flammable grease, covering targets instead of dealing Physical damage. When used with Produce a Grenade this kit covers an area in a grease slick.",
+        "Capsule bullets filled with slippery and flammable grease, covering targets instead of dealing Physical damage. You can expend a Potion to create a grease bomb that covers an area with oil.",
     },
     {
       Class: "Alchemist",
@@ -606,7 +606,7 @@ export default function get_data() {
       Kit: "Phosphos Charges",
       Tags: "Alchemy",
       Description:
-        "Volatile bullets that ignite targets and produce blinding flashes of light. When used with Produce a Grenade this kit either ignites the area or creates a harmless but blinding burst of light.",
+        "Volatile bullets that ignite targets and produce blinding flashes of light. You can expend a Potion to create a flash bomb that blinds enemies.",
     },
     {
       Class: "Alchemist",
@@ -622,7 +622,7 @@ export default function get_data() {
       Kit: "Trenchsteel Charges",
       Tags: "Alchemy",
       Description:
-        "Loaded bullets that fire twice, changing trajectory in mid-air to shoot around corners or cover. When used with Produce a Grenade this kit explodes into a mass of ball bearings, dealing Physical damage and significantly impacting mobility.",
+        "Loaded bullets that fire twice, changing trajectory in mid-air to shoot around corners or cover. You can expend a Potion to create a ball bearing grenade that deals damage and covers an area with metal balls.",
     },
     {
       Class: "Mage",

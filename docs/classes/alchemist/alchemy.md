@@ -8,15 +8,17 @@ nav_order: 3
 
 # Alchemy
 
-> **Player**: I want to take down the wall with a grenade.
+> **Player**: I want to take down the wall with a _Concussive Charge_.
 >
-> **GM**: Alright. The grenade goes off, making a loud explosion and blowing a hole in the wall. Mark off a Charge Point.
+> **GM**: Alright. You can mark off a potion to produce a grenade.
 
 Alchemy kits are some of the most versatile in _Miracuse_. They include strange substances, poisons, explosives, and semi-magical tools. This section provides a few examples of how alchemy kits are used.
 
 ---
 
 ### Kit Usage Examples
+
+> **Tip**: Many alchemy kits can be enhanced or converted into grenades by expending a Potion.
 
 ##### Grease Charge
 
@@ -25,17 +27,16 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 | Create a small grease slick on the floor                        | +0 (No Roll Needed) |
 | Shoot someone with a grease bullet                              | +1                  |
 | Shoot someone's feet with a grease bullet, causing them to slip | +2                  |
-| Throw a grease slick grenade                                    | Charge Point        |
+| Throw a grease slick grenade                                    | Potion Box          |
 
 ##### Agua Regia
 
-| Action                                                     | Approx. Difficulty  |
-| ---------------------------------------------------------- | ------------------- |
-| Destroy a wagon's axle by dropping acid on it              | +0 (No Roll Needed) |
-| Dissolve a cursed object                                   | +0 (No Roll Needed) |
-| Create a hole in the floor to reach the basement           | +0 (No Roll Needed) |
-| Instantly create a hole in the floor to reach the basement | Charge Point        |
-| Throw a poisonous gas grenade                              | Charge Point        |
+| Action                                           | Approx. Difficulty  |
+| ------------------------------------------------ | ------------------- |
+| Destroy a wagon's axle by dropping acid on it    | +0 (No Roll Needed) |
+| Dissolve a cursed object                         | +0 (No Roll Needed) |
+| Create a hole in the floor to reach the basement | +0 (No Roll Needed) |
+| Throw a poisonous gas grenade                    | Potion Box          |
 
 ##### Quicksilver
 
@@ -44,8 +45,7 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 | Change the servant into a ladder                        | +0 (No Roll Needed) |
 | Change the servant into a sword                         | +0 (No Roll Needed) |
 | Use the servant as a sword to strike someone (Strength) | +1                  |
-| Change the servant into a small wagon                   | Charge Point        |
-| Deflect an attack using the servant                     | Charge Point        |
+| Change the servant into a small wagon                   | Potion Box          |
 
 ---
 
@@ -53,19 +53,13 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 
 > **Tip**: Using a potion in combat takes an action.
 
-Charge Points can be spent to _Produce a Potion_, allowing someone to recover two Physical boxes. Unlike most alchemy kits, potions can be used by non-Alchemists without issue.
+The primary use of potions is to recover from Physical damage or remove afflictions like poison. Unlike many alchemy items, they can be used by anyone regardless of training. 
+
+The secondary use of potions is to empower alchemy kits. Many tools can be converted into grenades or otherwise enhanced by using a potion.
 
 ##### Flashback Handoffs
 
-As part of _Produce a Potion_, an Alchemist can declare that they gave a potion to one of the other player characters earlier in the day, so long as they could have plausibly done so.
-
----
-
-### Grenades
-
-> **Tip**: Grenades can harm allies too. Be careful when throwing them into the fray.
-
-Charge Points can also be spent to _Produce a Grenade_, which cause damage in a wide area of effect and impact surroundings. Certain kits can change the effect of grenades.
+As part of using a potion, an Alchemist can declare that they gave the potion to another player characters earlier in the day, so long as they could have plausibly done so.
 
 ---
 

@@ -61,4 +61,4 @@ The Skill a character uses when attacking roughly corresponds to the weapons the
 
 Many situations may call for some specific piece of gear like a coil of rope or a torch. Unless the Players have gone out of their way to acquire that gear, the GM will decide whether or not their character is likely to have it on hand.
 
-An exception to this is the **<span style="color: {{ site.alchemist_color }}">Alchemist's</span>** [What You Needed](../../classes/scoundrel/index.md) ability. They can spend a Charge Point to pull out equipment that their character might not normally have on hand.
+An exception to this is the **<span style="color: {{ site.scoundrel_color }}">Scoundrel's</span>** [What You Needed](../../classes/scoundrel/index.md) ability. They can spend a Trick box to pull out equipment that their character might not normally have on hand.

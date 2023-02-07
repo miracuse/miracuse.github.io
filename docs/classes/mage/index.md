@@ -11,21 +11,21 @@ nav_order: 3
 
 The Mage forms pacts with the primal spirits of the world to perform miracles and spells. Some come by their magic through careful study, others through natural aptitude or religious tradition.
 
-- **<span style="color: {{ site.mage_color }}">Magic</span>**: Mages can commune with spirits. They use this Skill whenever they use magic.
+- **<span style="color: {{ site.mage_color }}">Magic</span>**: Mages use Talismans to channel otherworldly power. They roll this Skill whenever they do so.
 
 - **<span style="color: {{ site.mage_color }}">Presence</span>**: Mages have deep reserves of inner strength. This Skill increases their Mental [Health](../../gameplay/health.md), which can let them cast big spells when they're [out of resources](../../gameplay/resources#pushing-it). Presence can also be used to detect and understand magic in the area.
 
-- **[Mana Points](#mana-points)**: The Mage's resource lets them amplify their magic to new heights, combining spirits to create new spells or simplify fueling larger-than-life castings.
+- **[Mana](#mana)**: Mages have pools of energy within them that can be used to empower Talismans for powerful magic.
 
 ---
 
-### Mana Points
+### Mana
 
-Mages can draw heavily on the spirits a few times each day to produce grand workings of magic. These instances are represented as **Mana Points** and can be used for the following:
+Adventurers with a strong relationship to the supernatural accumulate power inside their bodies, called **Mana**, which can be used in the casting of spells. One of the signs of having Mana is an abnormally strong **<span style="color: {{ site.mage_color }}">Presence</span>**.
 
-- **Amplify a Talisman**: Empower an equipped Talisman to go far beyond its usual usage.
+- **Powerful Magic**: Empower an equipped Talisman to go beyond its usual capabilities for a single use.
 
-- **Combine Talismans**: Combine two Talismans to produce a more complex effect.
+- **Complex Magic**: Combine two Talismans to produce a more complex effect for a single use.
 
 ---
 

@@ -10,7 +10,7 @@ nav_order: 3
 
 > **Player**: I'm going to use _Talisman of Light_ to create the illusion of a wall over the door we just went through.
 >
-> **GM**: Okay. Do you want to roll Magic, or spend a Prep Point to roll Cunning?
+> **GM**: Okay. Do you want to roll Magic, or spend a Trick to roll Cunning?
 
 Scoundrels are able to use Alchemy, Weapon, and Talisman kits, making them the best all-rounders in _Miracuse_. A handful of examples are presented on this page.
 
@@ -18,7 +18,7 @@ Scoundrels are able to use Alchemy, Weapon, and Talisman kits, making them the b
 
 ### Kit Usage Examples
 
-> **Tip**: Prep Points cannot be used to amplify Kits. Instead, they can be spent on _Use a Magic Device_ to roll Cunning instead of Magic for Talismans.
+> **Tip**: Trick boxes can be spent on _Use a Magic Device_ to roll Cunning instead of Magic for Talismans.
 
 ##### Golden Silk
 
@@ -34,9 +34,9 @@ Scoundrels are able to use Alchemy, Weapon, and Talisman kits, making them the b
 | Action                                       | Approx. Difficulty          |
 | -------------------------------------------- | --------------------------- |
 | Create the illusion of voices down a hallway | +0 (No Roll Needed)         |
-| Attack someone by bursting their eardrums    | +1 (Prep Point for Cunning) |
-| Record a conspiracy for evidence             | +1 (Prep Point for Cunning) |
-| Mute the footsteps of your party             | +2 (Prep Point for Cunning) |
+| Attack someone by bursting their eardrums    | +1 (Trick Box for Cunning) |
+| Record a conspiracy for evidence             | +1 (Trick Box for Cunning) |
+| Mute the footsteps of your party             | +2 (Trick Box for Cunning) |
 
 ##### Whisper Bowstring
 
@@ -46,10 +46,3 @@ Scoundrels are able to use Alchemy, Weapon, and Talisman kits, making them the b
 | Shoot someone and prevent them from making noise                       | +1                  |
 | Shoot an alarm bell to mute it for a short time                        | +2                  |
 
----
-
-### Other Notes
-
-##### Kit Amplification
-
-Although Prep Points can't be used to amplify kits, other resources can. A [more experienced](../../more/advancement/index.html) Scoundrel may have points in Bravery, Knowledge, or Presence, giving them access to Fortune, Charge, and Mana Points respectively.

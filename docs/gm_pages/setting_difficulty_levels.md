@@ -55,7 +55,7 @@ Returning to our climbing example, the other Players don't want to wait while th
 
 - Physical/Mental Health
 
-- Charge/Fortune/Mana/Prep Points
+- Potions/Fortune/Mana/Tricks
 
 - Temporarily Lose Access to a Kit (consider rolling a 1d4 to determine which)
 

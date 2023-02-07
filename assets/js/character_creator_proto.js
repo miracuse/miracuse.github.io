@@ -526,39 +526,39 @@ class CharacterSheet extends React.Component {
             <b>Resources</b>
           </div>
 
-          <div className="charge_point_text">
-            <InfoBox message="Charge Points can be used to work potent alchemy, amplifying the effects of an equipped Alchemy kit. They can also be used to 'Produce a Potion', 'Produce a Grenade', or declare that you have 'What You Needed'." />
-            <label>Charge Points</label>
+          <div className="potion_text">
+            <InfoBox message="Potions can be used to recover two Physical boxes or treat afflictions like poison." />
+            <label>Potions</label>
           </div>
           <ResourceTrack
-            prefix="charge_point"
+            prefix="potion"
             boxCount={2 * this.state.Knowledge}
           />
 
-          <div className="mana_point_text">
-            <InfoBox message="Mana Points can be used to cast powerful spells, amplifying the effects of an equipped Talisman or combining two Talismans to produce a complex effect." />
-            <label>Mana Points</label>
+          <div className="mana_text">
+            <InfoBox message="Mana can be used to briefly power-up a Talisman for a big spell, or to combine two Talismans." />
+            <label>Mana</label>
           </div>
           <ResourceTrack
-            prefix="mana_point"
+            prefix="mana"
             boxCount={2 * this.state.Presence}
           />
 
-          <div className="fortune_point_text">
-            <InfoBox message="Fortune Points can be used to pull off fantastical physical feats, amplifying the effects of an equipped Weapon. They can also be used to 'Reroll' or 'Avoid Harm'." />
-            <label>Fortune Points</label>
+          <div className="fortune_text">
+            <InfoBox message="Fortune can be used to reroll an action, a maximum of one time per action." />
+            <label>Fortune</label>
           </div>
           <ResourceTrack
-            prefix="fortune_point"
+            prefix="fortune"
             boxCount={2 * this.state.Bravery}
           />
 
-          <div className="prep_point_text">
-            <InfoBox message="Prep Points can be used to 'Disappear From Sight', 'Produce a Disguise', 'Use a Magic Device', or declare 'I Know a Guy'." />
-            <label>Prep Points</label>
+          <div className="trick_text">
+            <InfoBox message="Tricks have many uses, including 'Use Magic Device', 'I Know a Guy', and 'What You Needed'." />
+            <label>Tricks</label>
           </div>
           <ResourceTrack
-            prefix="prep_point"
+            prefix="trick"
             boxCount={2 * this.state.Cunning}
           />
 

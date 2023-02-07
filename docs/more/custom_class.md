@@ -47,4 +47,4 @@ The process for creating a custom class is not much different from using the bas
 
 **Description**
 
-A holy knight trained in the arts of war and magic. **<span style="color: {{ site.paladin_color }}">Paladins</span>** are less capable at spellcasting than Mages, but gain a great deal of versatility from their access to Talismans. Likewise, **<span style="color: {{ site.paladin_color }}">Paladins</span>** have none of the Weapons of a **<span style="color: {{ site.soldier_color }}">Soldier</span>**, but have similar durability, a small pool of Fortune Points, and high **<span style="color: {{ site.soldier_color }}">Strength</span>**.
+A holy knight trained in the arts of war and magic. **<span style="color: {{ site.paladin_color }}">Paladins</span>** are less capable at spellcasting than Mages, but gain a great deal of versatility from their access to Talismans. Likewise, **<span style="color: {{ site.paladin_color }}">Paladins</span>** have none of the Weapons of a **<span style="color: {{ site.soldier_color }}">Soldier</span>**, but have similar durability, a small pool of Fortune, and high **<span style="color: {{ site.soldier_color }}">Strength</span>**.

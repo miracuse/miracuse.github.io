@@ -18,6 +18,8 @@ Weapon kits add extra effects to attacks, but they're also useful tools for inte
 
 ### Kit Usage Examples
 
+> **Tip**: Fortune boxes can be spent to "Perform Heroics", using a Weapon kit to do something beyond its usual capabilities.
+
 ##### Windcutter
 
 | Action                                                                    | Approx. Difficulty  |
@@ -25,8 +27,8 @@ Weapon kits add extra effects to attacks, but they're also useful tools for inte
 | Cut a high tree branch with a blade of wind                               | +0 (No Roll Needed) |
 | Cut an enemy at range with a blade of wind                                | +1                  |
 | Cut a distant enemy with a blade of wind                                  | +2                  |
-| Create a small whirlwind that causes harm in an area                      | +3 or Fortune Point |
-| Create a large blade of wind that leaves gouges on the side of a building | +3 or Fortune Point |
+| Create a small whirlwind that causes harm in an area                      | +3 or Fortune Box |
+| Create a large blade of wind that leaves gouges on the side of a building | +3 or Fortune Box |
 
 ##### Blessed Sword
 
@@ -35,8 +37,8 @@ Weapon kits add extra effects to attacks, but they're also useful tools for inte
 | Slash through a magical force field           | +0 (No Roll Needed) |
 | Break a curse on an ally                      | +1                  |
 | Banish an illusion                            | +2                  |
-| Turn undead away from you                     | +3 or Fortune Point |
-| Destroy illusions in an area and reveal truth | +3 or Fortune Point |
+| Turn undead away from you                     | +3 or Fortune Box |
+| Destroy illusions in an area and reveal truth | +3 or Fortune Box |
 
 ##### Breaker Axe
 
@@ -45,8 +47,8 @@ Weapon kits add extra effects to attacks, but they're also useful tools for inte
 | Break a lock                                          | +0 (No Roll Needed) |
 | Break a metal door open                               | +1                  |
 | Break an enemy's sword                                | +2                  |
-| Break a section of brick wall down in a single strike | +3 or Fortune Point |
-| Break a wagon down the middle                         | +3 or Fortune Point |
+| Break a section of brick wall down in a single strike | +3 or Fortune Box |
+| Break a wagon down the middle                         | +3 or Fortune Box |
 
 ---
 
