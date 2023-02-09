@@ -289,6 +289,54 @@ export default function get_data() {
         "A bottle of truly rancid alcohol. Can be used to numb pain, treat poison, and create flames. Makes for a good offering to spirits.",
     },
     {
+      Class: "Advanced",
+      Type: "Druid",
+      Kit: "Athame",
+      Tags: "Weapon",
+      Description:
+        "A ritual knife used in sacrificial practices. This weapon provides a Mana Point when it\u2019s used to incapacitate a target.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Druid",
+      Kit: "Blight",
+      Tags: "Alchemy",
+      Description:
+        "A dangerous toxin that corrupts and corrodes living matter. Can be used to spread disease, wither plants, and poison water.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Druid",
+      Kit: "Primal Staff",
+      Tags: "Weapon",
+      Description:
+        "A staff carved from a lightning-stuck tree. Wielding this weapon gives you Advantage on all rolls to influence animals and insects. Natural wildlife will not attack you unless provoked.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Druid",
+      Kit: "Talisman of Beasts",
+      Tags: "Talisman",
+      Description:
+        "A wand or other object that can be used to take the form of an animal. Can be used to transform into an animal, such as a wolf, and to communicate with beasts.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Druid",
+      Kit: "Talisman of Storms",
+      Tags: "Talisman",
+      Description:
+        "A wand or other object that can be used to change the weather. Can be used to summon rain, call down lightning, and drive howling winds.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Druid",
+      Kit: "Talisman of Time",
+      Tags: "Talisman",
+      Description:
+        "A wand or other object that can be used to gently influence time. Can be used to peer into the past, accelerate decay, and speed the growth of plants.",
+    },
+    {
       Class: "Alchemist",
       Type: "Enchanter",
       Kit: "Dancing Shadow",
@@ -431,54 +479,6 @@ export default function get_data() {
       Tags: "Weapon, Accurate, Reaction",
       Description:
         "A sharp shortsword that seeks out targets. Using this weapon adds +1 to the roll result of your attacks, significantly improving the chance that they\u2019ll inflict damage. Enemies that attempt to leave your melee range take one box of Physical damage.",
-    },
-    {
-      Class: "Advanced",
-      Type: "Metallurgist",
-      Kit: "Ring of Change",
-      Tags: "Alchemy",
-      Description:
-        "A red ring with the power to convert metals into other metals. The greater the difference from the original, the more Knowledge is required. Requires physical contact. Can be completed instantaneously by expending a Charge Point.",
-    },
-    {
-      Class: "Advanced",
-      Type: "Metallurgist",
-      Kit: "Ring of Decomposition",
-      Tags: "Alchemy",
-      Description:
-        "A black ring with the power to destroy metal. Can be used to split apart metal neatly or violently. The greater the difference from the original, the more Knowledge is required. Requires physical contact. Can be completed instantaneously by expending a Charge Point.",
-    },
-    {
-      Class: "Advanced",
-      Type: "Metallurgist",
-      Kit: "Ring of Forge",
-      Tags: "Alchemy",
-      Description:
-        "A white ring with the power to smelt metals. Can be used to heat metals, purge them of impurities, and strengthen or weaken them. Requires physical contact. The greater the difference from the original, the more Knowledge is required.",
-    },
-    {
-      Class: "Advanced",
-      Type: "Metallurgist",
-      Kit: "Ring of Form",
-      Tags: "Alchemy",
-      Description:
-        "A gold ring with the power to reshape metal. The greater the difference from the original, the more Knowledge is required. Requires physical contact. Can be completed instantaneously by expending a Charge Point.",
-    },
-    {
-      Class: "Advanced",
-      Type: "Metallurgist",
-      Kit: "Runehammer",
-      Tags: "Weapon",
-      Description:
-        "A lengthy warhammer with power over metals. Using this weapon shatters metal objects and heavily damages enchanted items. If a Metallurgist ring kit is equipped, the Runehammer can transmit its effects on impact.",
-    },
-    {
-      Class: "Advanced",
-      Type: "Metallurgist",
-      Kit: "Vitrolic Edge",
-      Tags: "Weapon, High Damage",
-      Description:
-        "A shortsword that sweats sulfuric acid. Using this weapon causes painful acid burns. Successful attacks deal an additional box of Physical damage.",
     },
     {
       Class: "Mage",

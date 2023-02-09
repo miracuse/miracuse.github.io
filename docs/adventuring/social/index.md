@@ -27,12 +27,12 @@ nav_order: 6
 
 ### Persuasion
 
-| Skill     | Good For...                                               |
-| --------- | --------------------------------------------------------- |
-| Bravery   | Inspiring, intimidating, provoking                        |
-| Knowledge | Rhetorical discussion, legal disputes, educated audiences |
-| Presence  | Charm magic, hypnotizing the weak-willed                  |
-| Cunning   | Bluffing, fast-talk, animal handling                      |
+| Skill     | Good For...                               |
+| --------- | ----------------------------------------- |
+| Bravery   | Inspiring, intimidating, provoking        |
+| Knowledge | Rhetorical discussion, logical persuasion |
+| Presence  | Charm magic, hypnotizing the weak-willed  |
+| Cunning   | Bluffing, haggling, fast-talk             |
 
 Each of the classes has their own approach to persuasion. Some approaches work better or worse depending on the audience. A **<span style="color: {{ site.soldier_color }}">Soldier</span>** might threaten a bandit king into submission, but they probably won't succeed in intimidating an actual king.
 
