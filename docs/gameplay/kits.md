@@ -25,6 +25,18 @@ Each kit has one or more **Tags** that describe it.
 
 - **Reaction**: Items that allow Players to act outside their turn in combat if certain conditions are met.
 
+##### Weapon Tags
+
+Weapon kits may have their own set of tags.
+
+- **High Damage**: This weapon inflicts two boxes of damage instead of one.
+
+- **Accurate**: This weapon adds +1 to attack rolls, making it more likely to cause damage.
+
+- **Defense**: This weapon provides a defensive benefit after use.
+
+- **Ranged**: This weapon can cause harm from outside melee range.
+
 ---
 
 ### Specializations

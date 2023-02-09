@@ -20,15 +20,6 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 
 > **Tip**: Many alchemy kits can be enhanced or converted into grenades by expending a Potion.
 
-##### Grease Charge
-
-| Action                                                          | Approx. Difficulty  |
-| --------------------------------------------------------------- | ------------------- |
-| Create a small grease slick on the floor                        | +0 (No Roll Needed) |
-| Shoot someone with a grease bullet                              | +1                  |
-| Shoot someone's feet with a grease bullet, causing them to slip | +2                  |
-| Throw a grease slick grenade                                    | Potion Box          |
-
 ##### Agua Regia
 
 | Action                                           | Approx. Difficulty  |
@@ -46,6 +37,15 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 | Change the servant into a sword                         | +0 (No Roll Needed) |
 | Use the servant as a sword to strike someone (Strength) | +1                  |
 | Change the servant into a small wagon                   | Potion Box          |
+
+##### Grease Charge
+
+| Action                                                          | Approx. Difficulty  |
+| --------------------------------------------------------------- | ------------------- |
+| Create a small grease slick on the floor                        | +0 (No Roll Needed) |
+| Shoot someone with a grease bullet                              | +1                  |
+| Shoot someone's feet with a grease bullet, causing them to slip | +2                  |
+| Throw a grease slick grenade                                    | Potion Box          |
 
 ---
 

@@ -47,6 +47,6 @@ Recognized masters of the sword, in great demand across the world as mercenaries
 
 A warrior sworn to uphold a code of honor, one who employs their skills towards noble ends. [Knights](../../more/specializations/knight.html) are recognized by their holy swords, but are trained with a variety of weapons and tools. Knighthood orders are held in particularly high esteem, and are empowered to act as civil officials in times of need.
 
-### <span style="color: {{ site.soldier_color }}">Myrmidon</span>
+### <span style="color: {{ site.soldier_color }}">Legionnaire</span>
 
-A recent addition to modern military forces, [Myrmidons](../../more/specializations/myrmidon.html) are commonly used as the backbone of assault teams. They emphasize offensive tactics and tools to cause the most destruction in the least amount of time. Commonly associated with the "Breaker Axe", a recent alchemical innovation sturdy enough to break normal swords and breach walls.
+Part combatant, part laborer, the [Legionnaire](../../more/specializations/legionnaire.html) is an experiment in enhancing traditional infantry with alchemy. Their equipment strongly resembles standard issue gear, but a series of modifications puts their capability well above basic spears and shields. Legionnaires are often distinguished by their skill in construction, able to leverage a portable alchemical cement to build bridges, roads, and encampments while on the march.

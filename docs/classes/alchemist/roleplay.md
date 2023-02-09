@@ -30,7 +30,7 @@ nav_order: 2
 
 ### Alchemy
 
-Alchemy is a scientific discipline. The conventional process for becoming an Alchemist is to study under a master, developing careful discernment and committing formulae to memory over an apprenticeship. Journeyman are encouraged to develop their skills through travel. They ply their trade in cities, battlefields, ancient ruins, and elsewhere. Their skill in creating miraculous healing draughts makes them welcome in many communities, though finding true companions is rare. An Alchemist's foreign worldview make it difficult to fit amongst locals.
+Alchemy is a scientific discipline. The conventional process for becoming an Alchemist is to study under a master, developing careful discernment and committing formulae to memory over an apprenticeship. Journeyman are encouraged to develop their skills while traveling across the world. They ply their trade in cities, battlefields, ancient ruins, and elsewhere. Their skill in creating miraculous healing draughts makes them welcome in many communities, though finding true companions is rare. An Alchemist's foreign worldview make it difficult to fit amongst locals.
 
 While often compared to **<span style="color: {{ site.mage_color }}">Magic</span>**, the products of Alchemy are distinctly more consistent. A Mage's power depends on their relationship with spirits. Their spells are never quite the same across any two castings. In contrast, an Alchemist's workings are more reliable. Their grenades do not misfire, their potions are never duds, and any particular workings they've come up with are predictable in their effects.
 
@@ -50,9 +50,15 @@ Example Concepts:
 
 ---
 
-### Trade Secrets
+### What is a Potion?
 
-Alchemists are not the only ones capable of producing potions and grenades, though they're certainly the best. Many adventurers find it worthwhile to study enough chemistry to create their own, or at the very least, to tell duds from the genuine article when shopping.
+> **Tip**: Alchemists aren't the only ones with the know-how to brew potions. Many adventurers and medical practitioners have picked up enough chemistry to cook small batches.
+
+Potions come in a great many varieties and recipes, but nearly all share a base ingredient of Pyre Powder. 
+
+Pyre Powder is a processed material whose manufacture is a carefully kept trade secret of the Alchemist Guild. When dissolved in a mixture of oils and mineral water, it produces a highly reactive chemical that accelerates natural healing mechanisms. Unfortunately, the resulting mixture only retains its potency for a day.
+
+Many Alchemists have found Pyre Powder mixtures to be useful in enhancing other alchemical products. Grenades, created by mixing potions with gunpowder and other substances, are a common application. 
 
 ---
 
@@ -60,7 +66,7 @@ Alchemists are not the only ones capable of producing potions and grenades, thou
 
 ##### In combat...
 
-The Alchemist keeps their distance, taking shots at range with firearms using **<span style="color: {{ site.alchemist_color }}">Perception</span>**. They're able to repel large waves of enemies with _Grenades_, and treat injuries with _Potions_. Their lack of **<span style="color: {{ site.soldier_color }}">Strength</span>** or **<span style="color: {{ site.scoundrel_color }}">Agility</span>** leaves them vulnerable in close combat.
+The Alchemist keeps their distance, taking shots at range with firearms using **<span style="color: {{ site.alchemist_color }}">Perception</span>**. They're able to treat injuries with potions, and are capable of repelling large groups of enemies with grenades. Their lack of **<span style="color: {{ site.soldier_color }}">Strength</span>** or **<span style="color: {{ site.scoundrel_color }}">Agility</span>** leaves them vulnerable in close combat.
 
 ##### Socially...
 
