@@ -254,7 +254,7 @@ export default function get_data() {
       Kit: "Marauder Flintlock",
       Tags: "Weapon, High Damage",
       Description:
-        "A bewitched handgun whose bullets hit like cannon balls. Using this weapon breaks through armor and obstacles with significant force, but it requires several minutes to reload. Successful attacks deal an additional box of damage.",
+        "A bewitched handgun whose bullets hit like cannon balls. Using this weapon breaks through armor and obstacles with significant force, but it requires several minutes to reload. Successful attacks deal an additional box of damage. You have Advantage when using this weapon to destroy objects.",
     },
     {
       Class: "Advanced",
@@ -318,7 +318,7 @@ export default function get_data() {
       Kit: "Talisman of Beasts",
       Tags: "Talisman",
       Description:
-        "A wand or other object that can be used to take the form of an animal. Can be used to transform into an animal, such as a wolf, and to communicate with beasts.",
+        "A wand or other object that can be used to take the form of an animal. Can be used to transform into wolves, birds, and other animals, as well as communicate with beasts.",
     },
     {
       Class: "Advanced",
@@ -383,6 +383,102 @@ export default function get_data() {
       Tags: "Alchemy",
       Description:
         "You have a servant made of floating glass, able to break apart into sharp shards and reform at will so long as it\u2019s near you. You can expend a Potion to transform it into a grenade, shredding everything in the blast radius before reforming.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Fell Knight",
+      Kit: "Ash Knives",
+      Tags: "Weapon, Ranged",
+      Description:
+        "A set of cursed throwing knives that prevent alchemical and magical healing. Using this weapon ensures that targets cannot be revived or brought back as undead.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Fell Knight",
+      Kit: "Mournblade",
+      Tags: "Weapon, High Damage",
+      Description:
+        "A sword with a demon trapped inside that feeds off the living. Using this weapon restores a Fortune Point whenever it\u2019s used to incapacitate an enemy. Successful attacks deal an additional box of damage. You have Advantage when intimidating others.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Fell Knight",
+      Kit: "Talisman of Fear",
+      Tags: "Talisman",
+      Description:
+        "A wand or other object that can be used to push terror into the minds of others. Can be used to incite a retreat, paralyze an enemy with fear, and interrogate others.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Fell Knight",
+      Kit: "Talisman of Siphoning",
+      Tags: "Talisman",
+      Description:
+        "A wand or other object that can be used to steal away energy. Can be used to drain the lifeforce from others, tap into the power of an enchanted object, and consume spirits. Restores one Physical box on successful attacks.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Fell Knight",
+      Kit: "Vim Drink",
+      Tags: "Alchemy",
+      Description:
+        "A distant ancestor to the modern alchemist\u2019s potion. When consumed, the user expends a Mental box in exchange for recoving a Physical box. Can be used by others.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Fell Knight",
+      Kit: "Wyther Toxin",
+      Tags: "Alchemy",
+      Description:
+        "A bitter venom that causes intense pain. Can be applied to the user\u2019s weapons to inflict Mental damage, cripple the wills of enemies, or cloud the mind.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Gunslinger",
+      Kit: "Bouncing Bullets",
+      Tags: "Alchemy",
+      Description:
+        "Rubberized bullets that ricochet in closed spaces. Can be used to bounce gunfire around corners, to cause non-lethal harm, and to knock objects over instead of piercing them.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Gunslinger",
+      Kit: "Hand Cannon",
+      Tags: "Weapon, High Damage, Ranged",
+      Description:
+        "A hefty iron sidearm that hits harder than most. Successful attacks deal an additional box of damage.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Gunslinger",
+      Kit: "Quickdraw Pistol",
+      Tags: "Weapon, Ranged",
+      Description:
+        "A handgun built for quick access. If you strike before an enemy, the attack is treated as a sneak attack. You have Advantage when determining who goes first, such as rolling turn order.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Gunslinger",
+      Kit: "Silver Bullets",
+      Tags: "Alchemy",
+      Description:
+        "Bullets that tear through magic. Can be used to break through spells, damage enchanted equipment, and harm spirits. Valuable enough to be used as bribes.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Gunslinger",
+      Kit: "Warded Greatcoat",
+      Tags: "Alchemy",
+      Description:
+        "A thick leather coat that reaches past the knees. Sigils of protection have been stitched into the lining, making the wearer resistant to bullets and blunt trauma. You have Advantage when defending against bludgeoning.",
+    },
+    {
+      Class: "Advanced",
+      Type: "Gunslinger",
+      Kit: "Whiplash Bullets",
+      Tags: "Alchemy",
+      Description:
+        "Bullets that leave a gust of wind in their wake. Can be used to clear smokescreens, scatter debris, and throw arrows off course.",
     },
     {
       Class: "Soldier",
