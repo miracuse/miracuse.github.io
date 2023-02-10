@@ -10,6 +10,6 @@ nav_exclude: true
 
 > Soldier Specialization
 
-Part combatant, part laborer, the Legionnaire is an experiment in enhancing traditional infantry with alchemy. Their equipment strongly resembles standard issue gear, but a series of modifications sets their capability well above basic spears and shields. Legionnaires are often distinguished by their skill in construction, able to leverage a portable alchemical cement to build bridges, roads, and encampments while on the march.
+Part combatant, part laborer, the Legionnaire is a traditional infantryman with alchemically-enhanced equipment. Their gear strongly resembles standard issue equipment, but with a series of modifications to improve their effectiveness. Legionnaires are often distinguished by their skill in construction, able to leverage a portable alchemical cement to build bridges, roads, and encampments while on the march.
 
 {% include specialization_kits.html %}

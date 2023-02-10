@@ -10,6 +10,6 @@ nav_exclude: true
 
 > Advanced Specialization
 
-Druids practice one of the oldest magic traditions in existence. Their teachings are relayed verbally from master to student in holy caves, sacred groves, and beside the ancient menhirs. They're said to revel in the light of the new moon each month, to practice human sacrifice, and to take the shape of beasts and feast on livestock. Some even say the Druids are immortal, immune to the ravages of time. Though it's difficult to tell fact from fiction, Druids are indisputably figures of awe.
+Practitioners of one of the oldest magic traditions in existence. The teachings of Druids are never committed to writing. Instead, they are recited from master to student in holy caves, sacred groves, and beside ancient menhirs. They're said to revel in the light of the new moon each month, to practice human sacrifice, and to never age. Though the truth of these rumors is in dispute, the air of mystery surrounding their discipline leads many to treat them with great caution.
 
 {% include specialization_kits.html %}

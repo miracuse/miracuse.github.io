@@ -23,12 +23,11 @@ The Scoundrel is a master of misdirection. They blend in with crowds and shadows
 
 **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** adventurers know that there's more than one way to solve any given problem. They keep a variety of **Tricks** handy.
 
-- **Use a Magic Device**: Pull out a charm, gem, or other charged object to use a Talisman with **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** instead of **<span style="color: {{ site.mage_color }}">Magic</span>**. The object is depleted after a single use.
-
 - **I Know a Guy**: Declare that you just so happen to have a contact in the area that owes you a favor, and can help with your present situation.
 
 - **What You Needed**: Declare that you have an unlikely item, such as a smoke bomb or valuable bribe, that can help with the current situation.
 
+- **Use Magic Device**: Substitute a Trick box for a Mana box to mimic the Mage's [Perform High Magic](../mage/index.html#mana).
 
 ---
 
@@ -52,4 +51,4 @@ Members of a courier's guild, trained in a little magic, a little stage alchemy,
 
 ### <span style="color: {{ site.scoundrel_color }}">The Ranger</span>
 
-A catch-all term for those trained in a martial tradition popularized by the Tribes. [Rangers](../../more/specializations/ranger.html) are fleet-footed warriors with an affinity for the natural world.
+A catch-all term for those trained in a martial tradition popularized by the Tribes. [Rangers](../../more/specializations/ranger.html) are fleet-footed warriors with an affinity for the natural world. Their ability to control and communicate with wildlife makes them highly sought after as guides and monster hunters.

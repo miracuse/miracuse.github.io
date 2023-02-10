@@ -10,6 +10,6 @@ nav_exclude: true
 
 > Advanced Specialization
 
-Templars are often affiliated with a Knight Order, but may not be knights themselves. They make use of Weapons, Alchemy, and Talismans specialized for combatting hostile magic. Many Nations and Temples employ their services to track down rogue practitioners of magic.
+A Templar's arsenal consists of tools dedicated to countering and neutralizing dark magic. They're frequently employed to hunt down [Conjurers](conjurer.html) and other renegades before one of the creatures they summon gets loose and harms others. Many are members of a [Knight Order](../the_world.html#the-knight-orders), though plenty find employment as bounty hunters.
 
 {% include specialization_kits.html %}

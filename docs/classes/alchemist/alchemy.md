@@ -18,7 +18,7 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 
 ### Kit Usage Examples
 
-> **Tip**: Many alchemy kits can be enhanced or converted into grenades by expending a Potion.
+> **Tip**: Potion boxes can be spent to "Perform Synthesis", converting an Alchemy kit into a grenade or otherwise enhancing its effects.
 
 ##### Agua Regia
 
@@ -29,14 +29,14 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 | Create a hole in the floor to reach the basement | +0 (No Roll Needed) |
 | Throw a poisonous gas grenade                    | Potion Box          |
 
-##### Quicksilver
+##### Compliant Rod
 
-| Action                                                  | Approx. Difficulty  |
-| ------------------------------------------------------- | ------------------- |
-| Change the servant into a ladder                        | +0 (No Roll Needed) |
-| Change the servant into a sword                         | +0 (No Roll Needed) |
-| Use the servant as a sword to strike someone (Strength) | +1                  |
-| Change the servant into a small wagon                   | Potion Box          |
+| Action                                         | Approx. Difficulty  |
+| ---------------------------------------------- | ------------------- |
+| Change the rod into a ten-foot pole            | +0 (No Roll Needed) |
+| Change the rod into a pocket-sized baton       | +0 (No Roll Needed) |
+| Use the rod to strike someone (Strength)       | +1                  |
+| Change the rod into a grappling hook and chain | Potion Box          |
 
 ##### Grease Charge
 
@@ -60,15 +60,3 @@ The secondary use of potions is to empower alchemy kits. Many tools can be conve
 ##### Flashback Handoffs
 
 As part of using a potion, an Alchemist can declare that they gave the potion to another player characters earlier in the day, so long as they could have plausibly done so.
-
----
-
-### Other Notes
-
-##### Skill Use
-
-Unlike Talismans, alchemy kits are not generally tied to a specific skill. A kit like the Bard's _Faerie Fire_ might be used with Cunning to perform, Agility to cause harm, or with no skill at all for simple tasks like creating smokescreens.
-
-##### Kits Without Direct Uses
-
-Not all Alchemy kits have direct uses. The _Golem_ kit, for example, provides a rock golem servant that follows orders.

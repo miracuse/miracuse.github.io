@@ -10,6 +10,6 @@ nav_exclude: true
 
 > Mage Specialization
 
-Wizards are a recent historical development. They manipulate fundamental energies like motion and heat by drawing inspiration from the practice of alchemy. Though many traditionalists are skeptical of something like a “Spirit of Gravity”, Wizards have found a surprising degree of acceptance among Mage communities.
+A recent historical development, Wizards manipulate fundamental energies like motion and heat by drawing inspiration from the practice of alchemy. They tend to be at odds with more traditional [Shamans](shaman.html) and [Priests](priest.html), treating spirits as things to be measured rather than worshipped. Most carry a "spellbook" filled with observation records of their experiments. Their Alchemist counterparts are the [Enchanters](enchanter.html).
 
 {% include specialization_kits.html %}

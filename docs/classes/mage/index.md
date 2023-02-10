@@ -23,9 +23,9 @@ The Mage forms pacts with the primal spirits of the world to perform miracles an
 
 Adventurers with a strong relationship to the supernatural accumulate power inside their bodies, called **Mana**, which can be used in the casting of spells. One of the signs of having Mana is an abnormally strong **<span style="color: {{ site.mage_color }}">Presence</span>**.
 
-- **Powerful Magic**: Empower an equipped Talisman to go beyond its usual capabilities for a single use.
+- **Perform High Magic**: Empower an equipped Talisman to go beyond its usual capabilities for a single use.
 
-- **Complex Magic**: Combine two Talismans to produce a more complex effect for a single use.
+- **Perform Complex Magic**: Combine two Talismans to produce a more complex effect for a single use.
 
 ---
 
@@ -53,4 +53,4 @@ However, their influence is intended to be subtle rather than overt. Those who r
 
 ### <span style="color: {{ site.mage_color }}">The Wizard</span>
 
-[Wizards](../../more/specializations/wizard.html) are a recent historical development. They manipulate fundamental energies like motion and heat by drawing inspiration from the practice of alchemy. Though many traditionalists are skeptical of something like a "Spirit of Gravity", Wizards have found a surprising degree of acceptance among Mage communities.
+A recent historical development, [Wizards](../../more/specializations/wizard.html) manipulate fundamental energies like motion and heat by drawing inspiration from the practice of alchemy. Though many traditionalists are skeptical of something like a “Spirit of Gravity”, the efficacy of their methods is undeniable. Most carry a "spellbook" filled with observation records of their experiments.

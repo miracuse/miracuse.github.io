@@ -10,6 +10,6 @@ nav_exclude: true
 
 > Alchemist Specialization
 
-Military Alchemists that specialize in munitions. Sappers have played a large part in checking the traditional role of Mages on the battlefield in recent years. Their elemental grenades and sharpshooting skills have changed the shape of warfare.
+Military Alchemists that specialize in munitions. Sappers have played a large part in checking the traditional role of Mages on the battlefield in recent years. Their grenades and sharpshooting rival the destructive power of [Shamans](shaman.html). Unlike [Gunslingers](gunslinger.html), Sappers prefer to stay out of the fray by sniping from a distance.
 
 {% include specialization_kits.html %}

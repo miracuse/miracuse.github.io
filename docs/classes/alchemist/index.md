@@ -25,6 +25,8 @@ The Alchemist is a keen adventurer, keeping a watchful eye out for danger and a 
 
 - **Heal**: Drinking a potion can instantly recover two Physical boxes or treat a natural affliction (poison, disease, etc.)
 
+- **Perform Synthesis**: Empower an Alchemy kit to go beyond its usual usage for a single action.
+
 ---
 
 ### Knowledge

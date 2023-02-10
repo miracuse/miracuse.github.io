@@ -10,6 +10,6 @@ nav_exclude: true
 
 > Advanced Specialization
 
-A member of a controversial [Knight](../specializations/knight.md) Order that believes in using any means necessary to resolve conflicts. Unlike their noble counterparts, Fell Knights leverage poison, fear, and underhanded tactics to ensure that warfare will remain as brief as possible. Their signature weapons are the Mournblades, cursed swords with demons sealed inside that funnel the power of defeated enemies into the user.
+A member of a controversial [Knight Order](../the_world.html#knight-order) that believes in using any means necessary to resolve conflicts. Unlike traditional [Knights](knight.html), Fell Knights will leverage poison, fear, and underhanded tactics to ensure that warfare remains as brief as possible. Despite their ideals, Fell Knights are generally thought of as violent mercenaries masquerading as proper Knights.
 
 {% include specialization_kits.html %}

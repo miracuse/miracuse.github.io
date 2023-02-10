@@ -10,6 +10,6 @@ nav_exclude: true
 
 > Alchemist Specialization
 
-Esoteric philosophers seeking to unify alchemy and magic by creating life. Enchanters have succeeded in engineering a variety of constructs to serve their needs. Though coveted by ambitious nations, many Enchanters are held in low esteem by other Alchemists, and are generally considered heretical by Mages.
+Esoteric philosophers seeking to unify alchemy and magic by creating life. Though enchanted weapons are typically the result of magecraft, "Enchanters" are a branch of Alchemists that borrow from magical traditions to create animated servants. None have so far succeeded in making a living creature, but their failed experiments show remarkable promise as adventuring tools. Their Mage counterparts are the [Wizards](wizard.html).
 
 {% include specialization_kits.html %}

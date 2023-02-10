@@ -10,6 +10,6 @@ nav_exclude: true
 
 > Alchemist Specialization
 
-Every Alchemist can brew potions and craft grenades, but a Chemist goes beyond proficiency into mastery. Their emphasis on the fundamentals results in higher grade products with superb potency. Chemists are commonly recruited as Court Alchemists, researchers, and physicians by influential organizations.
+Any Alchemist can brew potions, but a Chemist goes beyond proficiency into mastery. They work with stranger and more dangerous substances that require specialized training to handle. Most carry a _Mist Rod_, a mechanical tool that can spray chemicals with a degree of precision.
 
 {% include specialization_kits.html %}

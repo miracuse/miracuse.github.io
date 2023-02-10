@@ -10,6 +10,6 @@ nav_exclude: true
 
 > Advanced Specialization
 
-An experienced pirate or sailor, familiar with trade routes along both the sea and the sky. The rising prevalence of airships has led many waterborne shiphands to try their luck among the winds with a surprising degree of success.
+An experienced pirate or sailor. Many have served on both waterborne and airborne craft. Though a common trade among pirates, Corsairs are just as often employed as a countermeasure to banditry.
 
 {% include specialization_kits.html %}
