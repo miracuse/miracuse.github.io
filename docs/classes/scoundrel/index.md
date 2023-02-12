@@ -37,7 +37,7 @@ The Scoundrel is a master of misdirection. They blend in with crowds and shadows
 
 The Scoundrel's social skill allows them to move without attracting notice, to sense impending harm, and to bluff. **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** is used for all manner of "thief-like" behavior.
 
----
+<!-- ---
 
 ### Specializations
 
@@ -51,4 +51,4 @@ Members of a courier's guild, trained in a little magic, a little stage alchemy,
 
 ### <span style="color: {{ site.scoundrel_color }}">The Ranger</span>
 
-A catch-all term for those trained in a martial tradition popularized by the Tribes. [Rangers](../../more/specializations/ranger.html) are fleet-footed warriors with an affinity for the natural world. Their ability to control and communicate with wildlife makes them highly sought after as guides and monster hunters.
+A catch-all term for those trained in a martial tradition popularized by the Tribes. [Rangers](../../more/specializations/ranger.html) are fleet-footed warriors with an affinity for the natural world. Their ability to control and communicate with wildlife makes them highly sought after as guides and monster hunters. -->

@@ -1,31 +1,31 @@
 export default function get_class_description_data() {
   var data = [
     {
-      Class: "Alchemist",
-      Description:
-        "The Alchemist is a keen adventurer, keeping a watchful eye out for danger and a finger on the trigger. They carry a collection of handy items to throw at any problem that arises.",
+        "Class":"Alchemist",
+        "Tags":"Perception, Knowledge",
+        "Description":"An adventurer with a keen mind and a watchful eye. Known for their healing potions and skill with firearms."
     },
     {
-      Class: "Soldier",
-      Description:
-        "The Soldier is a warrior without peer. They may be knights, bandits, infantrymen, or come from other walks of life. What makes one a Soldier is not their profession but their skill at arms, courage, and a surprising amount of luck.",
+        "Class":"Custom",
+        "Tags":"Any",
+        "Description":"Build your own adventurer. Choose any Specialization and one of the following Skill layouts: two +2 skills, or one +2 skill and two +1 skills."
     },
     {
-      Class: "Mage",
-      Description:
-        "The Mage forms pacts with the primal spirits of the world to perform miracles and spells. Some come by their magic through careful study, others through natural aptitude or religious tradition.",
+        "Class":"Mage",
+        "Tags":"Magic, Presence",
+        "Description":"An adventurer with command over otherworldly forces. Known for their ability to perform magic through talismans."
     },
     {
-      Class: "Scoundrel",
-      Description:
-        "The Scoundrel is a master of misdirection. They blend in with crowds and shadows, only revealing themselves when the time is right. Many employ their talents as hunters or merchants, though it’s just as common to see them working as thieves and assassins.",
+        "Class":"Scoundrel",
+        "Tags":"Agility, Cunning",
+        "Description":"An adventurer with good reflexes and a silver tongue. Known for their versatility and stealth."
     },
     {
-      Class: "Custom",
-      Description:
-        "Build your own!",
-    },
-  ];
+        "Class":"Soldier",
+        "Tags":"Strength, Bravery",
+        "Description":"An adventurer with strong arms and a stronger will. Known for their aptitude with enchanted weapons."
+    }
+];
 
   return data;
 }

@@ -16,25 +16,15 @@ layout: default
       <button class="tablinks active" onclick="openTab(event, 'character_sheet')">Play</button>
       <button class="tablinks" onclick="openTab(event, 'rules')">Basic Rules</button>
       <button class="tablinks" onclick="openTab(event, 'health')">Health</button>
-      <button class="tablinks" onclick="openTab(event, 'fighting')">Fighting</button>
-      <button class="tablinks" onclick="openTab(event, 'kits')">Kits</button>
+      <!-- <button class="tablinks" onclick="openTab(event, 'fighting')">Fighting</button> -->
+      <!-- <button class="tablinks" onclick="openTab(event, 'kits')">Kits</button> -->
       <button class="tablinks" onclick="openTab(event, 'resources')">Resources</button>
-      <button class="tablinks" onclick="openTab(event, 'advancement')">Advancement</button>
+      <!-- <button class="tablinks" onclick="openTab(event, 'advancement')">Advancement</button> -->
     </div>
 
     <!-- Character Sheet Tab -->
     <div id="character_sheet" class="tabcontent" style="display: block">
-      <table class="alignment-table">
-        <tr>
-          <td><h3>Character Sheet</h3></td>
-          <td align="right">
-            <!-- Dice Roller -->
-            <button class="btn" onclick="diceRoll(event, 'dice_outcome')">Roll Dice</button>
-            <label id="dice_outcome">+0</label>
-            <br/>
-          </td>
-        </tr>
-      </table>
+      <h3>Character Sheet</h3>
 
       <!-- React will populate the character sheet into this div -->
       <div id="root"></div>
@@ -197,35 +187,33 @@ layout: default
     <!-- Resources Tab -->
     <div id="resources" class="tabcontent">
       <h3>Resources</h3>
-      <p>
-        <a href="../docs/gameplay/resources.html">Resources</a> are caches of power that let you use special abilities and amplify your equipped kits. Like health, they are measured in boxes and recover when you <a href="../docs/adventuring/exploration/making_camp.html">Make Camp</a>.
-      </p>
-      <hr>
 
       <h5>Potions</h5>
-      <p>
-        The Alchemist's resource, used to heal two boxes of Physical damage or empower Alchemy kits.
-      </p>
+      <blockquote>
+        <p>
+          The Alchemist's resource, used to heal two boxes of Physical damage or empower Alchemy kits.
+        </p>
+      </blockquote>
 
       <h5>Fortune</h5>
-      <p>
+      <blockquote>
         The Soldier's resource, used to reroll dice or empower Weapon kits.
-      </p>
+      </blockquote>
 
       <h5>Mana</h5>
-      <p>
-        The Mage's resource, used to empower Talisman kits or combine Talismans for complex spells:
-      </p>
+      <blockquote>
+        The Mage's resource, used to empower Talisman kits or combine Talismans for complex spells.
+      </blockquote>
 
       <h5>Tricks</h5>
-      <p>
+      <blockquote>
         The Scoundrel's resource, used for many things:
         <ul>
-          <li><b>Use a Magic Device</b> to use Cunning instead of Magic with a Talisman kit.</li>
+          <li><b>Use a Magic Device</b> to empower Talisman kits (but not combine them).</li>
           <li>Declare <b>I Know a Guy</b>, describing a local contact you might plausibly have that owes you a favor.</li>
           <li>Declare that you have <b>What You Needed</b>, describing an item or object that can help you with the current situation.</li>
         </ul>
-      </p>
+      </blockquote>
 
       <!-- <h3>Pushing It</h3>
       <p>
@@ -257,8 +245,6 @@ layout: default
 
 
     <!-- Load Javascript -->
-    <!-- <script src="../assets/js/react.development.js"></script>
-        <script src="../assets/js/react-dom.development.js"></script>  -->
     <!-- <script
       src="https://unpkg.com/react@18/umd/react.development.js"
       crossorigin

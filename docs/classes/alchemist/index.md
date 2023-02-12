@@ -37,7 +37,7 @@ The Alchemist's social skill focuses on exploration and logical arguments. **<sp
 
 It's also used when persuading others with reason. Convincing a bandit that you aren't worth robbing because the risk doesn't outweigh the reward falls under this category.
 
----
+<!-- ---
 
 ### Specializations
 
@@ -51,4 +51,4 @@ Esoteric philosophers seeking to unify alchemy and magic by creating life. [Ench
 
 ### <span style="color: {{ site.alchemist_color }}">The Sapper</span>
 
-Military Alchemists that specialize in munitions. [Sappers](../../more/specializations/sapper.html) have played a large part in checking the traditional role of Mages on the battlefield in recent years. Their elemental grenades and sharpshooting skills have changed the shape of warfare.
+Military Alchemists that specialize in munitions. [Sappers](../../more/specializations/sapper.html) have played a large part in checking the traditional role of Mages on the battlefield in recent years. Their elemental grenades and sharpshooting skills have changed the shape of warfare. -->

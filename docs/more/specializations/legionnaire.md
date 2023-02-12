@@ -10,6 +10,8 @@ nav_exclude: true
 
 > Soldier Specialization
 
-Part combatant, part laborer, the Legionnaire is a traditional infantryman with alchemically-enhanced equipment. Their gear strongly resembles standard issue equipment, but with a series of modifications to improve their effectiveness. Legionnaires are often distinguished by their skill in construction, able to leverage a portable alchemical cement to build bridges, roads, and encampments while on the march.
+Part combatant, part laborer, the Legionnaire is an infantryman with alchemically-enhanced equipment. They're well known for being deployed to create public infrastructure in hazardous areas.
+
+A Legionnaire's gear strongly resembles standard issue for [The Lost Empire](../the_world.html) but with a number of alchemical enhancements. Their weapons are deadlier, their shields more portable, and each soldier is outfitted with a supply of portable cement for use in construction work.
 
 {% include specialization_kits.html %}

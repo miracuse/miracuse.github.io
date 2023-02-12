@@ -19,21 +19,22 @@ requirements:
 
 ## Process Data
 data: 
-	$(PYTHON_INTERPRETER) kit_convert.py
+	$(PYTHON_INTERPRETER) data_convert.py
 
-## Deploy Locally
-local:
-	bundle exec jekyll serve
+## Compile JSX into JS
+js:
+	npx babel --presets @babel/preset-react assets/js/character_creator_proto.js > assets/js/character_creator.js
 
 ## Lint/Format Files
 lint:
 	# black *.py
 	npx prettier --write .
 
-## Compile JSX into JS
-js:
-	npx babel --presets @babel/preset-react assets/js/character_creator_proto.js > assets/js/character_creator.js
+## Deploy Locally
+local:
+	bundle exec jekyll serve
 
-## Make All
-all: data local
+build:
+	data js
+
 

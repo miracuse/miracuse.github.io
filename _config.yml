@@ -15,9 +15,11 @@ exclude:
     "prettierrc.json",
     ".prettierignore",
     "kit_convert.py",
-    "miracuse_kits.xlsx",
+    "miracuse_data.xlsx",
+    ".~lock.miracuse_data.xlsx#",
     "Makefile",
     "devel/",
+    "resources/"
   ]
 
 # Theme Settings

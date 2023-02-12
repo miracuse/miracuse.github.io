@@ -9,7 +9,11 @@ nav_exclude: true
 # {{ page.title }}
 
 > Alchemist Specialization
+> 
+> _Perception, Knowledge_
 
-Any Alchemist can brew potions, but a Chemist goes beyond proficiency into mastery. They work with stranger and more dangerous substances that require specialized training to handle. Most carry a _Mist Rod_, a mechanical tool that can spray chemicals with a degree of precision.
+A specialist that works with strange and dangerous substances. They're able to create near-magical effects by creating chemical sprays with a _Mist Rod_ and synthesizing materials into grenades.
+
+Chemists are an uncommon sight in adventuring circles. Most find lucrative employment by processing materials in ateliers, and have no need to risk their lives for fortune. The exception are journeyman alchemists still traveling the world as part of their training.
 
 {% include specialization_kits.html %}

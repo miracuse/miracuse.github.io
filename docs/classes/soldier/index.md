@@ -35,7 +35,7 @@ The Soldier is a warrior without peer. They may be knights, bandits, infantrymen
 
 The Soldier's social skill is focused on emotional persuasion. **<span style="color: {{ site.soldier_color }}">Bravery</span>** could be used to cow a group of bandits into submission, relying on a character's reputation and frightening competency. It could also be used to rally a peasant militia in defense of their town or taunt an arrogant noble into a duel.
 
----
+<!-- ---
 
 ### Specializations
 
@@ -49,4 +49,4 @@ A warrior sworn to uphold a code of honor, one who employs their skills towards 
 
 ### <span style="color: {{ site.soldier_color }}">Legionnaire</span>
 
-Part combatant, part laborer, the [Legionnaire](../../more/specializations/legionnaire.html) is an experiment in enhancing traditional infantry with alchemy. Their equipment strongly resembles standard issue gear, but a series of modifications puts their capability well above basic spears and shields. Legionnaires are often distinguished by their skill in construction, able to leverage a portable alchemical cement to build bridges, roads, and encampments while on the march.
+Part combatant, part laborer, the [Legionnaire](../../more/specializations/legionnaire.html) is an experiment in enhancing traditional infantry with alchemy. Their equipment strongly resembles standard issue gear, but a series of modifications puts their capability well above basic spears and shields. Legionnaires are often distinguished by their skill in construction, able to leverage a portable alchemical cement to build bridges, roads, and encampments while on the march. -->

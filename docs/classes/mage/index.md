@@ -39,7 +39,7 @@ It's also used influence the minds of others. A Mage can muddle the mind of a di
 
 However, their influence is intended to be subtle rather than overt. Those who realize they're being charmed can break away with ease, and are often furious at having been manipulated. Many jurisdictions consider the exercise of **<span style="color: {{ site.mage_color }}">Presence</span>** to be a form of assault.
 
----
+<!-- ---
 
 ### Specializations
 
@@ -53,4 +53,4 @@ However, their influence is intended to be subtle rather than overt. Those who r
 
 ### <span style="color: {{ site.mage_color }}">The Wizard</span>
 
-A recent historical development, [Wizards](../../more/specializations/wizard.html) manipulate fundamental energies like motion and heat by drawing inspiration from the practice of alchemy. Though many traditionalists are skeptical of something like a “Spirit of Gravity”, the efficacy of their methods is undeniable. Most carry a "spellbook" filled with observation records of their experiments.
+A recent historical development, [Wizards](../../more/specializations/wizard.html) manipulate fundamental energies like motion and heat by drawing inspiration from the practice of alchemy. Though many traditionalists are skeptical of something like a “Spirit of Gravity”, the efficacy of their methods is undeniable. Most carry a "spellbook" filled with observation records of their experiments. -->

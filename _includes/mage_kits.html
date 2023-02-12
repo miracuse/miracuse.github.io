@@ -4,7 +4,7 @@
     <td><b>Kit</b></td>
     <td><b>Description</b></td>
   </thead>
-  {% for row in site.data.miracuse_kits %} {% if row.Type == "Priest" %}
+  {% for row in site.data.miracuse_kit %} {% if row.Type == "Priest" %}
   <tr>
     <td><b>{{ row.Kit }}</b></td>
     <td>{{ row.Description }}</td>
@@ -20,7 +20,7 @@
     <td><b>Kit</b></td>
     <td><b>Description</b></td>
   </thead>
-  {% for row in site.data.miracuse_kits %} {% if row.Type == "Shaman" %}
+  {% for row in site.data.miracuse_kit %} {% if row.Type == "Shaman" %}
   <tr>
     <td><b>{{ row.Kit }}</b></td>
     <td>{{ row.Description }}</td>
@@ -36,7 +36,7 @@
     <td><b>Kit</b></td>
     <td><b>Description</b></td>
   </thead>
-  {% for row in site.data.miracuse_kits %} {% if row.Type == "Wizard" %}
+  {% for row in site.data.miracuse_kit %} {% if row.Type == "Wizard" %}
   <tr>
     <td><b>{{ row.Kit }}</b></td>
     <td>{{ row.Description }}</td>

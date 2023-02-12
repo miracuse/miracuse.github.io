@@ -64,6 +64,15 @@ function fetchKitDescription(kit) {
 function fetchClassDescription(class_name) {
   const class_description_data = CLASS_DESCRIPTION_DATA.filter(x => x.Class === class_name).map(x => x.Description);
   return class_description_data;
+} // Fetch "Class Tags" data.
+//
+//     Pull "Class Tags" data where the data matches the provided Class.
+//
+
+
+function fetchClassTags(class_name) {
+  const class_tag_data = CLASS_DESCRIPTION_DATA.filter(x => x.Class === class_name).map(x => x.Tags);
+  return class_tag_data;
 } // Fetch "Class Description" data.
 //
 //     Pull "Class Description" data where the data matches the provided Class.
@@ -73,6 +82,15 @@ function fetchClassDescription(class_name) {
 function fetchSpecializationDescription(specialization) {
   const specialization_description_data = SPECIALIZATION_DESCRIPTION_DATA.filter(x => x.Specialization === specialization).map(x => x.Description);
   return specialization_description_data;
+} // Fetch "Class Description" data.
+//
+//     Pull "Class Description" data where the data matches the provided Class.
+//
+
+
+function fetchSpecializationTags(specialization) {
+  const specialization_tag_data = SPECIALIZATION_DESCRIPTION_DATA.filter(x => x.Specialization === specialization).map(x => x.Tags);
+  return specialization_tag_data;
 } // Fetch "Kit Tag" data.
 //
 //     Pull "Kit Tag" data where the data matches the provided Kit.
@@ -109,7 +127,35 @@ class InfoBox extends React.Component {
     }, /*#__PURE__*/React.createElement("b", null, "?"));
   }
 
-} // Class descriptions.
+} // class DiceRoller extends React.Component {
+//   constructor(props){
+//     super(props)
+//     this.handleDiceRoll = this.handleDiceRoll.bind(this);
+//   }
+//   handleDiceRoll() {
+//     this.props.onDiceRoll();
+//   }
+//   render() {
+//       return(
+//       <div className="dice_button">
+//         <button className="btn" onClick={this.handleDiceRoll}>Roll Dice</button>
+//       </div>
+//     );
+//   }
+// }
+// class DiceResult extends React.Component {
+//   constructor(props){
+//     super(props)
+//   }
+//   render() {
+//     return (
+//       <div className="dice_outcome">
+//         <label id="dice_outcome">{this.props.diceValue}</label>
+//       </div>
+//     );
+//   }
+// }
+// Class descriptions.
 //
 //     Presents a class description based on state.
 //
@@ -123,7 +169,11 @@ class ClassDescriptionHolder extends React.Component {
   render() {
     return /*#__PURE__*/React.createElement("div", {
       className: "character_class_description_text"
-    }, /*#__PURE__*/React.createElement("p", null, fetchClassDescription(this.props.class)));
+    }, /*#__PURE__*/React.createElement("p", {
+      className: "character_class_tags"
+    }, "(", fetchClassTags(this.props.class), ")"), /*#__PURE__*/React.createElement("p", {
+      className: "character_class_description"
+    }, /*#__PURE__*/React.createElement("b", null, this.props.class, ":"), " ", fetchClassDescription(this.props.class)));
   }
 
 } // Specialization descriptions.
@@ -140,7 +190,11 @@ class SpecializationDescriptionHolder extends React.Component {
   render() {
     return /*#__PURE__*/React.createElement("div", {
       className: "character_specialization_description_text"
-    }, /*#__PURE__*/React.createElement("p", null, fetchSpecializationDescription(this.props.specialization)));
+    }, /*#__PURE__*/React.createElement("p", {
+      className: "character_specialization_tags"
+    }, "(", fetchSpecializationTags(this.props.specialization), ")"), /*#__PURE__*/React.createElement("p", {
+      className: "character_specialization_description"
+    }, /*#__PURE__*/React.createElement("b", null, this.props.specialization, ":"), " ", fetchSpecializationDescription(this.props.specialization)));
   }
 
 } // A dropdown for specializations.
@@ -345,6 +399,7 @@ class CharacterSheet extends React.Component {
     this.handleSkillChange = this.handleSkillChange.bind(this);
     this.handleSpecializationChange = this.handleSpecializationChange.bind(this);
     this.handleKitChange = this.handleKitChange.bind(this);
+    this.handleDiceRoll = this.handleDiceRoll.bind(this);
     this.state = {
       Class: "",
       Tier: 1,
@@ -360,7 +415,8 @@ class CharacterSheet extends React.Component {
       Magic: 0,
       Presence: 0,
       Agility: 0,
-      Cunning: 0
+      Cunning: 0,
+      DiceValue: "+0"
     };
   } // Runs on Startup //////////////////////////////////////////////////////////
 
@@ -441,6 +497,29 @@ class CharacterSheet extends React.Component {
         Kit_04: kit
       });
     }
+  }
+
+  handleDiceRoll() {
+    var result;
+    var dice_outcome = Math.floor(Math.random() * 10) + 1;
+
+    if (dice_outcome == 10) {
+      result = "+2";
+    } else if (dice_outcome >= 8) {
+      result = "+1";
+    } else if (dice_outcome >= 4) {
+      result = "+0";
+    } else if (dice_outcome >= 2) {
+      result = "-1";
+    } else if (dice_outcome == 1) {
+      result = "-2";
+    } else {
+      result = "err";
+    }
+
+    this.setState({
+      DiceValue: result
+    });
   } // Render the Page on State Change //////////////////////////////////////////
 
 
@@ -484,7 +563,7 @@ class CharacterSheet extends React.Component {
       className: "barrier_01"
     }, /*#__PURE__*/React.createElement("hr", null)), /*#__PURE__*/React.createElement("div", {
       className: "subclass_header"
-    }, /*#__PURE__*/React.createElement("p", null, "Specializations")), /*#__PURE__*/React.createElement(SpecializationHolder, {
+    }, /*#__PURE__*/React.createElement("p", null, "Specialization")), /*#__PURE__*/React.createElement(SpecializationHolder, {
       class: this.state.Class,
       specialization: [this.state.Specialization_01],
       onChange: this.handleSpecializationChange
@@ -539,43 +618,43 @@ class CharacterSheet extends React.Component {
     }, /*#__PURE__*/React.createElement("hr", null)), /*#__PURE__*/React.createElement("div", {
       className: "kit_header"
     }, /*#__PURE__*/React.createElement("b", null, "Kits")), /*#__PURE__*/React.createElement(KitHolder, {
-      key: 1,
+      key: "kit_holder_1",
       index: 1,
       kit: this.state.Kit_01,
       specializations: [this.state.Specialization_01],
       onChange: this.handleKitChange
     }), /*#__PURE__*/React.createElement(KitHolder, {
-      key: 2,
+      key: "kit_holder_2",
       index: 2,
       kit: this.state.Kit_02,
       specializations: [this.state.Specialization_01],
       onChange: this.handleKitChange
     }), /*#__PURE__*/React.createElement(KitHolder, {
-      key: 3,
+      key: "kit_holder_3",
       index: 3,
       kit: this.state.Kit_03,
       specializations: [this.state.Specialization_01],
       onChange: this.handleKitChange
     }), /*#__PURE__*/React.createElement(KitHolder, {
-      key: 4,
+      key: "kit_holder_4",
       index: 4,
       kit: this.state.Kit_04,
       specializations: [this.state.Specialization_01],
       onChange: this.handleKitChange
     }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
-      key: 1,
+      key: "kit_description_holder_1",
       index: 1,
       kit: this.state.Kit_01
     }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
-      key: 2,
+      key: "kit_description_holder_2",
       index: 2,
       kit: this.state.Kit_02
     }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
-      key: 3,
+      key: "kit_description_holder_3",
       index: 3,
       kit: this.state.Kit_03
     }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
-      key: 4,
+      key: "kit_description_holder_4",
       index: 4,
       kit: this.state.Kit_04
     })));
