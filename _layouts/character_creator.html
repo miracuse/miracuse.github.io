@@ -24,12 +24,17 @@ layout: default
 
     <!-- Character Sheet Tab -->
     <div id="character_sheet" class="tabcontent" style="display: block">
-      <h3>Character Sheet</h3>
-
-      <!-- Dice Roller -->
-      <button class="btn" onclick="diceRoll(event, 'dice_outcome')">Roll Dice</button>
-      <label id="dice_outcome">+0</label>
-      <br/>
+      <table class="alignment-table">
+        <tr>
+          <td><h3>Character Sheet</h3></td>
+          <td align="right">
+            <!-- Dice Roller -->
+            <button class="btn" onclick="diceRoll(event, 'dice_outcome')">Roll Dice</button>
+            <label id="dice_outcome">+0</label>
+            <br/>
+          </td>
+        </tr>
+      </table>
 
       <!-- React will populate the character sheet into this div -->
       <div id="root"></div>

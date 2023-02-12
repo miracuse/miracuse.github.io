@@ -55,3 +55,17 @@ thead {
     border-bottom: $border $border-color;
   }
 }
+
+.alignment-table {
+  tr {
+    td {
+      background-color: $body-background-color;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+}

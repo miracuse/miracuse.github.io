@@ -1,4 +1,4 @@
-export default function get_data() {
+export default function get_kit_data() {
   var data = [
     {
       Class: "Scoundrel",

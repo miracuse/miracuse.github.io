@@ -1,11 +1,15 @@
 // Imports ////////////////////////////////////////////////////////////////////
-import get_data from "./data.js";
+import get_kit_data from "./kit_data.js";
+import get_class_description_data from "./class_data.js";
+import get_specialization_description_data from "./specialization_data.js";
 import get_class_mapping from "./class_mapping.js"; // Globals ////////////////////////////////////////////////////////////////////
 // A list of game-specific skills that a character can put points into
 
 const SKILLS = ["Perception", "Knowledge", "Strength", "Bravery", "Magic", "Presence", "Agility", "Cunning"]; // Hard-coded descriptions of "kits" that a character can equip
 
-const DATA = get_data(); // Functions //////////////////////////////////////////////////////////////////
+const KIT_DATA = get_kit_data();
+const CLASS_DESCRIPTION_DATA = get_class_description_data();
+const SPECIALIZATION_DESCRIPTION_DATA = get_specialization_description_data(); // Functions //////////////////////////////////////////////////////////////////
 // JS simplified mockup of np.arange(x)
 //
 //     Creates an array of size x with contents that count upwards from 1.
@@ -27,10 +31,10 @@ function arange(size) {
 
 function fetchSpecializations(characterClass) {
   if (characterClass != "Custom") {
-    const specialization_data = Array.from(new Set(DATA.filter(x => x.Class === characterClass).map(x => x.Type)));
+    const specialization_data = Array.from(new Set(KIT_DATA.filter(x => x.Class === characterClass).map(x => x.Type)));
     return specialization_data;
   } else {
-    const specialization_data = Array.from(new Set(DATA.map(x => x.Type)));
+    const specialization_data = Array.from(new Set(KIT_DATA.map(x => x.Type)));
     return specialization_data;
   }
 } // Fetch "Kit" data.
@@ -40,7 +44,7 @@ function fetchSpecializations(characterClass) {
 
 
 function fetchKits(specializations) {
-  const kit_data = DATA.filter(x => specializations.find(element => element === x.Type)).map(x => x.Kit);
+  const kit_data = KIT_DATA.filter(x => specializations.find(element => element === x.Type)).map(x => x.Kit);
   return kit_data;
 } // Fetch "Kit Description" data.
 //
@@ -49,8 +53,26 @@ function fetchKits(specializations) {
 
 
 function fetchKitDescription(kit) {
-  const kit_description_data = DATA.filter(x => x.Kit === kit).map(x => x.Description);
+  const kit_description_data = KIT_DATA.filter(x => x.Kit === kit).map(x => x.Description);
   return kit_description_data;
+} // Fetch "Class Description" data.
+//
+//     Pull "Class Description" data where the data matches the provided Class.
+//
+
+
+function fetchClassDescription(class_name) {
+  const class_description_data = CLASS_DESCRIPTION_DATA.filter(x => x.Class === class_name).map(x => x.Description);
+  return class_description_data;
+} // Fetch "Class Description" data.
+//
+//     Pull "Class Description" data where the data matches the provided Class.
+//
+
+
+function fetchSpecializationDescription(specialization) {
+  const specialization_description_data = SPECIALIZATION_DESCRIPTION_DATA.filter(x => x.Specialization === specialization).map(x => x.Description);
+  return specialization_description_data;
 } // Fetch "Kit Tag" data.
 //
 //     Pull "Kit Tag" data where the data matches the provided Kit.
@@ -58,7 +80,7 @@ function fetchKitDescription(kit) {
 
 
 function fetchKitTags(kit) {
-  const kit_tag_data = DATA.filter(x => x.Kit === kit).map(x => x.Tags);
+  const kit_tag_data = KIT_DATA.filter(x => x.Kit === kit).map(x => x.Tags);
   return kit_tag_data;
 } // Components /////////////////////////////////////////////////////////////////
 // A button that presents information.
@@ -85,6 +107,40 @@ class InfoBox extends React.Component {
       className: "info-btn",
       onClick: this.onClick
     }, /*#__PURE__*/React.createElement("b", null, "?"));
+  }
+
+} // Class descriptions.
+//
+//     Presents a class description based on state.
+//
+
+
+class ClassDescriptionHolder extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return /*#__PURE__*/React.createElement("div", {
+      className: "character_class_description_text"
+    }, /*#__PURE__*/React.createElement("p", null, fetchClassDescription(this.props.class)));
+  }
+
+} // Specialization descriptions.
+//
+//     Presents a specialization description based on state.
+//
+
+
+class SpecializationDescriptionHolder extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return /*#__PURE__*/React.createElement("div", {
+      className: "character_specialization_description_text"
+    }, /*#__PURE__*/React.createElement("p", null, fetchSpecializationDescription(this.props.specialization)));
   }
 
 } // A dropdown for specializations.
@@ -292,7 +348,7 @@ class CharacterSheet extends React.Component {
     this.state = {
       Class: "",
       Tier: 1,
-      Specialization_01: [""],
+      Specialization_01: "",
       Kit_01: "",
       Kit_02: "",
       Kit_03: "",
@@ -407,10 +463,6 @@ class CharacterSheet extends React.Component {
     }, /*#__PURE__*/React.createElement("div", {
       className: "character_info_header"
     }, /*#__PURE__*/React.createElement("p", null, "Class")), /*#__PURE__*/React.createElement("div", {
-      className: "character_class_text"
-    }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Your Class determines what skills you start with."
-    }), /*#__PURE__*/React.createElement("label", null, "Class")), /*#__PURE__*/React.createElement("div", {
       className: "character_class"
     }, /*#__PURE__*/React.createElement("select", {
       id: "class_select",
@@ -426,64 +478,28 @@ class CharacterSheet extends React.Component {
       value: "Scoundrel"
     }, "Scoundrel"), /*#__PURE__*/React.createElement("option", {
       value: "Custom"
-    }, "Custom"))), /*#__PURE__*/React.createElement("div", {
-      className: "character_tier_text"
-    }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Your Tier determines how many specializations you can have at one time. More experienced characters have a higher tier."
-    }), /*#__PURE__*/React.createElement("label", null, "Tier")), /*#__PURE__*/React.createElement("div", {
-      className: "character_tier"
-    }, /*#__PURE__*/React.createElement("div", {
-      id: "tier_select",
-      name: "charactertier"
-    }, /*#__PURE__*/React.createElement("input", {
-      type: "number",
-      defaultValue: "1",
-      min: "1",
-      max: "4"
-    }))), /*#__PURE__*/React.createElement("div", {
+    }, "Custom"))), /*#__PURE__*/React.createElement(ClassDescriptionHolder, {
+      class: this.state.Class
+    }), /*#__PURE__*/React.createElement("div", {
+      className: "barrier_01"
+    }, /*#__PURE__*/React.createElement("hr", null)), /*#__PURE__*/React.createElement("div", {
       className: "subclass_header"
     }, /*#__PURE__*/React.createElement("p", null, "Specializations")), /*#__PURE__*/React.createElement(SpecializationHolder, {
       class: this.state.Class,
-      specialization: this.state.Specialization_01,
+      specialization: [this.state.Specialization_01],
       onChange: this.handleSpecializationChange
+    }), /*#__PURE__*/React.createElement(SpecializationDescriptionHolder, {
+      specialization: this.state.Specialization_01
     }), /*#__PURE__*/React.createElement("div", {
-      className: "character_subclass_02"
-    }, /*#__PURE__*/React.createElement("select", {
-      id: "subclass_select_02",
-      name: "subclass_02",
-      disabled: true
-    }, /*#__PURE__*/React.createElement("option", {
-      value: "None"
-    }, "Locked"))), /*#__PURE__*/React.createElement("div", {
-      className: "character_subclass_03"
-    }, /*#__PURE__*/React.createElement("select", {
-      id: "subclass_select_03",
-      name: "subclass_03",
-      disabled: true
-    }, /*#__PURE__*/React.createElement("option", {
-      value: "None"
-    }, "Locked"))), /*#__PURE__*/React.createElement("div", {
-      className: "character_subclass_04"
-    }, /*#__PURE__*/React.createElement("select", {
-      id: "subclass_select_04",
-      name: "subclass_04",
-      disabled: true
-    }, /*#__PURE__*/React.createElement("option", {
-      value: "None"
-    }, "Locked"))), /*#__PURE__*/React.createElement("div", {
       className: "health_header"
     }, /*#__PURE__*/React.createElement("p", null, "Health")), /*#__PURE__*/React.createElement("div", {
       className: "physical_health_text"
-    }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Physical Health represents how many times you can be hit before becoming incapacitated. Increasing Strength will add more boxes."
-    }), /*#__PURE__*/React.createElement("label", null, "Physical Health")), /*#__PURE__*/React.createElement(ResourceTrack, {
+    }, /*#__PURE__*/React.createElement("label", null, "Physical Health")), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "physical_health",
       boxCount: 3 + this.state.Strength
     }), /*#__PURE__*/React.createElement("div", {
       className: "mental_health_text"
-    }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Mental Health represents how much psychological harm you can withstand before becoming incapacitated. Increasing Presence will add more boxes."
-    }), /*#__PURE__*/React.createElement("label", null, "Mental Health")), /*#__PURE__*/React.createElement(ResourceTrack, {
+    }, /*#__PURE__*/React.createElement("label", null, "Mental Health")), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "mental_health",
       boxCount: 3 + this.state.Presence
     }), /*#__PURE__*/React.createElement("div", {
@@ -519,6 +535,8 @@ class CharacterSheet extends React.Component {
     }), /*#__PURE__*/React.createElement("div", {
       className: "skills_header"
     }, /*#__PURE__*/React.createElement("b", null, "Skills")), skill_holders, skill_text_holders, /*#__PURE__*/React.createElement("div", {
+      className: "barrier_02"
+    }, /*#__PURE__*/React.createElement("hr", null)), /*#__PURE__*/React.createElement("div", {
       className: "kit_header"
     }, /*#__PURE__*/React.createElement("b", null, "Kits")), /*#__PURE__*/React.createElement(KitHolder, {
       key: 1,

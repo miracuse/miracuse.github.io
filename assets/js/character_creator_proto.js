@@ -1,5 +1,7 @@
 // Imports ////////////////////////////////////////////////////////////////////
-import get_data from "./data.js";
+import get_kit_data from "./kit_data.js";
+import get_class_description_data from "./class_data.js";
+import get_specialization_description_data from "./specialization_data.js";
 import get_class_mapping from "./class_mapping.js";
 
 // Globals ////////////////////////////////////////////////////////////////////
@@ -16,7 +18,9 @@ const SKILLS = [
 ];
 
 // Hard-coded descriptions of "kits" that a character can equip
-const DATA = get_data();
+const KIT_DATA = get_kit_data();
+const CLASS_DESCRIPTION_DATA = get_class_description_data();
+const SPECIALIZATION_DESCRIPTION_DATA = get_specialization_description_data();
 
 // Functions //////////////////////////////////////////////////////////////////
 // JS simplified mockup of np.arange(x)
@@ -38,11 +42,11 @@ function arange(size) {
 function fetchSpecializations(characterClass) {
   if (characterClass != "Custom") {
     const specialization_data = Array.from(
-      new Set(DATA.filter((x) => x.Class === characterClass).map((x) => x.Type))
+      new Set(KIT_DATA.filter((x) => x.Class === characterClass).map((x) => x.Type))
     );
     return specialization_data;
   } else {
-    const specialization_data = Array.from(new Set(DATA.map((x) => x.Type)));
+    const specialization_data = Array.from(new Set(KIT_DATA.map((x) => x.Type)));
     return specialization_data;
   }
 }
@@ -52,7 +56,7 @@ function fetchSpecializations(characterClass) {
 //     Pull "Kit" data where the data matches the provided Specialization.
 //
 function fetchKits(specializations) {
-  const kit_data = DATA.filter((x) =>
+  const kit_data = KIT_DATA.filter((x) =>
     specializations.find((element) => element === x.Type)
   ).map((x) => x.Kit);
   return kit_data;
@@ -63,10 +67,32 @@ function fetchKits(specializations) {
 //     Pull "Kit Description" data where the data matches the provided Kit.
 //
 function fetchKitDescription(kit) {
-  const kit_description_data = DATA.filter((x) => x.Kit === kit).map(
+  const kit_description_data = KIT_DATA.filter((x) => x.Kit === kit).map(
     (x) => x.Description
   );
   return kit_description_data;
+}
+
+// Fetch "Class Description" data.
+//
+//     Pull "Class Description" data where the data matches the provided Class.
+//
+function fetchClassDescription(class_name) {
+  const class_description_data = CLASS_DESCRIPTION_DATA.filter((x) => x.Class === class_name).map(
+    (x) => x.Description
+  );
+  return class_description_data;
+}
+
+// Fetch "Class Description" data.
+//
+//     Pull "Class Description" data where the data matches the provided Class.
+//
+function fetchSpecializationDescription(specialization) {
+  const specialization_description_data = SPECIALIZATION_DESCRIPTION_DATA.filter((x) => x.Specialization === specialization).map(
+    (x) => x.Description
+  );
+  return specialization_description_data;
 }
 
 // Fetch "Kit Tag" data.
@@ -74,7 +100,7 @@ function fetchKitDescription(kit) {
 //     Pull "Kit Tag" data where the data matches the provided Kit.
 //
 function fetchKitTags(kit) {
-  const kit_tag_data = DATA.filter((x) => x.Kit === kit).map((x) => x.Tags);
+  const kit_tag_data = KIT_DATA.filter((x) => x.Kit === kit).map((x) => x.Tags);
   return kit_tag_data;
 }
 
@@ -99,6 +125,46 @@ class InfoBox extends React.Component {
       <icon className="info-btn" onClick={this.onClick}>
         <b>?</b>
       </icon>
+    );
+  }
+}
+
+// Class descriptions.
+//
+//     Presents a class description based on state.
+//
+class ClassDescriptionHolder extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="character_class_description_text">
+        <p>
+          {fetchClassDescription(this.props.class)}
+        </p>
+      </div>
+    );
+  }
+}
+
+// Specialization descriptions.
+//
+//     Presents a specialization description based on state.
+//
+class SpecializationDescriptionHolder extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="character_specialization_description_text">
+          <p>
+            {fetchSpecializationDescription(this.props.specialization)}
+          </p>
+      </div>
     );
   }
 }
@@ -337,7 +403,7 @@ class CharacterSheet extends React.Component {
     this.state = {
       Class: "",
       Tier: 1,
-      Specialization_01: [""],
+      Specialization_01: "",
       Kit_01: "",
       Kit_02: "",
       Kit_03: "",
@@ -441,10 +507,10 @@ class CharacterSheet extends React.Component {
           <div className="character_info_header">
             <p>Class</p>
           </div>
-          <div className="character_class_text">
+          {/* <div className="character_class_text">
             <InfoBox message="Your Class determines what skills you start with." />
             <label>Class</label>
-          </div>
+          </div> */}
           <div className="character_class">
             <select
               id="class_select"
@@ -459,7 +525,7 @@ class CharacterSheet extends React.Component {
             </select>
           </div>
 
-          <div className="character_tier_text">
+          {/* <div className="character_tier_text">
             <InfoBox message="Your Tier determines how many specializations you can have at one time. More experienced characters have a higher tier." />
             <label>Tier</label>
           </div>
@@ -467,34 +533,31 @@ class CharacterSheet extends React.Component {
             <div id="tier_select" name="charactertier">
               <input type="number" defaultValue="1" min="1" max="4" />
             </div>
+          </div> */}
+
+          <ClassDescriptionHolder
+            class={this.state.Class}
+          />
+
+          {/* Horizontal Rule */}
+          <div className="barrier_01">
+            <hr></hr>
           </div>
 
           {/* Subclasses */}
           <div className="subclass_header">
-            <p>Specializations</p>
+            <p>Specialization</p>
           </div>
 
           <SpecializationHolder
             class={this.state.Class}
-            specialization={this.state.Specialization_01}
+            specialization={[this.state.Specialization_01]}
             onChange={this.handleSpecializationChange}
           />
 
-          <div className="character_subclass_02">
-            <select id="subclass_select_02" name="subclass_02" disabled={true}>
-              <option value="None">Locked</option>
-            </select>
-          </div>
-          <div className="character_subclass_03">
-            <select id="subclass_select_03" name="subclass_03" disabled={true}>
-              <option value="None">Locked</option>
-            </select>
-          </div>
-          <div className="character_subclass_04">
-            <select id="subclass_select_04" name="subclass_04" disabled={true}>
-              <option value="None">Locked</option>
-            </select>
-          </div>
+          <SpecializationDescriptionHolder
+            specialization={this.state.Specialization_01}
+          />
 
           {/* Health */}
           <div className="health_header">
@@ -502,7 +565,6 @@ class CharacterSheet extends React.Component {
           </div>
 
           <div className="physical_health_text">
-            <InfoBox message="Physical Health represents how many times you can be hit before becoming incapacitated. Increasing Strength will add more boxes." />
             <label>Physical Health</label>
           </div>
 
@@ -512,7 +574,6 @@ class CharacterSheet extends React.Component {
           />
 
           <div className="mental_health_text">
-            <InfoBox message="Mental Health represents how much psychological harm you can withstand before becoming incapacitated. Increasing Presence will add more boxes." />
             <label>Mental Health</label>
           </div>
 
@@ -568,6 +629,11 @@ class CharacterSheet extends React.Component {
           </div>
           {skill_holders}
           {skill_text_holders}
+
+          {/* Horizontal Rule */}
+          <div className="barrier_02">
+            <hr></hr>
+          </div>
 
           {/* Kits  */}
           <div className="kit_header">
