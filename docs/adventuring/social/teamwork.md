@@ -22,4 +22,4 @@ nav_order: 1
 >
 > GM: Alright, Player 3 can help. Player 1, roll with Advantage.
 
-**Teamwork** lets one character help another with a task, provided they both have points in the required Skill and that the method of aid makes narrative sense.
+**Teamwork** lets one character help another with a task. In order to do so the helper must have a convincing narrative reason for how their action is able to provide benefit.

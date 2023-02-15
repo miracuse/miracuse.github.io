@@ -3,16 +3,15 @@ layout: default
 title: Magic
 parent: Skills
 grand_parent: More
-nav_exclude: true
 ---
 
 # {{ page.title }}
 
 > Mage Skill
 >
-> Offense, Mystic
+> *Offense, Mystic*
 
-**<span style="color: {{ site.mage_color }}">Magic</span>** is the skill for using Talisman kits. It can do very little by itself, but opens up many options in conjunction with a talisman.
+**<span style="color: {{ site.mage_color }}">Magic</span>** is the skill for using Talismans. It can do very little by itself, but opens up many options in conjunction with a Talisman kit.
 
 ##### When Increased...
 
@@ -25,4 +24,4 @@ nav_exclude: true
 - Heal a friend's wounds
 - Create the illusion of a wall to hide behind
 - Pin a kobold to the ground with gravity
-- Raise a zombie
+- Raise a zombie from the dead

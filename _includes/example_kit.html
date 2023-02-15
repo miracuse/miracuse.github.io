@@ -1,8 +1,9 @@
 <table>
-  {% assign row = site.data.miracuse_kit[1] %}
+  {% for row in site.data.miracuse_kit %} {% if row.Kit == "Vorpal Blade" %}
   <tr>
     <td>{{ row.Class }}: {{ row.Type }}</td>
     <td><b>{{ row.Kit }}</b></td>
     <td><i>Tags: {{ row.Tags }}</i> <br />{{ row.Description }}</td>
   </tr>
+  {% endif %} {% endfor %}
 </table>

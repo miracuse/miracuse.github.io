@@ -13,7 +13,7 @@ The Mage forms pacts with the primal spirits of the world to perform miracles an
 
 - **<span style="color: {{ site.mage_color }}">Magic</span>**: Mages use Talismans to channel otherworldly power. They roll this Skill whenever they do so.
 
-- **<span style="color: {{ site.mage_color }}">Presence</span>**: Mages have deep reserves of inner strength. This Skill increases their Mental [Health](../../gameplay/health.md), which can let them cast big spells when they're [out of resources](../../gameplay/resources#pushing-it). Presence can also be used to detect and understand magic in the area.
+- **<span style="color: {{ site.mage_color }}">Presence</span>**: Mages have a sixth sense for magic. They can feel it in the air and identify its purpose when focusing. They're also able to manipulate ambient magic to bewitch others. 
 
 - **[Mana](#mana)**: Mages have pools of energy within them that can be used to empower Talismans for powerful magic.
 
@@ -35,22 +35,18 @@ Adventurers with a strong relationship to the supernatural accumulate power insi
 
 The Mage's social skill allows them to sense supernatural disturbances and charm others into doing their bidding. **<span style="color: {{ site.mage_color }}">Presence</span>** is used when a player wants to understand magical elements in an area. "Does the magic in this place feel evil?" "Can I tell what the spell on that door does?"
 
-It's also used influence the minds of others. A Mage can muddle the mind of a disinterested guard, "These are not the adventurers you're looking for". They can make themselves appear more attractive to the eyes of a merchant, or create an unnerving sense of dread to make animals anxious.
+It's also used to influence the minds of others. A Mage can muddle the mind of a disinterested guard, "These are not the adventurers you're looking for". They can make themselves appear more attractive to the eyes of a merchant, or create an unnerving sense of dread to make animals anxious.
 
 However, their influence is intended to be subtle rather than overt. Those who realize they're being charmed can break away with ease, and are often furious at having been manipulated. Many jurisdictions consider the exercise of **<span style="color: {{ site.mage_color }}">Presence</span>** to be a form of assault.
 
-<!-- ---
+---
 
 ### Specializations
 
-### <span style="color: {{ site.mage_color }}">The Priest</span>
+Specializations are groups of six [Kits](../../gameplay/kits.html) that reflect a character's trade and training. 
 
-[Priests](../../more/specializations/priest.html) arbitrate the boundaries between worlds. They govern over the living and the dead, the worldly and the otherworldly. Some claim to serve the spirits. Others stand in opposition, drawing from one set of spirits to curb the influence of others.
+* [Priest](../../more/specializations/priest.html)
 
-### <span style="color: {{ site.mage_color }}">The Shaman</span>
+* [Shaman](../../more/specializations/shaman.html)
 
-[Shamans](../../more/specializations/shaman.html) draw on the primordial concepts of the elements. Not just fire, but the symbolic meaning of fire, as a representation of destruction and cleaning.
-
-### <span style="color: {{ site.mage_color }}">The Wizard</span>
-
-A recent historical development, [Wizards](../../more/specializations/wizard.html) manipulate fundamental energies like motion and heat by drawing inspiration from the practice of alchemy. Though many traditionalists are skeptical of something like a “Spirit of Gravity”, the efficacy of their methods is undeniable. Most carry a "spellbook" filled with observation records of their experiments. -->
+* [Wizard](../../more/specializations/wizard.html)

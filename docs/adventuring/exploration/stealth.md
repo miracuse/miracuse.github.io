@@ -24,11 +24,11 @@ In most cases, a Player can simply declare that they're in **Stealth**. Dice rol
 
 ### When to Roll
 
-| Don't Roll                                                           | Do Roll                                  |
-| -------------------------------------------------------------------- | ---------------------------------------- |
-| Sneaking past disinterested villagers                                | Sneaking past on-duty guards             |
-| [Disguising](../../classes/scoundrel/index.md) yourself as a cultist | Lying to the cult leader while disguised |
-| Blending in with a crowd                                             | Hiding from hot pursuit                  |
+| Don't Roll                            | Do Roll                                  |
+| ------------------------------------- | ---------------------------------------- |
+| Sneaking past disinterested villagers | Sneaking past on-duty guards             |
+| Disguising yourself as a cultist      | Lying to the cult leader while disguised |
+| Blending in with a crowd              | Hiding from hot pursuit                  |
 
 ---
 
@@ -40,6 +40,6 @@ A character that attacks while in Stealth does not need to roll. Their attack re
 
 ### Scouting
 
-To **Scout** ahead, a Player rolls **<span style="color: #90a959">Cunning</span>**. Their character [quietly moves forward](stealth.md), collects information about the area, then returns to their party. A successful scouting mission can identify traps and ambushes, while failed scouting missions can result in triggering traps or alerting enemies.
+To scout ahead, a Player rolls **<span style="color: #90a959">Cunning</span>**. Their character quietly moves forward, collects information about the area, then returns to their party. A successful scouting mission can identify traps and ambushes, while failed scouting missions can result in triggering traps or alerting enemies.
 
-> **Note**: Scouting missions usually take place over one action. Longer scouting missions are possible, but not recommended. [Splitting the Party](https://tvtropes.org/pmwiki/pmwiki.php/Main/NeverSplitTheParty) doesn't usually end well after all.
+> **Note**: Scouting missions typically take place over one action. Longer scouting missions are possible, but not recommended. [Splitting the Party](https://tvtropes.org/pmwiki/pmwiki.php/Main/NeverSplitTheParty) doesn't usually end well.

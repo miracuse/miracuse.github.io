@@ -29,15 +29,6 @@ Alchemy kits are some of the most versatile in _Miracuse_. They include strange 
 | Create a hole in the floor to reach the basement | +0 (No Roll Needed) |
 | Throw a poisonous gas grenade                    | Potion Box          |
 
-##### Compliant Rod
-
-| Action                                         | Approx. Difficulty  |
-| ---------------------------------------------- | ------------------- |
-| Change the rod into a ten-foot pole            | +0 (No Roll Needed) |
-| Change the rod into a pocket-sized baton       | +0 (No Roll Needed) |
-| Use the rod to strike someone (Strength)       | +1                  |
-| Change the rod into a grappling hook and chain | Potion Box          |
-
 ##### Grease Charge
 
 | Action                                                          | Approx. Difficulty  |

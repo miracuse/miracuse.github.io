@@ -3,16 +3,15 @@ layout: default
 title: Perception
 parent: Skills
 grand_parent: More
-nav_exclude: true
 ---
 
 # {{ page.title }}
 
 > Alchemist Skill
 >
-> Offense, Sense
+> *Offense, Sense*
 
-**<span style="color: {{ site.alchemist_color }}">Perception</span>** is one of the most commonly used skills in _Miracuse_. Characters use Perception whenever something dangerous or unusual is happening nearby to determine if they're aware of it, and to what extent. Players can also ask to roll Perception when they want more information about something ("Will this bridge hold our weight or break under us?")
+**<span style="color: {{ site.alchemist_color }}">Perception</span>** is one of the main observation skills. Characters use Perception whenever something dangerous or unusual is happening nearby to determine if they're aware of it, and to what extent. Players can also ask to roll Perception when they want more information about something ("Will this bridge hold our weight or break under us?")
 
 ##### When Increased...
 

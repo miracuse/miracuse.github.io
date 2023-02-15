@@ -580,7 +580,7 @@ class CharacterSheet extends React.Component {
       className: "mental_health_text"
     }, /*#__PURE__*/React.createElement("label", null, "Mental Health")), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "mental_health",
-      boxCount: 3 + this.state.Presence
+      boxCount: 3 + this.state.Bravery
     }), /*#__PURE__*/React.createElement("div", {
       className: "resources_header"
     }, /*#__PURE__*/React.createElement("b", null, "Resources")), /*#__PURE__*/React.createElement("div", {

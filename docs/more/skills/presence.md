@@ -3,16 +3,15 @@ layout: default
 title: Presence
 parent: Skills
 grand_parent: More
-nav_exclude: true
 ---
 
 # {{ page.title }}
 
 > Mage Skill
 >
-> Mystic, Resource Pool, Sense
+> *Mystic, Resource Pool, Mental Health, Sense, Social*
 
-**<span style="color: {{ site.mage_color }}">Presence</span>** is the skill for sensing magic and bewitching others. It also determines the amount of Mana a character has, allowing them to amplify and combine Talismans to create complex magical effects.
+**<span style="color: {{ site.mage_color }}">Presence</span>** is the skill for sensing magic and bewitching others. It determines the amount of Mana a character has, allowing them to amplify and combine Talismans to create complex magical effects. 
 
 ##### When Increased...
 
@@ -22,7 +21,7 @@ nav_exclude: true
 
 ##### Example Uses
 
-> **Note**: Unsuccessful attempts to use Presence for social purposes will often result in the target becoming hostile.
+> **Note**: Unsuccessful attempts to use Presence for persuasion will often result in the target becoming hostile.
 
 - Notice a curse festering in ancient ruins
 - Discern the effects of an enchanted object

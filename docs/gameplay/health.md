@@ -27,7 +27,7 @@ A character that marks all of their boxes in either health track is taken out of
 
 Each point in the **<span style="color: {{ site.soldier_color }}">Strength</span>** Skill adds an additional box to the Physical Health track.
 
-Likewise, each point in the **<span style="color: {{ site.mage_color }}">Presence</span>** Skill adds an additional box to the Mental Health track.
+Likewise, each point in the **<span style="color: {{ site.soldier_color }}">Bravery</span>** Skill adds an additional box to the Mental Health track.
 
 ---
 

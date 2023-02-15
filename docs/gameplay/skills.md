@@ -9,7 +9,7 @@ nav_order: 1
 
 {% include skill_list.html %}
 
-Almost anything you do in-game will fall under one of the eight Skills. The level of success depends on a combination of luck and your character's Skill levels.
+Almost anything you do in-game will fall under one of the eight Skills. The level of success depends on a combination of luck and your character's Skill levels. More details and examples of use can be found [here](../more/skills/index.html).
 
 ##### Rolling Skills
 

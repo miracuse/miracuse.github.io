@@ -10,9 +10,9 @@ nav_order: 3
 
 > **Player**: Can I make a hole in the ceiling with the _Vorpal Blade_? Just enough to let in some sunlight.
 >
-> **GM**: Yeah. The ceiling is pretty thick, but that sword slips through like there's nothing in they way.
+> **GM**: Yeah. The ceiling is pretty thick, but the sword slips through like there's nothing in the way.
 
-Weapon kits add extra effects to attacks, but they're also useful tools for interacting with the world. This section provides a few examples of how they can be used.
+Weapon kits add extra effects to attacks and act as useful tools for interacting with the world. This section provides a few examples.
 
 ---
 
@@ -39,16 +39,6 @@ Weapon kits add extra effects to attacks, but they're also useful tools for inte
 | Banish an illusion                            | +2                  |
 | Turn undead away from you                     | +3 or Fortune Box |
 | Destroy illusions in an area and reveal truth | +3 or Fortune Box |
-
-##### Breaker Axe
-
-| Action                                                | Approx. Difficulty  |
-| ----------------------------------------------------- | ------------------- |
-| Break a lock                                          | +0 (No Roll Needed) |
-| Break a metal door open                               | +1                  |
-| Break an enemy's sword                                | +2                  |
-| Break a section of brick wall down in a single strike | +3 or Fortune Box |
-| Break a wagon down the middle                         | +3 or Fortune Box |
 
 ---
 

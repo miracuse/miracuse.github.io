@@ -670,7 +670,7 @@ class CharacterSheet extends React.Component {
 
           <ResourceTrack
             prefix="mental_health"
-            boxCount={3 + this.state.Presence}
+            boxCount={3 + this.state.Bravery}
           />
 
           {/* Resources */}

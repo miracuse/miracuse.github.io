@@ -47,7 +47,7 @@ Unlike Alchemy, casting spells is rarely a matter of **<span style="color: {{ si
 
 Every culture has its own perception of Mages. In some nations magic is considered a privilege of nobility. Anyone incapable of channeling the spirits is deemed unfit to rule. In others, demonstrating an aptitude for magic results in forced adoption to a church, a temple, a coven, or other organization. It isn't uncommon for the life of a Mage to border on slavery in lands where magic is feared.
 
-No nation, however, throws away its Mages. Practitioners are universally recognized as a powerful resource. If they are not the rulers of a country, then they are kept tightly controlled by those who do.
+No nation, however, throws away its Mages. Practitioners are universally recognized as a powerful resource. If Mages are not the rulers of a country, then they're kept tightly controlled by those who do hold political authority.
 
 Example Concepts:
 
@@ -71,7 +71,7 @@ Most Mages require some form of medium to conduct otherworldly energies into the
 
 - **Ofuda**: Paper Talismans with ornate symbols drawn upon them. Often burned in the process of casting.
 
-- **Runes**: Sigils of great power, said to represent the true names of spirits and carved onto precious gems.
+- **Runes**: Glyphs of great power, said to represent the true names of spirits and carved onto precious gems.
 
 - **Pacts**: Stylized contracts with spirits, commonly engraved into stone tablets.
 

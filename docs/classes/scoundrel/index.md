@@ -37,18 +37,14 @@ The Scoundrel is a master of misdirection. They blend in with crowds and shadows
 
 The Scoundrel's social skill allows them to move without attracting notice, to sense impending harm, and to bluff. **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** is used for all manner of "thief-like" behavior.
 
-<!-- ---
+---
 
 ### Specializations
 
-### <span style="color: {{ site.scoundrel_color }}">The Assassin</span>
+Specializations are groups of six [Kits](../../gameplay/kits.html) that reflect a character's trade and training. 
 
-Expert infiltrators proficient in the use of poisons. Their weapon of choice are "thorns", small needles that can be discretely thrown or attached to the ends of arrows. Though not formally organized under a guild, [Assassins](../../more/specializations/assassin.html) tend to operate in a loose network of criminal organizations.
+* [Assassin](../../more/specializations/assassin.html)
 
-### <span style="color: {{ site.scoundrel_color }}">The Bard</span>
+* [Bard](../../more/specializations/bard.html)
 
-Members of a courier's guild, trained in a little magic, a little stage alchemy, and the art of throwing knives. [Bards](../../more/specializations/bard.html) are frequently employed as messengers, entertainers, spies, and legal consul. Their social position is nebulous enough that they can comfortably interact with aristocrats and peasants.
-
-### <span style="color: {{ site.scoundrel_color }}">The Ranger</span>
-
-A catch-all term for those trained in a martial tradition popularized by the Tribes. [Rangers](../../more/specializations/ranger.html) are fleet-footed warriors with an affinity for the natural world. Their ability to control and communicate with wildlife makes them highly sought after as guides and monster hunters. -->
+* [Ranger](../../more/specializations/ranger.html)

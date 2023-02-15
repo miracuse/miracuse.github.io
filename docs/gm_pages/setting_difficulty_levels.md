@@ -2,7 +2,7 @@
 layout: default
 title: Difficulty Levels
 parent: GM Pages
-nav_order: 1
+nav_order: 0
 ---
 
 # Setting Difficulty Levels
@@ -37,13 +37,15 @@ With many tasks, you're safe using a baseline difficulty of **Proficient (+1)**.
 
 2. Someone with a +0 in the matching Skill will have a 30% chance of success
 
-Players are rewarded for working towards their characters' strengths, while those rolling without a Skill understand that success is a risky proposition.
+Players are rewarded for working towards their characters' strengths, while those rolling without a Skill understand that success is a risky proposition. This helps encourage Players to roleplay their characters; the brainy Alchemist will actively look for ways to approach problems with Knowledge and Perception.
 
 ### Narrative Context
 
 The difficulty of tasks depend on context. Swimming across a river could be a **Proficient (+1)** task, but doing it in metal armor is easily a **Professional (+2)** task. Don't be afraid to adjust the threshold up or down according to the context of the situation.
 
 Likewise, in situations where conditions are unusually favorable, make use of Advantage. You might use Advantage to reward a Player that pulls out climbing gear when scaling a cliffside, or to empower a Mage that's drawing energy off a magical crystal they found.
+
+---
 
 ### Advanced Approaches
 
@@ -57,13 +59,13 @@ Returning to our climbing example, the other Players don't want to wait while th
 
 - Potions/Fortune/Mana/Tricks
 
-- Temporarily Lose Access to a Kit (consider rolling a 1d4 to determine which)
+- Temporarily Lose Access to a Kit
 
 ##### Critical Success
 
-In situations where a player greatly exceeds the difficulty threshold for a task, consider providing a little flair as a reward.
+>**GM:** With a +4, you nimbly scale the building in a matter of seconds, giving you the first look of the castle grounds.
 
-"With a +4, you nimbly scale the building in a matter of seconds, giving you the first look of the castle grounds."
+In situations where a player greatly exceeds the difficulty threshold for a task, consider providing a little flair as a reward.
 
 ##### Critical Failure
 

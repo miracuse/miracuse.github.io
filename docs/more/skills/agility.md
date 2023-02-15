@@ -3,14 +3,13 @@ layout: default
 title: Agility
 parent: Skills
 grand_parent: More
-nav_exclude: true
 ---
 
 # {{ page.title }}
 
 > Scoundrel Skill
 >
-> Offense, Defense, Reaction Time, Mobility
+> *Offense, Defense, Reaction Time, Mobility*
 
 **<span style="color: {{ site.scoundrel_color }}">Agility</span>** represents dexterity and speed. It is one of the main combat skills, enhancing both offense and defense. It also sees use when moving through dangerous terrain, sprinting at full speed, or doing anything related to mobility.
 
@@ -19,7 +18,7 @@ nav_exclude: true
 - Increase the success rate for Agility attacks
 - Increase the success rate for Agility defense (dodging)
 - Act before others, in and out of combat
-- Move faster and than others
+- Move faster than others
 
 ##### Example Uses
 

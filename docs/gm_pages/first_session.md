@@ -3,7 +3,7 @@ layout: default
 title: First Session
 parent: GM Pages
 has_toc: false
-nav_order: 0
+nav_order: 1
 ---
 
 # First Session
@@ -24,9 +24,9 @@ Not all sessions will follow this pattern, but your first should. A dungeon run 
 
 ### Introducing the Team
 
-On the day of the session you'll start off by having the players make their characters. _Miracuse_ is designed such that the [mechanical process](../game_sheets.html) is pretty straightforward. Some Players will choose a class and be ready to play in thirty seconds. Others may spend a few minutes exploring the tool, reading documentation, and playing with character concepts. Try to coax everyone towards being ready in ten minutes or less.
+On the day of the session you'll start off by having the players make their characters. _Miracuse_ is designed to keep the [mechanical process](../game_sheets.html) quick and straightforward. Some Players will choose a class and be ready to play in thirty seconds. Others may spend a few minutes exploring the tool, reading documentation, and playing with character concepts. Try to coax everyone towards being ready in ten minutes or less.
 
-When everyone has a class, move into introductions. Have each player provide a name and a description for their character. Use the questions on the Roleplay pages for each class under _Equipment and Appearance_. This will help players flesh out their avatars, giving them life outside their stat blocks.
+When everyone has a class, move into introductions. Have each player provide a name and a description for their character. Use the _Equipment and Appearance_ questions on the Roleplay pages for each class. This will help players flesh out their avatars, giving them life outside their stat blocks.
 
 ---
 
@@ -53,6 +53,8 @@ GM:  You find yourselves standing in front of a dark cavern.
 ```
 
 Tell the players where they are and what's around them. Give them a few moments to get into character, get their bearings, etc. Be sure to make the "direction" clear.
+
+>**Note**: Some contrarian players might try to go away from the "direction" of the oneshot to test out their newfound agency. While it's okay to try different approaches to the mission, you should gently remind them that the objective is set in stone for this oneshot. The party can try out more [open-ended gameplay](making_campaigns/index.html) in future sessions.
 
 ##### React to Player Actions
 

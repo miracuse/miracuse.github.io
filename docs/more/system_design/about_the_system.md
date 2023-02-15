@@ -40,7 +40,7 @@ _Miracuse_ is less tactical and mechanics-oriented than its older cousins, but i
 
 Veterans of _D&D_ will find fewer calculations. There are no armor classes, proficiency bonuses, modifiers, or even hit points. Many of the minute details have been abstracted away in favor of gameplay that evokes the same feelings but requires less bookkeeping. A few notable points:
 
-- **Freeform Magic**: _Miracuse_ does not use Vanican magic. Players "equip" a small number of spells like _Talisman of Fire_ and are given much more leeway in how they choose to use them.
+- **Freeform Magic**: Players "equip" a small number of spells like _Talisman of Fire_ and are given much more leeway in how they choose to use them.
 
 - **No Inventory**: Items are handled in a narrative fashion. Your character has rope if they're the sort of person that normally has rope, or if they knew they'd need rope in advance. A [specialized mechanic](../../classes/alchemist/index.html#charge-points) exists for producing unlikely items.
 
