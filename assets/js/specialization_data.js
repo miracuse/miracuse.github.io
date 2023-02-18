@@ -13,7 +13,7 @@ export default function get_specialization_description_data() {
     {
         "Specialization":"Bard",
         "Tags":"Illusions, Knives",
-        "Description":"A member of the Courier Guild with expertise in stagecraft and illusion."
+        "Description":"A member of a courier guild with expertise in stagecraft and illusion."
     },
     {
         "Specialization":"Blademaster",
@@ -32,8 +32,13 @@ export default function get_specialization_description_data() {
     },
     {
         "Specialization":"Corsair",
-        "Tags":"Marauder, Piracy",
+        "Tags":"Marauder, Swashbuckling",
         "Description":"An experienced sailor, either of the seas or the skies."
+    },
+    {
+        "Specialization":"Dragon Knight",
+        "Tags":"Spearman, Transformation",
+        "Description":"A knight that mimics the power of dragons."
     },
     {
         "Specialization":"Druid",
@@ -47,7 +52,7 @@ export default function get_specialization_description_data() {
     },
     {
         "Specialization":"Fell Knight",
-        "Tags":"Curses, Magic Weapons",
+        "Tags":"Curses, Magic Sword",
         "Description":"A dark knight that uses underhanded methods."
     },
     {
@@ -57,13 +62,13 @@ export default function get_specialization_description_data() {
     },
     {
         "Specialization":"Knight",
-        "Tags":"Magic Weapons, Armor",
+        "Tags":"Warrior, Magic Sword",
         "Description":"An honorable knight with a holy sword."
     },
     {
         "Specialization":"Legionnaire",
-        "Tags":"Builder, Warrior",
-        "Description":"An infantryman trained in construction and destruction."
+        "Tags":"Warrior, Builder",
+        "Description":"An infantryman trained in construction."
     },
     {
         "Specialization":"Priest",
@@ -92,7 +97,7 @@ export default function get_specialization_description_data() {
     },
     {
         "Specialization":"Templar",
-        "Tags":"Mage Hunter, Divine Magic",
+        "Tags":"Warrior, Divine Magic",
         "Description":"A mage hunter and monster slayer."
     },
     {

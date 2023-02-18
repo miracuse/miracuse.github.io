@@ -65,3 +65,18 @@ A holy knight trained in the arts of war and magic. **<span style="color: {{ sit
 **Description**
 
 A dabbler in [illegal magic](../more/specializations/conjurer.html), on the run from [Templars](../more/specializations/templar.html) and other law enforcement. **<span style="color: {{ site.warlock_color }}">Warlocks</span>** rely on a combination of spells, alchemy, and deceit to avoid capture. 
+
+---
+
+### Example: **<span style="color: {{ site.myrmidon_color }}">The Myrmidon</span>**
+
+> **Specialization**: **<span style="color: {{ site.soldier_color }}">Blademaster</span>**
+>
+>**Skills**
+>
+>- **<span style="color: {{ site.soldier_color }}">Bravery</span>** +2
+>- **<span style="color: {{ site.scoundrel_color }}">Agility</span>** +2
+
+**Description**
+
+A swordsman that focuses on speed over strength. Though less hardy than others, their ability to deliver a killing blow before enemies can draw their weapons makes defense irrelevant. 

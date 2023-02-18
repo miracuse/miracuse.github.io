@@ -27,7 +27,7 @@ The Scoundrel is a master of misdirection. They blend in with crowds and shadows
 
 - **What You Needed**: Declare that you have an unlikely item, such as a smoke bomb or valuable bribe, that can help with the current situation.
 
-- **Use Magic Device**: Substitute a Trick box for a Mana box to mimic the Mage's [Perform High Magic](../mage/index.html#mana).
+- **Amplify Any Kit**: Briefly empower a kit to go beyond its usual usage, regardless of tags.
 
 ---
 

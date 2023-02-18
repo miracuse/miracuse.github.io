@@ -58,9 +58,19 @@ Scoundrels aren't as dedicated the art of war as Soldiers, but they're still for
 
 ---
 
-### Use Magic Device
+### Tricks: The Universal Resource
 
-Magic has been around for as long as history can recall. And in that time, many individuals have coveted its power despite lacking training or aptitude. Unorthodox methods gradually came into being to allow lay persons brief access to the spirits. Many of these methods exist in a grey legal area, where they aren't outright banned for the dangers they represent.
+> **Note**: Unlike the other three [Resources](../../gameplay/resources.html), **Tricks** can be used to amplify any kit no matter the tag. 
+
+Scoundrels manage to lay their hands on a number of unusual single-use items. Sometimes this takes the form of _What You Needed_, but other times the item lets the Scoundrel amplify a Gear, Talisman, or Alchemy kit. A few narrative examples are given below.
+
+* **Charged Arcane Focus**: A crystal or other trinket that a full-fledged Mage charged with energy, then sold at an alley market. Can be used to amplify a Talisman kit for one use.
+
+* **Low-Grade Potion**: A defective Alchemist potion that's unfit for human consumption, but still retains enough power to be useful. Can be used to amplify an Alchemy kit for one use.
+
+* **Vile Powder**: A semi-magical drug that's addictive and toxic. Gives the user a jolt of energy that allows them to pull off incredible physical feats. Can be used to amplify a Gear kit for one use.
+
+<!-- Magic has been around for as long as history can recall. And in that time, many individuals have coveted its power despite lacking training or aptitude. Unorthodox methods gradually came into being to allow lay persons brief access to the spirits. Many of these methods exist in a grey legal area, where they aren't outright banned for the dangers they represent.
 
 - **Mage Blood**: Some spirits seem happy enough to accept Mage blood in exchange for power, regardless of whether or not the Mage is present.
 
@@ -68,7 +78,7 @@ Magic has been around for as long as history can recall. And in that time, many 
 
 - **Favor**: A few spirits and their servants are able to bequeath a "favor" in exchange for services rendered. In the best scenario the spirit in question has offered a benign reward. In the worst, the spirit seeks to spread its influence by corrupting mortals for petty wishes.
 
-- **Sacrifice**: Some of the oldest magic traditions were built around the ritual sacrifice of rare animals and precious goods. A number of those rituals still hold power.
+- **Sacrifice**: Some of the oldest magic traditions were built around the ritual sacrifice of rare animals and precious goods. A number of those rituals still hold power. -->
 
 ### Roles
 

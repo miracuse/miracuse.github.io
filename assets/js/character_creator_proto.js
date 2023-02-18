@@ -679,7 +679,7 @@ class CharacterSheet extends React.Component {
           </div>
 
           <div className="potion_text">
-            <InfoBox message="Potions can be used to recover two Physical boxes or treat afflictions like poison." />
+            <InfoBox message="Potions can be used to recover two Physical boxes or to amplify kits with the Alchemy tag." />
             <label>Potions</label>
           </div>
           <ResourceTrack
@@ -688,7 +688,7 @@ class CharacterSheet extends React.Component {
           />
 
           <div className="mana_text">
-            <InfoBox message="Mana can be used to briefly power-up a Talisman for a big spell, or to combine two Talismans." />
+            <InfoBox message="Mana can be used to amplify or combine kits with the Talisman tag." />
             <label>Mana</label>
           </div>
           <ResourceTrack
@@ -697,7 +697,7 @@ class CharacterSheet extends React.Component {
           />
 
           <div className="fortune_text">
-            <InfoBox message="Fortune can be used to reroll an action, a maximum of one time per action." />
+            <InfoBox message="Fortune can be used to reroll an action or to amplify kits with the Gear tag." />
             <label>Fortune</label>
           </div>
           <ResourceTrack
@@ -706,7 +706,7 @@ class CharacterSheet extends React.Component {
           />
 
           <div className="trick_text">
-            <InfoBox message="Tricks have many uses, including 'Use Magic Device', 'I Know a Guy', and 'What You Needed'." />
+            <InfoBox message="Tricks can be used for 'I Know a Guy', 'What You Needed', or to amplify kits with any tag." />
             <label>Tricks</label>
           </div>
           <ResourceTrack

@@ -17,7 +17,7 @@ nav_order: 2
 
 Each kit has one or more **Tags** that describe it.
 
-- **Weapon**: An item used when attacking. Adds additional effects, such as knocking enemies over or setting targets ablaze.
+- **Gear**: An item that's worn like armor or used like a weapon. 
 
 - **Talisman**: An item used when performing **<span style="color: {{ site.mage_color }}">Magic</span>**. Channels energy into various effects, like elemental force or the manipulation of gravity.
 
@@ -27,7 +27,7 @@ Each kit has one or more **Tags** that describe it.
 
 ##### Weapon Tags
 
-Weapon kits may have their own set of tags.
+Weapons are Gear that adds additional effects when attacking. They have their own set of tags.
 
 - **High Damage**: This weapon inflicts two boxes of damage instead of one.
 

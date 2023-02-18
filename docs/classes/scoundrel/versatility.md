@@ -8,7 +8,7 @@ nav_order: 3
 
 # Versatility
 
-Scoundrels are able to use Alchemy, Weapon, and Talisman kits, making them the best all-rounders in _Miracuse_. A handful of examples are presented on this page.
+Scoundrels are able to use Alchemy, Gear, and Talisman kits, making them the best all-rounders in _Miracuse_. A handful of examples are presented on this page.
 
 ---
 

@@ -8,7 +8,7 @@ export default function get_class_description_data() {
     {
         "Class":"Custom",
         "Tags":"Any",
-        "Description":"Build your own adventurer. Choose any Specialization and one of the following Skill layouts: two +2 skills, or one +2 skill and two +1 skills."
+        "Description":"Build your own adventurer. Choose any Specialization and one of the following Skill layouts: two +2 skills, or one +2 skill and three +1 skills."
     },
     {
         "Class":"Mage",

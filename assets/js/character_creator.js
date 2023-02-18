@@ -586,28 +586,28 @@ class CharacterSheet extends React.Component {
     }, /*#__PURE__*/React.createElement("b", null, "Resources")), /*#__PURE__*/React.createElement("div", {
       className: "potion_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Potions can be used to recover two Physical boxes or treat afflictions like poison."
+      message: "Potions can be used to recover two Physical boxes or to amplify kits with the Alchemy tag."
     }), /*#__PURE__*/React.createElement("label", null, "Potions")), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "potion",
       boxCount: 2 * this.state.Knowledge
     }), /*#__PURE__*/React.createElement("div", {
       className: "mana_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Mana can be used to briefly power-up a Talisman for a big spell, or to combine two Talismans."
+      message: "Mana can be used to amplify or combine kits with the Talisman tag."
     }), /*#__PURE__*/React.createElement("label", null, "Mana")), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "mana",
       boxCount: 2 * this.state.Presence
     }), /*#__PURE__*/React.createElement("div", {
       className: "fortune_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Fortune can be used to reroll an action, a maximum of one time per action."
+      message: "Fortune can be used to reroll an action or to amplify kits with the Gear tag."
     }), /*#__PURE__*/React.createElement("label", null, "Fortune")), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "fortune",
       boxCount: 2 * this.state.Bravery
     }), /*#__PURE__*/React.createElement("div", {
       className: "trick_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
-      message: "Tricks have many uses, including 'Use Magic Device', 'I Know a Guy', and 'What You Needed'."
+      message: "Tricks can be used for 'I Know a Guy', 'What You Needed', or to amplify kits with any tag."
     }), /*#__PURE__*/React.createElement("label", null, "Tricks")), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "trick",
       boxCount: 2 * this.state.Cunning

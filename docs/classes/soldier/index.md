@@ -25,7 +25,7 @@ The Soldier is a warrior without peer. They may be knights, bandits, infantrymen
 
 - **Reroll**: Change the outcome of a roll by rolling again and taking the new result, a maximum of one time per action.
 
-- **Perform Heroics**: Empower a Weapon kit to go beyond its usual usage for a single action.
+- **Perform Heroics**: Empower a Gear kit to go beyond its usual usage for a single action.
 
 ---
 
