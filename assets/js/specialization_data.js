@@ -101,6 +101,11 @@ export default function get_specialization_description_data() {
         "Description":"A mage hunter and monster slayer."
     },
     {
+        "Specialization":"Witch",
+        "Tags":"Persuasion, Speed",
+        "Description":"A member of a courier guild with a flying broom."
+    },
+    {
         "Specialization":"Wizard",
         "Tags":"Heat, Motion",
         "Description":"An eccentric magician that manipulates physics."

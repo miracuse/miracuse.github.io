@@ -841,6 +841,48 @@ export default function get_kit_data() {
         "Description":"A metal bell whose deep sound sends a feeling of peace through those who hear it. Weak undead in the area are immediately put to rest, while stronger undead take Physical and Mental damage. Can be used to put others to sleep."
     },
     {
+        "Class":"Advanced",
+        "Type":"Witch",
+        "Kit":"Byrd",
+        "Tags":"Gear",
+        "Description":"An intelligent bird spirit, usually a crow or raven, that serves you. It can speak, deliver messages, and warn you of nearby threats. If destroyed, you can call it back into the world with a bird feather. You have Advantage when noticing danger."
+    },
+    {
+        "Class":"Advanced",
+        "Type":"Witch",
+        "Kit":"Flying Broom",
+        "Tags":"Gear",
+        "Description":"An enchanted staff built off of the same principles as airships. Can be used to fly through the air with ease."
+    },
+    {
+        "Class":"Advanced",
+        "Type":"Witch",
+        "Kit":"Slowing Thorns",
+        "Tags":"Gear, Weapon",
+        "Description":"A set of needles tipped with slowing poison. Using this weapon reduces a target\u2019s ability to react quickly, think clearly, and pursue."
+    },
+    {
+        "Class":"Advanced",
+        "Type":"Witch",
+        "Kit":"Talisman of Heart",
+        "Tags":"Talisman",
+        "Description":"A wand or other object that influences positive emotions. Can be used to calm others, improve moods, and dimish hostilities. When you fail to influence someone with Presence, they do not become hostile."
+    },
+    {
+        "Class":"Advanced",
+        "Type":"Witch",
+        "Kit":"Talisman of Restoration",
+        "Tags":"Talisman",
+        "Description":"A wand or other object that mends that which is broken. Can be used to restore damaged objects and heal wounds. You have Advantage when repairing objects."
+    },
+    {
+        "Class":"Advanced",
+        "Type":"Witch",
+        "Kit":"Willow Perfume",
+        "Tags":"Alchemy",
+        "Description":"A bottle of alchemic perfume that fogs minds. Can be used to erase recent memories, lower someone\u2019s guard, and become less noticable. You have Advantage when using Presence to hypnotize or charm others."
+    },
+    {
         "Class":"Mage",
         "Type":"Wizard",
         "Kit":"Familiar",
