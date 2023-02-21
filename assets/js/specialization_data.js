@@ -72,13 +72,13 @@ export default function get_specialization_description_data() {
     },
     {
         "Specialization":"Priest",
-        "Tags":"Social, Divine Magic",
+        "Tags":"Persuasion, Divine Magic",
         "Description":"A magician that governs over the boundaries between worlds."
     },
     {
         "Specialization":"Ranger",
         "Tags":"Tamer, Primal Magic",
-        "Description":"A warrior of tradition, known for their affinity with the natural world."
+        "Description":"A traditional warrior, known for their affinity with the natural world."
     },
     {
         "Specialization":"Sapper",

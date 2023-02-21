@@ -68,7 +68,7 @@ export default function get_kit_data() {
         "Type":"Assassin",
         "Kit":"Manifold Venom",
         "Tags":"Alchemy",
-        "Description":"A collection of dangerous poisons that can be applied to weapons or slipped into drinks. Can be used to sap strength, cause blindness, or render targets unconscious. Requires an action if applied to a weapon in combat."
+        "Description":"A collection of dangerous poisons that can be applied to weapons or slipped into drinks. Can be used to sap strength, cause blindness, or render targets unconscious. Requires an action if applied to a weapon in combat. You are immune to poisons."
     },
     {
         "Class":"Scoundrel",
@@ -341,7 +341,7 @@ export default function get_kit_data() {
         "Type":"Druid",
         "Kit":"Athame",
         "Tags":"Gear, Weapon",
-        "Description":"A ritual knife used in sacrificial practices. You recover a Mana Point whenever you use a Talisman or this weapon to incapacitate a target."
+        "Description":"A ritual knife used in sacrificial practices. You recover a Mana Point whenever you use a Talisman or this weapon to incapacitate a target in melee range."
     },
     {
         "Class":"Advanced",
@@ -502,7 +502,7 @@ export default function get_kit_data() {
         "Type":"Gunslinger",
         "Kit":"Warded Greatcoat",
         "Tags":"Gear",
-        "Description":"A leather coat that reaches past the knees. Sigils of protection have been stitched into the lining, making the wearer resistant to bullets and blunt trauma. You have Advantage when defending against bludgeoning."
+        "Description":"A leather jacket that reaches past the knees. Sigils of protection have been stitched into the lining, making the wearer resistant to bullets and blunt trauma. You have Advantage when defending against bludgeoning."
     },
     {
         "Class":"Soldier",
@@ -516,7 +516,7 @@ export default function get_kit_data() {
         "Type":"Knight",
         "Kit":"Holy Sword",
         "Tags":"Gear, Weapon",
-        "Description":"A blade quenched in holy water. Using this weapon allows your attacks to interfere with magic. You have Advantage when inspiring or rallying others."
+        "Description":"A blade quenched in holy water. Using this weapon allows your attacks to destroy magic and repel evil. You have Advantage when destroying magic, inspiring others, or intimidating the undead."
     },
     {
         "Class":"Soldier",
@@ -572,7 +572,7 @@ export default function get_kit_data() {
         "Type":"Legionnaire",
         "Kit":"Shocklance",
         "Tags":"Gear, Weapon",
-        "Description":"A spear whose tip crackles with electricity, causing intense pain on contact. Using this weapon inflicts a box of Mental damage on successful attacks, in addition to any Physical damage dealt. You have Advantage when intimidating others."
+        "Description":"A spear whose tip crackles with electricity, causing intense pain on contact. Using this weapon inflicts a box of Mental damage on successful attacks, in addition to any Physical damage dealt. You have Advantage when attacking targets wearing metal armor."
     },
     {
         "Class":"Soldier",
@@ -592,8 +592,8 @@ export default function get_kit_data() {
         "Class":"Mage",
         "Type":"Priest",
         "Kit":"Holy Symbol",
-        "Tags":"Gear, Weapon",
-        "Description":"An object affiliated with your patron spirits in some way. Using this weapon, attacks with Talismans are especially effective at chastising magical entities. You have Advantage when rolling Magic against other mages or spirits."
+        "Tags":"Gear",
+        "Description":"An object affiliated with your patron spirits in some way. You have Advantage when rolling Magic against other mages or spirits."
     },
     {
         "Class":"Mage",
@@ -852,7 +852,7 @@ export default function get_kit_data() {
         "Type":"Witch",
         "Kit":"Flying Broom",
         "Tags":"Gear",
-        "Description":"An enchanted staff built off of the same principles as airships. Can be used to fly through the air with ease."
+        "Description":"An enchanted staff built using the same principles as airships. Can be used to fly through the air with ease."
     },
     {
         "Class":"Advanced",
@@ -873,7 +873,7 @@ export default function get_kit_data() {
         "Type":"Witch",
         "Kit":"Talisman of Restoration",
         "Tags":"Talisman",
-        "Description":"A wand or other object that mends that which is broken. Can be used to restore damaged objects and heal wounds. You have Advantage when repairing objects."
+        "Description":"A wand or other object that mends that which is broken. Can be used to fix damaged objects, repair enchanted items, and heal wounds. You have Advantage when repairing objects."
     },
     {
         "Class":"Advanced",

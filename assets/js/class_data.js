@@ -23,7 +23,7 @@ export default function get_class_description_data() {
     {
         "Class":"Soldier",
         "Tags":"Strength, Bravery",
-        "Description":"An adventurer with strong arms and a stronger will. Known for their aptitude with enchanted weapons."
+        "Description":"An adventurer with strong arms and a stronger will. Known for their aptitude with weapons and armor."
     }
 ];
 
