@@ -9,19 +9,15 @@ nav_order: 3
 
 # The Mage
 
-The Mage forms pacts with the primal spirits of the world to perform miracles and spells. Some come by their magic through careful study, others through natural aptitude or religious tradition.
+- **<span style="color: {{ site.mage_color }}">Magic</span>**: Mages use [Magic](../../more/skills/magic.html) to cast spells using Talisman kits.
 
-- **<span style="color: {{ site.mage_color }}">Magic</span>**: Mages use Talismans to channel otherworldly power. They roll this Skill whenever they do so.
-
-- **<span style="color: {{ site.mage_color }}">Presence</span>**: Mages have a sixth sense for magic. They can feel it in the air and identify its purpose when focusing. They're also able to manipulate ambient magic to bewitch others. 
-
-- **[Mana](#mana)**: Mages have pools of energy within them that can be used to empower Talismans for powerful magic.
+- **<span style="color: {{ site.mage_color }}">Presence</span>**: Mages use [Presence](../../more/skills/presence.html) to gather mana for large spells, to charm others, and to identify strange magic in the area.
 
 ---
 
 ### Mana
 
-Adventurers with a strong relationship to the supernatural accumulate power inside their bodies, called **Mana**, which can be used in the casting of spells. One of the signs of having Mana is an abnormally strong **<span style="color: {{ site.mage_color }}">Presence</span>**.
+Adventurers with a strong relationship to the supernatural accumulate power inside their bodies, called **Mana**, which can be used in the casting of spells. One of the signs of having Mana is a strong **<span style="color: {{ site.mage_color }}">Presence</span>**.
 
 - **Perform High Magic**: Empower an equipped Talisman to go beyond its usual capabilities for a single use.
 

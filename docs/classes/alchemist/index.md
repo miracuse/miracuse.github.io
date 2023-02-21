@@ -9,13 +9,9 @@ nav_order: 1
 
 # Alchemist
 
-The Alchemist is a keen adventurer, keeping a watchful eye out for danger and a finger on the trigger. They carry a collection of handy items to throw at any problem that arises.
+- **<span style="color: {{ site.alchemist_color }}">Perception</span>**: Alchemists use [Perception](../../more/skills/perception.html) to aim guns, detect danger, and investigate for more information.
 
-- **<span style="color: {{ site.alchemist_color }}">Perception</span>**: Alchemists are good at detecting danger, finding clues, and searching for hidden treasure. They also use this skill to make precise attacks with ranged weapons.
-
-- **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**: Alchemists are familiar with many different fields that might be useful to an adventurer, such as monster biology or regional politics. This Skill also influences their ability to persuade others using rhetoric.
-
-- **[Potions](#potions)**: Alchemists keep a stash of potions on hand, able to miraculously heal wounds or fuel powerful alchemy.
+- **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**: Alchemists use [Knowledge](../../more/skills/knowledge.html) to produce potions, persuade others, and learn about the world.
 
 ---
 

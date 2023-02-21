@@ -9,13 +9,9 @@ nav_order: 2
 
 # The Soldier
 
-The Soldier is a warrior without peer. They may be knights, bandits, infantrymen, or come from other walks of life. What makes one a Soldier is not their profession but their skill at arms, courage, and a surprising amount of luck.
+- **<span style="color: {{ site.soldier_color }}">Strength</span>**: Soldiers use [Strength](../../more/skills/strength.html) to use weapons, block attacks, and resist physical harm. 
 
-- **<span style="color: {{ site.soldier_color }}">Strength</span>**: Soldiers are strong and resilient. They use this Skill when attacking with most weapons or defending against Physical attacks. This Skill also gives them more Physical [Health](../../gameplay/health.md) than other classes.
-
-- **<span style="color: {{ site.soldier_color }}">Bravery</span>**: Soldiers hold their composure in the face of danger. They use this Skill when defending against Mental attacks. It determines how much Mental health and Fortune they have. It can also be used to provoke, intimidate, or impress others.
-
-- **[Fortune](#fortune)**: Soldiers have an odd relationship with luck, which they can draw on to tilt the odds in their favor a few times each day.
+- **<span style="color: {{ site.soldier_color }}">Bravery</span>**: Soldiers use [Bravery](../../more/skills/bravery.html) to gather fortune, influence others, and resist mental harm.
 
 ---
 

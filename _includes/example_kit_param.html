@@ -1,0 +1,8 @@
+<table>
+  {% for row in site.data.miracuse_kit %} {% if row.Kit == include.content %}
+  <tr>
+    <td><b>{{ row.Kit }}</b></td>
+    <td><i>Tags: {{ row.Tags }}</i> <br />{{ row.Description }}</td>
+  </tr>
+  {% endif %} {% endfor %}
+</table>

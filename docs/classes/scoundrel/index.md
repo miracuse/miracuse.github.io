@@ -9,13 +9,9 @@ nav_order: 4
 
 # The Scoundrel
 
-The Scoundrel is a master of misdirection. They blend in with crowds and shadows, only revealing themselves when the time is right. Many employ their talents as hunters or merchants, though it's just as common to see them working as thieves and assassins.
+- **<span style="color: {{ site.scoundrel_color }}">Agility</span>**: Scoundrels use [Agility](../../more/skills/agility.html) to strike quickly, dodge away from harm, and move swiftly.
 
-- **<span style="color: {{ site.scoundrel_color }}">Agility</span>**: Scoundrels are quick on their feet. They use this Skill when making swift strikes or defending against Physical attacks. Agility also determines who acts first in a conflict, as well as the Scoundrel's ability to scale walls and sprint away from danger.
-
-- **<span style="color: {{ site.scoundrel_color }}">Cunning</span>**: Scoundrels are sly. They use this Skill to talk circles around others, to [move unnoticed](../../gameplay/exploration/stealth.md), and to sense danger or lies. Cunning also determines how many Tricks a Scoundrel has.
-
-- **[Tricks](#tricks)**: Scoundrels have a great many tricks up their sleeves, ranging from favors owed by local contacts to minor magical artifacts.
+- **<span style="color: {{ site.scoundrel_color }}">Cunning</span>**: Scoundrels use [Cunning](../../more/skills/cunning.html) to prepare tricks, bluff others, detect danger, and sneak around.
 
 ---
 
