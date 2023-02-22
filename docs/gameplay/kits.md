@@ -17,7 +17,7 @@ nav_order: 2
 
 Each kit has one or more **Tags** that describe it.
 
-- **Gear**: An item that's worn like armor or used like a weapon. 
+- **Gear**: An item that's worn like armor or used like a weapon.
 
 - **Talisman**: An item used when performing **<span style="color: {{ site.mage_color }}">Magic</span>**. Channels energy into various effects, like elemental force or the manipulation of gravity.
 

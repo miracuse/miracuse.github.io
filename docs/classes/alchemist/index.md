@@ -37,11 +37,10 @@ It's also used when persuading others with reason. Convincing a bandit that you 
 
 ### Specializations
 
-Specializations are groups of six [Kits](../../gameplay/kits.html) that reflect a character's trade and training. 
+Specializations are groups of six [Kits](../../gameplay/kits.html) that reflect a character's trade and training.
 
-* [Chemist](../../more/specializations/chemist.html)
+- [Chemist](../../more/specializations/chemist.html)
 
-* [Enchanter](../../more/specializations/enchanter.html)
+- [Enchanter](../../more/specializations/enchanter.html)
 
-* [Sapper](../../more/specializations/sapper.html)
-
+- [Sapper](../../more/specializations/sapper.html)

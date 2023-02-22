@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Scoundrel Specialization
-> 
+>
 > _Agility, Cunning_
 
 A member of a courier’s guild, trained in etiquette and self-defense. Bards are frequently employed as messengers, entertainers, and spies. They compete with the [Witches](witch.html) Guild for postal work.

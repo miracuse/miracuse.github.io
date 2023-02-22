@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Scoundrel Specialization
-> 
+>
 > _Agility, Cunning_
 
 Expert infiltrators proficient in the use of poisons. Their weapon of choice are “thorns”, small needles that can be discretely thrown or attached to the ends of arrows.

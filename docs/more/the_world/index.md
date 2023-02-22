@@ -13,7 +13,7 @@ has_toc: false
 
 The world of _Miracuse_ is one on the edge of revolution.
 
-Feudal monarchies have ruled most of the known world since the fall of [The Lost Empire](factions.html#the-lost-empire). For centuries, the machinations of kings and priests have been a central fixture of daily life. But the balance of power has begun to crumble with the advent of alchemy. 
+Feudal monarchies have ruled most of the known world since the fall of [The Lost Empire](factions.html#the-lost-empire). For centuries, the machinations of kings and priests have been a central fixture of daily life. But the balance of power has begun to crumble with the advent of alchemy.
 
 Newly formed [Guilds](factions.html#the-guilds) have accumulated vast fortunes through the distribution of non-magical medicines and firearms, enough to rival [The Nations](factions.html#the-nations) through sheer economic force. Guild mercenaries have found success in matching the previously unrivaled supremacy of national militaries. And Guild spies, independent of royal whims, have established the greatest information network ever seen.
 
@@ -23,12 +23,10 @@ Rising tensions have left many uneasy. In a land plagued by so many dangers, in-
 
 ### Adventurers
 
-**Adventurers** are a varied bunch. They might be journeyman, knight errants, bounty hunters, escaped slaves, missionaries, or simple mercenaries. They take odd jobs that others can't or won't. 
+**Adventurers** are a varied bunch. They might be journeyman, knight errants, bounty hunters, escaped slaves, missionaries, or simple mercenaries. They take odd jobs that others can't or won't.
 
-* A Knight Order that has its hands full might conscript a band of adventurers to investigate rumors of dark magic. 
+- A Knight Order that has its hands full might conscript a band of adventurers to investigate rumors of dark magic.
 
-* A queen might commission adventurers to subjugate dangerous monsters plaguing a frontier town.
+- A queen might commission adventurers to subjugate dangerous monsters plaguing a frontier town.
 
-* A Guild might request an escort for one of their airships, or ask for assistance sabotaging a competitor.
-
-
+- A Guild might request an escort for one of their airships, or ask for assistance sabotaging a competitor.

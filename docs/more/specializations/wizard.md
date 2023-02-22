@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Mage Specialization
-> 
+>
 > _Magic, Presence_
 
 An eccentric magician that takes inspiration from alchemy. Their Talismans manipulate fundamental energies like motion and heat.

@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Advanced Specialization
-> 
+>
 > _Magic, Presence_
 
 Practitioners of one of the oldest magic traditions in existence. Keepers of ancient secrets and unwritten spells.

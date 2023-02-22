@@ -19,7 +19,7 @@ exclude:
     ".~lock.miracuse_data.xlsx#",
     "Makefile",
     "devel/",
-    "resources/"
+    "resources/",
   ]
 
 # Theme Settings

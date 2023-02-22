@@ -9,7 +9,7 @@ grand_parent: More
 
 > Alchemist Skill
 >
-> *Sense, Resource Pool*
+> _Sense, Resource Pool_
 
 **<span style="color: {{ site.alchemist_color }}">Knowledge</span>** is a broad skill that covers history, medicine, science, and most kinds of formal learning. It is one of the main observation skills used to gain information about the world. Knowledge is also responsible for the quantity of potions a character has access to, and the ability to persuade through reason.
 

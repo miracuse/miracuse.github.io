@@ -19,7 +19,7 @@ nav_order: 3
 
 The process for creating a custom class is similar to that of using the base classes.
 
-- **(Kits)** Choose any [Specialization](../more/specializations/index.html). 
+- **(Kits)** Choose any [Specialization](../more/specializations/index.html).
 
 - **(Skills)** Choose one of the following Skill spreads and adjust your character sheet accordingly.
 
@@ -38,12 +38,12 @@ Despite the name, [Advanced Specializations](../more/advancement/specializations
 
 > **Specialization**: **<span style="color: {{ site.mage_color }}">Priest</span>**
 >
->**Skills**
+> **Skills**
 >
->- **<span style="color: {{ site.soldier_color }}">Strength</span>** +2
->- **<span style="color: {{ site.soldier_color }}">Bravery</span>** +1
->- **<span style="color: {{ site.mage_color }}">Magic</span>** +1
->- **<span style="color: {{ site.mage_color }}">Presence</span>** +1
+> - **<span style="color: {{ site.soldier_color }}">Strength</span>** +2
+> - **<span style="color: {{ site.soldier_color }}">Bravery</span>** +1
+> - **<span style="color: {{ site.mage_color }}">Magic</span>** +1
+> - **<span style="color: {{ site.mage_color }}">Presence</span>** +1
 
 **Description**
 
@@ -55,16 +55,16 @@ A holy knight trained in the arts of war and magic. **<span style="color: {{ sit
 
 > **Specialization**: **<span style="color: {{ site.warlock_color }}">Conjurer</span>**
 >
->**Skills**
+> **Skills**
 >
->- **<span style="color: {{ site.mage_color }}">Presence</span>** +2
->- **<span style="color: {{ site.mage_color }}">Magic</span>** +1
->- **<span style="color: {{ site.alchemist_color }}">Knowledge</span>** +1
->- **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** +1
+> - **<span style="color: {{ site.mage_color }}">Presence</span>** +2
+> - **<span style="color: {{ site.mage_color }}">Magic</span>** +1
+> - **<span style="color: {{ site.alchemist_color }}">Knowledge</span>** +1
+> - **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** +1
 
 **Description**
 
-A dabbler in [illegal magic](../more/specializations/conjurer.html), on the run from [Templars](../more/specializations/templar.html) and other law enforcement. **<span style="color: {{ site.warlock_color }}">Warlocks</span>** rely on a combination of spells, alchemy, and deceit to avoid capture. 
+A dabbler in [illegal magic](../more/specializations/conjurer.html), on the run from [Templars](../more/specializations/templar.html) and other law enforcement. **<span style="color: {{ site.warlock_color }}">Warlocks</span>** rely on a combination of spells, alchemy, and deceit to avoid capture.
 
 ---
 
@@ -72,11 +72,11 @@ A dabbler in [illegal magic](../more/specializations/conjurer.html), on the run 
 
 > **Specialization**: **<span style="color: {{ site.soldier_color }}">Blademaster</span>**
 >
->**Skills**
+> **Skills**
 >
->- **<span style="color: {{ site.soldier_color }}">Bravery</span>** +2
->- **<span style="color: {{ site.scoundrel_color }}">Agility</span>** +2
+> - **<span style="color: {{ site.soldier_color }}">Bravery</span>** +2
+> - **<span style="color: {{ site.scoundrel_color }}">Agility</span>** +2
 
 **Description**
 
-A swordsman that focuses on speed over strength. Though less hardy than others, their ability to deliver a killing blow before enemies can draw their weapons makes defense irrelevant. 
+A swordsman that focuses on speed over strength. Though less hardy than others, their ability to deliver a killing blow before enemies can draw their weapons makes defense irrelevant.

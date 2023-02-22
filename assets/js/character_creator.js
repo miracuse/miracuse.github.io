@@ -247,9 +247,9 @@ class ResourceTrack extends React.Component {
     }, box_holders);
   }
 
-} // 
+} //
 //
-//     
+//
 //
 
 
@@ -695,12 +695,18 @@ class CharacterSheet extends React.Component {
       className: "health_header"
     }, /*#__PURE__*/React.createElement("p", null, "Health / Resources")), /*#__PURE__*/React.createElement("div", {
       className: "physical_health_text"
-    }, /*#__PURE__*/React.createElement("label", null, "Physical Health")), /*#__PURE__*/React.createElement(ResourceTrack, {
+    }, /*#__PURE__*/React.createElement(ResourceTextHolder, {
+      text: "Physical Health",
+      skillValue: this.state.Strength
+    })), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "physical_health",
       boxCount: 3 + this.state.Strength
     }), /*#__PURE__*/React.createElement("div", {
       className: "mental_health_text"
-    }, /*#__PURE__*/React.createElement("label", null, "Mental Health")), /*#__PURE__*/React.createElement(ResourceTrack, {
+    }, /*#__PURE__*/React.createElement(ResourceTextHolder, {
+      text: "Mental Health",
+      skillValue: this.state.Bravery
+    })), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "mental_health",
       boxCount: 3 + this.state.Bravery
     }), /*#__PURE__*/React.createElement("div", {

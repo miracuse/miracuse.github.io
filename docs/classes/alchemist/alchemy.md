@@ -86,7 +86,7 @@ Many alchemy kits can be amplified by **expending a Potion Box**. The exact effe
 
 > **Tip**: Using a potion in combat takes an action.
 
-The primary use of potions is to recover from Physical damage or remove afflictions like poison. Unlike many alchemy items, they can be used by anyone regardless of training. 
+The primary use of potions is to recover from Physical damage or remove afflictions like poison. Unlike many alchemy items, they can be used by anyone regardless of training.
 
 The secondary use of potions is to empower alchemy kits. Many tools can be converted into grenades or otherwise enhanced by using a potion.
 

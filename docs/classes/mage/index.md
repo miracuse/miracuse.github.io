@@ -39,10 +39,10 @@ However, their influence is intended to be subtle rather than overt. Those who r
 
 ### Specializations
 
-Specializations are groups of six [Kits](../../gameplay/kits.html) that reflect a character's trade and training. 
+Specializations are groups of six [Kits](../../gameplay/kits.html) that reflect a character's trade and training.
 
-* [Priest](../../more/specializations/priest.html)
+- [Priest](../../more/specializations/priest.html)
 
-* [Shaman](../../more/specializations/shaman.html)
+- [Shaman](../../more/specializations/shaman.html)
 
-* [Wizard](../../more/specializations/wizard.html)
+- [Wizard](../../more/specializations/wizard.html)

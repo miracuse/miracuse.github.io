@@ -67,4 +67,3 @@ A Scoundrel's strength is their flexibility. They can **expend a Trick Box to am
 | Use the string as a garrote to silently remove a guard                 | +1                  |
 | Shoot an alarm bell to mute it                                         | +2                  |
 | Shoot an arrow that leaves silence in its wake                         | Trick Box           |
-

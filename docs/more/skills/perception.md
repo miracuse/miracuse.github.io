@@ -9,7 +9,7 @@ grand_parent: More
 
 > Alchemist Skill
 >
-> *Offense, Sense*
+> _Offense, Sense_
 
 **<span style="color: {{ site.alchemist_color }}">Perception</span>** is one of the main observation skills. Characters use Perception whenever something dangerous or unusual is happening nearby to determine if they're aware of it, and to what extent. Players can also ask to roll Perception when they want more information about something ("Will this bridge hold our weight or break under us?")
 

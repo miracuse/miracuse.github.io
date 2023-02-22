@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Advanced Specialization
-> 
+>
 > _Agility_
 
 A firearm user that specializes in shoot-outs. Their lightning reflexes and trick bullets make them ideal for skirmishes.

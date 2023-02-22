@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Advanced Specialization
-> 
+>
 > _Magic, Presence, Knowledge_
 
 The [Priest's](../specializations/priest.html) antithesis, a Mage with no qualms about maintaining the boundaries between worlds. The Conjurer bargains with demons, fey, and jinn to achieve their aims.

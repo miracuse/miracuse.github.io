@@ -63,7 +63,7 @@ Returning to our climbing example, the other Players don't want to wait while th
 
 ##### Critical Success
 
->**GM:** With a +4, you nimbly scale the building in a matter of seconds, giving you the first look of the castle grounds.
+> **GM:** With a +4, you nimbly scale the building in a matter of seconds, giving you the first look of the castle grounds.
 
 In situations where a player greatly exceeds the difficulty threshold for a task, consider providing a little flair as a reward.
 

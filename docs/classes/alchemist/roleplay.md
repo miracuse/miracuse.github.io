@@ -54,11 +54,11 @@ Example Concepts:
 
 > **Tip**: Alchemists aren't the only ones with the know-how to brew potions. Many adventurers and medical practitioners have picked up enough chemistry to cook small batches.
 
-Potions come in a great many varieties and recipes, but nearly all share a base ingredient of Pyre Powder. 
+Potions come in a great many varieties and recipes, but nearly all share a base ingredient of Pyre Powder.
 
 Pyre Powder is a processed material whose manufacture is a carefully kept trade secret of the Alchemist Guild. When dissolved in a mixture of oils and mineral water, it produces a highly reactive chemical that accelerates natural healing mechanisms. Unfortunately, the resulting mixture only retains its potency for a day.
 
-Many Alchemists have found Pyre Powder mixtures to be useful in enhancing other alchemical products. Grenades, created by mixing potions with gunpowder and other substances, are a common application. 
+Many Alchemists have found Pyre Powder mixtures to be useful in enhancing other alchemical products. Grenades, created by mixing potions with gunpowder and other substances, are a common application.
 
 ---
 

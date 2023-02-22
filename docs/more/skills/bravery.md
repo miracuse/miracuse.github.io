@@ -9,7 +9,7 @@ grand_parent: More
 
 > Soldier Skill
 >
-> *Social, Resource Pool, Defense*
+> _Social, Resource Pool, Defense_
 
 **<span style="color: {{ site.soldier_color }}">Bravery</span>** embodies mental toughness. Characters with high Bravery are resilient against psychological influences, and able to influence others through force of personality. Bravery also determines the amount of Fortune a character has.
 

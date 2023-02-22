@@ -2,9 +2,9 @@
 
 ### Base Elements
 
->**Skills** (What You're Good At)
+> **Skills** (What You're Good At)
 >
->**Kits** (What You Can Do)
+> **Kits** (What You Can Do)
 
 The two most basic elements of a character, insofar as their game mechanics are concerned, include their **Skills** and their **Kits**. The former represents what a character is good at. The latter concerns what a character is capable of.
 
@@ -14,14 +14,13 @@ The two most basic elements of a character, insofar as their game mechanics are 
 | Sabriel | Cautious, Perceptive | Necromancy, Magic Bells   |
 | Kaladin | Tough, Brave         | Magic Spear, Flight       |
 
-
 ---
 
 ### Derived Elements
 
->**Health** 
+> **Health**
 >
->**Resources**
+> **Resources**
 
 Derived elements are those parts of a character which directly result from Skills and Kits. Health is derived from the Strength and Bravery skills. Resources (like potions) are derived from other skills.
 
@@ -51,17 +50,12 @@ _Miracuse_ provides a list of of skills to choose from when determining "What Yo
 
 A deliberate design decision was made to bundle kits together in groups of six, called **Specializations**. The advantage of this approach is that it creates firmer character concepts by establishing common professions. Players and GM's can draw from a shared pool identity of what a Wizard is, or a Sapper, or a Knight. Take Templars as an example.
 
->"Templars have kits that suppress magic and work especially well on magic monsters."
+> "Templars have kits that suppress magic and work especially well on magic monsters."
 >
->Alright. Why? What reason is there, in the game world, for Templars to exist as a profession?
+> Alright. Why? What reason is there, in the game world, for Templars to exist as a profession?
 >
->"Mages are dangerous and scary. If a Mage breaks the law, you need someone that can bring them to justice."
+> "Mages are dangerous and scary. If a Mage breaks the law, you need someone that can bring them to justice."
 >
->There we go. Now we have something more substantial than a collection of anti-magic kits. There's an idea behind Templars, a bit of lore that might inform the identity of a Templar.
+> There we go. Now we have something more substantial than a collection of anti-magic kits. There's an idea behind Templars, a bit of lore that might inform the identity of a Templar.
 >
->Did your character become a Templar because they hate magic? Or maybe a Wizard burned down their village? Or their long-lost sister fell in with a crowd of sorcerers and they picked up the trade to attempt a rescue?
-
-
-
-
-
+> Did your character become a Templar because they hate magic? Or maybe a Wizard burned down their village? Or their long-lost sister fell in with a crowd of sorcerers and they picked up the trade to attempt a rescue?

@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Advanced Specialization
-> 
+>
 > _Strength, Bravery, Perception_
 
 A knight that uses ancient medicines to transform their body.

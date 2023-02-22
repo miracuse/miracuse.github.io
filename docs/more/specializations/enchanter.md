@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Alchemist Specialization
-> 
+>
 > _Perception, Knowledge_
 
 Esoteric philosophers seeking to unify alchemy and magic by creating life. None have so far succeeded in making a living creature, but their failed experiments show remarkable promise as adventuring tools.

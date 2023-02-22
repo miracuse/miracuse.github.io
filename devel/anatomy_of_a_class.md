@@ -2,7 +2,7 @@
 
 ### Classes
 
-The working definition of a [Class](../docs/classes/index.html) in _Miracuse_ is an allocation of skills. 
+The working definition of a [Class](../docs/classes/index.html) in _Miracuse_ is an allocation of skills.
 
 - All **Alchemists** are knowledgeable and perceptive.
 
@@ -18,7 +18,7 @@ Each class provides a balanced foundation for a new character. They have a skill
 
 ### Custom Classes
 
-[Custom Classes](../docs/more/custom_class.html) are player-defined skill allocations. Having the option allows interested players to engage with the system on a deeper level, but sacrifices the established balance of the base classes.  
+[Custom Classes](../docs/more/custom_class.html) are player-defined skill allocations. Having the option allows interested players to engage with the system on a deeper level, but sacrifices the established balance of the base classes.
 
 - **Paladins** are strong, and also a little brave, a little magical, and have some presence.
 
@@ -32,13 +32,12 @@ Notice the advantages and disadvantages of each custom class. **Paladins** will 
 
 ### Specializations
 
-Specializations are thematically similar kits that relate to a profession or trade of some sort. They are intended to provide a cohesive set of abilities. 
+Specializations are thematically similar kits that relate to a profession or trade of some sort. They are intended to provide a cohesive set of abilities.
 
 - **Priests** have six kits built around the concept of divine magic. They can heal, speak with the dead, and banish evil.
 
-- **Legionnaires** have six kits built around the concept of an ancient Roman infantryman. They have spears, shields, and portable cement for construction. 
+- **Legionnaires** have six kits built around the concept of an ancient Roman infantryman. They have spears, shields, and portable cement for construction.
 
 - **Assassins** have six kits built around the concept of an infiltrator. They have poisons, shadow magic, and weapons that don't leave a trail.
 
 - **Corsairs** have six kits built around the concept of a swashbuckling sky pirate. They have a sword, a gun, and tools that help with survival during ship combat.
-

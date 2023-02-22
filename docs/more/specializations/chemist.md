@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Alchemist Specialization
-> 
+>
 > _Perception, Knowledge_
 
 A specialist that works with strange and dangerous substances. They're able to create near-magical effects by creating chemical sprays with a _Mist Rod_ and synthesizing materials into grenades.

@@ -8,4 +8,4 @@ has_toc: true
 
 # More
 
-This section contains additional information beyond the basics required to play _Miracuse_. 
+This section contains additional information beyond the basics required to play _Miracuse_.

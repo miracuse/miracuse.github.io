@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Soldier Specialization
-> 
+>
 > _Strength, Bravery_
 
 A warrior sworn to uphold a code of honor. Knights are recognized by their _Holy Sword_, but are trained with a variety of weapons and tools.

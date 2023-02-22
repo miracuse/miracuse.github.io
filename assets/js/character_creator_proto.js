@@ -42,11 +42,15 @@ function arange(size) {
 function fetchSpecializations(characterClass) {
   if (characterClass != "Custom") {
     const specialization_data = Array.from(
-      new Set(KIT_DATA.filter((x) => x.Class === characterClass).map((x) => x.Type))
+      new Set(
+        KIT_DATA.filter((x) => x.Class === characterClass).map((x) => x.Type)
+      )
     );
     return specialization_data;
   } else {
-    const specialization_data = Array.from(new Set(KIT_DATA.map((x) => x.Type)));
+    const specialization_data = Array.from(
+      new Set(KIT_DATA.map((x) => x.Type))
+    );
     return specialization_data;
   }
 }
@@ -78,9 +82,9 @@ function fetchKitDescription(kit) {
 //     Pull "Class Description" data where the data matches the provided Class.
 //
 function fetchClassDescription(class_name) {
-  const class_description_data = CLASS_DESCRIPTION_DATA.filter((x) => x.Class === class_name).map(
-    (x) => x.Description
-  );
+  const class_description_data = CLASS_DESCRIPTION_DATA.filter(
+    (x) => x.Class === class_name
+  ).map((x) => x.Description);
   return class_description_data;
 }
 
@@ -89,9 +93,9 @@ function fetchClassDescription(class_name) {
 //     Pull "Class Tags" data where the data matches the provided Class.
 //
 function fetchClassTags(class_name) {
-  const class_tag_data = CLASS_DESCRIPTION_DATA.filter((x) => x.Class === class_name).map(
-    (x) => x.Tags
-  );
+  const class_tag_data = CLASS_DESCRIPTION_DATA.filter(
+    (x) => x.Class === class_name
+  ).map((x) => x.Tags);
   return class_tag_data;
 }
 
@@ -100,9 +104,10 @@ function fetchClassTags(class_name) {
 //     Pull "Class Description" data where the data matches the provided Class.
 //
 function fetchSpecializationDescription(specialization) {
-  const specialization_description_data = SPECIALIZATION_DESCRIPTION_DATA.filter((x) => x.Specialization === specialization).map(
-    (x) => x.Description
-  );
+  const specialization_description_data =
+    SPECIALIZATION_DESCRIPTION_DATA.filter(
+      (x) => x.Specialization === specialization
+    ).map((x) => x.Description);
   return specialization_description_data;
 }
 
@@ -111,9 +116,9 @@ function fetchSpecializationDescription(specialization) {
 //     Pull "Class Description" data where the data matches the provided Class.
 //
 function fetchSpecializationTags(specialization) {
-  const specialization_tag_data = SPECIALIZATION_DESCRIPTION_DATA.filter((x) => x.Specialization === specialization).map(
-    (x) => x.Tags
-  );
+  const specialization_tag_data = SPECIALIZATION_DESCRIPTION_DATA.filter(
+    (x) => x.Specialization === specialization
+  ).map((x) => x.Tags);
   return specialization_tag_data;
 }
 
@@ -197,7 +202,9 @@ class ClassDescriptionHolder extends React.Component {
     return (
       <div className="character_class_description_text">
         <p className="character_class_description">
-          <b>{this.props.class}:</b> {fetchClassDescription(this.props.class)}<br></br><i>({fetchClassTags(this.props.class)})</i>
+          <b>{this.props.class}:</b> {fetchClassDescription(this.props.class)}
+          <br></br>
+          <i>({fetchClassTags(this.props.class)})</i>
         </p>
       </div>
     );
@@ -217,7 +224,10 @@ class SpecializationDescriptionHolder extends React.Component {
     return (
       <div className="character_specialization_description_text">
         <p className="character_specialization_description">
-          <b>{this.props.specialization}:</b> {fetchSpecializationDescription(this.props.specialization)}<br></br><i>({fetchSpecializationTags(this.props.specialization)})</i>
+          <b>{this.props.specialization}:</b>{" "}
+          {fetchSpecializationDescription(this.props.specialization)}
+          <br></br>
+          <i>({fetchSpecializationTags(this.props.specialization)})</i>
         </p>
       </div>
     );
@@ -280,9 +290,9 @@ class ResourceTrack extends React.Component {
   }
 }
 
-// 
 //
-//     
+//
+//
 //
 class SkillCounter extends React.Component {
   constructor(props) {
@@ -294,7 +304,7 @@ class SkillCounter extends React.Component {
       <div className="skills_header">
         <b>{this.props.class + " Skills"}</b>
       </div>
-    )
+    );
   }
 }
 
@@ -379,14 +389,12 @@ class ResourceTextHolder extends React.Component {
   render() {
     if (this.props.skillValue > 0) {
       return (
-          <label>
-            <span>{this.props.text}</span>
-          </label>
+        <label>
+          <span>{this.props.text}</span>
+        </label>
       );
     }
-    return (
-        <label>{this.props.text}</label>
-    );
+    return <label>{this.props.text}</label>;
   }
 }
 
@@ -403,18 +411,31 @@ class KitCounter extends React.Component {
     if (this.props.kit_count <= 4) {
       return (
         <div className="kit_header">
-          <label><b>{this.props.specialization + " Kits (" + this.props.kit_count + "/4)"}</b></label>
+          <label>
+            <b>
+              {this.props.specialization +
+                " Kits (" +
+                this.props.kit_count +
+                "/4)"}
+            </b>
+          </label>
         </div>
-      )
-    }
-    else {
+      );
+    } else {
       return (
         <div className="kit_header">
           <label>
-            <span><b>{this.props.specialization + " Kits (" + this.props.kit_count + "/4)"}</b></span>
+            <span>
+              <b>
+                {this.props.specialization +
+                  " Kits (" +
+                  this.props.kit_count +
+                  "/4)"}
+              </b>
+            </span>
           </label>
         </div>
-      )
+      );
     }
   }
 }
@@ -441,7 +462,7 @@ class KitHolder extends React.Component {
       >
         <label>Equipped: </label>
         {/* <input type="checkbox"></input> */}
-        <input 
+        <input
           type="checkbox"
           checked={this.props.equipped}
           onChange={this.handleChange}
@@ -469,7 +490,9 @@ class KitDescriptionHolder extends React.Component {
         id={"kit_text_0" + this.props.index}
         className={"kit_text_0" + this.props.index}
       >
-        <b><label>{kit_options_data[this.props.index - 1]}</label></b>
+        <b>
+          <label>{kit_options_data[this.props.index - 1]}</label>
+        </b>
         <br></br>
         <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
           Tags: {kit_tags}
@@ -481,7 +504,7 @@ class KitDescriptionHolder extends React.Component {
           {kit_description}
         </p>
       </div>
-    )
+    );
     // if (this.props.equipped) {
     //   return (
     //     <div
@@ -618,22 +641,28 @@ class CharacterSheet extends React.Component {
 
   handleEquipChange(index, event) {
     // Update the equip marker
-    if (index === 1) { this.setState({ Kit_01_Equipped: event.target.checked}); }
-    else if (index === 2) { this.setState({ Kit_02_Equipped: event.target.checked}); }
-    else if (index === 3) { this.setState({ Kit_03_Equipped: event.target.checked}); }
-    else if (index === 4) { this.setState({ Kit_04_Equipped: event.target.checked}); }
-    else if (index === 5) { this.setState({ Kit_05_Equipped: event.target.checked}); }
-    else if (index === 6) { this.setState({ Kit_06_Equipped: event.target.checked}); }
+    if (index === 1) {
+      this.setState({ Kit_01_Equipped: event.target.checked });
+    } else if (index === 2) {
+      this.setState({ Kit_02_Equipped: event.target.checked });
+    } else if (index === 3) {
+      this.setState({ Kit_03_Equipped: event.target.checked });
+    } else if (index === 4) {
+      this.setState({ Kit_04_Equipped: event.target.checked });
+    } else if (index === 5) {
+      this.setState({ Kit_05_Equipped: event.target.checked });
+    } else if (index === 6) {
+      this.setState({ Kit_06_Equipped: event.target.checked });
+    }
 
     // Update the count
-    if (event.target.checked === true) { 
-      this.setState(prevState => {
-        return {Kit_Equip_Count: prevState.Kit_Equip_Count + 1}
+    if (event.target.checked === true) {
+      this.setState((prevState) => {
+        return { Kit_Equip_Count: prevState.Kit_Equip_Count + 1 };
       });
-    }
-    else { 
-      this.setState(prevState => {
-        return {Kit_Equip_Count: prevState.Kit_Equip_Count - 1}
+    } else {
+      this.setState((prevState) => {
+        return { Kit_Equip_Count: prevState.Kit_Equip_Count - 1 };
       });
     }
   }
@@ -705,9 +734,7 @@ class CharacterSheet extends React.Component {
             </div>
           </div> */}
 
-          <ClassDescriptionHolder
-            class={this.state.Class}
-          />
+          <ClassDescriptionHolder class={this.state.Class} />
 
           {/* Horizontal Rule */}
           <div className="barrier_01">
@@ -743,7 +770,10 @@ class CharacterSheet extends React.Component {
           </div>
 
           <div className="physical_health_text">
-            <label>Physical Health</label>
+          <ResourceTextHolder
+              text="Physical Health"
+              skillValue={this.state.Strength}
+            />
           </div>
 
           <ResourceTrack
@@ -752,7 +782,10 @@ class CharacterSheet extends React.Component {
           />
 
           <div className="mental_health_text">
-            <label>Mental Health</label>
+          <ResourceTextHolder
+              text="Mental Health"
+              skillValue={this.state.Bravery}
+            />
           </div>
 
           <ResourceTrack
@@ -767,22 +800,13 @@ class CharacterSheet extends React.Component {
               skillValue={this.state.Knowledge}
             />
           </div>
-          <ResourceTrack
-            prefix="potion"
-            boxCount={2 * this.state.Knowledge}
-          />
+          <ResourceTrack prefix="potion" boxCount={2 * this.state.Knowledge} />
 
           <div className="mana_text">
             <InfoBox message="Mana can be used to amplify or combine kits with the Talisman tag." />
-            <ResourceTextHolder
-              text="Mana"
-              skillValue={this.state.Presence}
-            />
+            <ResourceTextHolder text="Mana" skillValue={this.state.Presence} />
           </div>
-          <ResourceTrack
-            prefix="mana"
-            boxCount={2 * this.state.Presence}
-          />
+          <ResourceTrack prefix="mana" boxCount={2 * this.state.Presence} />
 
           <div className="fortune_text">
             <InfoBox message="Fortune can be used to reroll an action or to amplify kits with the Gear tag." />
@@ -791,22 +815,13 @@ class CharacterSheet extends React.Component {
               skillValue={this.state.Bravery}
             />
           </div>
-          <ResourceTrack
-            prefix="fortune"
-            boxCount={2 * this.state.Bravery}
-          />
+          <ResourceTrack prefix="fortune" boxCount={2 * this.state.Bravery} />
 
           <div className="trick_text">
             <InfoBox message="Tricks can be used for 'I Know a Guy', 'What You Needed', or to amplify kits with any tag." />
-            <ResourceTextHolder
-              text="Tricks"
-              skillValue={this.state.Cunning}
-            />
+            <ResourceTextHolder text="Tricks" skillValue={this.state.Cunning} />
           </div>
-          <ResourceTrack
-            prefix="trick"
-            boxCount={2 * this.state.Cunning}
-          />
+          <ResourceTrack prefix="trick" boxCount={2 * this.state.Cunning} />
 
           {/* Horizontal Rule */}
           <div className="barrier_02">
@@ -814,9 +829,7 @@ class CharacterSheet extends React.Component {
           </div>
 
           {/* Skills  */}
-          <SkillCounter 
-            class={this.state.Class}
-          />
+          <SkillCounter class={this.state.Class} />
           {skill_holders}
           {skill_text_holders}
 
@@ -826,7 +839,7 @@ class CharacterSheet extends React.Component {
           </div>
 
           {/* Kits  */}
-          <KitCounter 
+          <KitCounter
             kit_count={this.state.Kit_Equip_Count}
             specialization={this.state.Specialization_01}
           />
@@ -875,15 +888,15 @@ class CharacterSheet extends React.Component {
 
           <KitDescriptionHolder
             key={"kit_description_holder_1"}
-            index={1} 
-            kit={this.state.Kit_01} 
+            index={1}
+            kit={this.state.Kit_01}
             equipped={this.state.Kit_01_Equipped}
             specializations={[this.state.Specialization_01]}
           />
-          <KitDescriptionHolder 
-            key={"kit_description_holder_2"} 
-            index={2} 
-            kit={this.state.Kit_02} 
+          <KitDescriptionHolder
+            key={"kit_description_holder_2"}
+            index={2}
+            kit={this.state.Kit_02}
             equipped={this.state.Kit_02_Equipped}
             specializations={[this.state.Specialization_01]}
           />
@@ -903,14 +916,15 @@ class CharacterSheet extends React.Component {
           />
           <KitDescriptionHolder
             key={"kit_description_holder_5"}
-            index={5} 
-            kit={this.state.Kit_05} 
+            index={5}
+            kit={this.state.Kit_05}
             equipped={this.state.Kit_05_Equipped}
             specializations={[this.state.Specialization_01]}
           />
-          <KitDescriptionHolder 
-            key={"kit_description_holder_6"} 
-            index={6} kit={this.state.Kit_06} 
+          <KitDescriptionHolder
+            key={"kit_description_holder_6"}
+            index={6}
+            kit={this.state.Kit_06}
             equipped={this.state.Kit_06_Equipped}
             specializations={[this.state.Specialization_01]}
           />

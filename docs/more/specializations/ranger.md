@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Scoundrel Specialization
-> 
+>
 > _Agility, Cunning_
 
 A warrior trained in the traditions of the [The Tribe](../the_world.html). They carry twin axes and a silent hunting bow.

@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Mage Specialization
-> 
+>
 > _Magic, Presence_
 
 Shamans are magic practitioners with dominion over the four elements; fire, earth, air, and water.

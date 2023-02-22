@@ -9,7 +9,7 @@ grand_parent: More
 
 > Scoundrel Skill
 >
-> *Social, Resource Pool, Thievery, Sense*
+> _Social, Resource Pool, Thievery, Sense_
 
 **<span style="color: {{ site.scoundrel_color }}">Cunning</span>** encompasses most thief-like activities. It is the skill for bluffing, sneaking, finding traps, and picking locks. It is also tied to Tricks.
 

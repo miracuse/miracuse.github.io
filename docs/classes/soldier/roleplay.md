@@ -32,7 +32,7 @@ Unlike common footmen, Soldiers have distinguished themselves as expert combatan
 
 Soldiers are also known by the equipment they bear. The rising prevalence of alchemy has made enchanted weaponry more common than ever before, and a veteran Soldier can expect to accumulate a small arsenal over the length of their career. Each is designed in such a way that they can be disassembled and stored on one's person when not in use.
 
-But beyond reputation and armaments, the true mark of a Soldier is an uncanny air of intensity. A Soldier's full regard can feel as suffocating as iron. Their contempt, like needles under skin. 
+But beyond reputation and armaments, the true mark of a Soldier is an uncanny air of intensity. A Soldier's full regard can feel as suffocating as iron. Their contempt, like needles under skin.
 
 <!-- A Soldier starts their career as an ordinary fighter. A conscript in a noble's army, or a vagabond in a bandit camp are both common origins. They learn their way around a weapon and might have a few skirmishes under their belt. But there is a moment when _something_ changes. For some it's a near-death experience. For others, a glorious victory against the odds. Whatever the cause, they are never quite the same after.
 

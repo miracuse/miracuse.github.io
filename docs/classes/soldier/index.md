@@ -9,7 +9,7 @@ nav_order: 2
 
 # The Soldier
 
-- **<span style="color: {{ site.soldier_color }}">Strength</span>**: Soldiers use [Strength](../../more/skills/strength.html) to use weapons, block attacks, and resist physical harm. 
+- **<span style="color: {{ site.soldier_color }}">Strength</span>**: Soldiers use [Strength](../../more/skills/strength.html) to use weapons, block attacks, and resist physical harm.
 
 - **<span style="color: {{ site.soldier_color }}">Bravery</span>**: Soldiers use [Bravery](../../more/skills/bravery.html) to gather fortune, influence others, and resist mental harm.
 
@@ -35,10 +35,10 @@ The Soldier's social skill is focused on emotional persuasion. **<span style="co
 
 ### Specializations
 
-Specializations are groups of six [Kits](../../gameplay/kits.html) that reflect a character's trade and training. 
+Specializations are groups of six [Kits](../../gameplay/kits.html) that reflect a character's trade and training.
 
-* [Blademaster](../../more/specializations/blademaster.html)
+- [Blademaster](../../more/specializations/blademaster.html)
 
-* [Knight](../../more/specializations/knight.html)
+- [Knight](../../more/specializations/knight.html)
 
-* [Legionnarie](../../more/specializations/legionnaire.html)
+- [Legionnarie](../../more/specializations/legionnaire.html)

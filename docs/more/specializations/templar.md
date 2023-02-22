@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Advanced Specialization
-> 
+>
 > Strength, Magic, Bravery
 
 A Templar's arsenal consists of tools dedicated to countering and neutralizing dark magic.

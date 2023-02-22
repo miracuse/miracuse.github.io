@@ -37,10 +37,10 @@ The Scoundrel's social skill allows them to move without attracting notice, to s
 
 ### Specializations
 
-Specializations are groups of six [Kits](../../gameplay/kits.html) that reflect a character's trade and training. 
+Specializations are groups of six [Kits](../../gameplay/kits.html) that reflect a character's trade and training.
 
-* [Assassin](../../more/specializations/assassin.html)
+- [Assassin](../../more/specializations/assassin.html)
 
-* [Bard](../../more/specializations/bard.html)
+- [Bard](../../more/specializations/bard.html)
 
-* [Ranger](../../more/specializations/ranger.html)
+- [Ranger](../../more/specializations/ranger.html)

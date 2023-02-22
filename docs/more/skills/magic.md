@@ -9,7 +9,7 @@ grand_parent: More
 
 > Mage Skill
 >
-> *Offense, Mystic*
+> _Offense, Mystic_
 
 **<span style="color: {{ site.mage_color }}">Magic</span>** is the skill for using Talismans. It can do very little by itself, but opens up many options in conjunction with a Talisman kit.
 

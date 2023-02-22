@@ -14,12 +14,12 @@ Wildlife that poses a threat to the inhabitants of the land. The world is home t
 
 ##### Examples
 
-* Worgs
-* Manticores
-* Sky Raptors
-* Ancient Swamp Alligators
-* Leviathans
-* Dragons
+- Worgs
+- Manticores
+- Sky Raptors
+- Ancient Swamp Alligators
+- Leviathans
+- Dragons
 
 ---
 
@@ -29,12 +29,12 @@ Mages draw their power from forces beyond this world, forces which are not alway
 
 ##### Examples
 
-* Skeletons
-* Zombies
-* Demons
-* Renegade [Conjurers](../specializations/conjurer.html)
-* The Fey
-* Evil Jinn
+- Skeletons
+- Zombies
+- Demons
+- Renegade [Conjurers](../specializations/conjurer.html)
+- The Fey
+- Evil Jinn
 
 ---
 
@@ -46,10 +46,10 @@ The Guilds, for their part, are filled with newly wealthy tradesman and merchant
 
 ##### Examples
 
-* Bandits
-* Mercenaries
-* [Assassins](../specializations/assassin.html)
-* [Battlemages](../specializations/shaman.html)
-* [Sharpshooters](../specializations/sapper.html)
-* [Mage Hunters](../specializations/templar.html)
-* [Sky Pirates](../specializations/corsair.html)
+- Bandits
+- Mercenaries
+- [Assassins](../specializations/assassin.html)
+- [Battlemages](../specializations/shaman.html)
+- [Sharpshooters](../specializations/sapper.html)
+- [Mage Hunters](../specializations/templar.html)
+- [Sky Pirates](../specializations/corsair.html)

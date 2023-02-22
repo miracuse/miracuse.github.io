@@ -9,7 +9,7 @@ nav_exclude: true
 # {{ page.title }}
 
 > Soldier Specialization
-> 
+>
 > _Strength, Bravery_
 
 Recognized masters of the sword, in great demand across the world as mercenaries and bodyguards. Often retained by nobility as professional duelists to settle personal disputes.

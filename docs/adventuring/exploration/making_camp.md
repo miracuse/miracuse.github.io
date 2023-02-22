@@ -17,4 +17,3 @@ nav_order: 2
 > **GM**: Roll Magic for it.
 
 **Making Camp** allows characters to recover and lets Players change their equipped Kits. It can be done anytime the characters are somewhere safe and comfortable enough to rest. A full recovery requires roughly eight hours of rest.
-

@@ -54,7 +54,7 @@ GM:  You find yourselves standing in front of a dark cavern.
 
 Tell the players where they are and what's around them. Give them a few moments to get into character, get their bearings, etc. Be sure to make the "direction" clear.
 
->**Note**: Some contrarian players might try to go away from the "direction" of the oneshot to test out their newfound agency. While it's okay to try different approaches to the mission, you should gently remind them that the objective is set in stone for this oneshot. The party can try out more [open-ended gameplay](making_campaigns/index.html) in future sessions.
+> **Note**: Some contrarian players might try to go away from the "direction" of the oneshot to test out their newfound agency. While it's okay to try different approaches to the mission, you should gently remind them that the objective is set in stone for this oneshot. The party can try out more [open-ended gameplay](making_campaigns/index.html) in future sessions.
 
 ##### React to Player Actions
 
