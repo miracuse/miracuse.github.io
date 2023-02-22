@@ -196,11 +196,8 @@ class ClassDescriptionHolder extends React.Component {
   render() {
     return (
       <div className="character_class_description_text">
-        <p className="character_class_tags">
-          ({fetchClassTags(this.props.class)})
-        </p>
         <p className="character_class_description">
-          <b>{this.props.class}:</b> {fetchClassDescription(this.props.class)}
+          <b>{this.props.class}:</b> {fetchClassDescription(this.props.class)}<br></br><i>({fetchClassTags(this.props.class)})</i>
         </p>
       </div>
     );
@@ -219,11 +216,8 @@ class SpecializationDescriptionHolder extends React.Component {
   render() {
     return (
       <div className="character_specialization_description_text">
-        <p className="character_specialization_tags">
-          ({fetchSpecializationTags(this.props.specialization)})
-        </p>
         <p className="character_specialization_description">
-          <b>{this.props.specialization}:</b> {fetchSpecializationDescription(this.props.specialization)}
+          <b>{this.props.specialization}:</b> {fetchSpecializationDescription(this.props.specialization)}<br></br><i>({fetchSpecializationTags(this.props.specialization)})</i>
         </p>
       </div>
     );
@@ -283,6 +277,24 @@ class ResourceTrack extends React.Component {
     ));
 
     return <div className={this.props.prefix + "_track"}>{box_holders}</div>;
+  }
+}
+
+// 
+//
+//     
+//
+class SkillCounter extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="skills_header">
+        <b>{this.props.class + " Skills"}</b>
+      </div>
+    )
   }
 }
 
@@ -355,6 +367,29 @@ class SkillTextHolder extends React.Component {
   }
 }
 
+// Text labels for Resources.
+//
+//     Text that becomes bolded and colored when their corresponding value is > 0.
+//
+class ResourceTextHolder extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    if (this.props.skillValue > 0) {
+      return (
+          <label>
+            <span>{this.props.text}</span>
+          </label>
+      );
+    }
+    return (
+        <label>{this.props.text}</label>
+    );
+  }
+}
+
 // A tracker for the number of equipped kits.
 //
 //     Tracks the number of equipped kits and displays it.
@@ -365,11 +400,22 @@ class KitCounter extends React.Component {
   }
 
   render() {
-    return (
-      <div className="kit_header">
-        <b>{this.props.specialization + " Kits (" + this.props.kit_count + "/4)"}</b>
-      </div>
-    )
+    if (this.props.kit_count <= 4) {
+      return (
+        <div className="kit_header">
+          <label><b>{this.props.specialization + " Kits (" + this.props.kit_count + "/4)"}</b></label>
+        </div>
+      )
+    }
+    else {
+      return (
+        <div className="kit_header">
+          <label>
+            <span><b>{this.props.specialization + " Kits (" + this.props.kit_count + "/4)"}</b></span>
+          </label>
+        </div>
+      )
+    }
   }
 }
 
@@ -435,7 +481,41 @@ class KitDescriptionHolder extends React.Component {
           {kit_description}
         </p>
       </div>
-    );
+    )
+    // if (this.props.equipped) {
+    //   return (
+    //     <div
+    //     id={"kit_text_0" + this.props.index}
+    //     className={"kit_text_0" + this.props.index}
+    //   >
+    //     <b><label>{kit_options_data[this.props.index - 1]}</label></b>
+    //     <br></br>
+    //     <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
+    //       Tags: {kit_tags}
+    //     </p>
+    //     <p
+    //       id={"kit_description_0" + this.props.index}
+    //       className="kit_description"
+    //     >
+    //       {kit_description}
+    //     </p>
+    //   </div>
+    //   );
+    // }
+    // else {
+    //   return (
+    //     <div
+    //     id={"kit_text_0" + this.props.index}
+    //     className={"kit_text_0" + this.props.index}
+    //   >
+    //     <b><label>{kit_options_data[this.props.index - 1]}</label></b>
+    //     <br></br>
+    //     <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
+    //       Tags: {kit_tags}
+    //     </p>
+    //   </div>
+    //   );
+    // }
   }
 }
 
@@ -659,7 +739,7 @@ class CharacterSheet extends React.Component {
 
           {/* Health */}
           <div className="health_header">
-            <p>Health</p>
+            <p>Health / Resources</p>
           </div>
 
           <div className="physical_health_text">
@@ -680,14 +760,12 @@ class CharacterSheet extends React.Component {
             boxCount={3 + this.state.Bravery}
           />
 
-          {/* Resources */}
-          <div className="resources_header">
-            <b>Resources</b>
-          </div>
-
           <div className="potion_text">
             <InfoBox message="Potions can be used to recover two Physical boxes or to amplify kits with the Alchemy tag." />
-            <label>Potions</label>
+            <ResourceTextHolder
+              text="Potions"
+              skillValue={this.state.Knowledge}
+            />
           </div>
           <ResourceTrack
             prefix="potion"
@@ -696,7 +774,10 @@ class CharacterSheet extends React.Component {
 
           <div className="mana_text">
             <InfoBox message="Mana can be used to amplify or combine kits with the Talisman tag." />
-            <label>Mana</label>
+            <ResourceTextHolder
+              text="Mana"
+              skillValue={this.state.Presence}
+            />
           </div>
           <ResourceTrack
             prefix="mana"
@@ -705,7 +786,10 @@ class CharacterSheet extends React.Component {
 
           <div className="fortune_text">
             <InfoBox message="Fortune can be used to reroll an action or to amplify kits with the Gear tag." />
-            <label>Fortune</label>
+            <ResourceTextHolder
+              text="Fortune"
+              skillValue={this.state.Bravery}
+            />
           </div>
           <ResourceTrack
             prefix="fortune"
@@ -714,22 +798,30 @@ class CharacterSheet extends React.Component {
 
           <div className="trick_text">
             <InfoBox message="Tricks can be used for 'I Know a Guy', 'What You Needed', or to amplify kits with any tag." />
-            <label>Tricks</label>
+            <ResourceTextHolder
+              text="Tricks"
+              skillValue={this.state.Cunning}
+            />
           </div>
           <ResourceTrack
             prefix="trick"
             boxCount={2 * this.state.Cunning}
           />
 
-          {/* Skills  */}
-          <div className="skills_header">
-            <b>Skills</b>
+          {/* Horizontal Rule */}
+          <div className="barrier_02">
+            <hr></hr>
           </div>
+
+          {/* Skills  */}
+          <SkillCounter 
+            class={this.state.Class}
+          />
           {skill_holders}
           {skill_text_holders}
 
           {/* Horizontal Rule */}
-          <div className="barrier_02">
+          <div className="barrier_03">
             <hr></hr>
           </div>
 

@@ -170,10 +170,8 @@ class ClassDescriptionHolder extends React.Component {
     return /*#__PURE__*/React.createElement("div", {
       className: "character_class_description_text"
     }, /*#__PURE__*/React.createElement("p", {
-      className: "character_class_tags"
-    }, "(", fetchClassTags(this.props.class), ")"), /*#__PURE__*/React.createElement("p", {
       className: "character_class_description"
-    }, /*#__PURE__*/React.createElement("b", null, this.props.class, ":"), " ", fetchClassDescription(this.props.class)));
+    }, /*#__PURE__*/React.createElement("b", null, this.props.class, ":"), " ", fetchClassDescription(this.props.class), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("i", null, "(", fetchClassTags(this.props.class), ")")));
   }
 
 } // Specialization descriptions.
@@ -191,10 +189,8 @@ class SpecializationDescriptionHolder extends React.Component {
     return /*#__PURE__*/React.createElement("div", {
       className: "character_specialization_description_text"
     }, /*#__PURE__*/React.createElement("p", {
-      className: "character_specialization_tags"
-    }, "(", fetchSpecializationTags(this.props.specialization), ")"), /*#__PURE__*/React.createElement("p", {
       className: "character_specialization_description"
-    }, /*#__PURE__*/React.createElement("b", null, this.props.specialization, ":"), " ", fetchSpecializationDescription(this.props.specialization)));
+    }, /*#__PURE__*/React.createElement("b", null, this.props.specialization, ":"), " ", fetchSpecializationDescription(this.props.specialization), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("i", null, "(", fetchSpecializationTags(this.props.specialization), ")")));
   }
 
 } // A dropdown for specializations.
@@ -249,6 +245,23 @@ class ResourceTrack extends React.Component {
     return /*#__PURE__*/React.createElement("div", {
       className: this.props.prefix + "_track"
     }, box_holders);
+  }
+
+} // 
+//
+//     
+//
+
+
+class SkillCounter extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return /*#__PURE__*/React.createElement("div", {
+      className: "skills_header"
+    }, /*#__PURE__*/React.createElement("b", null, this.props.class + " Skills"));
   }
 
 } // Numeric inputs for Skills.
@@ -309,6 +322,25 @@ class SkillTextHolder extends React.Component {
     }, /*#__PURE__*/React.createElement("label", null, this.props.skill));
   }
 
+} // Text labels for Resources.
+//
+//     Text that becomes bolded and colored when their corresponding value is > 0.
+//
+
+
+class ResourceTextHolder extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    if (this.props.skillValue > 0) {
+      return /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, this.props.text));
+    }
+
+    return /*#__PURE__*/React.createElement("label", null, this.props.text);
+  }
+
 } // A tracker for the number of equipped kits.
 //
 //     Tracks the number of equipped kits and displays it.
@@ -321,9 +353,15 @@ class KitCounter extends React.Component {
   }
 
   render() {
-    return /*#__PURE__*/React.createElement("div", {
-      className: "kit_header"
-    }, /*#__PURE__*/React.createElement("b", null, this.props.specialization + " Kits (" + this.props.kit_count + "/4)"));
+    if (this.props.kit_count <= 4) {
+      return /*#__PURE__*/React.createElement("div", {
+        className: "kit_header"
+      }, /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("b", null, this.props.specialization + " Kits (" + this.props.kit_count + "/4)")));
+    } else {
+      return /*#__PURE__*/React.createElement("div", {
+        className: "kit_header"
+      }, /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("b", null, this.props.specialization + " Kits (" + this.props.kit_count + "/4)"))));
+    }
   }
 
 } // A dropdown for Kit options.
@@ -377,7 +415,40 @@ class KitDescriptionHolder extends React.Component {
     }, "Tags: ", kit_tags), /*#__PURE__*/React.createElement("p", {
       id: "kit_description_0" + this.props.index,
       className: "kit_description"
-    }, kit_description));
+    }, kit_description)); // if (this.props.equipped) {
+    //   return (
+    //     <div
+    //     id={"kit_text_0" + this.props.index}
+    //     className={"kit_text_0" + this.props.index}
+    //   >
+    //     <b><label>{kit_options_data[this.props.index - 1]}</label></b>
+    //     <br></br>
+    //     <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
+    //       Tags: {kit_tags}
+    //     </p>
+    //     <p
+    //       id={"kit_description_0" + this.props.index}
+    //       className="kit_description"
+    //     >
+    //       {kit_description}
+    //     </p>
+    //   </div>
+    //   );
+    // }
+    // else {
+    //   return (
+    //     <div
+    //     id={"kit_text_0" + this.props.index}
+    //     className={"kit_text_0" + this.props.index}
+    //   >
+    //     <b><label>{kit_options_data[this.props.index - 1]}</label></b>
+    //     <br></br>
+    //     <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
+    //       Tags: {kit_tags}
+    //     </p>
+    //   </div>
+    //   );
+    // }
   }
 
 } // Main App ///////////////////////////////////////////////////////////////////
@@ -622,7 +693,7 @@ class CharacterSheet extends React.Component {
       specialization: this.state.Specialization_01
     }), /*#__PURE__*/React.createElement("div", {
       className: "health_header"
-    }, /*#__PURE__*/React.createElement("p", null, "Health")), /*#__PURE__*/React.createElement("div", {
+    }, /*#__PURE__*/React.createElement("p", null, "Health / Resources")), /*#__PURE__*/React.createElement("div", {
       className: "physical_health_text"
     }, /*#__PURE__*/React.createElement("label", null, "Physical Health")), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "physical_health",
@@ -633,39 +704,51 @@ class CharacterSheet extends React.Component {
       prefix: "mental_health",
       boxCount: 3 + this.state.Bravery
     }), /*#__PURE__*/React.createElement("div", {
-      className: "resources_header"
-    }, /*#__PURE__*/React.createElement("b", null, "Resources")), /*#__PURE__*/React.createElement("div", {
       className: "potion_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
       message: "Potions can be used to recover two Physical boxes or to amplify kits with the Alchemy tag."
-    }), /*#__PURE__*/React.createElement("label", null, "Potions")), /*#__PURE__*/React.createElement(ResourceTrack, {
+    }), /*#__PURE__*/React.createElement(ResourceTextHolder, {
+      text: "Potions",
+      skillValue: this.state.Knowledge
+    })), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "potion",
       boxCount: 2 * this.state.Knowledge
     }), /*#__PURE__*/React.createElement("div", {
       className: "mana_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
       message: "Mana can be used to amplify or combine kits with the Talisman tag."
-    }), /*#__PURE__*/React.createElement("label", null, "Mana")), /*#__PURE__*/React.createElement(ResourceTrack, {
+    }), /*#__PURE__*/React.createElement(ResourceTextHolder, {
+      text: "Mana",
+      skillValue: this.state.Presence
+    })), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "mana",
       boxCount: 2 * this.state.Presence
     }), /*#__PURE__*/React.createElement("div", {
       className: "fortune_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
       message: "Fortune can be used to reroll an action or to amplify kits with the Gear tag."
-    }), /*#__PURE__*/React.createElement("label", null, "Fortune")), /*#__PURE__*/React.createElement(ResourceTrack, {
+    }), /*#__PURE__*/React.createElement(ResourceTextHolder, {
+      text: "Fortune",
+      skillValue: this.state.Bravery
+    })), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "fortune",
       boxCount: 2 * this.state.Bravery
     }), /*#__PURE__*/React.createElement("div", {
       className: "trick_text"
     }, /*#__PURE__*/React.createElement(InfoBox, {
       message: "Tricks can be used for 'I Know a Guy', 'What You Needed', or to amplify kits with any tag."
-    }), /*#__PURE__*/React.createElement("label", null, "Tricks")), /*#__PURE__*/React.createElement(ResourceTrack, {
+    }), /*#__PURE__*/React.createElement(ResourceTextHolder, {
+      text: "Tricks",
+      skillValue: this.state.Cunning
+    })), /*#__PURE__*/React.createElement(ResourceTrack, {
       prefix: "trick",
       boxCount: 2 * this.state.Cunning
     }), /*#__PURE__*/React.createElement("div", {
-      className: "skills_header"
-    }, /*#__PURE__*/React.createElement("b", null, "Skills")), skill_holders, skill_text_holders, /*#__PURE__*/React.createElement("div", {
       className: "barrier_02"
+    }, /*#__PURE__*/React.createElement("hr", null)), /*#__PURE__*/React.createElement(SkillCounter, {
+      class: this.state.Class
+    }), skill_holders, skill_text_holders, /*#__PURE__*/React.createElement("div", {
+      className: "barrier_03"
     }, /*#__PURE__*/React.createElement("hr", null)), /*#__PURE__*/React.createElement(KitCounter, {
       kit_count: this.state.Kit_Equip_Count,
       specialization: this.state.Specialization_01
