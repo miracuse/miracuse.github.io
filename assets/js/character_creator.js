@@ -309,6 +309,23 @@ class SkillTextHolder extends React.Component {
     }, /*#__PURE__*/React.createElement("label", null, this.props.skill));
   }
 
+} // A tracker for the number of equipped kits.
+//
+//     Tracks the number of equipped kits and displays it.
+//
+
+
+class KitCounter extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return /*#__PURE__*/React.createElement("div", {
+      className: "kit_header"
+    }, /*#__PURE__*/React.createElement("b", null, this.props.specialization + " Kits (" + this.props.kit_count + "/4)"));
+  }
+
 } // A dropdown for Kit options.
 //
 //     When clicked, the dropdown lists available kits.
@@ -322,44 +339,18 @@ class KitHolder extends React.Component {
   }
 
   handleChange(event) {
-    this.props.onChange(this.props.index, event.target.value);
-  }
-
-  generateKitOption(x) {
-    if (x == this.props.kit) {
-      return /*#__PURE__*/React.createElement("option", {
-        key: x,
-        value: x,
-        selected: true
-      }, x);
-    } else {
-      return /*#__PURE__*/React.createElement("option", {
-        key: x,
-        value: x
-      }, x);
-    }
+    this.props.onChange(this.props.index, event);
   }
 
   render() {
-    // Generate kit type selections
-    const kit_types = this.props.specializations.map(x => /*#__PURE__*/React.createElement("option", {
-      key: x,
-      value: x
-    }, x)); // Populate the kit selections based on the kit types
-
-    const kit_options_data = fetchKits(this.props.specializations);
-    const kit_options = kit_options_data.map(x => this.generateKitOption(x));
     return /*#__PURE__*/React.createElement("div", {
       id: "kit_chooser_0" + this.props.index,
-      className: "kit_chooser_0" + this.props.index
-    }, /*#__PURE__*/React.createElement("select", {
-      id: "kit_type_0" + this.props.index,
-      className: "kit_type_0" + this.props.index
-    }, kit_types), /*#__PURE__*/React.createElement("select", {
-      id: "kit_0" + this.props.index,
-      className: "kit_0" + this.props.index,
+      className: "kit_chooser_0" + this.props.index + " kit_chooser"
+    }, /*#__PURE__*/React.createElement("label", null, "Equipped: "), /*#__PURE__*/React.createElement("input", {
+      type: "checkbox",
+      checked: this.props.equipped,
       onChange: this.handleChange
-    }, kit_options));
+    }));
   }
 
 } // Text for kit descriptions.
@@ -374,12 +365,13 @@ class KitDescriptionHolder extends React.Component {
   }
 
   render() {
+    const kit_options_data = fetchKits(this.props.specializations);
     const kit_description = fetchKitDescription(this.props.kit);
     const kit_tags = fetchKitTags(this.props.kit);
     return /*#__PURE__*/React.createElement("div", {
       id: "kit_text_0" + this.props.index,
       className: "kit_text_0" + this.props.index
-    }, /*#__PURE__*/React.createElement("p", {
+    }, /*#__PURE__*/React.createElement("b", null, /*#__PURE__*/React.createElement("label", null, kit_options_data[this.props.index - 1])), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("p", {
       id: "kit_tags_0" + this.props.index,
       className: "kit_tags"
     }, "Tags: ", kit_tags), /*#__PURE__*/React.createElement("p", {
@@ -398,7 +390,7 @@ class CharacterSheet extends React.Component {
     this.handleClassChange = this.handleClassChange.bind(this);
     this.handleSkillChange = this.handleSkillChange.bind(this);
     this.handleSpecializationChange = this.handleSpecializationChange.bind(this);
-    this.handleKitChange = this.handleKitChange.bind(this);
+    this.handleEquipChange = this.handleEquipChange.bind(this);
     this.handleDiceRoll = this.handleDiceRoll.bind(this);
     this.state = {
       Class: "",
@@ -408,6 +400,15 @@ class CharacterSheet extends React.Component {
       Kit_02: "",
       Kit_03: "",
       Kit_04: "",
+      Kit_05: "",
+      Kit_06: "",
+      Kit_01_Equipped: false,
+      Kit_02_Equipped: false,
+      Kit_03_Equipped: false,
+      Kit_04_Equipped: false,
+      Kit_05_Equipped: false,
+      Kit_06_Equipped: false,
+      Kit_Equip_Count: 0,
       Perception: 0,
       Knowledge: 0,
       Strength: 0,
@@ -451,18 +452,51 @@ class CharacterSheet extends React.Component {
 
   handleSpecializationChange(index, specialization) {
     // Set the specialization
-    // var specializations_copy = this.state.Specialization_01.slice(0);
-    // specializations_copy[index] = specialization;
-    // this.setState({ Specialization_01: specializations_copy });
     this.setState({
       Specialization_01: specialization
     }); // Cascade the change, setting the kits based on the specializations
 
     var kit_data = fetchKits([specialization]);
-    this.handleKitChange(1, kit_data[0]);
-    this.handleKitChange(2, kit_data[1]);
-    this.handleKitChange(3, kit_data[2]);
-    this.handleKitChange(4, kit_data[3]);
+    this.setState({
+      Kit_01: kit_data[0]
+    });
+    this.setState({
+      Kit_02: kit_data[1]
+    });
+    this.setState({
+      Kit_03: kit_data[2]
+    });
+    this.setState({
+      Kit_04: kit_data[3]
+    });
+    this.setState({
+      Kit_05: kit_data[4]
+    });
+    this.setState({
+      Kit_06: kit_data[5]
+    }); // Unequip all kits
+
+    this.setState({
+      Kit_01_Equipped: false
+    });
+    this.setState({
+      Kit_02_Equipped: false
+    });
+    this.setState({
+      Kit_03_Equipped: false
+    });
+    this.setState({
+      Kit_04_Equipped: false
+    });
+    this.setState({
+      Kit_05_Equipped: false
+    });
+    this.setState({
+      Kit_06_Equipped: false
+    });
+    this.setState({
+      Kit_Equip_Count: 0
+    });
   }
 
   handleSkillChange(skill, event) {
@@ -472,29 +506,46 @@ class CharacterSheet extends React.Component {
     });
   }
 
-  handleKitChange(index, kit) {
-    // Set the kit
+  handleEquipChange(index, event) {
+    // Update the equip marker
     if (index === 1) {
       this.setState({
-        Kit_01: kit
+        Kit_01_Equipped: event.target.checked
       });
-    }
-
-    if (index === 2) {
+    } else if (index === 2) {
       this.setState({
-        Kit_02: kit
+        Kit_02_Equipped: event.target.checked
       });
-    }
-
-    if (index === 3) {
+    } else if (index === 3) {
       this.setState({
-        Kit_03: kit
+        Kit_03_Equipped: event.target.checked
       });
-    }
-
-    if (index === 4) {
+    } else if (index === 4) {
       this.setState({
-        Kit_04: kit
+        Kit_04_Equipped: event.target.checked
+      });
+    } else if (index === 5) {
+      this.setState({
+        Kit_05_Equipped: event.target.checked
+      });
+    } else if (index === 6) {
+      this.setState({
+        Kit_06_Equipped: event.target.checked
+      });
+    } // Update the count
+
+
+    if (event.target.checked === true) {
+      this.setState(prevState => {
+        return {
+          Kit_Equip_Count: prevState.Kit_Equip_Count + 1
+        };
+      });
+    } else {
+      this.setState(prevState => {
+        return {
+          Kit_Equip_Count: prevState.Kit_Equip_Count - 1
+        };
       });
     }
   }
@@ -615,48 +666,81 @@ class CharacterSheet extends React.Component {
       className: "skills_header"
     }, /*#__PURE__*/React.createElement("b", null, "Skills")), skill_holders, skill_text_holders, /*#__PURE__*/React.createElement("div", {
       className: "barrier_02"
-    }, /*#__PURE__*/React.createElement("hr", null)), /*#__PURE__*/React.createElement("div", {
-      className: "kit_header"
-    }, /*#__PURE__*/React.createElement("b", null, "Kits")), /*#__PURE__*/React.createElement(KitHolder, {
+    }, /*#__PURE__*/React.createElement("hr", null)), /*#__PURE__*/React.createElement(KitCounter, {
+      kit_count: this.state.Kit_Equip_Count,
+      specialization: this.state.Specialization_01
+    }), /*#__PURE__*/React.createElement(KitHolder, {
       key: "kit_holder_1",
       index: 1,
       kit: this.state.Kit_01,
-      specializations: [this.state.Specialization_01],
-      onChange: this.handleKitChange
+      equipped: this.state.Kit_01_Equipped,
+      onChange: this.handleEquipChange
     }), /*#__PURE__*/React.createElement(KitHolder, {
       key: "kit_holder_2",
       index: 2,
       kit: this.state.Kit_02,
-      specializations: [this.state.Specialization_01],
-      onChange: this.handleKitChange
+      equipped: this.state.Kit_02_Equipped,
+      onChange: this.handleEquipChange
     }), /*#__PURE__*/React.createElement(KitHolder, {
       key: "kit_holder_3",
       index: 3,
       kit: this.state.Kit_03,
-      specializations: [this.state.Specialization_01],
-      onChange: this.handleKitChange
+      equipped: this.state.Kit_03_Equipped,
+      onChange: this.handleEquipChange
     }), /*#__PURE__*/React.createElement(KitHolder, {
       key: "kit_holder_4",
       index: 4,
       kit: this.state.Kit_04,
-      specializations: [this.state.Specialization_01],
-      onChange: this.handleKitChange
+      equipped: this.state.Kit_04_Equipped,
+      onChange: this.handleEquipChange
+    }), /*#__PURE__*/React.createElement(KitHolder, {
+      key: "kit_holder_5",
+      index: 5,
+      kit: this.state.Kit_05,
+      equipped: this.state.Kit_05_Equipped,
+      onChange: this.handleEquipChange
+    }), /*#__PURE__*/React.createElement(KitHolder, {
+      key: "kit_holder_6",
+      index: 6,
+      kit: this.state.Kit_06,
+      equipped: this.state.Kit_06_Equipped,
+      onChange: this.handleEquipChange
     }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
       key: "kit_description_holder_1",
       index: 1,
-      kit: this.state.Kit_01
+      kit: this.state.Kit_01,
+      equipped: this.state.Kit_01_Equipped,
+      specializations: [this.state.Specialization_01]
     }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
       key: "kit_description_holder_2",
       index: 2,
-      kit: this.state.Kit_02
+      kit: this.state.Kit_02,
+      equipped: this.state.Kit_02_Equipped,
+      specializations: [this.state.Specialization_01]
     }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
       key: "kit_description_holder_3",
       index: 3,
-      kit: this.state.Kit_03
+      kit: this.state.Kit_03,
+      equipped: this.state.Kit_03_Equipped,
+      specializations: [this.state.Specialization_01]
     }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
       key: "kit_description_holder_4",
       index: 4,
-      kit: this.state.Kit_04
+      kit: this.state.Kit_04,
+      equipped: this.state.Kit_04_Equipped,
+      specializations: [this.state.Specialization_01]
+    }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
+      key: "kit_description_holder_5",
+      index: 5,
+      kit: this.state.Kit_05,
+      equipped: this.state.Kit_05_Equipped,
+      specializations: [this.state.Specialization_01]
+    }), /*#__PURE__*/React.createElement(KitDescriptionHolder, {
+      key: "kit_description_holder_6",
+      index: 6,
+      kit: this.state.Kit_06,
+      equipped: this.state.Kit_06_Equipped,
+      specializations: [this.state.Specialization_01]
     })));
   }
 

@@ -115,6 +115,12 @@
   @include btn-color($white, $green-100);
 }
 
+// Equip Button
+.btn-equip {
+  width: 100%;
+  line-height: 0.5;
+}
+
 // Info Button
 .info-btn {
   cursor: pointer;

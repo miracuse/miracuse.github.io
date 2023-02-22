@@ -355,6 +355,24 @@ class SkillTextHolder extends React.Component {
   }
 }
 
+// A tracker for the number of equipped kits.
+//
+//     Tracks the number of equipped kits and displays it.
+//
+class KitCounter extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="kit_header">
+        <b>{this.props.specialization + " Kits (" + this.props.kit_count + "/4)"}</b>
+      </div>
+    )
+  }
+}
+
 // A dropdown for Kit options.
 //
 //     When clicked, the dropdown lists available kits.
@@ -366,55 +384,22 @@ class KitHolder extends React.Component {
   }
 
   handleChange(event) {
-    this.props.onChange(this.props.index, event.target.value);
-  }
-
-  generateKitOption(x) {
-    if (x == this.props.kit) {
-      return (
-        <option key={x} value={x} selected>
-          {x}
-        </option>
-      );
-    } else {
-      return (
-        <option key={x} value={x}>
-          {x}
-        </option>
-      );
-    }
+    this.props.onChange(this.props.index, event);
   }
 
   render() {
-    // Generate kit type selections
-    const kit_types = this.props.specializations.map((x) => (
-      <option key={x} value={x}>
-        {x}
-      </option>
-    ));
-
-    // Populate the kit selections based on the kit types
-    const kit_options_data = fetchKits(this.props.specializations);
-    const kit_options = kit_options_data.map((x) => this.generateKitOption(x));
-
     return (
       <div
         id={"kit_chooser_0" + this.props.index}
-        className={"kit_chooser_0" + this.props.index}
+        className={"kit_chooser_0" + this.props.index + " kit_chooser"}
       >
-        <select
-          id={"kit_type_0" + this.props.index}
-          className={"kit_type_0" + this.props.index}
-        >
-          {kit_types}
-        </select>
-        <select
-          id={"kit_0" + this.props.index}
-          className={"kit_0" + this.props.index}
+        <label>Equipped: </label>
+        {/* <input type="checkbox"></input> */}
+        <input 
+          type="checkbox"
+          checked={this.props.equipped}
           onChange={this.handleChange}
-        >
-          {kit_options}
-        </select>
+        ></input>
       </div>
     );
   }
@@ -430,6 +415,7 @@ class KitDescriptionHolder extends React.Component {
   }
 
   render() {
+    const kit_options_data = fetchKits(this.props.specializations);
     const kit_description = fetchKitDescription(this.props.kit);
     const kit_tags = fetchKitTags(this.props.kit);
     return (
@@ -437,6 +423,8 @@ class KitDescriptionHolder extends React.Component {
         id={"kit_text_0" + this.props.index}
         className={"kit_text_0" + this.props.index}
       >
+        <b><label>{kit_options_data[this.props.index - 1]}</label></b>
+        <br></br>
         <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
           Tags: {kit_tags}
         </p>
@@ -460,7 +448,7 @@ class CharacterSheet extends React.Component {
     this.handleSkillChange = this.handleSkillChange.bind(this);
     this.handleSpecializationChange =
       this.handleSpecializationChange.bind(this);
-    this.handleKitChange = this.handleKitChange.bind(this);
+    this.handleEquipChange = this.handleEquipChange.bind(this);
     this.handleDiceRoll = this.handleDiceRoll.bind(this);
     this.state = {
       Class: "",
@@ -470,6 +458,15 @@ class CharacterSheet extends React.Component {
       Kit_02: "",
       Kit_03: "",
       Kit_04: "",
+      Kit_05: "",
+      Kit_06: "",
+      Kit_01_Equipped: false,
+      Kit_02_Equipped: false,
+      Kit_03_Equipped: false,
+      Kit_04_Equipped: false,
+      Kit_05_Equipped: false,
+      Kit_06_Equipped: false,
+      Kit_Equip_Count: 0,
       Perception: 0,
       Knowledge: 0,
       Strength: 0,
@@ -513,17 +510,25 @@ class CharacterSheet extends React.Component {
 
   handleSpecializationChange(index, specialization) {
     // Set the specialization
-    // var specializations_copy = this.state.Specialization_01.slice(0);
-    // specializations_copy[index] = specialization;
-    // this.setState({ Specialization_01: specializations_copy });
     this.setState({ Specialization_01: specialization });
 
     // Cascade the change, setting the kits based on the specializations
     var kit_data = fetchKits([specialization]);
-    this.handleKitChange(1, kit_data[0]);
-    this.handleKitChange(2, kit_data[1]);
-    this.handleKitChange(3, kit_data[2]);
-    this.handleKitChange(4, kit_data[3]);
+    this.setState({ Kit_01: kit_data[0] });
+    this.setState({ Kit_02: kit_data[1] });
+    this.setState({ Kit_03: kit_data[2] });
+    this.setState({ Kit_04: kit_data[3] });
+    this.setState({ Kit_05: kit_data[4] });
+    this.setState({ Kit_06: kit_data[5] });
+
+    // Unequip all kits
+    this.setState({ Kit_01_Equipped: false });
+    this.setState({ Kit_02_Equipped: false });
+    this.setState({ Kit_03_Equipped: false });
+    this.setState({ Kit_04_Equipped: false });
+    this.setState({ Kit_05_Equipped: false });
+    this.setState({ Kit_06_Equipped: false });
+    this.setState({ Kit_Equip_Count: 0 });
   }
 
   handleSkillChange(skill, event) {
@@ -531,19 +536,25 @@ class CharacterSheet extends React.Component {
     this.setState({ [skill]: parseInt(event.target.value) });
   }
 
-  handleKitChange(index, kit) {
-    // Set the kit
-    if (index === 1) {
-      this.setState({ Kit_01: kit });
+  handleEquipChange(index, event) {
+    // Update the equip marker
+    if (index === 1) { this.setState({ Kit_01_Equipped: event.target.checked}); }
+    else if (index === 2) { this.setState({ Kit_02_Equipped: event.target.checked}); }
+    else if (index === 3) { this.setState({ Kit_03_Equipped: event.target.checked}); }
+    else if (index === 4) { this.setState({ Kit_04_Equipped: event.target.checked}); }
+    else if (index === 5) { this.setState({ Kit_05_Equipped: event.target.checked}); }
+    else if (index === 6) { this.setState({ Kit_06_Equipped: event.target.checked}); }
+
+    // Update the count
+    if (event.target.checked === true) { 
+      this.setState(prevState => {
+        return {Kit_Equip_Count: prevState.Kit_Equip_Count + 1}
+      });
     }
-    if (index === 2) {
-      this.setState({ Kit_02: kit });
-    }
-    if (index === 3) {
-      this.setState({ Kit_03: kit });
-    }
-    if (index === 4) {
-      this.setState({ Kit_04: kit });
+    else { 
+      this.setState(prevState => {
+        return {Kit_Equip_Count: prevState.Kit_Equip_Count - 1}
+      });
     }
   }
 
@@ -590,10 +601,6 @@ class CharacterSheet extends React.Component {
           <div className="character_info_header">
             <p>Class</p>
           </div>
-          {/* <div className="character_class_text">
-            <InfoBox message="Your Class determines what skills you start with." />
-            <label>Class</label>
-          </div> */}
           <div className="character_class">
             <select
               id="class_select"
@@ -727,42 +734,94 @@ class CharacterSheet extends React.Component {
           </div>
 
           {/* Kits  */}
-          <div className="kit_header">
-            <b>Kits</b>
-          </div>
+          <KitCounter 
+            kit_count={this.state.Kit_Equip_Count}
+            specialization={this.state.Specialization_01}
+          />
           <KitHolder
             key={"kit_holder_1"}
             index={1}
             kit={this.state.Kit_01}
-            specializations={[this.state.Specialization_01]}
-            onChange={this.handleKitChange}
+            equipped={this.state.Kit_01_Equipped}
+            onChange={this.handleEquipChange}
           />
           <KitHolder
             key={"kit_holder_2"}
             index={2}
             kit={this.state.Kit_02}
-            specializations={[this.state.Specialization_01]}
-            onChange={this.handleKitChange}
+            equipped={this.state.Kit_02_Equipped}
+            onChange={this.handleEquipChange}
           />
           <KitHolder
             key={"kit_holder_3"}
             index={3}
             kit={this.state.Kit_03}
-            specializations={[this.state.Specialization_01]}
-            onChange={this.handleKitChange}
+            equipped={this.state.Kit_03_Equipped}
+            onChange={this.handleEquipChange}
           />
           <KitHolder
             key={"kit_holder_4"}
             index={4}
             kit={this.state.Kit_04}
-            specializations={[this.state.Specialization_01]}
-            onChange={this.handleKitChange}
+            equipped={this.state.Kit_04_Equipped}
+            onChange={this.handleEquipChange}
+          />
+          <KitHolder
+            key={"kit_holder_5"}
+            index={5}
+            kit={this.state.Kit_05}
+            equipped={this.state.Kit_05_Equipped}
+            onChange={this.handleEquipChange}
+          />
+          <KitHolder
+            key={"kit_holder_6"}
+            index={6}
+            kit={this.state.Kit_06}
+            equipped={this.state.Kit_06_Equipped}
+            onChange={this.handleEquipChange}
           />
 
-          <KitDescriptionHolder key={"kit_description_holder_1"} index={1} kit={this.state.Kit_01} />
-          <KitDescriptionHolder key={"kit_description_holder_2"} index={2} kit={this.state.Kit_02} />
-          <KitDescriptionHolder key={"kit_description_holder_3"} index={3} kit={this.state.Kit_03} />
-          <KitDescriptionHolder key={"kit_description_holder_4"} index={4} kit={this.state.Kit_04} />
+          <KitDescriptionHolder
+            key={"kit_description_holder_1"}
+            index={1} 
+            kit={this.state.Kit_01} 
+            equipped={this.state.Kit_01_Equipped}
+            specializations={[this.state.Specialization_01]}
+          />
+          <KitDescriptionHolder 
+            key={"kit_description_holder_2"} 
+            index={2} 
+            kit={this.state.Kit_02} 
+            equipped={this.state.Kit_02_Equipped}
+            specializations={[this.state.Specialization_01]}
+          />
+          <KitDescriptionHolder
+            key={"kit_description_holder_3"}
+            index={3}
+            kit={this.state.Kit_03}
+            equipped={this.state.Kit_03_Equipped}
+            specializations={[this.state.Specialization_01]}
+          />
+          <KitDescriptionHolder
+            key={"kit_description_holder_4"}
+            index={4}
+            kit={this.state.Kit_04}
+            equipped={this.state.Kit_04_Equipped}
+            specializations={[this.state.Specialization_01]}
+          />
+          <KitDescriptionHolder
+            key={"kit_description_holder_5"}
+            index={5} 
+            kit={this.state.Kit_05} 
+            equipped={this.state.Kit_05_Equipped}
+            specializations={[this.state.Specialization_01]}
+          />
+          <KitDescriptionHolder 
+            key={"kit_description_holder_6"} 
+            index={6} kit={this.state.Kit_06} 
+            equipped={this.state.Kit_06_Equipped}
+            specializations={[this.state.Specialization_01]}
+          />
         </div>
       </div>
     );

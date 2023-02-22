@@ -192,7 +192,7 @@ export default function get_kit_data() {
     {
         "Class":"Alchemist",
         "Type":"Chemist",
-        "Kit":"Vaccuum Space",
+        "Kit":"Vacuum Space",
         "Tags":"Alchemy",
         "Description":"A jar of carefully prepared void, which emits a strong suction force when opened. Can be used to capture a fog of poisonous gas, put out fires, and propel yourself forward. You can expend a Potion to create an implosion grenade."
     },
