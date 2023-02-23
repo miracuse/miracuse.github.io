@@ -199,15 +199,28 @@ class ClassDescriptionHolder extends React.Component {
   }
 
   render() {
-    return (
-      <div className="character_class_description_text">
-        <p className="character_class_description">
-          <b>{this.props.class}:</b> {fetchClassDescription(this.props.class)}
-          <br></br>
-          <i>({fetchClassTags(this.props.class)})</i>
-        </p>
-      </div>
-    );
+    if (this.props.class === "Custom") {
+      return (
+        <div className="character_class_description_text">
+          <p className="character_class_description">
+            <b><a href={"https://miracuse.github.io/docs/more/custom_class.html"} target="_blank">{this.props.class}</a>:</b> {fetchClassDescription(this.props.class)}
+            <br></br>
+            <i>({fetchClassTags(this.props.class)})</i>
+          </p>
+        </div>
+      );
+    }
+    else {
+      return (
+        <div className="character_class_description_text">
+          <p className="character_class_description">
+            <b><a href={"https://miracuse.github.io/docs/classes/" + this.props.class.toLowerCase() + "/"} target="_blank">{this.props.class}</a>:</b> {fetchClassDescription(this.props.class)}
+            <br></br>
+            <i>({fetchClassTags(this.props.class)})</i>
+          </p>
+        </div>
+      );
+    }
   }
 }
 
@@ -224,7 +237,7 @@ class SpecializationDescriptionHolder extends React.Component {
     return (
       <div className="character_specialization_description_text">
         <p className="character_specialization_description">
-          <b>{this.props.specialization}:</b>{" "}
+          <b><a href={"https://miracuse.github.io/docs/more/specializations/" + this.props.specialization.toLowerCase() + ".html"} target="_blank">{this.props.specialization}</a>:</b>{" "}
           {fetchSpecializationDescription(this.props.specialization)}
           <br></br>
           <i>({fetchSpecializationTags(this.props.specialization)})</i>

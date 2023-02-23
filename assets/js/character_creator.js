@@ -167,11 +167,25 @@ class ClassDescriptionHolder extends React.Component {
   }
 
   render() {
-    return /*#__PURE__*/React.createElement("div", {
-      className: "character_class_description_text"
-    }, /*#__PURE__*/React.createElement("p", {
-      className: "character_class_description"
-    }, /*#__PURE__*/React.createElement("b", null, this.props.class, ":"), " ", fetchClassDescription(this.props.class), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("i", null, "(", fetchClassTags(this.props.class), ")")));
+    if (this.props.class === "Custom") {
+      return /*#__PURE__*/React.createElement("div", {
+        className: "character_class_description_text"
+      }, /*#__PURE__*/React.createElement("p", {
+        className: "character_class_description"
+      }, /*#__PURE__*/React.createElement("b", null, /*#__PURE__*/React.createElement("a", {
+        href: "https://miracuse.github.io/docs/more/custom_class.html",
+        target: "_blank"
+      }, this.props.class), ":"), " ", fetchClassDescription(this.props.class), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("i", null, "(", fetchClassTags(this.props.class), ")")));
+    } else {
+      return /*#__PURE__*/React.createElement("div", {
+        className: "character_class_description_text"
+      }, /*#__PURE__*/React.createElement("p", {
+        className: "character_class_description"
+      }, /*#__PURE__*/React.createElement("b", null, /*#__PURE__*/React.createElement("a", {
+        href: "https://miracuse.github.io/docs/classes/" + this.props.class.toLowerCase() + "/",
+        target: "_blank"
+      }, this.props.class), ":"), " ", fetchClassDescription(this.props.class), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("i", null, "(", fetchClassTags(this.props.class), ")")));
+    }
   }
 
 } // Specialization descriptions.
@@ -190,7 +204,10 @@ class SpecializationDescriptionHolder extends React.Component {
       className: "character_specialization_description_text"
     }, /*#__PURE__*/React.createElement("p", {
       className: "character_specialization_description"
-    }, /*#__PURE__*/React.createElement("b", null, this.props.specialization, ":"), " ", fetchSpecializationDescription(this.props.specialization), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("i", null, "(", fetchSpecializationTags(this.props.specialization), ")")));
+    }, /*#__PURE__*/React.createElement("b", null, /*#__PURE__*/React.createElement("a", {
+      href: "https://miracuse.github.io/docs/more/specializations/" + this.props.specialization.toLowerCase() + ".html",
+      target: "_blank"
+    }, this.props.specialization), ":"), " ", fetchSpecializationDescription(this.props.specialization), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("i", null, "(", fetchSpecializationTags(this.props.specialization), ")")));
   }
 
 } // A dropdown for specializations.
