@@ -426,13 +426,27 @@ class KitDescriptionHolder extends React.Component {
     return /*#__PURE__*/React.createElement("div", {
       id: "kit_text_0" + this.props.index,
       className: "kit_text_0" + this.props.index
-    }, /*#__PURE__*/React.createElement("b", null, /*#__PURE__*/React.createElement("label", null, kit_options_data[this.props.index - 1])), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("p", {
+    }, /*#__PURE__*/React.createElement("div", {
+      class: "wrap-collapsible"
+    }, /*#__PURE__*/React.createElement("input", {
+      id: "collapsible_" + this.props.index,
+      class: "toggle",
+      type: "checkbox"
+    }), /*#__PURE__*/React.createElement("label", {
+      for: "collapsible_" + this.props.index,
+      class: "lbl-toggle"
+    }, kit_options_data[this.props.index - 1], " ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+      className: "aleph"
+    }, String(kit_description).split(".")[0] + ".")), /*#__PURE__*/React.createElement("div", {
+      class: "collapsible-content"
+    }, /*#__PURE__*/React.createElement("div", {
+      class: "content-inner"
+    }, /*#__PURE__*/React.createElement("p", {
       id: "kit_tags_0" + this.props.index,
       className: "kit_tags"
     }, "Tags: ", kit_tags), /*#__PURE__*/React.createElement("p", {
-      id: "kit_description_0" + this.props.index,
       className: "kit_description"
-    }, kit_description)); // if (this.props.equipped) {
+    }, String(kit_description).split(".").slice(1).join(".")))))); // if (this.props.equipped) {
     //   return (
     //     <div
     //     id={"kit_text_0" + this.props.index}

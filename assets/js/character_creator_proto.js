@@ -503,19 +503,34 @@ class KitDescriptionHolder extends React.Component {
         id={"kit_text_0" + this.props.index}
         className={"kit_text_0" + this.props.index}
       >
-        <b>
+        <div class="wrap-collapsible">
+          <input id={"collapsible_"+this.props.index} class="toggle" type="checkbox"></input>
+          <label for={"collapsible_"+this.props.index} class="lbl-toggle">
+            {kit_options_data[this.props.index - 1]} <br></br><span className="aleph">{String(kit_description).split(".")[0] + "."}</span>
+          </label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
+                Tags: {kit_tags}
+              </p>
+              <p className="kit_description">{String(kit_description).split(".").slice(1).join(".")}</p>
+            </div>
+          </div>
+        </div>
+        {/* <b>
           <label>{kit_options_data[this.props.index - 1]}</label>
         </b>
         <br></br>
         <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
           Tags: {kit_tags}
         </p>
+        
         <p
           id={"kit_description_0" + this.props.index}
           className="kit_description"
         >
           {kit_description}
-        </p>
+        </p> */}
       </div>
     );
     // if (this.props.equipped) {
