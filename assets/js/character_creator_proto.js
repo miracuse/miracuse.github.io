@@ -504,6 +504,9 @@ class KitDescriptionHolder extends React.Component {
     const sword_icon = kit_tags.includes("Gear") ? <span class="material-symbols-outlined">swords</span> : <span></span>
     const flask_icon = kit_tags.includes("Alchemy") ? <span class="material-symbols-outlined">science</span> : <span></span>
     const wand_icon = kit_tags.includes("Talisman") ? <span class="material-symbols-outlined">auto_fix</span> : <span></span>
+    const high_damage_icon = kit_tags.includes("High Damage") ? <span class="material-symbols-outlined">shift</span> : <span></span>
+    const reaction_icon = kit_tags.includes("Reaction") ? <span class="material-symbols-outlined">replay</span> : <span></span>
+    const accurate_icon = kit_tags.includes("Accurate") ? <span class="material-symbols-outlined">point_scan</span> : <span></span>
     return (
       <div
         id={"kit_text_0" + this.props.index}
@@ -512,7 +515,7 @@ class KitDescriptionHolder extends React.Component {
         <div class="wrap-collapsible">
           <input id={"collapsible_"+this.props.index} class="toggle" type="checkbox"></input>
           <label for={"collapsible_"+this.props.index} class="lbl-toggle">
-            {kit_options_data[this.props.index - 1]} {sword_icon}{flask_icon}{wand_icon}<br></br><span className="aleph">{String(kit_description).split(".")[0] + "."}</span>
+            {kit_options_data[this.props.index - 1]} {sword_icon}{flask_icon}{wand_icon}{high_damage_icon}{accurate_icon}{reaction_icon}<br></br><span className="aleph">{String(kit_description).split(".")[0] + "."}</span>
           </label>
           <div class="collapsible-content">
             <div class="content-inner">

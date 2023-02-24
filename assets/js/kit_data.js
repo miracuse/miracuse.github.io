@@ -212,6 +212,48 @@ export default function get_kit_data() {
     },
     {
         "Class":"Advanced",
+        "Type":"Chevalier",
+        "Kit":"Bravo\u2019s Charm",
+        "Tags":"Alchemy",
+        "Description":"An alchemical perfume that draws attention. Can be used to lure monsters, create distractions, and draw the focus of crowds. You have Advantage when making yourself standout, and when flirting."
+    },
+    {
+        "Class":"Advanced",
+        "Type":"Chevalier",
+        "Kit":"Cutting Wit",
+        "Tags":"Gear, Weapon",
+        "Description":"A slender rapier meant for duelling. Using this weapon, you can choose between dealing Physical or Mental damage. You have Advantage when provoking others."
+    },
+    {
+        "Class":"Advanced",
+        "Type":"Chevalier",
+        "Kit":"Honeyed Words",
+        "Tags":"Alchemy",
+        "Description":"A handful of alchemic candies that diminish pain and induce sleep. Can be used to endure harm, tranquilize unwary guards, and ease suffering. You have Advantage on rolls to resist discomfort or pain."
+    },
+    {
+        "Class":"Advanced",
+        "Type":"Chevalier",
+        "Kit":"Lover\u2019s Embrace",
+        "Tags":"Gear",
+        "Description":"Charmed cloth that can change its properties on command. Can be extended into a length of sturdy rope, used as a whip, and made rigid as steel. Often worn as a scarf or other accessory. You have Advantage when climbing."
+    },
+    {
+        "Class":"Advanced",
+        "Type":"Chevalier",
+        "Kit":"Sharp Retort",
+        "Tags":"Gear, Weapon, Defense, Reaction",
+        "Description":"A long dagger held in the off-hand, intended to parry and riposte. Using this weapon to attack gives you Advantage on rolls to defend until the start of your next turn. On a successful defense against a melee attack, the attacker takes a box of Physical damage."
+    },
+    {
+        "Class":"Advanced",
+        "Type":"Chevalier",
+        "Kit":"Venomous Smile",
+        "Tags":"Gear, Weapon, Ranged, High Damage",
+        "Description":"A set of throwing knives coated in fey poison. Wounds made with this weapon bleed far more than they should. Successful attacks deal an additional box of Physical damage."
+    },
+    {
+        "Class":"Advanced",
         "Type":"Conjurer",
         "Kit":"Brimstone Powder",
         "Tags":"Alchemy, High Damage",

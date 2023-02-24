@@ -434,6 +434,15 @@ class KitDescriptionHolder extends React.Component {
     const wand_icon = kit_tags.includes("Talisman") ? /*#__PURE__*/React.createElement("span", {
       class: "material-symbols-outlined"
     }, "auto_fix") : /*#__PURE__*/React.createElement("span", null);
+    const high_damage_icon = kit_tags.includes("High Damage") ? /*#__PURE__*/React.createElement("span", {
+      class: "material-symbols-outlined"
+    }, "shift") : /*#__PURE__*/React.createElement("span", null);
+    const reaction_icon = kit_tags.includes("Reaction") ? /*#__PURE__*/React.createElement("span", {
+      class: "material-symbols-outlined"
+    }, "replay") : /*#__PURE__*/React.createElement("span", null);
+    const accurate_icon = kit_tags.includes("Accurate") ? /*#__PURE__*/React.createElement("span", {
+      class: "material-symbols-outlined"
+    }, "point_scan") : /*#__PURE__*/React.createElement("span", null);
     return /*#__PURE__*/React.createElement("div", {
       id: "kit_text_0" + this.props.index,
       className: "kit_text_0" + this.props.index
@@ -446,7 +455,7 @@ class KitDescriptionHolder extends React.Component {
     }), /*#__PURE__*/React.createElement("label", {
       for: "collapsible_" + this.props.index,
       class: "lbl-toggle"
-    }, kit_options_data[this.props.index - 1], " ", sword_icon, flask_icon, wand_icon, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+    }, kit_options_data[this.props.index - 1], " ", sword_icon, flask_icon, wand_icon, high_damage_icon, accurate_icon, reaction_icon, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
       className: "aleph"
     }, String(kit_description).split(".")[0] + ".")), /*#__PURE__*/React.createElement("div", {
       class: "collapsible-content"

@@ -26,6 +26,11 @@ export default function get_specialization_description_data() {
         "Description":"A specialist trained to use exceedingly dangerous substances."
     },
     {
+        "Specialization":"Chevalier",
+        "Tags":"Bravado, Defense",
+        "Description":"A courtier skilled in politics and swordplay."
+    },
+    {
         "Specialization":"Conjurer",
         "Tags":"Summoning, Alchemy",
         "Description":"A practitioner of illegal summoning magic."
