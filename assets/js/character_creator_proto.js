@@ -495,9 +495,15 @@ class KitDescriptionHolder extends React.Component {
   }
 
   render() {
+    // Fetch kit data
     const kit_options_data = fetchKits(this.props.specializations);
     const kit_description = fetchKitDescription(this.props.kit);
-    const kit_tags = fetchKitTags(this.props.kit);
+    const kit_tags = String(fetchKitTags(this.props.kit));
+
+    // Include icons based on tags
+    const sword_icon = kit_tags.includes("Gear") ? <span class="material-symbols-outlined">swords</span> : <span></span>
+    const flask_icon = kit_tags.includes("Alchemy") ? <span class="material-symbols-outlined">science</span> : <span></span>
+    const wand_icon = kit_tags.includes("Talisman") ? <span class="material-symbols-outlined">auto_fix</span> : <span></span>
     return (
       <div
         id={"kit_text_0" + this.props.index}
@@ -506,7 +512,7 @@ class KitDescriptionHolder extends React.Component {
         <div class="wrap-collapsible">
           <input id={"collapsible_"+this.props.index} class="toggle" type="checkbox"></input>
           <label for={"collapsible_"+this.props.index} class="lbl-toggle">
-            {kit_options_data[this.props.index - 1]} <br></br><span className="aleph">{String(kit_description).split(".")[0] + "."}</span>
+            {kit_options_data[this.props.index - 1]} {sword_icon}{flask_icon}{wand_icon}<br></br><span className="aleph">{String(kit_description).split(".")[0] + "."}</span>
           </label>
           <div class="collapsible-content">
             <div class="content-inner">

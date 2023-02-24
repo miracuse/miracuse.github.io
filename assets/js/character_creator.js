@@ -420,9 +420,20 @@ class KitDescriptionHolder extends React.Component {
   }
 
   render() {
+    // Fetch kit data
     const kit_options_data = fetchKits(this.props.specializations);
     const kit_description = fetchKitDescription(this.props.kit);
-    const kit_tags = fetchKitTags(this.props.kit);
+    const kit_tags = String(fetchKitTags(this.props.kit)); // Include icons based on tags
+
+    const sword_icon = kit_tags.includes("Gear") ? /*#__PURE__*/React.createElement("span", {
+      class: "material-symbols-outlined"
+    }, "swords") : /*#__PURE__*/React.createElement("span", null);
+    const flask_icon = kit_tags.includes("Alchemy") ? /*#__PURE__*/React.createElement("span", {
+      class: "material-symbols-outlined"
+    }, "science") : /*#__PURE__*/React.createElement("span", null);
+    const wand_icon = kit_tags.includes("Talisman") ? /*#__PURE__*/React.createElement("span", {
+      class: "material-symbols-outlined"
+    }, "auto_fix") : /*#__PURE__*/React.createElement("span", null);
     return /*#__PURE__*/React.createElement("div", {
       id: "kit_text_0" + this.props.index,
       className: "kit_text_0" + this.props.index
@@ -435,7 +446,7 @@ class KitDescriptionHolder extends React.Component {
     }), /*#__PURE__*/React.createElement("label", {
       for: "collapsible_" + this.props.index,
       class: "lbl-toggle"
-    }, kit_options_data[this.props.index - 1], " ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+    }, kit_options_data[this.props.index - 1], " ", sword_icon, flask_icon, wand_icon, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
       className: "aleph"
     }, String(kit_description).split(".")[0] + ".")), /*#__PURE__*/React.createElement("div", {
       class: "collapsible-content"
