@@ -1,124 +1,121 @@
 export default function get_specialization_description_data() {
   var data = [
     {
-      Specialization: "Antiquarian",
-      Tags: "Archaeologist, Wax Stamps",
-      Description:
-        "A scholar that draws ancient sigils onto objects, giving them power.",
+        "Specialization":"Antiquarian",
+        "Tags":"Archaeologist, Wax Stamps",
+        "Description":"A scholar that draws ancient sigils onto objects, giving them power."
     },
     {
-      Specialization: "Assassin",
-      Tags: "Poisons, Throwing Needles",
-      Description: "An expert infiltrator proficient in poisons.",
+        "Specialization":"Assassin",
+        "Tags":"Poisons, Throwing Needles",
+        "Description":"An expert infiltrator proficient in poisons."
     },
     {
-      Specialization: "Bard",
-      Tags: "Illusions, Knives",
-      Description:
-        "A member of a courier guild with expertise in stagecraft and illusion.",
+        "Specialization":"Bard",
+        "Tags":"Illusions, Knives",
+        "Description":"A member of a courier guild with expertise in stagecraft and illusion."
     },
     {
-      Specialization: "Blademaster",
-      Tags: "Magic Swords, Duelist",
-      Description:
-        "An accomplished swordsman with a collection of enchanted blades.",
+        "Specialization":"Blademaster",
+        "Tags":"Magic Swords, Duelist",
+        "Description":"An accomplished swordsman with a collection of enchanted blades."
     },
     {
-      Specialization: "Chemist",
-      Tags: "Mist Rod, Bombs",
-      Description:
-        "A specialist trained to use exceedingly dangerous substances.",
+        "Specialization":"Chemist",
+        "Tags":"Mist Rod, Bombs",
+        "Description":"A specialist trained to use exceedingly dangerous substances."
     },
     {
-      Specialization: "Conjurer",
-      Tags: "Summoning, Alchemy",
-      Description: "A practitioner of illegal summoning magic.",
+        "Specialization":"Conjurer",
+        "Tags":"Summoning, Alchemy",
+        "Description":"A practitioner of illegal summoning magic."
     },
     {
-      Specialization: "Corsair",
-      Tags: "Marauder, Swashbuckling",
-      Description: "An experienced sailor, either of the seas or the skies.",
+        "Specialization":"Corsair",
+        "Tags":"Marauder, Swashbuckling",
+        "Description":"An experienced sailor, either of the seas or the skies."
     },
     {
-      Specialization: "Dragon Knight",
-      Tags: "Spearman, Transformation",
-      Description: "A knight that mimics the power of dragons.",
+        "Specialization":"Dragon Knight",
+        "Tags":"Spearman, Transformation",
+        "Description":"A knight that mimics the power of dragons."
     },
     {
-      Specialization: "Druid",
-      Tags: "Wildlife, Primal Magic",
-      Description: "A secretive magician with power over the natural world.",
+        "Specialization":"Druid",
+        "Tags":"Wildlife, Primal Magic",
+        "Description":"A secretive magician with power over the natural world."
     },
     {
-      Specialization: "Enchanter",
-      Tags: "Constructs, Imbued Tools",
-      Description: "An artificer that creates semi-magical servants.",
+        "Specialization":"Enchanter",
+        "Tags":"Constructs, Imbued Tools",
+        "Description":"An artificer that creates semi-magical servants."
     },
     {
-      Specialization: "Fell Knight",
-      Tags: "Curses, Magic Sword",
-      Description: "A dark knight that uses underhanded methods.",
+        "Specialization":"Fell Knight",
+        "Tags":"Curses, Magic Sword",
+        "Description":"A dark knight that uses underhanded methods."
     },
     {
-      Specialization: "Gunslinger",
-      Tags: "Quickdraw, Trick Bullets",
-      Description:
-        "A skirmisher that relies on quick reflexes and modified bullets.",
+        "Specialization":"Forgemaster",
+        "Tags":"Smith, Reinforcement",
+        "Description":"An artificer that works with metals to create enchanted objects."
     },
     {
-      Specialization: "Knight",
-      Tags: "Warrior, Magic Sword",
-      Description: "An honorable knight with a holy sword.",
+        "Specialization":"Gunslinger",
+        "Tags":"Quickdraw, Trick Bullets",
+        "Description":"A skirmisher that relies on quick reflexes and modified bullets."
     },
     {
-      Specialization: "Legionnaire",
-      Tags: "Warrior, Builder",
-      Description: "An infantryman trained in construction.",
+        "Specialization":"Knight",
+        "Tags":"Warrior, Magic Sword",
+        "Description":"An honorable knight with a holy sword."
     },
     {
-      Specialization: "Priest",
-      Tags: "Persuasion, Divine Magic",
-      Description:
-        "A magician that governs over the boundaries between worlds.",
+        "Specialization":"Legionnaire",
+        "Tags":"Warrior, Builder",
+        "Description":"An infantryman trained in construction."
     },
     {
-      Specialization: "Ranger",
-      Tags: "Tamer, Primal Magic",
-      Description:
-        "A traditional warrior, known for their affinity with the natural world.",
+        "Specialization":"Priest",
+        "Tags":"Persuasion, Divine Magic",
+        "Description":"A magician that governs over the boundaries between worlds."
     },
     {
-      Specialization: "Sapper",
-      Tags: "Guns, Grenades",
-      Description: "A sharpshooter with a knack for explosives.",
+        "Specialization":"Ranger",
+        "Tags":"Tamer, Primal Magic",
+        "Description":"A traditional warrior, known for their affinity with the natural world."
     },
     {
-      Specialization: "Shaman",
-      Tags: "Elementalist, War Magic",
-      Description: "An elemental magician renowned for their power.",
+        "Specialization":"Sapper",
+        "Tags":"Guns, Grenades",
+        "Description":"A sharpshooter with a knack for explosives."
     },
     {
-      Specialization: "Spellsword",
-      Tags: "Battlemage, Magic Sword",
-      Description:
-        "A frontline magician that specializes in empowering their own body.",
+        "Specialization":"Shaman",
+        "Tags":"Elementalist, War Magic",
+        "Description":"An elemental magician renowned for their power."
     },
     {
-      Specialization: "Templar",
-      Tags: "Warrior, Divine Magic",
-      Description: "A mage hunter and monster slayer.",
+        "Specialization":"Spellsword",
+        "Tags":"Battlemage, Magic Sword",
+        "Description":"A frontline magician that specializes in empowering their own body."
     },
     {
-      Specialization: "Witch",
-      Tags: "Persuasion, Speed",
-      Description: "A member of a courier guild with a flying broom.",
+        "Specialization":"Templar",
+        "Tags":"Warrior, Divine Magic",
+        "Description":"A mage hunter and monster slayer."
     },
     {
-      Specialization: "Wizard",
-      Tags: "Heat, Motion",
-      Description: "An eccentric magician that manipulates physics.",
+        "Specialization":"Witch",
+        "Tags":"Persuasion, Speed",
+        "Description":"A member of a courier guild with a flying broom."
     },
-  ];
+    {
+        "Specialization":"Wizard",
+        "Tags":"Heat, Motion",
+        "Description":"An eccentric magician that manipulates physics."
+    }
+];
 
   return data;
 }
