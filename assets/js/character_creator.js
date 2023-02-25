@@ -401,11 +401,16 @@ class KitHolder extends React.Component {
     return /*#__PURE__*/React.createElement("div", {
       id: "kit_chooser_0" + this.props.index,
       className: "kit_chooser_0" + this.props.index + " kit_chooser"
-    }, /*#__PURE__*/React.createElement("label", null, "Equipped: "), /*#__PURE__*/React.createElement("input", {
+    }, /*#__PURE__*/React.createElement("label", {
+      className: "switch"
+    }, /*#__PURE__*/React.createElement("input", {
+      className: "toggle",
       type: "checkbox",
       checked: this.props.equipped,
       onChange: this.handleChange
-    }));
+    }), /*#__PURE__*/React.createElement("span", {
+      className: "slider round"
+    })));
   }
 
 } // Text for kit descriptions.
@@ -466,40 +471,7 @@ class KitDescriptionHolder extends React.Component {
       className: "kit_tags"
     }, "Tags: ", kit_tags), /*#__PURE__*/React.createElement("p", {
       className: "kit_description"
-    }, String(kit_description).split(".").slice(1).join(".")))))); // if (this.props.equipped) {
-    //   return (
-    //     <div
-    //     id={"kit_text_0" + this.props.index}
-    //     className={"kit_text_0" + this.props.index}
-    //   >
-    //     <b><label>{kit_options_data[this.props.index - 1]}</label></b>
-    //     <br></br>
-    //     <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
-    //       Tags: {kit_tags}
-    //     </p>
-    //     <p
-    //       id={"kit_description_0" + this.props.index}
-    //       className="kit_description"
-    //     >
-    //       {kit_description}
-    //     </p>
-    //   </div>
-    //   );
-    // }
-    // else {
-    //   return (
-    //     <div
-    //     id={"kit_text_0" + this.props.index}
-    //     className={"kit_text_0" + this.props.index}
-    //   >
-    //     <b><label>{kit_options_data[this.props.index - 1]}</label></b>
-    //     <br></br>
-    //     <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
-    //       Tags: {kit_tags}
-    //     </p>
-    //   </div>
-    //   );
-    // }
+    }, String(kit_description).split(".").slice(1).join("."))))));
   }
 
 } // Main App ///////////////////////////////////////////////////////////////////

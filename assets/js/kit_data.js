@@ -215,35 +215,35 @@ export default function get_kit_data() {
         "Type":"Chevalier",
         "Kit":"Bravo\u2019s Charm",
         "Tags":"Alchemy",
-        "Description":"An alchemical perfume that draws attention. Can be used to lure monsters, create distractions, and draw the focus of crowds. You have Advantage when making yourself standout, and when flirting."
+        "Description":"An alchemical perfume that draws attention. Can be used to lure monsters, create distractions, and draw the focus of crowds. You have Advantage when making yourself standout, when rallying others, and when flirting."
     },
     {
         "Class":"Advanced",
         "Type":"Chevalier",
         "Kit":"Cutting Wit",
         "Tags":"Gear, Weapon",
-        "Description":"A slender rapier meant for duelling. Using this weapon, you can choose between dealing Physical or Mental damage. You have Advantage when provoking others."
+        "Description":"A slender rapier meant for duelling. Using this weapon, you can choose between dealing Physical or Mental damage. You have Advantage when intimidating or provoking others."
     },
     {
         "Class":"Advanced",
         "Type":"Chevalier",
         "Kit":"Honeyed Words",
         "Tags":"Alchemy",
-        "Description":"A handful of alchemic candies that diminish pain and induce sleep. Can be used to endure harm, tranquilize unwary guards, and ease suffering. You have Advantage on rolls to resist discomfort or pain."
+        "Description":"A handful of alchemic candies that diminish pain and induce sleep. Can be used to endure harm, tranquilize unwary guards, and ease suffering. You have Advantage on rolls to resist discomfort, or when bribing others."
     },
     {
         "Class":"Advanced",
         "Type":"Chevalier",
         "Kit":"Lover\u2019s Embrace",
         "Tags":"Gear",
-        "Description":"Charmed cloth that can change its properties on command. Can be extended into a length of sturdy rope, used as a whip, and made rigid as steel. Often worn as a scarf or other accessory. You have Advantage when climbing."
+        "Description":"A charmed scarf that can change its properties on command. Can be extended into a length of sturdy rope, used as a whip, or made rigid as steel. You have Advantage when interrogating someone restrained by this kit."
     },
     {
         "Class":"Advanced",
         "Type":"Chevalier",
         "Kit":"Sharp Retort",
         "Tags":"Gear, Weapon, Defense, Reaction",
-        "Description":"A long dagger held in the off-hand, intended to parry and riposte. Using this weapon to attack gives you Advantage on rolls to defend until the start of your next turn. On a successful defense against a melee attack, the attacker takes a box of Physical damage."
+        "Description":"A long dagger held in the off-hand, intended to parry and riposte. Using this weapon to attack gives you Advantage on rolls to defend until the start of your next turn. On a successful defense against a melee attack, you inflict a box of Physical damage to the attacker."
     },
     {
         "Class":"Advanced",
@@ -586,7 +586,7 @@ export default function get_kit_data() {
         "Type":"Gunslinger",
         "Kit":"Warded Greatcoat",
         "Tags":"Gear",
-        "Description":"A leather jacket that reaches past the knees. Sigils of protection have been stitched into the lining, making the wearer resistant to bullets and blunt trauma. You have Advantage when defending against bludgeoning."
+        "Description":"A leather jacket imbued with protective magic. You have Advantage when defending against bludgeoning, such as bullets or clubs."
     },
     {
         "Class":"Soldier",
@@ -935,8 +935,8 @@ export default function get_kit_data() {
         "Class":"Advanced",
         "Type":"Witch",
         "Kit":"Flying Broom",
-        "Tags":"Gear",
-        "Description":"An enchanted staff built using the same principles as airships. Can be used to fly through the air with ease."
+        "Tags":"Gear, Defense",
+        "Description":"An enchanted staff built using the same principles as airships. Can be used to fly through the air with ease and at high speeds. You have Advantage when dodging attacks while on the broom."
     },
     {
         "Class":"Advanced",

@@ -473,13 +473,17 @@ class KitHolder extends React.Component {
         id={"kit_chooser_0" + this.props.index}
         className={"kit_chooser_0" + this.props.index + " kit_chooser"}
       >
-        <label>Equipped: </label>
-        {/* <input type="checkbox"></input> */}
-        <input
-          type="checkbox"
-          checked={this.props.equipped}
-          onChange={this.handleChange}
-        ></input>
+        <label className="switch">
+          <input 
+            className="toggle"
+            type="checkbox"
+            checked={this.props.equipped}
+            onChange={this.handleChange}>
+          </input>
+          <span className="slider round">
+            {/* <label className="slider_contents">Equip</label> */}
+          </span>
+        </label>
       </div>
     );
   }
@@ -526,56 +530,8 @@ class KitDescriptionHolder extends React.Component {
             </div>
           </div>
         </div>
-        {/* <b>
-          <label>{kit_options_data[this.props.index - 1]}</label>
-        </b>
-        <br></br>
-        <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
-          Tags: {kit_tags}
-        </p>
-        
-        <p
-          id={"kit_description_0" + this.props.index}
-          className="kit_description"
-        >
-          {kit_description}
-        </p> */}
       </div>
     );
-    // if (this.props.equipped) {
-    //   return (
-    //     <div
-    //     id={"kit_text_0" + this.props.index}
-    //     className={"kit_text_0" + this.props.index}
-    //   >
-    //     <b><label>{kit_options_data[this.props.index - 1]}</label></b>
-    //     <br></br>
-    //     <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
-    //       Tags: {kit_tags}
-    //     </p>
-    //     <p
-    //       id={"kit_description_0" + this.props.index}
-    //       className="kit_description"
-    //     >
-    //       {kit_description}
-    //     </p>
-    //   </div>
-    //   );
-    // }
-    // else {
-    //   return (
-    //     <div
-    //     id={"kit_text_0" + this.props.index}
-    //     className={"kit_text_0" + this.props.index}
-    //   >
-    //     <b><label>{kit_options_data[this.props.index - 1]}</label></b>
-    //     <br></br>
-    //     <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
-    //       Tags: {kit_tags}
-    //     </p>
-    //   </div>
-    //   );
-    // }
   }
 }
 
