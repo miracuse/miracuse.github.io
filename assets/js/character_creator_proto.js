@@ -342,14 +342,17 @@ class SkillHolder extends React.Component {
         id={this.props.skill.toLowerCase() + "_value"}
         className={this.props.skill.toLowerCase() + "_value"}
       >
-        <input
-          name={this.props.skill.toLowerCase() + "_input_name"}
-          type="number"
-          value={this.props.skillValue}
-          min="0"
-          max="4"
-          onChange={(e) => this.handleChange(this.props.skill, e)}
-        />
+        {/* Display Value */}
+        <label className="skill_value_text">{"+" + this.props.skillValue} </label>
+
+        {/* Increment Button */}
+        <button className="btn increment_button" onClick={(e) => this.handleChange(this.props.skill, e)}>&#8593;</button>
+
+        {/* Spacer */}
+        <label> / </label>
+
+        {/* Decrement Button */}
+        <button className="btn decrement_button" onClick={(e) => this.handleChange(this.props.skill, e)}>&#8595;</button>
       </div>
     );
   }
@@ -491,7 +494,7 @@ class KitHolder extends React.Component {
 
 // Text for kit descriptions.
 //
-//     Plain text that changes depending on what Kit is selected.
+//     Dropdown that contains a description of the kit.
 //
 class KitDescriptionHolder extends React.Component {
   constructor(props) {
@@ -628,8 +631,22 @@ class CharacterSheet extends React.Component {
   }
 
   handleSkillChange(skill, event) {
+    // Check button type
+    if (event.target.className.includes("increment")) {
+      this.setState((prevState) => {
+        return { [skill]: prevState[skill] + 1 };
+      });
+    }
+    else if (event.target.className.includes("decrement")) {
+      this.setState((prevState) => {
+        return { [skill]: prevState[skill] - 1 };
+      });
+    }
+    else {
+      alert("Skill Not Recognized");
+    }
     // Set the skill value
-    this.setState({ [skill]: parseInt(event.target.value) });
+    // this.setState({ [skill]: parseInt(event.target.value) });
   }
 
   handleEquipChange(index, event) {

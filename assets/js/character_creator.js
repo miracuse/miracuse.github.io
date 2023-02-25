@@ -302,14 +302,15 @@ class SkillHolder extends React.Component {
       key: this.props.skill.toLowerCase() + "_value",
       id: this.props.skill.toLowerCase() + "_value",
       className: this.props.skill.toLowerCase() + "_value"
-    }, /*#__PURE__*/React.createElement("input", {
-      name: this.props.skill.toLowerCase() + "_input_name",
-      type: "number",
-      value: this.props.skillValue,
-      min: "0",
-      max: "4",
-      onChange: e => this.handleChange(this.props.skill, e)
-    }));
+    }, /*#__PURE__*/React.createElement("label", {
+      className: "skill_value_text"
+    }, "+" + this.props.skillValue, " "), /*#__PURE__*/React.createElement("button", {
+      className: "btn increment_button",
+      onClick: e => this.handleChange(this.props.skill, e)
+    }, "\u2191"), /*#__PURE__*/React.createElement("label", null, " / "), /*#__PURE__*/React.createElement("button", {
+      className: "btn decrement_button",
+      onClick: e => this.handleChange(this.props.skill, e)
+    }, "\u2193"));
   }
 
 } // Text labels for Skills.
@@ -415,7 +416,7 @@ class KitHolder extends React.Component {
 
 } // Text for kit descriptions.
 //
-//     Plain text that changes depending on what Kit is selected.
+//     Dropdown that contains a description of the kit.
 //
 
 
@@ -594,10 +595,24 @@ class CharacterSheet extends React.Component {
   }
 
   handleSkillChange(skill, event) {
-    // Set the skill value
-    this.setState({
-      [skill]: parseInt(event.target.value)
-    });
+    // Check button type
+    if (event.target.className.includes("increment")) {
+      this.setState(prevState => {
+        return {
+          [skill]: prevState[skill] + 1
+        };
+      });
+    } else if (event.target.className.includes("decrement")) {
+      this.setState(prevState => {
+        return {
+          [skill]: prevState[skill] - 1
+        };
+      });
+    } else {
+      alert("Skill Not Recognized");
+    } // Set the skill value
+    // this.setState({ [skill]: parseInt(event.target.value) });
+
   }
 
   handleEquipChange(index, event) {

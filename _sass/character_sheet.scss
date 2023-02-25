@@ -259,6 +259,11 @@
   //   font-size: $font-size-5;
   // }
 
+  .skill_value_text {
+    font-family: $mono-font-family;
+    font-weight: bold;
+  }
+
   .kits_table {
     font-size: $font-size-4;
   }

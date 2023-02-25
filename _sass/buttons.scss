@@ -115,10 +115,13 @@
   @include btn-color($white, $green-100);
 }
 
-// Equip Button
-.btn-equip {
-  width: 100%;
-  line-height: 0.5;
+.increment_button, .decrement_button {
+  padding-top: 0.3em;
+  padding-right:0.5em;
+  padding-bottom: 0.3em;
+  padding-left: 0.5em;
+  line-height: 1rem;
+  box-shadow: 0;
 }
 
 // Info Button
