@@ -26,7 +26,7 @@ layout: default
         Health
       </button>
       <!-- <button class="tablinks" onclick="openTab(event, 'fighting')">Fighting</button> -->
-      <!-- <button class="tablinks" onclick="openTab(event, 'kits')">Kits</button> -->
+      <button class="tablinks" onclick="openTab(event, 'kits')">Kits</button>
       <button class="tablinks" onclick="openTab(event, 'resources')">
         Resources
       </button>
@@ -211,20 +211,20 @@ layout: default
       </p>
     </div>
 
+    <!-- Kit Tab -->
     <div id="kits" class="tabcontent">
       <h3>Kits</h3>
+
+      {% include example_kit.html %}
+
       <p>
-        <b>Kits are powerful items you prepare each day</b>. They let you cast
-        magic, practice alchemy, or wield enchanted weapons. At any given time
-        you have
-        <a
-          href="../docs/gameplay/kits.html#kits-in-game-fiction"
-          target="_blank"
-          >access to four kits</a
-        >
-        determined by your <a href="../docs/classes/index.html">class</a> and
-        specialization.
+        <b>Kits are powerful items that you've been trained to use</b>. They let you cast
+        magic, perform alchemy, or wield enchanted weapons. The kits that you have access
+        to are determined by your
+        <a href="../docs/more/specializations/index.html" target="_blank">Specialization</a>.
       </p>
+
+      <p>At any given time, <b>you can equip a maximum of four kits</b>.</p>
 
       <h3>Changing Kits</h3>
       <p>
@@ -238,13 +238,24 @@ layout: default
 
       <h3>Main Types of Kits</h3>
       <ul>
-        <li><b>Gear</b>: Weapons, armor, and other equipment.</li>
+        <li><b>Gear</b> <span class="material-symbols-outlined">swords</span>: Weapons, armor, and other equipment.</li>
         <li>
-          <b>Talismans</b>: Artifacts that channel magical energy into spells.
+          <b>Talismans</b> <span class="material-symbols-outlined">auto_fix</span>: Artifacts that channel magical energy into spells.
         </li>
         <li>
-          <b>Alchemy</b>: Products of alchemic innovation, ranging from
+          <b>Alchemy</b> <span class="material-symbols-outlined">science</span>: Products of alchemic innovation, ranging from
           explosives to poisons.
+        </li>
+      </ul>
+
+      <h3>Other Types of Kits</h3>
+      <ul>
+        <li><b>High Damage</b> <span class="material-symbols-outlined">shift</span>: Weapons that deal two boxes of Physical damage, instead of one.</li>
+        <li>
+          <b>Accurate</b> <span class="material-symbols-outlined">point_scan</span>: Weapons that add a +1 to attack rolls, making attacks much more likely to land. 
+        </li>
+        <li>
+          <b>Reaction</b> <span class="material-symbols-outlined">replay</span>: Kits that trigger on specific circumstances.
         </li>
       </ul>
     </div>

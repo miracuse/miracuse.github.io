@@ -12,11 +12,11 @@ nav_order: 2
 
 ### Equipment and Appearance
 
-- What does your weapon look like? Is it a gun? A crossbow?
-
 - How do you carry your tools? In a bandolier? A toolbox?
 
 - What kind of armor do you wear? Padded clothing with pockets? Goggles?
+
+- What kind of weapon do you carry around for self-defense?
 
 ### Background
 

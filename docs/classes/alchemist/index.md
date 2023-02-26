@@ -9,7 +9,7 @@ nav_order: 1
 
 # Alchemist
 
-- **<span style="color: {{ site.alchemist_color }}">Perception</span>**: Alchemists use [Perception](../../more/skills/perception.html) to aim guns, detect danger, and investigate for more information.
+- **<span style="color: {{ site.alchemist_color }}">Perception</span>**: Alchemists use [Perception](../../more/skills/perception.html) to aim ranged weapons, detect danger, and investigate for more information.
 
 - **<span style="color: {{ site.alchemist_color }}">Knowledge</span>**: Alchemists use [Knowledge](../../more/skills/knowledge.html) to produce potions, persuade others, and learn about the world.
 

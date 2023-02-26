@@ -10,7 +10,7 @@ has_toc: false
 
 ### <span style="color: {{ site.alchemist_color }}">The Alchemist</span>
 
-The [Alchemist](alchemist/index.md) is a keen adventurer, keeping a watchful eye out for danger and a finger on the trigger. They carry a collection of handy items to throw at any problem that arises.
+The [Alchemist](alchemist/index.md) is a keen adventurer, keeping a watchful eye out for danger. They carry a collection of handy items to throw at any problem that arises.
 
 ### <span style="color: {{ site.soldier_color }}">The Soldier</span>
 
