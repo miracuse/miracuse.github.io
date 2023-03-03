@@ -449,30 +449,58 @@ class KitDescriptionHolder extends React.Component {
     const accurate_icon = kit_tags.includes("Accurate") ? /*#__PURE__*/React.createElement("span", {
       class: "material-symbols-outlined"
     }, "point_scan") : /*#__PURE__*/React.createElement("span", null);
-    return /*#__PURE__*/React.createElement("div", {
-      id: "kit_text_0" + this.props.index,
-      className: "kit_text_0" + this.props.index
-    }, /*#__PURE__*/React.createElement("div", {
-      class: "wrap-collapsible"
-    }, /*#__PURE__*/React.createElement("input", {
-      id: "collapsible_" + this.props.index,
-      class: "toggle",
-      type: "checkbox"
-    }), /*#__PURE__*/React.createElement("label", {
-      for: "collapsible_" + this.props.index,
-      class: "lbl-toggle"
-    }, kit_options_data[this.props.index - 1], " ", sword_icon, flask_icon, wand_icon, high_damage_icon, accurate_icon, reaction_icon, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
-      className: "aleph"
-    }, String(kit_description).split(".")[0] + ".")), /*#__PURE__*/React.createElement("div", {
-      class: "collapsible-content"
-    }, /*#__PURE__*/React.createElement("div", {
-      class: "content-inner"
-    }, /*#__PURE__*/React.createElement("p", {
-      id: "kit_tags_0" + this.props.index,
-      className: "kit_tags"
-    }, "Tags: ", kit_tags), /*#__PURE__*/React.createElement("p", {
-      className: "kit_description"
-    }, String(kit_description).split(".").slice(1).join("."))))));
+
+    if (this.props.equipped) {
+      return /*#__PURE__*/React.createElement("div", {
+        id: "kit_text_0" + this.props.index,
+        className: "kit_text_0" + this.props.index
+      }, /*#__PURE__*/React.createElement("div", {
+        class: "wrap-collapsible"
+      }, /*#__PURE__*/React.createElement("input", {
+        id: "collapsible_" + this.props.index,
+        class: "toggle",
+        type: "checkbox"
+      }), /*#__PURE__*/React.createElement("label", {
+        for: "collapsible_" + this.props.index,
+        class: "lbl-toggle equipped-kit"
+      }, kit_options_data[this.props.index - 1], " ", sword_icon, flask_icon, wand_icon, high_damage_icon, accurate_icon, reaction_icon, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+        className: "aleph"
+      }, String(kit_description).split(".")[0] + ".")), /*#__PURE__*/React.createElement("div", {
+        class: "collapsible-content"
+      }, /*#__PURE__*/React.createElement("div", {
+        class: "content-inner"
+      }, /*#__PURE__*/React.createElement("p", {
+        id: "kit_tags_0" + this.props.index,
+        className: "kit_tags"
+      }, "Tags: ", kit_tags), /*#__PURE__*/React.createElement("p", {
+        className: "kit_description"
+      }, String(kit_description).split(".").slice(1).join("."))))));
+    } else {
+      return /*#__PURE__*/React.createElement("div", {
+        id: "kit_text_0" + this.props.index,
+        className: "kit_text_0" + this.props.index
+      }, /*#__PURE__*/React.createElement("div", {
+        class: "wrap-collapsible"
+      }, /*#__PURE__*/React.createElement("input", {
+        id: "collapsible_" + this.props.index,
+        class: "toggle",
+        type: "checkbox"
+      }), /*#__PURE__*/React.createElement("label", {
+        for: "collapsible_" + this.props.index,
+        class: "lbl-toggle"
+      }, kit_options_data[this.props.index - 1], " ", sword_icon, flask_icon, wand_icon, high_damage_icon, accurate_icon, reaction_icon, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+        className: "aleph"
+      }, String(kit_description).split(".")[0] + ".")), /*#__PURE__*/React.createElement("div", {
+        class: "collapsible-content"
+      }, /*#__PURE__*/React.createElement("div", {
+        class: "content-inner"
+      }, /*#__PURE__*/React.createElement("p", {
+        id: "kit_tags_0" + this.props.index,
+        className: "kit_tags"
+      }, "Tags: ", kit_tags), /*#__PURE__*/React.createElement("p", {
+        className: "kit_description"
+      }, String(kit_description).split(".").slice(1).join("."))))));
+    }
   }
 
 } // Main App ///////////////////////////////////////////////////////////////////

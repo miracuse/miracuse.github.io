@@ -514,27 +514,54 @@ class KitDescriptionHolder extends React.Component {
     const high_damage_icon = kit_tags.includes("High Damage") ? <span class="material-symbols-outlined">shift</span> : <span></span>
     const reaction_icon = kit_tags.includes("Reaction") ? <span class="material-symbols-outlined">replay</span> : <span></span>
     const accurate_icon = kit_tags.includes("Accurate") ? <span class="material-symbols-outlined">point_scan</span> : <span></span>
-    return (
-      <div
-        id={"kit_text_0" + this.props.index}
-        className={"kit_text_0" + this.props.index}
-      >
-        <div class="wrap-collapsible">
-          <input id={"collapsible_"+this.props.index} class="toggle" type="checkbox"></input>
-          <label for={"collapsible_"+this.props.index} class="lbl-toggle">
-            {kit_options_data[this.props.index - 1]} {sword_icon}{flask_icon}{wand_icon}{high_damage_icon}{accurate_icon}{reaction_icon}<br></br><span className="aleph">{String(kit_description).split(".")[0] + "."}</span>
-          </label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
-                Tags: {kit_tags}
-              </p>
-              <p className="kit_description">{String(kit_description).split(".").slice(1).join(".")}</p>
+    
+    if (this.props.equipped) {
+      return (
+        <div
+          id={"kit_text_0" + this.props.index}
+          className={"kit_text_0" + this.props.index}
+        >
+          <div class="wrap-collapsible">
+            <input id={"collapsible_"+this.props.index} class="toggle" type="checkbox"></input>
+            <label for={"collapsible_"+this.props.index} class="lbl-toggle equipped-kit">
+              {kit_options_data[this.props.index - 1]} {sword_icon}{flask_icon}{wand_icon}{high_damage_icon}{accurate_icon}{reaction_icon}<br></br><span className="aleph">{String(kit_description).split(".")[0] + "."}</span>
+            </label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
+                  Tags: {kit_tags}
+                </p>
+                <p className="kit_description">{String(kit_description).split(".").slice(1).join(".")}</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    );
+      );
+    }
+
+    else {
+      return (
+        <div
+          id={"kit_text_0" + this.props.index}
+          className={"kit_text_0" + this.props.index}
+        >
+          <div class="wrap-collapsible">
+            <input id={"collapsible_"+this.props.index} class="toggle" type="checkbox"></input>
+            <label for={"collapsible_"+this.props.index} class="lbl-toggle">
+              {kit_options_data[this.props.index - 1]} {sword_icon}{flask_icon}{wand_icon}{high_damage_icon}{accurate_icon}{reaction_icon}<br></br><span className="aleph">{String(kit_description).split(".")[0] + "."}</span>
+            </label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p id={"kit_tags_0" + this.props.index} className={"kit_tags"}>
+                  Tags: {kit_tags}
+                </p>
+                <p className="kit_description">{String(kit_description).split(".").slice(1).join(".")}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
   }
 }
 

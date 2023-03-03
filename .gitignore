@@ -11,6 +11,7 @@ node_modules/
 /test/tmp/
 /test/version_tmp/
 /tmp/
+/devel/scratch.md
 
 # Used by dotenv library to load environment variables.
 # .env
