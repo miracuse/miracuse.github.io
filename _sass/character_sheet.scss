@@ -240,13 +240,26 @@
     font-weight: bold;
   }
 
-  .skill_value_text {
+  .skill_value_text,
+  .dice_value {
     font-family: $mono-font-family;
     font-weight: bold;
   }
 
   .kits_table {
     font-size: $font-size-4;
+  }
+
+  .dice_roller {
+    color: $body-text-color;
+    text-align: center;
+  }
+
+  .dice_value {
+    text-align: center;
+    border-width: 1;
+    border-radius: $border-radius;
+    border-color: black;
   }
 
   // Mobile Layout ////////////////////////////////////////////////////////////
@@ -395,9 +408,19 @@
     grid-row: 15;
   }
 
-  .perception_text {
+  .dice_roller {
     grid-column: 1;
     grid-row: 16;
+  }
+
+  .dice_value {
+    grid-column: 2;
+    grid-row: 16;
+  }
+
+  .perception_text {
+    grid-column: 1;
+    grid-row: 17;
 
     label span {
       font-weight: bold;
@@ -407,12 +430,12 @@
 
   .perception_value {
     grid-column: 2;
-    grid-row: 16;
+    grid-row: 17;
   }
 
   .knowledge_text {
     grid-column: 1;
-    grid-row: 17;
+    grid-row: 18;
 
     label span {
       font-weight: bold;
@@ -422,12 +445,12 @@
 
   .knowledge_value {
     grid-column: 2;
-    grid-row: 17;
+    grid-row: 18;
   }
 
   .strength_text {
     grid-column: 1;
-    grid-row: 18;
+    grid-row: 19;
 
     label span {
       font-weight: bold;
@@ -437,12 +460,12 @@
 
   .strength_value {
     grid-column: 2;
-    grid-row: 18;
+    grid-row: 19;
   }
 
   .bravery_text {
     grid-column: 1;
-    grid-row: 19;
+    grid-row: 20;
 
     label span {
       font-weight: bold;
@@ -452,12 +475,12 @@
 
   .bravery_value {
     grid-column: 2;
-    grid-row: 19;
+    grid-row: 20;
   }
 
   .magic_text {
     grid-column: 1;
-    grid-row: 20;
+    grid-row: 21;
 
     label span {
       font-weight: bold;
@@ -467,12 +490,12 @@
 
   .magic_value {
     grid-column: 2;
-    grid-row: 20;
+    grid-row: 21;
   }
 
   .presence_text {
     grid-column: 1;
-    grid-row: 21;
+    grid-row: 22;
 
     label span {
       font-weight: bold;
@@ -482,12 +505,12 @@
 
   .presence_value {
     grid-column: 2;
-    grid-row: 21;
+    grid-row: 22;
   }
 
   .agility_text {
     grid-column: 1;
-    grid-row: 22;
+    grid-row: 23;
 
     label span {
       font-weight: bold;
@@ -497,12 +520,12 @@
 
   .agility_value {
     grid-column: 2;
-    grid-row: 22;
+    grid-row: 23;
   }
 
   .cunning_text {
     grid-column: 1;
-    grid-row: 23;
+    grid-row: 24;
 
     label span {
       font-weight: bold;
@@ -512,12 +535,12 @@
 
   .cunning_value {
     grid-column: 2;
-    grid-row: 23;
+    grid-row: 24;
   }
 
   .barrier_03 {
     grid-column: 1 / -1;
-    grid-row: 24;
+    grid-row: 25;
     hr {
       margin: 1rem 0;
     }
@@ -526,7 +549,7 @@
   // Grid: Kits /////////////////////////////////////////////////////////////
   .kit_header {
     grid-column: 1 / -1;
-    grid-row: 25;
+    grid-row: 26;
 
     label span {
       color: $red-300;
@@ -535,62 +558,62 @@
 
   .kit_chooser_01 {
     grid-column: 1 / -1;
-    grid-row: 26;
+    grid-row: 27;
   }
 
   .kit_text_01 {
     grid-column: 1 / -1;
-    grid-row: 27;
+    grid-row: 28;
   }
 
   .kit_chooser_02 {
     grid-column: 1 / -1;
-    grid-row: 28;
+    grid-row: 29;
   }
 
   .kit_text_02 {
     grid-column: 1 / -1;
-    grid-row: 29;
+    grid-row: 30;
   }
 
   .kit_chooser_03 {
     grid-column: 1 / -1;
-    grid-row: 30;
+    grid-row: 31;
   }
 
   .kit_text_03 {
     grid-column: 1 / -1;
-    grid-row: 31;
+    grid-row: 32;
   }
 
   .kit_chooser_04 {
     grid-column: 1 / -1;
-    grid-row: 32;
+    grid-row: 33;
   }
 
   .kit_text_04 {
     grid-column: 1 / -1;
-    grid-row: 33;
+    grid-row: 34;
   }
 
   .kit_chooser_05 {
     grid-column: 1 / -1;
-    grid-row: 34;
+    grid-row: 35;
   }
 
   .kit_text_05 {
     grid-column: 1 / -1;
-    grid-row: 35;
+    grid-row: 36;
   }
 
   .kit_chooser_06 {
     grid-column: 1 / -1;
-    grid-row: 36;
+    grid-row: 37;
   }
 
   .kit_text_06 {
     grid-column: 1 / -1;
-    grid-row: 37;
+    grid-row: 38;
   }
 
   // Desktop Layout /////////////////////////////////////////////////////////
@@ -611,16 +634,6 @@
       grid-column: 3 / -1;
       grid-row: 2;
     }
-
-    // .character_tier_text {
-    //   grid-column: 1;
-    //   grid-row: 3;
-    // }
-
-    // .character_tier {
-    //   grid-column: 2;
-    //   grid-row: 3;
-    // }
 
     .character_class_description_text {
       grid-column: 1 / 3;
@@ -646,18 +659,6 @@
     }
 
     // Grid: Health ///////////////////////////////////////////////////////////
-    // .dice_button {
-    //   grid-column: 1;
-    //   grid-row: 9;
-    //   width: 90%;
-    //   line-height: 1;
-    // }
-
-    // .dice_outcome {
-    //   grid-column: 2;
-    //   grid-row: 9;
-    // }
-
     .health_header {
       grid-column: 1 / 2;
       grid-row: 5;
@@ -739,89 +740,99 @@
       grid-row: 11;
     }
 
-    .perception_text {
+    .dice_roller {
       grid-column: 1;
       grid-row: 12;
+    }
+
+    .dice_value {
+      grid-column: 2;
+      grid-row: 12;
+    }
+
+    .perception_text {
+      grid-column: 1;
+      grid-row: 13;
     }
 
     .perception_value {
       grid-column: 2;
-      grid-row: 12;
+      grid-row: 13;
     }
 
     .knowledge_text {
       grid-column: 1;
-      grid-row: 13;
+      grid-row: 14;
     }
 
     .knowledge_value {
       grid-column: 2;
-      grid-row: 13;
+      grid-row: 14;
     }
 
     .strength_text {
       grid-column: 1;
-      grid-row: 14;
+      grid-row: 15;
     }
 
     .strength_value {
       grid-column: 2;
-      grid-row: 14;
+      grid-row: 15;
     }
 
     .bravery_text {
       grid-column: 1;
-      grid-row: 15;
+      grid-row: 16;
     }
 
     .bravery_value {
       grid-column: 2;
-      grid-row: 15;
+      grid-row: 16;
     }
 
     .magic_text {
       grid-column: 3;
-      grid-row: 12;
+      grid-row: 13;
     }
 
     .magic_value {
       grid-column: 4;
-      grid-row: 12;
+      grid-row: 13;
     }
 
     .presence_text {
       grid-column: 3;
-      grid-row: 13;
+      grid-row: 14;
     }
 
     .presence_value {
       grid-column: 4;
-      grid-row: 13;
+      grid-row: 14;
     }
 
     .agility_text {
       grid-column: 3;
-      grid-row: 14;
+      grid-row: 15;
     }
 
     .agility_value {
       grid-column: 4;
-      grid-row: 14;
+      grid-row: 15;
     }
 
     .cunning_text {
       grid-column: 3;
-      grid-row: 15;
+      grid-row: 16;
     }
 
     .cunning_value {
       grid-column: 4;
-      grid-row: 15;
+      grid-row: 16;
     }
 
     .barrier_03 {
       grid-column: 1 / -1;
-      grid-row: 16;
+      grid-row: 17;
       hr {
         margin: 1rem 0;
       }
@@ -830,67 +841,67 @@
     // Grid: Kits /////////////////////////////////////////////////////////////
     .kit_header {
       grid-column: 1 / 3;
-      grid-row: 17;
+      grid-row: 18;
     }
 
     .kit_chooser_01 {
       grid-column: 4;
-      grid-row: 18;
+      grid-row: 19;
     }
 
     .kit_text_01 {
       grid-column: 1 / 4;
-      grid-row: 18;
+      grid-row: 19;
     }
 
     .kit_chooser_02 {
       grid-column: 4;
-      grid-row: 19;
+      grid-row: 20;
     }
 
     .kit_text_02 {
       grid-column: 1 / 4;
-      grid-row: 19;
+      grid-row: 20;
     }
 
     .kit_chooser_03 {
       grid-column: 4;
-      grid-row: 20;
+      grid-row: 21;
     }
 
     .kit_text_03 {
       grid-column: 1 / 4;
-      grid-row: 20;
+      grid-row: 21;
     }
 
     .kit_chooser_04 {
       grid-column: 4;
-      grid-row: 21;
+      grid-row: 22;
     }
 
     .kit_text_04 {
       grid-column: 1 / 4;
-      grid-row: 21;
+      grid-row: 22;
     }
 
     .kit_chooser_05 {
       grid-column: 4;
-      grid-row: 22;
+      grid-row: 23;
     }
 
     .kit_text_05 {
       grid-column: 1 / 4;
-      grid-row: 22;
+      grid-row: 23;
     }
 
     .kit_chooser_06 {
       grid-column: 4;
-      grid-row: 23;
+      grid-row: 24;
     }
 
     .kit_text_06 {
       grid-column: 1 / 4;
-      grid-row: 23;
+      grid-row: 24;
     }
   }
 }
