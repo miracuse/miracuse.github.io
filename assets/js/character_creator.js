@@ -364,13 +364,13 @@ class KitCounter extends React.Component {
     }
   }
 
-} // A dropdown for Kit options.
+} // A button that equips and unequips kits.
 //
-//     When clicked, the dropdown lists available kits.
+//     When clicked, the button toggles states.
 //
 
 
-class KitHolder extends React.Component {
+class KitEquipper extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
@@ -393,7 +393,9 @@ class KitHolder extends React.Component {
       onChange: this.handleChange
     }), /*#__PURE__*/React.createElement("span", {
       className: "slider round equip_box"
-    })));
+    }, /*#__PURE__*/React.createElement("label", {
+      className: "text-delta"
+    }, "EQUIP"))));
   }
 
 } // Text for kit descriptions.
@@ -851,37 +853,37 @@ class CharacterSheet extends React.Component {
     }, /*#__PURE__*/React.createElement("hr", null)), /*#__PURE__*/React.createElement(KitCounter, {
       kit_count: this.state.Kit_Equip_Count,
       specialization: this.state.Specialization_01
-    }), /*#__PURE__*/React.createElement(KitHolder, {
+    }), /*#__PURE__*/React.createElement(KitEquipper, {
       key: "kit_holder_1",
       index: 1,
       kit: this.state.Kit_01,
       equipped: this.state.Kit_01_Equipped,
       onChange: this.handleEquipChange
-    }), /*#__PURE__*/React.createElement(KitHolder, {
+    }), /*#__PURE__*/React.createElement(KitEquipper, {
       key: "kit_holder_2",
       index: 2,
       kit: this.state.Kit_02,
       equipped: this.state.Kit_02_Equipped,
       onChange: this.handleEquipChange
-    }), /*#__PURE__*/React.createElement(KitHolder, {
+    }), /*#__PURE__*/React.createElement(KitEquipper, {
       key: "kit_holder_3",
       index: 3,
       kit: this.state.Kit_03,
       equipped: this.state.Kit_03_Equipped,
       onChange: this.handleEquipChange
-    }), /*#__PURE__*/React.createElement(KitHolder, {
+    }), /*#__PURE__*/React.createElement(KitEquipper, {
       key: "kit_holder_4",
       index: 4,
       kit: this.state.Kit_04,
       equipped: this.state.Kit_04_Equipped,
       onChange: this.handleEquipChange
-    }), /*#__PURE__*/React.createElement(KitHolder, {
+    }), /*#__PURE__*/React.createElement(KitEquipper, {
       key: "kit_holder_5",
       index: 5,
       kit: this.state.Kit_05,
       equipped: this.state.Kit_05_Equipped,
       onChange: this.handleEquipChange
-    }), /*#__PURE__*/React.createElement(KitHolder, {
+    }), /*#__PURE__*/React.createElement(KitEquipper, {
       key: "kit_holder_6",
       index: 6,
       kit: this.state.Kit_06,

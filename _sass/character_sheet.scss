@@ -163,12 +163,14 @@
     border-radius: 50%;
   } 
 
-  // .slider.round.equip_box {
-  //   line-height: 0.5rem;
-  //   @include mq(md) {
-  //     line-height: inherit;
-  //   }
-  // }
+  .slider.round.equip_box {
+    text-align: center;
+    label {
+      vertical-align: middle;
+      color: black;
+      font-weight: bold;
+    }
+  }
 
   .slider.resource_box {
     width: 1rem;
