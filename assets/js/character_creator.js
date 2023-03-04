@@ -680,37 +680,91 @@ class CharacterSheet extends React.Component {
   handleEquipChange(index, event) {
     // Update the equip marker
     if (index === 1) {
-      this.setState({
-        Kit_01_Equipped: event.target.checked
+      this.setState(prevState => {
+        if (prevState.Kit_Equip_Count < 4 || event.target.checked === false) {
+          return {
+            Kit_01_Equipped: event.target.checked
+          };
+        } else {
+          return {
+            Kit_01_Equipped: prevState.Kit_01_Equipped
+          };
+        }
       });
     } else if (index === 2) {
-      this.setState({
-        Kit_02_Equipped: event.target.checked
+      this.setState(prevState => {
+        if (prevState.Kit_Equip_Count < 4 || event.target.checked === false) {
+          return {
+            Kit_02_Equipped: event.target.checked
+          };
+        } else {
+          return {
+            Kit_02_Equipped: prevState.Kit_02_Equipped
+          };
+        }
       });
     } else if (index === 3) {
-      this.setState({
-        Kit_03_Equipped: event.target.checked
+      this.setState(prevState => {
+        if (prevState.Kit_Equip_Count < 4 || event.target.checked === false) {
+          return {
+            Kit_03_Equipped: event.target.checked
+          };
+        } else {
+          return {
+            Kit_03_Equipped: prevState.Kit_03_Equipped
+          };
+        }
       });
     } else if (index === 4) {
-      this.setState({
-        Kit_04_Equipped: event.target.checked
+      this.setState(prevState => {
+        if (prevState.Kit_Equip_Count < 4 || event.target.checked === false) {
+          return {
+            Kit_04_Equipped: event.target.checked
+          };
+        } else {
+          return {
+            Kit_04_Equipped: prevState.Kit_04_Equipped
+          };
+        }
       });
     } else if (index === 5) {
-      this.setState({
-        Kit_05_Equipped: event.target.checked
+      this.setState(prevState => {
+        if (prevState.Kit_Equip_Count < 4 || event.target.checked === false) {
+          return {
+            Kit_05_Equipped: event.target.checked
+          };
+        } else {
+          return {
+            Kit_05_Equipped: prevState.Kit_05_Equipped
+          };
+        }
       });
     } else if (index === 6) {
-      this.setState({
-        Kit_06_Equipped: event.target.checked
+      this.setState(prevState => {
+        if (prevState.Kit_Equip_Count < 4 || event.target.checked === false) {
+          return {
+            Kit_06_Equipped: event.target.checked
+          };
+        } else {
+          return {
+            Kit_06_Equipped: prevState.Kit_06_Equipped
+          };
+        }
       });
     } // Update the count
 
 
     if (event.target.checked === true) {
       this.setState(prevState => {
-        return {
-          Kit_Equip_Count: prevState.Kit_Equip_Count + 1
-        };
+        if (prevState.Kit_Equip_Count < 4) {
+          return {
+            Kit_Equip_Count: prevState.Kit_Equip_Count + 1
+          };
+        } else {
+          return {
+            Kit_Equip_Count: prevState.Kit_Equip_Count
+          };
+        }
       });
     } else {
       this.setState(prevState => {
