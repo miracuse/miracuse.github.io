@@ -11,8 +11,11 @@ layout: default
     <!-- Markdown Content -->
     {{ content }}
 
+    <!-- Character Sheet -->
+    <div id="root"></div>
+
     <!-- Tab links -->
-    <div class="tab">
+    <!-- <div class="tab">
       <button
         class="tablinks active"
         onclick="openTab(event, 'character_sheet')"
@@ -25,21 +28,20 @@ layout: default
       <button class="tablinks" onclick="openTab(event, 'health')">
         Health
       </button>
-      <!-- <button class="tablinks" onclick="openTab(event, 'fighting')">Fighting</button> -->
+      <button class="tablinks" onclick="openTab(event, 'fighting')">Fighting</button>
       <button class="tablinks" onclick="openTab(event, 'kits')">Kits</button>
       <button class="tablinks" onclick="openTab(event, 'resources')">
         Resources
       </button>
-      <!-- <button class="tablinks" onclick="openTab(event, 'advancement')">Advancement</button> -->
-    </div>
+      <button class="tablinks" onclick="openTab(event, 'advancement')">Advancement</button>
+    </div> -->
 
     <!-- Character Sheet Tab -->
-    <div id="character_sheet" class="tabcontent" style="display: block">
+    <!-- <div id="character_sheet" class="tabcontent" style="display: block">
       <h3>Character Sheet</h3>
 
-      <!-- React will populate the character sheet into this div -->
       <div id="root"></div>
-    </div>
+    </div> -->
 
     <!-- Rules Tab -->
     <div id="rules" class="tabcontent">
@@ -214,9 +216,6 @@ layout: default
     <!-- Kit Tab -->
     <div id="kits" class="tabcontent">
       <h3>Kits</h3>
-
-      {% include example_kit.html %}
-
       <p>
         <b>Kits are powerful items that you've been trained to use</b>. They let you cast
         magic, perform alchemy, or wield enchanted weapons. The kits that you have access

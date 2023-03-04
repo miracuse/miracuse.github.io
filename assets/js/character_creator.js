@@ -127,35 +127,7 @@ class InfoBox extends React.Component {
     }, /*#__PURE__*/React.createElement("b", null, "?"));
   }
 
-} // class DiceRoller extends React.Component {
-//   constructor(props){
-//     super(props)
-//     this.handleDiceRoll = this.handleDiceRoll.bind(this);
-//   }
-//   handleDiceRoll() {
-//     this.props.onDiceRoll();
-//   }
-//   render() {
-//       return(
-//       <div className="dice_button">
-//         <button className="btn" onClick={this.handleDiceRoll}>Roll Dice</button>
-//       </div>
-//     );
-//   }
-// }
-// class DiceResult extends React.Component {
-//   constructor(props){
-//     super(props)
-//   }
-//   render() {
-//     return (
-//       <div className="dice_outcome">
-//         <label id="dice_outcome">{this.props.diceValue}</label>
-//       </div>
-//     );
-//   }
-// }
-// Class descriptions.
+} // Class descriptions.
 //
 //     Presents a class description based on state.
 //
@@ -255,13 +227,42 @@ class ResourceTrack extends React.Component {
 
   render() {
     // Create checkbox elements equal to the boxCount
-    const box_holders = arange(this.props.boxCount).map(index => /*#__PURE__*/React.createElement("input", {
-      key: index,
+    const box_holders = arange(this.props.boxCount).map(index =>
+    /*#__PURE__*/
+    // <label className="switch resource">
+    //     <input 
+    //       key={"skill_" + this.props.prefix + "_" + index}
+    //       className="toggle"
+    //       type="checkbox">
+    //     </input>
+    //     <span className="slider round resource_box"></span>
+    // </label>
+    React.createElement("input", {
+      key: "skill_" + this.props.prefix + "_" + index,
       type: "checkbox"
     }));
     return /*#__PURE__*/React.createElement("div", {
       className: this.props.prefix + "_track"
     }, box_holders);
+  }
+
+} // Text labels for Resources.
+//
+//     Text that becomes bolded and colored when their corresponding value is > 0.
+//
+
+
+class ResourceTextHolder extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    if (this.props.skillValue > 0) {
+      return /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, this.props.text));
+    }
+
+    return /*#__PURE__*/React.createElement("label", null, this.props.text);
   }
 
 } //
@@ -340,25 +341,6 @@ class SkillTextHolder extends React.Component {
     }, /*#__PURE__*/React.createElement("label", null, this.props.skill));
   }
 
-} // Text labels for Resources.
-//
-//     Text that becomes bolded and colored when their corresponding value is > 0.
-//
-
-
-class ResourceTextHolder extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    if (this.props.skillValue > 0) {
-      return /*#__PURE__*/React.createElement("label", null, /*#__PURE__*/React.createElement("span", null, this.props.text));
-    }
-
-    return /*#__PURE__*/React.createElement("label", null, this.props.text);
-  }
-
 } // A tracker for the number of equipped kits.
 //
 //     Tracks the number of equipped kits and displays it.
@@ -410,7 +392,7 @@ class KitHolder extends React.Component {
       checked: this.props.equipped,
       onChange: this.handleChange
     }), /*#__PURE__*/React.createElement("span", {
-      className: "slider round"
+      className: "slider round equip_box"
     })));
   }
 

@@ -156,39 +156,6 @@ class InfoBox extends React.Component {
   }
 }
 
-// class DiceRoller extends React.Component {
-//   constructor(props){
-//     super(props)
-//     this.handleDiceRoll = this.handleDiceRoll.bind(this);
-//   }
-
-//   handleDiceRoll() {
-//     this.props.onDiceRoll();
-//   }
-
-//   render() {
-//       return(
-//       <div className="dice_button">
-//         <button className="btn" onClick={this.handleDiceRoll}>Roll Dice</button>
-//       </div>
-//     );
-//   }
-// }
-
-// class DiceResult extends React.Component {
-//   constructor(props){
-//     super(props)
-//   }
-
-//   render() {
-//     return (
-//       <div className="dice_outcome">
-//         <label id="dice_outcome">{this.props.diceValue}</label>
-//       </div>
-//     );
-//   }
-// }
-
 // Class descriptions.
 //
 //     Presents a class description based on state.
@@ -296,10 +263,44 @@ class ResourceTrack extends React.Component {
   render() {
     // Create checkbox elements equal to the boxCount
     const box_holders = arange(this.props.boxCount).map((index) => (
-      <input key={index} type="checkbox"></input>
+      // <label className="switch resource">
+      //     <input 
+      //       key={"skill_" + this.props.prefix + "_" + index}
+      //       className="toggle"
+      //       type="checkbox">
+      //     </input>
+      //     <span className="slider round resource_box"></span>
+      // </label>
+      <input
+        key={"skill_" + this.props.prefix + "_" + index}
+        type="checkbox">
+      </input>
     ));
 
-    return <div className={this.props.prefix + "_track"}>{box_holders}</div>;
+    return (
+      <div className={this.props.prefix + "_track"}>{box_holders}</div>
+    );
+  }
+}
+
+// Text labels for Resources.
+//
+//     Text that becomes bolded and colored when their corresponding value is > 0.
+//
+class ResourceTextHolder extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    if (this.props.skillValue > 0) {
+      return (
+        <label>
+          <span>{this.props.text}</span>
+        </label>
+      );
+    }
+    return <label>{this.props.text}</label>;
   }
 }
 
@@ -393,27 +394,6 @@ class SkillTextHolder extends React.Component {
   }
 }
 
-// Text labels for Resources.
-//
-//     Text that becomes bolded and colored when their corresponding value is > 0.
-//
-class ResourceTextHolder extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    if (this.props.skillValue > 0) {
-      return (
-        <label>
-          <span>{this.props.text}</span>
-        </label>
-      );
-    }
-    return <label>{this.props.text}</label>;
-  }
-}
-
 // A tracker for the number of equipped kits.
 //
 //     Tracks the number of equipped kits and displays it.
@@ -483,8 +463,7 @@ class KitHolder extends React.Component {
             checked={this.props.equipped}
             onChange={this.handleChange}>
           </input>
-          <span className="slider round">
-            {/* <label className="slider_contents">Equip</label> */}
+          <span className="slider round equip_box">
           </span>
         </label>
       </div>
