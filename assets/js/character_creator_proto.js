@@ -561,7 +561,7 @@ class DiceRoller extends React.Component {
 
   render() { 
       return(
-        <span className="btn dice_roller" onClick={this.handleChange}>Dice Roller</span>
+        <span className="btn dice_roller text-delta" onClick={this.handleChange}>Dice Roller</span>
       )
   }
 }
