@@ -447,7 +447,9 @@ class KitDescriptionHolder extends React.Component {
         class: "lbl-toggle equipped-kit"
       }, kit_options_data[this.props.index - 1], " ", sword_icon, flask_icon, wand_icon, high_damage_icon, accurate_icon, reaction_icon, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
         className: "aleph"
-      }, String(kit_description).split(".")[0] + ".")), /*#__PURE__*/React.createElement("div", {
+      }, String(kit_description).split(".")[0] + "."), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+        class: "material-symbols-outlined"
+      }, "expand_more")), /*#__PURE__*/React.createElement("div", {
         class: "collapsible-content"
       }, /*#__PURE__*/React.createElement("div", {
         class: "content-inner"
@@ -472,7 +474,9 @@ class KitDescriptionHolder extends React.Component {
         class: "lbl-toggle"
       }, kit_options_data[this.props.index - 1], " ", sword_icon, flask_icon, wand_icon, high_damage_icon, accurate_icon, reaction_icon, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
         className: "aleph"
-      }, String(kit_description).split(".")[0] + ".")), /*#__PURE__*/React.createElement("div", {
+      }, String(kit_description).split(".")[0] + "."), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+        class: "material-symbols-outlined"
+      }, "expand_more")), /*#__PURE__*/React.createElement("div", {
         class: "collapsible-content"
       }, /*#__PURE__*/React.createElement("div", {
         class: "content-inner"
