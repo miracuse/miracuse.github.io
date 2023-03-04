@@ -678,12 +678,22 @@ class CharacterSheet extends React.Component {
     // Check button type
     if (event.target.className.includes("increment")) {
       this.setState((prevState) => {
-        return { [skill]: prevState[skill] + 1 };
+        if (prevState[skill] < 4) {
+          return { [skill]: prevState[skill] + 1 };
+        }
+        else {
+          return { [skill]: prevState[skill] };
+        }
       });
     }
     else if (event.target.className.includes("decrement")) {
       this.setState((prevState) => {
-        return { [skill]: prevState[skill] - 1 };
+        if (prevState[skill] != 0) {
+          return { [skill]: prevState[skill] - 1 };
+        }
+        else {
+          return { [skill]: prevState[skill] };
+        }
       });
     }
     else {
