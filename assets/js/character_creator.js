@@ -392,10 +392,8 @@ class KitEquipper extends React.Component {
       checked: this.props.equipped,
       onChange: this.handleChange
     }), /*#__PURE__*/React.createElement("span", {
-      className: "slider round equip_box"
-    }, /*#__PURE__*/React.createElement("label", {
-      className: "text-delta"
-    }, "EQUIP"))));
+      className: "slider round equip_box text-delta"
+    }, "EQUIP")));
   }
 
 } // Text for kit descriptions.

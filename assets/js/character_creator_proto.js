@@ -463,8 +463,8 @@ class KitEquipper extends React.Component {
             checked={this.props.equipped}
             onChange={this.handleChange}>
           </input>
-          <span className="slider round equip_box">
-            <label className="text-delta">EQUIP</label>
+          <span className="slider round equip_box text-delta">
+            EQUIP
           </span>
         </label>
       </div>

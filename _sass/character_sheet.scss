@@ -165,11 +165,10 @@
 
   .slider.round.equip_box {
     text-align: center;
-    label {
-      vertical-align: middle;
-      color: black;
-      font-weight: bold;
-    }
+    vertical-align: middle !important;
+    color: black;
+    font-weight: bold;
+    line-height: 2rem;
   }
 
   .slider.resource_box {
