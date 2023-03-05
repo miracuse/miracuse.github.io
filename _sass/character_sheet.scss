@@ -198,6 +198,12 @@
     min-width: 100%;
     height: 1.5rem;
     border: 1px solid $border-color;
+    border-radius: 7px; 
+    background: $grey-lt-100; 
+    @include fs-2;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 
     @include mq(md) {
       max-width: 100%;
@@ -253,7 +259,9 @@
 
   .dice_roller {
     color: $body-text-color;
+    background-color: $grey-lt-100;
     text-align: center;
+    font-weight: bold;
   }
 
   .dice_value {
