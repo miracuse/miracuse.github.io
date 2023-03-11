@@ -41,6 +41,11 @@ export default function get_specialization_description_data() {
         "Description":"An experienced sailor, either of the seas or the skies."
     },
     {
+        "Specialization":"Custom",
+        "Tags":"Any",
+        "Description":"Choose your own kits!"
+    },
+    {
         "Specialization":"Dragon Knight",
         "Tags":"Spearman, Transformation",
         "Description":"A knight that mimics the power of dragons."

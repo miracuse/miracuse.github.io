@@ -263,18 +263,18 @@ class ResourceTrack extends React.Component {
   render() {
     // Create checkbox elements equal to the boxCount
     const box_holders = arange(this.props.boxCount).map((index) => (
-      // <label className="switch resource">
-      //     <input 
-      //       key={"skill_" + this.props.prefix + "_" + index}
-      //       className="toggle"
-      //       type="checkbox">
-      //     </input>
-      //     <span className="slider round resource_box"></span>
-      // </label>
-      <input
-        key={"skill_" + this.props.prefix + "_" + index}
-        type="checkbox">
-      </input>
+      <label className="switch resource">
+          <input 
+            key={"skill_" + this.props.prefix + "_" + index}
+            className="toggle"
+            type="checkbox">
+          </input>
+          <span className="slider round resource_box"></span>
+      </label>
+      // <input
+      //   key={"skill_" + this.props.prefix + "_" + index}
+      //   type="checkbox">
+      // </input>
     ));
 
     return (
