@@ -15,27 +15,32 @@ nav_order: 2
 
 ### Kit Tags
 
-Each kit has one or more **Tags** that describe it.
+Each kit has one or more **Tags** that describe it. The main three are listed below.
 
-- **Gear**: An item that's worn like armor or used like a weapon.
-
-- **Talisman**: An item used when performing **<span style="color: {{ site.mage_color }}">Magic</span>**. Channels energy into various effects, like elemental force or the manipulation of gravity.
-
-- **Alchemy**: An item related to the practice of alchemy. Covers a wide variety of products, including poisons, specialized ammunition, and miraculous substances.
-
-- **Reaction**: Items that allow Players to act outside their turn in combat if certain conditions are met.
+| Tag          | Symbol                                                  | Description                                                                                                                                                                          |
+| ------------ | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Gear**     | <span class="material-symbols-outlined">swords</span>   | An item that's worn like armor or used like a weapon.                                                                                                                                |
+| **Talisman** | <span class="material-symbols-outlined">auto_fix</span> | An item used when performing **<span style="color: {{ site.mage_color }}">Magic</span>**. Channels energy into various effects, like elemental force or the manipulation of gravity. |
+| **Alchemy**  | <span class="material-symbols-outlined">science</span>  | An item related to the practice of alchemy. Covers a wide variety of products, including poisons, specialized ammunition, and miraculous substances.                                 |
 
 ##### Weapon Tags
 
-Weapons are Gear that adds additional effects when attacking. They have their own set of tags.
+Weapons are Gear that add additional effects when attacking. They have their own set of tags.
 
-- **High Damage**: This weapon inflicts two boxes of damage instead of one.
+| Tag             | Symbol                                                       | Description                                                                 |
+| --------------- | ------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| **High Damage** | <span class="material-symbols-outlined">shift</span>         | This weapon inflicts two boxes of damage instead of one.                    |
+| **Accurate**    | <span class="material-symbols-outlined">point_scan</span>    | This weapon adds +1 to attack rolls, making it more likely to cause damage. |
+| **Ranged**      | <span class="material-symbols-outlined">keyboard_double_arrow_right</span> | This weapon can cause harm from outside melee range.                        |
 
-- **Accurate**: This weapon adds +1 to attack rolls, making it more likely to cause damage.
+##### Other Tags
 
-- **Defense**: This weapon provides a defensive benefit after use.
-
-- **Ranged**: This weapon can cause harm from outside melee range.
+| Tag          | Symbol                                                          | Description                                                                                 |
+| ------------ | --------------------------------------------------------------- |
+| **Reaction** | <span class="material-symbols-outlined">replay</span>           | Items that allow Players to act outside their turn in combat if certain conditions are met. |
+| **Healing**  | <span class="material-symbols-outlined">medical_services</span> | Items that allow Players to recover health if certain conditions are met.                   |
+| **Resource** | <span class="material-symbols-outlined">atr</span>              | Items that allow Players to recover resources if certain conditions are met.                |
+| **Defense**  | <span class="material-symbols-outlined">security</span>         | Items that provide a defensive benefit while in use.                                        |
 
 ---
 

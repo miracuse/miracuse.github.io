@@ -492,8 +492,12 @@ class KitDescriptionHolder extends React.Component {
     const flask_icon = kit_tags.includes("Alchemy") ? <span class="material-symbols-outlined">science</span> : <span></span>
     const wand_icon = kit_tags.includes("Talisman") ? <span class="material-symbols-outlined">auto_fix</span> : <span></span>
     const high_damage_icon = kit_tags.includes("High Damage") ? <span class="material-symbols-outlined">shift</span> : <span></span>
+    const ranged_icon = kit_tags.includes("Ranged") ? <span class="material-symbols-outlined">keyboard_double_arrow_right</span> : <span></span>
     const reaction_icon = kit_tags.includes("Reaction") ? <span class="material-symbols-outlined">replay</span> : <span></span>
+    const defense_icon = kit_tags.includes("Defense") ? <span class="material-symbols-outlined">security</span> : <span></span>
     const accurate_icon = kit_tags.includes("Accurate") ? <span class="material-symbols-outlined">point_scan</span> : <span></span>
+    const healing_icon = kit_tags.includes("Healing") ? <span class="material-symbols-outlined">medical_services</span> : <span></span>
+    const resource_icon = kit_tags.includes("Resource") ? <span class="material-symbols-outlined">atr</span> : <span></span>
     
     if (this.props.equipped) {
       return (
@@ -504,7 +508,7 @@ class KitDescriptionHolder extends React.Component {
           <div class="wrap-collapsible">
             <input id={"collapsible_"+this.props.index} class="toggle" type="checkbox"></input>
             <label for={"collapsible_"+this.props.index} class="lbl-toggle equipped-kit">
-              {kit_options_data[this.props.index - 1]} {sword_icon}{flask_icon}{wand_icon}{high_damage_icon}{accurate_icon}{reaction_icon}<br></br><span className="aleph">{String(kit_description).split(".")[0] + "."}</span><br></br><span class="material-symbols-outlined">expand_more</span>
+              {kit_options_data[this.props.index - 1]} {sword_icon}{flask_icon}{wand_icon}{high_damage_icon}{accurate_icon}{ranged_icon}{reaction_icon}{defense_icon}{resource_icon}{healing_icon}<br></br><span className="aleph">{String(kit_description).split(".")[0] + "."}</span><br></br><span class="material-symbols-outlined">expand_more</span>
             </label>
             <div class="collapsible-content">
               <div class="content-inner">
@@ -528,7 +532,7 @@ class KitDescriptionHolder extends React.Component {
           <div class="wrap-collapsible">
             <input id={"collapsible_"+this.props.index} class="toggle" type="checkbox"></input>
             <label for={"collapsible_"+this.props.index} class="lbl-toggle">
-              {kit_options_data[this.props.index - 1]} {sword_icon}{flask_icon}{wand_icon}{high_damage_icon}{accurate_icon}{reaction_icon}<br></br><span className="aleph">{String(kit_description).split(".")[0] + "."}</span><br></br><span class="material-symbols-outlined">expand_more</span>
+              {kit_options_data[this.props.index - 1]} {sword_icon}{flask_icon}{wand_icon}{high_damage_icon}{accurate_icon}{ranged_icon}{reaction_icon}{defense_icon}{resource_icon}{healing_icon}<br></br><span className="aleph">{String(kit_description).split(".")[0] + "."}</span><br></br><span class="material-symbols-outlined">expand_more</span>
             </label>
             <div class="collapsible-content">
               <div class="content-inner">

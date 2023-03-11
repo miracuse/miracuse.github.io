@@ -3,7 +3,7 @@ export default function get_class_description_data() {
     {
         "Class":"Alchemist",
         "Tags":"Perception, Knowledge",
-        "Description":"An adventurer with a keen mind and a watchful eye. Known for their healing potions and skill with firearms."
+        "Description":"An adventurer with a keen mind and a watchful eye. Known for their healing potions and miraculous tools."
     },
     {
         "Class":"Custom",
@@ -13,7 +13,7 @@ export default function get_class_description_data() {
     {
         "Class":"Mage",
         "Tags":"Magic, Presence",
-        "Description":"An adventurer with command over otherworldly forces. Known for their ability to perform magic through talismans."
+        "Description":"An adventurer with command over otherworldly forces. Known for their skill with Talismans."
     },
     {
         "Class":"Scoundrel",

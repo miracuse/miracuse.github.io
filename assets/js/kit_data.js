@@ -117,7 +117,7 @@ export default function get_kit_data() {
         "Type":"Bard",
         "Kit":"Talisman of Light",
         "Tags":"Talisman",
-        "Description":"A wand or other object that can be used to manipulate light. Can be used to create ghostly illusions, see afar, and blind enemies. You have Advantage on rolls related to seeing."
+        "Description":"A wand or other object that can be used to manipulate light. Can be used to create ghostly illusions, see from afar, and blind enemies. You have Advantage on rolls related to seeing."
     },
     {
         "Class":"Scoundrel",
@@ -187,7 +187,7 @@ export default function get_kit_data() {
         "Type":"Chemist",
         "Kit":"Mist Rod",
         "Tags":"Gear, Weapon",
-        "Description":"A mechanical tool with a nozzle that sprays chemicals. Can be adjusted to shoot liquids or spray fine mists. When used as a weapon, produces a painful acid wash that causes Physical damage. Can be used with other Alchemy kits."
+        "Description":"A mechanical tool with a nozzle that sprays chemicals. Can be adjusted to precisely shoot liquids, spray fine mists, or create gases. Gains various effects when used in conjunction with other Alchemy kits."
     },
     {
         "Class":"Alchemist",
@@ -201,14 +201,14 @@ export default function get_kit_data() {
         "Type":"Chemist",
         "Kit":"Vorpal Glue",
         "Tags":"Alchemy",
-        "Description":"An unprocessed liquid metal that hardens after exposure to the air. Can be used as an adhesive, as a construction material, and as means of restricting enemy movement. You have Advantage when repairing or building objects with this tool."
+        "Description":"An unprocessed liquid metal that hardens after exposure to the air. Can be used as an adhesive, as a construction material, and as means of restricting enemy movement. You have Advantage when repairing or building objects with this tool. You can expend a Potion to create a wall of sheet metal."
     },
     {
         "Class":"Alchemist",
         "Type":"Chemist",
         "Kit":"Winterbloom Extract",
         "Tags":"Alchemy",
-        "Description":"Highly-concentrated extract from the Winterbloom flower. Can be used to freeze large volumes of water, create clouds of fog, and plummet the temperature of objects. You can expend a Potion to create a flash freeze bomb that deals damage and covers an area with a thin sheet of ice."
+        "Description":"Highly-concentrated extract from the Winterbloom flower. Can be used to freeze liquids, create clouds of fog, and plummet the temperature of objects. You can expend a Potion to create a flash freeze bomb that deals damage and covers an area with a thin sheet of ice."
     },
     {
         "Class":"Advanced",
@@ -320,42 +320,42 @@ export default function get_kit_data() {
         "Type":"Corsair",
         "Kit":"Sticky Fingers",
         "Tags":"Gear",
-        "Description":"A set of gloves covered in an odd adhesive. Allows the user to climb any surface with ease and snatch objects with a light touch. You have Advantage when stealing."
+        "Description":"A set of gloves covered in an odd adhesive. Can be used to climb any surface with ease, snatch objects with a light touch, and keep a grip on equipment. You have Advantage when stealing or climbing. You cannot be disarmed."
     },
     {
         "Class":"Advanced",
         "Type":"Corsair",
         "Kit":"Talisman of Sea",
         "Tags":"Talisman",
-        "Description":"A wand or other object that can be used to call on the spirits of the sea. Can be used to shift the flow of currents, breathe underwater, and speak with creatures of the sea. You have Advantage when swimming."
+        "Description":"A wand or other object that can be used to call on the spirits of the sea. Can be used to create drinking water, shift water currents, and speak with creatures of the sea. You can breathe underwater."
     },
     {
         "Class":"Advanced",
         "Type":"Corsair",
         "Kit":"Talisman of Sky",
         "Tags":"Talisman",
-        "Description":"A wand or other object that can be used to call on the spirits of the sky. Can be used to whip up strong winds, find your way when lost, and speak with creatures of the sky. You have Advantage when breaking your falls."
+        "Description":"A wand or other object that can be used to call on the spirits of the sky. Can be used to whip up strong winds, find your way when lost, and speak with creatures of the sky. You fall at half the speed that someone of your size should."
     },
     {
         "Class":"Advanced",
         "Type":"Dragon Knight",
         "Kit":"Dragon\u2019s Breath",
-        "Tags":"Alchemy",
-        "Description":"A draught that lets the user breathe flames like a dragon. Can be used to spit flame at an enemy and blow clouds of fire. You are immune to fire while this kit is equipped."
+        "Tags":"Alchemy, High Damage",
+        "Description":"A draught that lets the user breathe flames like a dragon. Can be used to spit flame at an enemy, blow clouds of smoke, and control the heat of their body. You are immune to fire while this kit is equipped. You can expend a Potion to breathe a large cone of fire that deals two boxes of Physical damage."
     },
     {
         "Class":"Advanced",
         "Type":"Dragon Knight",
         "Kit":"Dragon\u2019s Eyes",
         "Tags":"Alchemy",
-        "Description":"A draught that changes the user\u2019s eyes to see like a dragon. Can be used to see heat, see in the dark, and see across great distances. You have Advantage on rolls related to eyesight."
+        "Description":"A draught that changes the user\u2019s eyes to see like a dragon. Can be used to see heat, see in the dark, and see across great distances. You have Advantage on rolls related to eyesight. You can expend a Potion to see the true nature of a person or object."
     },
     {
         "Class":"Advanced",
         "Type":"Dragon Knight",
         "Kit":"Dragon\u2019s Scales",
-        "Tags":"Alchemy",
-        "Description":"A draught that causes the user to grow scales like a dragon. You have Advantage when defending against piercing attacks, like arrows or fangs."
+        "Tags":"Alchemy, Reaction",
+        "Description":"A draught that causes the user to grow scales, claws, and fangs like a dragon. Can be used to take on a monstrous appearance, climb with sharp claws, and chew through restraints. You have Advantage when defending against slashing and piercing attacks. You can expend a Potion to deflect an attack."
     },
     {
         "Class":"Advanced",
@@ -369,7 +369,7 @@ export default function get_kit_data() {
         "Type":"Dragon Knight",
         "Kit":"Vorpal Spear",
         "Tags":"Gear, Weapon, Ranged, High Damage",
-        "Description":"A spear tipped with vorpal metal, capable of piercing through a dragon\u2019s scales. A length of chain connects the spear to its wielder. Successful attacks deal an additional box of damage. You have Advantage when attacking heavily armored targets."
+        "Description":"A spear tipped with vorpal metal, capable of piercing through a dragon\u2019s scales. A length of chain connects the spear to its wielder, allowing it to be thrown and pulled back. Successful attacks deal an additional box of damage. You have Advantage when attacking heavily armored targets."
     },
     {
         "Class":"Advanced",
@@ -382,7 +382,7 @@ export default function get_kit_data() {
         "Class":"Advanced",
         "Type":"Druid",
         "Kit":"Athame",
-        "Tags":"Gear, Weapon",
+        "Tags":"Gear, Weapon, Resource",
         "Description":"A ritual knife used in sacrificial practices. You recover a Mana Point whenever you use a Talisman or this weapon to incapacitate a target in melee range."
     },
     {
@@ -417,8 +417,8 @@ export default function get_kit_data() {
         "Class":"Advanced",
         "Type":"Druid",
         "Kit":"Talisman of Time",
-        "Tags":"Talisman",
-        "Description":"A wand or other object that can be used to gently influence time. Can be used to peer into the past, accelerate decay, and speed the growth of plants. You have Advantage when detecting danger in the immediate future."
+        "Tags":"Talisman, Reaction",
+        "Description":"A wand or other object that can be used to gently influence time. Can be used to peer into the past, accelerate decay, and speed the growth of plants. You can spend a Mana box to avoid attacks by briefly glimpsing the future."
     },
     {
         "Class":"Alchemist",
@@ -432,13 +432,13 @@ export default function get_kit_data() {
         "Type":"Enchanter",
         "Kit":"Dancing Shadow",
         "Tags":"Alchemy, Reaction",
-        "Description":"You have a servant made of shadow. The servant resides within your shadow but can move independently and interact with the physical world. It can retrieve lightweight objects and store a small number within itself. You can expend a Potion to have the shadow deflect an incoming attack."
+        "Description":"You have a servant made of shadow. The servant resides within your shadow but can move independently and reach a hand into the physical world. It can retrieve lightweight objects and store a small number within itself. You can expend a Potion to have the shadow deflect an incoming attack."
     },
     {
         "Class":"Alchemist",
         "Type":"Enchanter",
         "Kit":"Featherweave",
-        "Tags":"Alchemy, Reaction",
+        "Tags":"Alchemy",
         "Description":"You have a servant made from enchanted cloth, capable of resisting gravity to a limited degree. You glide gently to the ground while wearing this kit. When folded into a bag, you can carry heavy objects with ease. You can expend a Potion to turn the Featherweave into a flying carpet, able to carry multiple people for a short time."
     },
     {
@@ -446,7 +446,7 @@ export default function get_kit_data() {
         "Type":"Enchanter",
         "Kit":"Float Glass",
         "Tags":"Gear, Weapon, Alchemy",
-        "Description":"You have a servant made of floating glass, able to break apart into sharp shards and reform at will. You can command the servant to slash at enemies nearby. You can expend a Potion to transform it into a grenade, shredding everything in the blast radius before reforming."
+        "Description":"You have a servant made of floating glass, able to break apart into sharp shards and reform at will. You can command the servant to strike at enemies nearby. You can expend a Potion to transform it into a grenade, shredding everything in the blast radius before reforming."
     },
     {
         "Class":"Alchemist",
@@ -467,13 +467,13 @@ export default function get_kit_data() {
         "Type":"Fell Knight",
         "Kit":"Ash Knives",
         "Tags":"Gear, Weapon, Ranged",
-        "Description":"A set of cursed throwing knives that prevent alchemical and magical healing. Using this weapon ensures that targets cannot be revived or reanimated. You have Advantage when attacking undead with this weapon."
+        "Description":"A set of cursed throwing knives that prevent alchemical and magical healing. Using this weapon ensures that targets cannot be revived or reanimated. You have Advantage when attacking undead."
     },
     {
         "Class":"Advanced",
         "Type":"Fell Knight",
         "Kit":"Mournblade",
-        "Tags":"Gear, Weapon, High Damage",
+        "Tags":"Gear, Weapon, High Damage, Resource",
         "Description":"A sword with a demon trapped inside. Using this weapon restores a Fortune box whenever it\u2019s used to incapacitate an enemy. Successful attacks deal an additional box of damage. You have Advantage when using this weapon to attack demons and spirits."
     },
     {
@@ -487,14 +487,14 @@ export default function get_kit_data() {
         "Class":"Advanced",
         "Type":"Fell Knight",
         "Kit":"Talisman of Siphoning",
-        "Tags":"Talisman",
+        "Tags":"Talisman, Healing",
         "Description":"A wand or other object that can be used to steal energy. Can be used to drain lifeforce from others, tap into the power of an enchanted object, and consume spirits. Restores one Physical box on successful attacks."
     },
     {
         "Class":"Advanced",
         "Type":"Fell Knight",
         "Kit":"Vim Drink",
-        "Tags":"Alchemy",
+        "Tags":"Alchemy, Healing",
         "Description":"A distant ancestor to the modern alchemist potion. When consumed, the user expends a Mental box in exchange for recovering a Physical box. Can be used by others."
     },
     {
@@ -502,7 +502,7 @@ export default function get_kit_data() {
         "Type":"Fell Knight",
         "Kit":"Wither Toxin",
         "Tags":"Alchemy",
-        "Description":"A bitter venom that causes intense pain. Can be used to inflict Mental damage, cripple the wills of enemies, or cloud the mind. You have Advantage when interrogating someone for information."
+        "Description":"A bitter venom that causes intense pain. Can be used to torture prisoners, cripple the wills of enemies, or cloud the mind. You have Advantage when interrogating someone for information. When applied to a weapon, inflicts an additional box of Mental damage on successful attacks."
     },
     {
         "Class":"Advanced",
@@ -516,7 +516,7 @@ export default function get_kit_data() {
         "Type":"Forgemaster",
         "Kit":"Philosopher Stone",
         "Tags":"Alchemy",
-        "Description":"A liquid gem that can change one metal into another. Can be used to transmute strong metals into weak metals and vice versa. The greater the change, the more Knowledge is required to succeed. You can sacrifice this kit to recover two Potions, losing its functionality until the next time you rest."
+        "Description":"A liquid gem that can change one metal into another. Can be used to transmute strong metals into weak metals and vice versa. The greater the change, the more Knowledge is required to succeed. You can sacrifice this kit to recover two Potion boxes, losing its functionality until the next time you rest."
     },
     {
         "Class":"Advanced",
@@ -537,7 +537,7 @@ export default function get_kit_data() {
         "Type":"Forgemaster",
         "Kit":"Talisman of Fortification",
         "Tags":"Talisman",
-        "Description":"A wand or other object that brings out the potential of an object. Can be used to make materials sturdier, sharper, or otherwise stronger. You have Advantage when reinforcing or repairing objects."
+        "Description":"A wand or other object that brings out the potential of an object. Can be used to make materials sturdier, sharper, or otherwise stronger. You have Advantage when repairing objects."
     },
     {
         "Class":"Advanced",
@@ -599,7 +599,7 @@ export default function get_kit_data() {
         "Class":"Soldier",
         "Type":"Knight",
         "Kit":"Guardian Shield",
-        "Tags":"Gear, Reaction",
+        "Tags":"Gear, Reaction, Resource",
         "Description":"A magnetic shield that attracts arrows, bullets, and swords away from allies. When a nearby ally is attacked, you can choose to take damage in their place and gain a Fortune Point for doing so. Damage taken in this way cannot be reduced or avoided."
     },
     {
@@ -613,7 +613,7 @@ export default function get_kit_data() {
         "Class":"Soldier",
         "Type":"Knight",
         "Kit":"Hospitaler Salts",
-        "Tags":"Alchemy",
+        "Tags":"Alchemy, Healing",
         "Description":"Smelling salts that wake the unconscious. Can be used to revive allies, jolt others out of a trance, and overpower odors. Revived allies clear one box of damage, Physical or Mental, depending on which is necessary."
     },
     {
@@ -642,14 +642,14 @@ export default function get_kit_data() {
         "Type":"Legionnaire",
         "Kit":"Legion Pick",
         "Tags":"Gear",
-        "Description":"A combination handaxe and hammer made of adamantine. Can be used to collect lumber, destroy walls, and break objects apart with ease. You have Advantage when destroying objects with this tool."
+        "Description":"A combination handaxe and hammer made of adamantine. Makes short work of most obstacles. Can be used to collect lumber, destroy walls, and break objects apart with ease. You have Advantage when destroying objects with this tool."
     },
     {
         "Class":"Soldier",
         "Type":"Legionnaire",
         "Kit":"Pocket Wall",
         "Tags":"Alchemy",
-        "Description":"A rapidly expanding cement-like substance. Can be used to create shelter, mend cracks, seal doors, or adhere objects to one another. You have Advantage when building or repairing objects with this kit."
+        "Description":"A rapidly expanding cement-like substance. Can be used to create shelter, mend cracks, and adhere objects to one another. You have Advantage when building or repairing objects with this kit."
     },
     {
         "Class":"Soldier",
@@ -711,7 +711,7 @@ export default function get_kit_data() {
         "Class":"Mage",
         "Type":"Priest",
         "Kit":"Talisman of Necromancy",
-        "Tags":"Talisman",
+        "Tags":"Talisman, Healing",
         "Description":"A wand or other object that influences the boundary between life and death. Can be used to heal Physical damage, summon ghosts for information, and create undead. The number of Physical boxes healed is equal to the result of the roll."
     },
     {
@@ -719,13 +719,13 @@ export default function get_kit_data() {
         "Type":"Ranger",
         "Kit":"Shepherd\u2019s Flute",
         "Tags":"Gear",
-        "Description":"A ritually crafted flute that has power over simple-minded creatures. Playing the flute can calm wildlife, or stir them into a dangerous frenzy. You can use I Know a Guy to recruit a local beast to aid you. You have Advantage when influencing animals."
+        "Description":"A ritually crafted flute that has power over simple-minded creatures. Playing the flute can calm, attract, or enrage wildlife depending on the melody chosen. You can expend a Trick box to recruit a local beast to aid you. You have Advantage when influencing animals."
     },
     {
         "Class":"Scoundrel",
         "Type":"Ranger",
         "Kit":"Talisman of Life",
-        "Tags":"Talisman",
+        "Tags":"Talisman, Healing",
         "Description":"A wand or other object that can be used to preserve life. Can be used to heal wounds, sense the presence of living things, and detect disturbances in the natural order. The number of Physical boxes healed is equal to the result of the roll. You have Advantage when tracking others."
     },
     {
@@ -760,49 +760,49 @@ export default function get_kit_data() {
         "Class":"Alchemist",
         "Type":"Sapper",
         "Kit":"Concussive Charges",
-        "Tags":"Alchemy",
-        "Description":"Explosive bullets that create powerful shockwaves to knock enemies over with instead of dealing Physical damage. You can expend a Potion to create a concussive grenade that deals damage and creates a shockwave."
+        "Tags":"Alchemy, High Damage",
+        "Description":"Explosive elements that create powerful shockwaves. Can be used to knock enemies over, create loud noises, and destroy obstacles. You can expend a Potion to create a concussive grenade that deals two boxes of Physical damage instead of one."
+    },
+    {
+        "Class":"Alchemist",
+        "Type":"Sapper",
+        "Kit":"Element Boomstick",
+        "Tags":"Gear, Weapon",
+        "Description":"A short-barreled gun used for clearing rooms. Using this weapon allows your ranged attacks to cause harm in a cone area-of-effect immediately in front of you. Can be used with various Alchemy kits to broadly administer effects while attacking."
+    },
+    {
+        "Class":"Alchemist",
+        "Type":"Sapper",
+        "Kit":"Element Rifle",
+        "Tags":"Gear, Weapon, Accurate, Ranged",
+        "Description":"A long-barreled gun used for precision shooting. Using this weapon adds +1 to the roll result of your attacks, significantly improving the chance that they\u2019ll inflict damage. Can be used with various Alchemy kits to precisely administer effects while attacking."
     },
     {
         "Class":"Alchemist",
         "Type":"Sapper",
         "Kit":"Grease Charges",
         "Tags":"Alchemy",
-        "Description":"Capsule bullets filled with slippery and flammable grease, covering targets instead of dealing Physical damage. You can expend a Potion to create a grease bomb that covers an area with oil."
-    },
-    {
-        "Class":"Alchemist",
-        "Type":"Sapper",
-        "Kit":"Jaeger Rifle",
-        "Tags":"Gear, Weapon, Accurate, Ranged",
-        "Description":"A long-barreled gun used for precision shooting. Using this weapon adds +1 to the roll result of your attacks, significantly improving the chance that they\u2019ll inflict damage. You have Advantage when making ranged attacks without any distractions."
+        "Description":"Chemical elements filled with slippery and flammable grease. Can be used to create oil slicks, increase the intensity of flames, and loosen metal jams. You can expend a Potion to create a grease bomb that covers an area with oil."
     },
     {
         "Class":"Alchemist",
         "Type":"Sapper",
         "Kit":"Phosphos Charges",
         "Tags":"Alchemy",
-        "Description":"Volatile bullets that ignite targets and produce blinding flashes of light. You can expend a Potion to create a flash bomb that blinds enemies, or a fire bomb that causes damage and sets the area ablaze."
+        "Description":"Volatile elements that ignite and produce blinding flashes of light. Can be used to start fires, create signal flares, and send messages through flickering light. You can expend a Potion to create a flash bomb that blinds enemies, or a fire bomb that causes damage and sets the area ablaze."
     },
     {
         "Class":"Alchemist",
         "Type":"Sapper",
-        "Kit":"Trenchcoat Boomstick",
-        "Tags":"Gear, Weapon",
-        "Description":"A short-barreled gun used for clearing rooms. Using this weapon allows your ranged attacks to cause harm in a cone area-of-effect immediately in front of you."
-    },
-    {
-        "Class":"Alchemist",
-        "Type":"Sapper",
-        "Kit":"Trenchsteel Charges",
+        "Kit":"Smoke Charges",
         "Tags":"Alchemy",
-        "Description":"Loaded bullets that fire twice, changing trajectory in mid-air to shoot around corners or cover. You can expend a Potion to create a ball bearing grenade that deals damage and covers an area with metal balls."
+        "Description":"Powdered elements that create clouds of choking smoke. Can be used to set smokescreens, induce violent coughing, and send smoke signals. You can expend a Potion to create a smoke grenade that blocks line of sight in a wide area."
     },
     {
         "Class":"Mage",
         "Type":"Shaman",
         "Kit":"Spirit Well",
-        "Tags":"Gear",
+        "Tags":"Gear, Resource",
         "Description":"A gemstone imbued with energy. You have a +1 to Magic rolls using a specific Talisman, chosen when this kit is equipped. You can sacrifice this kit to recover two Mana Points, but lose the +1 benefit until your next rest."
     },
     {
@@ -845,7 +845,7 @@ export default function get_kit_data() {
         "Type":"Spellsword",
         "Kit":"Mythril Blade",
         "Tags":"Gear, Weapon",
-        "Description":"A blade that conducts magic. Using this weapon allow you to apply the effects of an equipped Talisman in conjunction with an attack."
+        "Description":"A blade that conducts magic. Using this weapon allows you to apply the effects of an equipped Talisman in conjunction with an attack."
     },
     {
         "Class":"Advanced",
@@ -859,14 +859,14 @@ export default function get_kit_data() {
         "Type":"Spellsword",
         "Kit":"Talisman of Moon",
         "Tags":"Talisman, Reaction",
-        "Description":"A wand or other object that can be used to deflect harm away from your body. Can be used to create barriers around yourself. You can spend a Mana box to avoid harm from incoming attacks. You have Advantage when blocking."
+        "Description":"A wand or other object that can be used to deflect harm away from your body. Can be used to create protective barriers around yourself. You can spend a Mana box to avoid harm from incoming attacks. You have Advantage when blocking."
     },
     {
         "Class":"Advanced",
         "Type":"Spellsword",
         "Kit":"Talisman of Stars",
-        "Tags":"Talisman",
-        "Description":"A wand or other object that can be used to accelerate your body. Can be used to heal yourself and react before others. The number of Physical boxes healed is equal to the result of the roll. You have Advantage when dodging."
+        "Tags":"Talisman, Healing",
+        "Description":"A wand or other object that can be used to accelerate your body. Can be used to heal yourself and quicken your reactions. The number of Physical boxes healed is equal to the result of the roll. You have Advantage when dodging."
     },
     {
         "Class":"Advanced",
@@ -894,7 +894,7 @@ export default function get_kit_data() {
         "Type":"Templar",
         "Kit":"Lantern Spear",
         "Tags":"Gear, Weapon, High Damage",
-        "Description":"A shaft of steel tipped with enchanted silver that permanently glows with searing heat. Successful attacks against deal an additional point of damage. You have Advantage when attacking magical creatures."
+        "Description":"A shaft of steel tipped with enchanted silver that permanently glows with searing heat. Successful attacks deal an additional point of damage. You have Advantage when attacking magical creatures."
     },
     {
         "Class":"Advanced",
@@ -915,14 +915,14 @@ export default function get_kit_data() {
         "Type":"Templar",
         "Kit":"Talisman of Purification",
         "Tags":"Talisman",
-        "Description":"A wand or other object that can be used to purify and sanctify. Can be used to expel poisons, harm magical creatures, and bless objects with the power to ward off spirits. You are immune to curses, poisons, and disease."
+        "Description":"A wand or other object that can be used to purify and sanctify. Can be used to expel corruption, harm magical creatures, and bless objects with the power to ward off spirits. You are immune to curses, poisons, and disease."
     },
     {
         "Class":"Advanced",
         "Type":"Templar",
         "Kit":"Tolling Bell",
         "Tags":"Gear",
-        "Description":"A metal bell whose deep sound sends a feeling of peace through those who hear it. Can be used to destroy weak undead, lull others to sleep, and scare away wildlife."
+        "Description":"A metal bell whose deep sound sends a feeling of peace through those who hear it. Can be used to destroy weak undead, lull others to sleep, and scare away wildlife. You do not need to sleep while this kit is equipped, and cannot be put to sleep against your will."
     },
     {
         "Class":"Advanced",
@@ -956,7 +956,7 @@ export default function get_kit_data() {
         "Class":"Advanced",
         "Type":"Witch",
         "Kit":"Talisman of Restoration",
-        "Tags":"Talisman",
+        "Tags":"Talisman, Healing",
         "Description":"A wand or other object that mends that which is broken. Can be used to fix damaged objects, repair enchanted items, and heal wounds. You have Advantage when repairing objects. The number of Physical boxes healed is equal to the result of the roll."
     },
     {
@@ -965,13 +965,6 @@ export default function get_kit_data() {
         "Kit":"Willow Perfume",
         "Tags":"Alchemy",
         "Description":"A bottle of alchemic perfume that fogs minds. Can be used to erase recent memories, lower someone\u2019s guard, and become less noticable. You have Advantage when using Presence to hypnotize or charm others."
-    },
-    {
-        "Class":"Mage",
-        "Type":"Wizard",
-        "Kit":"Familiar",
-        "Tags":"Alchemy",
-        "Description":"You have a shapeshifting servant that takes the form of a small animal, such as a crow or cat. You are able to borrow its senses, issue commands to it, and cast spells through it. You can change your familiar\u2019s shape by expending a Mana box."
     },
     {
         "Class":"Mage",
@@ -1000,6 +993,13 @@ export default function get_kit_data() {
         "Kit":"Talisman of Heat",
         "Tags":"Talisman",
         "Description":"A wand or other object that can be used to manipulate thermal energy. Can be used to ignite enemies, freeze objects, and adjust temperature. You cannot be harmed by thermal effects like heat stroke or hypothermia, but are still vulnerable to fire, ice, and other elemental attacks."
+    },
+    {
+        "Class":"Mage",
+        "Type":"Wizard",
+        "Kit":"Transmutation Rod",
+        "Tags":"Gear, Resource",
+        "Description":"An enchanted rod that can gather and store energy. When expend a Mana box to freeze, slow, or otherwise greatly reduce the energy of a target, you can store the excess energy in this rod as a temporary Mana box. A maximum of one Mana box can be held in the rod at any given time."
     },
     {
         "Class":"Mage",
